@@ -1,9 +1,9 @@
 DIR=$1
 CSV=$2
 
-rm $CSV
+# dangerous!
+rm -f $CSV
 echo "File,line,CWE, Defect Type, Defect Sub-Type" >> $CSV
-
 
 echo "Working dir: $DIR"
 echo

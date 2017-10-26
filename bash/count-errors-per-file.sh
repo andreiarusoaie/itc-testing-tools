@@ -1,7 +1,8 @@
 DIR=$1
 CSV=$2
 
-rm $CSV
+# dangerous
+rm -f $CSV
 echo "File,Count" >> $CSV
 
 
