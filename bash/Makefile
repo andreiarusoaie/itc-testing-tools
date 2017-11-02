@@ -23,6 +23,17 @@ CPPCHECK_OUTPUT_CPP_WO=cppcheck_cpp_wo_errors_per_line.csv
 CPPCHECK_OPTS="--xml --xml-version=2"
 
 
+## FLAWFINDER
+FLAWFINDER=./flawfinder.sh
+FLAWFINDER_EXE=/usr/local/bin/flawfinder
+FLAWFINDER_OUTPUT_C_W=flawfinder_c_w_errors_per_line.csv
+FLAWFINDER_OUTPUT_C_WO=flawfinder_c_wo_errors_per_line.csv
+FLAWFINDER_OUTPUT_CPP_W=flawfinder_cpp_w_errors_per_line.csv
+FLAWFINDER_OUTPUT_CPP_WO=flawfinder_cpp_wo_errors_per_line.csv
+FLAWFINDER_OPTS=
+
+
+
 
 ## SCRIPTS
 COUNT_ERRORS=./count-errors-per-file.sh
@@ -71,6 +82,12 @@ clang:
 cppcheck:
 	$(CPPCHECK) $(W_C_DEFECTS_DIR) $(CPPCHECK_OUTPUT_C_W) $(CPPCHECK_EXE) $(CPPCHECK_OPTS) 
 	$(CPPCHECK) $(WO_C_DEFECTS_DIR) $(CPPCHECK_OUTPUT_C_WO) $(CPPCHECK_EXE) $(CPPCHECK_OPTS) 
+
+
+flawfinder:
+	$(FLAWFINDER) $(W_C_DEFECTS_DIR) $(FLAWFINDER_OUTPUT_C_W) $(FLAWFINDER_EXE) $(FLAWFINDER_OPTS) 
+	$(FLAWFINDER) $(WO_C_DEFECTS_DIR) $(FLAWFINDER_OUTPUT_C_WO) $(FLAWFINDER_EXE) $(FLAWFINDER_OPTS) 
+	python3 ./statistics.py $(C_MERGE_FILE) $(FLAWFINDER_OUTPUT_C_W) $(FLAWFINDER_OUTPUT_C_WO)
 
 
 clean:
