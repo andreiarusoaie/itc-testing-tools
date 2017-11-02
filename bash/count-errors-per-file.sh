@@ -1,19 +1,19 @@
-DIR=$1
-CSV=$2
+DIR_W=$1
+DIR_WO=$2
+CSV=$3
 
-# dangerous
-rm -f $CSV
-echo "File,Count" >> $CSV
+rm $CSV
+echo "File,Count W, Count W/o" >> $CSV
 
-
+echo "Counting errors..."
 echo "Working dir: $DIR"
-echo
-FILES=$(ls $DIR | egrep '\.c$|\.cpp$')
+
+FILES=$(ls $DIR_W | egrep '\.c$|\.cpp$')
 for f in $FILES
 do
-    C_FILE=$DIR$f
-    # echo $C_FILE
-    # cat $C_FILE
-    R=$(grep "Tool should detect this line as error" $C_FILE | wc -l)
-    echo "$f,$R" >> $CSV
+    W=$(grep "Tool should detect this line as error" $DIR_W$f | wc -l)
+    WO=$(grep "Tool should not detect this line as error" $DIR_WO$f | wc -l)
+    echo "$f,$W,$WO" >> $CSV
 done
+
+echo "Done.\nOutput written in $CSV.\n"
