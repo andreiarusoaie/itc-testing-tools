@@ -1,5 +1,13 @@
 DIR=$1
 CSV=$2
+MODE=$3
+
+if [[ $MODE == '0' ]]; then
+    SEARCH="Tool should detect this line as error"
+else
+    SEARCH="Tool should not detect this line as error"
+fi
+# echo "SEARCH: $SEARCH"
 
 rm $CSV
 echo "File,Line,CWE, Defect Type, Defect Sub-Type" >> $CSV
@@ -24,7 +32,7 @@ do
     DS=$(grep "Defect Sub" $C_FILE -m 1 | head -1 | cut -d ":" -f 2)
     
     # collect line number and generate a table row
-    grep "Tool should detect this line as error" $C_FILE -n | while read line ; do
+    grep "$SEARCH" $C_FILE -n | while read line ; do
 	LN=$(echo $line | cut -d ':' -f 1)
 	echo "$f, $LN, $CWE, $D, $DS" >> $CSV
     done
