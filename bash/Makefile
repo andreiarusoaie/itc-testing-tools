@@ -45,6 +45,17 @@ CLANG_CORE_OUT_SUBDEFECTS=clang_core_out_subdefects.csv
 CLANG_CORE_OUT_DEFECTS=clang_core_out_defects.csv
 CLANG_CORE_OUT_TOTAL=clang_core_out_total.csv
 
+## CLANG ALPHA
+CLANG_ALPHA=./clang.sh
+CLANG_ALPHA_EXE=/usr/bin/clang
+CLANG_ALPHA_OUTPUT_C_W=clang_alpha_c_w_errors_per_line.csv
+CLANG_ALPHA_OUTPUT_C_WO=clang_alpha_c_wo_errors_per_line.csv
+CLANG_ALPHA_OUTPUT_CPP_W=clang_alpha_cpp_w_errors_per_line.csv
+CLANG_ALPHA_OUTPUT_CPP_WO=clang_alpha_cpp_wo_errors_per_line.csv
+CLANG_ALPHA_OPTS='-cc1 -analyze -analyzer-checker=alpha -I $(W_C_DEFECTS_DIR)/../include'
+CLANG_ALPHA_OUT_SUBDEFECTS=clang_alpha_out_subdefects.csv
+CLANG_ALPHA_OUT_DEFECTS=clang_alpha_out_defects.csv
+CLANG_ALPHA_OUT_TOTAL=clang_alpha_out_total.csv
 
 
 ## CPPCHECK
@@ -95,7 +106,7 @@ merge-files: gather-errors
 	$(MERGE_EXE) $(C_ERRORS_PER_LINE_FILE) $(C_WO_ERRORS_PER_LINE_FILE) $(C_MERGE_FILE)
 	$(MERGE_EXE) $(CPP_ERRORS_PER_LINE_FILE) $(CPP_WO_ERRORS_PER_LINE_FILE) $(CPP_MERGE_FILE)
 
-statistics: merge-files cppcheck flawfinder
+statistics: merge-files cppcheck flawfinder clang-core
 
 
 
@@ -112,12 +123,15 @@ flawfinder:
 	$(FLAWFINDER) $(WO_C_DEFECTS_DIR) $(FLAWFINDER_OUTPUT_C_WO) $(FLAWFINDER_EXE) $(FLAWFINDER_OPTS) 
 	python3 ./statistics.py $(C_MERGE_FILE) $(FLAWFINDER_OUTPUT_C_W) $(FLAWFINDER_OUTPUT_C_WO) $(FLAWFINDER_OUT_SUBDEFECTS) $(FLAWFINDER_OUT_DEFECTS) $(FLAWFINDER_OUT_TOTAL)
 
-clang: 
+clang-core: 
 	$(CLANG_CORE) $(W_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
 	$(CLANG_CORE) $(WO_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
 	python3 ./statistics.py $(C_MERGE_FILE) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_OUT_SUBDEFECTS) $(CLANG_CORE_OUT_DEFECTS) $(CLANG_CORE_OUT_TOTAL)
 
-
+clang-alpha: 
+	$(CLANG_ALPHA) $(W_C_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_C_W) $(CLANG_ALPHA_EXE) $(CLANG_ALPHA_OPTS) 
+	$(CLANG_ALPHA) $(WO_C_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_C_WO) $(CLANG_ALPHA_EXE) $(CLANG_ALPHA_OPTS) 
+	python3 ./statistics.py $(C_MERGE_FILE) $(CLANG_ALPHA_OUTPUT_C_W) $(CLANG_ALPHA_OUTPUT_C_WO) $(CLANG_ALPHA_OUT_SUBDEFECTS) $(CLANG_ALPHA_OUT_DEFECTS) $(CLANG_ALPHA_OUT_TOTAL)
 
 
 

@@ -6,7 +6,7 @@ OPTS=$4
 PARSER=../python/flawfinder-parser.py
 echo "File, Line, Error" > $CSV
 
-echo "$DIR\n$CSV\n$EXE\n"
+echo "$DIR\n$CSV\n$EXE"
 
 echo $($EXE $DIR $OPTS > flawfinder.out)
 OUT=$(pwd)

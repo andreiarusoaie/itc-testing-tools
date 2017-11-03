@@ -6,7 +6,7 @@ OPTS=$4
 PARSER=../python/cppcheck-parser.py
 echo "File, Line, Error" > $CSV
 
-echo "$DIR\n$CSV\n$EXE\n$OPTS\n"
+echo "$DIR\n$CSV\n$EXE\n$OPTS"
 
 echo $($EXE --quiet $DIR $OPTS 2> cppcheck-output.xml)
 XML=$(pwd)
