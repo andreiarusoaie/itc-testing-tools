@@ -16,13 +16,12 @@ for line in lines:
     if (not matched == None):
         filename = os.path.basename(matched.group(1).decode("utf-8"))
         line_no = matched.group(2).decode("utf-8")
-        key = filename + ":" + line_no
         error_msg = matched.group(3).decode("utf-8").strip()
         k = 1
         while (lines[lno + k].strip() and (extractor.match(str.encode(lines[lno+k])) == None)):
             error_msg = error_msg + str(lines[lno+k]).strip()
             k = k + 1
-        print(filename, ",", line_no, ",", error_msg, end="")
+        print(filename, ",", line_no, ",", error_msg)
      
     lno = lno + 1
 
