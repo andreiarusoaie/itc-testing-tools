@@ -101,6 +101,22 @@ FLAWFINDER_OUT_CPP_DEFECTS=flawfinder_out_cpp_defects.csv
 FLAWFINDER_OUT_CPP_TOTAL=flawfinder_out_cpp_total.csv
 
 
+## INFER
+INFER=./infer.sh
+INFER_EXE=/usr/local/bin/infer
+INFER_OUTPUT_C_W=infer_c_w_errors_per_line.csv
+INFER_OUTPUT_C_WO=infer_c_wo_errors_per_line.csv
+INFER_OUTPUT_CPP_W=infer_cpp_w_errors_per_line.csv
+INFER_OUTPUT_CPP_WO=infer_cpp_wo_errors_per_line.csv
+INFER_OPTS=
+INFER_OUT_SUBDEFECTS=infer_out_subdefects.csv
+INFER_OUT_DEFECTS=infer_out_defects.csv
+INFER_OUT_TOTAL=infer_out_total.csv
+INFER_OUT_CPP_SUBDEFECTS=infer_out_cpp_subdefects.csv
+INFER_OUT_CPP_DEFECTS=infer_out_cpp_defects.csv
+INFER_OUT_CPP_TOTAL=infer_out_cpp_total.csv
+
+
 
 
 # GENERAL
@@ -123,7 +139,7 @@ merge-files: gather-errors
 	$(MERGE_EXE) $(C_ERRORS_PER_LINE_FILE) $(C_WO_ERRORS_PER_LINE_FILE) $(C_MERGE_FILE)
 	$(MERGE_EXE) $(CPP_ERRORS_PER_LINE_FILE) $(CPP_WO_ERRORS_PER_LINE_FILE) $(CPP_MERGE_FILE)
 
-statistics: merge-files cppcheck flawfinder clang-core clang-alpha
+statistics: merge-files cppcheck flawfinder clang-core clang-alpha infer
 
 
 
@@ -161,6 +177,14 @@ clang-alpha:
 	$(CLANG_ALPHA_PP) $(W_CPP_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_CPP_W) $(CLANG_ALPHA_EXE_CPP) $(CLANG_ALPHA_OPTS)
 	$(CLANG_ALPHA_PP) $(WO_CPP_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_CPP_WO) $(CLANG_ALPHA_EXE_CPP) $(CLANG_ALPHA_OPTS)
 	python3 ./statistics.py $(CPP_MERGE_FILE) $(CLANG_ALPHA_OUTPUT_CPP_W) $(CLANG_ALPHA_OUTPUT_CPP_WO) $(CLANG_ALPHA_OUT_CPP_SUBDEFECTS) $(CLANG_ALPHA_OUT_CPP_DEFECTS) $(CLANG_ALPHA_OUT_CPP_TOTAL)
+
+infer: 
+	$(INFER) $(W_C_DEFECTS_DIR) $(INFER_OUTPUT_C_W) $(INFER_EXE) $(INFER_OPTS) 
+	$(INFER) $(WO_C_DEFECTS_DIR) $(INFER_OUTPUT_C_WO) $(INFER_EXE) $(INFER_OPTS) 
+	python3 ./statistics.py $(C_MERGE_FILE) $(INFER_OUTPUT_C_W) $(INFER_OUTPUT_C_WO) $(INFER_OUT_SUBDEFECTS) $(INFER_OUT_DEFECTS) $(INFER_OUT_TOTAL)
+	$(INFER) $(W_CPP_DEFECTS_DIR) $(INFER_OUTPUT_CPP_W) $(INFER_EXE) $(INFER_OPTS) 
+	$(INFER) $(WO_CPP_DEFECTS_DIR) $(INFER_OUTPUT_CPP_WO) $(INFER_EXE) $(INFER_OPTS)
+	python3 ./statistics.py $(CPP_MERGE_FILE) $(INFER_OUTPUT_CPP_W) $(INFER_OUTPUT_CPP_WO) $(INFER_OUT_CPP_SUBDEFECTS) $(INFER_OUT_CPP_DEFECTS) $(INFER_OUT_CPP_TOTAL)
 
 
 
