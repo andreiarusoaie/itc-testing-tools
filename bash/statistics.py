@@ -10,6 +10,13 @@ tool_out_subdefects=sys.argv[4]
 tool_out_defects=sys.argv[5]
 tool_out_total=sys.argv[6]
 
+# print(merged_csv_filename)
+# print(tool_filename_w_defects)
+# print(tool_filename_wo_defects)
+# print(tool_out_subdefects)
+# print(tool_out_defects)
+# print(tool_out_total)
+# exit(1)
 
 # defects reported by the tool
 w_defects_found = defaultdict(lambda: [])

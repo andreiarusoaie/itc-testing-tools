@@ -10,6 +10,6 @@ echo "File, Line, Error" > $CSV
 
 OUT=$(pwd)
 OUT="$OUT/clang-output.txt"
-echo $($EXE $OPTS $DIR/*.c 2> $OUT)
+echo $($EXE $OPTS $DIR/*.cpp  2> $OUT)
 echo $(python3 $PARSER $OUT >> $CSV)
 rm -f $OUT
