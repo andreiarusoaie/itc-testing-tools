@@ -7,6 +7,9 @@ merged_csv_filename=sys.argv[1]
 tool_filename_w_defects=sys.argv[2]
 tool_filename_wo_defects=sys.argv[3]
 
+tool_out_subdefects=sys.argv[4]
+tool_out_defects=sys.argv[5]
+tool_out_total=sys.argv[6]
 
 
 w_defects_found = defaultdict(lambda: [])
@@ -97,7 +100,7 @@ with open(merged_csv_filename, "r") as merged_file:
 
 # print(variations)
 
-sys.stdout = open('out1.csv', 'w')
+sys.stdout = open(tool_out_subdefects, 'w')
 print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity")
 for filename in defect_dict.keys():
     count_tp = 0
@@ -114,7 +117,7 @@ for filename in defect_dict.keys():
     print(filename,",", defect_dict[filename],",", subdefect_dict[filename],",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
     
 
-sys.stdout = open('out2.csv', 'w')
+sys.stdout = open(tool_out_defects, 'w')
 print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity")
 for defect in filenames_by_defect.keys():
     count_tp = 0
@@ -133,7 +136,7 @@ for defect in filenames_by_defect.keys():
     print(defect,",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
 
     
-sys.stdout = open('out3.csv', 'w')
+sys.stdout = open(tool_out_total, 'w')
 count_tp = 0
 count_fp = 0
 count_total = 0 
