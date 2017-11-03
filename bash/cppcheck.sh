@@ -12,3 +12,4 @@ echo $($EXE --quiet $DIR $OPTS 2> cppcheck-output.xml)
 XML=$(pwd)
 XML="$XML/cppcheck-output.xml"
 echo $(python3 $PARSER $XML >> $CSV)
+rm $XML

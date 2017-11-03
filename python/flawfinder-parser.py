@@ -17,7 +17,7 @@ for line in lines:
     if (len(a) >= 3):
         if (collectingMode):
             print(filename, ",", line_no, ",", "\"" + error_message + "\"")
-            collectingMode = False # probably this line is not needed
+            collectingMode = False # this is needed to disable final
         filename = os.path.basename(a[0])
         line_no = a[1]
         error_message = ""

@@ -12,3 +12,4 @@ echo $($EXE $DIR $OPTS > flawfinder.out)
 OUT=$(pwd)
 OUT="$OUT/flawfinder.out"
 echo $(python3 $PARSER $OUT >> $CSV)
+rm $OUT

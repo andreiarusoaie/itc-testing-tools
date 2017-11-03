@@ -71,6 +71,8 @@ FLAWFINDER_OUT_TOTAL=flawfinder_out_total.csv
 
 all: count-errors gather-errors merge-files
 
+base: gather-errors merge-files
+
 count-errors:
 	$(COUNT_ERRORS) $(W_C_DEFECTS_DIR) $(WO_C_DEFECTS_DIR) $(C_COUNT_ERROR_FILE)
 	$(COUNT_ERRORS) $(W_CPP_DEFECTS_DIR) $(WO_CPP_DEFECTS_DIR) $(CPP_COUNT_ERROR_FILE)
