@@ -1,3 +1,4 @@
+#!/bin/bash
 DIR=$1
 CSV=$2
 MODE=$3
