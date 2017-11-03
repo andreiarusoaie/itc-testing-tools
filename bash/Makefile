@@ -1,9 +1,9 @@
 ## Location of ITC workbench: this should be modified by need
-W_C_DEFECTS_DIR=~/work/itc-benchmarks/01.w_Defects/
-W_CPP_DEFECTS_DIR=~/work/itc-benchmarks/03.w_Defects_Cpp/
+W_C_DEFECTS_DIR=../../itc-benchmarks/01.w_Defects/
+W_CPP_DEFECTS_DIR=../../itc-benchmarks/03.w_Defects_Cpp/
 
-WO_C_DEFECTS_DIR=~/work/itc-benchmarks/02.wo_Defects/
-WO_CPP_DEFECTS_DIR=~/work/itc-benchmarks/04.wo_Defects_Cpp/
+WO_C_DEFECTS_DIR=../../itc-benchmarks/02.wo_Defects/
+WO_CPP_DEFECTS_DIR=../../itc-benchmarks/04.wo_Defects_Cpp/
 
 
 
@@ -71,7 +71,8 @@ CLANG_ALPHA_OUT_CPP_TOTAL=clang_alpha_out_cpp_total.csv
 
 ## CPPCHECK
 CPPCHECK=./cppcheck.sh
-CPPCHECK_EXE=/usr/local/bin/cppcheck
+CPPCHECK_EXE=cppcheck #/usr/local/bin/cppcheck
+CPPCHECK_EXE_CPP=cppcheck #/usr/local/bin/cppcheck
 CPPCHECK_OUTPUT_C_W=cppcheck_c_w_errors_per_line.csv
 CPPCHECK_OUTPUT_C_WO=cppcheck_c_wo_errors_per_line.csv
 CPPCHECK_OUTPUT_CPP_W=cppcheck_cpp_w_errors_per_line.csv
