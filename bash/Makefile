@@ -33,11 +33,19 @@ CPP_MERGE_FILE=cpp_merge_file.csv
 
 ## Tools configurations
 
-## CLANG
-# CLANG=./clang.sh
-# CLANG_EXE=/usr/bin/clang
-# CLANG_OUTPUT=clang_c_errors_per_line.csv
-# CLANG_OPTS="-cc1 -analyze -analyzer-checker=core"
+## CLANG CORE
+CLANG_CORE=./clang.sh
+CLANG_CORE_EXE=/usr/bin/clang
+CLANG_CORE_OUTPUT_C_W=clang_core_c_w_errors_per_line.csv
+CLANG_CORE_OUTPUT_C_WO=clang_core_c_wo_errors_per_line.csv
+CLANG_CORE_OUTPUT_CPP_W=clang_core_cpp_w_errors_per_line.csv
+CLANG_CORE_OUTPUT_CPP_WO=clang_core_cpp_wo_errors_per_line.csv
+CLANG_CORE_OPTS='-cc1 -analyze -analyzer-checker=core -I $(W_C_DEFECTS_DIR)/../include'
+CLANG_CORE_OUT_SUBDEFECTS=clang_core_out_subdefects.csv
+CLANG_CORE_OUT_DEFECTS=clang_core_out_defects.csv
+CLANG_CORE_OUT_TOTAL=clang_core_out_total.csv
+
+
 
 ## CPPCHECK
 CPPCHECK=./cppcheck.sh
@@ -104,8 +112,10 @@ flawfinder:
 	$(FLAWFINDER) $(WO_C_DEFECTS_DIR) $(FLAWFINDER_OUTPUT_C_WO) $(FLAWFINDER_EXE) $(FLAWFINDER_OPTS) 
 	python3 ./statistics.py $(C_MERGE_FILE) $(FLAWFINDER_OUTPUT_C_W) $(FLAWFINDER_OUTPUT_C_WO) $(FLAWFINDER_OUT_SUBDEFECTS) $(FLAWFINDER_OUT_DEFECTS) $(FLAWFINDER_OUT_TOTAL)
 
-clang:
-	$(CLANG) $(W_C_DEFECTS_DIR) $(CLANG_OUTPUT) $(CLANG_EXE) $(CLANG_OPTS) 
+clang: 
+	$(CLANG_CORE) $(W_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
+	$(CLANG_CORE) $(WO_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
+	python3 ./statistics.py $(C_MERGE_FILE) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_OUT_SUBDEFECTS) $(CLANG_CORE_OUT_DEFECTS) $(CLANG_CORE_OUT_TOTAL)
 
 
 

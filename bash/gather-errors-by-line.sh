@@ -9,7 +9,7 @@ else
 fi
 # echo "SEARCH: $SEARCH"
 
-rm $CSV
+rm -f $CSV
 echo "File,Line,CWE, Defect Type, Defect Sub-Type" >> $CSV
 
 echo "Gathering errors..."

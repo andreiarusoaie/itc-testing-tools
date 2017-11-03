@@ -6,12 +6,12 @@ from math import sqrt
 merged_csv_filename=sys.argv[1]
 tool_filename_w_defects=sys.argv[2]
 tool_filename_wo_defects=sys.argv[3]
-
 tool_out_subdefects=sys.argv[4]
 tool_out_defects=sys.argv[5]
 tool_out_total=sys.argv[6]
 
 
+# defects reported by the tool
 w_defects_found = defaultdict(lambda: [])
 wo_defects_found = defaultdict(lambda: [])
 
@@ -46,6 +46,8 @@ with open(tool_filename_wo_defects, "r") as merged_file:
 # for filename in wo_defects_found.keys():
 #     print(filename)
 #     print(wo_defects_found[filename])
+
+
 
 
 
@@ -100,6 +102,8 @@ with open(merged_csv_filename, "r") as merged_file:
 
 # print(variations)
 
+
+# Sub-defects stats
 sys.stdout = open(tool_out_subdefects, 'w')
 print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity")
 for filename in defect_dict.keys():
@@ -117,6 +121,7 @@ for filename in defect_dict.keys():
     print(filename,",", defect_dict[filename],",", subdefect_dict[filename],",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
     
 
+# Defects stats
 sys.stdout = open(tool_out_defects, 'w')
 print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity")
 for defect in filenames_by_defect.keys():
@@ -136,6 +141,7 @@ for defect in filenames_by_defect.keys():
     print(defect,",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
 
     
+# Total stats
 sys.stdout = open(tool_out_total, 'w')
 count_tp = 0
 count_fp = 0

@@ -2,7 +2,7 @@ DIR_W=$1
 DIR_WO=$2
 CSV=$3
 
-rm $CSV
+rm -f $CSV
 echo "File,Count W, Count W/o" >> $CSV
 
 echo "Counting errors..."
