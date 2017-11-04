@@ -5,7 +5,7 @@ OPTS=$4
 
 echo "$DIR\n$CSV\n$EXE\n$OPTS"
 
-PARSER=../python/clang-parser.py
+PARSER=./python/clang-parser.py
 echo "File, Line, Error" > $CSV
 
 OUT=$(pwd)

@@ -5,7 +5,7 @@ OPTS=$4
 
 echo "$DIR\n$CSV\n$EXE\n$OPTS"
 
-PARSER=../python/infer-parser.py
+PARSER=./python/infer-parser.py
 echo "File, Line, Error" > $CSV
 
 echo $(cd $DIR ; make clean ; $EXE run -- make > /dev/null ; cd -)

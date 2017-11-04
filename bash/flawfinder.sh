@@ -3,7 +3,7 @@ CSV=$2
 EXE=$3
 OPTS=$4
 
-PARSER=../python/flawfinder-parser.py
+PARSER=./python/flawfinder-parser.py
 echo "File, Line, Error" > $CSV
 
 echo "$DIR\n$CSV\n$EXE"
