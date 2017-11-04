@@ -1,3 +1,4 @@
+#!/bin/bash
 CSV_ERROR=$1
 CSV_WO_ERROR=$2
 OUT_CSV=$3

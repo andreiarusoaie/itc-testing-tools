@@ -1,3 +1,4 @@
+#!/bin/bash
 DIR_W=$1
 DIR_WO=$2
 CSV=$3
