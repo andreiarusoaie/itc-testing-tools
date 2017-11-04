@@ -14,11 +14,7 @@ echo "File, Line, Error" > $CSV
 
 echo "$DIR\n$CSV\n$EXE\n$OPTS"
 
-echo "HERE HERE-------------"
-set -o xtrace
 $EXE --quiet $DIR $OPTS 2> cppcheck-output.xml
-set +o xtrace
-echo "HERE HERE============="
 
 XML=$(pwd)
 XML="$XML/cppcheck-output.xml"
