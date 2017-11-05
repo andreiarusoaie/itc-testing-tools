@@ -86,6 +86,23 @@ CPPCHECK_OUT_CPP_DEFECTS=./csv/cppcheck/cppcheck_out_cpp_defects.csv
 CPPCHECK_OUT_CPP_TOTAL=./csv/cppcheck/cppcheck_out_cpp_total.csv
 
 
+## UNO
+UNO=./bash/uno.sh
+UNO_EXE=uno
+UNO_EXE_CPP=uno
+UNO_OUTPUT_C_W=./csv/uno/temp/uno_c_w_errors_per_line.csv
+UNO_OUTPUT_C_WO=./csv/uno/temp/uno_c_wo_errors_per_line.csv
+UNO_OUTPUT_CPP_W=./csv/uno/temp/uno_cpp_w_errors_per_line.csv
+UNO_OUTPUT_CPP_WO=./csv/uno/temp/uno_cpp_wo_errors_per_line.csv
+UNO_OPTS=
+UNO_OUT_SUBDEFECTS=./csv/uno/uno_out_subdefects.csv
+UNO_OUT_DEFECTS=./csv/uno/uno_out_defects.csv
+UNO_OUT_TOTAL=./csv/uno/uno_out_total.csv
+UNO_OUT_CPP_SUBDEFECTS=./csv/uno/uno_out_cpp_subdefects.csv
+UNO_OUT_CPP_DEFECTS=./csv/uno/uno_out_cpp_defects.csv
+UNO_OUT_CPP_TOTAL=./csv/uno/uno_out_cpp_total.csv
+
+
 ## FLAWFINDER
 FLAWFINDER=./bash/flawfinder.sh
 FLAWFINDER_EXE=flawfinder
@@ -127,6 +144,7 @@ all: count-errors gather-errors merge-files
 prepare-dirs:
 	mkdir -p ./csv/setup/temp/
 	mkdir -p ./csv/cppcheck/temp/
+	mkdir -p ./csv/uno/temp/
 	mkdir -p ./csv/clangalpha/temp/
 	mkdir -p ./csv/clangcore/temp/
 	mkdir -p ./csv/flawfinder/temp/
@@ -154,13 +172,22 @@ statistics: merge-files cppcheck flawfinder clang-core clang-alpha infer
 
 
 # TOOLS TARGETS
-cppcheck: 
+cppcheck:
 	$(CPPCHECK) $(W_C_DEFECTS_DIR) $(CPPCHECK_OUTPUT_C_W) $(CPPCHECK_EXE) $(CPPCHECK_OPTS) 
 	$(CPPCHECK) $(WO_C_DEFECTS_DIR) $(CPPCHECK_OUTPUT_C_WO) $(CPPCHECK_EXE) $(CPPCHECK_OPTS) 
 	python3 ${STATISTICS} $(C_MERGE_FILE) $(CPPCHECK_OUTPUT_C_W) $(CPPCHECK_OUTPUT_C_WO) $(CPPCHECK_OUT_SUBDEFECTS) $(CPPCHECK_OUT_DEFECTS) $(CPPCHECK_OUT_TOTAL)
 	$(CPPCHECK) $(W_CPP_DEFECTS_DIR) $(CPPCHECK_OUTPUT_CPP_W) $(CPPCHECK_EXE_CPP) $(CPPCHECK_OPTS) 
 	$(CPPCHECK) $(WO_CPP_DEFECTS_DIR) $(CPPCHECK_OUTPUT_CPP_WO) $(CPPCHECK_EXE_CPP) $(CPPCHECK_OPTS)
 	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(CPPCHECK_OUTPUT_CPP_W) $(CPPCHECK_OUTPUT_CPP_WO) $(CPPCHECK_OUT_CPP_SUBDEFECTS) $(CPPCHECK_OUT_CPP_DEFECTS) $(CPPCHECK_OUT_CPP_TOTAL)
+
+
+uno:
+	$(UNO) $(W_C_DEFECTS_DIR) $(UNO_OUTPUT_C_W) $(UNO_EXE) $(UNO_OPTS) 
+	$(UNO) $(WO_C_DEFECTS_DIR) $(UNO_OUTPUT_C_WO) $(UNO_EXE) $(UNO_OPTS) 
+	python3 ${STATISTICS} $(C_MERGE_FILE) $(UNO_OUTPUT_C_W) $(UNO_OUTPUT_C_WO) $(UNO_OUT_SUBDEFECTS) $(UNO_OUT_DEFECTS) $(UNO_OUT_TOTAL)
+	$(UNO) $(W_CPP_DEFECTS_DIR) $(UNO_OUTPUT_CPP_W) $(UNO_EXE_CPP) $(UNO_OPTS) 
+	$(UNO) $(WO_CPP_DEFECTS_DIR) $(UNO_OUTPUT_CPP_WO) $(UNO_EXE_CPP) $(UNO_OPTS)
+	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(UNO_OUTPUT_CPP_W) $(UNO_OUTPUT_CPP_WO) $(UNO_OUT_CPP_SUBDEFECTS) $(UNO_OUT_CPP_DEFECTS) $(UNO_OUT_CPP_TOTAL)
 
 
 flawfinder:
