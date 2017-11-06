@@ -68,7 +68,6 @@ CLANG_ALPHA_OUT_CPP_SUBDEFECTS=./csv/clangalpha/clang_alpha_out_cpp_subdefects.c
 CLANG_ALPHA_OUT_CPP_DEFECTS=./csv/clangalpha/clang_alpha_out_cpp_defects.csv
 CLANG_ALPHA_OUT_CPP_TOTAL=./csv/clangalpha/clang_alpha_out_cpp_total.csv
 
-
 ## CPPCHECK
 CPPCHECK=./bash/cppcheck.sh
 CPPCHECK_EXE=cppcheck
@@ -84,6 +83,23 @@ CPPCHECK_OUT_TOTAL=./csv/cppcheck/cppcheck_out_total.csv
 CPPCHECK_OUT_CPP_SUBDEFECTS=./csv/cppcheck/cppcheck_out_cpp_subdefects.csv
 CPPCHECK_OUT_CPP_DEFECTS=./csv/cppcheck/cppcheck_out_cpp_defects.csv
 CPPCHECK_OUT_CPP_TOTAL=./csv/cppcheck/cppcheck_out_cpp_total.csv
+
+
+## SPARSE
+SPARSE=./bash/sparse.sh
+SPARSE_EXE=sparse
+SPARSE_EXE_CPP=sparse
+SPARSE_OUTPUT_C_W=./csv/sparse/temp/sparse_c_w_errors_per_line.csv
+SPARSE_OUTPUT_C_WO=./csv/sparse/temp/sparse_c_wo_errors_per_line.csv
+SPARSE_OUTPUT_CPP_W=./csv/sparse/temp/sparse_cpp_w_errors_per_line.csv
+SPARSE_OUTPUT_CPP_WO=./csv/sparse/temp/sparse_cpp_wo_errors_per_line.csv
+SPARSE_OPTS=
+SPARSE_OUT_SUBDEFECTS=./csv/sparse/sparse_out_subdefects.csv
+SPARSE_OUT_DEFECTS=./csv/sparse/sparse_out_defects.csv
+SPARSE_OUT_TOTAL=./csv/sparse/sparse_out_total.csv
+SPARSE_OUT_CPP_SUBDEFECTS=./csv/sparse/sparse_out_cpp_subdefects.csv
+SPARSE_OUT_CPP_DEFECTS=./csv/sparse/sparse_out_cpp_defects.csv
+SPARSE_OUT_CPP_TOTAL=./csv/sparse/sparse_out_cpp_total.csv
 
 
 ## UNO
@@ -144,6 +160,7 @@ all: count-errors gather-errors merge-files
 prepare-dirs:
 	mkdir -p ./csv/setup/temp/
 	mkdir -p ./csv/cppcheck/temp/
+	mkdir -p ./csv/sparse/temp/
 	mkdir -p ./csv/uno/temp/
 	mkdir -p ./csv/clangalpha/temp/
 	mkdir -p ./csv/clangcore/temp/
@@ -180,6 +197,13 @@ cppcheck:
 	$(CPPCHECK) $(WO_CPP_DEFECTS_DIR) $(CPPCHECK_OUTPUT_CPP_WO) $(CPPCHECK_EXE_CPP) $(CPPCHECK_OPTS)
 	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(CPPCHECK_OUTPUT_CPP_W) $(CPPCHECK_OUTPUT_CPP_WO) $(CPPCHECK_OUT_CPP_SUBDEFECTS) $(CPPCHECK_OUT_CPP_DEFECTS) $(CPPCHECK_OUT_CPP_TOTAL)
 
+sparse:
+	$(SPARSE) $(W_C_DEFECTS_DIR) $(SPARSE_OUTPUT_C_W) $(SPARSE_EXE) $(SPARSE_OPTS) 
+	$(SPARSE) $(WO_C_DEFECTS_DIR) $(SPARSE_OUTPUT_C_WO) $(SPARSE_EXE) $(SPARSE_OPTS) 
+	python3 ${STATISTICS} $(C_MERGE_FILE) $(SPARSE_OUTPUT_C_W) $(SPARSE_OUTPUT_C_WO) $(SPARSE_OUT_SUBDEFECTS) $(SPARSE_OUT_DEFECTS) $(SPARSE_OUT_TOTAL)
+	$(SPARSE) $(W_CPP_DEFECTS_DIR) $(SPARSE_OUTPUT_CPP_W) $(SPARSE_EXE_CPP) $(SPARSE_OPTS) 
+	$(SPARSE) $(WO_CPP_DEFECTS_DIR) $(SPARSE_OUTPUT_CPP_WO) $(SPARSE_EXE_CPP) $(SPARSE_OPTS)
+	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(SPARSE_OUTPUT_CPP_W) $(SPARSE_OUTPUT_CPP_WO) $(SPARSE_OUT_CPP_SUBDEFECTS) $(SPARSE_OUT_CPP_DEFECTS) $(SPARSE_OUT_CPP_TOTAL)
 
 uno:
 	$(UNO) $(W_C_DEFECTS_DIR) $(UNO_OUTPUT_C_W) $(UNO_EXE) $(UNO_OPTS) 

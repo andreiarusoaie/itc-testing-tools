@@ -40,4 +40,5 @@ do
     
 done
 
-echo "Done.\nOutput written in $CSV.\n"
+echo "Done."
+echo "Output written in $CSV."
