@@ -34,15 +34,15 @@ CPP_MERGE_FILE=./csv/setup/cpp_merge_file.csv
 ## Tools configurations
 
 ## CLANG CORE
-CLANG_CORE=./bash/clang.sh
-CLANG_CORE_PP=./bash/clang++.sh
+CLANG_CORE=./python/clang.py
+CLANG_CORE_PP=./python/clang++.py
 CLANG_CORE_EXE=clang
 CLANG_CORE_EXE_CPP=clang++
 CLANG_CORE_OUTPUT_C_W=./csv/clangcore/temp/clang_core_c_w_errors_per_line.csv
 CLANG_CORE_OUTPUT_C_WO=./csv/clangcore/temp/clang_core_c_wo_errors_per_line.csv
 CLANG_CORE_OUTPUT_CPP_W=./csv/clangcore/temp/clang_core_cpp_w_errors_per_line.csv
 CLANG_CORE_OUTPUT_CPP_WO=./csv/clangcore/temp/clang_core_cpp_wo_errors_per_line.csv
-CLANG_CORE_OPTS='-cc1 -analyze -analyzer-checker=core -I $(W_C_DEFECTS_DIR)/../include'
+CLANG_CORE_OPTS='-cc1 -analyze -analyzer-checker=core'
 CLANG_CORE_OUT_SUBDEFECTS=./csv/clangcore/clang_core_out_subdefects.csv
 CLANG_CORE_OUT_DEFECTS=./csv/clangcore/clang_core_out_defects.csv
 CLANG_CORE_OUT_TOTAL=./csv/clangcore/clang_core_out_total.csv
@@ -52,15 +52,15 @@ CLANG_CORE_OUT_CPP_TOTAL=./csv/clangcore/clang_core_out_cpp_total.csv
 
 
 ## CLANG ALPHA
-CLANG_ALPHA=./bash/clang.sh
-CLANG_ALPHA_PP=./bash/clang++.sh
+CLANG_ALPHA=./python/clang.py
+CLANG_ALPHA_PP=./python/clang++.py
 CLANG_ALPHA_EXE=clang
 CLANG_ALPHA_EXE_CPP=clang++
 CLANG_ALPHA_OUTPUT_C_W=./csv/clangalpha/temp/clang_alpha_c_w_errors_per_line.csv
 CLANG_ALPHA_OUTPUT_C_WO=./csv/clangalpha/temp/clang_alpha_c_wo_errors_per_line.csv
 CLANG_ALPHA_OUTPUT_CPP_W=./csv/clangalpha/temp/clang_alpha_cpp_w_errors_per_line.csv
 CLANG_ALPHA_OUTPUT_CPP_WO=./csv/clangalpha/temp/clang_alpha_cpp_wo_errors_per_line.csv
-CLANG_ALPHA_OPTS='-cc1 -analyze -analyzer-checker=alpha -I $(W_C_DEFECTS_DIR)/../include'
+CLANG_ALPHA_OPTS='-cc1 -analyze -analyzer-checker=alpha'
 CLANG_ALPHA_OUT_SUBDEFECTS=./csv/clangalpha/clang_alpha_out_subdefects.csv
 CLANG_ALPHA_OUT_DEFECTS=./csv/clangalpha/clang_alpha_out_defects.csv
 CLANG_ALPHA_OUT_TOTAL=./csv/clangalpha/clang_alpha_out_total.csv
@@ -223,19 +223,19 @@ flawfinder:
 	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(FLAWFINDER_OUTPUT_CPP_W) $(FLAWFINDER_OUTPUT_CPP_WO) $(FLAWFINDER_OUT_CPP_SUBDEFECTS) $(FLAWFINDER_OUT_CPP_DEFECTS) $(FLAWFINDER_OUT_CPP_TOTAL)
 
 clang-core: 
-	$(CLANG_CORE) $(W_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
-	$(CLANG_CORE) $(WO_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
+	python3 $(CLANG_CORE) $(W_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
+	python3 $(CLANG_CORE) $(WO_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
 	python3 ${STATISTICS} $(C_MERGE_FILE) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_OUTPUT_C_WO) $(CLANG_CORE_OUT_SUBDEFECTS) $(CLANG_CORE_OUT_DEFECTS) $(CLANG_CORE_OUT_TOTAL)
-	$(CLANG_CORE_PP) $(W_CPP_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_CPP_W) $(CLANG_CORE_EXE_CPP) $(CLANG_CORE_OPTS) 
-	$(CLANG_CORE_PP) $(WO_CPP_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_CPP_WO) $(CLANG_CORE_EXE_CPP) $(CLANG_CORE_OPTS)
+	python3 $(CLANG_CORE_PP) $(W_CPP_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_CPP_W) $(CLANG_CORE_EXE_CPP) $(CLANG_CORE_OPTS) 
+	python3 $(CLANG_CORE_PP) $(WO_CPP_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_CPP_WO) $(CLANG_CORE_EXE_CPP) $(CLANG_CORE_OPTS)
 	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(CLANG_CORE_OUTPUT_CPP_W) $(CLANG_CORE_OUTPUT_CPP_WO) $(CLANG_CORE_OUT_CPP_SUBDEFECTS) $(CLANG_CORE_OUT_CPP_DEFECTS) $(CLANG_CORE_OUT_CPP_TOTAL)
 
 clang-alpha:
-	$(CLANG_ALPHA) $(W_C_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_C_W) $(CLANG_ALPHA_EXE) $(CLANG_ALPHA_OPTS) 
-	$(CLANG_ALPHA) $(WO_C_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_C_WO) $(CLANG_ALPHA_EXE) $(CLANG_ALPHA_OPTS) 
+	python3 $(CLANG_ALPHA) $(W_C_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_C_W) $(CLANG_ALPHA_EXE) $(CLANG_ALPHA_OPTS) 
+	python3 $(CLANG_ALPHA) $(WO_C_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_C_WO) $(CLANG_ALPHA_EXE) $(CLANG_ALPHA_OPTS) 
 	python3 ${STATISTICS} $(C_MERGE_FILE) $(CLANG_ALPHA_OUTPUT_C_W) $(CLANG_ALPHA_OUTPUT_C_WO) $(CLANG_ALPHA_OUT_SUBDEFECTS) $(CLANG_ALPHA_OUT_DEFECTS) $(CLANG_ALPHA_OUT_TOTAL)
-	$(CLANG_ALPHA_PP) $(W_CPP_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_CPP_W) $(CLANG_ALPHA_EXE_CPP) $(CLANG_ALPHA_OPTS)
-	$(CLANG_ALPHA_PP) $(WO_CPP_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_CPP_WO) $(CLANG_ALPHA_EXE_CPP) $(CLANG_ALPHA_OPTS)
+	python3 $(CLANG_ALPHA_PP) $(W_CPP_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_CPP_W) $(CLANG_ALPHA_EXE_CPP) $(CLANG_ALPHA_OPTS)
+	python3 $(CLANG_ALPHA_PP) $(WO_CPP_DEFECTS_DIR) $(CLANG_ALPHA_OUTPUT_CPP_WO) $(CLANG_ALPHA_EXE_CPP) $(CLANG_ALPHA_OPTS)
 	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(CLANG_ALPHA_OUTPUT_CPP_W) $(CLANG_ALPHA_OUTPUT_CPP_WO) $(CLANG_ALPHA_OUT_CPP_SUBDEFECTS) $(CLANG_ALPHA_OUT_CPP_DEFECTS) $(CLANG_ALPHA_OUT_CPP_TOTAL)
 
 infer: 
