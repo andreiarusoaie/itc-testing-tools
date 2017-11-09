@@ -20,7 +20,7 @@ def clanalyze(directory, csv, exe, opts):
     temp_path = os.path.join(os.getcwd(), "csv", "clanalyze", "temp", "output.txt")
 
     try:
-        (output, err, exit, time) = system.system_call(exe + " " + opts + " " + directory + "/*.c > " + temp_path)
+        (output, err, exit, time) = python.system.system_call(exe + " " + directory + "/*.c* > " + temp_path)
     except:
         print("TROUBLE CALLING ANALYZER: ", sys.exc_info())
     
