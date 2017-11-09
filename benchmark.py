@@ -144,7 +144,7 @@ INFER_OUT_CPP_TOTAL = "./csv/infer/infer_out_cpp_total.csv"
 
 # ## CLANALYZE
 CLANALYZE = "./python/clanalyze.py"
-CLANALYZE_EXE = "\"cl /analyze\""
+CLANALYZE_EXE = "cl /analyze"
 CLANALYZE_OUTPUT_C_W = "./csv/clanalyze/temp/clanalyze_c_w_errors_per_line.csv"
 CLANALYZE_OUTPUT_C_WO = "./csv/clanalyze/temp/clanalyze_c_wo_errors_per_line.csv"
 CLANALYZE_OUTPUT_CPP_W = "./csv/clanalyze/temp/clanalyze_cpp_w_errors_per_line.csv"
@@ -192,7 +192,7 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(".", "csv", "splint", "temp"))
 
 def call_python(args):
-    python.system.system_call("python3 " + " ".join(args))
+    python.system.system_call("python " + " ".join(args))
 
 def run_cppcheck():
     print("Running cppcheck")
