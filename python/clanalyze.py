@@ -20,16 +20,17 @@ def clanalyze(directory, csv, exe, opts):
     temp_path = os.path.join(os.getcwd(), "csv", "clanalyze", "temp", "output.txt")
 
     try:
-        (output, err, exit, time) = python.system.system_call(exe + " " + directory + "/*.c* > " + temp_path)
+        (output, err, exit, time) = python.system.system_call(exe + " " + directory + "/*.c* > " + temp_path + " /I " + directory)
     except:
-        print("TROUBLE CALLING ANALYZER: ", sys.exc_info())
+        print("TROUBLE CALLING ANALYZER(0): warning XXX: ", sys.exc_info())
     
     regexp = re.compile("(\S+)\((\d+)\)\s?:\s+\S+\s+\S+:\s+(.+)")
-
+    sys.stdout = open(csv, "w")
     with open(temp_path) as f:
         for line in f.readlines():
             m = regexp.match(line)
             if not (m is None):
-                print("Filename: ", m.groups()[0], "Line number: ", m.groups()[1], "Message: ", m.groups()[2])
-
-    print("DONE CLANALYZE")
+                name = m.groups()[0]
+                idx = name.rfind("\\")
+                print(name[idx+1:], ", ", m.groups()[1], ",", m.groups()[2])
+    sys.stdout = sys.__stdout__

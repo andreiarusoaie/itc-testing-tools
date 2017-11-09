@@ -11,5 +11,4 @@ def system_call(cmd, dir="."):
     (output, err) = process.communicate()
     exit_code = process.wait()
     vtime = round(time.time() - vtime, 5);
-    print("RESULT:", output)
     return (output, err, exit_code, vtime)
