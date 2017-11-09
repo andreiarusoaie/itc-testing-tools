@@ -251,7 +251,7 @@ infer:
 # UTILS
 
 clean:
-	rm -f ./csv/*.csv 
+	rm -rf ./csv/temp/
 	rm -f ./csv/cppcheck/*.csv 
 	rm -f ./csv/cppcheck/temp/*.csv 
 	rm -f ./csv/clangcore/*.csv 

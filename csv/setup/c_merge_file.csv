@@ -1,0 +1,636 @@
+File, Line, Line,  Defect Type,  Defect Sub-Type
+bit_shift.c,  22,  22,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  34,  34,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  46,  46,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  58,  58,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  70,  70,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  82,  82,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  94,  94,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  107,  107,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  121,  121,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  134,  134,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  147,  147,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  164,  164,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  176,  176,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  194,  194,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  209,  209,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  226,  226,  Numerical defects,  Bit shift bigger than integral type or negative
+bit_shift.c,  237,  237,  Numerical defects,  Bit shift bigger than integral type or negative
+buffer_overrun_dynamic.c,  27,  26,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  42,  41,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  62,  61,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  77,  76,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  94,  93,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  112,  111,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  130,  129,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  152,  151,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  174,  173,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  198,  197,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  218,  217,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  233,  232,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  248,  247,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  263,  262,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  278,  277,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  298,  297,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  312,  311,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  333,  332,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  350,  349,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  369,  368,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  387,  386,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  403,  402,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  422,  421,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  435,  434,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  462,  461,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  480,  479,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  496,  495,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  514,  513,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  532,  531,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  559,  558,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  580,  579,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_overrun_dynamic.c,  607,  607,  Dynamic memory defects,  Dynamic buffer overrun
+buffer_underrun_dynamic.c,  29,  27,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  45,  42,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  65,  62,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  80,  77,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  97,  94,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  115,  112,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  133,  130,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  155,  152,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  178,  174,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  202,  198,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  222,  218,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  237,  233,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  253,  249,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  268,  264,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  283,  279,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  303,  299,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  317,  313,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  338,  334,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  355,  351,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  374,  370,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  392,  388,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  408,  404,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  427,  423,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  439,  435,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  466,  462,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  484,  480,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  500,  496,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  519,  515,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  532,  529,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  559,  556,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  578,  575,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  606,  603,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  624,  625,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  648,  649,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  679,  680,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  701,  700,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  721,  720,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  751,  750,  Dynamic memory defects,  Dynamic buffer underrun
+buffer_underrun_dynamic.c,  778,  777,  Dynamic memory defects,  Dynamic buffer underrun
+cmp_funcadr.c,  26,  26,  Pointer related defects,  Comparison NULL with function pointer
+cmp_funcadr.c,  48,  47,  Pointer related defects,  Comparison NULL with function pointer
+conflicting_cond.c,  24,  25,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  43,  44,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  62,  63,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  83,  85,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  103,  105,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  118,  120,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  137,  139,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  157,  159,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  177,  179,  Inappropriate code,  Contradict conditions
+conflicting_cond.c,  199,  201,  Inappropriate code,  Contradict conditions
+data_lost.c,  22,  24,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  34,  36,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  46,  48,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  58,  60,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  70,  72,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  82,  85,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  94,  97,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  106,  109,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  118,  121,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  135,  138,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  145,  148,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  158,  161,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  170,  173,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  182,  185,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  198,  201,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  209,  212,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  226,  229,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  240,  243,  Numerical defects,  Integer precision lost because of cast
+data_lost.c,  256,  259,  Numerical defects,  Integer precision lost because of cast
+data_overflow.c,  25,  25,  Numerical defects,  Data overflow
+data_overflow.c,  37,  37,  Numerical defects,  Data overflow
+data_overflow.c,  49,  50,  Numerical defects,  Data overflow
+data_overflow.c,  61,  62,  Numerical defects,  Data overflow
+data_overflow.c,  73,  74,  Numerical defects,  Data overflow
+data_overflow.c,  85,  86,  Numerical defects,  Data overflow
+data_overflow.c,  97,  98,  Numerical defects,  Data overflow
+data_overflow.c,  109,  110,  Numerical defects,  Data overflow
+data_overflow.c,  126,  127,  Numerical defects,  Data overflow
+data_overflow.c,  142,  143,  Numerical defects,  Data overflow
+data_overflow.c,  154,  155,  Numerical defects,  Data overflow
+data_overflow.c,  166,  167,  Numerical defects,  Data overflow
+data_overflow.c,  178,  179,  Numerical defects,  Data overflow
+data_overflow.c,  191,  192,  Numerical defects,  Data overflow
+data_overflow.c,  205,  206,  Numerical defects,  Data overflow
+data_overflow.c,  217,  218,  Numerical defects,  Data overflow
+data_overflow.c,  229,  230,  Numerical defects,  Data overflow
+data_overflow.c,  246,  247,  Numerical defects,  Data overflow
+data_overflow.c,  258,  259,  Numerical defects,  Data overflow
+data_overflow.c,  276,  277,  Numerical defects,  Data overflow
+data_overflow.c,  291,  292,  Numerical defects,  Data overflow
+data_overflow.c,  308,  309,  Numerical defects,  Data overflow
+data_overflow.c,  319,  320,  Numerical defects,  Data overflow
+data_overflow.c,  335,  336,  Numerical defects,  Data overflow
+data_overflow.c,  351,  352,  Numerical defects,  Data overflow
+data_underflow.c,  21,  20,  Numerical defects,  Data underflow
+data_underflow.c,  33,  32,  Numerical defects,  Data underflow
+data_underflow.c,  47,  46,  Numerical defects,  Data underflow
+data_underflow.c,  59,  58,  Numerical defects,  Data underflow
+data_underflow.c,  71,  70,  Numerical defects,  Data underflow
+data_underflow.c,  82,  81,  Numerical defects,  Data underflow
+data_underflow.c,  97,  96,  Numerical defects,  Data underflow
+data_underflow.c,  112,  111,  Numerical defects,  Data underflow
+data_underflow.c,  124,  123,  Numerical defects,  Data underflow
+data_underflow.c,  141,  140,  Numerical defects,  Data underflow
+data_underflow.c,  153,  152,  Numerical defects,  Data underflow
+data_underflow.c,  171,  170,  Numerical defects,  Data underflow
+dead_code.c,  24,  22,  Inappropriate code,  Dead code
+dead_code.c,  41,  39,  Inappropriate code,  Dead code
+dead_code.c,  62,  60,  Inappropriate code,  Dead code
+dead_code.c,  78,  76,  Inappropriate code,  Dead code
+dead_code.c,  100,  98,  Inappropriate code,  Dead code
+dead_code.c,  117,  115,  Inappropriate code,  Dead code
+dead_code.c,  134,  132,  Inappropriate code,  Dead code
+dead_code.c,  151,  149,  Inappropriate code,  Dead code
+dead_code.c,  169,  167,  Inappropriate code,  Dead code
+dead_code.c,  191,  189,  Inappropriate code,  Dead code
+dead_code.c,  208,  206,  Inappropriate code,  Dead code
+dead_code.c,  229,  227,  Inappropriate code,  Dead code
+dead_code.c,  249,  247,  Inappropriate code,  Dead code
+dead_lock.c,  62,  62,  Concurrency defects,  Dead lock
+dead_lock.c,  196,  194,  Concurrency defects,  Dead lock
+dead_lock.c,  345,  343,  Concurrency defects,  Dead lock
+dead_lock.c,  502,  500,  Concurrency defects,  Dead lock
+dead_lock.c,  629,  623,  Concurrency defects,  Dead lock
+deletion_of_data_structure_sentinel.c,  26,  26,  Dynamic memory defects,  Deletion of data structure sentinel
+deletion_of_data_structure_sentinel.c,  41,  42,  Dynamic memory defects,  Deletion of data structure sentinel
+deletion_of_data_structure_sentinel.c,  62,  63,  Dynamic memory defects,  Deletion of data structure sentinel
+double_free.c,  22,  22,  Resource management defects,  Double free
+double_free.c,  43,  41,  Resource management defects,  Double free
+double_free.c,  64,  60,  Resource management defects,  Double free
+double_free.c,  87,  77,  Resource management defects,  Double free
+double_free.c,  101,  90,  Resource management defects,  Double free
+double_free.c,  115,  104,  Resource management defects,  Double free
+double_free.c,  131,  120,  Resource management defects,  Double free
+double_free.c,  149,  130,  Resource management defects,  Double free
+double_free.c,  168,  156,  Resource management defects,  Double free
+double_free.c,  187,  172,  Resource management defects,  Double free
+double_free.c,  204,  191,  Resource management defects,  Double free
+double_free.c,  222,  209,  Resource management defects,  Double free
+double_lock.c,  42,  45,  Concurrency defects,  Double lock
+double_lock.c,  93,  96,  Concurrency defects,  Double lock
+double_lock.c,  140,  143,  Concurrency defects,  Double lock
+double_lock.c,  208,  213,  Concurrency defects,  Double lock
+double_release.c,  35,  35,  Concurrency defects,  Double release
+double_release.c,  79,  79,  Concurrency defects,  Double release
+double_release.c,  133,  136,  Concurrency defects,  Double release
+double_release.c,  178,  182,  Concurrency defects,  Double release
+double_release.c,  226,  231,  Concurrency defects,  Double release
+double_release.c,  283,  274,  Concurrency defects,  Double release
+endless_loop.c,  24,  25,  Misc defects,  Unintentional end less loop
+endless_loop.c,  41,  47,  Misc defects,  Unintentional end less loop
+endless_loop.c,  57,  63,  Misc defects,  Unintentional end less loop
+endless_loop.c,  74,  84,  Misc defects,  Unintentional end less loop
+endless_loop.c,  95,  108,  Misc defects,  Unintentional end less loop
+endless_loop.c,  111,  129,  Misc defects,  Unintentional end less loop
+endless_loop.c,  133,  153,  Misc defects,  Unintentional end less loop
+endless_loop.c,  150,  174,  Misc defects,  Unintentional end less loop
+endless_loop.c,  166,  202,  Misc defects,  Unintentional end less loop
+free_nondynamically_allocated_memory.c,  22,  23,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  36,  36,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  47,  48,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  62,  62,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  86,  85,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  103,  103,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  115,  115,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  128,  128,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  141,  141,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  155,  156,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  170,  171,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  187,  188,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  209,  210,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  229,  229,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  239,  239,  Resource management defects,  Free non dynamically allocated memory
+free_nondynamically_allocated_memory.c,  262,  262,  Resource management defects,  Free non dynamically allocated memory
+free_null_pointer.c,  23,  27,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  36,  45,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  56,  67,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  85,  93,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  110,  120,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  151,  161,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  209,  216,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  242,  250,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  288,  293,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  338,  339,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  397,  398,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  459,  465,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  490,  496,  Pointer related defects,  Free NULL pointer
+free_null_pointer.c,  550,  553,  Pointer related defects,  Free NULL pointer
+func_pointer.c,  42,  47,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  61,  66,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  81,  87,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  123,  133,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  172,  182,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  256,  266,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  285,  297,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  308,  320,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  352,  364,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  375,  389,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  419,  442,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  454,  481,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  485,  513,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  538,  565,  Pointer related defects,  Bad cast of a function pointer
+func_pointer.c,  592,  619,  Pointer related defects,  Bad cast of a function pointer
+function_return_value_unchecked.c,  48,  49,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  69,  71,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  86,  88,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  116,  118,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  171,  173,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  211,  212,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  238,  239,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  256,  257,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  294,  295,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  310,  311,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  334,  335,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  346,  350,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  364,  371,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  377,  387,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  391,  404,  Inappropriate code,  Return value of function never checked
+function_return_value_unchecked.c,  430,  444,  Inappropriate code,  Return value of function never checked
+improper_termination_of_block.c,  22,  23,  Inappropriate code,  Improper termination of block
+improper_termination_of_block.c,  38,  40,  Inappropriate code,  Improper termination of block
+improper_termination_of_block.c,  52,  57,  Inappropriate code,  Improper termination of block
+improper_termination_of_block.c,  67,  73,  Inappropriate code,  Improper termination of block
+insign_code.c,  24,  25,  Misc defects,  Useless assignment
+invalid_extern.c,  20,  20,  Misc defects,  Bad extern type for global variable
+invalid_extern.c,  21,  21,  Misc defects,  Bad extern type for global variable
+invalid_extern.c,  22,  22,  Misc defects,  Bad extern type for global variable
+invalid_extern.c,  23,  23,  Misc defects,  Bad extern type for global variable
+invalid_extern.c,  24,  24,  Misc defects,  Bad extern type for global variable
+invalid_extern.c,  27,  31,  Misc defects,  Bad extern type for global variable
+invalid_memory_access.c,  45,  41,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  84,  73,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  105,  108,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  133,  131,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  147,  156,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  188,  186,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  210,  213,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  224,  232,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  270,  275,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  294,  300,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  320,  320,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  371,  355,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  432,  416,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  476,  483,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  516,  516,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  568,  576,  Resource management defects,  Invalid memory access to already freed area
+invalid_memory_access.c,  622,  634,  Resource management defects,  Invalid memory access to already freed area
+littlemem_st.c,  36,  37,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  55,  56,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  73,  74,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  92,  93,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  117,  118,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  144,  145,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  185,  186,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  228,  229,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  272,  273,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  307,  308,  Dynamic memory defects,  Assign small buffer for structure
+littlemem_st.c,  343,  344,  Dynamic memory defects,  Assign small buffer for structure
+livelock.c,  32,  32,  Concurrency defects,  Live lock
+lock_never_unlock.c,  45,  42,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  92,  92,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  149,  156,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  215,  218,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  266,  268,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  311,  315,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  403,  404,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  454,  455,  Concurrency defects,  Locked but never unlock
+lock_never_unlock.c,  556,  557,  Concurrency defects,  Locked but never unlock
+memory_allocation_failure.c,  45,  43,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  57,  58,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  76,  78,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  104,  107,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  123,  126,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  182,  185,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  220,  225,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  258,  267,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  282,  292,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  321,  331,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  385,  394,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  423,  432,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  487,  501,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  532,  549,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  642,  659,  Resource management defects,  Memory allocation failure
+memory_allocation_failure.c,  698,  715,  Resource management defects,  Memory allocation failure
+memory_leak.c,  25,  26,  Resource management defects,  Memory leakage
+memory_leak.c,  46,  48,  Resource management defects,  Memory leakage
+memory_leak.c,  72,  75,  Resource management defects,  Memory leakage
+memory_leak.c,  94,  98,  Resource management defects,  Memory leakage
+memory_leak.c,  112,  117,  Resource management defects,  Memory leakage
+memory_leak.c,  143,  147,  Resource management defects,  Memory leakage
+memory_leak.c,  164,  167,  Resource management defects,  Memory leakage
+memory_leak.c,  212,  214,  Resource management defects,  Memory leakage
+memory_leak.c,  228,  231,  Resource management defects,  Memory leakage
+memory_leak.c,  245,  248,  Resource management defects,  Memory leakage
+memory_leak.c,  267,  274,  Resource management defects,  Memory leakage
+memory_leak.c,  308,  313,  Resource management defects,  Memory leakage
+memory_leak.c,  348,  350,  Resource management defects,  Memory leakage
+memory_leak.c,  373,  379,  Resource management defects,  Memory leakage
+memory_leak.c,  399,  405,  Resource management defects,  Memory leakage
+memory_leak.c,  417,  424,  Resource management defects,  Memory leakage
+memory_leak.c,  445,  453,  Resource management defects,  Memory leakage
+memory_leak.c,  504,  513,  Resource management defects,  Memory leakage
+not_return.c,  24,  27,  Misc defects,  Non void function does not return value
+not_return.c,  50,  50,  Misc defects,  Non void function does not return value
+not_return.c,  76,  82,  Misc defects,  Non void function does not return value
+not_return.c,  99,  106,  Misc defects,  Non void function does not return value
+null_pointer.c,  23,  25,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  34,  37,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  47,  51,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  63,  68,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  94,  100,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  105,  112,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  117,  124,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  133,  142,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  142,  151,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  159,  170,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  173,  185,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  180,  196,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  196,  216,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  213,  234,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  238,  259,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  288,  309,  Pointer related defects,  Dereferencing a NULL pointer
+null_pointer.c,  334,  354,  Pointer related defects,  Dereferencing a NULL pointer
+overrun_st.c,  21,  22,  Static memory defects,  Static buffer overrun
+overrun_st.c,  32,  33,  Static memory defects,  Static buffer overrun
+overrun_st.c,  44,  45,  Static memory defects,  Static buffer overrun
+overrun_st.c,  55,  56,  Static memory defects,  Static buffer overrun
+overrun_st.c,  66,  67,  Static memory defects,  Static buffer overrun
+overrun_st.c,  77,  78,  Static memory defects,  Static buffer overrun
+overrun_st.c,  88,  89,  Static memory defects,  Static buffer overrun
+overrun_st.c,  99,  100,  Static memory defects,  Static buffer overrun
+overrun_st.c,  110,  111,  Static memory defects,  Static buffer overrun
+overrun_st.c,  126,  127,  Static memory defects,  Static buffer overrun
+overrun_st.c,  142,  143,  Static memory defects,  Static buffer overrun
+overrun_st.c,  158,  160,  Static memory defects,  Static buffer overrun
+overrun_st.c,  169,  171,  Static memory defects,  Static buffer overrun
+overrun_st.c,  182,  184,  Static memory defects,  Static buffer overrun
+overrun_st.c,  194,  196,  Static memory defects,  Static buffer overrun
+overrun_st.c,  206,  208,  Static memory defects,  Static buffer overrun
+overrun_st.c,  222,  224,  Static memory defects,  Static buffer overrun
+overrun_st.c,  233,  235,  Static memory defects,  Static buffer overrun
+overrun_st.c,  250,  252,  Static memory defects,  Static buffer overrun
+overrun_st.c,  264,  266,  Static memory defects,  Static buffer overrun
+overrun_st.c,  280,  282,  Static memory defects,  Static buffer overrun
+overrun_st.c,  293,  295,  Static memory defects,  Static buffer overrun
+overrun_st.c,  306,  308,  Static memory defects,  Static buffer overrun
+overrun_st.c,  320,  322,  Static memory defects,  Static buffer overrun
+overrun_st.c,  333,  335,  Static memory defects,  Static buffer overrun
+overrun_st.c,  346,  348,  Static memory defects,  Static buffer overrun
+overrun_st.c,  359,  361,  Static memory defects,  Static buffer overrun
+overrun_st.c,  372,  374,  Static memory defects,  Static buffer overrun
+overrun_st.c,  387,  389,  Static memory defects,  Static buffer overrun
+overrun_st.c,  402,  404,  Static memory defects,  Static buffer overrun
+overrun_st.c,  415,  417,  Static memory defects,  Static buffer overrun
+overrun_st.c,  428,  430,  Static memory defects,  Static buffer overrun
+overrun_st.c,  443,  444,  Static memory defects,  Static buffer overrun
+overrun_st.c,  457,  457,  Static memory defects,  Static buffer overrun
+overrun_st.c,  471,  470,  Static memory defects,  Static buffer overrun
+overrun_st.c,  489,  487,  Static memory defects,  Static buffer overrun
+overrun_st.c,  502,  499,  Static memory defects,  Static buffer overrun
+overrun_st.c,  522,  518,  Static memory defects,  Static buffer overrun
+overrun_st.c,  538,  533,  Static memory defects,  Static buffer overrun
+overrun_st.c,  556,  550,  Static memory defects,  Static buffer overrun
+overrun_st.c,  570,  563,  Static memory defects,  Static buffer overrun
+overrun_st.c,  588,  581,  Static memory defects,  Static buffer overrun
+overrun_st.c,  613,  606,  Static memory defects,  Static buffer overrun
+overrun_st.c,  631,  624,  Static memory defects,  Static buffer overrun
+overrun_st.c,  642,  634,  Static memory defects,  Static buffer overrun
+overrun_st.c,  658,  649,  Static memory defects,  Static buffer overrun
+overrun_st.c,  674,  664,  Static memory defects,  Static buffer overrun
+overrun_st.c,  689,  679,  Static memory defects,  Static buffer overrun
+overrun_st.c,  706,  695,  Static memory defects,  Static buffer overrun
+overrun_st.c,  724,  713,  Static memory defects,  Static buffer overrun
+overrun_st.c,  739,  729,  Static memory defects,  Static buffer overrun
+overrun_st.c,  749,  739,  Static memory defects,  Static buffer overrun
+overrun_st.c,  761,  752,  Static memory defects,  Static buffer overrun
+overrun_st.c,  773,  765,  Static memory defects,  Static buffer overrun
+ow_memcpy.c,  24,  25,  Dynamic memory defects,  Memory copy at overlapping areas
+ow_memcpy.c,  41,  42,  Dynamic memory defects,  Memory copy at overlapping areas
+pow_related_errors.c,  29,  30,  Numerical defects,  Power related errors
+pow_related_errors.c,  44,  44,  Numerical defects,  Power related errors
+pow_related_errors.c,  65,  64,  Numerical defects,  Power related errors
+pow_related_errors.c,  87,  86,  Numerical defects,  Power related errors
+pow_related_errors.c,  109,  107,  Numerical defects,  Power related errors
+pow_related_errors.c,  131,  128,  Numerical defects,  Power related errors
+pow_related_errors.c,  158,  153,  Numerical defects,  Power related errors
+pow_related_errors.c,  175,  170,  Numerical defects,  Power related errors
+pow_related_errors.c,  190,  185,  Numerical defects,  Power related errors
+pow_related_errors.c,  205,  199,  Numerical defects,  Power related errors
+pow_related_errors.c,  220,  213,  Numerical defects,  Power related errors
+pow_related_errors.c,  235,  228,  Numerical defects,  Power related errors
+pow_related_errors.c,  250,  243,  Numerical defects,  Power related errors
+pow_related_errors.c,  265,  258,  Numerical defects,  Power related errors
+pow_related_errors.c,  280,  273,  Numerical defects,  Power related errors
+pow_related_errors.c,  295,  288,  Numerical defects,  Power related errors
+pow_related_errors.c,  310,  303,  Numerical defects,  Power related errors
+pow_related_errors.c,  325,  318,  Numerical defects,  Power related errors
+pow_related_errors.c,  340,  333,  Numerical defects,  Power related errors
+pow_related_errors.c,  355,  348,  Numerical defects,  Power related errors
+pow_related_errors.c,  370,  363,  Numerical defects,  Power related errors
+pow_related_errors.c,  385,  378,  Numerical defects,  Power related errors
+pow_related_errors.c,  400,  393,  Numerical defects,  Power related errors
+pow_related_errors.c,  415,  408,  Numerical defects,  Power related errors
+pow_related_errors.c,  430,  423,  Numerical defects,  Power related errors
+pow_related_errors.c,  445,  438,  Numerical defects,  Power related errors
+pow_related_errors.c,  460,  453,  Numerical defects,  Power related errors
+pow_related_errors.c,  475,  468,  Numerical defects,  Power related errors
+pow_related_errors.c,  490,  483,  Numerical defects,  Power related errors
+ptr_subtraction.c,  22,  23,  Pointer related defects,  Incorrect pointer arithmetic
+ptr_subtraction.c,  35,  36,  Pointer related defects,  Incorrect pointer arithmetic
+race_condition.c,  24,  35,  Concurrency defects,  Race condition
+race_condition.c,  60,  96,  Concurrency defects,  Race condition
+race_condition.c,  93,  139,  Concurrency defects,  Race condition
+race_condition.c,  139,  194,  Concurrency defects,  Race condition
+race_condition.c,  163,  219,  Concurrency defects,  Race condition
+race_condition.c,  194,  250,  Concurrency defects,  Race condition
+race_condition.c,  254,  307,  Concurrency defects,  Race condition
+race_condition.c,  308,  361,  Concurrency defects,  Race condition
+race_condition.c,  373,  421,  Concurrency defects,  Race condition
+redundant_cond.c,  26,  27,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  45,  46,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  64,  65,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  83,  84,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  102,  103,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  123,  122,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  143,  142,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  158,  157,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  177,  176,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  197,  196,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  217,  216,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  237,  236,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  257,  256,  Inappropriate code,  Redundant conditions
+redundant_cond.c,  282,  281,  Inappropriate code,  Redundant conditions
+return_local.c,  19,  20,  Resource management defects,  Return of a pointer to a local variable
+return_local.c,  36,  37,  Resource management defects,  Return of a pointer to a local variable
+sign_conv.c,  23,  24,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  35,  36,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  47,  48,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  59,  60,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  71,  72,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  83,  84,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  95,  96,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  107,  108,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  124,  125,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  140,  141,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  150,  151,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  167,  167,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  179,  179,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  191,  191,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  207,  207,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  217,  217,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  233,  233,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  246,  246,  Numerical defects,  Integer sign lost because of unsigned cast
+sign_conv.c,  262,  262,  Numerical defects,  Integer sign lost because of unsigned cast
+sleep_lock.c,  50,  38,  Concurrency defects,  Long lock
+sleep_lock.c,  124,  77,  Concurrency defects,  Long lock
+sleep_lock.c,  173,  107,  Concurrency defects,  Long lock
+st_cross_thread_access.c,  64,  63,  Stack related defects,  Cross thread stack access
+st_cross_thread_access.c,  153,  154,  Stack related defects,  Cross thread stack access
+st_cross_thread_access.c,  251,  252,  Stack related defects,  Cross thread stack access
+st_cross_thread_access.c,  335,  336,  Stack related defects,  Cross thread stack access
+st_cross_thread_access.c,  411,  412,  Stack related defects,  Cross thread stack access
+st_cross_thread_access.c,  498,  498,  Stack related defects,  Cross thread stack access
+st_overflow.c,  21,  23,  Stack related defects,  Stack overflow
+st_overflow.c,  49,  51,  Stack related defects,  Stack overflow
+st_overflow.c,  76,  78,  Stack related defects,  Stack overflow
+st_overflow.c,  115,  117,  Stack related defects,  Stack overflow
+st_overflow.c,  147,  149,  Stack related defects,  Stack overflow
+st_overflow.c,  180,  182,  Stack related defects,  Stack overflow
+st_overflow.c,  222,  224,  Stack related defects,  Stack overflow
+st_underrun.c,  27,  28,  Stack related defects,  Stack underrun
+st_underrun.c,  51,  52,  Stack related defects,  Stack underrun
+st_underrun.c,  92,  93,  Stack related defects,  Stack underrun
+st_underrun.c,  130,  131,  Stack related defects,  Stack underrun
+st_underrun.c,  159,  162,  Stack related defects,  Stack underrun
+st_underrun.c,  193,  197,  Stack related defects,  Stack underrun
+st_underrun.c,  229,  238,  Stack related defects,  Stack underrun
+underrun_st.c,  21,  22,  Static memory defects,  Static buffer underrun
+underrun_st.c,  31,  33,  Static memory defects,  Static buffer underrun
+underrun_st.c,  42,  45,  Static memory defects,  Static buffer underrun
+underrun_st.c,  55,  59,  Static memory defects,  Static buffer underrun
+underrun_st.c,  67,  72,  Static memory defects,  Static buffer underrun
+underrun_st.c,  80,  85,  Static memory defects,  Static buffer underrun
+underrun_st.c,  93,  98,  Static memory defects,  Static buffer underrun
+underrun_st.c,  109,  115,  Static memory defects,  Static buffer underrun
+underrun_st.c,  124,  130,  Static memory defects,  Static buffer underrun
+underrun_st.c,  140,  146,  Static memory defects,  Static buffer underrun
+underrun_st.c,  155,  161,  Static memory defects,  Static buffer underrun
+underrun_st.c,  172,  178,  Static memory defects,  Static buffer underrun
+underrun_st.c,  190,  196,  Static memory defects,  Static buffer underrun
+uninit_memory_access.c,  27,  27,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  39,  40,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  55,  56,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  74,  76,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  98,  100,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  128,  130,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  155,  157,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  200,  210,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  249,  261,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  298,  310,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  319,  331,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  339,  353,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  369,  384,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  419,  436,  Resource management defects,  Uninitialized memory access
+uninit_memory_access.c,  440,  461,  Resource management defects,  Uninitialized memory access
+uninit_pointer.c,  30,  30,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  41,  42,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  55,  57,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  71,  75,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  95,  102,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  104,  111,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  131,  138,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  159,  169,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  187,  197,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  200,  210,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  231,  243,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  254,  266,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  277,  289,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  335,  349,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  358,  374,  Pointer related defects,  Uninitialized pointer
+uninit_pointer.c,  406,  423,  Pointer related defects,  Uninitialized pointer
+uninit_var.c,  23,  23,  Misc defects,  Uninitialized variable
+uninit_var.c,  34,  35,  Misc defects,  Uninitialized variable
+uninit_var.c,  45,  51,  Misc defects,  Uninitialized variable
+uninit_var.c,  63,  69,  Misc defects,  Uninitialized variable
+uninit_var.c,  75,  82,  Misc defects,  Uninitialized variable
+uninit_var.c,  92,  100,  Misc defects,  Uninitialized variable
+uninit_var.c,  111,  120,  Misc defects,  Uninitialized variable
+uninit_var.c,  131,  141,  Misc defects,  Uninitialized variable
+uninit_var.c,  142,  152,  Misc defects,  Uninitialized variable
+uninit_var.c,  161,  175,  Misc defects,  Uninitialized variable
+uninit_var.c,  178,  193,  Misc defects,  Uninitialized variable
+uninit_var.c,  201,  217,  Misc defects,  Uninitialized variable
+uninit_var.c,  242,  261,  Misc defects,  Uninitialized variable
+uninit_var.c,  267,  287,  Misc defects,  Uninitialized variable
+uninit_var.c,  296,  319,  Misc defects,  Uninitialized variable
+unlock_without_lock.c,  44,  44,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  110,  110,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  163,  161,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  279,  274,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  325,  320,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  372,  366,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  472,  466,  Concurrency defects,  Unlock without lock
+unlock_without_lock.c,  544,  538,  Concurrency defects,  Unlock without lock
+unused_var.c,  24,  24,  Inappropriate code,  Unused variable
+unused_var.c,  42,  43,  Inappropriate code,  Unused variable
+unused_var.c,  78,  80,  Inappropriate code,  Unused variable
+unused_var.c,  91,  94,  Inappropriate code,  Unused variable
+unused_var.c,  104,  108,  Inappropriate code,  Unused variable
+unused_var.c,  118,  123,  Inappropriate code,  Unused variable
+unused_var.c,  152,  158,  Inappropriate code,  Unused variable
+wrong_arguments_func_pointer.c,  53,  53,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  74,  74,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  94,  94,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  114,  114,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  141,  139,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  161,  158,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  182,  178,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  201,  197,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  225,  224,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  250,  253,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  298,  297,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  354,  351,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  381,  380,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  423,  420,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  457,  453,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  490,  486,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  528,  525,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  579,  575,  Pointer related defects,  Comparison NULL with function pointer
+zero_division.c,  23,  23,  Numerical defects,  Division by zero
+zero_division.c,  34,  34,  Numerical defects,  Division by zero
+zero_division.c,  47,  46,  Numerical defects,  Division by zero
+zero_division.c,  59,  57,  Numerical defects,  Division by zero
+zero_division.c,  78,  76,  Numerical defects,  Division by zero
+zero_division.c,  93,  91,  Numerical defects,  Division by zero
+zero_division.c,  118,  116,  Numerical defects,  Division by zero
+zero_division.c,  129,  127,  Numerical defects,  Division by zero
+zero_division.c,  141,  139,  Numerical defects,  Division by zero
+zero_division.c,  154,  154,  Numerical defects,  Division by zero
+zero_division.c,  166,  167,  Numerical defects,  Division by zero
+zero_division.c,  178,  179,  Numerical defects,  Division by zero
+zero_division.c,  195,  196,  Numerical defects,  Division by zero
+zero_division.c,  206,  207,  Numerical defects,  Division by zero
+zero_division.c,  225,  226,  Numerical defects,  Division by zero
+zero_division.c,  252,  253,  Numerical defects,  Division by zero
