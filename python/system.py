@@ -5,6 +5,7 @@ import time
 
 # simply run a system command and return the needed info
 def system_call(cmd, dir="."):
+    print("CMD:", cmd)
     vtime = time.time();
     process = Popen(shlex.split(cmd), stdout=PIPE, stderr=PIPE, cwd=dir)
     (output, err) = process.communicate()

@@ -151,6 +151,21 @@ INFER_OUT_CPP_DEFECTS=./csv/infer/infer_out_cpp_defects.csv
 INFER_OUT_CPP_TOTAL=./csv/infer/infer_out_cpp_total.csv
 
 
+## SPLINT
+SPLINT=./python/splint.py
+SPLINT_EXE=splint
+SPLINT_OUTPUT_C_W=./csv/splint/temp/splint_c_w_errors_per_line.csv
+SPLINT_OUTPUT_C_WO=./csv/splint/temp/splint_c_wo_errors_per_line.csv
+SPLINT_OUTPUT_CPP_W=./csv/splint/temp/splint_cpp_w_errors_per_line.csv
+SPLINT_OUTPUT_CPP_WO=./csv/splint/temp/splint_cpp_wo_errors_per_line.csv
+SPLINT_OPTS=
+SPLINT_OUT_SUBDEFECTS=./csv/splint/splint_out_subdefects.csv
+SPLINT_OUT_DEFECTS=./csv/splint/splint_out_defects.csv
+SPLINT_OUT_TOTAL=./csv/splint/splint_out_total.csv
+SPLINT_OUT_CPP_SUBDEFECTS=./csv/splint/splint_out_cpp_subdefects.csv
+SPLINT_OUT_CPP_DEFECTS=./csv/splint/splint_out_cpp_defects.csv
+SPLINT_OUT_CPP_TOTAL=./csv/splint/splint_out_cpp_total.csv
+
 
 
 # GENERAL
@@ -166,6 +181,7 @@ prepare-dirs:
 	mkdir -p ./csv/clangcore/temp/
 	mkdir -p ./csv/flawfinder/temp/
 	mkdir -p ./csv/infer/temp/
+	mkdir -p ./csv/splint/temp/
 
 base: prepare-dirs gather-errors merge-files
 
@@ -221,6 +237,15 @@ flawfinder:
 	python3 $(FLAWFINDER) $(W_CPP_DEFECTS_DIR) $(FLAWFINDER_OUTPUT_CPP_W) $(FLAWFINDER_EXE) $(FLAWFINDER_OPTS) 
 	python3 $(FLAWFINDER) $(WO_CPP_DEFECTS_DIR) $(FLAWFINDER_OUTPUT_CPP_WO) $(FLAWFINDER_EXE) $(FLAWFINDER_OPTS)
 	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(FLAWFINDER_OUTPUT_CPP_W) $(FLAWFINDER_OUTPUT_CPP_WO) $(FLAWFINDER_OUT_CPP_SUBDEFECTS) $(FLAWFINDER_OUT_CPP_DEFECTS) $(FLAWFINDER_OUT_CPP_TOTAL)
+
+splint:
+	python3 $(SPLINT) $(W_C_DEFECTS_DIR) $(SPLINT_OUTPUT_C_W) $(SPLINT_EXE) $(SPLINT_OPTS) 
+	python3 $(SPLINT) $(WO_C_DEFECTS_DIR) $(SPLINT_OUTPUT_C_WO) $(SPLINT_EXE) $(SPLINT_OPTS) 
+	python3 ${STATISTICS} $(C_MERGE_FILE) $(SPLINT_OUTPUT_C_W) $(SPLINT_OUTPUT_C_WO) $(SPLINT_OUT_SUBDEFECTS) $(SPLINT_OUT_DEFECTS) $(SPLINT_OUT_TOTAL)
+	python3 $(SPLINT) $(W_CPP_DEFECTS_DIR) $(SPLINT_OUTPUT_CPP_W) $(SPLINT_EXE) $(SPLINT_OPTS) 
+	python3 $(SPLINT) $(WO_CPP_DEFECTS_DIR) $(SPLINT_OUTPUT_CPP_WO) $(SPLINT_EXE) $(SPLINT_OPTS)
+	python3 ${STATISTICS} $(CPP_MERGE_FILE) $(SPLINT_OUTPUT_CPP_W) $(SPLINT_OUTPUT_CPP_WO) $(SPLINT_OUT_CPP_SUBDEFECTS) $(SPLINT_OUT_CPP_DEFECTS) $(SPLINT_OUT_CPP_TOTAL)
+
 
 clang-core: 
 	python3 $(CLANG_CORE) $(W_C_DEFECTS_DIR) $(CLANG_CORE_OUTPUT_C_W) $(CLANG_CORE_EXE) $(CLANG_CORE_OPTS) 
