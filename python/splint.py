@@ -12,20 +12,20 @@ if (len(sys.argv) > 4):
 else:
     opts = ""
 
-print("======Running sparse=======")
+print("======Running splint=======")
 print("Working dir:", directory)
 print("CSV file:", csv)
 print("Excutable:", exe)
 print("Executable options:", opts)
 
 c_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
-(output, err, exit, time) = system.system_call(exe + " " + " ".join(c_files) + " " + opts, directory)
-
-temp_path = os.path.join(os.getcwd(), "csv", "sparse", "temp", "sparse-output.txt")
-temp_file = open(temp_path, 'w')
-temp_file.write(err.decode("utf-8"))
-temp_file.close()
-
+for source_file in c_files:
+    (output, err, exit, time) = system.system_call(exe + " -nestcomment +posixlib " + source_file + " " + opts, directory)
+    temp_path = os.path.join(os.getcwd(), "csv", "splint", "temp", "splint-output.txt")
+    temp_file = open(temp_path, 'a')
+    temp_file.write(output.decode("utf-8"))
+    temp_file.close()
+    
 sys.stdout = open(csv, "w")
 print("File, Line, Error")
 with open(temp_path) as f:
@@ -39,4 +39,4 @@ with open(temp_path) as f:
                 i = i + 1
             print(os.path.basename(a[0]), ",", a[1], ",", message)
 sys.stdout = sys.__stdout__            
-print("======Done with sparse=======")
+print("======Done with splint=======")
