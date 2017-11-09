@@ -141,6 +141,21 @@ INFER_OUT_CPP_DEFECTS = "./csv/infer/infer_out_cpp_defects.csv"
 INFER_OUT_CPP_TOTAL = "./csv/infer/infer_out_cpp_total.csv"
 
 
+# ## CLANALYZE
+CLANALYZE = "./python/clanalyze.py"
+CLANALYZE_EXE = "\"cl /analyze\""
+CLANALYZE_OUTPUT_C_W = "./csv/clanalyze/temp/clanalyze_c_w_errors_per_line.csv"
+CLANALYZE_OUTPUT_C_WO = "./csv/clanalyze/temp/clanalyze_c_wo_errors_per_line.csv"
+CLANALYZE_OUTPUT_CPP_W = "./csv/clanalyze/temp/clanalyze_cpp_w_errors_per_line.csv"
+CLANALYZE_OUTPUT_CPP_WO = "./csv/clanalyze/temp/clanalyze_cpp_wo_errors_per_line.csv"
+CLANALYZE_OPTS = "\" \""
+CLANALYZE_OUT_SUBDEFECTS = "./csv/clanalyze/clanalyze_out_subdefects.csv"
+CLANALYZE_OUT_DEFECTS = "./csv/clanalyze/clanalyze_out_defects.csv"
+CLANALYZE_OUT_TOTAL = "./csv/clanalyze/clanalyze_out_total.csv"
+CLANALYZE_OUT_CPP_SUBDEFECTS = "./csv/clanalyze/clanalyze_out_cpp_subdefects.csv"
+CLANALYZE_OUT_CPP_DEFECTS = "./csv/clanalyze/clanalyze_out_cpp_defects.csv"
+CLANALYZE_OUT_CPP_TOTAL = "./csv/clanalyze/clanalyze_out_cpp_total.csv"
+
 # ## SPLINT
 SPLINT = "./python/splint.py"
 SPLINT_EXE = "splint"
@@ -158,7 +173,7 @@ SPLINT_OUT_CPP_TOTAL = "./csv/splint/splint_out_cpp_total.csv"
 
 def make_dirs_forgive(path):
     try:
-        os.makedirs(os.path.join(".", "csv", "setup", "temp"))
+        os.makedirs(path)
     except FileExistsError:
         print("Already exists: " + path)
 
@@ -166,6 +181,7 @@ def prepare_dirs():
     print("Preparing folders\n")
     make_dirs_forgive(os.path.join(".", "csv", "setup", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "cppcheck", "temp"))
+    make_dirs_forgive(os.path.join(".", "csv", "clanalyze", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "sparse", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "uno", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "clangalpha", "temp"))
@@ -249,8 +265,19 @@ def run_infer():
     call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE, INFER_OPTS])
     call_python([STATISTICS, CPP_MERGE_FILE, INFER_OUTPUT_CPP_W, INFER_OUTPUT_CPP_WO, INFER_OUT_CPP_SUBDEFECTS, INFER_OUT_CPP_DEFECTS, INFER_OUT_CPP_TOTAL])
 
+def run_clanalyze():
+    print("Running cl /analyze")
+    call_python([CLANALYZE, W_C_DEFECTS_DIR, CLANALYZE_OUTPUT_C_W, CLANALYZE_EXE, CLANALYZE_OPTS]) 
+    call_python([CLANALYZE, WO_C_DEFECTS_DIR, CLANALYZE_OUTPUT_C_WO, CLANALYZE_EXE, CLANALYZE_OPTS]) 
+    call_python([STATISTICS, C_MERGE_FILE, CLANALYZE_OUTPUT_C_W, CLANALYZE_OUTPUT_C_WO, CLANALYZE_OUT_SUBDEFECTS, CLANALYZE_OUT_DEFECTS, CLANALYZE_OUT_TOTAL])
+    call_python([CLANALYZE, W_CPP_DEFECTS_DIR, CLANALYZE_OUTPUT_CPP_W, CLANALYZE_EXE, CLANALYZE_OPTS]) 
+    call_python([CLANALYZE, WO_CPP_DEFECTS_DIR, CLANALYZE_OUTPUT_CPP_WO, CLANALYZE_EXE, CLANALYZE_OPTS])
+    call_python([STATISTICS, CPP_MERGE_FILE, CLANALYZE_OUTPUT_CPP_W, CLANALYZE_OUTPUT_CPP_WO, CLANALYZE_OUT_CPP_SUBDEFECTS, CLANALYZE_OUT_CPP_DEFECTS, CLANALYZE_OUT_CPP_TOTAL])
+
 def clean_temp():
     python.system.system_call("rm -rf ./csv/temp/")
+    python.system.system_call("rm -f ./csv/clanalyze/*.csv")
+    python.system.system_call("rm -f ./csv/clanalyze/temp/*.csv")
     python.system.system_call("rm -f ./csv/cppcheck/*.csv")
     python.system.system_call("rm -f ./csv/cppcheck/temp/*.csv")
     python.system.system_call("rm -f ./csv/clangcore/*.csv")
@@ -277,8 +304,11 @@ elif action == 'statistics':
     run_flawfinder()
     run_clang_core()
     run_clang_alpha()
+    run_clanalyze()
 elif action == 'cppcheck':
     run_cppcheck()
+elif action == 'clanalyze':
+    run_clanalyze()
 elif action == 'sparse':
     run_sparse()
 elif action == "uno":
