@@ -2,8 +2,6 @@ import json
 import sys
 import os.path
 import system
-import dirutils
-import tempfile
 
 directory = os.path.abspath(sys.argv[1])
 csv       = os.path.abspath(sys.argv[2])
@@ -17,11 +15,7 @@ print("Excutable:", exe)
 print("Executable options:", opts)
 
 (output, err, exit, time) = system.system_call("make clean", directory)
-print(err)
-print(output)
 (output, err, exit, time) = system.system_call(exe + " run -- make", directory)
-print(err)
-print(output)
 
 sys.stdout = open(csv, "w")
 print("File, Line, Error")
