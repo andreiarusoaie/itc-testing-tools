@@ -172,6 +172,23 @@ SPLINT_OUT_CPP_SUBDEFECTS = "./csv/splint/splint_out_cpp_subdefects.csv"
 SPLINT_OUT_CPP_DEFECTS = "./csv/splint/splint_out_cpp_defects.csv"
 SPLINT_OUT_CPP_TOTAL = "./csv/splint/splint_out_cpp_total.csv"
 
+# ## FRAMAC
+FRAMAC = "./python/framac.py"
+FRAMAC_EXE = "frama-c"
+FRAMAC_EXE_CPP = "frama-c"
+FRAMAC_OUTPUT_C_W = "./csv/framac/temp/framac_c_w_errors_per_line.csv"
+FRAMAC_OUTPUT_C_WO = "./csv/framac/temp/framac_c_wo_errors_per_line.csv"
+FRAMAC_OUTPUT_CPP_W = "./csv/framac/temp/framac_cpp_w_errors_per_line.csv"
+FRAMAC_OUTPUT_CPP_WO = "./csv/framac/temp/framac_cpp_wo_errors_per_line.csv"
+FRAMAC_OPTS = ""
+FRAMAC_OUT_SUBDEFECTS = "./csv/framac/framac_out_subdefects.csv"
+FRAMAC_OUT_DEFECTS = "./csv/framac/framac_out_defects.csv"
+FRAMAC_OUT_TOTAL = "./csv/framac/framac_out_total.csv"
+FRAMAC_OUT_CPP_SUBDEFECTS = "./csv/framac/framac_out_cpp_subdefects.csv"
+FRAMAC_OUT_CPP_DEFECTS = "./csv/framac/framac_out_cpp_defects.csv"
+FRAMAC_OUT_CPP_TOTAL = "./csv/framac/framac_out_cpp_total.csv"
+
+
 def make_dirs_forgive(path):
     try:
         os.makedirs(path)
@@ -190,6 +207,7 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(".", "csv", "flawfinder", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "infer", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "splint", "temp"))
+    make_dirs_forgive(os.path.join(".", "csv", "framac", "temp"))
 
 def call_python(args):
     python.system.system_call("python3 " + " ".join(args))
@@ -203,6 +221,15 @@ def run_cppcheck():
     call_python([CPPCHECK, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
     call_python([STATISTICS, CPP_MERGE_FILE, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_OUT_CPP_SUBDEFECTS, CPPCHECK_OUT_CPP_DEFECTS, CPPCHECK_OUT_CPP_TOTAL])
 
+def run_framac():
+    print("Running framac")
+    call_python([FRAMAC, W_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_W, FRAMAC_EXE, FRAMAC_OPTS])
+    call_python([FRAMAC, WO_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_WO, FRAMAC_EXE, FRAMAC_OPTS])
+    call_python([STATISTICS, C_MERGE_FILE, FRAMAC_OUTPUT_C_W, FRAMAC_OUTPUT_C_WO, FRAMAC_OUT_SUBDEFECTS, FRAMAC_OUT_DEFECTS, FRAMAC_OUT_TOTAL])
+    call_python([FRAMAC, W_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_W, FRAMAC_EXE_CPP, FRAMAC_OPTS])
+    call_python([FRAMAC, WO_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_WO, FRAMAC_EXE_CPP, FRAMAC_OPTS])
+    call_python([STATISTICS, CPP_MERGE_FILE, FRAMAC_OUTPUT_CPP_W, FRAMAC_OUTPUT_CPP_WO, FRAMAC_OUT_CPP_SUBDEFECTS, FRAMAC_OUT_CPP_DEFECTS, FRAMAC_OUT_CPP_TOTAL])
+    
 def run_sparse():
     print("Running sparse")
     call_python([SPARSE, W_C_DEFECTS_DIR, SPARSE_OUTPUT_C_W, SPARSE_EXE, SPARSE_OPTS]) 
@@ -328,5 +355,7 @@ elif action == 'clang-core':
     run_clang_core()
 elif action == "clang-alpha":
     run_clang_alpha()
+elif action == 'framac':
+    run_framac()
 else:
     print("Action ", action, " not supported.\n")
