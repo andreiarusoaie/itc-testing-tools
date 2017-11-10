@@ -75,6 +75,37 @@ CPPCHECK_OUT_CPP_SUBDEFECTS = "./csv/cppcheck/cppcheck_out_cpp_subdefects.csv"
 CPPCHECK_OUT_CPP_DEFECTS = "./csv/cppcheck/cppcheck_out_cpp_defects.csv"
 CPPCHECK_OUT_CPP_TOTAL = "./csv/cppcheck/cppcheck_out_cpp_total.csv"
 
+# ## CPPLINT
+CPPLINT = "./python/cpplint.py"
+CPPLINT_EXE = "cpplint"
+CPPLINT_EXE_CPP = "cpplint"
+CPPLINT_OUTPUT_C_W = "./csv/cpplint/temp/cpplint_c_w_errors_per_line.csv"
+CPPLINT_OUTPUT_C_WO = "./csv/cpplint/temp/cpplint_c_wo_errors_per_line.csv"
+CPPLINT_OUTPUT_CPP_W = "./csv/cpplint/temp/cpplint_cpp_w_errors_per_line.csv"
+CPPLINT_OUTPUT_CPP_WO = "./csv/cpplint/temp/cpplint_cpp_wo_errors_per_line.csv"
+CPPLINT_OPTS = ""
+CPPLINT_OUT_SUBDEFECTS = "./csv/cpplint/cpplint_out_subdefects.csv"
+CPPLINT_OUT_DEFECTS = "./csv/cpplint/cpplint_out_defects.csv"
+CPPLINT_OUT_TOTAL = "./csv/cpplint/cpplint_out_total.csv"
+CPPLINT_OUT_CPP_SUBDEFECTS = "./csv/cpplint/cpplint_out_cpp_subdefects.csv"
+CPPLINT_OUT_CPP_DEFECTS = "./csv/cpplint/cpplint_out_cpp_defects.csv"
+CPPLINT_OUT_CPP_TOTAL = "./csv/cpplint/cpplint_out_cpp_total.csv"
+
+# ## OCLINT
+OCLINT = "./python/oclint.py"
+OCLINT_EXE = "oclint"
+OCLINT_EXE_CPP = "oclint"
+OCLINT_OUTPUT_C_W = "./csv/oclint/temp/oclint_c_w_errors_per_line.csv"
+OCLINT_OUTPUT_C_WO = "./csv/oclint/temp/oclint_c_wo_errors_per_line.csv"
+OCLINT_OUTPUT_CPP_W = "./csv/oclint/temp/oclint_cpp_w_errors_per_line.csv"
+OCLINT_OUTPUT_CPP_WO = "./csv/oclint/temp/oclint_cpp_wo_errors_per_line.csv"
+OCLINT_OPTS = ""
+OCLINT_OUT_SUBDEFECTS = "./csv/oclint/oclint_out_subdefects.csv"
+OCLINT_OUT_DEFECTS = "./csv/oclint/oclint_out_defects.csv"
+OCLINT_OUT_TOTAL = "./csv/oclint/oclint_out_total.csv"
+OCLINT_OUT_CPP_SUBDEFECTS = "./csv/oclint/oclint_out_cpp_subdefects.csv"
+OCLINT_OUT_CPP_DEFECTS = "./csv/oclint/oclint_out_cpp_defects.csv"
+OCLINT_OUT_CPP_TOTAL = "./csv/oclint/oclint_out_cpp_total.csv"
 
 # ## SPARSE
 SPARSE = "./python/sparse.py"
@@ -208,6 +239,8 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(".", "csv", "infer", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "splint", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "framac", "temp"))
+    make_dirs_forgive(os.path.join(".", "csv", "cpplint", "temp"))
+    make_dirs_forgive(os.path.join(".", "csv", "oclint", "temp"))
 
 def call_python(args):
     python.system.system_call("python3 " + " ".join(args))
@@ -221,6 +254,24 @@ def run_cppcheck():
     call_python([CPPCHECK, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
     call_python([STATISTICS, CPP_MERGE_FILE, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_OUT_CPP_SUBDEFECTS, CPPCHECK_OUT_CPP_DEFECTS, CPPCHECK_OUT_CPP_TOTAL])
 
+def run_cpplint():
+    print("Running cpplint")
+    call_python([CPPLINT, W_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_W, CPPLINT_EXE, CPPLINT_OPTS])
+    call_python([CPPLINT, WO_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_WO, CPPLINT_EXE, CPPLINT_OPTS])
+    call_python([STATISTICS, C_MERGE_FILE, CPPLINT_OUTPUT_C_W, CPPLINT_OUTPUT_C_WO, CPPLINT_OUT_SUBDEFECTS, CPPLINT_OUT_DEFECTS, CPPLINT_OUT_TOTAL])
+    call_python([CPPLINT, W_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_W, CPPLINT_EXE_CPP, CPPLINT_OPTS])
+    call_python([CPPLINT, WO_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_WO, CPPLINT_EXE_CPP, CPPLINT_OPTS])
+    call_python([STATISTICS, CPP_MERGE_FILE, CPPLINT_OUTPUT_CPP_W, CPPLINT_OUTPUT_CPP_WO, CPPLINT_OUT_CPP_SUBDEFECTS, CPPLINT_OUT_CPP_DEFECTS, CPPLINT_OUT_CPP_TOTAL])
+
+def run_oclint():
+    print("Running oclint")
+    call_python([OCLINT, W_C_DEFECTS_DIR, OCLINT_OUTPUT_C_W, OCLINT_EXE, OCLINT_OPTS])
+    call_python([OCLINT, WO_C_DEFECTS_DIR, OCLINT_OUTPUT_C_WO, OCLINT_EXE, OCLINT_OPTS])
+    call_python([STATISTICS, C_MERGE_FILE, OCLINT_OUTPUT_C_W, OCLINT_OUTPUT_C_WO, OCLINT_OUT_SUBDEFECTS, OCLINT_OUT_DEFECTS, OCLINT_OUT_TOTAL])
+    call_python([OCLINT, W_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_W, OCLINT_EXE_CPP, OCLINT_OPTS])
+    call_python([OCLINT, WO_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_WO, OCLINT_EXE_CPP, OCLINT_OPTS])
+    call_python([STATISTICS, CPP_MERGE_FILE, OCLINT_OUTPUT_CPP_W, OCLINT_OUTPUT_CPP_WO, OCLINT_OUT_CPP_SUBDEFECTS, OCLINT_OUT_CPP_DEFECTS, OCLINT_OUT_CPP_TOTAL])
+    
 def run_framac():
     print("Running framac")
     call_python([FRAMAC, W_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_W, FRAMAC_EXE, FRAMAC_OPTS])
@@ -357,5 +408,9 @@ elif action == "clang-alpha":
     run_clang_alpha()
 elif action == 'framac':
     run_framac()
+elif action == 'cpplint':
+    run_cpplint()
+elif action == 'oclint':
+    run_oclint()
 else:
     print("Action ", action, " not supported.\n")
