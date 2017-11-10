@@ -153,7 +153,8 @@ sys.stdout = open(tool_out_total, 'w')
 count_tp = 0
 count_fp = 0
 count_total = 0 
-print("TP, FP, Variations, Detection rate, False pos rate, Productivity")
+robust_counter = 0
+print("TP, FP, Variations, Detection rate, False pos rate, Productivity, Robustness")
 for filename in defect_dict.keys():
     count_total = count_total + len(variations_by_filename[filename])
     for variation in variations_by_filename[filename]:
@@ -161,7 +162,10 @@ for filename in defect_dict.keys():
                 count_tp = count_tp + 1
             if (variation[4]):
                 count_fp = count_fp + 1
+            if (variation[3] and not variation[4]):
+                robust_counter = robust_counter + 1
 dr = (count_tp * 100) / count_total
 fpr = (count_fp * 100) / count_total
 prod = sqrt(dr * (100 - fpr))
-print(count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
+robustness = (robust_counter * 100) / 639
+print(count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2))
