@@ -107,6 +107,22 @@ OCLINT_OUT_CPP_SUBDEFECTS = "./csv/oclint/oclint_out_cpp_subdefects.csv"
 OCLINT_OUT_CPP_DEFECTS = "./csv/oclint/oclint_out_cpp_defects.csv"
 OCLINT_OUT_CPP_TOTAL = "./csv/oclint/oclint_out_cpp_total.csv"
 
+# ## FLINTPP
+FLINTPP = "./python/flint++.py"
+FLINTPP_EXE = "flint++"
+FLINTPP_EXE_CPP = "flint++"
+FLINTPP_OUTPUT_C_W = "./csv/flintpp/temp/flintpp_c_w_errors_per_line.csv"
+FLINTPP_OUTPUT_C_WO = "./csv/flintpp/temp/flintpp_c_wo_errors_per_line.csv"
+FLINTPP_OUTPUT_CPP_W = "./csv/flintpp/temp/flintpp_cpp_w_errors_per_line.csv"
+FLINTPP_OUTPUT_CPP_WO = "./csv/flintpp/temp/flintpp_cpp_wo_errors_per_line.csv"
+FLINTPP_OPTS = " -j "
+FLINTPP_OUT_SUBDEFECTS = "./csv/flintpp/flintpp_out_subdefects.csv"
+FLINTPP_OUT_DEFECTS = "./csv/flintpp/flintpp_out_defects.csv"
+FLINTPP_OUT_TOTAL = "./csv/flintpp/flintpp_out_total.csv"
+FLINTPP_OUT_CPP_SUBDEFECTS = "./csv/flintpp/flintpp_out_cpp_subdefects.csv"
+FLINTPP_OUT_CPP_DEFECTS = "./csv/flintpp/flintpp_out_cpp_defects.csv"
+FLINTPP_OUT_CPP_TOTAL = "./csv/flintpp/flintpp_out_cpp_total.csv"
+
 # ## SPARSE
 SPARSE = "./python/sparse.py"
 SPARSE_EXE = "sparse"
@@ -241,6 +257,7 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(".", "csv", "framac", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "cpplint", "temp"))
     make_dirs_forgive(os.path.join(".", "csv", "oclint", "temp"))
+    make_dirs_forgive(os.path.join(".", "csv", "flintpp", "temp"))
 
 def call_python(args):
     python.system.system_call("python3 " + " ".join(args))
@@ -263,6 +280,16 @@ def run_cpplint():
     call_python([CPPLINT, WO_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_WO, CPPLINT_EXE_CPP, CPPLINT_OPTS])
     call_python([STATISTICS, CPP_MERGE_FILE, CPPLINT_OUTPUT_CPP_W, CPPLINT_OUTPUT_CPP_WO, CPPLINT_OUT_CPP_SUBDEFECTS, CPPLINT_OUT_CPP_DEFECTS, CPPLINT_OUT_CPP_TOTAL])
 
+def run_flintpp():
+    print("Running flintpp")
+    call_python([FLINTPP, W_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_W, FLINTPP_EXE, FLINTPP_OPTS])
+    call_python([FLINTPP, WO_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_WO, FLINTPP_EXE, FLINTPP_OPTS])
+    call_python([STATISTICS, C_MERGE_FILE, FLINTPP_OUTPUT_C_W, FLINTPP_OUTPUT_C_WO, FLINTPP_OUT_SUBDEFECTS, FLINTPP_OUT_DEFECTS, FLINTPP_OUT_TOTAL])
+    call_python([FLINTPP, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    call_python([FLINTPP, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    call_python([STATISTICS, CPP_MERGE_FILE, FLINTPP_OUTPUT_CPP_W, FLINTPP_OUTPUT_CPP_WO, FLINTPP_OUT_CPP_SUBDEFECTS, FLINTPP_OUT_CPP_DEFECTS, FLINTPP_OUT_CPP_TOTAL])
+
+    
 def run_oclint():
     print("Running oclint")
     call_python([OCLINT, W_C_DEFECTS_DIR, OCLINT_OUTPUT_C_W, OCLINT_EXE, OCLINT_OPTS])
@@ -412,5 +439,7 @@ elif action == 'cpplint':
     run_cpplint()
 elif action == 'oclint':
     run_oclint()
+elif action == 'flintpp':
+    run_flintpp()
 else:
     print("Action ", action, " not supported.\n")
