@@ -6,13 +6,11 @@ import system
 directory = os.path.abspath(sys.argv[1])
 csv       = os.path.abspath(sys.argv[2])
 exe       = sys.argv[3]
-opts      = sys.argv[4]
 
 print("======Running Infer=======")
 print("Working dir:", directory)
 print("CSV file:", csv)
 print("Excutable:", exe)
-print("Executable options:", opts)
 
 (output, err, exit, time) = system.system_call("make clean", directory)
 (output, err, exit, time) = system.system_call(exe + " run -- make", directory)

@@ -192,7 +192,7 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(".", "csv", "splint", "temp"))
 
 def call_python(args):
-    python.system.system_call("python " + " ".join(args))
+    python.system.system_call("python3 " + " ".join(args))
 
 def run_cppcheck():
     print("Running cppcheck")
@@ -259,11 +259,11 @@ def run_clang_alpha():
 
 def run_infer():
     print("Running infer")
-    call_python([INFER, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE, INFER_OPTS]) 
-    call_python([INFER, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE, INFER_OPTS]) 
+    call_python([INFER, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE]) 
+    call_python([INFER, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE]) 
     call_python([STATISTICS, C_MERGE_FILE, INFER_OUTPUT_C_W, INFER_OUTPUT_C_WO, INFER_OUT_SUBDEFECTS, INFER_OUT_DEFECTS, INFER_OUT_TOTAL])
-    call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE, INFER_OPTS]) 
-    call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE, INFER_OPTS])
+    call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
+    call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
     call_python([STATISTICS, CPP_MERGE_FILE, INFER_OUTPUT_CPP_W, INFER_OUTPUT_CPP_WO, INFER_OUT_CPP_SUBDEFECTS, INFER_OUT_CPP_DEFECTS, INFER_OUT_CPP_TOTAL])
 
 def run_clanalyze():
