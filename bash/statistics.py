@@ -112,29 +112,34 @@ with open(merged_csv_filename, "r") as merged_file:
 
 # Sub-defects stats
 sys.stdout = open(tool_out_subdefects, 'w')
-print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity")
+print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robustness")
 for filename in defect_dict.keys():
     count_tp = 0
     count_fp = 0
+    robust_counter = 0
     count_total = len(variations_by_filename[filename])
     for variation in variations_by_filename[filename]:
         if (variation[3]):
             count_tp = count_tp + 1
         if (variation[4]):
             count_fp = count_fp + 1
+        if (variation[3] and not variation[4]):
+            robust_counter = robust_counter + 1
     dr = (count_tp * 100) / count_total
     fpr = (count_fp * 100) / count_total
     prod = sqrt(dr * (100 - fpr))
-    print(filename,",", defect_dict[filename],",", subdefect_dict[filename],",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
+    robustness = (robust_counter * 100) / count_total
+    print(filename,",", defect_dict[filename],",", subdefect_dict[filename],",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2))
     
 
 # Defects stats
 sys.stdout = open(tool_out_defects, 'w')
-print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity")
+print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robustness")
 for defect in filenames_by_defect.keys():
     count_tp = 0
     count_fp = 0
     count_total = 0 
+    robust_counter = 0
     for filename in filenames_by_defect[defect]:
         count_total = count_total + len(variations_by_filename[filename])
         for variation in variations_by_filename[filename]:
@@ -142,10 +147,13 @@ for defect in filenames_by_defect.keys():
                 count_tp = count_tp + 1
             if (variation[4]):
                 count_fp = count_fp + 1
+            if (variation[3] and not variation[4]):
+                robust_counter = robust_counter + 1
     dr = (count_tp * 100) / count_total
     fpr = (count_fp * 100) / count_total
     prod = sqrt(dr * (100 - fpr))
-    print(defect,",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2))
+    robustness = (robust_counter * 100) / count_total
+    print(defect,",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2))
 
     
 # Total stats
