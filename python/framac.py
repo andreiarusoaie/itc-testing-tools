@@ -20,10 +20,10 @@ print("Executable options:", opts)
 
 c_files = dirutils.list_files(directory, '.c') # + dirutils.list_files(directory, '.cpp')
 c_files = [x for x in c_files if not ('invalid_extern' in x)]
-
+print(c_files)
 (output, err, exit, time) = system.system_call(exe + " -val " + " ".join(c_files), directory)
 temp_path = os.path.join(os.getcwd(), "csv", "framac", "temp", "framac-output.txt")
-temp_file = open(temp_path, 'a')
+temp_file = open(temp_path, 'w')
 temp_file.write(output.decode("utf-8"))
 temp_file.close()
 
