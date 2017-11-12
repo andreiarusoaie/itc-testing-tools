@@ -175,5 +175,5 @@ for filename in defect_dict.keys():
 dr = (count_tp * 100) / count_total
 fpr = (count_fp * 100) / count_total
 prod = sqrt(dr * (100 - fpr))
-robustness = (robust_counter * 100) / 639
+robustness = (robust_counter * 100) / count_total
 print(count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2))
