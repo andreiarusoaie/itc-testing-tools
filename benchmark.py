@@ -264,124 +264,174 @@ def run_cppcheck():
     print("Running cppcheck")
     call_python([CPPCHECK, W_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_W, CPPCHECK_EXE, CPPCHECK_OPTS])
     call_python([CPPCHECK, WO_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_WO, CPPCHECK_EXE, CPPCHECK_OPTS])
-    call_python([STATISTICS, C_MERGE_FILE, CPPCHECK_OUTPUT_C_W, CPPCHECK_OUTPUT_C_WO, CPPCHECK_OUT_SUBDEFECTS, CPPCHECK_OUT_DEFECTS, CPPCHECK_OUT_TOTAL])
     call_python([CPPCHECK, W_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
     call_python([CPPCHECK, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
+
+def run_cppcheck_stats():
+    print("Running cppcheck stats")
+    call_python([STATISTICS, C_MERGE_FILE, CPPCHECK_OUTPUT_C_W, CPPCHECK_OUTPUT_C_WO, CPPCHECK_OUT_SUBDEFECTS, CPPCHECK_OUT_DEFECTS, CPPCHECK_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_OUT_CPP_SUBDEFECTS, CPPCHECK_OUT_CPP_DEFECTS, CPPCHECK_OUT_CPP_TOTAL])
 
+    
 def run_cpplint():
     print("Running cpplint")
     call_python([CPPLINT, W_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_W, CPPLINT_EXE, CPPLINT_OPTS])
     call_python([CPPLINT, WO_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_WO, CPPLINT_EXE, CPPLINT_OPTS])
-    call_python([STATISTICS, C_MERGE_FILE, CPPLINT_OUTPUT_C_W, CPPLINT_OUTPUT_C_WO, CPPLINT_OUT_SUBDEFECTS, CPPLINT_OUT_DEFECTS, CPPLINT_OUT_TOTAL])
     call_python([CPPLINT, W_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_W, CPPLINT_EXE_CPP, CPPLINT_OPTS])
     call_python([CPPLINT, WO_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_WO, CPPLINT_EXE_CPP, CPPLINT_OPTS])
+
+def run_cpplint_stats():
+    print("Running cpplint")
+    call_python([STATISTICS, C_MERGE_FILE, CPPLINT_OUTPUT_C_W, CPPLINT_OUTPUT_C_WO, CPPLINT_OUT_SUBDEFECTS, CPPLINT_OUT_DEFECTS, CPPLINT_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, CPPLINT_OUTPUT_CPP_W, CPPLINT_OUTPUT_CPP_WO, CPPLINT_OUT_CPP_SUBDEFECTS, CPPLINT_OUT_CPP_DEFECTS, CPPLINT_OUT_CPP_TOTAL])
 
+    
 def run_flintpp():
     print("Running flintpp")
     call_python([FLINTPP, W_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_W, FLINTPP_EXE, FLINTPP_OPTS])
     call_python([FLINTPP, WO_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_WO, FLINTPP_EXE, FLINTPP_OPTS])
-    call_python([STATISTICS, C_MERGE_FILE, FLINTPP_OUTPUT_C_W, FLINTPP_OUTPUT_C_WO, FLINTPP_OUT_SUBDEFECTS, FLINTPP_OUT_DEFECTS, FLINTPP_OUT_TOTAL])
     call_python([FLINTPP, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
     call_python([FLINTPP, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+
+def run_flintpp_stats():
+    print("Running flintpp")
+    call_python([STATISTICS, C_MERGE_FILE, FLINTPP_OUTPUT_C_W, FLINTPP_OUTPUT_C_WO, FLINTPP_OUT_SUBDEFECTS, FLINTPP_OUT_DEFECTS, FLINTPP_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, FLINTPP_OUTPUT_CPP_W, FLINTPP_OUTPUT_CPP_WO, FLINTPP_OUT_CPP_SUBDEFECTS, FLINTPP_OUT_CPP_DEFECTS, FLINTPP_OUT_CPP_TOTAL])
 
-    
 def run_oclint():
     print("Running oclint")
     call_python([OCLINT, W_C_DEFECTS_DIR, OCLINT_OUTPUT_C_W, OCLINT_EXE, OCLINT_OPTS])
     call_python([OCLINT, WO_C_DEFECTS_DIR, OCLINT_OUTPUT_C_WO, OCLINT_EXE, OCLINT_OPTS])
-    call_python([STATISTICS, C_MERGE_FILE, OCLINT_OUTPUT_C_W, OCLINT_OUTPUT_C_WO, OCLINT_OUT_SUBDEFECTS, OCLINT_OUT_DEFECTS, OCLINT_OUT_TOTAL])
     call_python([OCLINT, W_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_W, OCLINT_EXE_CPP, OCLINT_OPTS])
     call_python([OCLINT, WO_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_WO, OCLINT_EXE_CPP, OCLINT_OPTS])
+
+def run_oclint_stats():
+    print("Running oclint")
+    call_python([STATISTICS, C_MERGE_FILE, OCLINT_OUTPUT_C_W, OCLINT_OUTPUT_C_WO, OCLINT_OUT_SUBDEFECTS, OCLINT_OUT_DEFECTS, OCLINT_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, OCLINT_OUTPUT_CPP_W, OCLINT_OUTPUT_CPP_WO, OCLINT_OUT_CPP_SUBDEFECTS, OCLINT_OUT_CPP_DEFECTS, OCLINT_OUT_CPP_TOTAL])
+
     
 def run_framac():
     print("Running framac")
     call_python([FRAMAC, W_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_W, FRAMAC_EXE, FRAMAC_OPTS])
     call_python([FRAMAC, WO_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_WO, FRAMAC_EXE, FRAMAC_OPTS])
-    call_python([STATISTICS, C_MERGE_FILE, FRAMAC_OUTPUT_C_W, FRAMAC_OUTPUT_C_WO, FRAMAC_OUT_SUBDEFECTS, FRAMAC_OUT_DEFECTS, FRAMAC_OUT_TOTAL])
     call_python([FRAMAC, W_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_W, FRAMAC_EXE_CPP, FRAMAC_OPTS])
     call_python([FRAMAC, WO_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_WO, FRAMAC_EXE_CPP, FRAMAC_OPTS])
+
+def run_framac_stats():
+    print("Running framac stats")
+    call_python([STATISTICS, C_MERGE_FILE, FRAMAC_OUTPUT_C_W, FRAMAC_OUTPUT_C_WO, FRAMAC_OUT_SUBDEFECTS, FRAMAC_OUT_DEFECTS, FRAMAC_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, FRAMAC_OUTPUT_CPP_W, FRAMAC_OUTPUT_CPP_WO, FRAMAC_OUT_CPP_SUBDEFECTS, FRAMAC_OUT_CPP_DEFECTS, FRAMAC_OUT_CPP_TOTAL])
+
     
 def run_sparse():
     print("Running sparse")
     call_python([SPARSE, W_C_DEFECTS_DIR, SPARSE_OUTPUT_C_W, SPARSE_EXE, SPARSE_OPTS]) 
     call_python([SPARSE, WO_C_DEFECTS_DIR, SPARSE_OUTPUT_C_WO, SPARSE_EXE, SPARSE_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, SPARSE_OUTPUT_C_W, SPARSE_OUTPUT_C_WO, SPARSE_OUT_SUBDEFECTS, SPARSE_OUT_DEFECTS, SPARSE_OUT_TOTAL])
     call_python([SPARSE, W_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_W, SPARSE_EXE_CPP, SPARSE_OPTS]) 
     call_python([SPARSE, WO_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_WO, SPARSE_EXE_CPP, SPARSE_OPTS])
+
+def run_sparse_stats():
+    print("Running sparse stats")
+    call_python([STATISTICS, C_MERGE_FILE, SPARSE_OUTPUT_C_W, SPARSE_OUTPUT_C_WO, SPARSE_OUT_SUBDEFECTS, SPARSE_OUT_DEFECTS, SPARSE_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, SPARSE_OUTPUT_CPP_W, SPARSE_OUTPUT_CPP_WO, SPARSE_OUT_CPP_SUBDEFECTS, SPARSE_OUT_CPP_DEFECTS, SPARSE_OUT_CPP_TOTAL])
 
+    
 def run_uno():
     print("Running uno")
     call_python([UNO, W_C_DEFECTS_DIR, UNO_OUTPUT_C_W, UNO_EXE, UNO_OPTS]) 
     call_python([UNO, WO_C_DEFECTS_DIR, UNO_OUTPUT_C_WO, UNO_EXE, UNO_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, UNO_OUTPUT_C_W, UNO_OUTPUT_C_WO, UNO_OUT_SUBDEFECTS, UNO_OUT_DEFECTS, UNO_OUT_TOTAL])
     call_python([UNO, W_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_W, UNO_EXE_CPP, UNO_OPTS]) 
     call_python([UNO, WO_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_WO, UNO_EXE_CPP, UNO_OPTS])
+
+def run_uno_stats():
+    print("Running uno stats")
+    call_python([STATISTICS, C_MERGE_FILE, UNO_OUTPUT_C_W, UNO_OUTPUT_C_WO, UNO_OUT_SUBDEFECTS, UNO_OUT_DEFECTS, UNO_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, UNO_OUTPUT_CPP_W, UNO_OUTPUT_CPP_WO, UNO_OUT_CPP_SUBDEFECTS, UNO_OUT_CPP_DEFECTS, UNO_OUT_CPP_TOTAL])
 
+    
 def run_flawfinder():
     print("Running flawfinder")
     call_python([FLAWFINDER, W_C_DEFECTS_DIR, FLAWFINDER_OUTPUT_C_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
     call_python([FLAWFINDER, WO_C_DEFECTS_DIR, FLAWFINDER_OUTPUT_C_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, FLAWFINDER_OUTPUT_C_W, FLAWFINDER_OUTPUT_C_WO, FLAWFINDER_OUT_SUBDEFECTS, FLAWFINDER_OUT_DEFECTS, FLAWFINDER_OUT_TOTAL])
     call_python([FLAWFINDER, W_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
     call_python([FLAWFINDER, WO_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS])
+
+def run_flawfinder_stats():
+    print("Running flawfinder stats")
+    call_python([STATISTICS, C_MERGE_FILE, FLAWFINDER_OUTPUT_C_W, FLAWFINDER_OUTPUT_C_WO, FLAWFINDER_OUT_SUBDEFECTS, FLAWFINDER_OUT_DEFECTS, FLAWFINDER_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, FLAWFINDER_OUTPUT_CPP_W, FLAWFINDER_OUTPUT_CPP_WO, FLAWFINDER_OUT_CPP_SUBDEFECTS, FLAWFINDER_OUT_CPP_DEFECTS, FLAWFINDER_OUT_CPP_TOTAL])
 
+    
 def run_splint():
     print("Running splint")
     call_python([SPLINT, W_C_DEFECTS_DIR, SPLINT_OUTPUT_C_W, SPLINT_EXE, SPLINT_OPTS]) 
     call_python([SPLINT, WO_C_DEFECTS_DIR, SPLINT_OUTPUT_C_WO, SPLINT_EXE, SPLINT_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, SPLINT_OUTPUT_C_W, SPLINT_OUTPUT_C_WO, SPLINT_OUT_SUBDEFECTS, SPLINT_OUT_DEFECTS, SPLINT_OUT_TOTAL])
     call_python([SPLINT, W_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_W, SPLINT_EXE, SPLINT_OPTS]) 
     call_python([SPLINT, WO_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_WO, SPLINT_EXE, SPLINT_OPTS])
+
+def run_splint_stats():
+    print("Running splint stats")
+    call_python([STATISTICS, C_MERGE_FILE, SPLINT_OUTPUT_C_W, SPLINT_OUTPUT_C_WO, SPLINT_OUT_SUBDEFECTS, SPLINT_OUT_DEFECTS, SPLINT_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, SPLINT_OUTPUT_CPP_W, SPLINT_OUTPUT_CPP_WO, SPLINT_OUT_CPP_SUBDEFECTS, SPLINT_OUT_CPP_DEFECTS, SPLINT_OUT_CPP_TOTAL])
 
+    
 def run_clang_core():
     print("Running clang-core")
     call_python([CLANG_CORE, W_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
     call_python([CLANG_CORE, WO_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_OUT_SUBDEFECTS, CLANG_CORE_OUT_DEFECTS, CLANG_CORE_OUT_TOTAL])
     call_python([CLANG_CORE_PP, W_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS]) 
     call_python([CLANG_CORE_PP, WO_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS])
+
+def run_clang_core_stats():
+    print("Running clang-core stats")
+    call_python([STATISTICS, C_MERGE_FILE, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_OUT_SUBDEFECTS, CLANG_CORE_OUT_DEFECTS, CLANG_CORE_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_OUT_CPP_SUBDEFECTS, CLANG_CORE_OUT_CPP_DEFECTS, CLANG_CORE_OUT_CPP_TOTAL])
 
+    
 def run_clang_alpha():
     print("Running clang-alpha")
     call_python([CLANG_ALPHA, W_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
     call_python([CLANG_ALPHA, WO_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_OUT_SUBDEFECTS, CLANG_ALPHA_OUT_DEFECTS, CLANG_ALPHA_OUT_TOTAL])
     call_python([CLANG_ALPHA_PP, W_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
     call_python([CLANG_ALPHA_PP, WO_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
+
+def run_clang_alpha_stats():
+    print("Running clang-alpha stats")
+    call_python([STATISTICS, C_MERGE_FILE, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_OUT_SUBDEFECTS, CLANG_ALPHA_OUT_DEFECTS, CLANG_ALPHA_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_OUT_CPP_SUBDEFECTS, CLANG_ALPHA_OUT_CPP_DEFECTS, CLANG_ALPHA_OUT_CPP_TOTAL])
 
+    
 def run_infer():
     print("Running infer")
     call_python([INFER, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE]) 
     call_python([INFER, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE]) 
-    call_python([STATISTICS, C_MERGE_FILE, INFER_OUTPUT_C_W, INFER_OUTPUT_C_WO, INFER_OUT_SUBDEFECTS, INFER_OUT_DEFECTS, INFER_OUT_TOTAL])
     call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
     call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
+
+def run_infer_stats():
+    print("Running infer stats")
+    call_python([STATISTICS, C_MERGE_FILE, INFER_OUTPUT_C_W, INFER_OUTPUT_C_WO, INFER_OUT_SUBDEFECTS, INFER_OUT_DEFECTS, INFER_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, INFER_OUTPUT_CPP_W, INFER_OUTPUT_CPP_WO, INFER_OUT_CPP_SUBDEFECTS, INFER_OUT_CPP_DEFECTS, INFER_OUT_CPP_TOTAL])
 
+    
 def run_clanalyze():
     print("Running cl /analyze")
     python.clanalyze.clanalyze(W_C_DEFECTS_DIR, CLANALYZE_OUTPUT_C_W, CLANALYZE_EXE, CLANALYZE_OPTS)
     python.clanalyze.clanalyze(WO_C_DEFECTS_DIR, CLANALYZE_OUTPUT_C_WO, CLANALYZE_EXE, CLANALYZE_OPTS) 
 #    call_python([CLANALYZE, W_C_DEFECTS_DIR, CLANALYZE_OUTPUT_C_W, CLANALYZE_EXE, CLANALYZE_OPTS]) 
 #    call_python([CLANALYZE, WO_C_DEFECTS_DIR, CLANALYZE_OUTPUT_C_WO, CLANALYZE_EXE, CLANALYZE_OPTS]) 
-    call_python([STATISTICS, C_MERGE_FILE, CLANALYZE_OUTPUT_C_W, CLANALYZE_OUTPUT_C_WO, CLANALYZE_OUT_SUBDEFECTS, CLANALYZE_OUT_DEFECTS, CLANALYZE_OUT_TOTAL])
     python.clanalyze.clanalyze(W_CPP_DEFECTS_DIR, CLANALYZE_OUTPUT_CPP_W, CLANALYZE_EXE, CLANALYZE_OPTS) 
     python.clanalyze.clanalyze(WO_CPP_DEFECTS_DIR, CLANALYZE_OUTPUT_CPP_WO, CLANALYZE_EXE, CLANALYZE_OPTS)
 #    call_python([CLANALYZE, W_CPP_DEFECTS_DIR, CLANALYZE_OUTPUT_CPP_W, CLANALYZE_EXE, CLANALYZE_OPTS]) 
 #    call_python([CLANALYZE, WO_CPP_DEFECTS_DIR, CLANALYZE_OUTPUT_CPP_WO, CLANALYZE_EXE, CLANALYZE_OPTS])
+
+def run_clanalyze_stats():
+    print("Running cl /analyze")
+    call_python([STATISTICS, C_MERGE_FILE, CLANALYZE_OUTPUT_C_W, CLANALYZE_OUTPUT_C_WO, CLANALYZE_OUT_SUBDEFECTS, CLANALYZE_OUT_DEFECTS, CLANALYZE_OUT_TOTAL])
     call_python([STATISTICS, CPP_MERGE_FILE, CLANALYZE_OUTPUT_CPP_W, CLANALYZE_OUTPUT_CPP_WO, CLANALYZE_OUT_CPP_SUBDEFECTS, CLANALYZE_OUT_CPP_DEFECTS, CLANALYZE_OUT_CPP_TOTAL])
 
+    
 def clean_temp():
     python.system.system_call("rm -rf ./csv/temp/")
     python.system.system_call("rm -f ./csv/clanalyze/*.csv")
@@ -402,42 +452,65 @@ if action == 'prepare_dirs':
     prepare_dirs()
 elif action == "clean":
     clean_temp()
-elif action == 'statistics':
-    print("Running all statistics")
-    run_cppcheck()
-    run_sparse()
-    run_uno()
-    run_infer()
-    run_splint()
-    run_flawfinder()
-    run_clang_core()
-    run_clang_alpha()
-    run_clanalyze()
-elif action == 'cppcheck':
-    run_cppcheck()
-elif action == 'clanalyze':
-    run_clanalyze()
-elif action == 'sparse':
-    run_sparse()
-elif action == "uno":
-    run_uno()
-elif action == 'infer':
-    run_infer()
-elif action == 'splint':
-    run_splint()
-elif action == "flawfinder":
-    run_flawfinder()
-elif action == 'clang-core':
-    run_clang_core()
-elif action == "clang-alpha":
-    run_clang_alpha()
-elif action == 'framac':
-    run_framac()
-elif action == 'cpplint':
-    run_cpplint()
-elif action == 'oclint':
-    run_oclint()
-elif action == 'flintpp':
-    run_flintpp()
+elif action == 'run':
+    tool = sys.argv[2]
+    if tool == 'cppcheck':
+        run_cppcheck()
+    elif tool == 'clanalyze':
+        run_clanalyze()
+    elif tool == 'sparse':
+        run_sparse()
+    elif tool == "uno":
+        run_uno()
+    elif tool == 'infer':
+        run_infer()
+    elif tool == 'splint':
+        run_splint()
+    elif tool == "flawfinder":
+        run_flawfinder()
+    elif tool == 'clang-core':
+        run_clang_core()
+    elif tool == "clang-alpha":
+        run_clang_alpha()
+    elif tool == 'framac':
+        run_framac()
+    elif tool == 'cpplint':
+        run_cpplint()
+    elif tool == 'oclint':
+        run_oclint()
+    elif tool == 'flintpp':
+        run_flintpp()
+    else:
+        print("Unknown tool", tool)
+elif action == 'stat':
+    tool = sys.argv[2]
+    if tool == 'cppcheck':
+        run_cppcheck_stats()
+    elif tool == 'clanalyze':
+        run_clanalyze_stats()
+    elif tool == 'sparse':
+        run_sparse_stats()
+    elif tool == "uno":
+        run_uno_stats()
+    elif tool == 'infer':
+        run_infer_stats()
+    elif tool == 'splint':
+        run_splint_stats()
+    elif tool == "flawfinder":
+        run_flawfinder_stats()
+    elif tool == 'clang-core':
+        run_clang_core_stats()
+    elif tool == "clang-alpha":
+        run_clang_alpha_stats()
+    elif tool == 'framac':
+        run_framac_stats()
+    elif tool == 'cpplint':
+        run_cpplint_stats()
+    elif tool == 'oclint':
+        run_oclint_stats()
+    elif tool == 'flintpp':
+        run_flintpp_stats()
+    else:
+        print("Unknown tool", tool)
 else:
-    print("Action ", action, " not supported.\n")
+    print("Action ", action, " not supported or incomplete.\n")
