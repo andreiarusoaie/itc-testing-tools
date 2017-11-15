@@ -112,7 +112,7 @@ with open(merged_csv_filename, "r") as merged_file:
 
 # Sub-defects stats
 sys.stdout = open(tool_out_subdefects, 'w')
-print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robustness")
+print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection rate")
 for filename in defect_dict.keys():
     count_tp = 0
     count_fp = 0
@@ -134,7 +134,7 @@ for filename in defect_dict.keys():
 
 # Defects stats
 sys.stdout = open(tool_out_defects, 'w')
-print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robustness")
+print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection rate")
 for defect in filenames_by_defect.keys():
     count_tp = 0
     count_fp = 0
@@ -162,7 +162,7 @@ count_tp = 0
 count_fp = 0
 count_total = 0 
 robust_counter = 0
-print("TP, FP, Variations, Detection rate, False pos rate, Productivity, Robustness")
+print("TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection rate")
 for filename in defect_dict.keys():
     count_total = count_total + len(variations_by_filename[filename])
     for variation in variations_by_filename[filename]:
