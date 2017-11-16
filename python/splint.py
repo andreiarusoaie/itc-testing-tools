@@ -20,7 +20,7 @@ print("Executable options:", opts)
 
 c_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
 temp_path = os.path.join(os.getcwd(), "csv", "splint", "temp", "splint-output.txt")
-os.remove(temp_path)
+# os.remove(temp_path)
 for source_file in c_files:
     (output, err, exit, time) = system.system_call(exe + " -nestcomment +posixlib " + source_file + " " + opts, directory)
     temp_file = open(temp_path, 'a')
