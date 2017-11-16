@@ -272,17 +272,22 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(rep_directory, "flintpp", "temp"))
 
 def call_python(args):
-    python.system.system_call("python3 " + " ".join(args))
+    (output, err, exit, time) = python.system.system_call("python3 " + " ".join(args))
+    return time
 
 def call_bash(args):
-    python.system.system_call("bash " + " ".join(args))
+    (output, err, exit, time) = python.system.system_call("bash " + " ".join(args))
+    return time
     
 def run_cppcheck():
     print("Running cppcheck")
-    call_python([CPPCHECK, W_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_W, CPPCHECK_EXE, CPPCHECK_OPTS])
-    call_python([CPPCHECK, WO_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_WO, CPPCHECK_EXE, CPPCHECK_OPTS])
-    call_python([CPPCHECK, W_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
-    call_python([CPPCHECK, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
+    t1 = call_python([CPPCHECK, W_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_W, CPPCHECK_EXE, CPPCHECK_OPTS])
+    t2 = call_python([CPPCHECK, WO_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_WO, CPPCHECK_EXE, CPPCHECK_OPTS])
+    t3 = call_python([CPPCHECK, W_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
+    t4 = call_python([CPPCHECK, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "cppcheck" ,"timing.csv"), "w")
+    print("cppcheck", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_cppcheck_stats(tools):
     print("Running cppcheck stats")
@@ -292,10 +297,13 @@ def run_cppcheck_stats(tools):
     
 def run_cpplint():
     print("Running cpplint")
-    call_python([CPPLINT, W_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_W, CPPLINT_EXE, CPPLINT_OPTS])
-    call_python([CPPLINT, WO_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_WO, CPPLINT_EXE, CPPLINT_OPTS])
-    call_python([CPPLINT, W_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_W, CPPLINT_EXE_CPP, CPPLINT_OPTS])
-    call_python([CPPLINT, WO_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_WO, CPPLINT_EXE_CPP, CPPLINT_OPTS])
+    t1 = call_python([CPPLINT, W_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_W, CPPLINT_EXE, CPPLINT_OPTS])
+    t2 = call_python([CPPLINT, WO_C_DEFECTS_DIR, CPPLINT_OUTPUT_C_WO, CPPLINT_EXE, CPPLINT_OPTS])
+    t3 = call_python([CPPLINT, W_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_W, CPPLINT_EXE_CPP, CPPLINT_OPTS])
+    t4 = call_python([CPPLINT, WO_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_WO, CPPLINT_EXE_CPP, CPPLINT_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "cpplint" ,"timing.csv"), "w")
+    print("cpplint", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_cpplint_stats(tools):
     print("Running cpplint")
@@ -305,10 +313,13 @@ def run_cpplint_stats(tools):
     
 def run_flintpp():
     print("Running flintpp")
-    call_python([FLINTPP, W_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_W, FLINTPP_EXE, FLINTPP_OPTS])
-    call_python([FLINTPP, WO_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_WO, FLINTPP_EXE, FLINTPP_OPTS])
-    call_python([FLINTPP, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
-    call_python([FLINTPP, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    t1 = call_python([FLINTPP, W_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_W, FLINTPP_EXE, FLINTPP_OPTS])
+    t2 = call_python([FLINTPP, WO_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_WO, FLINTPP_EXE, FLINTPP_OPTS])
+    t3 = call_python([FLINTPP, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    t4 = call_python([FLINTPP, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "flintpp" ,"timing.csv"), "w")
+    print("flintpp", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_flintpp_stats(tools):
     print("Running flintpp")
@@ -317,10 +328,13 @@ def run_flintpp_stats(tools):
 
 def run_oclint():
     print("Running oclint")
-    call_python([OCLINT, W_C_DEFECTS_DIR, OCLINT_OUTPUT_C_W, OCLINT_EXE, OCLINT_OPTS])
-    call_python([OCLINT, WO_C_DEFECTS_DIR, OCLINT_OUTPUT_C_WO, OCLINT_EXE, OCLINT_OPTS])
-    call_python([OCLINT, W_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_W, OCLINT_EXE_CPP, OCLINT_OPTS])
-    call_python([OCLINT, WO_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_WO, OCLINT_EXE_CPP, OCLINT_OPTS])
+    t1 = call_python([OCLINT, W_C_DEFECTS_DIR, OCLINT_OUTPUT_C_W, OCLINT_EXE, OCLINT_OPTS])
+    t2 = call_python([OCLINT, WO_C_DEFECTS_DIR, OCLINT_OUTPUT_C_WO, OCLINT_EXE, OCLINT_OPTS])
+    t3 = call_python([OCLINT, W_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_W, OCLINT_EXE_CPP, OCLINT_OPTS])
+    t4 = call_python([OCLINT, WO_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_WO, OCLINT_EXE_CPP, OCLINT_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "oclint" ,"timing.csv"), "w")
+    print("oclint", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_oclint_stats(tools):
     print("Running oclint")
@@ -330,10 +344,13 @@ def run_oclint_stats(tools):
     
 def run_framac():
     print("Running framac")
-    call_python([FRAMAC, W_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_W, FRAMAC_EXE, FRAMAC_OPTS])
-    call_python([FRAMAC, WO_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_WO, FRAMAC_EXE, FRAMAC_OPTS])
-    call_python([FRAMAC, W_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_W, FRAMAC_EXE_CPP, FRAMAC_OPTS])
-    call_python([FRAMAC, WO_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_WO, FRAMAC_EXE_CPP, FRAMAC_OPTS])
+    t1 = call_python([FRAMAC, W_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_W, FRAMAC_EXE, FRAMAC_OPTS])
+    t2 = call_python([FRAMAC, WO_C_DEFECTS_DIR, FRAMAC_OUTPUT_C_WO, FRAMAC_EXE, FRAMAC_OPTS])
+    t3 = call_python([FRAMAC, W_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_W, FRAMAC_EXE_CPP, FRAMAC_OPTS])
+    t4 = call_python([FRAMAC, WO_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_WO, FRAMAC_EXE_CPP, FRAMAC_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "framac" ,"timing.csv"), "w")
+    print("framac", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_framac_stats(tools):
     print("Running framac stats")
@@ -343,10 +360,13 @@ def run_framac_stats(tools):
     
 def run_sparse():
     print("Running sparse")
-    call_python([SPARSE, W_C_DEFECTS_DIR, SPARSE_OUTPUT_C_W, SPARSE_EXE, SPARSE_OPTS]) 
-    call_python([SPARSE, WO_C_DEFECTS_DIR, SPARSE_OUTPUT_C_WO, SPARSE_EXE, SPARSE_OPTS]) 
-    call_python([SPARSE, W_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_W, SPARSE_EXE_CPP, SPARSE_OPTS]) 
-    call_python([SPARSE, WO_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_WO, SPARSE_EXE_CPP, SPARSE_OPTS])
+    t1 = call_python([SPARSE, W_C_DEFECTS_DIR, SPARSE_OUTPUT_C_W, SPARSE_EXE, SPARSE_OPTS]) 
+    t2 = call_python([SPARSE, WO_C_DEFECTS_DIR, SPARSE_OUTPUT_C_WO, SPARSE_EXE, SPARSE_OPTS]) 
+    t3 = call_python([SPARSE, W_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_W, SPARSE_EXE_CPP, SPARSE_OPTS]) 
+    t4 = call_python([SPARSE, WO_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_WO, SPARSE_EXE_CPP, SPARSE_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "sparse" ,"timing.csv"), "w")
+    print("sparse", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_sparse_stats(tools):
     print("Running sparse stats")
@@ -356,10 +376,13 @@ def run_sparse_stats(tools):
     
 def run_uno():
     print("Running uno")
-    call_python([UNO, W_C_DEFECTS_DIR, UNO_OUTPUT_C_W, UNO_EXE, UNO_OPTS]) 
-    call_python([UNO, WO_C_DEFECTS_DIR, UNO_OUTPUT_C_WO, UNO_EXE, UNO_OPTS]) 
-    call_python([UNO, W_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_W, UNO_EXE_CPP, UNO_OPTS]) 
-    call_python([UNO, WO_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_WO, UNO_EXE_CPP, UNO_OPTS])
+    t1 = call_python([UNO, W_C_DEFECTS_DIR, UNO_OUTPUT_C_W, UNO_EXE, UNO_OPTS]) 
+    t2 = call_python([UNO, WO_C_DEFECTS_DIR, UNO_OUTPUT_C_WO, UNO_EXE, UNO_OPTS]) 
+    t3 = call_python([UNO, W_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_W, UNO_EXE_CPP, UNO_OPTS]) 
+    t4 = call_python([UNO, WO_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_WO, UNO_EXE_CPP, UNO_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "uno" ,"timing.csv"), "w")
+    print("uno", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_uno_stats(tools):
     print("Running uno stats")
@@ -369,10 +392,13 @@ def run_uno_stats(tools):
     
 def run_flawfinder():
     print("Running flawfinder")
-    call_python([FLAWFINDER, W_C_DEFECTS_DIR, FLAWFINDER_OUTPUT_C_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
-    call_python([FLAWFINDER, WO_C_DEFECTS_DIR, FLAWFINDER_OUTPUT_C_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
-    call_python([FLAWFINDER, W_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
-    call_python([FLAWFINDER, WO_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS])
+    t1 = call_python([FLAWFINDER, W_C_DEFECTS_DIR, FLAWFINDER_OUTPUT_C_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
+    t2 = call_python([FLAWFINDER, WO_C_DEFECTS_DIR, FLAWFINDER_OUTPUT_C_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
+    t3 = call_python([FLAWFINDER, W_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
+    t4 = call_python([FLAWFINDER, WO_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "flawfinder" ,"timing.csv"), "w")
+    print("flawfinder", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_flawfinder_stats(tools):
     print("Running flawfinder stats")
@@ -382,10 +408,13 @@ def run_flawfinder_stats(tools):
     
 def run_splint():
     print("Running splint")
-    call_python([SPLINT, W_C_DEFECTS_DIR, SPLINT_OUTPUT_C_W, SPLINT_EXE, SPLINT_OPTS]) 
-    call_python([SPLINT, WO_C_DEFECTS_DIR, SPLINT_OUTPUT_C_WO, SPLINT_EXE, SPLINT_OPTS]) 
-    call_python([SPLINT, W_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_W, SPLINT_EXE, SPLINT_OPTS]) 
-    call_python([SPLINT, WO_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_WO, SPLINT_EXE, SPLINT_OPTS])
+    t1 = call_python([SPLINT, W_C_DEFECTS_DIR, SPLINT_OUTPUT_C_W, SPLINT_EXE, SPLINT_OPTS]) 
+    t2 = call_python([SPLINT, WO_C_DEFECTS_DIR, SPLINT_OUTPUT_C_WO, SPLINT_EXE, SPLINT_OPTS]) 
+    t3 = call_python([SPLINT, W_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_W, SPLINT_EXE, SPLINT_OPTS]) 
+    t4 = call_python([SPLINT, WO_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_WO, SPLINT_EXE, SPLINT_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "splint" ,"timing.csv"), "w")
+    print("splint", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__    
 
 def run_splint_stats(tools):
     print("Running splint stats")
@@ -395,10 +424,14 @@ def run_splint_stats(tools):
     
 def run_clang_core():
     print("Running clangcore")
-    call_python([CLANG_CORE, W_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
-    call_python([CLANG_CORE, WO_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
-    call_python([CLANG_CORE_PP, W_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS]) 
-    call_python([CLANG_CORE_PP, WO_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS])
+    t1 = call_python([CLANG_CORE, W_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
+    t2 = call_python([CLANG_CORE, WO_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
+    t3 = call_python([CLANG_CORE_PP, W_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS]) 
+    t4 = call_python([CLANG_CORE_PP, WO_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "clangcore" ,"timing.csv"), "w")
+    print("clangcore", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
+
 
 def run_clang_core_stats(tools):
     print("Running clangcore stats")
@@ -408,10 +441,13 @@ def run_clang_core_stats(tools):
     
 def run_clang_alpha():
     print("Running clangalpha")
-    call_python([CLANG_ALPHA, W_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
-    call_python([CLANG_ALPHA, WO_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
-    call_python([CLANG_ALPHA_PP, W_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
-    call_python([CLANG_ALPHA_PP, WO_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
+    t1 = call_python([CLANG_ALPHA, W_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
+    t2 = call_python([CLANG_ALPHA, WO_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
+    t3 = call_python([CLANG_ALPHA_PP, W_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
+    t4 = call_python([CLANG_ALPHA_PP, WO_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "clangalpha" ,"timing.csv"), "w")
+    print("clangalpha", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_clang_alpha_stats(tools):
     print("Running clangalpha stats")
@@ -421,10 +457,13 @@ def run_clang_alpha_stats(tools):
     
 def run_infer():
     print("Running infer")
-    call_python([INFER, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE]) 
-    call_python([INFER, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE]) 
-    call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
-    call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
+    t1 = call_python([INFER, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE]) 
+    t2 = call_python([INFER, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE]) 
+    t3 = call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
+    t4 = call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
+    sys.stdout=open(os.path.join(rep_directory, "infer" ,"timing.csv"), "w")
+    print("infer", t1 + t3, t2 + t4)
+    sys.stdout=sys.__stdout__
 
 def run_infer_stats(tools):
     print("Running infer stats")
@@ -475,7 +514,8 @@ def generate_main_itc_csvs():
 #     python.system.system_call("rm -f ./csv/flawfinder/temp/*.csv")
 
 action = sys.argv[2]
-if action == 'all':
+if action == 'setup':
+    prepare_dirs()
     generate_main_itc_csvs()
 elif action == 'prepare_dirs':
     prepare_dirs()
