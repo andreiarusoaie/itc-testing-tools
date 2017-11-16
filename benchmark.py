@@ -377,27 +377,27 @@ def run_splint_stats(tools):
 
     
 def run_clang_core():
-    print("Running clang-core")
+    print("Running clangcore")
     call_python([CLANG_CORE, W_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
     call_python([CLANG_CORE, WO_C_DEFECTS_DIR, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_EXE, CLANG_CORE_OPTS]) 
     call_python([CLANG_CORE_PP, W_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS]) 
     call_python([CLANG_CORE_PP, WO_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS])
 
 def run_clang_core_stats(tools):
-    print("Running clang-core stats")
+    print("Running clangcore stats")
     call_python([STATISTICS, C_MERGE_FILE, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_OUT_SUBDEFECTS, CLANG_CORE_OUT_DEFECTS, CLANG_CORE_OUT_TOTAL, tools])
     call_python([STATISTICS, CPP_MERGE_FILE, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_OUT_CPP_SUBDEFECTS, CLANG_CORE_OUT_CPP_DEFECTS, CLANG_CORE_OUT_CPP_TOTAL, tools])
 
     
 def run_clang_alpha():
-    print("Running clang-alpha")
+    print("Running clangalpha")
     call_python([CLANG_ALPHA, W_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
     call_python([CLANG_ALPHA, WO_C_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_EXE, CLANG_ALPHA_OPTS]) 
     call_python([CLANG_ALPHA_PP, W_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
     call_python([CLANG_ALPHA_PP, WO_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
 
 def run_clang_alpha_stats(tools):
-    print("Running clang-alpha stats")
+    print("Running clangalpha stats")
     call_python([STATISTICS, C_MERGE_FILE, CLANG_ALPHA_OUTPUT_C_W, CLANG_ALPHA_OUTPUT_C_WO, CLANG_ALPHA_OUT_SUBDEFECTS, CLANG_ALPHA_OUT_DEFECTS, CLANG_ALPHA_OUT_TOTAL, tools])
     call_python([STATISTICS, CPP_MERGE_FILE, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_OUT_CPP_SUBDEFECTS, CLANG_ALPHA_OUT_CPP_DEFECTS, CLANG_ALPHA_OUT_CPP_TOTAL, tools])
 
@@ -468,9 +468,9 @@ elif action == 'run':
         run_splint()
     elif tool == "flawfinder":
         run_flawfinder()
-    elif tool == 'clang-core':
+    elif tool == 'clangcore':
         run_clang_core()
-    elif tool == "clang-alpha":
+    elif tool == "clangalpha":
         run_clang_alpha()
     elif tool == 'framac':
         run_framac()
@@ -501,9 +501,9 @@ elif action == 'stat':
         run_splint_stats(tools)
     elif tool == "flawfinder":
         run_flawfinder_stats(tools)
-    elif tool == 'clang-core':
+    elif tool == 'clangcore':
         run_clang_core_stats(tools)
-    elif tool == "clang-alpha":
+    elif tool == "clangalpha":
         run_clang_alpha_stats(tools)
     elif tool == 'framac':
         run_framac_stats(tools)
