@@ -3,6 +3,7 @@ import os.path
 import system
 import dirutils
 import tempfile
+from itertools import takewhile
 
 directory = os.path.abspath(sys.argv[1])
 csv       = os.path.abspath(sys.argv[2])
