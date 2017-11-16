@@ -28,7 +28,7 @@ temp_file.close()
 
 sys.stdout = open(csv, "w")
 print("File, Line, Error")
-with open(temp_file) as f:
+with open(temp_path) as f:
     for line in f.readlines():
         a = line.strip().split(":")
         if (len(a) >= 4) and (a[0] == 'uno'):
