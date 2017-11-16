@@ -142,7 +142,7 @@ sys.stdout = sys.__stdout__
 
 # Sub-defects stats
 sys.stdout = open(tool_out_subdefects, 'w')
-print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection rate", ",", "Unique")
+print("Filename, Defect, Subdefect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection count, Robust detection rate", ",", "Unique")
 for filename in defect_dict.keys():
     count_tp = 0
     count_fp = 0
@@ -163,12 +163,12 @@ for filename in defect_dict.keys():
     fpr = (count_fp * 100) / count_total
     prod = sqrt(dr * (100 - fpr))
     robustness = (robust_counter * 100) / count_total
-    print(filename,",", defect_dict[filename],",", subdefect_dict[filename],",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2), ",", unique)
+    print(filename,",", defect_dict[filename],",", subdefect_dict[filename],",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", robust_counter , ",", round(robustness,2), ",", unique)
     
 
 # Defects stats
 sys.stdout = open(tool_out_defects, 'w')
-print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection rate, Unique")
+print("Defect, TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection count, Robust detection rate, Unique")
 for defect in filenames_by_defect.keys():
     count_tp = 0
     count_fp = 0
@@ -191,7 +191,7 @@ for defect in filenames_by_defect.keys():
     fpr = (count_fp * 100) / count_total
     prod = sqrt(dr * (100 - fpr))
     robustness = (robust_counter * 100) / count_total
-    print(defect,",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2), ",", unique)
+    print(defect,",", count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", robust_counter, ",", round(robustness,2), ",", unique)
 
     
 # Total stats
@@ -201,7 +201,7 @@ count_fp = 0
 count_total = 0 
 robust_counter = 0
 unique = 0
-print("TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection rate, Unique")
+print("TP, FP, Variations, Detection rate, False pos rate, Productivity, Robust detection count, Robust detection rate, Unique")
 for filename in defect_dict.keys():
     count_total = count_total + len(variations_by_filename[filename])
     for variation in variations_by_filename[filename]:
@@ -218,4 +218,4 @@ dr = (count_tp * 100) / count_total
 fpr = (count_fp * 100) / count_total
 prod = sqrt(dr * (100 - fpr))
 robustness = (robust_counter * 100) / count_total
-print(count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", round(robustness,2), ",", unique)
+print(count_tp,",", count_fp,",", count_total, ",", round(dr,2), ",", round(fpr,2), ",", round(prod,2), ",", robust_counter, ",", round(robustness,2), ",", unique)
