@@ -4,11 +4,13 @@ import system
 import dirutils
 import tempfile
 
-directory = os.path.abspath(sys.argv[1])
-csv       = os.path.abspath(sys.argv[2])
-exe       = sys.argv[3]
-if (len(sys.argv) > 4):
-    opts      = sys.argv[4]
+
+temp_path = os.path.abspath(sys.argv[1])
+directory = os.path.abspath(sys.argv[2])
+csv       = os.path.abspath(sys.argv[3])
+exe       = sys.argv[4]
+if (len(sys.argv) > 5):
+    opts      = sys.argv[5]
 else:
     opts = ""
 
@@ -19,7 +21,7 @@ print("Excutable:", exe)
 print("Executable options:", opts)
 
 c_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
-temp_path = os.path.join(os.getcwd(), "csv", "splint", "temp", "splint-output.txt")
+# temp_path = os.path.join(os.getcwd(), "csv", "splint", "temp", "splint-output.txt")
 # os.remove(temp_path)
 for source_file in c_files:
     (output, err, exit, time) = system.system_call(exe + " -nestcomment +posixlib " + source_file + " " + opts, directory)

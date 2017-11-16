@@ -4,10 +4,11 @@ import system
 import dirutils
 import tempfile
 
-directory = os.path.abspath(sys.argv[1])
-csv       = os.path.abspath(sys.argv[2])
-exe       = sys.argv[3]
-opts      = sys.argv[4]
+temp_path = os.path.abspath(sys.argv[1])
+directory = os.path.abspath(sys.argv[2])
+csv       = os.path.abspath(sys.argv[3])
+exe       = sys.argv[4]
+opts      = sys.argv[5]
 
 print("======Running clang=======")
 print("Working dir:", directory)
@@ -18,15 +19,13 @@ print("Executable options:", opts)
 c_files = dirutils.list_files(directory, '.c')
 (output, err, exit, time) = system.system_call(exe + " " + opts + " " + " ".join(c_files), ".")
 
-temp_path = os.path.join(os.getcwd(), "csv", "clangcore", "temp", "clang-output.txt")
 temp_file = open(temp_path, 'w')
 temp_file.write(err.decode("utf-8"))
 temp_file.close()
 
-report = temp_path
 sys.stdout = open(csv, "w")
 print("File, Line, Error")
-with open(report) as f:
+with open(temp_path) as f:
     for line in f.readlines():
         a = line.strip().split(":")
         if (len(a) >= 4):

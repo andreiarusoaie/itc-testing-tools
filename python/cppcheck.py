@@ -5,10 +5,11 @@ import dirutils
 import tempfile
 import xml.etree.ElementTree as ET
 
-directory = os.path.abspath(sys.argv[1])
-csv       = os.path.abspath(sys.argv[2])
-exe       = sys.argv[3]
-opts      = sys.argv[4]
+temp_path = os.path.abspath(sys.argv[1])
+directory = os.path.abspath(sys.argv[2])
+csv       = os.path.abspath(sys.argv[3])
+exe       = sys.argv[4]
+opts      = sys.argv[5]
 
 print("======Running cppcheck=======")
 print("Working dir:", directory)
@@ -16,8 +17,6 @@ print("CSV file:", csv)
 print("Excutable:", exe)
 print("Executable options:", opts)
 
-#c_files = dirutils.list_files(directory, '.c')
-temp_path = os.path.join(os.getcwd(), "csv", "clangcore", "temp", "cppcheck-output.xml")
 (output, err, exit, time) = system.system_call(exe + " --quiet " + opts + " " + directory + " --output-file=" + temp_path, ".")
 
 report=temp_path

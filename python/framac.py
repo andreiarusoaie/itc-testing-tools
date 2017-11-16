@@ -4,11 +4,13 @@ import system
 import dirutils
 import tempfile
 
-directory = os.path.abspath(sys.argv[1])
-csv       = os.path.abspath(sys.argv[2])
-exe       = sys.argv[3]
-if (len(sys.argv) > 4):
-    opts      = sys.argv[4]
+
+temp_path = os.path.abspath(sys.argv[1])
+directory = os.path.abspath(sys.argv[2])
+csv       = os.path.abspath(sys.argv[3])
+exe       = sys.argv[4]
+if (len(sys.argv) > 5):
+    opts      = sys.argv[5]
 else:
     opts = ""
 
@@ -22,7 +24,6 @@ c_files = dirutils.list_files(directory, '.c') # + dirutils.list_files(directory
 c_files = [x for x in c_files if not ('invalid_extern' in x)]
 print(c_files)
 (output, err, exit, time) = system.system_call(exe + " -val " + " ".join(c_files), directory)
-temp_path = os.path.join(os.getcwd(), "csv", "framac", "temp", "framac-output.txt")
 temp_file = open(temp_path, 'w')
 temp_file.write(output.decode("utf-8"))
 temp_file.close()
