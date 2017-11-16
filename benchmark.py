@@ -156,7 +156,7 @@ FLAWFINDER_OUT_CPP_TOTAL = "./csv/flawfinder/cpp_total.csv"
 
 
 # ## UNO
-UNO = "./bash/uno.sh"
+UNO = "./python/uno.py"
 UNO_EXE = "uno"
 UNO_EXE_CPP = "uno"
 UNO_OUTPUT_C_W = "./csv/uno/temp/c_w_errors_per_line.csv"
