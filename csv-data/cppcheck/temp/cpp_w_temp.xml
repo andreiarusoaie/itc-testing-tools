@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.81"/>
+    <errors>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp" line="22" info="Division by zero"/>
+            <location file="/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp" line="20" info="Assignment &apos;a=0&apos;, assigned value is 0"/>
+        </error>
+    </errors>
+</results>

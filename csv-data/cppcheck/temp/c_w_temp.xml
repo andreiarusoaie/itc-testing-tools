@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.81"/>
+    <errors>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="70"/>
+        </error>
+        <error id="shiftNegative" severity="error" msg="Shifting by a negative value is undefined behaviour" verbose="Shifting by a negative value is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="94"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="22" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="46" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="82" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="107" info="Shift"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="105" info="Assignment &apos;shift=32&apos;, assigned value is 32"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="134" info="Shift"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="132" info="Assignment &apos;shift=6&apos;, assigned value is 6"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="147" info="Shift"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="145" info="Assignment &apos;shift=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="164" info="Shift"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="176" info="Shift"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="182" info="Calling function &apos;bit_shift_013_func_001&apos;, 1st argument &apos;shift&apos; value is 32"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="209" info="Shift"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="208" info="Assignment &apos;shift1=shift&apos;, assigned value is 32"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="205" info="Assignment &apos;shift=32&apos;, assigned value is 32"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="226" info="Shift"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="225" info="Assignment &apos;shift2=shift1&apos;, assigned value is 32"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="224" info="Assignment &apos;shift1=shift&apos;, assigned value is 32"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="220" info="Assignment &apos;shift=32&apos;, assigned value is 32"/>
+        </error>
+        <error id="shiftTooManyBits" severity="error" msg="Shifting 32-bit value by 32 bits is undefined behaviour" verbose="Shifting 32-bit value by 32 bits is undefined behaviour" cwe="758">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="237" info="Shift"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;32&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;32&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="22" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="20" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;shift&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;shift&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="107" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="104" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;((5*shift)+2)&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;((5*shift)+2)&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="134" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="131" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;((shift*shift)+7)&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;((shift*shift)+7)&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="147" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="144" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;bit_shift_012_func_001()&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;bit_shift_012_func_001()&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="164" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="162" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;shift&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;shift&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="176" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="174" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;shift1&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;shift1&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="209" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="204" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;a&lt;&lt;shift2&apos;." verbose="Signed integer overflow for expression &apos;a&lt;&lt;shift2&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="226" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="219" info="Assignment &apos;a=1&apos;, assigned value is 1"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;1&lt;&lt;32&apos;." verbose="Signed integer overflow for expression &apos;1&lt;&lt;32&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c" line="237" info="Integer overflow"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;indexes[4]&apos; accessed at index 4, which is out of bounds." verbose="Array &apos;indexes[4]&apos; accessed at index 4, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c" line="333" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c" line="330" info="Assignment &apos;index=4&apos;, assigned value is 4"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;ptr_s[i].arr[10]&apos; accessed at index 10, which is out of bounds." verbose="Array &apos;ptr_s[i].arr[10]&apos; accessed at index 10, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c" line="607" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;indexes[4]&apos; accessed at index 4, which is out of bounds." verbose="Array &apos;indexes[4]&apos; accessed at index 4, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c" line="333" info="Array index out of bounds"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array index -3 is out of bounds." verbose="Array index -3 is out of bounds." cwe="786">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_underrun_dynamic.c" line="178" info="Negative array index"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[1]&apos; accessed at index -1, which is out of bounds." verbose="Array &apos;buf[1]&apos; accessed at index -1, which is out of bounds." cwe="788">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_underrun_dynamic.c" line="532"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;newTest[10]&apos; accessed at index -10, which is out of bounds." verbose="Array &apos;newTest[10]&apos; accessed at index -10, which is out of bounds." cwe="788">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_underrun_dynamic.c" line="701"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (3.40282e+38) to integer conversion overflow." verbose="Undefined behaviour: float (3.40282e+38) to integer conversion overflow." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_lost.c" line="83" info="float to integer conversion"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_lost.c" line="82" info="Assignment &apos;ret=a&apos;, assigned value is 3.4028235678e+38"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_lost.c" line="81" info="Assignment &apos;a=3.4028235677973366e+38&apos;, assigned value is 3.4028235678e+38"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+1&apos;." verbose="Signed integer overflow for expression &apos;max+1&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="49" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="47" info="Assignment &apos;max=2147483647&apos;, assigned value is 2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+128&apos;." verbose="Signed integer overflow for expression &apos;max+128&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="166" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="164" info="Assignment &apos;max=2147483520&apos;, assigned value is 2147483520"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max*2&apos;." verbose="Signed integer overflow for expression &apos;max*2&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="178" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="176" info="Assignment &apos;max=1073741824&apos;, assigned value is 1073741824"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+d&apos;." verbose="Signed integer overflow for expression &apos;max+d&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="191" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="188" info="Assignment &apos;max=2147483647&apos;, assigned value is 2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;(5*max)+3&apos;." verbose="Signed integer overflow for expression &apos;(5*max)+3&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="217" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="215" info="Assignment &apos;max=429496729&apos;, assigned value is 429496729"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;(max*max)+88048&apos;." verbose="Signed integer overflow for expression &apos;(max*max)+88048&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="229" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="227" info="Assignment &apos;max=46340&apos;, assigned value is 46340"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+data_overflow_018_func_001()&apos;." verbose="Signed integer overflow for expression &apos;max+data_overflow_018_func_001()&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="246" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="244" info="Assignment &apos;max=2147483647&apos;, assigned value is 2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+d&apos;." verbose="Signed integer overflow for expression &apos;max+d&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="258" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="256" info="Assignment &apos;max=2147483647&apos;, assigned value is 2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+d1&apos;." verbose="Signed integer overflow for expression &apos;max+d1&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="291" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="286" info="Assignment &apos;max=2147483647&apos;, assigned value is 2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;max+d2&apos;." verbose="Signed integer overflow for expression &apos;max+d2&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="308" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="301" info="Assignment &apos;max=2147483647&apos;, assigned value is 2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;2147483647+1&apos;." verbose="Signed integer overflow for expression &apos;2147483647+1&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="319" info="Integer overflow"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (inf) to integer conversion overflow." verbose="Undefined behaviour: float (inf) to integer conversion overflow." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="336" info="float to integer conversion"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="335" info="Assignment &apos;ret=max+2.02824096e+31F&apos;, assigned value is inf.0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="332" info="Assignment &apos;max=3.40282347e+38F&apos;, assigned value is 3.40282347e+38"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (inf) to integer conversion overflow." verbose="Undefined behaviour: float (inf) to integer conversion overflow." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="352" info="float to integer conversion"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="351" info="Assignment &apos;ret=max+1.9958403095347198e+292&apos;, assigned value is inf.0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c" line="348" info="Assignment &apos;max=1.7976931348623157e+308&apos;, assigned value is 1.79769313486e+308"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;min-2&apos;." verbose="Signed integer overflow for expression &apos;min-2&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="21" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="19" info="Assignment &apos;min=-2147483647&apos;, assigned value is -2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;min-128&apos;." verbose="Signed integer overflow for expression &apos;min-128&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="59" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="57" info="Assignment &apos;min=-2147483521&apos;, assigned value is -2147483521"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;min*2&apos;." verbose="Signed integer overflow for expression &apos;min*2&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="71" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="69" info="Assignment &apos;min=-1073741825&apos;, assigned value is -1073741825"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;-2147483647-2&apos;." verbose="Signed integer overflow for expression &apos;-2147483647-2&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="82" info="Integer overflow"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;min-data_underflow_010_func_001()&apos;." verbose="Signed integer overflow for expression &apos;min-data_underflow_010_func_001()&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="141" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="139" info="Assignment &apos;min=-2147483647&apos;, assigned value is -2147483647"/>
+        </error>
+        <error id="integerOverflow" severity="error" msg="Signed integer overflow for expression &apos;min-d&apos;." verbose="Signed integer overflow for expression &apos;min-d&apos;." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="153" info="Integer overflow"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c" line="151" info="Assignment &apos;min=-2147483647&apos;, assigned value is -2147483647"/>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;ptr&apos; is freed twice." verbose="Memory pointed to by &apos;ptr&apos; is freed twice." cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="22"/>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;ptr&apos; is freed twice." verbose="Memory pointed to by &apos;ptr&apos; is freed twice." cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="101"/>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;ptr&apos; is freed twice." verbose="Memory pointed to by &apos;ptr&apos; is freed twice." cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="115"/>
+        </error>
+        <error id="doubleFree" severity="error" msg="Memory pointed to by &apos;ptr&apos; is freed twice." verbose="Memory pointed to by &apos;ptr&apos; is freed twice." cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="131"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="22"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="43"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="64"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="101"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="115"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="131"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="168"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/double_free.c" line="187"/>
+        </error>
+        <error id="autovarInvalidDeallocation" severity="error" msg="Deallocation of an auto-variable results in undefined behaviour." verbose="The deallocation of an auto-variable results in undefined behaviour. You should only free memory that has been allocated dynamically." cwe="590">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/free_nondynamically_allocated_memory.c" line="62"/>
+        </error>
+        <error id="autovarInvalidDeallocation" severity="error" msg="Deallocation of an auto-variable results in undefined behaviour." verbose="The deallocation of an auto-variable results in undefined behaviour. You should only free memory that has been allocated dynamically." cwe="590">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/free_nondynamically_allocated_memory.c" line="86"/>
+        </error>
+        <error id="autovarInvalidDeallocation" severity="error" msg="Deallocation of an auto-variable results in undefined behaviour." verbose="The deallocation of an auto-variable results in undefined behaviour. You should only free memory that has been allocated dynamically." cwe="590">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/free_nondynamically_allocated_memory.c" line="103"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c" line="352" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c" line="349" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c" line="353" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c" line="349" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="deallocuse" severity="error" msg="Dereferencing &apos;ptr&apos; after it is deallocated / released" verbose="Dereferencing &apos;ptr&apos; after it is deallocated / released" cwe="416">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="45"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: dptr" verbose="Memory leak: dptr" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="86"/>
+        </error>
+        <error id="deallocret" severity="error" msg="Returning/dereferencing &apos;str_rev&apos; after it is deallocated / released" verbose="Returning/dereferencing &apos;str_rev&apos; after it is deallocated / released" cwe="672">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="516"/>
+        </error>
+        <error id="deallocuse" severity="error" msg="Dereferencing &apos;buf2&apos; after it is deallocated / released" verbose="Dereferencing &apos;buf2&apos; after it is deallocated / released" cwe="416">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="188"/>
+        </error>
+        <error id="deallocuse" severity="error" msg="Dereferencing &apos;buf&apos; after it is deallocated / released" verbose="Dereferencing &apos;buf&apos; after it is deallocated / released" cwe="416">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="224"/>
+        </error>
+        <error id="deallocuse" severity="error" msg="Dereferencing &apos;ptr1&apos; after it is deallocated / released" verbose="Dereferencing &apos;ptr1&apos; after it is deallocated / released" cwe="416">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="294"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: a" verbose="Uninitialized variable: a" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="85"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: ptr" verbose="Uninitialized variable: ptr" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c" line="147"/>
+        </error>
+        <error id="leakReturnValNotUsed" severity="error" msg="Return value of allocation function &apos;memory_allocation_failure_008_func_001&apos; is not stored." verbose="Return value of allocation function &apos;memory_allocation_failure_008_func_001&apos; is not stored." cwe="771">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_allocation_failure.c" line="268"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: buf" verbose="Memory leak: buf" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_allocation_failure.c" line="40"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: buf" verbose="Memory leak: buf" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_allocation_failure.c" line="285"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: ptr" verbose="Memory leak: ptr" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="120"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="215"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="219"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="231"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="236"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p1" verbose="Memory leak: p1" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="247"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="309"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="353"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: buf" verbose="Memory leak: buf" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="23"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: str1" verbose="Memory leak: str1" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c" line="404"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="23" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="22" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="34" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="32" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="63" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="62" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="94" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="93" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="117" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="116" info="Assignment &apos;p=(int*)(intptr_t)((2*a)-6)&apos;, assigned value is 0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="115" info="Assignment &apos;a=3&apos;, assigned value is 3"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="133" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="132" info="Assignment &apos;p=null_pointer_008_func_001()&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: p" verbose="Possible null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="142" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="147" info="Calling function &apos;null_pointer_009_func_001&apos;, 1st argument &apos;p&apos; value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p1" verbose="Null pointer dereference: p1" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="159" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="158" info="Assignment &apos;p1=p&apos;, assigned value is 0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="156" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p2" verbose="Null pointer dereference: p2" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="173" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="172" info="Assignment &apos;p2=p1&apos;, assigned value is 0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="171" info="Assignment &apos;p1=p&apos;, assigned value is 0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="168" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="180" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="179" info="Assignment &apos;p=NULL&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="warning" msg="Possible null pointer dereference: p" verbose="Possible null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="196" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="191" info="Assignment &apos;p=null_pointer_013_func_001()&apos;, assigned value is 0"/>
+        </error>
+        <error id="nullPointer" severity="error" msg="Null pointer dereference: p" verbose="Null pointer dereference: p" cwe="476">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="213" info="Null pointer dereference"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c" line="212" info="Assignment &apos;p=null_pointer_014_func_001()&apos;, assigned value is 0"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="21" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="32" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="44" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="55" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="66" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="77" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="88" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5][6]&apos; index buf[5][5] out of bounds." verbose="Array &apos;buf[5][6]&apos; index buf[5][5] out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="99" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5][6][7]&apos; index buf[5][5][6] out of bounds." verbose="Array &apos;buf[5][6][7]&apos; index buf[5][5][6] out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="110" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;sbuf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;sbuf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="142" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;overrun_st_012_s_gbl.buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;overrun_st_012_s_gbl.buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="158" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="169" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="168" info="Assignment &apos;index=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="194" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="193" info="Assignment &apos;index=2&apos;, assigned value is 2"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="206" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="205" info="Assignment &apos;index=2&apos;, assigned value is 2"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="222" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;overrun_st_018_buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;overrun_st_018_buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="233" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="238" info="Calling function &apos;overrun_st_018_func_001&apos;, 1st argument &apos;index&apos; value is 5"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="264" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="263" info="Assignment &apos;index1=index&apos;, assigned value is 5"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="261" info="Assignment &apos;index=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="280" info="Array index out of bounds"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="279" info="Assignment &apos;index2=index1&apos;, assigned value is 5"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="278" info="Assignment &apos;index1=index&apos;, assigned value is 5"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="275" info="Assignment &apos;index=5&apos;, assigned value is 5"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="570" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="706" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="749" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="293"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="292"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="306"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="305"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="320"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="319"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="333"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="332"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="346"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="345"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="359"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="358"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="372"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="371"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="402"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="400"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;overrun_st_031_buf_gbl[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;overrun_st_031_buf_gbl[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="415"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="414"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="428"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="427"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="502"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="501"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="538"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="537"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="556"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="555"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="169" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="194" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="206" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="264" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." cwe="119">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="280" info="Array index out of bounds"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="642"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="648"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="658"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="664"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="674"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="680"/>
+        </error>
+        <error id="arrayIndexOutOfBounds" severity="error" msg="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds." verbose="Array &apos;buf[5]&apos; accessed at index 5, which is out of bounds.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="689"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c" line="695"/>
+        </error>
+        <error id="autoVariables" severity="error" msg="Address of local auto-variable assigned to a function parameter." verbose="Dangerous assignment - the function parameter is assigned the address of a local auto-variable. Local auto-variables are reserved from the stack which is freed when the function ends. So the pointer to a local variable is invalid after the function ends." cwe="562">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/return_local.c" line="36"/>
+        </error>
+        <error id="returnLocalVariable" severity="error" msg="Pointer to local array variable returned." verbose="Pointer to local array variable returned." cwe="562">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/return_local.c" line="19"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_cross_thread_access.c" line="400"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_cross_thread_access.c" line="400"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_overflow.c" line="55"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_overflow.c" line="85"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_overflow.c" line="124"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_overflow.c" line="155"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_overflow.c" line="232"/>
+        </error>
+        <error id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: s.buf" verbose="Buffer is accessed out of bounds: s.buf">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/st_underrun.c" line="204"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c" line="124" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c" line="21" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c" line="31" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c" line="42" info="Negative array index"/>
+        </error>
+        <error id="negativeIndex" severity="error" msg="Array index -1 is out of bounds." verbose="Array index -1 is out of bounds." cwe="786">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c" line="93" info="Negative array index"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: s" verbose="Memory leak: s" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c" line="201"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: a" verbose="Uninitialized variable: a" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c" line="27"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: str2" verbose="Uninitialized variable: str2" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c" line="54"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: str2" verbose="Uninitialized variable: str2" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c" line="55"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: str2" verbose="Uninitialized variable: str2" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c" line="127"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: str" verbose="Uninitialized variable: str" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c" line="319"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: ptr" verbose="Memory leak: ptr" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="236"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: s" verbose="Memory leak: s" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="413"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p" verbose="Uninitialized variable: p" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="30"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p" verbose="Uninitialized variable: p" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="41"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: p" verbose="Uninitialized variable: p" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="71"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: ret" verbose="Uninitialized variable: ret" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="152"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: ptr" verbose="Uninitialized variable: ptr" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c" line="358"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: ret" verbose="Uninitialized variable: ret" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="75"/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: s.uninit" verbose="Uninitialized struct member: s.uninit" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="111"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: data" verbose="Uninitialized variable: data" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="131"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: ret" verbose="Uninitialized variable: ret" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="142"/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: s.uninit" verbose="Uninitialized struct member: s.uninit" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="226"/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: s.uninit" verbose="Uninitialized struct member: s.uninit" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="228"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: val" verbose="Uninitialized variable: val" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="243"/>
+        </error>
+        <error id="uninitStructMember" severity="error" msg="Uninitialized struct member: s.uninit" verbose="Uninitialized struct member: s.uninit" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c" line="276"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/unlock_without_lock.c" line="332"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/unlock_without_lock.c" line="332"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: temp" verbose="Uninitialized variable: temp" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c" line="337"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="23" info="Division by zero"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="34" info="Division by zero"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="47" info="Division by zero"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="141" info="Division by zero"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="139" info="Assignment &apos;divisor=0&apos;, assigned value is 0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="166" info="Division by zero"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="164" info="Assignment &apos;divisor=2&apos;, assigned value is 2"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="178" info="Division by zero"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="176" info="Assignment &apos;divisor=2&apos;, assigned value is 2"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="195" info="Division by zero"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="206" info="Division by zero"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="211" info="Calling function &apos;zero_division_014_func_001&apos;, 1st argument &apos;divisor&apos; value is 0"/>
+        </error>
+        <error id="zerodiv" severity="error" msg="Division by zero." verbose="Division by zero." cwe="369">
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="225" info="Division by zero"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="224" info="Assignment &apos;divisor1=divisor&apos;, assigned value is 0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c" line="221" info="Assignment &apos;divisor=0&apos;, assigned value is 0"/>
+        </error>
+    </errors>
+</results>

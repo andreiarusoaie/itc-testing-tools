@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="1.81"/>
+    <errors>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (3.40282e+38) to integer conversion overflow." verbose="Undefined behaviour: float (3.40282e+38) to integer conversion overflow." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_lost.c" line="86" info="float to integer conversion"/>
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_lost.c" line="85" info="Assignment &apos;ret=a&apos;, assigned value is 3.40282326356e+38"/>
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_lost.c" line="83" info="Assignment &apos;a=3.4028232635611926e+38&apos;, assigned value is 3.40282326356e+38"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (3.40282e+38) to integer conversion overflow." verbose="Undefined behaviour: float (3.40282e+38) to integer conversion overflow." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c" line="337" info="float to integer conversion"/>
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c" line="336" info="Assignment &apos;ret=max+2.02824096e+31F&apos;, assigned value is 3.40282346639e+38"/>
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c" line="333" info="Assignment &apos;max=3.40282326e+38F&apos;, assigned value is 3.40282326e+38"/>
+        </error>
+        <error id="floatConversionOverflow" severity="error" msg="Undefined behaviour: float (inf) to integer conversion overflow." verbose="Undefined behaviour: float (inf) to integer conversion overflow." cwe="190">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c" line="353" info="float to integer conversion"/>
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c" line="352" info="Assignment &apos;ret=max+1.9958403095347198e+292&apos;, assigned value is inf.0"/>
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c" line="349" info="Assignment &apos;max=1.7976931348623155e+308&apos;, assigned value is 1.79769313486e+308"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/double_free.c" line="41"/>
+        </error>
+        <error id="deallocDealloc" severity="error" msg="Deallocating a deallocated pointer: ptr" verbose="Deallocating a deallocated pointer: ptr" cwe="415">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/double_free.c" line="156"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: dptr" verbose="Memory leak: dptr" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c" line="87"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: dptr" verbose="Memory leak: dptr" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c" line="89"/>
+        </error>
+        <error id="leakReturnValNotUsed" severity="error" msg="Return value of allocation function &apos;memory_allocation_failure_008_func_001&apos; is not stored." verbose="Return value of allocation function &apos;memory_allocation_failure_008_func_001&apos; is not stored." cwe="771">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c" line="278"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: buf" verbose="Memory leak: buf" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c" line="295"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c" line="401"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c" line="401"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c" line="57"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c" line="87"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c" line="126"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c" line="157"/>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: s" verbose="Uninitialized variable: s" cwe="908">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c" line="234"/>
+        </error>
+        <error id="bufferAccessOutOfBounds" severity="error" msg="Buffer is accessed out of bounds: s.buf" verbose="Buffer is accessed out of bounds: s.buf">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c" line="213"/>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: ptr" verbose="Memory leak: ptr" cwe="401">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c" line="248"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/unlock_without_lock.c" line="327"/>
+        </error>
+        <error id="syntaxError" severity="error" msg="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;." verbose="Invalid number of character &apos;{&apos; when these macros are defined: &apos;CHECKER_POLYSPACE;PRINT_DEBUG&apos;.">
+            <location file="/Users/andrei/work/itc-benchmarks/02.wo_Defects/unlock_without_lock.c" line="327"/>
+        </error>
+    </errors>
+</results>
