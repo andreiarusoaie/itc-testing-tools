@@ -9,8 +9,6 @@ Copyright (C) Microsoft Corporation.  All rights reserved.
 /out:improper_error_handling.exe 
 improper_error_handling.obj 
 main.obj 
-main.obj : error LNK2005: "int PTHREAD_MUTEX_INITIALIZER" (?PTHREAD_MUTEX_INITIALIZER@@3HA) already defined in improper_error_handling.obj
-improper_error_handling.exe : fatal error LNK1169: one or more multiply defined symbols found
 Microsoft (R) C/C++ Optimizing Compiler Version 19.11.25547 for x64
 Copyright (C) Microsoft Corporation.  All rights reserved.
 

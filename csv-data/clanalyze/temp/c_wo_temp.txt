@@ -1,323 +1,334 @@
 bit_shift.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 buffer_overrun_dynamic.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 buffer_underrun_dynamic.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 cmp_funcadr.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 conflicting_cond.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 data_lost.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 data_overflow.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 data_underflow.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 dead_code.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 dead_lock.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//dead_lock.c(21): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//dead_lock.c(22): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//dead_lock.c(128): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//dead_lock.c(129): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//dead_lock.c(130): error C2099: initializer is not a constant
 deletion_of_data_structure_sentinel.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 double_free.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 double_lock.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//double_lock.c(27): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//double_lock.c(81): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//double_lock.c(131): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//double_lock.c(190): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//double_lock.c(199): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//double_lock.c(214): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//double_lock.c(228): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+../itc-benchmarks/02.wo_Defects//double_lock.c(229): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
 double_release.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 endless_loop.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 free_nondynamically_allocated_memory.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 free_null_pointer.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 function_return_value_unchecked.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//function_return_value_unchecked.c(188): warning C4048: different array subscripts: 'float (*)[4]' and 'float (*)[0]'
 func_pointer.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//func_pointer.c(461): warning C4048: different array subscripts: 'int (*)[4]' and 'int (*)[0]'
+../itc-benchmarks/02.wo_Defects//func_pointer.c(512): warning C4113: 'int (__cdecl *)()' differs in parameter lists from 'int (__cdecl *)(void)'
 improper_termination_of_block.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 Compiling...
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(66) : warning C6001: Using uninitialized memory 'buf'.: Lines: 62, 63, 64, 65, 66
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(66) : warning C6001: Using uninitialized memory 'buf[BYTE:0]'.: Lines: 62, 63, 64, 65, 66
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(112) : warning C6386: Buffer overrun while writing to 'str_rev':  the writable size is 'i+1' bytes, but 'i' bytes might be written.: Lines: 99, 100, 101, 102, 104, 105, 106, 108, 110, 108, 112
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(167) : warning C6011: Dereferencing NULL pointer 'func_pointer_005_doubleptr_gbl[i]'. : Lines: 156, 157, 159, 161, 159, 161, 159, 163, 165, 167
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(161) : warning C6011: Dereferencing NULL pointer 'func_pointer_005_doubleptr_gbl'. : Lines: 156, 157, 159, 161
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(227) : warning C6011: Dereferencing NULL pointer 'func_pointer_006_doubleptr_gbl[i]'. : Lines: 216, 217, 219, 221, 219, 221, 219, 223, 225, 227
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(221) : warning C6011: Dereferencing NULL pointer 'func_pointer_006_doubleptr_gbl'. : Lines: 216, 217, 219, 221
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(307) : warning C6244: Local declaration of 'a' hides previous declaration at line '305' of 'c:\work\itc-benchmarks\02.wo_defects\func_pointer.c'.: Lines: 305
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(314) : warning C6326: Potential comparison of a constant with another constant.
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(380) : warning C6244: Local declaration of 'a' hides previous declaration at line '305' of 'c:\work\itc-benchmarks\02.wo_defects\func_pointer.c'.: Lines: 305
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(416) : warning C6386: Buffer overrun while writing to 'str_rev':  the writable size is 'i+1' bytes, but '2' bytes might be written.: Lines: 402, 403, 404, 405, 407, 409, 410, 412, 414, 412, 416
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(433) : warning C6326: Potential comparison of a constant with another constant.
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(493) : warning C6244: Local declaration of 'a' hides previous declaration at line '305' of 'c:\work\itc-benchmarks\02.wo_defects\func_pointer.c'.: Lines: 305
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(511) : warning C6244: Local declaration of 'func_gbl' hides previous declaration at line '22' of 'c:\work\itc-benchmarks\02.wo_defects\func_pointer.c'.: Lines: 22
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(524) : warning C6244: Local declaration of 'func_gbl' hides previous declaration at line '22' of 'c:\work\itc-benchmarks\02.wo_defects\func_pointer.c'.: Lines: 22
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(538) : warning C6244: Local declaration of 'a' hides previous declaration at line '305' of 'c:\work\itc-benchmarks\02.wo_defects\func_pointer.c'.: Lines: 305
+c:\work\itc-benchmarks\02.wo_defects\func_pointer.c(627) : warning C6387: 'st1' could be '0':  this does not adhere to the specification for the function 'memset'. : Lines: 625, 626, 627
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(84) : warning C6011: Dereferencing NULL pointer 'fptr'. : Lines: 79, 80, 84
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(93) : warning C6011: Dereferencing NULL pointer 'fptr+i'. See line 84 for an earlier location where this can occur: Lines: 79, 80, 84, 85, 86, 84, 85, 86, 84, 85, 86, 88, 91, 93
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(161) : warning C6001: Using uninitialized memory '**s[BYTE:8]'.: Lines: 146, 147, 148, 150, 158, 160, 161, 160, 161
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(161) : warning C6011: Dereferencing NULL pointer 's+i'. : Lines: 146, 147, 148, 150, 158, 160, 161
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(156) : warning C6387: '((s+4))->buf' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 146, 147, 148, 150, 152, 154, 152, 154, 152, 156
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(156) : warning C6011: Dereferencing NULL pointer 's+4'. See line 154 for an earlier location where this can occur: Lines: 146, 147, 148, 150, 152, 154, 152, 154, 152, 156
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(187) : warning C6011: Dereferencing NULL pointer 'free_null_pointer_007_gbl_doubleptr'. : Lines: 182, 183, 185, 187
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(193) : warning C6011: Dereferencing NULL pointer 'free_null_pointer_007_gbl_doubleptr[i]'. : Lines: 182, 183, 185, 187, 185, 187, 185, 189, 191, 193
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(271) : warning C6011: Dereferencing NULL pointer 'free_null_pointer_009dst'. : Lines: 263, 264, 266, 268, 269, 271
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(314) : warning C6011: Dereferencing NULL pointer 'free_null_pointer_010_gbl_dst'. : Lines: 307, 309, 311, 312, 314
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(371) : warning C6011: Dereferencing NULL pointer 'u'. : Lines: 364, 365, 366, 368, 370, 371
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(446) : warning C6244: Local declaration of 'a' hides previous declaration at line '106' of 'c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c'.: Lines: 106
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(449) : warning C6240: (<expression> && <non-zero constant>) always evaluates to the result of <expression>.  Did you intend to use the bitwise-and operator?
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(455) : warning C6240: (<expression> && <non-zero constant>) always evaluates to the result of <expression>.  Did you intend to use the bitwise-and operator?
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(461) : warning C6240: (<expression> && <non-zero constant>) always evaluates to the result of <expression>.  Did you intend to use the bitwise-and operator?
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(449) : warning C6326: Potential comparison of a constant with another constant.
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(455) : warning C6326: Potential comparison of a constant with another constant.
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(461) : warning C6326: Potential comparison of a constant with another constant.
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(458) : warning C6011: Dereferencing NULL pointer 'ptr+1'. : Lines: 446, 447, 449, 455, 457, 458
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(484) : warning C6246: Local declaration of 'fptr' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '477' of 'c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c'.: Lines: 477
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(495) : warning C6246: Local declaration of 'fptr' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '477' of 'c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c'.: Lines: 477
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(489) : warning C6011: Dereferencing NULL pointer 'fptr+3'. : Lines: 477, 478, 479, 480, 481, 484, 485, 487, 489
+c:\work\itc-benchmarks\02.wo_defects\free_null_pointer.c(521) : warning C6011: Dereferencing NULL pointer 'free_null_pointer_014_gbl_s'. : Lines: 515, 516, 518, 520, 521
+c:\work\itc-benchmarks\02.wo_defects\free_nondynamically_allocated_memory.c(82) : warning C6011: Dereferencing NULL pointer '((*pbuf[i]))+j'. : Lines: 72, 73, 74, 75, 76, 80, 82, 80, 82
+c:\work\itc-benchmarks\02.wo_defects\free_nondynamically_allocated_memory.c(168) : warning C6294: Ill-defined for-loop:  initial condition does not satisfy test.  Loop body not executed.
+c:\work\itc-benchmarks\02.wo_defects\free_nondynamically_allocated_memory.c(209) : warning C6011: Dereferencing NULL pointer 'new_struct'. : Lines: 207, 209
+c:\work\itc-benchmarks\02.wo_defects\double_release.c(16) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\double_free.c(37) : warning C6011: Dereferencing NULL pointer 'ptr'. : Lines: 32, 33, 35, 37
+c:\work\itc-benchmarks\02.wo_defects\double_free.c(56) : warning C6011: Dereferencing NULL pointer 'ptr+i'. : Lines: 51, 52, 54, 56
+c:\work\itc-benchmarks\02.wo_defects\double_free.c(74) : warning C6011: Dereferencing NULL pointer 'ptr+i'. : Lines: 70, 71, 72, 74
+c:\work\itc-benchmarks\02.wo_defects\deletion_of_data_structure_sentinel.c(26) : warning C6011: Dereferencing NULL pointer 'foo'. : Lines: 21, 22, 23, 24, 26
+c:\work\itc-benchmarks\02.wo_defects\data_overflow.c(15) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347) : warning C28301: No annotations for first declaration of 'rand'. See c:\work\itc-benchmarks\02.wo_defects\data_lost.c(14). 
+c:\work\itc-benchmarks\02.wo_defects\conflicting_cond.c(12) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(146) : warning C6011: Dereferencing NULL pointer 'buf'. : Lines: 142, 143, 145, 146
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(152) : warning C6011: Dereferencing NULL pointer 'buf+i'. See line 146 for an earlier location where this can occur: Lines: 142, 143, 145, 146, 145, 146, 145, 148, 150, 152
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(174) : warning C6011: Dereferencing NULL pointer '((*pbuf[i]))+j'. : Lines: 165, 166, 167, 168, 169, 170, 171, 172, 174, 172, 174
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(515) : warning C6011: Dereferencing NULL pointer 'buf2-*(buf1+0)'. : Lines: 507, 508, 509, 511, 513, 511, 513, 511, 515
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(515) : warning C6011: Dereferencing NULL pointer 'buf1+0'. See line 513 for an earlier location where this can occur: Lines: 507, 508, 509, 511, 513, 511, 513, 511, 515
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(513) : warning C6011: Dereferencing NULL pointer 'buf1+i'. : Lines: 507, 508, 509, 511, 513
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(556) : warning C6011: Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 543, 544, 546, 548, 546, 548, 546, 552, 554, 556
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(548) : warning C6011: Dereferencing NULL pointer 'doubleptr'. : Lines: 543, 544, 546, 548
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(675) : warning C6011: Dereferencing NULL pointer 'doubleptr[loc1]'. : Lines: 666, 667, 669, 670, 669, 670, 669, 672, 673, 675
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(680) : warning C6011: Dereferencing NULL pointer 'doubleptr[0]'. See line 675 for an earlier location where this can occur: Lines: 666, 667, 669, 670, 669, 670, 669, 672, 673, 675, 677, 678, 680
+c:\work\itc-benchmarks\02.wo_defects\buffer_underrun_dynamic.c(670) : warning C6011: Dereferencing NULL pointer 'doubleptr'. : Lines: 666, 667, 669, 670
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(145) : warning C6011: Dereferencing NULL pointer 'buf'. : Lines: 141, 142, 144, 145
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(151) : warning C6011: Dereferencing NULL pointer 'buf+i'. See line 145 for an earlier location where this can occur: Lines: 141, 142, 144, 145, 144, 145, 144, 147, 149, 151
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(173) : warning C6011: Dereferencing NULL pointer '((*pbuf[i]))+j'. : Lines: 164, 165, 166, 167, 168, 169, 170, 171, 173, 171, 173
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(511) : warning C6011: Dereferencing NULL pointer 'buf1+i'. : Lines: 506, 507, 508, 509, 511
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(513) : warning C6011: Dereferencing NULL pointer 'buf2+*(buf1+2)'. : Lines: 506, 507, 508, 509, 511, 509, 511, 509, 513
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(513) : warning C6011: Dereferencing NULL pointer 'buf1+2'. See line 511 for an earlier location where this can occur: Lines: 506, 507, 508, 509, 511, 509, 511, 509, 513
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(550) : warning C6011: Dereferencing NULL pointer 'doubleptr'. : Lines: 545, 546, 548, 550
+c:\work\itc-benchmarks\02.wo_defects\buffer_overrun_dynamic.c(558) : warning C6011: Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 545, 546, 548, 550, 548, 550, 548, 554, 556, 558
+c:\work\itc-benchmarks\02.wo_defects\bit_shift.c(12) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
 Generating Code...
 Compiling...
 insign_code.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 invalid_extern.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 invalid_extern_1.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 invalid_memory_access.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 littlemem_st.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 livelock.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 lock_never_unlock.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(27): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(78): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(136): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(203): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(204): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(211): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(230): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(257): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(298): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(299): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(308): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(326): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(361): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(362): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(369): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(393): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(433): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(434): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(446): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(470): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(514): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(515): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(522): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//lock_never_unlock.c(546): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
 main.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 memory_allocation_failure.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//memory_allocation_failure.c(549): warning C4048: different array subscripts: 'int (*)[4]' and 'int (*)[0]'
 memory_leak.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 not_return.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 null_pointer.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 overrun_st.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 ow_memcpy.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 pow_related_errors.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 ptr_subtraction.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 race_condition.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//race_condition.c(71): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(72): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(112): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(113): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(151): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(152): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(153): warning C4113: 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+../itc-benchmarks/02.wo_Defects//race_condition.c(168): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(206): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(243): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(290): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(348): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(410): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(411): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//race_condition.c(419): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//race_condition.c(439): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
 redundant_cond.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 return_local.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 sign_conv.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 Compiling...
+c:\work\itc-benchmarks\02.wo_defects\sign_conv.c(14) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\redundant_cond.c(14) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\pow_related_errors.c(151) : warning C6011: Dereferencing NULL pointer 'ptr_newarr'. : Lines: 145, 146, 147, 148, 149, 150, 151
+c:\work\itc-benchmarks\02.wo_defects\pow_related_errors.c(150) : warning C6011: Dereferencing NULL pointer 'newarr'. : Lines: 145, 146, 147, 148, 149, 150
+c:\work\itc-benchmarks\02.wo_defects\overrun_st.c(13) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\null_pointer.c(15) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\null_pointer.c(291) : warning C6011: Dereferencing NULL pointer 'null_pointer_016_gbl_doubleptr[i]'. : Lines: 280, 281, 283, 285, 283, 285, 283, 287, 289, 291
+c:\work\itc-benchmarks\02.wo_defects\null_pointer.c(285) : warning C6011: Dereferencing NULL pointer 'null_pointer_016_gbl_doubleptr'. : Lines: 280, 281, 283, 285
+c:\work\itc-benchmarks\02.wo_defects\null_pointer.c(341) : warning C6011: Dereferencing NULL pointer 'null_pointer_017dst'. : Lines: 333, 334, 336, 338, 339, 341
+c:\work\itc-benchmarks\02.wo_defects\not_return.c(13) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(14) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(48) : warning C6011: Dereferencing NULL pointer 'ptr'. : Lines: 44, 45, 47, 48
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(54) : warning C6011: Dereferencing NULL pointer 'ptr+i'. See line 48 for an earlier location where this can occur: Lines: 44, 45, 47, 48, 47, 48, 47, 50, 52, 54
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(100) : warning C6387: '((s+4))->buf' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 92, 93, 94, 95, 96, 98, 96, 98, 96, 100
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(100) : warning C6011: Dereferencing NULL pointer 's+4'. : Lines: 92, 93, 94, 95, 100
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(102) : warning C6001: Using uninitialized memory '**s[BYTE:8]'.: Lines: 92, 93, 94, 95, 96, 98, 96, 98, 96, 100, 101, 102, 101, 102
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(102) : warning C6011: Dereferencing NULL pointer 's+i'. See line 100 for an earlier location where this can occur: Lines: 92, 93, 94, 95, 100, 101, 102
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(279) : warning C6246: Local declaration of 'buf' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '272' of 'c:\work\itc-benchmarks\02.wo_defects\memory_leak.c'.: Lines: 272
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(360) : warning C6011: Dereferencing NULL pointer 'p->s1'. : Lines: 350, 351, 353, 355, 357, 359, 360
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(378) : warning C6246: Local declaration of 'fptr' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '373' of 'c:\work\itc-benchmarks\02.wo_defects\memory_leak.c'.: Lines: 373
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(387) : warning C6246: Local declaration of 'fptr' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '373' of 'c:\work\itc-benchmarks\02.wo_defects\memory_leak.c'.: Lines: 373
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(457) : warning C6011: Dereferencing NULL pointer 'memory_leak_0017_gbl_doubleptr'. : Lines: 452, 453, 455, 457
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(463) : warning C6011: Dereferencing NULL pointer 'memory_leak_0017_gbl_doubleptr[i]'. : Lines: 452, 453, 455, 457, 455, 457, 455, 459, 461, 463
+c:\work\itc-benchmarks\02.wo_defects\memory_leak.c(513) : warning C6011: Dereferencing NULL pointer 'memory_leak_0018dst'. : Lines: 505, 506, 508, 510, 511, 513
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(86) : warning C6011: Dereferencing NULL pointer 'ptr'. See line 84 for an earlier location where this can occur: Lines: 74, 75, 76, 80, 82, 84, 82, 84, 82, 86
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(84) : warning C6011: Dereferencing NULL pointer 'ptr+i'. : Lines: 74, 75, 76, 80, 82, 84
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(185) : warning C6011: Dereferencing NULL pointer 'memory_allocation_failure_006_gbl_doubleptr'. : Lines: 178, 180, 182, 183, 185
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(186) : warning C6011: Dereferencing NULL pointer 'memory_allocation_failure_006_gbl_doubleptr[i]'. : Lines: 178, 180, 182, 183, 185, 186
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(232) : warning C6386: Buffer overrun while writing to 'memory_allocation_failure_007_str_gbl':  the writable size is 'static_var+1' bytes, but 'static_var' bytes might be written.: Lines: 221, 222, 224, 225, 226, 228, 230, 228, 232
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(297) : warning C6244: Local declaration of 'vptr' hides previous declaration at line '119' of 'c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c'.: Lines: 119
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(395) : warning C6011: Dereferencing NULL pointer 'memory_allocation_failure_011_gbl_u1'. : Lines: 394, 395
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(396) : warning C6011: Dereferencing NULL pointer 'memory_allocation_failure_011_gbl_u1->s1'. : Lines: 394, 395, 396
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(442) : warning C6011: Dereferencing NULL pointer 'pbuf[1]'. : Lines: 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(552) : warning C6386: Buffer overrun while writing to 'p':  the writable size is 'arr_value[0]*sizeof(arr)' bytes, but '64' bytes might be written.: Lines: 543, 544, 548, 549, 550, 552
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(570) : warning C6244: Local declaration of 'staticflag' hides previous declaration at line '467' of 'c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c'.: Lines: 467
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(594) : warning C6387: 'dptr[1]' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 566, 567, 568, 569, 570, 571, 577, 578, 580, 582, 580, 582, 580, 584, 588, 594
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(582) : warning C6011: Dereferencing NULL pointer 'dptr'. : Lines: 566, 567, 568, 569, 570, 571, 577, 578, 580, 582
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(590) : warning C6011: Dereferencing NULL pointer 'ptr+1'. : Lines: 566, 567, 568, 569, 570, 571, 573, 588, 590
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(594) : warning C6386: Buffer overrun while writing to 'dptr[1]':  the writable size is '10' bytes, but '12' bytes might be written.: Lines: 566, 567, 568, 569, 570, 571, 577, 578, 580, 582, 580, 582, 580, 584, 588, 594
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(636) : warning C6001: Using uninitialized memory 'b'.: Lines: 566, 567, 568, 569, 570, 571, 577, 578, 580, 582, 580, 582, 580, 584, 588, 594, 595, 597, 599, 601, 599, 601, 599, 597, 599, 597, 609, 615, 617, 621, 628, 629, 628, 629, 628, 630, 631, 633, 636
+c:\work\itc-benchmarks\02.wo_defects\memory_allocation_failure.c(724) : warning C6011: Dereferencing NULL pointer 'ptr1+1'. : Lines: 722, 723, 724
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(70) : warning C6011: Dereferencing NULL pointer 'dptr+1'. : Lines: 60, 61, 62, 65, 67, 70
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(183) : warning C6011: Dereferencing NULL pointer '((*pbuf[i]))+j'. : Lines: 170, 171, 172, 173, 174, 175, 176, 177, 181, 183, 181, 183
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(213) : warning C6011: Dereferencing NULL pointer 'ptr+i'. See line 209 for an earlier location where this can occur: Lines: 205, 206, 208, 209, 208, 209, 208, 211, 213
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(209) : warning C6011: Dereferencing NULL pointer 'ptr'. : Lines: 205, 206, 208, 209
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(277) : warning C6011: Dereferencing NULL pointer 'u->s1'. See line 275 for an earlier location where this can occur: Lines: 265, 266, 268, 270, 271, 274, 275, 277
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(275) : warning C6011: Dereferencing NULL pointer 'p->s1->a'. : Lines: 265, 266, 268, 270, 271, 272, 274, 275
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(275) : warning C6011: Dereferencing NULL pointer 'p->s1'. : Lines: 265, 266, 268, 270, 271, 274, 275
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(518) : warning C6386: Buffer overrun while writing to 'str_rev':  the writable size is 'i+1' bytes, but 'i' bytes might be written.: Lines: 505, 506, 507, 508, 510, 511, 512, 514, 516, 514, 518
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(566) : warning C6011: Dereferencing NULL pointer 'invalid_memory_access_016_doubleptr_gbl'. : Lines: 560, 561, 563, 564, 566
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(567) : warning C6387: 'invalid_memory_access_016_doubleptr_gbl[i]' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 560, 561, 563, 564, 566, 567
+c:\work\itc-benchmarks\02.wo_defects\invalid_memory_access.c(597) : warning C6001: Using uninitialized memory '*invalid_memory_access_016_doubleptr_gbl'.: Lines: 582, 583, 588, 593, 595, 597, 598, 595, 597
+c:\work\itc-benchmarks\02.wo_defects\invalid_extern.c(62) : warning C6011: Dereferencing NULL pointer 'invalid_extern_001_glb_006_str'. : Lines: 61, 62
+c:\work\itc-benchmarks\02.wo_defects\insign_code.c(12) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
 Generating Code...
 Compiling...
 sleep_lock.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 st_cross_thread_access.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(28): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(29): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(109): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(110): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(204): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(205): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(291): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(292): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(301): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(329): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(365): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(366): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(452): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(453): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(466): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//st_cross_thread_access.c(491): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
 st_overflow.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 st_underrun.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 underrun_st.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 uninit_memory_access.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//uninit_memory_access.c(455): warning C4048: different array subscripts: 'int (*)[4]' and 'int (*)[0]'
 uninit_pointer.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 uninit_var.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 unlock_without_lock.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(28): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(84): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(147): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(235): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(236): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(243): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(268): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(303): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(351): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(352): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(360): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(383): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(423): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(424): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(431): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(455): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(484): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(485): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(495): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(496): error C2099: initializer is not a constant
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(503): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(527): warning C4311: 'type cast': pointer truncation from 'void *' to 'long'
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(556): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
+../itc-benchmarks/02.wo_Defects//unlock_without_lock.c(557): warning C4312: 'type cast': conversion from 'long' to 'void *' of greater size
 unused_var.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 wrong_arguments_func_pointer.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+../itc-benchmarks/02.wo_Defects//wrong_arguments_func_pointer.c(452): warning C4028: formal parameter 2 different from declaration
+../itc-benchmarks/02.wo_Defects//wrong_arguments_func_pointer.c(453): warning C4048: different array subscripts: 'char (*)[0]' and 'char [5][15]'
 zero_division.c
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
-../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
-c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
 Compiling...
+c:\work\itc-benchmarks\02.wo_defects\zero_division.c(13) : warning C28251: Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
+c:\work\itc-benchmarks\02.wo_defects\zero_division.c(237) : warning C6011: Dereferencing NULL pointer 'zero_division_016_gbl_divisor'. : Lines: 236, 237
+c:\work\itc-benchmarks\02.wo_defects\wrong_arguments_func_pointer.c(74) : warning C6001: Using uninitialized memory 'buf'.: Lines: 70, 71, 72, 73, 74
+c:\work\itc-benchmarks\02.wo_defects\wrong_arguments_func_pointer.c(74) : warning C6001: Using uninitialized memory 'buf[BYTE:0]'.: Lines: 70, 71, 72, 73, 74
+c:\work\itc-benchmarks\02.wo_defects\wrong_arguments_func_pointer.c(430) : warning C6244: Local declaration of 'wrong_arguments_func_pointer_015_dst1_gbl' hides previous declaration at line '17' of 'c:\work\itc-benchmarks\02.wo_defects\wrong_arguments_func_pointer.c'.: Lines: 17
+c:\work\itc-benchmarks\02.wo_defects\wrong_arguments_func_pointer.c(447) : warning C6011: Dereferencing NULL pointer 'wrong_arguments_func_pointer_015_dst1_gbl'. : Lines: 441, 443, 444, 445, 447
+c:\work\itc-benchmarks\02.wo_defects\wrong_arguments_func_pointer.c(588) : warning C6387: 'st1' could be '0':  this does not adhere to the specification for the function 'memset'. : Lines: 586, 587, 588
+c:\work\itc-benchmarks\02.wo_defects\uninit_var.c(70) : warning C6001: Using uninitialized memory 'dvar'.: Lines: 63, 64, 66, 67, 70
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(197) : warning C6001: Using uninitialized memory 'buf'.: Lines: 188, 189, 191, 195, 197
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(197) : warning C6054: String 'buf' might not be zero-terminated.: Lines: 188, 189, 191, 195, 197
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(280) : warning C6011: Dereferencing NULL pointer 'ptr'. : Lines: 276, 277, 279, 280
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(289) : warning C6011: Dereferencing NULL pointer 'ptr+i'. See line 280 for an earlier location where this can occur: Lines: 276, 277, 279, 280, 279, 280, 279, 281, 285, 287, 289
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(399) : warning C6011: Dereferencing NULL pointer 'uninit_pointer_016_gbl_doubleptr'. : Lines: 393, 394, 396, 397, 399
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(400) : warning C6387: 'uninit_pointer_016_gbl_doubleptr[i]' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 393, 394, 396, 397, 399, 400
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(408) : warning C6244: Local declaration of 's' hides previous declaration at line '308' of 'c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c'.: Lines: 308
+c:\work\itc-benchmarks\02.wo_defects\uninit_pointer.c(418) : warning C6001: Using uninitialized memory '*uninit_pointer_016_gbl_doubleptr'.: Lines: 407, 408, 409, 414, 416, 418, 420, 426, 416, 418
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(27) : warning C6340: Mismatch on sign: 'unsigned long' passed as _Param_(2) when some signed type is required in call to 'printf'.
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(76) : warning C6011: Dereferencing NULL pointer '*ptr'. : Lines: 67, 68, 69, 70, 75, 76
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(236) : warning C6011: Dereferencing NULL pointer 'uninit_memory_access_009_doubleptr_gbl'. : Lines: 231, 232, 234, 236
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(242) : warning C6011: Dereferencing NULL pointer 'uninit_memory_access_009_doubleptr_gbl[i]'. : Lines: 231, 232, 234, 236, 234, 236, 234, 238, 240, 242
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(377) : warning C6011: Dereferencing NULL pointer 's1'. : Lines: 373, 374, 376, 377
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(384) : warning C6387: 's1' could be '0':  this does not adhere to the specification for the function 'memcpy'. See line 377 for an earlier location where this can occur: Lines: 373, 374, 376, 377, 378, 379, 381, 382, 381, 382, 381, 384
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(409) : warning C6011: Dereferencing NULL pointer 'u'. : Lines: 401, 402, 403, 404, 406, 408, 409
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(456) : warning C6387: 'p' could be '0':  this does not adhere to the specification for the function 'memcpy'. : Lines: 449, 450, 454, 455, 456
+c:\work\itc-benchmarks\02.wo_defects\uninit_memory_access.c(461) : warning C6011: Dereferencing NULL pointer 'p'. See line 456 for an earlier location where this can occur: Lines: 449, 450, 454, 455, 456, 457, 459, 461
+c:\work\itc-benchmarks\02.wo_defects\st_underrun.c(81) : warning C6001: Using uninitialized memory 'buf'.: Lines: 80, 81
+c:\work\itc-benchmarks\02.wo_defects\st_underrun.c(116) : warning C6001: Using uninitialized memory 'buf'.: Lines: 115, 116
+c:\work\itc-benchmarks\02.wo_defects\st_underrun.c(213) : warning C6386: Buffer overrun while writing to 's.buf':  the writable size is '10' bytes, but '12' bytes might be written.: Lines: 209, 213
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(57) : warning C6001: Using uninitialized memory 's'.: Lines: 56, 57
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(76) : warning C6262: Function uses '525312' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(87) : warning C6001: Using uninitialized memory 's'.: Lines: 86, 87
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(107) : warning C6262: Function uses '134144' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(115) : warning C6262: Function uses '134144' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(126) : warning C6001: Using uninitialized memory 's'.: Lines: 125, 126
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(157) : warning C6001: Using uninitialized memory 's'.: Lines: 155, 156, 157
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(178) : warning C6262: Function uses '525312' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(191) : warning C6001: Using uninitialized memory 's'.: Lines: 188, 189, 190, 191
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(211) : warning C6262: Function uses '263168' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(220) : warning C6262: Function uses '263168' bytes of stack:  exceeds /analyze:stacksize '16384'.  Consider moving some data to heap.
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(234) : warning C6001: Using uninitialized memory 's'.: Lines: 230, 231, 232, 234
 Generating Code...
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(57) : warning C4700: uninitialized local variable 's' used
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(87) : warning C4700: uninitialized local variable 's' used
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(126) : warning C4700: uninitialized local variable 's' used
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(157) : warning C4700: uninitialized local variable 's' used
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(191) : warning C4700: uninitialized local variable 's' used
+c:\work\itc-benchmarks\02.wo_defects\st_overflow.c(234) : warning C4700: uninitialized local variable 's' used
 Microsoft (R) C/C++ Optimizing Compiler Version 19.11.25547 for x64
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
