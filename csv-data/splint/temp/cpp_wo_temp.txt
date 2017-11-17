@@ -1,0 +1,10 @@
+Command Line: Unrecognized file extension:
+    /Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.
+    cpp (assuming .cpp is C source code)
+  warn when command line file does not have a recognized extension (Use
+  -fileextensions to inhibit warning)
+Command Line: Unrecognized file extension:
+                 /Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/main.cpp
+                 (assuming .cpp is C source code)
+  warn when command line file does not have a recognized extension (Use
+  -fileextensions to inhibit warning)

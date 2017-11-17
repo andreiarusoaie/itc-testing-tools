@@ -1,0 +1,1733 @@
+File, Line, Error
+bit_shift.c , 22 ,  Left operand of << may be negative (int): a << 32
+bit_shift.c , 34 ,  Left operand of << may be negative (long int): a << 32
+bit_shift.c , 35 ,  Assignment of long int to int: sink = ret
+bit_shift.c , 47 ,  Assignment of unsigned int to int: sink = ret
+bit_shift.c , 59 ,  Assignment of unsigned long int to int: sink = ret
+bit_shift.c , 70 ,  Right operand of << may be negative (int): a << -1
+bit_shift.c , 70 ,  Left operand of << may be negative (int): a << -1
+bit_shift.c , 82 ,  Left operand of >> may be negative (int): a >> 32
+bit_shift.c , 94 ,  Right operand of >> may be negative (int): a >> -1
+bit_shift.c , 94 ,  Left operand of >> may be negative (int): a >> -1
+bit_shift.c , 107 ,  Right operand of << may be negative (int): a << shift
+bit_shift.c , 107 ,  Left operand of << may be negative (int): a << shift
+bit_shift.c , 121 ,  Right operand of << may be negative (int): a << shift
+bit_shift.c , 121 ,  Left operand of << may be negative (int): a << shift
+bit_shift.c , 134 ,  Right operand of << may be negative (int):
+bit_shift.c , 134 ,  Left operand of << may be negative (int):
+bit_shift.c , 147 ,  Right operand of << may be negative (int):
+bit_shift.c , 147 ,  Left operand of << may be negative (int):
+bit_shift.c , 164 ,  Right operand of << may be negative (int):
+bit_shift.c , 164 ,  Left operand of << may be negative (int):
+bit_shift.c , 176 ,  Right operand of << may be negative (int): a << shift
+bit_shift.c , 176 ,  Left operand of << may be negative (int): a << shift
+bit_shift.c , 194 ,  Right operand of << may be negative (int): a << shifts[3]
+bit_shift.c , 194 ,  Left operand of << may be negative (int): a << shifts[3]
+bit_shift.c , 209 ,  Right operand of << may be negative (int): a << shift1
+bit_shift.c , 209 ,  Left operand of << may be negative (int): a << shift1
+bit_shift.c , 226 ,  Right operand of << may be negative (int): a << shift2
+bit_shift.c , 226 ,  Left operand of << may be negative (int): a << shift2
+bit_shift.c , 18 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 24 ,  Definition of bit_shift_001
+bit_shift.c , 30 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 36 ,  Definition of bit_shift_002
+bit_shift.c , 42 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 48 ,  Definition of bit_shift_003
+bit_shift.c , 54 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 60 ,  Definition of bit_shift_004
+bit_shift.c , 66 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 72 ,  Definition of bit_shift_005
+bit_shift.c , 78 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 84 ,  Definition of bit_shift_006
+bit_shift.c , 90 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 96 ,  Definition of bit_shift_007
+bit_shift.c , 102 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 109 ,  Definition of bit_shift_008
+bit_shift.c , 115 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 123 ,  Definition of bit_shift_009
+bit_shift.c , 129 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 136 ,  Definition of bit_shift_010
+bit_shift.c , 142 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 149 ,  Definition of bit_shift_011
+bit_shift.c , 155 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 158 ,  Definition of bit_shift_012_func_001
+bit_shift.c , 160 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 166 ,  Definition of bit_shift_012
+bit_shift.c , 172 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 178 ,  Definition of bit_shift_013_func_001
+bit_shift.c , 180 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 183 ,  Definition of bit_shift_013
+bit_shift.c , 189 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 196 ,  Definition of bit_shift_014
+bit_shift.c , 202 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 211 ,  Definition of bit_shift_015
+bit_shift.c , 217 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 228 ,  Definition of bit_shift_016
+bit_shift.c , 234 ,  Function exported but not used outside bit_shift:
+bit_shift.c , 239 ,  Definition of bit_shift_017
+invalid_memory_access.c , 33 ,  Conditional clauses are not of same type:
+invalid_memory_access.c , 35 ,  Variable ptr used before definition
+invalid_memory_access.c , 42 ,  Variable ptr is released in true branch, but live
+invalid_memory_access.c , 42 ,  in true branch:
+invalid_memory_access.c , 41 ,  Storage ptr released
+invalid_memory_access.c , 42 ,  in continuation:
+invalid_memory_access.c , 35 ,  Storage ptr defined
+invalid_memory_access.c , 47 ,  Fresh storage ptr not released before return
+invalid_memory_access.c , 33 ,  Fresh storage ptr created
+invalid_memory_access.c , 64 ,  Variable ptr used before definition
+invalid_memory_access.c , 77 ,  Variable dptr is released in false branch, but
+invalid_memory_access.c , 77 ,  in false branch:
+invalid_memory_access.c , 76 ,  Storage dptr released
+invalid_memory_access.c , 77 ,  in true branch:
+invalid_memory_access.c , 62 ,  Storage dptr allocated
+invalid_memory_access.c , 85 ,  Variable a used before definition
+invalid_memory_access.c , 105 ,  Variable buf used after being released
+invalid_memory_access.c , 103 ,  Storage buf released
+invalid_memory_access.c , 110 ,  Variable c used before definition
+invalid_memory_access.c , 111 ,  Function returns with non-null global psink
+invalid_memory_access.c , 110 ,  Storage psink may become null
+invalid_memory_access.c , 121 ,  Test expression for if not boolean, type int:
+invalid_memory_access.c , 126 ,  Function memset expects arg 2 to be int gets
+invalid_memory_access.c , 131 ,  Test expression for if not boolean, type int:
+invalid_memory_access.c , 133 ,  Variable buf used after being released
+invalid_memory_access.c , 128 ,  Storage buf released
+invalid_memory_access.c , 133 ,  Possibly null storage buf passed as non-null
+invalid_memory_access.c , 120 ,  Storage buf may become null
+invalid_memory_access.c , 147 ,  Variable ptr used before definition
+invalid_memory_access.c , 152 ,  Function calloc expects arg 1 to be size_t gets
+invalid_memory_access.c , 173 ,  Storage buf1 reachable from initial value is
+invalid_memory_access.c , 168 ,  Fresh storage buf1 created
+invalid_memory_access.c , 173 ,  Storage buf2 reachable from initial value is
+invalid_memory_access.c , 169 ,  Fresh storage buf2 created
+invalid_memory_access.c , 173 ,  Storage buf3 reachable from initial value is
+invalid_memory_access.c , 170 ,  Fresh storage buf3 created
+invalid_memory_access.c , 173 ,  Storage buf4 reachable from initial value is
+invalid_memory_access.c , 171 ,  Fresh storage buf4 created
+invalid_memory_access.c , 173 ,  Storage buf5 reachable from initial value is
+invalid_memory_access.c , 172 ,  Fresh storage buf5 created
+invalid_memory_access.c , 188 ,  Index of possibly null pointer buf2: buf2
+invalid_memory_access.c , 169 ,  Storage buf2 may become null
+invalid_memory_access.c , 188 ,  Variable buf2 used after being released
+invalid_memory_access.c , 184 ,  Storage buf2 released
+invalid_memory_access.c , 201 ,  Index of possibly null pointer ptr: ptr
+invalid_memory_access.c , 197 ,  Storage ptr may become null
+invalid_memory_access.c , 205 ,  Unallocated storage *ptr passed as out
+invalid_memory_access.c , 206 ,  Unallocated storage ptr[] passed as out
+invalid_memory_access.c , 210 ,  Variable ptr used after being released
+invalid_memory_access.c , 209 ,  Storage ptr released
+invalid_memory_access.c , 210 ,  Variable ptr used after being released
+invalid_memory_access.c , 209 ,  Storage ptr released
+invalid_memory_access.c , 224 ,  Dead storage buf passed as out parameter to
+invalid_memory_access.c , 223 ,  Storage buf released
+invalid_memory_access.c , 265 ,  Arrow access from possibly null pointer p->s1:
+invalid_memory_access.c , 260 ,  Storage p->s1 may become null
+invalid_memory_access.c , 265 ,  Field p->s1->a used before definition
+invalid_memory_access.c , 267 ,  Arrow access from possibly null pointer u->s1:
+invalid_memory_access.c , 260 ,  Storage u->s1 may become null
+invalid_memory_access.c , 267 ,  Unallocated storage u->s1->a passed as out
+invalid_memory_access.c , 270 ,  Variable p used after being released
+invalid_memory_access.c , 269 ,  Storage p released
+invalid_memory_access.c , 282 ,  Function returns with possibly null storage
+invalid_memory_access.c , 281 ,  Storage *Ptr may become null
+invalid_memory_access.c , 282 ,  Function returns storage Ptr reachable from
+invalid_memory_access.c , 281 ,  Storage **Ptr allocated
+invalid_memory_access.c , 288 ,  Passed storage &ptr1 not completely defined:
+invalid_memory_access.c , 294 ,  Variable ptr1 used after being released
+invalid_memory_access.c , 293 ,  Storage ptr1 released
+invalid_memory_access.c , 294 ,  Variable ptr1 used after being released
+invalid_memory_access.c , 293 ,  Storage ptr1 released
+invalid_memory_access.c , 320 ,  Variable ptr used in inconsistent state
+invalid_memory_access.c , 315 ,  Storage ptr becomes inconsistent (released
+invalid_memory_access.c , 320 ,  Variable ptr used in inconsistent state
+invalid_memory_access.c , 315 ,  Storage ptr becomes inconsistent (released
+HeaderFile.h , 18 ,  Variable sink shadows static declaration
+data_overflow.c , 12 ,  Previous definition of sink: int
+data_overflow.c , 23 ,  Variable max initialized to type int, expects char: 0x7f
+data_overflow.c , 25 ,  Incompatible types for + (char, int): max + 1
+data_overflow.c , 26 ,  Assignment of char to int: sink = ret
+data_overflow.c , 62 ,  Assignment of long int to int: sink = ret
+data_overflow.c , 71 ,  Variable max initialized to type int, expects unsigned
+data_overflow.c , 73 ,  Incompatible types for + (unsigned char, int): max + 1
+data_overflow.c , 74 ,  Assignment of unsigned char to int: sink = ret
+data_overflow.c , 86 ,  Assignment of unsigned short int to int: sink = ret
+data_overflow.c , 98 ,  Assignment of unsigned int to int: sink = ret
+data_overflow.c , 110 ,  Assignment of unsigned long int to int: sink = ret
+data_overflow.c , 336 ,  Assignment of float to int: sink = ret
+data_overflow.c , 352 ,  Assignment of double to int: sink = ret
+data_overflow.c , 21 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 27 ,  Definition of data_overflow_001
+data_overflow.c , 33 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 39 ,  Definition of data_overflow_002
+data_overflow.c , 45 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 51 ,  Definition of data_overflow_003
+data_overflow.c , 57 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 63 ,  Definition of data_overflow_004
+data_overflow.c , 69 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 75 ,  Definition of data_overflow_005
+data_overflow.c , 81 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 87 ,  Definition of data_overflow_006
+data_overflow.c , 93 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 99 ,  Definition of data_overflow_007
+data_overflow.c , 105 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 111 ,  Definition of data_overflow_008
+data_overflow.c , 122 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 127 ,  Definition of data_overflow_009
+data_overflow.c , 138 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 143 ,  Definition of data_overflow_010
+data_overflow.c , 149 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 156 ,  Definition of data_overflow_011
+data_overflow.c , 162 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 168 ,  Definition of data_overflow_012
+data_overflow.c , 174 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 180 ,  Definition of data_overflow_013
+data_overflow.c , 186 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 193 ,  Definition of data_overflow_014
+data_overflow.c , 199 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 207 ,  Definition of data_overflow_015
+data_overflow.c , 213 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 219 ,  Definition of data_overflow_016
+data_overflow.c , 225 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 231 ,  Definition of data_overflow_017
+data_overflow.c , 237 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 240 ,  Definition of data_overflow_018_func_001
+data_overflow.c , 242 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 248 ,  Definition of data_overflow_018
+data_overflow.c , 254 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 260 ,  Definition of data_overflow_019_func_001
+data_overflow.c , 262 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 265 ,  Definition of data_overflow_019
+data_overflow.c , 271 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 278 ,  Definition of data_overflow_020
+data_overflow.c , 284 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 293 ,  Definition of data_overflow_021
+data_overflow.c , 299 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 310 ,  Definition of data_overflow_022
+data_overflow.c , 316 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 321 ,  Definition of data_overflow_023
+data_overflow.c , 327 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 337 ,  Definition of data_overflow_024
+data_overflow.c , 343 ,  Function exported but not used outside data_overflow:
+data_overflow.c , 353 ,  Definition of data_overflow_025
+ptr_subtraction.c , 23 ,  Assignment of intptr_t to int: sink = offset
+ptr_subtraction.c , 17 ,  Function exported but not used outside ptr_subtraction:
+ptr_subtraction.c , 24 ,  Definition of ptr_subtraction_001
+ptr_subtraction.c , 30 ,  Function exported but not used outside ptr_subtraction:
+ptr_subtraction.c , 36 ,  Definition of ptr_subtraction_002
+not_return.c , 24 ,  Path with no return in function declared to return int
+not_return.c , 50 ,  Path with no return in function declared to return int
+not_return.c , 55 ,  Argument 1 modifies internal state, used by argument 2
+not_return.c , 55 ,  Argument 2 modifies internal state, used by argument 1
+not_return.c , 76 ,  Path with no return in function declared to return int
+not_return.c , 99 ,  Path with no return in function declared to return int
+not_return.c , 18 ,  Function exported but not used outside not_return:
+not_return.c , 24 ,  Definition of not_return_001_func_001
+not_return.c , 26 ,  Function exported but not used outside not_return:
+not_return.c , 31 ,  Definition of not_return_001
+not_return.c , 37 ,  Function exported but not used outside not_return:
+not_return.c , 50 ,  Definition of not_return_002_func_001
+not_return.c , 52 ,  Function exported but not used outside not_return:
+not_return.c , 57 ,  Definition of not_return_002
+not_return.c , 63 ,  Function exported but not used outside not_return:
+not_return.c , 76 ,  Definition of not_return_003_func_001
+not_return.c , 78 ,  Function exported but not used outside not_return:
+not_return.c , 83 ,  Definition of not_return_003
+not_return.c , 89 ,  Function exported but not used outside not_return:
+not_return.c , 99 ,  Definition of not_return_004_func_001
+not_return.c , 101 ,  Function exported but not used outside not_return:
+not_return.c , 106 ,  Definition of not_return_004
+sign_conv.c , 21 ,  Variable a initialized to type int, expects unsigned char:
+sign_conv.c , 23 ,  Assignment of unsigned char to char: ret = a
+sign_conv.c , 24 ,  Assignment of char to int: sink = ret
+sign_conv.c , 35 ,  Assignment of unsigned short int to short int: ret = a
+sign_conv.c , 47 ,  Assignment of unsigned int to int: ret = a
+sign_conv.c , 59 ,  Assignment of unsigned long int to long int: ret = a
+sign_conv.c , 60 ,  Assignment of long int to int: sink = ret
+sign_conv.c , 69 ,  Variable a initialized to type int, expects char: -1
+sign_conv.c , 71 ,  Assignment of char to unsigned char: ret = a
+sign_conv.c , 72 ,  Assignment of unsigned char to int: sink = ret
+sign_conv.c , 83 ,  Assignment of short int to unsigned short int: ret = a
+sign_conv.c , 84 ,  Assignment of unsigned short int to int: sink = ret
+sign_conv.c , 95 ,  Assignment of int to unsigned int: ret = a
+sign_conv.c , 96 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 107 ,  Assignment of long int to unsigned long int: ret = a
+sign_conv.c , 108 ,  Assignment of unsigned long int to int: sink = ret
+sign_conv.c , 124 ,  Assignment of unsigned int to int: s.ret = s.a
+sign_conv.c , 140 ,  Assignment of int to unsigned int: s.ret = s.a
+sign_conv.c , 150 ,  Assignment of int to unsigned int: ret = -1
+sign_conv.c , 151 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 167 ,  Assignment of int to unsigned int: ret = a
+sign_conv.c , 168 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 179 ,  Assignment of int to unsigned int: ret = (5 * a) + 4
+sign_conv.c , 180 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 191 ,  Assignment of int to unsigned int: ret = (a * a) - 5
+sign_conv.c , 192 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 207 ,  Assignment of int to unsigned int:
+sign_conv.c , 217 ,  Assignment of int to unsigned int: sign_conv_016_gbl_ret = a
+sign_conv.c , 233 ,  Assignment of int to unsigned int:
+sign_conv.c , 246 ,  Assignment of int to unsigned int: ret = a1
+sign_conv.c , 247 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 262 ,  Assignment of int to unsigned int: ret = a2
+sign_conv.c , 263 ,  Assignment of unsigned int to int: sink = ret
+sign_conv.c , 19 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 25 ,  Definition of sign_conv_001
+sign_conv.c , 31 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 37 ,  Definition of sign_conv_002
+sign_conv.c , 43 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 49 ,  Definition of sign_conv_003
+sign_conv.c , 55 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 61 ,  Definition of sign_conv_004
+sign_conv.c , 67 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 73 ,  Definition of sign_conv_005
+sign_conv.c , 79 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 85 ,  Definition of sign_conv_006
+sign_conv.c , 91 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 97 ,  Definition of sign_conv_007
+sign_conv.c , 103 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 109 ,  Definition of sign_conv_008
+sign_conv.c , 120 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 125 ,  Definition of sign_conv_009
+sign_conv.c , 136 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 141 ,  Definition of sign_conv_010
+sign_conv.c , 147 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 152 ,  Definition of sign_conv_011
+sign_conv.c , 158 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 169 ,  Definition of sign_conv_012
+sign_conv.c , 175 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 181 ,  Definition of sign_conv_013
+sign_conv.c , 187 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 193 ,  Definition of sign_conv_014
+sign_conv.c , 199 ,  Variable exported but not used outside sign_conv:
+sign_conv.c , 200 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 203 ,  Definition of sign_conv_015_func_001
+sign_conv.c , 205 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 208 ,  Definition of sign_conv_015
+sign_conv.c , 214 ,  Variable exported but not used outside sign_conv:
+sign_conv.c , 215 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 218 ,  Definition of sign_conv_016_func_001
+sign_conv.c , 220 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 223 ,  Definition of sign_conv_016
+sign_conv.c , 229 ,  Variable exported but not used outside sign_conv:
+sign_conv.c , 230 ,  Variable exported but not used outside sign_conv:
+sign_conv.c , 231 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 234 ,  Definition of sign_conv_017
+sign_conv.c , 240 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 248 ,  Definition of sign_conv_018
+sign_conv.c , 254 ,  Function exported but not used outside sign_conv:
+sign_conv.c , 264 ,  Definition of sign_conv_019
+buffer_overrun_dynamic.c , 27 ,  Assignment of int to char: buf[i] = 1
+buffer_overrun_dynamic.c , 146 ,  Index of possibly null pointer buf: buf
+buffer_overrun_dynamic.c , 142 ,  Storage buf may become null
+buffer_overrun_dynamic.c , 170 ,  Storage buf1 reachable from initial value is
+buffer_overrun_dynamic.c , 165 ,  Fresh storage buf1 created
+buffer_overrun_dynamic.c , 170 ,  Storage buf2 reachable from initial value is
+buffer_overrun_dynamic.c , 166 ,  Fresh storage buf2 created
+buffer_overrun_dynamic.c , 170 ,  Storage buf3 reachable from initial value is
+buffer_overrun_dynamic.c , 167 ,  Fresh storage buf3 created
+buffer_overrun_dynamic.c , 170 ,  Storage buf4 reachable from initial value is
+buffer_overrun_dynamic.c , 168 ,  Fresh storage buf4 created
+buffer_overrun_dynamic.c , 170 ,  Storage buf5 reachable from initial value is
+buffer_overrun_dynamic.c , 169 ,  Fresh storage buf5 created
+buffer_overrun_dynamic.c , 442 ,  Possibly null storage buf passed as non-null
+buffer_overrun_dynamic.c , 440 ,  Storage buf may become null
+buffer_overrun_dynamic.c , 496 ,  Assignment of int to char: *(p + 30) = 1
+buffer_overrun_dynamic.c , 527 ,  Test expression for while not boolean, type
+buffer_overrun_dynamic.c , 551 ,  Index of possibly null pointer doubleptr:
+buffer_overrun_dynamic.c , 547 ,  Storage doubleptr may become null
+buffer_overrun_dynamic.c , 559 ,  Index of possibly null pointer doubleptr[]:
+buffer_overrun_dynamic.c , 551 ,  Storage doubleptr[] may become null
+buffer_overrun_dynamic.c , 19 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 31 ,  Definition of dynamic_buffer_overrun_001
+buffer_overrun_dynamic.c , 37 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 45 ,  Definition of dynamic_buffer_overrun_002
+buffer_overrun_dynamic.c , 51 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 66 ,  Definition of dynamic_buffer_overrun_003
+buffer_overrun_dynamic.c , 72 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 80 ,  Definition of dynamic_buffer_overrun_004
+buffer_overrun_dynamic.c , 86 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 98 ,  Definition of dynamic_buffer_overrun_005
+buffer_overrun_dynamic.c , 104 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 116 ,  Definition of dynamic_buffer_overrun_006
+buffer_overrun_dynamic.c , 122 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 134 ,  Definition of dynamic_buffer_overrun_007
+buffer_overrun_dynamic.c , 140 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 157 ,  Definition of dynamic_buffer_overrun_008
+buffer_overrun_dynamic.c , 163 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 181 ,  Definition of dynamic_buffer_overrun_009
+buffer_overrun_dynamic.c , 193 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 201 ,  Definition of dynamic_buffer_overrun_010
+buffer_overrun_dynamic.c , 213 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 221 ,  Definition of dynamic_buffer_overrun_011
+buffer_overrun_dynamic.c , 227 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 236 ,  Definition of dynamic_buffer_overrun_012
+buffer_overrun_dynamic.c , 242 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 251 ,  Definition of dynamic_buffer_overrun_013
+buffer_overrun_dynamic.c , 257 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 266 ,  Definition of dynamic_buffer_overrun_014
+buffer_overrun_dynamic.c , 272 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 281 ,  Definition of dynamic_buffer_overrun_015
+buffer_overrun_dynamic.c , 288 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 291 ,  Definition of dynamic_buffer_overrun_016_func
+buffer_overrun_dynamic.c , 293 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 301 ,  Definition of dynamic_buffer_overrun_016
+buffer_overrun_dynamic.c , 307 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 315 ,  Definition of dynamic_buffer_overrun_017_func
+buffer_overrun_dynamic.c , 317 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 320 ,  Definition of dynamic_buffer_overrun_017
+buffer_overrun_dynamic.c , 326 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 336 ,  Definition of dynamic_buffer_overrun_018
+buffer_overrun_dynamic.c , 342 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 353 ,  Definition of dynamic_buffer_overrun_019
+buffer_overrun_dynamic.c , 359 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 372 ,  Definition of dynamic_buffer_overrun_020
+buffer_overrun_dynamic.c , 378 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 390 ,  Definition of dynamic_buffer_overrun_021
+buffer_overrun_dynamic.c , 396 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 406 ,  Definition of dynamic_buffer_overrun_022
+buffer_overrun_dynamic.c , 412 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 427 ,  Definition of dynamic_buffer_overrun_023
+buffer_overrun_dynamic.c , 433 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 436 ,  Definition of dynamic_buffer_overrun_024_func
+buffer_overrun_dynamic.c , 438 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 447 ,  Definition of dynamic_buffer_overrun_024
+buffer_overrun_dynamic.c , 454 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 466 ,  Definition of dynamic_buffer_overrun_025
+buffer_overrun_dynamic.c , 473 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 483 ,  Definition of dynamic_buffer_overrun_026
+buffer_overrun_dynamic.c , 489 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 499 ,  Definition of dynamic_buffer_overrun_027
+buffer_overrun_dynamic.c , 505 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 517 ,  Definition of dynamic_buffer_overrun_028
+buffer_overrun_dynamic.c , 523 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 537 ,  Definition of dynamic_buffer_overrun_029
+buffer_overrun_dynamic.c , 544 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 564 ,  Definition of dynamic_buffer_overrun_030
+buffer_overrun_dynamic.c , 570 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 586 ,  Definition of dynamic_buffer_overrun_031
+buffer_overrun_dynamic.c , 599 ,  Function exported but not used outside
+buffer_overrun_dynamic.c , 611 ,  Definition of dynamic_buffer_overrun_032
+uninit_pointer.c , 30 ,  Variable p used before definition
+uninit_pointer.c , 27 ,  Variable a declared but not used
+uninit_pointer.c , 41 ,  Variable p used before definition
+uninit_pointer.c , 39 ,  Variable a declared but not used
+uninit_pointer.c , 55 ,  Value *pp used before definition
+uninit_pointer.c , 52 ,  Variable a declared but not used
+uninit_pointer.c , 62 ,  Parameter p not used
+uninit_pointer.c , 71 ,  Variable p used before definition
+uninit_pointer.c , 69 ,  Variable a declared but not used
+data_lost.c , 22 ,  Assignment of short int to char: ret = a
+data_lost.c , 23 ,  Assignment of char to int: sink = ret
+data_lost.c , 34 ,  Assignment of int to short int: ret = a
+data_lost.c , 46 ,  Assignment of long int to short int: ret = a
+data_lost.c , 58 ,  Assignment of float to int: ret = a
+data_lost.c , 70 ,  Assignment of float to long int: ret = a
+data_lost.c , 71 ,  Assignment of long int to int: sink = ret
+data_lost.c , 82 ,  Assignment of double to float: ret = a
+data_lost.c , 83 ,  Assignment of float to int: sink = ret
+data_lost.c , 94 ,  Assignment of unsigned short int to unsigned char: ret = a
+data_lost.c , 95 ,  Assignment of unsigned char to int: sink = ret
+data_lost.c , 106 ,  Assignment of unsigned int to unsigned short int: ret = a
+data_lost.c , 107 ,  Assignment of unsigned short int to int: sink = ret
+data_lost.c , 118 ,  Assignment of unsigned long int to unsigned short int:
+data_lost.c , 119 ,  Assignment of unsigned short int to int: sink = ret
+data_lost.c , 158 ,  Assignment of int to short int: ret = a
+data_lost.c , 170 ,  Assignment of int to short int: ret = (254 * a) + 2
+data_lost.c , 182 ,  Assignment of int to short int: ret = (a * a) + 7
+data_lost.c , 198 ,  Assignment of int to short int:
+data_lost.c , 209 ,  Assignment of int to short int: ret = a
+data_lost.c , 226 ,  Assignment of int to short int: ret = buf[3]
+data_lost.c , 240 ,  Assignment of int to short int: ret = a1
+data_lost.c , 256 ,  Assignment of int to short int: ret = a2
+data_lost.c , 18 ,  Function exported but not used outside data_lost:
+data_lost.c , 24 ,  Definition of data_lost_001
+data_lost.c , 30 ,  Function exported but not used outside data_lost:
+data_lost.c , 36 ,  Definition of data_lost_002
+data_lost.c , 42 ,  Function exported but not used outside data_lost:
+data_lost.c , 48 ,  Definition of data_lost_003
+data_lost.c , 54 ,  Function exported but not used outside data_lost:
+data_lost.c , 60 ,  Definition of data_lost_004
+data_lost.c , 66 ,  Function exported but not used outside data_lost:
+data_lost.c , 72 ,  Definition of data_lost_005
+data_lost.c , 78 ,  Function exported but not used outside data_lost:
+data_lost.c , 84 ,  Definition of data_lost_006
+data_lost.c , 90 ,  Function exported but not used outside data_lost:
+data_lost.c , 96 ,  Definition of data_lost_007
+data_lost.c , 102 ,  Function exported but not used outside data_lost:
+data_lost.c , 108 ,  Definition of data_lost_008
+data_lost.c , 114 ,  Function exported but not used outside data_lost:
+data_lost.c , 120 ,  Definition of data_lost_009
+data_lost.c , 131 ,  Function exported but not used outside data_lost:
+data_lost.c , 136 ,  Definition of data_lost_010
+data_lost.c , 142 ,  Function exported but not used outside data_lost:
+data_lost.c , 147 ,  Definition of data_lost_011
+data_lost.c , 153 ,  Function exported but not used outside data_lost:
+data_lost.c , 160 ,  Definition of data_lost_012
+data_lost.c , 166 ,  Function exported but not used outside data_lost:
+data_lost.c , 172 ,  Definition of data_lost_013
+data_lost.c , 178 ,  Function exported but not used outside data_lost:
+data_lost.c , 184 ,  Definition of data_lost_014
+data_lost.c , 190 ,  Function exported but not used outside data_lost:
+data_lost.c , 193 ,  Definition of data_lost_015_func_001
+data_lost.c , 195 ,  Function exported but not used outside data_lost:
+data_lost.c , 200 ,  Definition of data_lost_015
+data_lost.c , 206 ,  Function exported but not used outside data_lost:
+data_lost.c , 211 ,  Definition of data_lost_016_func_001
+data_lost.c , 213 ,  Function exported but not used outside data_lost:
+data_lost.c , 216 ,  Definition of data_lost_016
+data_lost.c , 222 ,  Function exported but not used outside data_lost:
+data_lost.c , 228 ,  Definition of data_lost_017
+data_lost.c , 234 ,  Function exported but not used outside data_lost:
+data_lost.c , 242 ,  Definition of data_lost_018
+data_lost.c , 248 ,  Function exported but not used outside data_lost:
+data_lost.c , 258 ,  Definition of data_lost_019
+uninit_memory_access.c , 27 ,  Format argument 1 to printf (%ld) expects long
+uninit_memory_access.c , 27 ,  Corresponding format code
+uninit_memory_access.c , 27 ,  Value *ret used before definition
+uninit_memory_access.c , 54 ,  Variable str2 used before definition
+uninit_memory_access.c , 127 ,  Possibly null storage str1 passed as non-null
+uninit_memory_access.c , 125 ,  Storage str1 may become null
+uninit_memory_access.c , 127 ,  Variable str2 used before definition
+uninit_memory_access.c , 129 ,  Fresh storage str1 not released before return
+uninit_memory_access.c , 125 ,  Fresh storage str1 created
+uninit_memory_access.c , 175 ,  Passed storage st contains 4 undefined fields:
+uninit_memory_access.c , 193 ,  Possibly null storage ret returned as non-null:
+uninit_memory_access.c , 192 ,  Storage ret may become null
+uninit_memory_access.c , 193 ,  Returned storage *ret contains 2 undefined
+uninit_memory_access.c , 201 ,  Fresh storage s not released before return
+uninit_memory_access.c , 199 ,  Fresh storage s created
+uninit_memory_access.c , 224 ,  Index of possibly null pointer
+uninit_memory_access.c , 220 ,  Storage uninit_memory_access_009_doubleptr_gbl
+uninit_memory_access.c , 233 ,  Storage uninit_memory_access_009_doubleptr_gbl[]
+uninit_memory_access.c , 224 ,  Fresh storage uninit_memory_access_009_doublept
+uninit_memory_access.c , 233 ,  Function returns with possibly null storage
+uninit_memory_access.c , 224 ,  Storage uninit_memory_access_009_doubleptr_gbl
+uninit_memory_access.c , 233 ,  Function returns with global uninit_memory_access_
+uninit_memory_access.c , 224 ,  Storage *(uninit_memory_access_009_doubleptr_gb
+uninit_memory_access.c , 251 ,  Unqualified storage uninit_memory_access_009_doub
+uninit_memory_access.c , 254 ,  Unqualified storage uninit_memory_access_009_doub
+uninit_memory_access.c , 220 ,  Storage uninit_memory_access_009_doubleptr_gbl
+uninit_memory_access.c , 257 ,  Function returns with non-null global
+uninit_memory_access.c , 255 ,  Storage uninit_memory_access_009_doubleptr_gbl
+uninit_memory_access.c , 285 ,  Test expression for if not boolean, type int:
+uninit_memory_access.c , 291 ,  Function returns with non-null global
+uninit_memory_access.c , 277 ,  Storage uninit_memory_access_010_s_001_arr_gbl
+uninit_memory_access.c , 299 ,  Unqualified storage (void *)uninit_memory_access_
+uninit_memory_access.c , 277 ,  Storage uninit_memory_access_010_s_001_arr_gbl
+uninit_memory_access.c , 301 ,  Function returns with global uninit_memory_access_
+uninit_memory_access.c , 299 ,  Storage uninit_memory_access_010_s_001_arr_gbl
+uninit_memory_access.c , 301 ,  Function returns with non-null global
+uninit_memory_access.c , 277 ,  Storage uninit_memory_access_010_s_001_arr_gbl
+uninit_memory_access.c , 313 ,  Return value (type int) ignored:
+uninit_memory_access.c , 319 ,  Variable str used before definition
+uninit_memory_access.c , 348 ,  Datatype bool declared with inconsistent type:
+uninit_memory_access.c , 363 ,  Arrow access from possibly null pointer s1:
+uninit_memory_access.c , 362 ,  Storage s1 may become null
+uninit_memory_access.c , 392 ,  Arrow access from possibly null pointer u: u->a
+uninit_memory_access.c , 391 ,  Storage u may become null
+uninit_memory_access.c , 398 ,  Arrow access from possibly null pointer u: u->a
+uninit_memory_access.c , 397 ,  Storage u may become null
+uninit_memory_access.c , 404 ,  Arrow access from possibly null pointer u: u->a
+uninit_memory_access.c , 403 ,  Storage u may become null
+st_overflow.c , 23 ,  Assignment of double to int: sink = buf[idx]
+st_overflow.c , 49 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 55 ,  Passed storage s contains 9 undefined fields:
+st_overflow.c , 77 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 78 ,  Assignment of int to char: buf[0] = 1
+st_overflow.c , 79 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 85 ,  Passed storage s contains 5 undefined fields:
+st_overflow.c , 108 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 109 ,  Assignment of int to char: buf[0] = 1
+st_overflow.c , 110 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 116 ,  Assignment of int to char: buf[0] = 1
+st_overflow.c , 118 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 124 ,  Passed storage s contains 4 undefined fields:
+st_overflow.c , 147 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 155 ,  Passed storage s contains 1 undefined field: buf
+st_overflow.c , 156 ,  Assignment of int to char: buf[0] = 1
+st_overflow.c , 157 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 179 ,  Assignment of int to char: buf[1] = 10
+st_overflow.c , 180 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 181 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 189 ,  Passed storage s contains 5 undefined fields:
+st_overflow.c , 212 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 213 ,  Assignment of int to char: buf[0] = 1
+st_overflow.c , 215 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 221 ,  Assignment of int to char: buf[0] = 1
+st_overflow.c , 222 ,  Assignment of int to char: s.buf[0] = 1
+st_overflow.c , 223 ,  Assignment of char to int: sink = buf[idx]
+st_overflow.c , 230 ,  Test expression for if not boolean, type int: flag
+st_overflow.c , 232 ,  Passed storage s contains 5 undefined fields:
+st_overflow.c , 236 ,  Passed storage s contains 5 undefined fields:
+st_overflow.c , 19 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 24 ,  Definition of st_overflow_001
+st_overflow.c , 47 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 50 ,  Definition of st_overflow_002_func_001
+st_overflow.c , 52 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 56 ,  Definition of st_overflow_002
+st_overflow.c , 74 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 80 ,  Definition of st_overflow_003_func_001
+st_overflow.c , 82 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 86 ,  Definition of st_overflow_003
+st_overflow.c , 105 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 111 ,  Definition of st_overflow_004_func_002
+st_overflow.c , 113 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 119 ,  Definition of st_overflow_004_func_001
+st_overflow.c , 121 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 125 ,  Definition of st_overflow_004
+st_overflow.c , 139 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 149 ,  Definition of st_overflow_005_func_001
+st_overflow.c , 151 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 158 ,  Definition of st_overflow_005
+st_overflow.c , 176 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 182 ,  Definition of st_overflow_006_func_001
+st_overflow.c , 184 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 190 ,  Definition of st_overflow_006
+st_overflow.c , 208 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 224 ,  Definition of st_overflow_007_func_002
+st_overflow.c , 209 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 216 ,  Definition of st_overflow_007_func_001
+st_overflow.c , 226 ,  Function exported but not used outside st_overflow:
+st_overflow.c , 238 ,  Definition of st_overflow_007
+return_local.c , 19 ,  Stack-allocated storage buf reachable from return value:
+return_local.c , 19 ,  Returned storage buf not completely defined (*buf is
+return_local.c , 27 ,  Fresh storage p not released before return
+return_local.c , 25 ,  Fresh storage p created
+return_local.c , 37 ,  Stack-allocated storage *pp reachable from parameter pp
+return_local.c , 36 ,  Storage *pp becomes stack-allocated storage
+return_local.c , 37 ,  Function returns storage pp reachable from parameter not
+return_local.c , 36 ,  Storage **pp allocated
+return_local.c , 42 ,  Passed storage &p not completely defined:
+return_local.c , 16 ,  Function exported but not used outside return_local:
+return_local.c , 20 ,  Definition of return_local_001_func_001
+return_local.c , 22 ,  Function exported but not used outside return_local:
+return_local.c , 27 ,  Definition of return_local_001
+return_local.c , 33 ,  Function exported but not used outside return_local:
+return_local.c , 37 ,  Definition of return_local_002_func_001
+return_local.c , 39 ,  Function exported but not used outside return_local:
+return_local.c , 44 ,  Definition of return_local_002
+uninit_var.c , 23 ,  Variable a used before definition
+uninit_var.c , 34 ,  Array element buf[3] used before definition
+uninit_var.c , 45 ,  Array element buf[1][1] used before definition
+uninit_var.c , 62 ,  Body of else clause of if statement is empty
+uninit_var.c , 63 ,  Variable dvar used before definition
+uninit_var.c , 75 ,  Variable ret used before definition
+uninit_var.c , 92 ,  Assignment of long int to int: flag = a
+uninit_var.c , 92 ,  Variable a used before definition
+uninit_var.c , 111 ,  Field s.uninit used before definition
+uninit_var.c , 131 ,  Variable data used before definition
+uninit_var.c , 142 ,  Passed storage ret not completely defined (*ret is
+uninit_var.c , 148 ,  Passed storage buf not completely defined (*buf is
+uninit_var.c , 161 ,  Value ret[][] used before definition
+uninit_var.c , 166 ,  Passed storage buf not completely defined (*buf is
+uninit_var.c , 186 ,  Function uninit_var_011_func_001 expects arg 2 to be int
+uninit_var.c , 186 ,  Passed storage arr not completely defined (*arr is
+insign_code.c , 17 ,  Function exported but not used outside insign_code:
+insign_code.c , 25 ,  Definition of insign_code_001
+ow_memcpy.c , 50 ,  Function ow_memcpy_002_func_001 expects arg 3 to be int gets
+ow_memcpy.c , 17 ,  Function exported but not used outside ow_memcpy:
+ow_memcpy.c , 26 ,  Definition of ow_memcpy_001
+ow_memcpy.c , 32 ,  Function exported but not used outside ow_memcpy:
+ow_memcpy.c , 45 ,  Definition of ow_memcpy_002_func_001
+ow_memcpy.c , 47 ,  Function exported but not used outside ow_memcpy:
+ow_memcpy.c , 51 ,  Definition of ow_memcpy_002
+redundant_cond.c , 19 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 32 ,  Definition of redundant_cond_001
+redundant_cond.c , 38 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 51 ,  Definition of redundant_cond_002
+redundant_cond.c , 57 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 70 ,  Definition of redundant_cond_003
+redundant_cond.c , 76 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 89 ,  Definition of redundant_cond_004
+redundant_cond.c , 95 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 108 ,  Definition of redundant_cond_005
+redundant_cond.c , 114 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 130 ,  Definition of redundant_cond_006
+redundant_cond.c , 136 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 146 ,  Definition of redundant_cond_007
+redundant_cond.c , 152 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 164 ,  Definition of redundant_cond_008
+redundant_cond.c , 170 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 184 ,  Definition of redundant_cond_009
+redundant_cond.c , 190 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 204 ,  Definition of redundant_cond_010
+redundant_cond.c , 210 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 224 ,  Definition of redundant_cond_011
+redundant_cond.c , 230 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 244 ,  Definition of redundant_cond_012
+redundant_cond.c , 250 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 264 ,  Definition of redundant_cond_013
+redundant_cond.c , 270 ,  Function exported but not used outside redundant_cond:
+redundant_cond.c , 285 ,  Definition of redundant_cond_014
+wrong_arguments_func_pointer.c , 17 , 
+wrong_arguments_func_pointer.c , 17 , 
+wrong_arguments_func_pointer.c , 41 ,  Parameter a not used
+wrong_arguments_func_pointer.c , 62 ,  Parameter a not used
+wrong_arguments_func_pointer.c , 213 , 
+wrong_arguments_func_pointer.c , 214 , 
+wrong_arguments_func_pointer.c , 225 , 
+wrong_arguments_func_pointer.c , 221 ,  Storage str3 may become null
+wrong_arguments_func_pointer.c , 225 , 
+wrong_arguments_func_pointer.c , 221 ,  Storage *str3 allocated
+wrong_arguments_func_pointer.c , 227 , 
+wrong_arguments_func_pointer.c , 221 ,  Fresh storage str3 created
+wrong_arguments_func_pointer.c , 251 , 
+unused_var.c , 77 ,  Field u.s2.a used before definition
+unused_var.c , 77 ,  Field u.s2.b used before definition
+unused_var.c , 18 ,  Function exported but not used outside unused_var:
+unused_var.c , 25 ,  Definition of unused_var_001
+unused_var.c , 37 ,  Function exported but not used outside unused_var:
+unused_var.c , 43 ,  Definition of unused_var_002
+unused_var.c , 70 ,  Function exported but not used outside unused_var:
+unused_var.c , 79 ,  Definition of unused_var_003
+unused_var.c , 85 ,  Variable exported but not used outside unused_var:
+unused_var.c , 86 ,  Variable exported but not used outside unused_var:
+unused_var.c , 87 ,  Variable exported but not used outside unused_var:
+unused_var.c , 89 ,  Function exported but not used outside unused_var:
+unused_var.c , 92 ,  Definition of unused_var_004
+unused_var.c , 102 ,  Function exported but not used outside unused_var:
+unused_var.c , 105 ,  Definition of unused_var_005
+unused_var.c , 111 ,  Function exported but not used outside unused_var:
+unused_var.c , 120 ,  Definition of unused_var_006
+unused_var.c , 147 ,  Variable exported but not used outside unused_var:
+unused_var.c , 148 ,  Function exported but not used outside unused_var:
+unused_var.c , 153 ,  Definition of unused_var_007
+overrun_st.c , 21 ,  Assignment of int to char: buf[5] = 1
+overrun_st.c , 22 ,  Assignment of char to int: sink = buf[idx]
+overrun_st.c , 67 ,  Assignment of long int to int: sink = buf[idx]
+overrun_st.c , 78 ,  Assignment of float to int: sink = buf[idx]
+overrun_st.c , 89 ,  Assignment of double to int: sink = buf[idx]
+overrun_st.c , 100 ,  Value buf[][] used before definition
+overrun_st.c , 111 ,  Value buf[][][] used before definition
+overrun_st.c , 125 ,  Initialized storage buf1 not completely defined (*buf1 is
+overrun_st.c , 125 ,  Initialized storage buf2 not completely defined (*buf2 is
+overrun_st.c , 125 ,  Initialized storage buf3 not completely defined (*buf3 is
+overrun_st.c , 125 ,  Initialized storage buf4 not completely defined (*buf4 is
+overrun_st.c , 125 ,  Initialized storage buf5 not completely defined (*buf5 is
+overrun_st.c , 293 ,  Assignment of int to char: *(p + 5) = 1
+overrun_st.c , 294 ,  Assignment of char to int: sink = buf[idx]
+overrun_st.c , 294 ,  Value buf[] used before definition
+overrun_st.c , 307 ,  Value buf[] used before definition
+overrun_st.c , 334 ,  Value buf[] used before definition
+overrun_st.c , 347 ,  Assignment of long int to int: sink = buf[idx]
+overrun_st.c , 347 ,  Value buf[] used before definition
+overrun_st.c , 360 ,  Assignment of float to int: sink = buf[idx]
+overrun_st.c , 360 ,  Value buf[] used before definition
+overrun_st.c , 373 ,  Assignment of double to int: sink = buf[idx]
+overrun_st.c , 373 ,  Value buf[] used before definition
+overrun_st.c , 387 ,  Value *pp used before definition
+overrun_st.c , 387 ,  Value *pp used before definition
+overrun_st.c , 388 ,  Value buf[] used before definition
+overrun_st.c , 403 ,  Value buf[] used before definition
+overrun_st.c , 429 ,  Value buf[] used before definition
+overrun_st.c , 444 ,  Value buf[] used before definition
+overrun_st.c , 458 ,  Value buf[] used before definition
+overrun_st.c , 472 ,  Value buf[] used before definition
+overrun_st.c , 490 ,  Value buf[] used before definition
+overrun_st.c , 503 ,  Value buf[] used before definition
+overrun_st.c , 523 ,  Value buf[] used before definition
+overrun_st.c , 539 ,  Value buf[] used before definition
+overrun_st.c , 557 ,  Value buf[] used before definition
+overrun_st.c , 605 ,  Initialized storage buf1 not completely defined (*buf1 is
+overrun_st.c , 605 ,  Initialized storage buf2 not completely defined (*buf2 is
+overrun_st.c , 605 ,  Initialized storage buf3 not completely defined (*buf3 is
+overrun_st.c , 605 ,  Initialized storage buf4 not completely defined (*buf4 is
+overrun_st.c , 605 ,  Initialized storage buf5 not completely defined (*buf5 is
+overrun_st.c , 633 ,  Value buf[] used before definition
+overrun_st.c , 648 ,  Passed storage buf not completely defined (*buf is
+overrun_st.c , 664 ,  Passed storage buf not completely defined (*buf is
+overrun_st.c , 680 ,  Passed storage buf not completely defined (*buf is
+overrun_st.c , 695 ,  Passed storage buf not completely defined (*buf is
+overrun_st.c , 749 ,  Assignment of int to char: buf[5] = 1
+overrun_st.c , 773 ,  Assignment of int to char: *(p + 50) = 1
+overrun_st.c , 18 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 23 ,  Definition of overrun_st_001
+overrun_st.c , 29 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 34 ,  Definition of overrun_st_002
+overrun_st.c , 40 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 46 ,  Definition of overrun_st_003
+overrun_st.c , 52 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 57 ,  Definition of overrun_st_004
+overrun_st.c , 63 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 68 ,  Definition of overrun_st_005
+overrun_st.c , 74 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 79 ,  Definition of overrun_st_006
+overrun_st.c , 85 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 90 ,  Definition of overrun_st_007
+overrun_st.c , 96 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 101 ,  Definition of overrun_st_008
+overrun_st.c , 107 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 112 ,  Definition of overrun_st_009
+overrun_st.c , 118 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 127 ,  Definition of overrun_st_010
+overrun_st.c , 139 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 143 ,  Definition of overrun_st_011
+overrun_st.c , 154 ,  Variable exported but not used outside overrun_st:
+overrun_st.c , 155 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 159 ,  Definition of overrun_st_012
+overrun_st.c , 165 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 171 ,  Definition of overrun_st_013
+overrun_st.c , 177 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 184 ,  Definition of overrun_st_014
+overrun_st.c , 190 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 196 ,  Definition of overrun_st_015
+overrun_st.c , 202 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 208 ,  Definition of overrun_st_016
+overrun_st.c , 214 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 217 ,  Definition of overrun_st_017_func_001
+overrun_st.c , 219 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 224 ,  Definition of overrun_st_017
+overrun_st.c , 230 ,  Variable exported but not used outside overrun_st:
+overrun_st.c , 231 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 234 ,  Definition of overrun_st_018_func_001
+overrun_st.c , 236 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 239 ,  Definition of overrun_st_018
+overrun_st.c , 245 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 252 ,  Definition of overrun_st_019
+overrun_st.c , 258 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 266 ,  Definition of overrun_st_020
+overrun_st.c , 272 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 282 ,  Definition of overrun_st_021
+overrun_st.c , 288 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 295 ,  Definition of overrun_st_022
+overrun_st.c , 301 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 308 ,  Definition of overrun_st_023
+overrun_st.c , 314 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 322 ,  Definition of overrun_st_024
+overrun_st.c , 328 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 335 ,  Definition of overrun_st_025
+overrun_st.c , 341 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 348 ,  Definition of overrun_st_026
+overrun_st.c , 354 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 361 ,  Definition of overrun_st_027
+overrun_st.c , 367 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 374 ,  Definition of overrun_st_028
+overrun_st.c , 380 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 389 ,  Definition of overrun_st_029
+overrun_st.c , 395 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 404 ,  Definition of overrun_st_030
+overrun_st.c , 410 ,  Variable exported but not used outside overrun_st:
+overrun_st.c , 411 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 416 ,  Definition of overrun_st_031
+overrun_st.c , 422 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 430 ,  Definition of overrun_st_032
+overrun_st.c , 436 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 445 ,  Definition of overrun_st_033
+overrun_st.c , 451 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 459 ,  Definition of overrun_st_034
+overrun_st.c , 465 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 473 ,  Definition of overrun_st_035
+overrun_st.c , 479 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 482 ,  Definition of overrun_st_036_func_001
+overrun_st.c , 484 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 491 ,  Definition of overrun_st_036
+overrun_st.c , 497 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 504 ,  Definition of overrun_st_037_func_001
+overrun_st.c , 506 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 509 ,  Definition of overrun_st_037
+overrun_st.c , 515 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 524 ,  Definition of overrun_st_038
+overrun_st.c , 530 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 540 ,  Definition of overrun_st_039
+overrun_st.c , 546 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 558 ,  Definition of overrun_st_040
+overrun_st.c , 564 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 573 ,  Definition of overrun_st_041
+overrun_st.c , 579 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 592 ,  Definition of overrun_st_042
+overrun_st.c , 598 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 616 ,  Definition of overrun_st_043
+overrun_st.c , 622 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 634 ,  Definition of overrun_st_044
+overrun_st.c , 640 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 643 ,  Definition of overrun_st_045_func_001
+overrun_st.c , 645 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 650 ,  Definition of overrun_st_045
+overrun_st.c , 656 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 659 ,  Definition of overrun_st_046_func_001
+overrun_st.c , 661 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 666 ,  Definition of overrun_st_046
+overrun_st.c , 672 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 675 ,  Definition of overrun_st_047_func_001
+overrun_st.c , 677 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 681 ,  Definition of overrun_st_047
+overrun_st.c , 687 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 690 ,  Definition of overrun_st_048_func_001
+overrun_st.c , 692 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 697 ,  Definition of overrun_st_048
+overrun_st.c , 703 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 708 ,  Definition of overrun_st_049
+overrun_st.c , 714 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 725 ,  Definition of overrun_st_050
+overrun_st.c , 731 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 740 ,  Definition of overrun_st_051
+overrun_st.c , 746 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 750 ,  Definition of overrun_st_052
+overrun_st.c , 756 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 762 ,  Definition of overrun_st_053
+overrun_st.c , 768 ,  Variable exported but not used outside overrun_st:
+overrun_st.c , 769 ,  Function exported but not used outside overrun_st:
+overrun_st.c , 774 ,  Definition of overrun_st_054
+data_underflow.c , 34 ,  Assignment of unsigned int to int: sink = ret
+data_underflow.c , 98 ,  Assignment of float to int: sink = ret
+data_underflow.c , 113 ,  Assignment of double to int: sink = ret
+data_underflow.c , 122 ,  Variable min initialized to type int, expects char:
+data_underflow.c , 124 ,  Incompatible types for - (char, int): min - 2
+data_underflow.c , 125 ,  Assignment of char to int: sink = ret
+data_underflow.c , 17 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 23 ,  Definition of data_underflow_001
+data_underflow.c , 29 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 35 ,  Definition of data_underflow_002
+data_underflow.c , 41 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 49 ,  Definition of data_underflow_003
+data_underflow.c , 55 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 61 ,  Definition of data_underflow_004
+data_underflow.c , 67 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 73 ,  Definition of data_underflow_005
+data_underflow.c , 79 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 84 ,  Definition of data_underflow_006
+data_underflow.c , 90 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 99 ,  Definition of data_underflow_007
+data_underflow.c , 105 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 114 ,  Definition of data_underflow_008
+data_underflow.c , 120 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 126 ,  Definition of data_underflow_009
+data_underflow.c , 132 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 135 ,  Definition of data_underflow_010_func_001
+data_underflow.c , 137 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 143 ,  Definition of data_underflow_010
+data_underflow.c , 149 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 155 ,  Definition of data_underflow_011_func_001
+data_underflow.c , 157 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 160 ,  Definition of data_underflow_011
+data_underflow.c , 166 ,  Function exported but not used outside data_underflow:
+data_underflow.c , 173 ,  Definition of data_underflow_012
+cmp_funcadr.c , 20 ,  Immediate address &cmp_funcadr_001_glb_a returned as
+cmp_funcadr.c , 17 ,  Variable exported but not used outside cmp_funcadr:
+cmp_funcadr.c , 18 ,  Function exported but not used outside cmp_funcadr:
+cmp_funcadr.c , 21 ,  Definition of cmp_funcadr_001_func_001
+cmp_funcadr.c , 23 ,  Function exported but not used outside cmp_funcadr:
+cmp_funcadr.c , 31 ,  Definition of cmp_funcadr_001
+cmp_funcadr.c , 40 ,  Function exported but not used outside cmp_funcadr:
+cmp_funcadr.c , 43 ,  Definition of cmp_funcadr_002_func_001
+cmp_funcadr.c , 45 ,  Function exported but not used outside cmp_funcadr:
+cmp_funcadr.c , 53 ,  Definition of cmp_funcadr_002
+buffer_underrun_dynamic.c , 29 ,  Assignment of int to char: buf[i] = 1
+dead_code.c , 39 ,  Test expression for if not boolean, type int: flag
+dead_code.c , 60 ,  Test expression for if not boolean, type int:
+dead_code.c , 76 ,  Test expression for if not boolean, type int: flag
+dead_code.c , 167 ,  Test expression for while not boolean, type int: flag
+dead_code.c , 167 ,  Suspected infinite loop.  No value used in loop test (flag)
+dead_code.c , 189 ,  Test expression for while not boolean, type int:
+dead_code.c , 206 ,  Test expression for while not boolean, type int: flag
+dead_code.c , 206 ,  Suspected infinite loop.  No value used in loop test (flag)
+dead_code.c , 229 ,  Suspected infinite loop.  No value used in loop test (flag)
+dead_code.c , 247 ,  Suspected infinite loop.  No value used in loop test (flag)
+dead_code.c , 18 ,  Function exported but not used outside dead_code:
+dead_code.c , 28 ,  Definition of dead_code_001
+dead_code.c , 34 ,  Function exported but not used outside dead_code:
+dead_code.c , 45 ,  Definition of dead_code_002
+dead_code.c , 51 ,  Function exported but not used outside dead_code:
+dead_code.c , 54 ,  Definition of dead_code_003_func_001
+dead_code.c , 56 ,  Function exported but not used outside dead_code:
+dead_code.c , 66 ,  Definition of dead_code_003
+dead_code.c , 72 ,  Function exported but not used outside dead_code:
+dead_code.c , 82 ,  Definition of dead_code_004_func_001
+dead_code.c , 84 ,  Function exported but not used outside dead_code:
+dead_code.c , 87 ,  Definition of dead_code_004
+dead_code.c , 93 ,  Function exported but not used outside dead_code:
+dead_code.c , 104 ,  Definition of dead_code_005
+dead_code.c , 110 ,  Function exported but not used outside dead_code:
+dead_code.c , 121 ,  Definition of dead_code_006
+dead_code.c , 127 ,  Function exported but not used outside dead_code:
+dead_code.c , 139 ,  Definition of dead_code_007
+dead_code.c , 145 ,  Function exported but not used outside dead_code:
+dead_code.c , 156 ,  Definition of dead_code_008
+dead_code.c , 162 ,  Function exported but not used outside dead_code:
+dead_code.c , 174 ,  Definition of dead_code_009
+dead_code.c , 180 ,  Function exported but not used outside dead_code:
+dead_code.c , 183 ,  Definition of dead_code_010_func_001
+dead_code.c , 185 ,  Function exported but not used outside dead_code:
+dead_code.c , 196 ,  Definition of dead_code_010
+dead_code.c , 202 ,  Function exported but not used outside dead_code:
+dead_code.c , 213 ,  Definition of dead_code_011_func_001
+dead_code.c , 215 ,  Function exported but not used outside dead_code:
+dead_code.c , 218 ,  Definition of dead_code_011
+dead_code.c , 224 ,  Function exported but not used outside dead_code:
+dead_code.c , 236 ,  Definition of dead_code_012
+dead_code.c , 242 ,  Function exported but not used outside dead_code:
+dead_code.c , 254 ,  Definition of dead_code_013
+deletion_of_data_structure_sentinel.c , 26 ,  Index of possibly null pointer foo:
+deletion_of_data_structure_sentinel.c , 23 ,  Storage foo may become null
+deletion_of_data_structure_sentinel.c , 19 , 
+deletion_of_data_structure_sentinel.c , 29 , 
+deletion_of_data_structure_sentinel.c , 37 , 
+deletion_of_data_structure_sentinel.c , 42 , 
+deletion_of_data_structure_sentinel.c , 50 , 
+deletion_of_data_structure_sentinel.c , 63 , 
+main.c , 24 ,  Function floor expects arg 1 to be double gets int:
+main.c , 17 ,  Parameter argc not used
+main.c , 9 ,  Variable exported but not used outside main: vflag
+main.c , 10 ,  Variable exported but not used outside main: vflag_copy
+main.c , 11 ,  Variable exported but not used outside main: vflag_file
+double_free.c , 22 ,  Dead storage ptr passed as out parameter to free: ptr
+double_free.c , 20 ,  Storage ptr released
+double_free.c , 37 ,  Index of possibly null pointer ptr: ptr
+double_free.c , 32 ,  Storage ptr may become null
+double_free.c , 41 ,  Variable ptr is released in true branch, but live in
+double_free.c , 41 ,  in true branch:
+double_free.c , 40 ,  Storage ptr released
+double_free.c , 41 ,  in continuation:
+double_free.c , 37 ,  Storage ptr defined
+double_free.c , 62 ,  Variable ptr is released in true branch, but live in
+double_free.c , 62 ,  in true branch:
+double_free.c , 61 ,  Storage ptr released
+double_free.c , 62 ,  in continuation:
+double_free.c , 53 ,  Storage ptr allocated
+double_free.c , 84 ,  Variable ptr is released in true branch, but live in
+double_free.c , 84 ,  in true branch:
+double_free.c , 83 ,  Storage ptr released
+double_free.c , 84 ,  in continuation:
+double_free.c , 74 ,  Storage ptr allocated
+double_free.c , 100 ,  Variable ptr used after being released
+double_free.c , 98 ,  Storage ptr released
+double_free.c , 112 ,  Test expression for if not boolean, type int: 1
+double_free.c , 113 ,  Variable ptr is released in true branch, but live in
+double_free.c , 113 ,  in true branch:
+double_free.c , 113 ,  Storage ptr released
+double_free.c , 113 ,  in continuation:
+double_free.c , 111 ,  Storage ptr allocated
+double_free.c , 129 ,  Variable ptr is released in true branch, but live in
+double_free.c , 129 ,  in true branch:
+double_free.c , 129 ,  Storage ptr released
+double_free.c , 129 ,  in continuation:
+double_free.c , 125 ,  Storage ptr allocated
+double_free.c , 141 ,  Unqualified storage double_free_function_008_gbl_ptr
+double_free.c , 142 ,  Function returns with global double_free_function_008_gbl_p
+double_free.c , 141 ,  Storage double_free_function_008_gbl_ptr released
+double_free.c , 150 ,  Function returns with global double_free_function_008_gbl_p
+double_free.c , 149 ,  Storage double_free_function_008_gbl_ptr released
+double_free.c , 150 ,  Function returns with non-null global double_free_function_
+double_free.c , 146 ,  Storage double_free_function_008_gbl_ptr may become
+double_free.c , 167 ,  Variable ptr is released in while body, but live if loop
+double_free.c , 167 ,  in while body:
+double_free.c , 165 ,  Storage ptr released
+double_free.c , 167 ,  if loop is not taken:
+double_free.c , 160 ,  Storage ptr allocated
+double_free.c , 182 ,  Test expression for while not boolean, type int: flag
+double_free.c , 186 ,  Variable ptr is released in while body, but live if loop
+double_free.c , 186 ,  in while body:
+double_free.c , 184 ,  Storage ptr released
+double_free.c , 186 ,  if loop is not taken:
+double_free.c , 179 ,  Storage ptr allocated
+double_free.c , 204 ,  Variable ptr is released in true branch, but live in
+double_free.c , 204 ,  in true branch:
+double_free.c , 204 ,  Storage ptr released
+double_free.c , 204 ,  in continuation:
+double_free.c , 198 ,  Storage ptr allocated
+double_free.c , 207 ,  Fresh storage ptr not released before return
+double_free.c , 198 ,  Fresh storage ptr created
+double_free.c , 17 ,  Function exported but not used outside double_free:
+double_free.c , 23 ,  Definition of double_free_001
+double_free.c , 30 ,  Function exported but not used outside double_free:
+double_free.c , 44 ,  Definition of double_free_002
+double_free.c , 51 ,  Function exported but not used outside double_free:
+double_free.c , 65 ,  Definition of double_free_003
+double_free.c , 72 ,  Function exported but not used outside double_free:
+double_free.c , 88 ,  Definition of double_free_004
+double_free.c , 95 ,  Function exported but not used outside double_free:
+double_free.c , 102 ,  Definition of double_free_005
+double_free.c , 109 ,  Function exported but not used outside double_free:
+double_free.c , 116 ,  Definition of double_free_006
+double_free.c , 123 ,  Function exported but not used outside double_free:
+double_free.c , 132 ,  Definition of double_free_007
+double_free.c , 138 ,  Variable exported but not used outside double_free:
+double_free.c , 139 ,  Function exported but not used outside double_free:
+double_free.c , 142 ,  Definition of double_free_function_008
+double_free.c , 144 ,  Function exported but not used outside double_free:
+double_free.c , 150 ,  Definition of double_free_008
+double_free.c , 158 ,  Function exported but not used outside double_free:
+double_free.c , 169 ,  Definition of double_free_009
+double_free.c , 177 ,  Function exported but not used outside double_free:
+double_free.c , 188 ,  Definition of double_free_010
+double_free.c , 196 ,  Function exported but not used outside double_free:
+double_free.c , 207 ,  Definition of double_free_011
+double_free.c , 215 ,  Function exported but not used outside double_free:
+double_free.c , 224 ,  Definition of double_free_012
+race_condition.c , 25 ,  Null storage returned as non-null: NULL
+race_condition.c , 31 ,  Null storage returned as non-null: NULL
+race_condition.c , 36 ,  Unrecognized identifier: pthread_t
+conflicting_cond.c , 17 ,  Function exported but not used outside
+conflicting_cond.c , 30 ,  Definition of conflicting_cond_001
+conflicting_cond.c , 36 ,  Function exported but not used outside
+conflicting_cond.c , 49 ,  Definition of conflicting_cond_002
+conflicting_cond.c , 55 ,  Function exported but not used outside
+conflicting_cond.c , 68 ,  Definition of conflicting_cond_003
+conflicting_cond.c , 74 ,  Function exported but not used outside
+conflicting_cond.c , 90 ,  Definition of conflicting_cond_004
+conflicting_cond.c , 96 ,  Function exported but not used outside
+conflicting_cond.c , 106 ,  Definition of conflicting_cond_005
+conflicting_cond.c , 112 ,  Function exported but not used outside
+conflicting_cond.c , 124 ,  Definition of conflicting_cond_006
+conflicting_cond.c , 130 ,  Function exported but not used outside
+conflicting_cond.c , 144 ,  Definition of conflicting_cond_007
+conflicting_cond.c , 150 ,  Function exported but not used outside
+conflicting_cond.c , 164 ,  Definition of conflicting_cond_008
+conflicting_cond.c , 170 ,  Function exported but not used outside
+conflicting_cond.c , 184 ,  Definition of conflicting_cond_009
+conflicting_cond.c , 190 ,  Function exported but not used outside
+conflicting_cond.c , 202 ,  Definition of conflicting_cond_010
+invalid_extern.c , 51 ,  Assignment of double to char:
+invalid_extern.c , 29 ,  Function exported but not used outside invalid_extern:
+invalid_extern.c , 32 ,  Definition of invalid_extern_001
+invalid_extern.c , 34 ,  Function exported but not used outside invalid_extern:
+invalid_extern.c , 37 ,  Definition of invalid_extern_002
+invalid_extern.c , 39 ,  Function exported but not used outside invalid_extern:
+invalid_extern.c , 42 ,  Definition of invalid_extern_003
+invalid_extern.c , 44 ,  Function exported but not used outside invalid_extern:
+invalid_extern.c , 47 ,  Definition of invalid_extern_004
+invalid_extern.c , 49 ,  Function exported but not used outside invalid_extern:
+invalid_extern.c , 52 ,  Definition of invalid_extern_005
+invalid_extern.c , 54 ,  Function exported but not used outside invalid_extern:
+invalid_extern.c , 57 ,  Definition of invalid_extern_006
+memory_allocation_failure.c , 82 ,  Value *ptr used before definition
+memory_allocation_failure.c , 82 ,  Value *ptr used before definition
+memory_allocation_failure.c , 84 ,  Index of possibly null pointer ptr: ptr
+memory_allocation_failure.c , 72 ,  Storage ptr may become null
+memory_allocation_failure.c , 84 ,  Unallocated storage ptr[] passed as out
+memory_allocation_failure.c , 97 ,  Assignment of unsigned int to int:
+memory_allocation_failure.c , 123 ,  Function calloc expects arg 1 to be size_t
+memory_allocation_failure.c , 126 ,  Function returns with non-null global vptr
+memory_allocation_failure.c , 123 ,  Storage vptr may become null
+memory_allocation_failure.c , 133 ,  Function returns with non-null global vptr
+memory_allocation_failure.c , 130 ,  Storage vptr may become null
+memory_allocation_failure.c , 140 ,  Function returns with non-null global vptr
+memory_allocation_failure.c , 137 ,  Storage vptr may become null
+memory_allocation_failure.c , 153 ,  Unqualified storage vptr passed as only
+memory_allocation_failure.c , 137 ,  Storage vptr created
+memory_allocation_failure.c , 154 ,  Function returns with global vptr
+memory_allocation_failure.c , 153 ,  Storage vptr released
+memory_allocation_failure.c , 154 ,  Function returns with non-null global vptr
+memory_allocation_failure.c , 137 ,  Storage vptr may become null
+memory_allocation_failure.c , 182 ,  Index of possibly null pointer
+memory_allocation_failure.c , 179 , 
+memory_allocation_failure.c , 183 ,  Index of possibly null pointer
+memory_allocation_failure.c , 182 , 
+memory_allocation_failure.c , 202 ,  Unqualified storage memory_allocation_failur
+memory_allocation_failure.c , 206 ,  Unqualified storage memory_allocation_failur
+memory_allocation_failure.c , 179 , 
+memory_allocation_failure.c , 209 ,  Function returns with non-null global
+memory_allocation_failure.c , 207 , 
+memory_allocation_failure.c , 220 ,  Function malloc expects arg 1 to be size_t
+memory_allocation_failure.c , 222 ,  Operands of < have incompatible types (int,
+memory_allocation_failure.c , 227 ,  Possibly null storage memory_allocation_fail
+memory_allocation_failure.c , 220 , 
+memory_allocation_failure.c , 227 ,  Function returns with global
+memory_allocation_failure.c , 227 , 
+memory_allocation_failure.c , 229 ,  Null storage returned as non-null: NULL
+memory_allocation_failure.c , 262 ,  Return value (type int) ignored:
+memory_allocation_failure.c , 263 ,  Null storage buffer returned as non-null:
+memory_allocation_failure.c , 254 ,  Storage buffer becomes null
+memory_allocation_failure.c , 268 ,  Return value (type char *) ignored:
+memory_allocation_failure.c , 284 ,  Operands of < have incompatible types (int,
+memory_allocation_failure.c , 285 ,  Fresh storage buf not released before return
+memory_allocation_failure.c , 282 ,  Fresh storage buf created
+memory_allocation_failure.c , 292 ,  Null storage buf passed as non-null param:
+memory_allocation_failure.c , 291 ,  Storage buf becomes null
+memory_allocation_failure.c , 323 ,  Operands of <= have incompatible types
+memory_allocation_failure.c , 325 ,  Function returns with non-null global
+memory_allocation_failure.c , 321 , 
+memory_allocation_failure.c , 334 ,  Test expression for if not boolean, type
+memory_allocation_failure.c , 327 ,  Parameter devno not used
+memory_allocation_failure.c , 377 ,  Assignment of unsigned int to int:
+memory_allocation_failure.c , 386 ,  Arrow access from possibly null pointer
+memory_allocation_failure.c , 385 , 
+memory_allocation_failure.c , 387 ,  Arrow access from possibly null pointer
+memory_allocation_failure.c , 386 , 
+memory_allocation_failure.c , 388 ,  Function returns with possibly null storage
+memory_allocation_failure.c , 387 , 
+memory_allocation_failure.c , 388 ,  Global storage *(memory_allocation_failure_01
+memory_allocation_failure.c , 401 ,  Unqualified storage memory_allocation_failure
+memory_allocation_failure.c , 385 , 
+memory_allocation_failure.c , 403 ,  Function returns with global
+memory_allocation_failure.c , 401 , 
+memory_allocation_failure.c , 403 ,  Function returns with non-null global
+memory_allocation_failure.c , 385 , 
+memory_allocation_failure.c , 414 ,  Assignment of unsigned int to int:
+memory_allocation_failure.c , 423 ,  Function calloc expects arg 1 to be size_t
+free_null_pointer.c , 13 ,  Global free_null_pointer_002_gbl_ptr initialized to
+free_null_pointer.c , 13 ,  Global free_null_pointer_002_gbl_ptr initialized to
+free_null_pointer.c , 14 ,  Global free_null_pointer_010_gbl_dst initialized to
+free_null_pointer.c , 14 ,  Global free_null_pointer_010_gbl_dst initialized to
+free_null_pointer.c , 36 ,  Unqualified storage free_null_pointer_002_gbl_ptr
+free_null_pointer.c , 39 ,  Function returns with non-null global
+free_null_pointer.c , 37 ,  Storage free_null_pointer_002_gbl_ptr becomes
+free_null_pointer.c , 54 ,  Index of possibly null pointer buf: buf
+free_null_pointer.c , 53 ,  Storage buf may become null
+free_null_pointer.c , 74 ,  Index of possibly null pointer fptr: fptr
+free_null_pointer.c , 69 ,  Storage fptr may become null
+free_null_pointer.c , 101 ,  Incompatible types for != (unsigned char, char):
+free_null_pointer.c , 103 ,  Function returns with non-null global
+free_null_pointer.c , 100 ,  Storage free_null_pointer_005_gbl_ptr may become
+free_null_pointer.c , 108 ,  Function free_null_pointer_005_func_001 expects arg
+free_null_pointer.c , 110 ,  Unqualified storage free_null_pointer_005_gbl_ptr
+free_null_pointer.c , 102 ,  Storage free_null_pointer_005_gbl_ptr created
+free_null_pointer.c , 112 ,  Function returns with non-null global
+free_null_pointer.c , 111 ,  Storage free_null_pointer_005_gbl_ptr becomes
+free_null_pointer.c , 144 ,  Implicitly only storage s->buf (type char *) not
+free_null_pointer.c , 152 ,  Storage s->buf is released in one path, but live in
+free_null_pointer.c , 151 ,  Storage s->buf released
+free_null_pointer.c , 177 ,  Index of possibly null pointer free_null_pointer_007_
+free_null_pointer.c , 173 ,  Storage free_null_pointer_007_gbl_doubleptr may
+free_null_pointer.c , 183 ,  Index of possibly null pointer free_null_pointer_007_
+free_null_pointer.c , 177 ,  Storage free_null_pointer_007_gbl_doubleptr[]
+free_null_pointer.c , 186 ,  Storage free_null_pointer_007_gbl_doubleptr[]
+free_null_pointer.c , 177 ,  Fresh storage free_null_pointer_007_gbl_doubleptr[
+free_null_pointer.c , 201 ,  Index of null pointer free_null_pointer_007_gbl_doubl
+free_null_pointer.c , 192 ,  Storage free_null_pointer_007_gbl_doubleptr
+free_null_pointer.c , 203 ,  Unqualified storage free_null_pointer_007_gbl_double
+free_null_pointer.c , 211 ,  Unreachable code: if (free_null_po...
+free_null_pointer.c , 217 ,  Function returns with non-null global
+free_null_pointer.c , 210 ,  Storage free_null_pointer_007_gbl_doubleptr
+free_null_pointer.c , 224 ,  Variable min initialized to type int, expects
+free_null_pointer.c , 225 ,  Variable max initialized to type int, expects
+free_null_pointer.c , 234 ,  Function returns with possibly null storage
+free_null_pointer.c , 232 ,  Storage *stringPtr may become null
+free_null_pointer.c , 234 ,  Function returns storage stringPtr reachable from
+free_null_pointer.c , 232 ,  Storage **stringPtr allocated
+free_null_pointer.c , 240 ,  Function free_null_pointer_008_func_001 expects arg
+free_null_pointer.c , 241 ,  Null storage str1 passed as non-null param:
+free_null_pointer.c , 239 ,  Storage str1 becomes null
+func_pointer.c , 51 ,  Operand of ++ is non-numeric (char): a
+func_pointer.c , 52 ,  Return value type char does not match declared type int:
+func_pointer.c , 77 ,  Test expression for if not boolean, type int: 1
+func_pointer.c , 97 ,  Assignment of size_t to int: i = strlen(str1)
+func_pointer.c , 98 ,  Function malloc expects arg 1 to be size_t gets int:
+func_pointer.c , 101 ,  Index of possibly null pointer str_rev: str_rev
+func_pointer.c , 98 ,  Storage str_rev may become null
+func_pointer.c , 103 ,  Index of possibly null pointer str_rev: str_rev
+func_pointer.c , 98 ,  Storage str_rev may become null
+func_pointer.c , 108 ,  Null storage returned as non-null: NULL
+func_pointer.c , 123 ,  Assignment of int to char: str = fptr(buf[j])
+func_pointer.c , 151 ,  Index of possibly null pointer doubleptr: doubleptr
+func_pointer.c , 147 ,  Storage doubleptr may become null
+func_pointer.c , 157 ,  Index of possibly null pointer doubleptr[]: doubleptr[i]
+func_pointer.c , 151 ,  Storage doubleptr[] may become null
+func_pointer.c , 160 ,  Storage doubleptr[] reachable from return value is fresh
+func_pointer.c , 151 ,  Fresh storage doubleptr[] created
+func_pointer.c , 177 ,  Index of null pointer doubleptr: doubleptr
+func_pointer.c , 166 ,  Storage doubleptr becomes null
+func_pointer.c , 192 ,  Global doubleptr initialized to null value:
+func_pointer.c , 192 ,  Global doubleptr initialized to null value:
+func_pointer.c , 210 ,  Index of possibly null pointer doubleptr: doubleptr
+func_pointer.c , 206 ,  Storage doubleptr may become null
+func_pointer.c , 216 ,  Index of possibly null pointer doubleptr[]: doubleptr[i]
+func_pointer.c , 210 ,  Storage doubleptr[] may become null
+func_pointer.c , 216 ,  Assignment of int to float: doubleptr[i][j] = i
+func_pointer.c , 219 ,  Storage doubleptr[] reachable from return value is fresh
+func_pointer.c , 210 ,  Fresh storage doubleptr[] created
+func_pointer.c , 219 ,  Function returns with global doubleptr referencing
+func_pointer.c , 219 ,  Storage doubleptr released
+func_pointer.c , 229 ,  Assignment of int to float: doubleptr[i][j] = i
+func_pointer.c , 232 ,  Unqualified storage doubleptr returned as implicitly
+func_pointer.c , 206 ,  Storage doubleptr created
+func_pointer.c , 232 ,  Function returns with global doubleptr referencing
+func_pointer.c , 232 ,  Storage doubleptr released
+func_pointer.c , 240 ,  Unqualified storage doubleptr[i] passed as only param:
+func_pointer.c , 243 ,  Unqualified storage doubleptr passed as only param:
+func_pointer.c , 206 ,  Storage doubleptr created
+func_pointer.c , 245 ,  Null storage doubleptr returned as non-null: doubleptr
+func_pointer.c , 244 ,  Storage doubleptr becomes null
+func_pointer.c , 245 ,  Unqualified storage doubleptr returned as implicitly
+func_pointer.c , 206 ,  Storage doubleptr created
+func_pointer.c , 245 ,  Function returns with global doubleptr referencing
+func_pointer.c , 245 ,  Storage doubleptr released
+func_pointer.c , 254 ,  Variable doubleptr shadows outer declaration
+func_pointer.c , 192 ,  Previous definition of doubleptr: float **
+func_pointer.c , 257 ,  Fresh storage doubleptr (type char **) not released
+func_pointer.c , 256 ,  Fresh storage doubleptr created
+func_pointer.c , 262 ,  Incompatible types for += (char, int):
+func_pointer.c , 265 ,  Fresh storage doubleptr (type char **) not released
+func_pointer.c , 257 ,  Fresh storage doubleptr created
+func_pointer.c , 266 ,  Fresh storage doubleptr not released before scope exit
+func_pointer.c , 265 ,  Fresh storage doubleptr created
+func_pointer.c , 276 ,  Return value type char does not match declared type int:
+func_pointer.c , 286 ,  Fresh storage a not released before return
+func_pointer.c , 285 ,  Fresh storage a created
+func_pointer.c , 317 ,  Fresh storage ptr not released before return
+func_pointer.c , 308 ,  Fresh storage ptr created
+zero_division.c , 129 ,  Assignment of double to float: ret = dividend / 0.0
+zero_division.c , 236 ,  Dereference of possibly null pointer
+zero_division.c , 235 ,  Storage zero_division_016_gbl_divisor may become
+zero_division.c , 19 ,  Function exported but not used outside zero_division:
+zero_division.c , 24 ,  Definition of zero_division_001
+zero_division.c , 30 ,  Function exported but not used outside zero_division:
+zero_division.c , 36 ,  Definition of zero_division_002
+zero_division.c , 43 ,  Function exported but not used outside zero_division:
+zero_division.c , 48 ,  Definition of zero_division_003
+zero_division.c , 55 ,  Variable exported but not used outside zero_division:
+zero_division.c , 57 ,  Function exported but not used outside zero_division:
+zero_division.c , 60 ,  Definition of zero_division_004_func_001
+zero_division.c , 61 ,  Function exported but not used outside zero_division:
+zero_division.c , 67 ,  Definition of zero_division_004
+zero_division.c , 73 ,  Function exported but not used outside zero_division:
+zero_division.c , 79 ,  Definition of zero_division_005
+zero_division.c , 85 ,  Variable exported but not used outside zero_division:
+zero_division.c , 86 ,  Function exported but not used outside zero_division:
+zero_division.c , 94 ,  Definition of zero_division_006
+zero_division.c , 106 ,  Variable exported but not used outside zero_division:
+zero_division.c , 108 ,  Function exported but not used outside zero_division:
+zero_division.c , 111 ,  Definition of zero_division_007_func_001
+zero_division.c , 113 ,  Function exported but not used outside zero_division:
+zero_division.c , 119 ,  Definition of zero_division_007
+zero_division.c , 125 ,  Function exported but not used outside zero_division:
+zero_division.c , 130 ,  Definition of zero_division_008
+zero_division.c , 136 ,  Function exported but not used outside zero_division:
+zero_division.c , 142 ,  Definition of zero_division_009
+zero_division.c , 148 ,  Function exported but not used outside zero_division:
+zero_division.c , 155 ,  Definition of zero_division_010
+zero_division.c , 161 ,  Function exported but not used outside zero_division:
+zero_division.c , 167 ,  Definition of zero_division_011
+zero_division.c , 173 ,  Function exported but not used outside zero_division:
+zero_division.c , 180 ,  Definition of zero_division_012
+zero_division.c , 186 ,  Function exported but not used outside zero_division:
+zero_division.c , 189 ,  Definition of zero_division_013_func_001
+zero_division.c , 191 ,  Function exported but not used outside zero_division:
+zero_division.c , 196 ,  Definition of zero_division_013
+zero_division.c , 202 ,  Function exported but not used outside zero_division:
+zero_division.c , 207 ,  Definition of zero_division_014_func_001
+zero_division.c , 209 ,  Function exported but not used outside zero_division:
+zero_division.c , 212 ,  Definition of zero_division_014
+zero_division.c , 218 ,  Function exported but not used outside zero_division:
+zero_division.c , 226 ,  Definition of zero_division_015
+zero_division.c , 232 ,  Variable exported but not used outside zero_division:
+zero_division.c , 233 ,  Function exported but not used outside zero_division:
+zero_division.c , 237 ,  Definition of zero_division_016_func_001
+zero_division.c , 238 ,  Function exported but not used outside zero_division:
+zero_division.c , 241 ,  Definition of zero_division_016_func_002
+zero_division.c , 242 ,  Function exported but not used outside zero_division:
+zero_division.c , 253 ,  Definition of zero_division_016
+pow_related_errors.c , 26 ,  Variable num initialized to type int, expects
+pow_related_errors.c , 27 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 44 ,  Function pow expects arg 2 to be double gets int:
+pow_related_errors.c , 57 ,  Initial value of arr[3] is type int, expects
+pow_related_errors.c , 62 ,  Operands of < have incompatible types (int,
+pow_related_errors.c , 67 ,  Variable ans used before definition
+pow_related_errors.c , 77 ,  Initial value of arr[3] is type int, expects
+pow_related_errors.c , 100 ,  Initial value of arr[3] is type int, expects
+pow_related_errors.c , 106 ,  Operands of < have incompatible types (int,
+pow_related_errors.c , 111 ,  Variable ans used before definition
+pow_related_errors.c , 123 ,  Return value type int does not match declared type
+pow_related_errors.c , 154 ,  Arrow access from possibly null pointer newarr:
+pow_related_errors.c , 151 ,  Storage newarr may become null
+pow_related_errors.c , 154 ,  Assignment of int to double:
+pow_related_errors.c , 155 ,  Arrow access from possibly null pointer
+pow_related_errors.c , 152 ,  Storage ptr_newarr may become null
+pow_related_errors.c , 155 ,  Assignment of int to double:
+pow_related_errors.c , 171 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 276 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 291 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 306 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 307 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 321 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 322 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 337 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 352 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 367 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 382 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 397 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 412 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 426 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 441 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 456 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 471 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 486 ,  Variable base initialized to type int, expects
+pow_related_errors.c , 487 ,  Variable exponent initialized to type int, expects
+pow_related_errors.c , 23 ,  Function exported but not used outside
+pow_related_errors.c , 32 ,  Definition of pow_related_errors_001
+pow_related_errors.c , 39 ,  Function exported but not used outside
+pow_related_errors.c , 47 ,  Definition of pow_related_errors_002
+pow_related_errors.c , 55 ,  Function exported but not used outside
+pow_related_errors.c , 68 ,  Definition of pow_related_errors_003
+pow_related_errors.c , 75 ,  Function exported but not used outside
+pow_related_errors.c , 91 ,  Definition of pow_related_errors_004
+pow_related_errors.c , 98 ,  Function exported but not used outside
+pow_related_errors.c , 112 ,  Definition of pow_related_errors_005
+pow_related_errors.c , 121 ,  Function exported but not used outside
+pow_related_errors.c , 125 ,  Definition of pow_related_errors_006_func_001
+pow_related_errors.c , 127 ,  Function exported but not used outside
+pow_related_errors.c , 134 ,  Definition of pow_related_errors_006
+pow_related_errors.c , 146 ,  Function exported but not used outside
+pow_related_errors.c , 162 ,  Definition of pow_related_errors_007
+pow_related_errors.c , 169 ,  Function exported but not used outside
+pow_related_errors.c , 177 ,  Definition of pow_related_errors_008
+pow_related_errors.c , 184 ,  Function exported but not used outside
+pow_related_errors.c , 192 ,  Definition of pow_related_errors_009
+pow_related_errors.c , 199 ,  Function exported but not used outside
+pow_related_errors.c , 207 ,  Definition of pow_related_errors_010
+pow_related_errors.c , 214 ,  Function exported but not used outside
+pow_related_errors.c , 222 ,  Definition of pow_related_errors_011
+pow_related_errors.c , 229 ,  Function exported but not used outside
+pow_related_errors.c , 237 ,  Definition of pow_related_errors_012
+pow_related_errors.c , 244 ,  Function exported but not used outside
+pow_related_errors.c , 252 ,  Definition of pow_related_errors_013
+pow_related_errors.c , 259 ,  Function exported but not used outside
+pow_related_errors.c , 267 ,  Definition of pow_related_errors_014
+pow_related_errors.c , 274 ,  Function exported but not used outside
+pow_related_errors.c , 282 ,  Definition of pow_related_errors_015
+pow_related_errors.c , 289 ,  Function exported but not used outside
+pow_related_errors.c , 297 ,  Definition of pow_related_errors_016
+pow_related_errors.c , 304 ,  Function exported but not used outside
+pow_related_errors.c , 312 ,  Definition of pow_related_errors_017
+pow_related_errors.c , 319 ,  Function exported but not used outside
+pow_related_errors.c , 327 ,  Definition of pow_related_errors_018
+pow_related_errors.c , 334 ,  Function exported but not used outside
+pow_related_errors.c , 342 ,  Definition of pow_related_errors_019
+pow_related_errors.c , 349 ,  Function exported but not used outside
+pow_related_errors.c , 357 ,  Definition of pow_related_errors_020
+pow_related_errors.c , 364 ,  Function exported but not used outside
+pow_related_errors.c , 372 ,  Definition of pow_related_errors_021
+pow_related_errors.c , 379 ,  Function exported but not used outside
+pow_related_errors.c , 387 ,  Definition of pow_related_errors_022
+pow_related_errors.c , 394 ,  Function exported but not used outside
+pow_related_errors.c , 402 ,  Definition of pow_related_errors_023
+pow_related_errors.c , 409 ,  Function exported but not used outside
+pow_related_errors.c , 417 ,  Definition of pow_related_errors_024
+pow_related_errors.c , 424 ,  Function exported but not used outside
+pow_related_errors.c , 432 ,  Definition of pow_related_errors_025
+pow_related_errors.c , 439 ,  Function exported but not used outside
+pow_related_errors.c , 447 ,  Definition of pow_related_errors_026
+pow_related_errors.c , 454 ,  Function exported but not used outside
+pow_related_errors.c , 462 ,  Definition of pow_related_errors_027
+pow_related_errors.c , 469 ,  Function exported but not used outside
+pow_related_errors.c , 477 ,  Definition of pow_related_errors_028
+pow_related_errors.c , 484 ,  Function exported but not used outside
+pow_related_errors.c , 492 ,  Definition of pow_related_errors_029
+function_return_value_unchecked.c , 69 ,  Return value (type float) ignored:
+free_nondynamically_allocated_memory.c , 21 , 
+free_nondynamically_allocated_memory.c , 22 , 
+free_nondynamically_allocated_memory.c , 20 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 22 , 
+free_nondynamically_allocated_memory.c , 20 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 36 , 
+free_nondynamically_allocated_memory.c , 33 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 36 , 
+free_nondynamically_allocated_memory.c , 33 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 47 , 
+free_nondynamically_allocated_memory.c , 47 ,  Storage becomes observer
+free_nondynamically_allocated_memory.c , 48 , 
+free_nondynamically_allocated_memory.c , 47 , 
+free_nondynamically_allocated_memory.c , 48 , 
+free_nondynamically_allocated_memory.c , 47 , 
+free_nondynamically_allocated_memory.c , 49 , 
+free_nondynamically_allocated_memory.c , 48 , 
+free_nondynamically_allocated_memory.c , 74 , 
+free_nondynamically_allocated_memory.c , 72 ,  Fresh storage buf1 created
+free_nondynamically_allocated_memory.c , 74 , 
+free_nondynamically_allocated_memory.c , 73 ,  Fresh storage buf2 created
+free_nondynamically_allocated_memory.c , 78 ,  Assignment of double to char:
+free_nondynamically_allocated_memory.c , 82 ,  Assignment of double to char:
+free_nondynamically_allocated_memory.c , 97 , 
+free_nondynamically_allocated_memory.c , 98 , 
+free_nondynamically_allocated_memory.c , 99 , 
+free_nondynamically_allocated_memory.c , 114 , 
+free_nondynamically_allocated_memory.c , 115 , 
+free_nondynamically_allocated_memory.c , 113 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 115 , 
+free_nondynamically_allocated_memory.c , 113 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 128 , 
+free_nondynamically_allocated_memory.c , 125 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 128 , 
+free_nondynamically_allocated_memory.c , 125 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 127 , 
+free_nondynamically_allocated_memory.c , 141 , 
+free_nondynamically_allocated_memory.c , 138 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 141 , 
+free_nondynamically_allocated_memory.c , 138 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 140 , 
+free_nondynamically_allocated_memory.c , 155 , 
+free_nondynamically_allocated_memory.c , 154 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 155 , 
+free_nondynamically_allocated_memory.c , 154 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 170 , 
+free_nondynamically_allocated_memory.c , 169 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 170 , 
+free_nondynamically_allocated_memory.c , 169 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 187 , 
+free_nondynamically_allocated_memory.c , 181 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 187 , 
+free_nondynamically_allocated_memory.c , 181 ,  Storage ptr becomes observer
+free_nondynamically_allocated_memory.c , 208 , 
+free_nondynamically_allocated_memory.c , 206 , 
+free_nondynamically_allocated_memory.c , 208 , 
+free_nondynamically_allocated_memory.c , 229 , 
+free_nondynamically_allocated_memory.c , 230 , 
+free_nondynamically_allocated_memory.c , 229 , 
+free_nondynamically_allocated_memory.c , 239 , 
+free_nondynamically_allocated_memory.c , 240 , 
+free_nondynamically_allocated_memory.c , 239 , 
+free_nondynamically_allocated_memory.c , 244 , 
+free_nondynamically_allocated_memory.c , 244 ,  Storage becomes observer
+free_nondynamically_allocated_memory.c , 246 , 
+free_nondynamically_allocated_memory.c , 244 , 
+free_nondynamically_allocated_memory.c , 256 , 
+free_nondynamically_allocated_memory.c , 256 ,  Storage becomes observer
+free_nondynamically_allocated_memory.c , 257 , 
+free_nondynamically_allocated_memory.c , 256 , 
+free_nondynamically_allocated_memory.c , 262 , 
+free_nondynamically_allocated_memory.c , 256 , 
+free_nondynamically_allocated_memory.c , 263 , 
+free_nondynamically_allocated_memory.c , 262 , 
+free_nondynamically_allocated_memory.c , 18 , 
+free_nondynamically_allocated_memory.c , 24 , 
+free_nondynamically_allocated_memory.c , 31 , 
+free_nondynamically_allocated_memory.c , 37 , 
+free_nondynamically_allocated_memory.c , 43 , 
+free_nondynamically_allocated_memory.c , 45 , 
+free_nondynamically_allocated_memory.c , 49 , 
+free_nondynamically_allocated_memory.c , 57 , 
+free_nondynamically_allocated_memory.c , 63 , 
+free_nondynamically_allocated_memory.c , 70 , 
+free_nondynamically_allocated_memory.c , 87 , 
+free_nondynamically_allocated_memory.c , 94 , 
+free_nondynamically_allocated_memory.c , 104 , 
+free_nondynamically_allocated_memory.c , 111 , 
+free_nondynamically_allocated_memory.c , 116 , 
+free_nondynamically_allocated_memory.c , 123 , 
+free_nondynamically_allocated_memory.c , 129 , 
+free_nondynamically_allocated_memory.c , 136 , 
+free_nondynamically_allocated_memory.c , 142 , 
+free_nondynamically_allocated_memory.c , 149 , 
+free_nondynamically_allocated_memory.c , 157 , 
+free_nondynamically_allocated_memory.c , 164 , 
+free_nondynamically_allocated_memory.c , 172 , 
+free_nondynamically_allocated_memory.c , 179 , 
+free_nondynamically_allocated_memory.c , 189 , 
+free_nondynamically_allocated_memory.c , 204 , 
+free_nondynamically_allocated_memory.c , 211 , 
+free_nondynamically_allocated_memory.c , 224 , 
+free_nondynamically_allocated_memory.c , 225 , 
+free_nondynamically_allocated_memory.c , 230 , 
+free_nondynamically_allocated_memory.c , 236 , 
+free_nondynamically_allocated_memory.c , 237 , 
+free_nondynamically_allocated_memory.c , 240 , 
+free_nondynamically_allocated_memory.c , 242 , 
+free_nondynamically_allocated_memory.c , 246 , 
+free_nondynamically_allocated_memory.c , 252 , 
+free_nondynamically_allocated_memory.c , 253 , 
+free_nondynamically_allocated_memory.c , 254 , 
+free_nondynamically_allocated_memory.c , 257 , 
+free_nondynamically_allocated_memory.c , 259 , 
+free_nondynamically_allocated_memory.c , 263 , 
+free_nondynamically_allocated_memory.c , 265 , 
+free_nondynamically_allocated_memory.c , 270 , 
+improper_termination_of_block.c , 38 ,  Body of if statement is empty
+improper_termination_of_block.c , 67 , 
+improper_termination_of_block.c , 18 , 
+improper_termination_of_block.c , 27 , 
+improper_termination_of_block.c , 34 , 
+improper_termination_of_block.c , 41 , 
+improper_termination_of_block.c , 48 , 
+improper_termination_of_block.c , 56 , 
+improper_termination_of_block.c , 63 , 
+improper_termination_of_block.c , 72 , 
+littlemem_st.c , 32 ,  Assignment of int to char: buf[i] = 1
+littlemem_st.c , 93 ,  Stack-allocated storage littlemem_st_004_s_001_gbl_str
+littlemem_st.c , 91 ,  Storage littlemem_st_004_s_001_gbl_str becomes
+littlemem_st.c , 93 ,  Global storage *littlemem_st_004_s_001_gbl_str contains 2
+littlemem_st.c , 303 ,  Parameter flag not used
+littlemem_st.c , 335 ,  Parameter flag not used
+littlemem_st.c , 23 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 38 ,  Definition of littlemem_st_001
+littlemem_st.c , 50 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 56 ,  Definition of littlemem_st_002
+littlemem_st.c , 68 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 74 ,  Definition of littlemem_st_003
+littlemem_st.c , 85 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 87 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 93 ,  Definition of littlemem_st_004
+littlemem_st.c , 105 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 107 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 109 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 112 ,  Definition of littlemem_st_005_func_001
+littlemem_st.c , 114 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 118 ,  Definition of littlemem_st_005
+littlemem_st.c , 130 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 133 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 135 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 138 ,  Definition of littlemem_st_006_func_001
+littlemem_st.c , 140 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 146 ,  Definition of littlemem_st_006_func_002
+littlemem_st.c , 148 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 152 ,  Definition of littlemem_st_006
+littlemem_st.c , 164 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 167 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 169 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 172 ,  Definition of littlemem_st_007_func_001
+littlemem_st.c , 174 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 188 ,  Definition of littlemem_st_007_func_002
+littlemem_st.c , 190 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 194 ,  Definition of littlemem_st_007
+littlemem_st.c , 206 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 210 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 212 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 215 ,  Definition of littlemem_st_008_func_001
+littlemem_st.c , 217 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 232 ,  Definition of littlemem_st_008_func_002
+littlemem_st.c , 234 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 238 ,  Definition of littlemem_st_008
+littlemem_st.c , 250 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 254 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 256 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 259 ,  Definition of littlemem_st_009_func_001
+littlemem_st.c , 261 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 276 ,  Definition of littlemem_st_009_func_002
+littlemem_st.c , 278 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 282 ,  Definition of littlemem_st_009
+littlemem_st.c , 294 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 296 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 298 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 301 ,  Definition of littlemem_st_010_func_001
+littlemem_st.c , 303 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 308 ,  Definition of littlemem_st_010_func_002
+littlemem_st.c , 310 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 314 ,  Definition of littlemem_st_010
+littlemem_st.c , 326 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 328 ,  Variable exported but not used outside littlemem_st:
+littlemem_st.c , 330 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 333 ,  Definition of littlemem_st_011_func_001
+littlemem_st.c , 335 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 346 ,  Definition of littlemem_st_011_func_002
+littlemem_st.c , 348 ,  Function exported but not used outside littlemem_st:
+littlemem_st.c , 352 ,  Definition of littlemem_st_011
+endless_loop.c , 26 ,  Unreachable code: ret = a
+endless_loop.c , 55 ,  Test expression for while not boolean, type int: 1
+endless_loop.c , 59 ,  Unreachable code: ret = a
+endless_loop.c , 72 ,  Test expression for while not boolean, type int: flag
+endless_loop.c , 72 ,  Suspected infinite loop.  No value used in loop test
+endless_loop.c , 93 ,  Test expression for while not boolean, type int:
+endless_loop.c , 109 ,  Test expression for while not boolean, type int: flag
+endless_loop.c , 109 ,  Suspected infinite loop.  No value used in loop test
+endless_loop.c , 131 ,  Suspected infinite loop.  No value used in loop test
+endless_loop.c , 148 ,  Suspected infinite loop.  No value used in loop test
+endless_loop.c , 168 ,  Test expression for while not boolean, type int: 1
+endless_loop.c , 17 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 28 ,  Definition of endless_loop_001
+endless_loop.c , 34 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 45 ,  Definition of endless_loop_002
+endless_loop.c , 51 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 61 ,  Definition of endless_loop_003
+endless_loop.c , 67 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 78 ,  Definition of endless_loop_004
+endless_loop.c , 84 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 87 ,  Definition of endless_loop_005_func_001
+endless_loop.c , 89 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 99 ,  Definition of endless_loop_005
+endless_loop.c , 105 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 115 ,  Definition of endless_loop_006_func_001
+endless_loop.c , 117 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 120 ,  Definition of endless_loop_006
+endless_loop.c , 126 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 137 ,  Definition of endless_loop_007
+endless_loop.c , 143 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 154 ,  Definition of endless_loop_008
+endless_loop.c , 160 ,  Function exported but not used outside endless_loop:
+endless_loop.c , 171 ,  Definition of endless_loop_009
+memory_leak.c , 28 ,  Assignment of int to char: buf[0] = 1
+memory_leak.c , 46 ,  Index of possibly null pointer ptr: ptr
+memory_leak.c , 42 ,  Storage ptr may become null
+memory_leak.c , 52 ,  Value *ptr used before definition
+memory_leak.c , 52 ,  Value *ptr used before definition
+memory_leak.c , 55 ,  Only storage ptr[] (type int *) derived from released
+memory_leak.c , 66 ,  Function returns with possibly null storage derivable from
+memory_leak.c , 65 ,  Storage *stringPtr may become null
+memory_leak.c , 66 ,  Function returns storage stringPtr reachable from parameter
+memory_leak.c , 65 ,  Storage **stringPtr allocated
+memory_leak.c , 72 ,  Function memory_leak_003_func_001 expects arg 1 to be int
+memory_leak.c , 72 ,  Passed storage &str1 not completely defined:
+memory_leak.c , 94 ,  Implicitly only storage s->buf (type char *) not released
+memory_leak.c , 98 ,  Only storage s->buf (type char *) derived from released
+memory_leak.c , 119 ,  Unallocated storage ptr passed as out parameter: ptr
+memory_leak.c , 150 ,  Unallocated storage dptr passed as out parameter: dptr
+memory_leak.c , 169 ,  Function returns with non-null global vptr referencing
+memory_leak.c , 164 ,  Storage vptr may become null
+memory_leak.c , 178 ,  Function returns with non-null global vptr referencing
+memory_leak.c , 173 ,  Storage vptr may become null
+memory_leak.c , 187 ,  Function returns with non-null global vptr referencing
+memory_leak.c , 182 ,  Storage vptr may become null
+memory_leak.c , 201 ,  Unqualified storage vptr passed as only param: free (vptr)
+memory_leak.c , 182 ,  Storage vptr created
+memory_leak.c , 203 ,  Function returns with global vptr referencing released
+memory_leak.c , 201 ,  Storage vptr released
+memory_leak.c , 203 ,  Function returns with non-null global vptr referencing
+memory_leak.c , 182 ,  Storage vptr may become null
+memory_leak.c , 215 ,  Fresh storage p (type int *) not released before
+memory_leak.c , 212 ,  Fresh storage p created
+memory_leak.c , 218 ,  Variable p is released in true branch, but live in
+memory_leak.c , 218 ,  in true branch:
+memory_leak.c , 217 ,  Storage p released
+memory_leak.c , 218 ,  in continuation:
+memory_leak.c , 212 ,  Storage p allocated
+memory_leak.c , 231 ,  Fresh storage p (type int *) not released before
+memory_leak.c , 228 ,  Fresh storage p created
+memory_leak.c , 232 ,  Assignment of double to int: *(p + 1) = 1.5
+memory_leak.c , 235 ,  Variable p is released in true branch, but live in
+memory_leak.c , 235 ,  in true branch:
+memory_leak.c , 233 ,  Storage p released
+memory_leak.c , 235 ,  in continuation:
+memory_leak.c , 228 ,  Storage p allocated
+memory_leak.c , 247 ,  Fresh storage p1 (type int *) not released before
+memory_leak.c , 245 ,  Fresh storage p1 created
+memory_leak.c , 274 ,  Variable buf shadows outer declaration
+memory_leak.c , 265 ,  Previous definition of buf: char *
+memory_leak.c , 276 ,  Field un.u2 used before definition
+memory_leak.c , 309 ,  Fresh storage p (type memory_leak_0012_uni_001 *) not
+memory_leak.c , 308 ,  Fresh storage p created
+memory_leak.c , 311 ,  Arrow access from possibly null pointer p: p->s1
+memory_leak.c , 309 ,  Storage p may become null
+HeaderFile.h , 18 ,  Variable sink shadows static declaration
+null_pointer.c , 11 ,  Previous definition of sink: int
+null_pointer.c , 23 ,  Dereference of null pointer p: *p
+null_pointer.c , 22 ,  Storage p becomes null
+null_pointer.c , 34 ,  Dereference of null pointer p: *p
+null_pointer.c , 32 ,  Storage p becomes null
+null_pointer.c , 63 ,  Arrow access from null pointer p: p->a
+null_pointer.c , 62 ,  Storage p becomes null
+null_pointer.c , 94 ,  Arrow access from null pointer p: p->s1
+null_pointer.c , 93 ,  Storage p becomes null
+null_pointer.c , 126 ,  Null storage returned as non-null: NULL
+null_pointer.c , 134 ,  Fresh storage p not released before return
+null_pointer.c , 132 ,  Fresh storage p created
+null_pointer.c , 147 ,  Null storage passed as non-null param:
+null_pointer.c , 159 ,  Dereference of null pointer p1: *p1
+null_pointer.c , 158 ,  Storage p1 becomes null
+null_pointer.c , 173 ,  Dereference of null pointer p2: *p2
+null_pointer.c , 172 ,  Storage p2 becomes null
+null_pointer.c , 180 ,  Index of null pointer p: p
+null_pointer.c , 179 ,  Storage p becomes null
+null_pointer.c , 185 ,  Null storage returned as non-null: (NULL)
+null_pointer.c , 196 ,  Dereference of null pointer p: *p
+null_pointer.c , 191 ,  Storage p becomes null
+null_pointer.c , 197 ,  Fresh storage p not released before return
+null_pointer.c , 191 ,  Fresh storage p created
+null_pointer.c , 206 ,  Null storage returned as non-null: (NULL)
+null_pointer.c , 230 ,  Incompatible types for != (unsigned char, char): a != 'a'
+null_pointer.c , 232 ,  Function returns with non-null global
+null_pointer.c , 229 ,  Storage null_pointer_015_gbl_ptr may become null
+null_pointer.c , 237 ,  Function null_pointer_015_func_001 expects arg 1 to be
+null_pointer.c , 239 ,  Unqualified storage null_pointer_015_gbl_ptr passed as
+null_pointer.c , 231 ,  Storage null_pointer_015_gbl_ptr created
+null_pointer.c , 241 ,  Function returns with non-null global
+null_pointer.c , 240 ,  Storage null_pointer_015_gbl_ptr becomes null
+null_pointer.c , 264 ,  Index of possibly null pointer null_pointer_016_gbl_double
+null_pointer.c , 260 ,  Storage null_pointer_016_gbl_doubleptr may become
+null_pointer.c , 270 ,  Index of possibly null pointer null_pointer_016_gbl_double
+null_pointer.c , 264 ,  Storage null_pointer_016_gbl_doubleptr[] may become
+null_pointer.c , 273 ,  Storage null_pointer_016_gbl_doubleptr[] reachable from
+null_pointer.c , 264 ,  Fresh storage null_pointer_016_gbl_doubleptr[] created
+null_pointer.c , 288 ,  Index of null pointer null_pointer_016_gbl_doubleptr:
+null_pointer.c , 279 ,  Storage null_pointer_016_gbl_doubleptr becomes null
+null_pointer.c , 290 ,  Unqualified storage null_pointer_016_gbl_doubleptr[i]
+null_pointer.c , 293 ,  Unqualified storage null_pointer_016_gbl_doubleptr
+null_pointer.c , 260 ,  Storage null_pointer_016_gbl_doubleptr created
+null_pointer.c , 282 ,  Unreachable code: if (null_pointer...
+null_pointer.c , 302 ,  Function returns with non-null global
+null_pointer.c , 279 ,  Storage null_pointer_016_gbl_doubleptr becomes null

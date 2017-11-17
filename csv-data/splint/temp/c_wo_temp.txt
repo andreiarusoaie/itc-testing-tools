@@ -1,0 +1,3133 @@
+bit_shift.c: (in function bit_shift_001)
+bit_shift.c:22:8: Left operand of << may be negative (int): a << 10
+  The left operand to a shift operator may be negative (behavior is
+  implementation-defined). (Use -shiftimplementation to inhibit warning)
+bit_shift.c: (in function bit_shift_002)
+bit_shift.c:34:8: Left operand of << may be negative (long int): a << 10
+bit_shift.c:35:9: Assignment of long int to int: sink = ret
+  To ignore type qualifiers in type comparisons use +ignorequals.
+bit_shift.c: (in function bit_shift_003)
+bit_shift.c:47:9: Assignment of unsigned int to int: sink = ret
+  To ignore signs in type comparisons use +ignoresigns
+bit_shift.c: (in function bit_shift_004)
+bit_shift.c:59:9: Assignment of unsigned long int to int: sink = ret
+bit_shift.c: (in function bit_shift_005)
+bit_shift.c:70:8: Left operand of << may be negative (int): a << 10
+bit_shift.c: (in function bit_shift_006)
+bit_shift.c:82:8: Left operand of >> may be negative (int): a >> 10
+bit_shift.c: (in function bit_shift_007)
+bit_shift.c:94:8: Left operand of >> may be negative (int): a >> 10
+bit_shift.c: (in function bit_shift_008)
+bit_shift.c:107:13: Right operand of << may be negative (int): a << shift
+  The right operand to a shift operator may be negative (behavior undefined).
+  (Use -shiftnegative to inhibit warning)
+bit_shift.c:107:8: Left operand of << may be negative (int): a << shift
+bit_shift.c: (in function bit_shift_009)
+bit_shift.c:121:13: Right operand of << may be negative (int): a << shift
+bit_shift.c:121:8: Left operand of << may be negative (int): a << shift
+bit_shift.c: (in function bit_shift_010)
+bit_shift.c:134:13: Right operand of << may be negative (int):
+                       a << ((5 * shift) + 1)
+bit_shift.c:134:8: Left operand of << may be negative (int):
+                      a << ((5 * shift) + 1)
+bit_shift.c: (in function bit_shift_011)
+bit_shift.c:147:13: Right operand of << may be negative (int):
+                       a << ((shift * shift) + 6)
+bit_shift.c:147:8: Left operand of << may be negative (int):
+                      a << ((shift * shift) + 6)
+bit_shift.c: (in function bit_shift_012)
+bit_shift.c:164:13: Right operand of << may be negative (int):
+                       a << bit_shift_012_func_001()
+bit_shift.c:164:8: Left operand of << may be negative (int):
+                      a << bit_shift_012_func_001()
+bit_shift.c: (in function bit_shift_013_func_001)
+bit_shift.c:176:13: Right operand of << may be negative (int): a << shift
+bit_shift.c:176:8: Left operand of << may be negative (int): a << shift
+bit_shift.c: (in function bit_shift_014)
+bit_shift.c:194:13: Right operand of << may be negative (int): a << shifts[3]
+bit_shift.c:194:8: Left operand of << may be negative (int): a << shifts[3]
+bit_shift.c: (in function bit_shift_015)
+bit_shift.c:209:13: Right operand of << may be negative (int): a << shift1
+bit_shift.c:209:8: Left operand of << may be negative (int): a << shift1
+bit_shift.c: (in function bit_shift_016)
+bit_shift.c:226:13: Right operand of << may be negative (int): a << shift2
+bit_shift.c:226:8: Left operand of << may be negative (int): a << shift2
+bit_shift.c:18:6: Function exported but not used outside bit_shift:
+                     bit_shift_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   bit_shift.c:24:1: Definition of bit_shift_001
+bit_shift.c:30:6: Function exported but not used outside bit_shift:
+                     bit_shift_002
+   bit_shift.c:36:1: Definition of bit_shift_002
+bit_shift.c:42:6: Function exported but not used outside bit_shift:
+                     bit_shift_003
+   bit_shift.c:48:1: Definition of bit_shift_003
+bit_shift.c:54:6: Function exported but not used outside bit_shift:
+                     bit_shift_004
+   bit_shift.c:60:1: Definition of bit_shift_004
+bit_shift.c:66:6: Function exported but not used outside bit_shift:
+                     bit_shift_005
+   bit_shift.c:72:1: Definition of bit_shift_005
+bit_shift.c:78:6: Function exported but not used outside bit_shift:
+                     bit_shift_006
+   bit_shift.c:84:1: Definition of bit_shift_006
+bit_shift.c:90:6: Function exported but not used outside bit_shift:
+                     bit_shift_007
+   bit_shift.c:96:1: Definition of bit_shift_007
+bit_shift.c:102:6: Function exported but not used outside bit_shift:
+                      bit_shift_008
+   bit_shift.c:109:1: Definition of bit_shift_008
+bit_shift.c:115:6: Function exported but not used outside bit_shift:
+                      bit_shift_009
+   bit_shift.c:123:1: Definition of bit_shift_009
+bit_shift.c:129:6: Function exported but not used outside bit_shift:
+                      bit_shift_010
+   bit_shift.c:136:1: Definition of bit_shift_010
+bit_shift.c:142:6: Function exported but not used outside bit_shift:
+                      bit_shift_011
+   bit_shift.c:149:1: Definition of bit_shift_011
+bit_shift.c:155:5: Function exported but not used outside bit_shift:
+                      bit_shift_012_func_001
+   bit_shift.c:158:1: Definition of bit_shift_012_func_001
+bit_shift.c:160:6: Function exported but not used outside bit_shift:
+                      bit_shift_012
+   bit_shift.c:166:1: Definition of bit_shift_012
+bit_shift.c:172:6: Function exported but not used outside bit_shift:
+                      bit_shift_013_func_001
+   bit_shift.c:178:1: Definition of bit_shift_013_func_001
+bit_shift.c:180:6: Function exported but not used outside bit_shift:
+                      bit_shift_013
+   bit_shift.c:183:1: Definition of bit_shift_013
+bit_shift.c:189:6: Function exported but not used outside bit_shift:
+                      bit_shift_014
+   bit_shift.c:196:1: Definition of bit_shift_014
+bit_shift.c:202:6: Function exported but not used outside bit_shift:
+                      bit_shift_015
+   bit_shift.c:211:1: Definition of bit_shift_015
+bit_shift.c:217:6: Function exported but not used outside bit_shift:
+                      bit_shift_016
+   bit_shift.c:228:1: Definition of bit_shift_016
+bit_shift.c:234:6: Function exported but not used outside bit_shift:
+                      bit_shift_017
+   bit_shift.c:239:1: Definition of bit_shift_017
+
+invalid_memory_access.c: (in function invalid_memory_access_001)
+invalid_memory_access.c:41:14: Value *ptr used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+invalid_memory_access.c:50:2: Fresh storage ptr not released before return
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   invalid_memory_access.c:34:20: Fresh storage ptr created
+invalid_memory_access.c: (in function invalid_memory_access_002)
+invalid_memory_access.c:67:30: Variable ptr used before definition
+invalid_memory_access.c:75:10: Value *dptr used before definition
+invalid_memory_access.c:89:2: Fresh storage dptr not released before return
+   invalid_memory_access.c:65:10: Fresh storage dptr created
+invalid_memory_access.c: (in function invalid_memory_access_003)
+invalid_memory_access.c:114:17: Variable c used after being released
+  Memory is used after it has been released (either by passing as an only param
+  or assigning to an only global). (Use -usereleased to inhibit warning)
+   invalid_memory_access.c:107:15: Storage c released
+invalid_memory_access.c:115:2: Function returns with non-null global psink
+                                  referencing null storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   invalid_memory_access.c:114:17: Storage psink may become null
+invalid_memory_access.c: (in function invalid_memory_access_004)
+invalid_memory_access.c:125:8: Test expression for if not boolean, type int:
+                                  staticflag1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+invalid_memory_access.c:130:22: Function memset expects arg 2 to be int gets
+                                   char: 'A'
+  A character constant is used as an int. Use +charintliteral to allow
+  character constants to be used as ints.  (This is safe since the actual type
+  of a char constant is int.)
+invalid_memory_access.c: (in function invalid_memory_access_005)
+invalid_memory_access.c:153:28: Function calloc expects arg 1 to be size_t gets
+                                   int: count
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+invalid_memory_access.c: (in function invalid_memory_access_006)
+invalid_memory_access.c:175:21: Storage buf1 reachable from initial value is
+                                   fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   invalid_memory_access.c:170:46: Fresh storage buf1 created
+invalid_memory_access.c:175:28: Storage buf2 reachable from initial value is
+                                   fresh (should be unqualified)
+   invalid_memory_access.c:171:46: Fresh storage buf2 created
+invalid_memory_access.c:175:35: Storage buf3 reachable from initial value is
+                                   fresh (should be unqualified)
+   invalid_memory_access.c:172:46: Fresh storage buf3 created
+invalid_memory_access.c:175:42: Storage buf4 reachable from initial value is
+                                   fresh (should be unqualified)
+   invalid_memory_access.c:173:46: Fresh storage buf4 created
+invalid_memory_access.c:175:49: Storage buf5 reachable from initial value is
+                                   fresh (should be unqualified)
+   invalid_memory_access.c:174:46: Fresh storage buf5 created
+invalid_memory_access.c: (in function invalid_memory_access_007)
+invalid_memory_access.c:209:3: Index of possibly null pointer ptr: ptr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   invalid_memory_access.c:205:15: Storage ptr may become null
+invalid_memory_access.c:213:10: Unallocated storage *ptr passed as out
+                                   parameter to strcpy: *(ptr + i)
+invalid_memory_access.c:214:11: Unallocated storage ptr[] passed as out
+                                   parameter: ptr[i]
+invalid_memory_access.c: (in function invalid_memory_access_009)
+invalid_memory_access.c:275:7: Arrow access from possibly null pointer p->s1:
+                                  p->s1->a
+   invalid_memory_access.c:270:10: Storage p->s1 may become null
+invalid_memory_access.c:275:2: Field p->s1->a used before definition
+invalid_memory_access.c:277:12: Arrow access from possibly null pointer u->s1:
+                                   u->s1->a
+   invalid_memory_access.c:270:10: Storage u->s1 may become null
+invalid_memory_access.c:277:7: Unallocated storage u->s1->a passed as out
+                                  parameter: u->s1->a
+invalid_memory_access.c: (in function invalid_memory_access_func_010)
+invalid_memory_access.c:291:2: Function returns with possibly null storage
+                                  derivable from parameter *Ptr
+  A possibly null pointer is reachable from a parameter or global variable that
+  is not declared using a /*@null@*/ annotation. (Use -nullstate to inhibit
+  warning)
+   invalid_memory_access.c:290:9: Storage *Ptr may become null
+invalid_memory_access.c:291:2: Function returns storage Ptr reachable from
+    parameter not completely defined (**Ptr is undefined)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+   invalid_memory_access.c:290:9: Storage **Ptr allocated
+invalid_memory_access.c: (in function invalid_memory_access_010)
+invalid_memory_access.c:297:35: Passed storage &ptr1 not completely defined:
+                                   invalid_memory_access_func_010 (..., &ptr1)
+HeaderFile.h:18:17: Variable sink shadows static declaration
+  An outer declaration is shadowed by the local declaration. (Use -shadow to
+  inhibit warning)
+   data_overflow.c:12:12: Previous definition of sink: int
+data_overflow.c: (in function data_overflow_001)
+data_overflow.c:23:13: Variable max initialized to type int, expects char: 0x70
+  To make char and int types equivalent, use +charint.
+data_overflow.c:25:8: Incompatible types for + (char, int): max + 2
+data_overflow.c:26:9: Assignment of char to int: sink = ret
+data_overflow.c: (in function data_overflow_004)
+data_overflow.c:63:9: Assignment of long int to int: sink = ret
+  To ignore type qualifiers in type comparisons use +ignorequals.
+data_overflow.c: (in function data_overflow_005)
+data_overflow.c:72:22: Variable max initialized to type int, expects unsigned
+                          char: 0xfe
+data_overflow.c:74:8: Incompatible types for + (unsigned char, int): max + 1
+data_overflow.c:75:9: Assignment of unsigned char to int: sink = ret
+data_overflow.c: (in function data_overflow_006)
+data_overflow.c:87:9: Assignment of unsigned short int to int: sink = ret
+  To ignore signs in type comparisons use +ignoresigns
+data_overflow.c: (in function data_overflow_007)
+data_overflow.c:99:9: Assignment of unsigned int to int: sink = ret
+data_overflow.c: (in function data_overflow_008)
+data_overflow.c:111:9: Assignment of unsigned long int to int: sink = ret
+data_overflow.c: (in function data_overflow_024)
+data_overflow.c:337:9: Assignment of float to int: sink = ret
+  To allow all numeric types to match, use +relaxtypes.
+data_overflow.c: (in function data_overflow_025)
+data_overflow.c:353:9: Assignment of double to int: sink = ret
+data_overflow.c:21:6: Function exported but not used outside data_overflow:
+                         data_overflow_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   data_overflow.c:27:1: Definition of data_overflow_001
+data_overflow.c:33:6: Function exported but not used outside data_overflow:
+                         data_overflow_002
+   data_overflow.c:39:1: Definition of data_overflow_002
+data_overflow.c:45:6: Function exported but not used outside data_overflow:
+                         data_overflow_003
+   data_overflow.c:52:1: Definition of data_overflow_003
+data_overflow.c:58:6: Function exported but not used outside data_overflow:
+                         data_overflow_004
+   data_overflow.c:64:1: Definition of data_overflow_004
+data_overflow.c:70:6: Function exported but not used outside data_overflow:
+                         data_overflow_005
+   data_overflow.c:76:1: Definition of data_overflow_005
+data_overflow.c:82:6: Function exported but not used outside data_overflow:
+                         data_overflow_006
+   data_overflow.c:88:1: Definition of data_overflow_006
+data_overflow.c:94:6: Function exported but not used outside data_overflow:
+                         data_overflow_007
+   data_overflow.c:100:1: Definition of data_overflow_007
+data_overflow.c:106:6: Function exported but not used outside data_overflow:
+                          data_overflow_008
+   data_overflow.c:112:1: Definition of data_overflow_008
+data_overflow.c:123:6: Function exported but not used outside data_overflow:
+                          data_overflow_009
+   data_overflow.c:128:1: Definition of data_overflow_009
+data_overflow.c:139:6: Function exported but not used outside data_overflow:
+                          data_overflow_010
+   data_overflow.c:144:1: Definition of data_overflow_010
+data_overflow.c:150:6: Function exported but not used outside data_overflow:
+                          data_overflow_011
+   data_overflow.c:157:1: Definition of data_overflow_011
+data_overflow.c:163:6: Function exported but not used outside data_overflow:
+                          data_overflow_012
+   data_overflow.c:169:1: Definition of data_overflow_012
+data_overflow.c:175:6: Function exported but not used outside data_overflow:
+                          data_overflow_013
+   data_overflow.c:181:1: Definition of data_overflow_013
+data_overflow.c:187:6: Function exported but not used outside data_overflow:
+                          data_overflow_014
+   data_overflow.c:194:1: Definition of data_overflow_014
+data_overflow.c:200:6: Function exported but not used outside data_overflow:
+                          data_overflow_015
+   data_overflow.c:208:1: Definition of data_overflow_015
+data_overflow.c:214:6: Function exported but not used outside data_overflow:
+                          data_overflow_016
+   data_overflow.c:220:1: Definition of data_overflow_016
+data_overflow.c:226:6: Function exported but not used outside data_overflow:
+                          data_overflow_017
+   data_overflow.c:232:1: Definition of data_overflow_017
+data_overflow.c:238:5: Function exported but not used outside data_overflow:
+                          data_overflow_018_func_001
+   data_overflow.c:241:1: Definition of data_overflow_018_func_001
+data_overflow.c:243:6: Function exported but not used outside data_overflow:
+                          data_overflow_018
+   data_overflow.c:249:1: Definition of data_overflow_018
+data_overflow.c:255:6: Function exported but not used outside data_overflow:
+                          data_overflow_019_func_001
+   data_overflow.c:261:1: Definition of data_overflow_019_func_001
+data_overflow.c:263:6: Function exported but not used outside data_overflow:
+                          data_overflow_019
+   data_overflow.c:266:1: Definition of data_overflow_019
+data_overflow.c:272:6: Function exported but not used outside data_overflow:
+                          data_overflow_020
+   data_overflow.c:279:1: Definition of data_overflow_020
+data_overflow.c:285:6: Function exported but not used outside data_overflow:
+                          data_overflow_021
+   data_overflow.c:294:1: Definition of data_overflow_021
+data_overflow.c:300:6: Function exported but not used outside data_overflow:
+                          data_overflow_022
+   data_overflow.c:311:1: Definition of data_overflow_022
+data_overflow.c:317:6: Function exported but not used outside data_overflow:
+                          data_overflow_023
+   data_overflow.c:322:1: Definition of data_overflow_023
+data_overflow.c:328:6: Function exported but not used outside data_overflow:
+                          data_overflow_024
+   data_overflow.c:338:1: Definition of data_overflow_024
+data_overflow.c:344:6: Function exported but not used outside data_overflow:
+                          data_overflow_025
+   data_overflow.c:354:1: Definition of data_overflow_025
+
+ptr_subtraction.c: (in function ptr_subtraction_001)
+ptr_subtraction.c:24:9: Assignment of intptr_t to int: sink = offset
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+ptr_subtraction.c:18:6: Function exported but not used outside ptr_subtraction:
+                           ptr_subtraction_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   ptr_subtraction.c:25:1: Definition of ptr_subtraction_001
+ptr_subtraction.c:31:6: Function exported but not used outside ptr_subtraction:
+                           ptr_subtraction_002
+   ptr_subtraction.c:37:1: Definition of ptr_subtraction_002
+
+not_return.c: (in function not_return_002)
+not_return.c:61:32: Argument 1 modifies internal state, used by argument 2
+    (order of evaluation of actual parameters is undefined):
+    not_return_002_func_001(rand(), rand())
+  Code has unspecified behavior. Order of evaluation of function parameters or
+  subexpressions is not defined, so if a value is used and modified in
+  different places not separated by a sequence point constraining evaluation
+  order, then the result of the expression is unspecified. (Use -evalorder to
+  inhibit warning)
+not_return.c:61:40: Argument 2 modifies internal state, used by argument 1
+    (order of evaluation of actual parameters is undefined):
+    not_return_002_func_001(rand(), rand())
+not_return.c:19:5: Function exported but not used outside not_return:
+                      not_return_001_func_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   not_return.c:29:1: Definition of not_return_001_func_001
+not_return.c:31:6: Function exported but not used outside not_return:
+                      not_return_001
+   not_return.c:36:1: Definition of not_return_001
+not_return.c:42:5: Function exported but not used outside not_return:
+                      not_return_002_func_001
+   not_return.c:56:1: Definition of not_return_002_func_001
+not_return.c:58:6: Function exported but not used outside not_return:
+                      not_return_002
+   not_return.c:63:1: Definition of not_return_002
+not_return.c:69:5: Function exported but not used outside not_return:
+                      not_return_003_func_001
+   not_return.c:82:1: Definition of not_return_003_func_001
+not_return.c:84:6: Function exported but not used outside not_return:
+                      not_return_003
+   not_return.c:89:1: Definition of not_return_003
+not_return.c:95:5: Function exported but not used outside not_return:
+                      not_return_004_func_001
+   not_return.c:106:1: Definition of not_return_004_func_001
+not_return.c:108:6: Function exported but not used outside not_return:
+                       not_return_004
+   not_return.c:113:1: Definition of not_return_004
+
+sign_conv.c: (in function sign_conv_001)
+sign_conv.c:22:20: Variable a initialized to type int, expects unsigned char:
+                      0x7f
+  To make char and int types equivalent, use +charint.
+sign_conv.c:24:2: Assignment of unsigned char to char: ret = a
+  To ignore signs in type comparisons use +ignoresigns
+sign_conv.c:25:9: Assignment of char to int: sink = ret
+sign_conv.c: (in function sign_conv_002)
+sign_conv.c:36:2: Assignment of unsigned short int to short int: ret = a
+sign_conv.c: (in function sign_conv_003)
+sign_conv.c:48:2: Assignment of unsigned int to int: ret = a
+sign_conv.c: (in function sign_conv_004)
+sign_conv.c:60:2: Assignment of unsigned long int to long int: ret = a
+sign_conv.c:61:9: Assignment of long int to int: sink = ret
+  To ignore type qualifiers in type comparisons use +ignorequals.
+sign_conv.c: (in function sign_conv_005)
+sign_conv.c:70:11: Variable a initialized to type int, expects char: 0x7f
+sign_conv.c:72:2: Assignment of char to unsigned char: ret = a
+sign_conv.c:73:9: Assignment of unsigned char to int: sink = ret
+sign_conv.c: (in function sign_conv_006)
+sign_conv.c:84:2: Assignment of short int to unsigned short int: ret = a
+sign_conv.c:85:9: Assignment of unsigned short int to int: sink = ret
+sign_conv.c: (in function sign_conv_007)
+sign_conv.c:96:2: Assignment of int to unsigned int: ret = a
+sign_conv.c:97:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c: (in function sign_conv_008)
+sign_conv.c:108:2: Assignment of long int to unsigned long int: ret = a
+sign_conv.c:109:9: Assignment of unsigned long int to int: sink = ret
+sign_conv.c: (in function sign_conv_009)
+sign_conv.c:125:2: Assignment of unsigned int to int: s.ret = s.a
+sign_conv.c: (in function sign_conv_010)
+sign_conv.c:141:2: Assignment of int to unsigned int: s.ret = s.a
+sign_conv.c: (in function sign_conv_011)
+sign_conv.c:152:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c: (in function sign_conv_012)
+sign_conv.c:167:2: Assignment of int to unsigned int: ret = a
+sign_conv.c:168:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c: (in function sign_conv_013)
+sign_conv.c:179:2: Assignment of int to unsigned int: ret = (5 * a) + 6
+sign_conv.c:180:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c: (in function sign_conv_014)
+sign_conv.c:191:2: Assignment of int to unsigned int: ret = (a * a) - 3
+sign_conv.c:192:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c: (in function sign_conv_015)
+sign_conv.c:207:2: Assignment of int to unsigned int:
+                      sign_conv_015_gbl_ret = sign_conv_015_func_001()
+sign_conv.c: (in function sign_conv_018)
+sign_conv.c:246:2: Assignment of int to unsigned int: ret = a1
+sign_conv.c:247:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c: (in function sign_conv_019)
+sign_conv.c:262:2: Assignment of int to unsigned int: ret = a2
+sign_conv.c:263:9: Assignment of unsigned int to int: sink = ret
+sign_conv.c:20:6: Function exported but not used outside sign_conv:
+                     sign_conv_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   sign_conv.c:26:1: Definition of sign_conv_001
+sign_conv.c:32:6: Function exported but not used outside sign_conv:
+                     sign_conv_002
+   sign_conv.c:38:1: Definition of sign_conv_002
+sign_conv.c:44:6: Function exported but not used outside sign_conv:
+                     sign_conv_003
+   sign_conv.c:50:1: Definition of sign_conv_003
+sign_conv.c:56:6: Function exported but not used outside sign_conv:
+                     sign_conv_004
+   sign_conv.c:62:1: Definition of sign_conv_004
+sign_conv.c:68:6: Function exported but not used outside sign_conv:
+                     sign_conv_005
+   sign_conv.c:74:1: Definition of sign_conv_005
+sign_conv.c:80:6: Function exported but not used outside sign_conv:
+                     sign_conv_006
+   sign_conv.c:86:1: Definition of sign_conv_006
+sign_conv.c:92:6: Function exported but not used outside sign_conv:
+                     sign_conv_007
+   sign_conv.c:98:1: Definition of sign_conv_007
+sign_conv.c:104:6: Function exported but not used outside sign_conv:
+                      sign_conv_008
+   sign_conv.c:110:1: Definition of sign_conv_008
+sign_conv.c:121:6: Function exported but not used outside sign_conv:
+                      sign_conv_009
+   sign_conv.c:126:1: Definition of sign_conv_009
+sign_conv.c:137:6: Function exported but not used outside sign_conv:
+                      sign_conv_010
+   sign_conv.c:142:1: Definition of sign_conv_010
+sign_conv.c:148:6: Function exported but not used outside sign_conv:
+                      sign_conv_011
+   sign_conv.c:153:1: Definition of sign_conv_011
+sign_conv.c:159:6: Function exported but not used outside sign_conv:
+                      sign_conv_012
+   sign_conv.c:169:1: Definition of sign_conv_012
+sign_conv.c:175:6: Function exported but not used outside sign_conv:
+                      sign_conv_013
+   sign_conv.c:181:1: Definition of sign_conv_013
+sign_conv.c:187:6: Function exported but not used outside sign_conv:
+                      sign_conv_014
+   sign_conv.c:193:1: Definition of sign_conv_014
+sign_conv.c:199:14: Variable exported but not used outside sign_conv:
+                       sign_conv_015_gbl_ret
+sign_conv.c:200:5: Function exported but not used outside sign_conv:
+                      sign_conv_015_func_001
+   sign_conv.c:203:1: Definition of sign_conv_015_func_001
+sign_conv.c:205:6: Function exported but not used outside sign_conv:
+                      sign_conv_015
+   sign_conv.c:208:1: Definition of sign_conv_015
+sign_conv.c:214:5: Variable exported but not used outside sign_conv:
+                      sign_conv_016_gbl_ret
+sign_conv.c:215:6: Function exported but not used outside sign_conv:
+                      sign_conv_016_func_001
+   sign_conv.c:218:1: Definition of sign_conv_016_func_001
+sign_conv.c:220:6: Function exported but not used outside sign_conv:
+                      sign_conv_016
+   sign_conv.c:223:1: Definition of sign_conv_016
+sign_conv.c:229:5: Variable exported but not used outside sign_conv:
+                      sign_conv_017_gbl_buf
+sign_conv.c:230:5: Variable exported but not used outside sign_conv:
+                      sign_conv_017_gbl_ret
+sign_conv.c:231:6: Function exported but not used outside sign_conv:
+                      sign_conv_017
+   sign_conv.c:234:1: Definition of sign_conv_017
+sign_conv.c:240:6: Function exported but not used outside sign_conv:
+                      sign_conv_018
+   sign_conv.c:248:1: Definition of sign_conv_018
+sign_conv.c:254:6: Function exported but not used outside sign_conv:
+                      sign_conv_019
+   sign_conv.c:264:1: Definition of sign_conv_019
+
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_001)
+buffer_overrun_dynamic.c:26:4: Assignment of int to char: buf[i] = 1
+  To make char and int types equivalent, use +charint.
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_008)
+buffer_overrun_dynamic.c:145:3: Index of possibly null pointer buf: buf
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   buffer_overrun_dynamic.c:141:14: Storage buf may become null
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_009)
+buffer_overrun_dynamic.c:169:19: Storage buf1 reachable from initial value is
+                                    fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   buffer_overrun_dynamic.c:164:40: Fresh storage buf1 created
+buffer_overrun_dynamic.c:169:26: Storage buf2 reachable from initial value is
+                                    fresh (should be unqualified)
+   buffer_overrun_dynamic.c:165:40: Fresh storage buf2 created
+buffer_overrun_dynamic.c:169:33: Storage buf3 reachable from initial value is
+                                    fresh (should be unqualified)
+   buffer_overrun_dynamic.c:166:40: Fresh storage buf3 created
+buffer_overrun_dynamic.c:169:40: Storage buf4 reachable from initial value is
+                                    fresh (should be unqualified)
+   buffer_overrun_dynamic.c:167:40: Fresh storage buf4 created
+buffer_overrun_dynamic.c:169:47: Storage buf5 reachable from initial value is
+                                    fresh (should be unqualified)
+   buffer_overrun_dynamic.c:168:40: Fresh storage buf5 created
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_024)
+buffer_overrun_dynamic.c:441:38: Possibly null storage buf passed as non-null
+    param: dynamic_buffer_overrun_024_func_001 (buf)
+  A possibly null pointer is passed as a parameter corresponding to a formal
+  parameter with no /*@null@*/ annotation.  If NULL may be used for this
+  parameter, add a /*@null@*/ annotation to the function parameter declaration.
+  (Use -nullpass to inhibit warning)
+   buffer_overrun_dynamic.c:439:11: Storage buf may become null
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_027)
+buffer_overrun_dynamic.c:495:6: Assignment of int to char: *(p + 1) = 1
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_029)
+buffer_overrun_dynamic.c:526:9: Test expression for while not boolean, type
+                                   int: i
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_030)
+buffer_overrun_dynamic.c:550:3: Index of possibly null pointer doubleptr:
+                                   doubleptr
+   buffer_overrun_dynamic.c:546:20: Storage doubleptr may become null
+buffer_overrun_dynamic.c:558:5: Index of possibly null pointer doubleptr[]:
+                                   doubleptr[i]
+   buffer_overrun_dynamic.c:550:16: Storage doubleptr[] may become null
+buffer_overrun_dynamic.c: (in function dynamic_buffer_overrun_032)
+buffer_overrun_dynamic.c:607:7: Assignment of char to int:
+                                   ptr_s[i].arri[i] = 'a'
+  A character constant is used as an int. Use +charintliteral to allow
+  character constants to be used as ints.  (This is safe since the actual type
+  of a char constant is int.)
+buffer_overrun_dynamic.c:18:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   buffer_overrun_dynamic.c:30:1: Definition of dynamic_buffer_overrun_001
+buffer_overrun_dynamic.c:36:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_002
+   buffer_overrun_dynamic.c:44:1: Definition of dynamic_buffer_overrun_002
+buffer_overrun_dynamic.c:50:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_003
+   buffer_overrun_dynamic.c:65:1: Definition of dynamic_buffer_overrun_003
+buffer_overrun_dynamic.c:71:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_004
+   buffer_overrun_dynamic.c:79:1: Definition of dynamic_buffer_overrun_004
+buffer_overrun_dynamic.c:85:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_005
+   buffer_overrun_dynamic.c:97:1: Definition of dynamic_buffer_overrun_005
+buffer_overrun_dynamic.c:103:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_006
+   buffer_overrun_dynamic.c:115:1: Definition of dynamic_buffer_overrun_006
+buffer_overrun_dynamic.c:121:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_007
+   buffer_overrun_dynamic.c:133:1: Definition of dynamic_buffer_overrun_007
+buffer_overrun_dynamic.c:139:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_008
+   buffer_overrun_dynamic.c:156:1: Definition of dynamic_buffer_overrun_008
+buffer_overrun_dynamic.c:162:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_009
+   buffer_overrun_dynamic.c:180:1: Definition of dynamic_buffer_overrun_009
+buffer_overrun_dynamic.c:192:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_010
+   buffer_overrun_dynamic.c:200:1: Definition of dynamic_buffer_overrun_010
+buffer_overrun_dynamic.c:212:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_011
+   buffer_overrun_dynamic.c:220:1: Definition of dynamic_buffer_overrun_011
+buffer_overrun_dynamic.c:226:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_012
+   buffer_overrun_dynamic.c:235:1: Definition of dynamic_buffer_overrun_012
+buffer_overrun_dynamic.c:241:7: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_013
+   buffer_overrun_dynamic.c:250:1: Definition of dynamic_buffer_overrun_013
+buffer_overrun_dynamic.c:256:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_014
+   buffer_overrun_dynamic.c:265:1: Definition of dynamic_buffer_overrun_014
+buffer_overrun_dynamic.c:271:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_015
+   buffer_overrun_dynamic.c:280:1: Definition of dynamic_buffer_overrun_015
+buffer_overrun_dynamic.c:287:5: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_016_func_001
+   buffer_overrun_dynamic.c:290:1: Definition of dynamic_buffer_overrun_016_func
+   _001
+buffer_overrun_dynamic.c:292:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_016
+   buffer_overrun_dynamic.c:300:1: Definition of dynamic_buffer_overrun_016
+buffer_overrun_dynamic.c:306:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_017_func_001
+   buffer_overrun_dynamic.c:314:1: Definition of dynamic_buffer_overrun_017_func
+   _001
+buffer_overrun_dynamic.c:316:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_017
+   buffer_overrun_dynamic.c:319:1: Definition of dynamic_buffer_overrun_017
+buffer_overrun_dynamic.c:325:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_018
+   buffer_overrun_dynamic.c:335:1: Definition of dynamic_buffer_overrun_018
+buffer_overrun_dynamic.c:341:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_019
+   buffer_overrun_dynamic.c:352:1: Definition of dynamic_buffer_overrun_019
+buffer_overrun_dynamic.c:358:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_020
+   buffer_overrun_dynamic.c:371:1: Definition of dynamic_buffer_overrun_020
+buffer_overrun_dynamic.c:377:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_021
+   buffer_overrun_dynamic.c:389:1: Definition of dynamic_buffer_overrun_021
+buffer_overrun_dynamic.c:395:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_022
+   buffer_overrun_dynamic.c:405:1: Definition of dynamic_buffer_overrun_022
+buffer_overrun_dynamic.c:411:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_023
+   buffer_overrun_dynamic.c:426:1: Definition of dynamic_buffer_overrun_023
+buffer_overrun_dynamic.c:432:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_024_func_001
+   buffer_overrun_dynamic.c:435:1: Definition of dynamic_buffer_overrun_024_func
+   _001
+buffer_overrun_dynamic.c:437:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_024
+   buffer_overrun_dynamic.c:446:1: Definition of dynamic_buffer_overrun_024
+buffer_overrun_dynamic.c:453:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_025
+   buffer_overrun_dynamic.c:465:1: Definition of dynamic_buffer_overrun_025
+buffer_overrun_dynamic.c:472:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_026
+   buffer_overrun_dynamic.c:482:1: Definition of dynamic_buffer_overrun_026
+buffer_overrun_dynamic.c:488:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_027
+   buffer_overrun_dynamic.c:498:1: Definition of dynamic_buffer_overrun_027
+buffer_overrun_dynamic.c:504:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_028
+   buffer_overrun_dynamic.c:516:1: Definition of dynamic_buffer_overrun_028
+buffer_overrun_dynamic.c:522:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_029
+   buffer_overrun_dynamic.c:536:1: Definition of dynamic_buffer_overrun_029
+buffer_overrun_dynamic.c:543:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_030
+   buffer_overrun_dynamic.c:563:1: Definition of dynamic_buffer_overrun_030
+buffer_overrun_dynamic.c:569:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_031
+   buffer_overrun_dynamic.c:585:1: Definition of dynamic_buffer_overrun_031
+buffer_overrun_dynamic.c:598:6: Function exported but not used outside
+    buffer_overrun_dynamic: dynamic_buffer_overrun_032
+   buffer_overrun_dynamic.c:611:1: Definition of dynamic_buffer_overrun_032
+
+HeaderFile.h:18:17: Variable sink shadows static declaration
+  An outer declaration is shadowed by the local declaration. (Use -shadow to
+  inhibit warning)
+   data_lost.c:12:12: Previous definition of sink: int
+data_lost.c: (in function data_lost_001)
+data_lost.c:24:2: Assignment of short int to char: ret = a
+  To make char and int types equivalent, use +charint.
+data_lost.c:25:9: Assignment of char to int: sink = ret
+data_lost.c: (in function data_lost_002)
+data_lost.c:36:2: Assignment of int to short int: ret = a
+  To ignore type qualifiers in type comparisons use +ignorequals.
+data_lost.c: (in function data_lost_003)
+data_lost.c:48:2: Assignment of long int to short int: ret = a
+data_lost.c: (in function data_lost_004)
+data_lost.c:60:2: Assignment of float to int: ret = a
+  To allow all numeric types to match, use +relaxtypes.
+data_lost.c: (in function data_lost_005)
+data_lost.c:72:2: Assignment of float to long int: ret = a
+data_lost.c:73:9: Assignment of long int to int: sink = ret
+data_lost.c: (in function data_lost_006)
+data_lost.c:85:2: Assignment of double to float: ret = a
+data_lost.c:86:9: Assignment of float to int: sink = ret
+data_lost.c: (in function data_lost_007)
+data_lost.c:97:2: Assignment of unsigned short int to unsigned char: ret = a
+data_lost.c:98:9: Assignment of unsigned char to int: sink = ret
+data_lost.c: (in function data_lost_008)
+data_lost.c:109:2: Assignment of unsigned int to unsigned short int: ret = a
+data_lost.c:110:9: Assignment of unsigned short int to int: sink = ret
+  To ignore signs in type comparisons use +ignoresigns
+data_lost.c: (in function data_lost_009)
+data_lost.c:121:2: Assignment of unsigned long int to unsigned short int:
+                      ret = a
+data_lost.c:122:9: Assignment of unsigned short int to int: sink = ret
+data_lost.c: (in function data_lost_012)
+data_lost.c:161:2: Assignment of int to short int: ret = a
+data_lost.c: (in function data_lost_013)
+data_lost.c:173:2: Assignment of int to short int: ret = (254 * a) + 1
+data_lost.c: (in function data_lost_014)
+data_lost.c:185:2: Assignment of int to short int: ret = (a * a) + 6
+data_lost.c: (in function data_lost_015)
+data_lost.c:201:2: Assignment of int to short int:
+                      ret = data_lost_015_func_001()
+data_lost.c: (in function data_lost_016_func_001)
+data_lost.c:212:2: Assignment of int to short int: ret = a
+data_lost.c: (in function data_lost_017)
+data_lost.c:229:2: Assignment of int to short int: ret = buf[3]
+data_lost.c: (in function data_lost_018)
+data_lost.c:243:2: Assignment of int to short int: ret = a1
+data_lost.c: (in function data_lost_019)
+data_lost.c:259:2: Assignment of int to short int: ret = a2
+data_lost.c:20:6: Function exported but not used outside data_lost:
+                     data_lost_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   data_lost.c:26:1: Definition of data_lost_001
+data_lost.c:32:6: Function exported but not used outside data_lost:
+                     data_lost_002
+   data_lost.c:38:1: Definition of data_lost_002
+data_lost.c:44:6: Function exported but not used outside data_lost:
+                     data_lost_003
+   data_lost.c:50:1: Definition of data_lost_003
+data_lost.c:56:6: Function exported but not used outside data_lost:
+                     data_lost_004
+   data_lost.c:62:1: Definition of data_lost_004
+data_lost.c:68:6: Function exported but not used outside data_lost:
+                     data_lost_005
+   data_lost.c:74:1: Definition of data_lost_005
+data_lost.c:80:6: Function exported but not used outside data_lost:
+                     data_lost_006
+   data_lost.c:87:1: Definition of data_lost_006
+data_lost.c:93:6: Function exported but not used outside data_lost:
+                     data_lost_007
+   data_lost.c:99:1: Definition of data_lost_007
+data_lost.c:105:6: Function exported but not used outside data_lost:
+                      data_lost_008
+   data_lost.c:111:1: Definition of data_lost_008
+data_lost.c:117:6: Function exported but not used outside data_lost:
+                      data_lost_009
+   data_lost.c:123:1: Definition of data_lost_009
+data_lost.c:134:6: Function exported but not used outside data_lost:
+                      data_lost_010
+   data_lost.c:139:1: Definition of data_lost_010
+data_lost.c:145:6: Function exported but not used outside data_lost:
+                      data_lost_011
+   data_lost.c:150:1: Definition of data_lost_011
+data_lost.c:156:6: Function exported but not used outside data_lost:
+                      data_lost_012
+   data_lost.c:163:1: Definition of data_lost_012
+data_lost.c:169:6: Function exported but not used outside data_lost:
+                      data_lost_013
+   data_lost.c:175:1: Definition of data_lost_013
+data_lost.c:181:6: Function exported but not used outside data_lost:
+                      data_lost_014
+   data_lost.c:187:1: Definition of data_lost_014
+data_lost.c:193:5: Function exported but not used outside data_lost:
+                      data_lost_015_func_001
+   data_lost.c:196:1: Definition of data_lost_015_func_001
+data_lost.c:198:6: Function exported but not used outside data_lost:
+                      data_lost_015
+   data_lost.c:203:1: Definition of data_lost_015
+data_lost.c:209:6: Function exported but not used outside data_lost:
+                      data_lost_016_func_001
+   data_lost.c:214:1: Definition of data_lost_016_func_001
+data_lost.c:216:6: Function exported but not used outside data_lost:
+                      data_lost_016
+   data_lost.c:219:1: Definition of data_lost_016
+data_lost.c:225:6: Function exported but not used outside data_lost:
+                      data_lost_017
+   data_lost.c:231:1: Definition of data_lost_017
+data_lost.c:237:6: Function exported but not used outside data_lost:
+                      data_lost_018
+   data_lost.c:245:1: Definition of data_lost_018
+data_lost.c:251:6: Function exported but not used outside data_lost:
+                      data_lost_019
+   data_lost.c:261:1: Definition of data_lost_019
+
+uninit_memory_access.c: (in function uninit_memory_access_001)
+uninit_memory_access.c:27:19: Format argument 1 to printf (%ld) expects long
+                                 int gets unsigned long int: *ret
+  To ignore signs in type comparisons use +ignoresigns
+   uninit_memory_access.c:27:15: Corresponding format code
+uninit_memory_access.c: (in function uninit_memory_access_006)
+uninit_memory_access.c:129:39: Possibly null storage str1 passed as non-null
+    param: uninit_memory_access_006_func_001 (str1, ...)
+  A possibly null pointer is passed as a parameter corresponding to a formal
+  parameter with no /*@null@*/ annotation.  If NULL may be used for this
+  parameter, add a /*@null@*/ annotation to the function parameter declaration.
+  (Use -nullpass to inhibit warning)
+   uninit_memory_access.c:127:18: Storage str1 may become null
+uninit_memory_access.c:131:2: Fresh storage str1 not released before return
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   uninit_memory_access.c:127:51: Fresh storage str1 created
+uninit_memory_access.c: (in function uninit_memory_access_007)
+uninit_memory_access.c:178:36: Passed storage st contains 4 undefined fields:
+                                  arr, a, b, c
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+uninit_memory_access.c: (in function uninit_memory_access_008_func_001)
+uninit_memory_access.c:201:9: Possibly null storage ret returned as non-null:
+                                 ret
+  Function returns a possibly null pointer, but is not declared using
+  /*@null@*/ annotation of result.  If function may return NULL, add /*@null@*/
+  annotation to the return value declaration. (Use -nullret to inhibit warning)
+   uninit_memory_access.c:195:40: Storage ret may become null
+uninit_memory_access.c:201:9: Returned storage *ret contains 2 undefined
+                                 fields: a, b
+uninit_memory_access.c: (in function uninit_memory_access_009_func_002)
+uninit_memory_access.c:236:3: Index of possibly null pointer
+    uninit_memory_access_009_doubleptr_gbl:
+    uninit_memory_access_009_doubleptr_gbl
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   uninit_memory_access.c:232:41: Storage uninit_memory_access_009_doubleptr_gbl
+    may become null
+uninit_memory_access.c:242:4: Index of possibly null pointer
+    uninit_memory_access_009_doubleptr_gbl[]:
+    uninit_memory_access_009_doubleptr_gbl[i]
+   uninit_memory_access.c:236:45: Storage uninit_memory_access_009_doubleptr_gbl
+   [] may become null
+uninit_memory_access.c:245:2: Storage uninit_memory_access_009_doubleptr_gbl[]
+    reachable from global is fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   uninit_memory_access.c:236:3: Fresh storage uninit_memory_access_009_doublept
+   r_gbl[] created
+uninit_memory_access.c: (in function uninit_memory_access_009)
+uninit_memory_access.c:263:10: Unqualified storage uninit_memory_access_009_doub
+    leptr_gbl[i] passed as only param: free (uninit_memory_access_009_doubleptr_
+    gbl[i])
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+uninit_memory_access.c:266:11: Unqualified storage uninit_memory_access_009_doub
+    leptr_gbl passed as only param: free (uninit_memory_access_009_doubleptr_gbl
+    )
+   uninit_memory_access.c:232:2: Storage uninit_memory_access_009_doubleptr_gbl
+   created
+uninit_memory_access.c:269:2: Function returns with non-null global
+    uninit_memory_access_009_doubleptr_gbl referencing null storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   uninit_memory_access.c:267:47: Storage uninit_memory_access_009_doubleptr_gbl
+    becomes null
+uninit_memory_access.c: (in function uninit_memory_access_010_func_001)
+uninit_memory_access.c:297:12: Test expression for if not boolean, type int:
+    uninit_memory_access_010_s_001_arr_gbl->csr & 0x1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+uninit_memory_access.c:303:2: Function returns with non-null global
+    uninit_memory_access_010_s_001_arr_gbl referencing null storage
+   uninit_memory_access.c:289:43: Storage uninit_memory_access_010_s_001_arr_gbl
+    may become null
+uninit_memory_access.c:287:49: Parameter devno not used
+  A function parameter is not used in the body of the function. If the argument
+  is needed for type compatibility or future plans, use /*@unused@*/ in the
+  argument declaration. (Use -paramuse to inhibit warning)
+uninit_memory_access.c: (in function uninit_memory_access_010)
+uninit_memory_access.c:311:11: Unqualified storage (void *)uninit_memory_access_
+    010_s_001_arr_gbl passed as only param:
+    free ((void *)uninit_memory_access_010_s_001_arr_gbl)
+   uninit_memory_access.c:289:2: Storage uninit_memory_access_010_s_001_arr_gbl
+   created
+uninit_memory_access.c:313:2: Function returns with global uninit_memory_access_
+                                 010_s_001_arr_gbl referencing released storage
+   uninit_memory_access.c:311:11: Storage uninit_memory_access_010_s_001_arr_gbl
+    released
+uninit_memory_access.c:313:2: Function returns with non-null global
+    uninit_memory_access_010_s_001_arr_gbl referencing null storage
+   uninit_memory_access.c:289:43: Storage uninit_memory_access_010_s_001_arr_gbl
+    becomes null
+uninit_memory_access.c: (in function uninit_memory_access_011_func_001)
+uninit_memory_access.c:325:3: Return value (type int) ignored:
+                                 snprintf(buffer,...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+uninit_memory_access.c:362:33: Datatype bool declared with inconsistent type:
+                                  enum
+  A function, variable or constant is redefined with a different type. (Use
+  -incondefs to inhibit warning)
+   load file posix.lcd: Specification of bool: boolean
+uninit_memory_access.c: (in function uninit_memory_access_013)
+uninit_memory_access.c:377:5: Arrow access from possibly null pointer s1:
+                                 s1->int_a
+   uninit_memory_access.c:376:8: Storage s1 may become null
+st_overflow.c: (in function st_overflow_001)
+st_overflow.c:25:9: Assignment of double to int: sink = buf[idx]
+  To allow all numeric types to match, use +relaxtypes.
+st_overflow.c: (in function st_overflow_002_func_001)
+st_overflow.c:51:2: Assignment of int to char: s.buf[0] = 1
+  To make char and int types equivalent, use +charint.
+st_overflow.c: (in function st_overflow_002)
+st_overflow.c:57:27: Passed storage s contains 1 undefined field: buf
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+st_overflow.c: (in function st_overflow_003_func_001)
+st_overflow.c:79:2: Assignment of int to char: s.buf[0] = 1
+st_overflow.c:80:2: Assignment of int to char: buf[0] = 1
+st_overflow.c:81:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_003)
+st_overflow.c:87:27: Passed storage s contains 1 undefined field: buf
+st_overflow.c: (in function st_overflow_004_func_002)
+st_overflow.c:110:2: Assignment of int to char: s.buf[0] = 1
+st_overflow.c:111:2: Assignment of int to char: buf[0] = 1
+st_overflow.c:112:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_004_func_001)
+st_overflow.c:118:2: Assignment of int to char: buf[0] = 1
+st_overflow.c:120:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_004)
+st_overflow.c:126:27: Passed storage s contains 3 undefined fields:
+                         buf, buf1, buf2
+st_overflow.c: (in function st_overflow_005_func_001)
+st_overflow.c:149:3: Assignment of int to char: s.buf[0] = 1
+st_overflow.c: (in function st_overflow_005)
+st_overflow.c:157:27: Passed storage s contains 1 undefined field: buf
+st_overflow.c:158:2: Assignment of int to char: buf[0] = 1
+st_overflow.c:159:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_006_func_001)
+st_overflow.c:181:2: Assignment of int to char: buf[1] = 10
+st_overflow.c:182:2: Assignment of int to char: s.buf[0] = 1
+st_overflow.c:183:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_006)
+st_overflow.c:191:7: Passed storage s contains 1 undefined field: buf
+st_overflow.c: (in function st_overflow_007_func_001)
+st_overflow.c:214:2: Assignment of int to char: s.buf[0] = 1
+st_overflow.c:215:2: Assignment of int to char: buf[0] = 1
+st_overflow.c:217:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_007_func_002)
+st_overflow.c:223:2: Assignment of int to char: buf[0] = 1
+st_overflow.c:224:2: Assignment of int to char: s.buf[0] = 1
+st_overflow.c:225:9: Assignment of char to int: sink = buf[idx]
+st_overflow.c: (in function st_overflow_007)
+st_overflow.c:232:6: Test expression for if not boolean, type int: flag
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+st_overflow.c:234:28: Passed storage s contains 1 undefined field: buf
+st_overflow.c:238:28: Passed storage s contains 1 undefined field: buf
+st_overflow.c:21:6: Function exported but not used outside st_overflow:
+                       st_overflow_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   st_overflow.c:26:1: Definition of st_overflow_001
+st_overflow.c:49:6: Function exported but not used outside st_overflow:
+                       st_overflow_002_func_001
+   st_overflow.c:52:1: Definition of st_overflow_002_func_001
+st_overflow.c:54:6: Function exported but not used outside st_overflow:
+                       st_overflow_002
+   st_overflow.c:58:1: Definition of st_overflow_002
+st_overflow.c:76:6: Function exported but not used outside st_overflow:
+                       st_overflow_003_func_001
+   st_overflow.c:82:1: Definition of st_overflow_003_func_001
+st_overflow.c:84:6: Function exported but not used outside st_overflow:
+                       st_overflow_003
+   st_overflow.c:88:1: Definition of st_overflow_003
+st_overflow.c:107:6: Function exported but not used outside st_overflow:
+                        st_overflow_004_func_002
+   st_overflow.c:113:1: Definition of st_overflow_004_func_002
+st_overflow.c:115:6: Function exported but not used outside st_overflow:
+                        st_overflow_004_func_001
+   st_overflow.c:121:1: Definition of st_overflow_004_func_001
+st_overflow.c:123:6: Function exported but not used outside st_overflow:
+                        st_overflow_004
+   st_overflow.c:127:1: Definition of st_overflow_004
+st_overflow.c:141:6: Function exported but not used outside st_overflow:
+                        st_overflow_005_func_001
+   st_overflow.c:151:1: Definition of st_overflow_005_func_001
+st_overflow.c:153:6: Function exported but not used outside st_overflow:
+                        st_overflow_005
+   st_overflow.c:160:1: Definition of st_overflow_005
+st_overflow.c:178:6: Function exported but not used outside st_overflow:
+                        st_overflow_006_func_001
+   st_overflow.c:184:1: Definition of st_overflow_006_func_001
+st_overflow.c:186:6: Function exported but not used outside st_overflow:
+                        st_overflow_006
+   st_overflow.c:192:1: Definition of st_overflow_006
+st_overflow.c:210:6: Function exported but not used outside st_overflow:
+                        st_overflow_007_func_002
+   st_overflow.c:226:1: Definition of st_overflow_007_func_002
+st_overflow.c:211:6: Function exported but not used outside st_overflow:
+                        st_overflow_007_func_001
+   st_overflow.c:218:1: Definition of st_overflow_007_func_001
+st_overflow.c:228:6: Function exported but not used outside st_overflow:
+                        st_overflow_007
+   st_overflow.c:240:1: Definition of st_overflow_007
+
+return_local.c: (in function return_local_001_func_001)
+return_local.c:20:9: Unqualified static storage buf returned as implicitly
+                        only: buf
+  Static storage is transferred in an inconsistent way. (Use -statictrans to
+  inhibit warning)
+return_local.c: (in function return_local_001)
+return_local.c:28:2: Fresh storage p not released before return
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   return_local.c:26:2: Fresh storage p created
+return_local.c: (in function return_local_002)
+return_local.c:43:28: Passed storage &p not completely defined:
+                         return_local_002_func_001 (&p)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+return_local.c:17:6: Function exported but not used outside return_local:
+                        return_local_001_func_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   return_local.c:21:1: Definition of return_local_001_func_001
+return_local.c:23:6: Function exported but not used outside return_local:
+                        return_local_001
+   return_local.c:28:1: Definition of return_local_001
+return_local.c:34:6: Function exported but not used outside return_local:
+                        return_local_002_func_001
+   return_local.c:38:1: Definition of return_local_002_func_001
+return_local.c:40:6: Function exported but not used outside return_local:
+                        return_local_002
+   return_local.c:45:1: Definition of return_local_002
+
+uninit_var.c: (in function uninit_var_004)
+uninit_var.c:64:8: Test expression for if not boolean, type int:
+                      UNINIT_VAR_004_TRUE
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+uninit_var.c:70:13: Variable dvar used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+uninit_var.c: (in function uninit_var_005_func_001)
+uninit_var.c:80:6: Test expression for if not boolean, type int: 1
+uninit_var.c:82:9: Variable ret used before definition
+uninit_var.c: (in function uninit_var_009)
+uninit_var.c:158:26: Passed storage buf not completely defined (*buf is
+                        undefined): uninit_var_009_func_001 (buf)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+uninit_var.c: (in function uninit_var_010)
+uninit_var.c:181:26: Passed storage buf not completely defined (*buf is
+                        undefined): uninit_var_010_func_001 (buf)
+uninit_var.c: (in function uninit_var_011)
+uninit_var.c:201:33: Function uninit_var_011_func_001 expects arg 2 to be int
+    gets arbitrary unsigned integral type: (sizeof((arr)) / sizeof(int))
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+insign_code.c:18:6: Function exported but not used outside insign_code:
+                       insign_code_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   insign_code.c:27:1: Definition of insign_code_001
+
+ow_memcpy.c: (in function ow_memcpy_002)
+ow_memcpy.c:51:43: Function ow_memcpy_002_func_001 expects arg 3 to be int gets
+                      arbitrary unsigned integral type: (2 * sizeof(int))
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+ow_memcpy.c:18:6: Function exported but not used outside ow_memcpy:
+                     ow_memcpy_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   ow_memcpy.c:27:1: Definition of ow_memcpy_001
+ow_memcpy.c:33:6: Function exported but not used outside ow_memcpy:
+                     ow_memcpy_002_func_001
+   ow_memcpy.c:46:1: Definition of ow_memcpy_002_func_001
+ow_memcpy.c:48:6: Function exported but not used outside ow_memcpy:
+                     ow_memcpy_002
+   ow_memcpy.c:52:1: Definition of ow_memcpy_002
+
+redundant_cond.c:20:6: Function exported but not used outside redundant_cond:
+                          redundant_cond_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   redundant_cond.c:33:1: Definition of redundant_cond_001
+redundant_cond.c:39:6: Function exported but not used outside redundant_cond:
+                          redundant_cond_002
+   redundant_cond.c:52:1: Definition of redundant_cond_002
+redundant_cond.c:58:6: Function exported but not used outside redundant_cond:
+                          redundant_cond_003
+   redundant_cond.c:71:1: Definition of redundant_cond_003
+redundant_cond.c:77:6: Function exported but not used outside redundant_cond:
+                          redundant_cond_004
+   redundant_cond.c:90:1: Definition of redundant_cond_004
+redundant_cond.c:96:6: Function exported but not used outside redundant_cond:
+                          redundant_cond_005
+   redundant_cond.c:109:1: Definition of redundant_cond_005
+redundant_cond.c:115:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_006
+   redundant_cond.c:129:1: Definition of redundant_cond_006
+redundant_cond.c:135:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_007
+   redundant_cond.c:145:1: Definition of redundant_cond_007
+redundant_cond.c:151:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_008
+   redundant_cond.c:163:1: Definition of redundant_cond_008
+redundant_cond.c:169:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_009
+   redundant_cond.c:183:1: Definition of redundant_cond_009
+redundant_cond.c:189:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_010
+   redundant_cond.c:203:1: Definition of redundant_cond_010
+redundant_cond.c:209:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_011
+   redundant_cond.c:223:1: Definition of redundant_cond_011
+redundant_cond.c:229:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_012
+   redundant_cond.c:243:1: Definition of redundant_cond_012
+redundant_cond.c:249:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_013
+   redundant_cond.c:263:1: Definition of redundant_cond_013
+redundant_cond.c:269:6: Function exported but not used outside redundant_cond:
+                           redundant_cond_014
+   redundant_cond.c:284:1: Definition of redundant_cond_014
+
+wrong_arguments_func_pointer.c:17:50:
+    Global wrong_arguments_func_pointer_015_dst1_gbl initialized to null value:
+    wrong_arguments_func_pointer_015_dst1_gbl = NULL
+  A reference with no null annotation is assigned or initialized to NULL.  Use
+  /*@null@*/ to declare the reference as a possibly null pointer. (Use
+  -nullassign to inhibit warning)
+wrong_arguments_func_pointer.c:17:50:
+    Global wrong_arguments_func_pointer_015_dst1_gbl initialized to null value:
+    char ** wrong_arguments_func_pointer_015_dst1_gbl = NULL = NULL
+wrong_arguments_func_pointer.c: (in function wrong_arguments_func_pointer_001_func_001)
+wrong_arguments_func_pointer.c:41:51: Parameter a not used
+  A function parameter is not used in the body of the function. If the argument
+  is needed for type compatibility or future plans, use /*@unused@*/ in the
+  argument declaration. (Use -paramuse to inhibit warning)
+wrong_arguments_func_pointer.c: (in function wrong_arguments_func_pointer_002_func_001)
+wrong_arguments_func_pointer.c:62:51: Parameter a not used
+wrong_arguments_func_pointer.c: (in function wrong_arguments_func_pointer_002)
+wrong_arguments_func_pointer.c:74:10:
+    Function fptr expects arg 1 to be int gets char: buf[0]
+  To make char and int types equivalent, use +charint.
+wrong_arguments_func_pointer.c: (in function wrong_arguments_func_pointer_009_func_001)
+wrong_arguments_func_pointer.c:208:12:
+    Parameter 1 (str1) to function strcpy is declared unique but may be aliased
+    externally by parameter 2 (str2)
+  A unique or only parameter may be aliased by some other parameter or visible
+  global. (Use -mayaliasunique to inhibit warning)
+wrong_arguments_func_pointer.c:209:12:
+    Parameter 1 (str3) to function strcpy is declared unique but may be aliased
+    externally by parameter 2 (str1)
+wrong_arguments_func_pointer.c: (in function wrong_arguments_func_pointer_009)
+wrong_arguments_func_pointer.c:215:16: Unrecognized identifier: strdup
+  Identifier used in code has not been declared. (Use -unrecog to inhibit
+  warning)
+unused_var.c: (in function unused_var_003)
+unused_var.c:78:11: Field u.s2.a used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+unused_var.c:78:20: Field u.s2.b used before definition
+unused_var.c:18:6: Function exported but not used outside unused_var:
+                      unused_var_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   unused_var.c:25:1: Definition of unused_var_001
+unused_var.c:37:6: Function exported but not used outside unused_var:
+                      unused_var_002
+   unused_var.c:44:1: Definition of unused_var_002
+unused_var.c:71:6: Function exported but not used outside unused_var:
+                      unused_var_003
+   unused_var.c:81:1: Definition of unused_var_003
+unused_var.c:87:5: Variable exported but not used outside unused_var:
+                      unused_var_004_glb_a
+unused_var.c:88:5: Variable exported but not used outside unused_var:
+                      unused_var_004_glb_b
+unused_var.c:89:5: Variable exported but not used outside unused_var:
+                      unused_var_004_glb_unuse
+unused_var.c:91:6: Function exported but not used outside unused_var:
+                      unused_var_004
+   unused_var.c:95:1: Definition of unused_var_004
+unused_var.c:105:6: Function exported but not used outside unused_var:
+                       unused_var_005
+   unused_var.c:109:1: Definition of unused_var_005
+unused_var.c:115:6: Function exported but not used outside unused_var:
+                       unused_var_006
+   unused_var.c:125:1: Definition of unused_var_006
+unused_var.c:152:24: Variable exported but not used outside unused_var:
+                        unused_var_007_uni_001_gbl
+unused_var.c:153:6: Function exported but not used outside unused_var:
+                       unused_var_007
+   unused_var.c:159:1: Definition of unused_var_007
+
+overrun_st.c: (in function overrun_st_001)
+overrun_st.c:22:2: Assignment of int to char: buf[4] = 1
+  To make char and int types equivalent, use +charint.
+overrun_st.c:23:9: Assignment of char to int: sink = buf[idx]
+overrun_st.c: (in function overrun_st_005)
+overrun_st.c:68:9: Assignment of long int to int: sink = buf[idx]
+  To ignore type qualifiers in type comparisons use +ignorequals.
+overrun_st.c: (in function overrun_st_006)
+overrun_st.c:79:9: Assignment of float to int: sink = buf[idx]
+  To allow all numeric types to match, use +relaxtypes.
+overrun_st.c: (in function overrun_st_007)
+overrun_st.c:90:9: Assignment of double to int: sink = buf[idx]
+overrun_st.c: (in function overrun_st_008)
+overrun_st.c:101:16: Value buf[][] used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+overrun_st.c: (in function overrun_st_009)
+overrun_st.c:112:16: Value buf[][][] used before definition
+overrun_st.c: (in function overrun_st_010)
+overrun_st.c:126:18: Initialized storage buf1 not completely defined (*buf1 is
+                        undefined): pbuf[0] = buf1
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+overrun_st.c:126:24: Initialized storage buf2 not completely defined (*buf2 is
+                        undefined): pbuf[1] = buf2
+overrun_st.c:126:30: Initialized storage buf3 not completely defined (*buf3 is
+                        undefined): pbuf[2] = buf3
+overrun_st.c:126:36: Initialized storage buf4 not completely defined (*buf4 is
+                        undefined): pbuf[3] = buf4
+overrun_st.c:126:42: Initialized storage buf5 not completely defined (*buf5 is
+                        undefined): pbuf[4] = buf5
+overrun_st.c: (in function overrun_st_011)
+overrun_st.c:144:16: Value sbuf[] used before definition
+overrun_st.c: (in function overrun_st_022)
+overrun_st.c:295:2: Assignment of int to char: *(p + 4) = 1
+overrun_st.c:296:9: Assignment of char to int: sink = buf[idx]
+overrun_st.c:296:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_023)
+overrun_st.c:309:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_025)
+overrun_st.c:336:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_026)
+overrun_st.c:349:9: Assignment of long int to int: sink = buf[idx]
+overrun_st.c:349:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_027)
+overrun_st.c:362:9: Assignment of float to int: sink = buf[idx]
+overrun_st.c:362:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_028)
+overrun_st.c:375:9: Assignment of double to int: sink = buf[idx]
+overrun_st.c:375:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_029)
+overrun_st.c:389:4: Value *pp used before definition
+overrun_st.c:389:3: Value *pp used before definition
+overrun_st.c:390:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_030)
+overrun_st.c:405:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_043)
+overrun_st.c:598:18: Initialized storage buf1 not completely defined (*buf1 is
+                        undefined): pbuf[0] = buf1
+overrun_st.c:598:24: Initialized storage buf2 not completely defined (*buf2 is
+                        undefined): pbuf[1] = buf2
+overrun_st.c:598:30: Initialized storage buf3 not completely defined (*buf3 is
+                        undefined): pbuf[2] = buf3
+overrun_st.c:598:36: Initialized storage buf4 not completely defined (*buf4 is
+                        undefined): pbuf[3] = buf4
+overrun_st.c:598:42: Initialized storage buf5 not completely defined (*buf5 is
+                        undefined): pbuf[4] = buf5
+overrun_st.c: (in function overrun_st_045)
+overrun_st.c:640:26: Passed storage buf not completely defined (*buf is
+                        undefined): overrun_st_045_func_001 (buf)
+overrun_st.c: (in function overrun_st_046)
+overrun_st.c:655:26: Passed storage buf not completely defined (*buf is
+                        undefined): overrun_st_046_func_001 (buf)
+overrun_st.c: (in function overrun_st_047)
+overrun_st.c:670:26: Passed storage buf not completely defined (*buf is
+                        undefined): overrun_st_047_func_001 (buf)
+overrun_st.c: (in function overrun_st_048)
+overrun_st.c:685:26: Passed storage buf not completely defined (*buf is
+                        undefined): overrun_st_048_func_001 (buf)
+overrun_st.c: (in function overrun_st_052)
+overrun_st.c:739:2: Assignment of int to char: buf[4] = 1
+overrun_st.c:740:9: Assignment of char to int: sink = buf[idx]
+overrun_st.c: (in function overrun_st_053)
+overrun_st.c:753:9: Assignment of char to int: sink = buf[idx]
+overrun_st.c:753:16: Value buf[] used before definition
+overrun_st.c: (in function overrun_st_054)
+overrun_st.c:765:2: Assignment of int to char: *(p + 3) = 1
+overrun_st.c:19:6: Function exported but not used outside overrun_st:
+                      overrun_st_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   overrun_st.c:24:1: Definition of overrun_st_001
+overrun_st.c:30:6: Function exported but not used outside overrun_st:
+                      overrun_st_002
+   overrun_st.c:35:1: Definition of overrun_st_002
+overrun_st.c:41:6: Function exported but not used outside overrun_st:
+                      overrun_st_003
+   overrun_st.c:47:1: Definition of overrun_st_003
+overrun_st.c:53:6: Function exported but not used outside overrun_st:
+                      overrun_st_004
+   overrun_st.c:58:1: Definition of overrun_st_004
+overrun_st.c:64:6: Function exported but not used outside overrun_st:
+                      overrun_st_005
+   overrun_st.c:69:1: Definition of overrun_st_005
+overrun_st.c:75:6: Function exported but not used outside overrun_st:
+                      overrun_st_006
+   overrun_st.c:80:1: Definition of overrun_st_006
+overrun_st.c:86:6: Function exported but not used outside overrun_st:
+                      overrun_st_007
+   overrun_st.c:91:1: Definition of overrun_st_007
+overrun_st.c:97:6: Function exported but not used outside overrun_st:
+                      overrun_st_008
+   overrun_st.c:102:1: Definition of overrun_st_008
+overrun_st.c:108:6: Function exported but not used outside overrun_st:
+                       overrun_st_009
+   overrun_st.c:113:1: Definition of overrun_st_009
+overrun_st.c:119:6: Function exported but not used outside overrun_st:
+                       overrun_st_010
+   overrun_st.c:128:1: Definition of overrun_st_010
+overrun_st.c:140:6: Function exported but not used outside overrun_st:
+                       overrun_st_011
+   overrun_st.c:145:1: Definition of overrun_st_011
+overrun_st.c:156:22: Variable exported but not used outside overrun_st:
+                        overrun_st_012_s_gbl
+overrun_st.c:157:6: Function exported but not used outside overrun_st:
+                       overrun_st_012
+   overrun_st.c:161:1: Definition of overrun_st_012
+overrun_st.c:167:6: Function exported but not used outside overrun_st:
+                       overrun_st_013
+   overrun_st.c:173:1: Definition of overrun_st_013
+overrun_st.c:179:6: Function exported but not used outside overrun_st:
+                       overrun_st_014
+   overrun_st.c:186:1: Definition of overrun_st_014
+overrun_st.c:192:6: Function exported but not used outside overrun_st:
+                       overrun_st_015
+   overrun_st.c:198:1: Definition of overrun_st_015
+overrun_st.c:204:6: Function exported but not used outside overrun_st:
+                       overrun_st_016
+   overrun_st.c:210:1: Definition of overrun_st_016
+overrun_st.c:216:5: Function exported but not used outside overrun_st:
+                       overrun_st_017_func_001
+   overrun_st.c:219:1: Definition of overrun_st_017_func_001
+overrun_st.c:221:6: Function exported but not used outside overrun_st:
+                       overrun_st_017
+   overrun_st.c:226:1: Definition of overrun_st_017
+overrun_st.c:232:5: Variable exported but not used outside overrun_st:
+                       overrun_st_018_buf
+overrun_st.c:233:6: Function exported but not used outside overrun_st:
+                       overrun_st_018_func_001
+   overrun_st.c:236:1: Definition of overrun_st_018_func_001
+overrun_st.c:238:6: Function exported but not used outside overrun_st:
+                       overrun_st_018
+   overrun_st.c:241:1: Definition of overrun_st_018
+overrun_st.c:247:6: Function exported but not used outside overrun_st:
+                       overrun_st_019
+   overrun_st.c:254:1: Definition of overrun_st_019
+overrun_st.c:260:6: Function exported but not used outside overrun_st:
+                       overrun_st_020
+   overrun_st.c:268:1: Definition of overrun_st_020
+overrun_st.c:274:6: Function exported but not used outside overrun_st:
+                       overrun_st_021
+   overrun_st.c:284:1: Definition of overrun_st_021
+overrun_st.c:290:6: Function exported but not used outside overrun_st:
+                       overrun_st_022
+   overrun_st.c:297:1: Definition of overrun_st_022
+overrun_st.c:303:6: Function exported but not used outside overrun_st:
+                       overrun_st_023
+   overrun_st.c:310:1: Definition of overrun_st_023
+overrun_st.c:316:6: Function exported but not used outside overrun_st:
+                       overrun_st_024
+   overrun_st.c:324:1: Definition of overrun_st_024
+overrun_st.c:330:6: Function exported but not used outside overrun_st:
+                       overrun_st_025
+   overrun_st.c:337:1: Definition of overrun_st_025
+overrun_st.c:343:6: Function exported but not used outside overrun_st:
+                       overrun_st_026
+   overrun_st.c:350:1: Definition of overrun_st_026
+overrun_st.c:356:6: Function exported but not used outside overrun_st:
+                       overrun_st_027
+   overrun_st.c:363:1: Definition of overrun_st_027
+overrun_st.c:369:6: Function exported but not used outside overrun_st:
+                       overrun_st_028
+   overrun_st.c:376:1: Definition of overrun_st_028
+overrun_st.c:382:6: Function exported but not used outside overrun_st:
+                       overrun_st_029
+   overrun_st.c:391:1: Definition of overrun_st_029
+overrun_st.c:397:6: Function exported but not used outside overrun_st:
+                       overrun_st_030
+   overrun_st.c:406:1: Definition of overrun_st_030
+overrun_st.c:412:5: Variable exported but not used outside overrun_st:
+                       overrun_st_031_buf_gbl
+overrun_st.c:413:6: Function exported but not used outside overrun_st:
+                       overrun_st_031
+   overrun_st.c:418:1: Definition of overrun_st_031
+overrun_st.c:424:6: Function exported but not used outside overrun_st:
+                       overrun_st_032
+   overrun_st.c:431:1: Definition of overrun_st_032
+overrun_st.c:437:6: Function exported but not used outside overrun_st:
+                       overrun_st_033
+   overrun_st.c:445:1: Definition of overrun_st_033
+overrun_st.c:451:6: Function exported but not used outside overrun_st:
+                       overrun_st_034
+   overrun_st.c:458:1: Definition of overrun_st_034
+overrun_st.c:464:6: Function exported but not used outside overrun_st:
+                       overrun_st_035
+   overrun_st.c:471:1: Definition of overrun_st_035
+overrun_st.c:477:5: Function exported but not used outside overrun_st:
+                       overrun_st_036_func_001
+   overrun_st.c:480:1: Definition of overrun_st_036_func_001
+overrun_st.c:482:6: Function exported but not used outside overrun_st:
+                       overrun_st_036
+   overrun_st.c:488:1: Definition of overrun_st_036
+overrun_st.c:494:6: Function exported but not used outside overrun_st:
+                       overrun_st_037_func_001
+   overrun_st.c:500:1: Definition of overrun_st_037_func_001
+overrun_st.c:502:6: Function exported but not used outside overrun_st:
+                       overrun_st_037
+   overrun_st.c:505:1: Definition of overrun_st_037
+overrun_st.c:511:6: Function exported but not used outside overrun_st:
+                       overrun_st_038
+   overrun_st.c:519:1: Definition of overrun_st_038
+overrun_st.c:525:6: Function exported but not used outside overrun_st:
+                       overrun_st_039
+   overrun_st.c:534:1: Definition of overrun_st_039
+overrun_st.c:540:6: Function exported but not used outside overrun_st:
+                       overrun_st_040
+   overrun_st.c:551:1: Definition of overrun_st_040
+overrun_st.c:557:6: Function exported but not used outside overrun_st:
+                       overrun_st_041
+   overrun_st.c:566:1: Definition of overrun_st_041
+overrun_st.c:572:6: Function exported but not used outside overrun_st:
+                       overrun_st_042
+   overrun_st.c:585:1: Definition of overrun_st_042
+overrun_st.c:591:6: Function exported but not used outside overrun_st:
+                       overrun_st_043
+   overrun_st.c:609:1: Definition of overrun_st_043
+overrun_st.c:615:6: Function exported but not used outside overrun_st:
+                       overrun_st_044
+   overrun_st.c:626:1: Definition of overrun_st_044
+overrun_st.c:632:6: Function exported but not used outside overrun_st:
+                       overrun_st_045_func_001
+   overrun_st.c:635:1: Definition of overrun_st_045_func_001
+overrun_st.c:637:6: Function exported but not used outside overrun_st:
+                       overrun_st_045
+   overrun_st.c:641:1: Definition of overrun_st_045
+overrun_st.c:647:6: Function exported but not used outside overrun_st:
+                       overrun_st_046_func_001
+   overrun_st.c:650:1: Definition of overrun_st_046_func_001
+overrun_st.c:652:6: Function exported but not used outside overrun_st:
+                       overrun_st_046
+   overrun_st.c:656:1: Definition of overrun_st_046
+overrun_st.c:662:6: Function exported but not used outside overrun_st:
+                       overrun_st_047_func_001
+   overrun_st.c:665:1: Definition of overrun_st_047_func_001
+overrun_st.c:667:6: Function exported but not used outside overrun_st:
+                       overrun_st_047
+   overrun_st.c:671:1: Definition of overrun_st_047
+overrun_st.c:677:6: Function exported but not used outside overrun_st:
+                       overrun_st_048_func_001
+   overrun_st.c:680:1: Definition of overrun_st_048_func_001
+overrun_st.c:682:6: Function exported but not used outside overrun_st:
+                       overrun_st_048
+   overrun_st.c:686:1: Definition of overrun_st_048
+overrun_st.c:692:6: Function exported but not used outside overrun_st:
+                       overrun_st_049
+   overrun_st.c:697:1: Definition of overrun_st_049
+overrun_st.c:703:6: Function exported but not used outside overrun_st:
+                       overrun_st_050
+   overrun_st.c:715:1: Definition of overrun_st_050
+overrun_st.c:721:6: Function exported but not used outside overrun_st:
+                       overrun_st_051
+   overrun_st.c:730:1: Definition of overrun_st_051
+overrun_st.c:736:6: Function exported but not used outside overrun_st:
+                       overrun_st_052
+   overrun_st.c:741:1: Definition of overrun_st_052
+overrun_st.c:747:6: Function exported but not used outside overrun_st:
+                       overrun_st_053
+   overrun_st.c:754:1: Definition of overrun_st_053
+overrun_st.c:760:5: Variable exported but not used outside overrun_st:
+                       overrun_st_054_buf_gbl
+overrun_st.c:761:6: Function exported but not used outside overrun_st:
+                       overrun_st_054
+   overrun_st.c:766:1: Definition of overrun_st_054
+
+data_underflow.c: (in function data_underflow_002)
+data_underflow.c:33:9: Assignment of unsigned int to int: sink = ret
+  To ignore signs in type comparisons use +ignoresigns
+data_underflow.c: (in function data_underflow_007)
+data_underflow.c:97:9: Assignment of float to int: sink = ret
+  To allow all numeric types to match, use +relaxtypes.
+data_underflow.c: (in function data_underflow_008)
+data_underflow.c:112:9: Assignment of double to int: sink = ret
+data_underflow.c: (in function data_underflow_009)
+data_underflow.c:121:13: Variable min initialized to type int, expects char:
+                            -126
+  To make char and int types equivalent, use +charint.
+data_underflow.c:123:8: Incompatible types for - (char, int): min - 2
+data_underflow.c:124:9: Assignment of char to int: sink = ret
+data_underflow.c:16:6: Function exported but not used outside data_underflow:
+                          data_underflow_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   data_underflow.c:22:1: Definition of data_underflow_001
+data_underflow.c:28:6: Function exported but not used outside data_underflow:
+                          data_underflow_002
+   data_underflow.c:34:1: Definition of data_underflow_002
+data_underflow.c:40:6: Function exported but not used outside data_underflow:
+                          data_underflow_003
+   data_underflow.c:48:1: Definition of data_underflow_003
+data_underflow.c:54:6: Function exported but not used outside data_underflow:
+                          data_underflow_004
+   data_underflow.c:60:1: Definition of data_underflow_004
+data_underflow.c:66:6: Function exported but not used outside data_underflow:
+                          data_underflow_005
+   data_underflow.c:72:1: Definition of data_underflow_005
+data_underflow.c:78:6: Function exported but not used outside data_underflow:
+                          data_underflow_006
+   data_underflow.c:83:1: Definition of data_underflow_006
+data_underflow.c:89:6: Function exported but not used outside data_underflow:
+                          data_underflow_007
+   data_underflow.c:98:1: Definition of data_underflow_007
+data_underflow.c:104:6: Function exported but not used outside data_underflow:
+                           data_underflow_008
+   data_underflow.c:113:1: Definition of data_underflow_008
+data_underflow.c:119:6: Function exported but not used outside data_underflow:
+                           data_underflow_009
+   data_underflow.c:125:1: Definition of data_underflow_009
+data_underflow.c:131:5: Function exported but not used outside data_underflow:
+                           data_underflow_010_func_001
+   data_underflow.c:134:1: Definition of data_underflow_010_func_001
+data_underflow.c:136:6: Function exported but not used outside data_underflow:
+                           data_underflow_010
+   data_underflow.c:142:1: Definition of data_underflow_010
+data_underflow.c:148:6: Function exported but not used outside data_underflow:
+                           data_underflow_011_func_001
+   data_underflow.c:154:1: Definition of data_underflow_011_func_001
+data_underflow.c:156:6: Function exported but not used outside data_underflow:
+                           data_underflow_011
+   data_underflow.c:159:1: Definition of data_underflow_011
+data_underflow.c:165:6: Function exported but not used outside data_underflow:
+                           data_underflow_012
+   data_underflow.c:172:1: Definition of data_underflow_012
+
+cmp_funcadr.c: (in function cmp_funcadr_001_func_001)
+cmp_funcadr.c:20:9: Immediate address &cmp_funcadr_001_glb_a returned as
+                       implicitly only: &cmp_funcadr_001_glb_a
+  An immediate address (result of & operator) is transferred inconsistently.
+  (Use -immediatetrans to inhibit warning)
+cmp_funcadr.c:17:5: Variable exported but not used outside cmp_funcadr:
+                       cmp_funcadr_001_glb_a
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+cmp_funcadr.c:18:6: Function exported but not used outside cmp_funcadr:
+                       cmp_funcadr_001_func_001
+   cmp_funcadr.c:21:1: Definition of cmp_funcadr_001_func_001
+cmp_funcadr.c:23:6: Function exported but not used outside cmp_funcadr:
+                       cmp_funcadr_001
+   cmp_funcadr.c:31:1: Definition of cmp_funcadr_001
+cmp_funcadr.c:39:5: Function exported but not used outside cmp_funcadr:
+                       cmp_funcadr_002_func_001
+   cmp_funcadr.c:42:1: Definition of cmp_funcadr_002_func_001
+cmp_funcadr.c:44:6: Function exported but not used outside cmp_funcadr:
+                       cmp_funcadr_002
+   cmp_funcadr.c:52:1: Definition of cmp_funcadr_002
+
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_001)
+buffer_underrun_dynamic.c:27:4: Assignment of int to char: buf[i] = 1
+  To make char and int types equivalent, use +charint.
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_008)
+buffer_underrun_dynamic.c:146:3: Index of possibly null pointer buf: buf
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   buffer_underrun_dynamic.c:142:14: Storage buf may become null
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_009)
+buffer_underrun_dynamic.c:170:19: Storage buf1 reachable from initial value is
+                                     fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   buffer_underrun_dynamic.c:165:40: Fresh storage buf1 created
+buffer_underrun_dynamic.c:170:26: Storage buf2 reachable from initial value is
+                                     fresh (should be unqualified)
+   buffer_underrun_dynamic.c:166:40: Fresh storage buf2 created
+buffer_underrun_dynamic.c:170:33: Storage buf3 reachable from initial value is
+                                     fresh (should be unqualified)
+   buffer_underrun_dynamic.c:167:40: Fresh storage buf3 created
+buffer_underrun_dynamic.c:170:40: Storage buf4 reachable from initial value is
+                                     fresh (should be unqualified)
+   buffer_underrun_dynamic.c:168:40: Fresh storage buf4 created
+buffer_underrun_dynamic.c:170:47: Storage buf5 reachable from initial value is
+                                     fresh (should be unqualified)
+   buffer_underrun_dynamic.c:169:40: Fresh storage buf5 created
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_023)
+buffer_underrun_dynamic.c:423:7: Assignment of char to int: p[i] = '1'
+  A character constant is used as an int. Use +charintliteral to allow
+  character constants to be used as ints.  (This is safe since the actual type
+  of a char constant is int.)
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_029)
+buffer_underrun_dynamic.c:524:9: Test expression for while not boolean, type
+                                    int: 1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_030)
+buffer_underrun_dynamic.c:548:3: Index of possibly null pointer doubleptr:
+                                    doubleptr
+   buffer_underrun_dynamic.c:544:20: Storage doubleptr may become null
+buffer_underrun_dynamic.c:556:5: Index of possibly null pointer doubleptr[]:
+                                    doubleptr[i]
+   buffer_underrun_dynamic.c:548:16: Storage doubleptr[] may become null
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_033)
+buffer_underrun_dynamic.c:622:6: Assignment of char to int: c = message[len]
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_034)
+buffer_underrun_dynamic.c:647:14: Operands of < have incompatible types (int,
+                                     size_t): i < strlen(srcbuf)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_035)
+buffer_underrun_dynamic.c:670:2: Index of possibly null pointer doubleptr:
+                                    doubleptr
+   buffer_underrun_dynamic.c:667:19: Storage doubleptr may become null
+buffer_underrun_dynamic.c:675:2: Index of possibly null pointer doubleptr[]:
+                                    doubleptr[loc1]
+   buffer_underrun_dynamic.c:670:15: Storage doubleptr[] may become null
+buffer_underrun_dynamic.c: (in function dynamic_buffer_underrun_037)
+buffer_underrun_dynamic.c:723:11: Array element doubleptr[0] used before
+                                     definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+buffer_underrun_dynamic.c:19:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   buffer_underrun_dynamic.c:31:1: Definition of dynamic_buffer_underrun_001
+buffer_underrun_dynamic.c:37:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_002
+   buffer_underrun_dynamic.c:45:1: Definition of dynamic_buffer_underrun_002
+buffer_underrun_dynamic.c:51:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_003
+   buffer_underrun_dynamic.c:66:1: Definition of dynamic_buffer_underrun_003
+buffer_underrun_dynamic.c:72:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_004
+   buffer_underrun_dynamic.c:80:1: Definition of dynamic_buffer_underrun_004
+buffer_underrun_dynamic.c:86:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_005
+   buffer_underrun_dynamic.c:98:1: Definition of dynamic_buffer_underrun_005
+buffer_underrun_dynamic.c:104:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_006
+   buffer_underrun_dynamic.c:116:1: Definition of dynamic_buffer_underrun_006
+buffer_underrun_dynamic.c:122:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_007
+   buffer_underrun_dynamic.c:134:1: Definition of dynamic_buffer_underrun_007
+buffer_underrun_dynamic.c:140:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_008
+   buffer_underrun_dynamic.c:157:1: Definition of dynamic_buffer_underrun_008
+buffer_underrun_dynamic.c:163:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_009
+   buffer_underrun_dynamic.c:181:1: Definition of dynamic_buffer_underrun_009
+buffer_underrun_dynamic.c:193:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_010
+   buffer_underrun_dynamic.c:201:1: Definition of dynamic_buffer_underrun_010
+buffer_underrun_dynamic.c:213:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_011
+   buffer_underrun_dynamic.c:221:1: Definition of dynamic_buffer_underrun_011
+buffer_underrun_dynamic.c:227:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_012
+   buffer_underrun_dynamic.c:236:1: Definition of dynamic_buffer_underrun_012
+buffer_underrun_dynamic.c:242:7: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_013
+   buffer_underrun_dynamic.c:252:1: Definition of dynamic_buffer_underrun_013
+buffer_underrun_dynamic.c:258:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_014
+   buffer_underrun_dynamic.c:267:1: Definition of dynamic_buffer_underrun_014
+buffer_underrun_dynamic.c:273:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_015
+   buffer_underrun_dynamic.c:282:1: Definition of dynamic_buffer_underrun_015
+buffer_underrun_dynamic.c:289:5: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_016_func_001
+   buffer_underrun_dynamic.c:292:1: Definition of dynamic_buffer_underrun_016_fu
+   nc_001
+buffer_underrun_dynamic.c:294:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_016
+   buffer_underrun_dynamic.c:302:1: Definition of dynamic_buffer_underrun_016
+buffer_underrun_dynamic.c:308:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_017_func_001
+   buffer_underrun_dynamic.c:316:1: Definition of dynamic_buffer_underrun_017_fu
+   nc_001
+buffer_underrun_dynamic.c:318:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_017
+   buffer_underrun_dynamic.c:321:1: Definition of dynamic_buffer_underrun_017
+buffer_underrun_dynamic.c:327:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_018
+   buffer_underrun_dynamic.c:337:1: Definition of dynamic_buffer_underrun_018
+buffer_underrun_dynamic.c:343:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_019
+   buffer_underrun_dynamic.c:354:1: Definition of dynamic_buffer_underrun_019
+buffer_underrun_dynamic.c:360:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_020
+   buffer_underrun_dynamic.c:373:1: Definition of dynamic_buffer_underrun_020
+buffer_underrun_dynamic.c:379:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_021
+   buffer_underrun_dynamic.c:391:1: Definition of dynamic_buffer_underrun_021
+buffer_underrun_dynamic.c:397:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_022
+   buffer_underrun_dynamic.c:407:1: Definition of dynamic_buffer_underrun_022
+buffer_underrun_dynamic.c:413:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_023
+   buffer_underrun_dynamic.c:427:1: Definition of dynamic_buffer_underrun_023
+buffer_underrun_dynamic.c:433:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_024_func_001
+   buffer_underrun_dynamic.c:436:1: Definition of dynamic_buffer_underrun_024_fu
+   nc_001
+buffer_underrun_dynamic.c:438:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_024
+   buffer_underrun_dynamic.c:446:1: Definition of dynamic_buffer_underrun_024
+buffer_underrun_dynamic.c:453:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_025
+   buffer_underrun_dynamic.c:466:1: Definition of dynamic_buffer_underrun_025
+buffer_underrun_dynamic.c:473:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_026
+   buffer_underrun_dynamic.c:483:1: Definition of dynamic_buffer_underrun_026
+buffer_underrun_dynamic.c:489:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_027
+   buffer_underrun_dynamic.c:499:1: Definition of dynamic_buffer_underrun_027
+buffer_underrun_dynamic.c:505:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_028
+   buffer_underrun_dynamic.c:518:1: Definition of dynamic_buffer_underrun_028
+buffer_underrun_dynamic.c:520:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_029
+   buffer_underrun_dynamic.c:534:1: Definition of dynamic_buffer_underrun_029
+buffer_underrun_dynamic.c:541:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_030
+   buffer_underrun_dynamic.c:561:1: Definition of dynamic_buffer_underrun_030
+buffer_underrun_dynamic.c:567:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_031
+   buffer_underrun_dynamic.c:582:1: Definition of dynamic_buffer_underrun_031
+buffer_underrun_dynamic.c:595:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_032
+   buffer_underrun_dynamic.c:606:1: Definition of dynamic_buffer_underrun_032
+buffer_underrun_dynamic.c:612:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_033
+   buffer_underrun_dynamic.c:632:1: Definition of dynamic_buffer_underrun_033
+buffer_underrun_dynamic.c:639:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_034
+   buffer_underrun_dynamic.c:657:1: Definition of dynamic_buffer_underrun_034
+buffer_underrun_dynamic.c:664:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_035
+   buffer_underrun_dynamic.c:686:1: Definition of dynamic_buffer_underrun_035
+buffer_underrun_dynamic.c:694:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_036
+   buffer_underrun_dynamic.c:703:2: Definition of dynamic_buffer_underrun_036
+buffer_underrun_dynamic.c:711:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_037
+   buffer_underrun_dynamic.c:729:1: Definition of dynamic_buffer_underrun_037
+buffer_underrun_dynamic.c:742:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_038
+   buffer_underrun_dynamic.c:754:1: Definition of dynamic_buffer_underrun_038
+buffer_underrun_dynamic.c:766:6: Function exported but not used outside
+    buffer_underrun_dynamic: dynamic_buffer_underrun_039
+   buffer_underrun_dynamic.c:782:1: Definition of dynamic_buffer_underrun_039
+
+dead_code.c: (in function dead_code_001)
+dead_code.c:20:6: Test expression for if not boolean, type int: 1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+dead_code.c: (in function dead_code_002)
+dead_code.c:37:6: Test expression for if not boolean, type int: flag
+dead_code.c: (in function dead_code_003)
+dead_code.c:58:6: Test expression for if not boolean, type int:
+                     dead_code_003_func_001()
+dead_code.c: (in function dead_code_004_func_001)
+dead_code.c:74:6: Test expression for if not boolean, type int: flag
+dead_code.c: (in function dead_code_008)
+dead_code.c:147:9: Test expression for while not boolean, type int: 1
+dead_code.c: (in function dead_code_009)
+dead_code.c:165:9: Test expression for while not boolean, type int: flag
+dead_code.c:165:9: Suspected infinite loop.  No value used in loop test (flag)
+                      is modified by test or loop body.
+  This appears to be an infinite loop. Nothing in the body of the loop or the
+  loop test modifies the value of the loop test. Perhaps the specification of a
+  function called in the loop body is missing a modification. (Use -infloops to
+  inhibit warning)
+dead_code.c: (in function dead_code_010)
+dead_code.c:187:9: Test expression for while not boolean, type int:
+                      dead_code_010_func_001()
+dead_code.c: (in function dead_code_011_func_001)
+dead_code.c:204:9: Test expression for while not boolean, type int: flag
+dead_code.c:204:9: Suspected infinite loop.  No value used in loop test (flag)
+                      is modified by test or loop body.
+dead_code.c: (in function dead_code_012)
+dead_code.c:227:9: Suspected infinite loop.  No value used in loop test (flag)
+                      is modified by test or loop body.
+dead_code.c: (in function dead_code_013)
+dead_code.c:245:9: Suspected infinite loop.  No value used in loop test (flag)
+                      is modified by test or loop body.
+dead_code.c:16:6: Function exported but not used outside dead_code:
+                     dead_code_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   dead_code.c:26:1: Definition of dead_code_001
+dead_code.c:32:6: Function exported but not used outside dead_code:
+                     dead_code_002
+   dead_code.c:43:1: Definition of dead_code_002
+dead_code.c:49:5: Function exported but not used outside dead_code:
+                     dead_code_003_func_001
+   dead_code.c:52:1: Definition of dead_code_003_func_001
+dead_code.c:54:6: Function exported but not used outside dead_code:
+                     dead_code_003
+   dead_code.c:64:1: Definition of dead_code_003
+dead_code.c:70:6: Function exported but not used outside dead_code:
+                     dead_code_004_func_001
+   dead_code.c:80:1: Definition of dead_code_004_func_001
+dead_code.c:82:6: Function exported but not used outside dead_code:
+                     dead_code_004
+   dead_code.c:85:1: Definition of dead_code_004
+dead_code.c:91:6: Function exported but not used outside dead_code:
+                     dead_code_005
+   dead_code.c:102:1: Definition of dead_code_005
+dead_code.c:108:6: Function exported but not used outside dead_code:
+                      dead_code_006
+   dead_code.c:119:1: Definition of dead_code_006
+dead_code.c:125:6: Function exported but not used outside dead_code:
+                      dead_code_007
+   dead_code.c:137:1: Definition of dead_code_007
+dead_code.c:143:6: Function exported but not used outside dead_code:
+                      dead_code_008
+   dead_code.c:154:1: Definition of dead_code_008
+dead_code.c:160:6: Function exported but not used outside dead_code:
+                      dead_code_009
+   dead_code.c:172:1: Definition of dead_code_009
+dead_code.c:178:5: Function exported but not used outside dead_code:
+                      dead_code_010_func_001
+   dead_code.c:181:1: Definition of dead_code_010_func_001
+dead_code.c:183:6: Function exported but not used outside dead_code:
+                      dead_code_010
+   dead_code.c:194:1: Definition of dead_code_010
+dead_code.c:200:6: Function exported but not used outside dead_code:
+                      dead_code_011_func_001
+   dead_code.c:211:1: Definition of dead_code_011_func_001
+dead_code.c:213:6: Function exported but not used outside dead_code:
+                      dead_code_011
+   dead_code.c:216:1: Definition of dead_code_011
+dead_code.c:222:6: Function exported but not used outside dead_code:
+                      dead_code_012
+   dead_code.c:234:1: Definition of dead_code_012
+dead_code.c:240:6: Function exported but not used outside dead_code:
+                      dead_code_013
+   dead_code.c:252:1: Definition of dead_code_013
+
+deletion_of_data_structure_sentinel.c: (in function deletion_of_data_structure_sentinel_001)
+deletion_of_data_structure_sentinel.c:26:3: Index of possibly null pointer foo:
+                                               foo
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   deletion_of_data_structure_sentinel.c:23:6: Storage foo may become null
+deletion_of_data_structure_sentinel.c:19:6:
+    Function exported but not used outside deletion_of_data_structure_sentinel:
+    deletion_of_data_structure_sentinel_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   deletion_of_data_structure_sentinel.c:30:1:
+   Definition of deletion_of_data_structure_sentinel_001
+deletion_of_data_structure_sentinel.c:38:6:
+    Function exported but not used outside deletion_of_data_structure_sentinel:
+    deletion_of_data_structure_sentinel_002
+   deletion_of_data_structure_sentinel.c:43:1:
+   Definition of deletion_of_data_structure_sentinel_002
+deletion_of_data_structure_sentinel.c:51:6:
+    Function exported but not used outside deletion_of_data_structure_sentinel:
+    deletion_of_data_structure_sentinel_003
+   deletion_of_data_structure_sentinel.c:64:1:
+   Definition of deletion_of_data_structure_sentinel_003
+
+main.c: (in function main)
+main.c:24:21: Function floor expects arg 1 to be double gets int:
+                 (int)vflag_copy % 1000
+  To allow all numeric types to match, use +relaxtypes.
+main.c:17:14: Parameter argc not used
+  A function parameter is not used in the body of the function. If the argument
+  is needed for type compatibility or future plans, use /*@unused@*/ in the
+  argument declaration. (Use -paramuse to inhibit warning)
+main.c:9:14: Variable exported but not used outside main: vflag
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+main.c:10:14: Variable exported but not used outside main: vflag_copy
+main.c:11:14: Variable exported but not used outside main: vflag_file
+
+double_free.c: (in function double_free_002)
+double_free.c:37:3: Index of possibly null pointer ptr: ptr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   double_free.c:32:13: Storage ptr may become null
+double_free.c:39:3: Variable ptr is released in true branch, but live in
+                       continuation.
+  The state of a variable is different depending on which branch is taken. This
+  means no annotation can sensibly be applied to the storage. (Use -branchstate
+  to inhibit warning)
+   double_free.c:39:3: in true branch:
+   double_free.c:39:8: Storage ptr released
+   double_free.c:39:3: in continuation:
+   double_free.c:37:3: Storage ptr defined
+double_free.c: (in function double_free_006)
+double_free.c:102:2: Variable ptr is released in true branch, but live in
+                        continuation.
+   double_free.c:102:2: in true branch:
+   double_free.c:102:7: Storage ptr released
+   double_free.c:102:2: in continuation:
+   double_free.c:100:42: Storage ptr allocated
+double_free.c: (in function double_free_007)
+double_free.c:118:2: Variable ptr is released in true branch, but live in
+                        continuation.
+   double_free.c:118:2: in true branch:
+   double_free.c:118:7: Storage ptr released
+   double_free.c:118:2: in continuation:
+   double_free.c:114:42: Storage ptr allocated
+double_free.c: (in function double_free_function_008)
+double_free.c:130:8: Unqualified storage double_free_function_008_gbl_ptr
+    passed as only param: free (double_free_function_008_gbl_ptr)
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+double_free.c:131:2: Function returns with global double_free_function_008_gbl_p
+                        tr referencing released storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   double_free.c:130:8: Storage double_free_function_008_gbl_ptr released
+double_free.c: (in function double_free_008)
+double_free.c:138:2: Function returns with non-null global double_free_function_
+                        008_gbl_ptr referencing null storage
+   double_free.c:135:36: Storage double_free_function_008_gbl_ptr may become
+   null
+double_free.c: (in function double_free_009)
+double_free.c:155:2: Variable ptr is released in while body, but live if loop
+                        is not taken.
+   double_free.c:155:2: in while body:
+   double_free.c:153:8: Storage ptr released
+   double_free.c:155:2: if loop is not taken:
+   double_free.c:148:42: Storage ptr allocated
+double_free.c: (in function double_free_010)
+double_free.c:170:8: Test expression for while not boolean, type int: flag
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+double_free.c:174:2: Variable ptr is released in while body, but live if loop
+                        is not taken.
+   double_free.c:174:2: in while body:
+   double_free.c:172:8: Storage ptr released
+   double_free.c:174:2: if loop is not taken:
+   double_free.c:167:42: Storage ptr allocated
+double_free.c: (in function double_free_011)
+double_free.c:191:3: Variable ptr is released in true branch, but live in
+                        continuation.
+   double_free.c:191:3: in true branch:
+   double_free.c:191:8: Storage ptr released
+   double_free.c:191:3: in continuation:
+   double_free.c:185:42: Storage ptr allocated
+double_free.c:194:2: Fresh storage ptr not released before return
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   double_free.c:185:42: Fresh storage ptr created
+double_free.c:18:6: Function exported but not used outside double_free:
+                       double_free_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   double_free.c:23:1: Definition of double_free_001
+double_free.c:30:6: Function exported but not used outside double_free:
+                       double_free_002
+   double_free.c:42:1: Definition of double_free_002
+double_free.c:49:6: Function exported but not used outside double_free:
+                       double_free_003
+   double_free.c:61:1: Definition of double_free_003
+double_free.c:68:6: Function exported but not used outside double_free:
+                       double_free_004
+   double_free.c:78:1: Definition of double_free_004
+double_free.c:85:6: Function exported but not used outside double_free:
+                       double_free_005
+   double_free.c:91:1: Definition of double_free_005
+double_free.c:98:6: Function exported but not used outside double_free:
+                       double_free_006
+   double_free.c:105:1: Definition of double_free_006
+double_free.c:112:6: Function exported but not used outside double_free:
+                        double_free_007
+   double_free.c:121:1: Definition of double_free_007
+double_free.c:127:7: Variable exported but not used outside double_free:
+                        double_free_function_008_gbl_ptr
+double_free.c:128:6: Function exported but not used outside double_free:
+                        double_free_function_008
+   double_free.c:131:1: Definition of double_free_function_008
+double_free.c:133:6: Function exported but not used outside double_free:
+                        double_free_008
+   double_free.c:138:1: Definition of double_free_008
+double_free.c:146:6: Function exported but not used outside double_free:
+                        double_free_009
+   double_free.c:157:1: Definition of double_free_009
+double_free.c:165:6: Function exported but not used outside double_free:
+                        double_free_010
+   double_free.c:175:1: Definition of double_free_010
+double_free.c:183:6: Function exported but not used outside double_free:
+                        double_free_011
+   double_free.c:194:1: Definition of double_free_011
+double_free.c:202:6: Function exported but not used outside double_free:
+                        double_free_012
+   double_free.c:211:1: Definition of double_free_012
+
+conflicting_cond.c:18:6: Function exported but not used outside
+                            conflicting_cond: conflicting_cond_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   conflicting_cond.c:31:1: Definition of conflicting_cond_001
+conflicting_cond.c:37:6: Function exported but not used outside
+                            conflicting_cond: conflicting_cond_002
+   conflicting_cond.c:50:1: Definition of conflicting_cond_002
+conflicting_cond.c:56:6: Function exported but not used outside
+                            conflicting_cond: conflicting_cond_003
+   conflicting_cond.c:69:1: Definition of conflicting_cond_003
+conflicting_cond.c:75:6: Function exported but not used outside
+                            conflicting_cond: conflicting_cond_004
+   conflicting_cond.c:92:1: Definition of conflicting_cond_004
+conflicting_cond.c:98:6: Function exported but not used outside
+                            conflicting_cond: conflicting_cond_005
+   conflicting_cond.c:108:1: Definition of conflicting_cond_005
+conflicting_cond.c:114:6: Function exported but not used outside
+                             conflicting_cond: conflicting_cond_006
+   conflicting_cond.c:126:1: Definition of conflicting_cond_006
+conflicting_cond.c:132:6: Function exported but not used outside
+                             conflicting_cond: conflicting_cond_007
+   conflicting_cond.c:146:1: Definition of conflicting_cond_007
+conflicting_cond.c:152:6: Function exported but not used outside
+                             conflicting_cond: conflicting_cond_008
+   conflicting_cond.c:166:1: Definition of conflicting_cond_008
+conflicting_cond.c:172:6: Function exported but not used outside
+                             conflicting_cond: conflicting_cond_009
+   conflicting_cond.c:186:1: Definition of conflicting_cond_009
+conflicting_cond.c:192:6: Function exported but not used outside
+                             conflicting_cond: conflicting_cond_010
+   conflicting_cond.c:204:1: Definition of conflicting_cond_010
+
+invalid_extern.c: (in function invalid_extern_006)
+invalid_extern.c:62:32: Arrow access from possibly null pointer
+    invalid_extern_001_glb_006_str: invalid_extern_001_glb_006_str->csr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   invalid_extern.c:61:35: Storage invalid_extern_001_glb_006_str may become
+   null
+invalid_extern.c:63:2: Global storage *invalid_extern_001_glb_006_str contains
+                          1 undefined field when call returns: data
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+invalid_extern.c:34:6: Function exported but not used outside invalid_extern:
+                          invalid_extern_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   invalid_extern.c:37:1: Definition of invalid_extern_001
+invalid_extern.c:39:6: Function exported but not used outside invalid_extern:
+                          invalid_extern_002
+   invalid_extern.c:42:1: Definition of invalid_extern_002
+invalid_extern.c:44:6: Function exported but not used outside invalid_extern:
+                          invalid_extern_003
+   invalid_extern.c:47:1: Definition of invalid_extern_003
+invalid_extern.c:49:6: Function exported but not used outside invalid_extern:
+                          invalid_extern_004
+   invalid_extern.c:52:1: Definition of invalid_extern_004
+invalid_extern.c:54:6: Function exported but not used outside invalid_extern:
+                          invalid_extern_005
+   invalid_extern.c:57:1: Definition of invalid_extern_005
+invalid_extern.c:59:6: Function exported but not used outside invalid_extern:
+                          invalid_extern_006
+   invalid_extern.c:63:1: Definition of invalid_extern_006
+
+memory_allocation_failure.c: (in function memory_allocation_failure_003)
+memory_allocation_failure.c:84:6: Value *ptr used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+memory_allocation_failure.c:84:5: Value *ptr used before definition
+memory_allocation_failure.c:86:8: Index of possibly null pointer ptr: ptr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   memory_allocation_failure.c:74:23: Storage ptr may become null
+memory_allocation_failure.c:86:8: Unallocated storage ptr[] passed as out
+                                     parameter: ptr[i]
+memory_allocation_failure.c: (in function memory_allocation_failure_005_func_001)
+memory_allocation_failure.c:126:25: Function calloc expects arg 1 to be size_t
+    gets unsigned int: memory_allocation_failure_005_gbl * memory_allocation_fai
+    lure_005_gbl
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+memory_allocation_failure.c:129:13: Function returns with non-null global vptr
+                                       referencing null storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   memory_allocation_failure.c:126:11: Storage vptr may become null
+memory_allocation_failure.c:136:13: Function returns with non-null global vptr
+                                       referencing null storage
+   memory_allocation_failure.c:133:11: Storage vptr may become null
+memory_allocation_failure.c:143:13: Function returns with non-null global vptr
+                                       referencing null storage
+   memory_allocation_failure.c:140:11: Storage vptr may become null
+memory_allocation_failure.c: (in function memory_allocation_failure_005)
+memory_allocation_failure.c:156:9: Unqualified storage vptr passed as only
+                                      param: free (vptr)
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+   memory_allocation_failure.c:140:4: Storage vptr created
+memory_allocation_failure.c:157:2: Function returns with global vptr
+                                      referencing released storage
+   memory_allocation_failure.c:156:9: Storage vptr released
+memory_allocation_failure.c:157:2: Function returns with non-null global vptr
+                                      referencing null storage
+   memory_allocation_failure.c:140:11: Storage vptr may become null
+memory_allocation_failure.c: (in function memory_allocation_failure_006_func_002)
+memory_allocation_failure.c:185:7: Index of possibly null pointer
+    memory_allocation_failure_006_gbl_doubleptr:
+    memory_allocation_failure_006_gbl_doubleptr
+   memory_allocation_failure.c:182:47:
+   Storage memory_allocation_failure_006_gbl_doubleptr may become null
+memory_allocation_failure.c:186:7: Index of possibly null pointer
+    memory_allocation_failure_006_gbl_doubleptr[]:
+    memory_allocation_failure_006_gbl_doubleptr[i]
+   memory_allocation_failure.c:185:54:
+   Storage memory_allocation_failure_006_gbl_doubleptr[] may become null
+memory_allocation_failure.c: (in function memory_allocation_failure_006)
+memory_allocation_failure.c:205:15: Unqualified storage memory_allocation_failur
+    e_006_gbl_doubleptr[i] passed as only param:
+    free (memory_allocation_failure_006_gbl_doubleptr[i])
+memory_allocation_failure.c:209:11: Unqualified storage memory_allocation_failur
+    e_006_gbl_doubleptr passed as only param:
+    free (memory_allocation_failure_006_gbl_doubleptr)
+   memory_allocation_failure.c:182:3:
+   Storage memory_allocation_failure_006_gbl_doubleptr created
+memory_allocation_failure.c:212:2: Function returns with non-null global
+    memory_allocation_failure_006_gbl_doubleptr referencing null storage
+   memory_allocation_failure.c:210:52:
+   Storage memory_allocation_failure_006_gbl_doubleptr becomes null
+memory_allocation_failure.c: (in function memory_allocation_failure_007_func_001)
+memory_allocation_failure.c:224:6: Assignment of size_t to unsigned int:
+                                      static_var = strlen(str1)
+memory_allocation_failure.c:225:65: Function malloc expects arg 1 to be size_t
+                                       gets unsigned int: static_var + 1
+memory_allocation_failure.c:228:21: Operands of < have incompatible types (int,
+                                       unsigned int): j < static_var
+  To ignore signs in type comparisons use +ignoresigns
+memory_allocation_failure.c:234:16: Possibly null storage memory_allocation_fail
+    ure_007_str_gbl returned as non-null: memory_allocation_failure_007_str_gbl
+  Function returns a possibly null pointer, but is not declared using
+  /*@null@*/ annotation of result.  If function may return NULL, add /*@null@*/
+  annotation to the return value declaration. (Use -nullret to inhibit warning)
+   memory_allocation_failure.c:225:49:
+   Storage memory_allocation_failure_007_str_gbl may become null
+memory_allocation_failure.c:234:54: Function returns with global
+    memory_allocation_failure_007_str_gbl referencing released storage
+   memory_allocation_failure.c:234:16:
+   Storage memory_allocation_failure_007_str_gbl released
+memory_allocation_failure.c:238:16: Null storage returned as non-null: NULL
+memory_allocation_failure.c: (in function memory_allocation_failure_008_func_001)
+memory_allocation_failure.c:271:5: Return value (type int) ignored:
+                                      snprintf(buffer,...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+memory_allocation_failure.c:272:10: Null storage buffer returned as non-null:
+                                       buffer
+   memory_allocation_failure.c:263:19: Storage buffer becomes null
+memory_allocation_failure.c: (in function memory_allocation_failure_008)
+memory_allocation_failure.c:278:2: Return value (type char *) ignored:
+                                      memory_allocatio...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalother to inhibit warning)
+memory_allocation_failure.c: (in function memory_allocation_failure_009_func_001)
+memory_allocation_failure.c:295:2: Fresh storage buf not released before return
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   memory_allocation_failure.c:292:6: Fresh storage buf created
+memory_allocation_failure.c: (in function memory_allocation_failure_009_func_002)
+memory_allocation_failure.c:302:45: Null storage buf passed as non-null param:
+    memory_allocation_failure_009_func_001 (buf)
+  A possibly null pointer is passed as a parameter corresponding to a formal
+  parameter with no /*@null@*/ annotation.  If NULL may be used for this
+  parameter, add a /*@null@*/ annotation to the function parameter declaration.
+  (Use -nullpass to inhibit warning)
+   memory_allocation_failure.c:301:17: Storage buf becomes null
+memory_allocation_failure.c: (in function memory_allocation_failure_010_func_001)
+memory_allocation_failure.c:335:2: Function returns with non-null global
+    memory_allocation_failure_010_arr_gbl referencing null storage
+   memory_allocation_failure.c:331:43:
+   Storage memory_allocation_failure_010_arr_gbl may become null
+memory_allocation_failure.c: (in function memory_allocation_failure_010_func_002)
+memory_allocation_failure.c:344:12: Test expression for if not boolean, type
+    int: memory_allocation_failure_010_arr_gbl->csr & 0x1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+memory_allocation_failure.c:337:49: Parameter devno not used
+  A function parameter is not used in the body of the function. If the argument
+  is needed for type compatibility or future plans, use /*@unused@*/ in the
+  argument declaration. (Use -paramuse to inhibit warning)
+memory_allocation_failure.c: (in function memory_allocation_failure_011_func_002)
+memory_allocation_failure.c:395:38: Arrow access from possibly null pointer
+    memory_allocation_failure_011_gbl_u1:
+    memory_allocation_failure_011_gbl_u1->s1
+   memory_allocation_failure.c:394:41:
+   Storage memory_allocation_failure_011_gbl_u1 may become null
+memory_allocation_failure.c:396:42: Arrow access from possibly null pointer
+    memory_allocation_failure_011_gbl_u1->s1:
+    memory_allocation_failure_011_gbl_u1->s1->a
+   memory_allocation_failure.c:395:45:
+   Storage memory_allocation_failure_011_gbl_u1->s1 may become null
+memory_allocation_failure.c:397:2: Function returns with possibly null storage
+    derivable from global memory_allocation_failure_011_gbl_u1->s1->a
+  A possibly null pointer is reachable from a parameter or global variable that
+  is not declared using a /*@null@*/ annotation. (Use -nullstate to inhibit
+  warning)
+   memory_allocation_failure.c:396:48:
+   Storage memory_allocation_failure_011_gbl_u1->s1->a may become null
+memory_allocation_failure.c:397:2: Global storage *(memory_allocation_failure_01
+    1_gbl_u1->s1) contains 1 undefined field when call returns: b
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+memory_allocation_failure.c: (in function memory_allocation_failure_011)
+memory_allocation_failure.c:410:7: Unqualified storage memory_allocation_failure
+    _011_gbl_u1 passed as only param: free (memory_allocation_failure_011_gbl_u1
+    )
+   memory_allocation_failure.c:394:2:
+   Storage memory_allocation_failure_011_gbl_u1 created
+memory_allocation_failure.c:412:2: Function returns with global
+    memory_allocation_failure_011_gbl_u1 referencing released storage
+   memory_allocation_failure.c:410:7:
+   Storage memory_allocation_failure_011_gbl_u1 released
+memory_allocation_failure.c:412:2: Function returns with non-null global
+    memory_allocation_failure_011_gbl_u1 referencing null storage
+   memory_allocation_failure.c:394:41:
+   Storage memory_allocation_failure_011_gbl_u1 may become null
+memory_allocation_failure.c: (in function memory_allocation_failure_012_func_002)
+memory_allocation_failure.c:432:59: Function calloc expects arg 1 to be size_t
+    gets int: memory_allocation_failure_012_func_001(1)
+free_null_pointer.c:14:38: Global free_null_pointer_002_gbl_ptr initialized to
+                              null value: free_null_pointer_002_gbl_ptr = NULL
+  A reference with no null annotation is assigned or initialized to NULL.  Use
+  /*@null@*/ to declare the reference as a possibly null pointer. (Use
+  -nullassign to inhibit warning)
+free_null_pointer.c:14:38: Global free_null_pointer_002_gbl_ptr initialized to
+    null value: int * free_null_pointer_002_gbl_ptr = NULL = NULL
+free_null_pointer.c:15:38: Global free_null_pointer_010_gbl_dst initialized to
+                              null value: free_null_pointer_010_gbl_dst = NULL
+free_null_pointer.c:15:38: Global free_null_pointer_010_gbl_dst initialized to
+    null value: char ** free_null_pointer_010_gbl_dst = NULL = NULL
+free_null_pointer.c: (in function free_null_pointer_002)
+free_null_pointer.c:49:2: Function returns with non-null global
+    free_null_pointer_002_gbl_ptr referencing null storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   free_null_pointer.c:41:42: Storage free_null_pointer_002_gbl_ptr becomes
+   null
+free_null_pointer.c: (in function free_null_pointer_004)
+free_null_pointer.c:84:7: Index of possibly null pointer fptr: fptr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   free_null_pointer.c:79:17: Storage fptr may become null
+free_null_pointer.c:93:6: Value *fptr used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+free_null_pointer.c:93:5: Value *fptr used before definition
+free_null_pointer.c:93:4: Assignment of double to float:
+                             *(*(fptr + i) + j) = i + 0.5
+  To allow all numeric types to match, use +relaxtypes.
+free_null_pointer.c: (in function free_null_pointer_005_func_001)
+free_null_pointer.c:111:5: Incompatible types for == (unsigned char, char):
+                              a == 'a'
+  To ignore signs in type comparisons use +ignoresigns
+free_null_pointer.c:113:2: Function returns with non-null global
+    free_null_pointer_005_gbl_ptr referencing null storage
+   free_null_pointer.c:110:32: Storage free_null_pointer_005_gbl_ptr may become
+   null
+free_null_pointer.c: (in function free_null_pointer_005)
+free_null_pointer.c:118:33: Function free_null_pointer_005_func_001 expects arg
+                               1 to be int gets size_t: strlen(str)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+free_null_pointer.c:120:7: Unqualified storage free_null_pointer_005_gbl_ptr
+    passed as only param: free (free_null_pointer_005_gbl_ptr)
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+   free_null_pointer.c:112:3: Storage free_null_pointer_005_gbl_ptr created
+free_null_pointer.c:122:2: Function returns with non-null global
+    free_null_pointer_005_gbl_ptr referencing null storage
+   free_null_pointer.c:121:34: Storage free_null_pointer_005_gbl_ptr becomes
+   null
+free_null_pointer.c: (in function free_null_pointer_006)
+free_null_pointer.c:154:4: Implicitly only storage s->buf (type char *) not
+    released before assignment: (s + i)->buf = (char *)malloc(25 *
+    sizeof(char))
+  A memory leak has been detected. Only-qualified storage is not released
+  before the last reference to it is lost. (Use -mustfreeonly to inhibit
+  warning)
+free_null_pointer.c:162:2: Storage s->buf is released in one path, but live in
+                              another.
+  The state of a variable is different depending on which branch is taken. This
+  means no annotation can sensibly be applied to the storage. (Use -branchstate
+  to inhibit warning)
+   free_null_pointer.c:161:9: Storage s->buf released
+free_null_pointer.c: (in function free_null_pointer_007_func_002)
+free_null_pointer.c:187:3: Index of possibly null pointer free_null_pointer_007_
+    gbl_doubleptr: free_null_pointer_007_gbl_doubleptr
+   free_null_pointer.c:183:38: Storage free_null_pointer_007_gbl_doubleptr may
+   become null
+free_null_pointer.c:193:4: Index of possibly null pointer free_null_pointer_007_
+    gbl_doubleptr[]: free_null_pointer_007_gbl_doubleptr[i]
+   free_null_pointer.c:187:42: Storage free_null_pointer_007_gbl_doubleptr[]
+   may become null
+free_null_pointer.c:196:2: Storage free_null_pointer_007_gbl_doubleptr[]
+    reachable from global is fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   free_null_pointer.c:187:3: Fresh storage free_null_pointer_007_gbl_doubleptr[
+   ] created
+free_null_pointer.c: (in function free_null_pointer_007)
+free_null_pointer.c:211:5: Index of null pointer free_null_pointer_007_gbl_doubl
+                              eptr: free_null_pointer_007_gbl_doubleptr
+   free_null_pointer.c:202:38: Storage free_null_pointer_007_gbl_doubleptr
+   becomes null
+free_null_pointer.c:213:10: Unqualified storage free_null_pointer_007_gbl_double
+    ptr[i] passed as only param: free (free_null_pointer_007_gbl_doubleptr[i])
+free_null_pointer.c:216:11: Unqualified storage free_null_pointer_007_gbl_double
+    ptr passed as only param: free (free_null_pointer_007_gbl_doubleptr)
+   free_null_pointer.c:183:2: Storage free_null_pointer_007_gbl_doubleptr
+   created
+free_null_pointer.c:205:8: Unreachable code: if (free_null_po...
+  This code will never be reached on any possible execution. (Use -unreachable
+  to inhibit warning)
+free_null_pointer.c:225:2: Function returns with non-null global
+    free_null_pointer_007_gbl_doubleptr referencing null storage
+   free_null_pointer.c:202:38: Storage free_null_pointer_007_gbl_doubleptr
+   becomes null
+free_null_pointer.c: (in function free_null_pointer_008_func_001)
+free_null_pointer.c:242:2: Function returns with possibly null storage
+                              derivable from parameter *stringPtr
+  A possibly null pointer is reachable from a parameter or global variable that
+  is not declared using a /*@null@*/ annotation. (Use -nullstate to inhibit
+  warning)
+   free_null_pointer.c:240:19: Storage *stringPtr may become null
+free_null_pointer.c:242:2: Function returns storage stringPtr reachable from
+    parameter not completely defined (**stringPtr is undefined)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+   free_null_pointer.c:240:19: Storage **stringPtr allocated
+free_null_pointer.c: (in function free_null_pointer_008)
+free_null_pointer.c:248:33: Function free_null_pointer_008_func_001 expects arg
+                               1 to be int gets size_t: strlen(str)
+free_null_pointer.c:249:9: Null storage str1 passed as non-null param:
+                              strcpy (str1, ...)
+  A possibly null pointer is passed as a parameter corresponding to a formal
+  parameter with no /*@null@*/ annotation.  If NULL may be used for this
+  parameter, add a /*@null@*/ annotation to the function parameter declaration.
+  (Use -nullpass to inhibit warning)
+   free_null_pointer.c:247:13: Storage str1 becomes null
+func_pointer.c: (in function func_pointer_002_func_001)
+func_pointer.c:56:2: Operand of ++ is non-numeric (char): a
+  Types are incompatible. (Use -type to inhibit warning)
+func_pointer.c:57:9: Return value type char does not match declared type int:
+                        (a)
+  To make char and int types equivalent, use +charint.
+func_pointer.c: (in function func_pointer_003)
+func_pointer.c:83:5: Test expression for if not boolean, type int: 1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+func_pointer.c:89:9: Assignment of long int to int: sink = ret
+  To ignore type qualifiers in type comparisons use +ignorequals.
+func_pointer.c:89:16: Variable ret used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+func_pointer.c: (in function func_pointer_004_func_001)
+func_pointer.c:104:9: Assignment of size_t to int: i = strlen(str1)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+func_pointer.c:105:35: Function malloc expects arg 1 to be size_t gets int:
+                          i + 1
+func_pointer.c:114:16: Possibly null storage str_rev returned as non-null:
+                          str_rev
+  Function returns a possibly null pointer, but is not declared using
+  /*@null@*/ annotation of result.  If function may return NULL, add /*@null@*/
+  annotation to the return value declaration. (Use -nullret to inhibit warning)
+   func_pointer.c:105:19: Storage str_rev may become null
+func_pointer.c:118:16: Null storage returned as non-null: NULL
+func_pointer.c: (in function func_pointer_005_func_002)
+func_pointer.c:161:3: Index of possibly null pointer func_pointer_005_doubleptr_
+                         gbl: func_pointer_005_doubleptr_gbl
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   func_pointer.c:157:33: Storage func_pointer_005_doubleptr_gbl may become
+   null
+func_pointer.c:167:4: Index of possibly null pointer func_pointer_005_doubleptr_
+                         gbl[]: func_pointer_005_doubleptr_gbl[i]
+   func_pointer.c:161:37: Storage func_pointer_005_doubleptr_gbl[] may become
+   null
+func_pointer.c:170:9: Storage func_pointer_005_doubleptr_gbl[] reachable from
+                         return value is fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   func_pointer.c:161:3: Fresh storage func_pointer_005_doubleptr_gbl[] created
+func_pointer.c:170:40: Function returns with global func_pointer_005_doubleptr_g
+                          bl referencing released storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   func_pointer.c:170:9: Storage func_pointer_005_doubleptr_gbl released
+func_pointer.c:203:41: Global func_pointer_006_doubleptr_gbl initialized to
+                          null value: func_pointer_006_doubleptr_gbl = NULL
+  A reference with no null annotation is assigned or initialized to NULL.  Use
+  /*@null@*/ to declare the reference as a possibly null pointer. (Use
+  -nullassign to inhibit warning)
+func_pointer.c:203:41: Global func_pointer_006_doubleptr_gbl initialized to
+    null value: float ** func_pointer_006_doubleptr_gbl = NULL = NULL
+func_pointer.c: (in function func_pointer_006_func_002)
+func_pointer.c:221:3: Index of possibly null pointer func_pointer_006_doubleptr_
+                         gbl: func_pointer_006_doubleptr_gbl
+   func_pointer.c:217:33: Storage func_pointer_006_doubleptr_gbl may become
+   null
+func_pointer.c:227:4: Index of possibly null pointer func_pointer_006_doubleptr_
+                         gbl[]: func_pointer_006_doubleptr_gbl[i]
+   func_pointer.c:221:37: Storage func_pointer_006_doubleptr_gbl[] may become
+   null
+func_pointer.c:227:4: Assignment of int to float:
+                         func_pointer_006_doubleptr_gbl[i][j] = i
+  To allow all numeric types to match, use +relaxtypes.
+func_pointer.c:230:9: Storage func_pointer_006_doubleptr_gbl[] reachable from
+                         return value is fresh (should be unqualified)
+   func_pointer.c:221:3: Fresh storage func_pointer_006_doubleptr_gbl[] created
+func_pointer.c:230:40: Function returns with global func_pointer_006_doubleptr_g
+                          bl referencing released storage
+   func_pointer.c:230:9: Storage func_pointer_006_doubleptr_gbl released
+func_pointer.c: (in function func_pointer_006_func_003)
+func_pointer.c:240:4: Assignment of int to float:
+                         func_pointer_006_doubleptr_gbl[i][j] = i
+func_pointer.c:243:9: Unqualified storage func_pointer_006_doubleptr_gbl
+    returned as implicitly only: func_pointer_006_doubleptr_gbl
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+   func_pointer.c:217:2: Storage func_pointer_006_doubleptr_gbl created
+func_pointer.c:243:40: Function returns with global func_pointer_006_doubleptr_g
+                          bl referencing released storage
+   func_pointer.c:243:9: Storage func_pointer_006_doubleptr_gbl released
+func_pointer.c: (in function func_pointer_006_func_004)
+func_pointer.c:251:12: Unqualified storage func_pointer_006_doubleptr_gbl[i]
+    passed as only param: free (func_pointer_006_doubleptr_gbl[i])
+func_pointer.c:254:10: Unqualified storage func_pointer_006_doubleptr_gbl
+    passed as only param: free (func_pointer_006_doubleptr_gbl)
+   func_pointer.c:217:2: Storage func_pointer_006_doubleptr_gbl created
+func_pointer.c:256:9: Null storage func_pointer_006_doubleptr_gbl returned as
+                         non-null: func_pointer_006_doubleptr_gbl
+   func_pointer.c:255:38: Storage func_pointer_006_doubleptr_gbl becomes null
+func_pointer.c:256:9: Unqualified storage func_pointer_006_doubleptr_gbl
+    returned as implicitly only: func_pointer_006_doubleptr_gbl
+   func_pointer.c:217:2: Storage func_pointer_006_doubleptr_gbl created
+func_pointer.c:256:40: Function returns with global func_pointer_006_doubleptr_g
+                          bl referencing released storage
+   func_pointer.c:256:9: Storage func_pointer_006_doubleptr_gbl released
+func_pointer.c: (in function func_pointer_006)
+func_pointer.c:268:6: Fresh storage func_pointer_006_doubleptr_gbl (type float
+    **) not released before assignment: func_pointer_006_doubleptr_gbl = fptr()
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   func_pointer.c:266:6: Fresh storage func_pointer_006_doubleptr_gbl created
+func_pointer.c:277:6: Fresh storage func_pointer_006_doubleptr_gbl (type float
+    **) not released before assignment: func_pointer_006_doubleptr_gbl = fptr()
+   func_pointer.c:268:6: Fresh storage func_pointer_006_doubleptr_gbl created
+func_pointer.c: (in function func_pointer_007_func_001)
+func_pointer.c:288:9: Return value type char does not match declared type int:
+                         (a[i])
+zero_division.c: (in function zero_division_008)
+zero_division.c:127:2: Assignment of double to float: ret = dividend / 1.0
+  To allow all numeric types to match, use +relaxtypes.
+zero_division.c: (in function zero_division_016_func_001)
+zero_division.c:237:3: Dereference of possibly null pointer
+    zero_division_016_gbl_divisor: *zero_division_016_gbl_divisor
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   zero_division.c:236:34: Storage zero_division_016_gbl_divisor may become
+   null
+zero_division.c:19:6: Function exported but not used outside zero_division:
+                         zero_division_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   zero_division.c:24:1: Definition of zero_division_001
+zero_division.c:30:6: Function exported but not used outside zero_division:
+                         zero_division_002
+   zero_division.c:36:1: Definition of zero_division_002
+zero_division.c:42:6: Function exported but not used outside zero_division:
+                         zero_division_003
+   zero_division.c:47:1: Definition of zero_division_003
+zero_division.c:53:5: Variable exported but not used outside zero_division:
+                         zero_division_004_dividend_gbl
+zero_division.c:55:6: Function exported but not used outside zero_division:
+                         zero_division_004_func_001
+   zero_division.c:58:1: Definition of zero_division_004_func_001
+zero_division.c:59:6: Function exported but not used outside zero_division:
+                         zero_division_004
+   zero_division.c:65:1: Definition of zero_division_004
+zero_division.c:71:6: Function exported but not used outside zero_division:
+                         zero_division_005
+   zero_division.c:77:1: Definition of zero_division_005
+zero_division.c:83:5: Variable exported but not used outside zero_division:
+                         zero_division_006_gbl_divisor
+zero_division.c:84:6: Function exported but not used outside zero_division:
+                         zero_division_006
+   zero_division.c:92:1: Definition of zero_division_006
+zero_division.c:104:25: Variable exported but not used outside zero_division:
+                           zero_division_007_s_gbl
+zero_division.c:106:6: Function exported but not used outside zero_division:
+                          zero_division_007_func_001
+   zero_division.c:109:1: Definition of zero_division_007_func_001
+zero_division.c:111:6: Function exported but not used outside zero_division:
+                          zero_division_007
+   zero_division.c:117:1: Definition of zero_division_007
+zero_division.c:123:6: Function exported but not used outside zero_division:
+                          zero_division_008
+   zero_division.c:128:1: Definition of zero_division_008
+zero_division.c:134:6: Function exported but not used outside zero_division:
+                          zero_division_009
+   zero_division.c:140:1: Definition of zero_division_009
+zero_division.c:146:6: Function exported but not used outside zero_division:
+                          zero_division_010
+   zero_division.c:156:1: Definition of zero_division_010
+zero_division.c:162:6: Function exported but not used outside zero_division:
+                          zero_division_011
+   zero_division.c:168:1: Definition of zero_division_011
+zero_division.c:174:6: Function exported but not used outside zero_division:
+                          zero_division_012
+   zero_division.c:181:1: Definition of zero_division_012
+zero_division.c:187:5: Function exported but not used outside zero_division:
+                          zero_division_013_func_001
+   zero_division.c:190:1: Definition of zero_division_013_func_001
+zero_division.c:192:6: Function exported but not used outside zero_division:
+                          zero_division_013
+   zero_division.c:197:1: Definition of zero_division_013
+zero_division.c:203:6: Function exported but not used outside zero_division:
+                          zero_division_014_func_001
+   zero_division.c:208:1: Definition of zero_division_014_func_001
+zero_division.c:210:6: Function exported but not used outside zero_division:
+                          zero_division_014
+   zero_division.c:213:1: Definition of zero_division_014
+zero_division.c:219:6: Function exported but not used outside zero_division:
+                          zero_division_015
+   zero_division.c:227:1: Definition of zero_division_015
+zero_division.c:233:6: Variable exported but not used outside zero_division:
+                          zero_division_016_gbl_divisor
+zero_division.c:234:6: Function exported but not used outside zero_division:
+                          zero_division_016_func_001
+   zero_division.c:238:1: Definition of zero_division_016_func_001
+zero_division.c:239:6: Function exported but not used outside zero_division:
+                          zero_division_016_func_002
+   zero_division.c:242:1: Definition of zero_division_016_func_002
+zero_division.c:243:6: Function exported but not used outside zero_division:
+                          zero_division_016
+   zero_division.c:254:1: Definition of zero_division_016
+
+pow_related_errors.c: (in function pow_related_errors_001)
+pow_related_errors.c:27:13: Variable num initialized to type int, expects
+                               double: 10 ^ 2
+  To allow all numeric types to match, use +relaxtypes.
+pow_related_errors.c:28:18: Variable exponent initialized to type int, expects
+                               double: 10 ^ 2
+pow_related_errors.c: (in function pow_related_errors_003)
+pow_related_errors.c:57:28: Initial value of arr[3] is type int, expects
+                               double: 10 ^ 3
+pow_related_errors.c:62:10: Operands of < have incompatible types (int,
+    arbitrary unsigned integral type): i < (sizeof((arr)) / sizeof(double))
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+pow_related_errors.c:66:17: Variable ans used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+pow_related_errors.c: (in function pow_related_errors_004)
+pow_related_errors.c:76:28: Initial value of arr[3] is type int, expects
+                               double: 10 ^ 3
+pow_related_errors.c:83:10: Operands of < have incompatible types (int,
+    arbitrary unsigned integral type): i < (sizeof((arr)) / sizeof(double))
+pow_related_errors.c:88:17: Variable ans used before definition
+pow_related_errors.c: (in function pow_related_errors_005)
+pow_related_errors.c:98:28: Initial value of arr[3] is type int, expects
+                               double: 10 ^ 3
+pow_related_errors.c:104:10: Operands of < have incompatible types (int,
+    arbitrary unsigned integral type): i < (sizeof((arr)) / sizeof(double))
+pow_related_errors.c:109:17: Variable ans used before definition
+pow_related_errors.c: (in function pow_related_errors_006_func_001)
+pow_related_errors.c:120:9: Return value type int does not match declared type
+                               double: 10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_007)
+pow_related_errors.c:150:8: Arrow access from possibly null pointer newarr:
+                               newarr->arr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   pow_related_errors.c:148:37: Storage newarr may become null
+pow_related_errors.c:151:12: Arrow access from possibly null pointer
+                                ptr_newarr: ptr_newarr->arr
+   pow_related_errors.c:149:40: Storage ptr_newarr may become null
+pow_related_errors.c: (in function pow_related_errors_015)
+pow_related_errors.c:269:14: Variable base initialized to type int, expects
+                                double: -10 ^ 36
+pow_related_errors.c: (in function pow_related_errors_016)
+pow_related_errors.c:284:14: Variable base initialized to type int, expects
+                                double: 10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_017)
+pow_related_errors.c:299:14: Variable base initialized to type int, expects
+                                double: 10 ^ 3
+pow_related_errors.c:300:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_018)
+pow_related_errors.c:314:14: Variable base initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c:315:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_019)
+pow_related_errors.c:330:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_020)
+pow_related_errors.c:345:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_021)
+pow_related_errors.c:360:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_022)
+pow_related_errors.c:375:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_023)
+pow_related_errors.c:390:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_024)
+pow_related_errors.c:405:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_025)
+pow_related_errors.c:419:14: Variable base initialized to type int, expects
+                                double: 10 ^ 3
+pow_related_errors.c: (in function pow_related_errors_026)
+pow_related_errors.c:434:14: Variable base initialized to type int, expects
+                                double: 10 ^ 12
+pow_related_errors.c: (in function pow_related_errors_027)
+pow_related_errors.c:449:14: Variable base initialized to type int, expects
+                                double: -10 ^ 10
+pow_related_errors.c: (in function pow_related_errors_028)
+pow_related_errors.c:464:14: Variable base initialized to type int, expects
+                                double: -10 ^ 2
+pow_related_errors.c: (in function pow_related_errors_029)
+pow_related_errors.c:479:14: Variable base initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c:480:18: Variable exponent initialized to type int, expects
+                                double: -10 ^ 3
+pow_related_errors.c:24:6: Function exported but not used outside
+                              pow_related_errors: pow_related_errors_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   pow_related_errors.c:32:1: Definition of pow_related_errors_001
+pow_related_errors.c:39:6: Function exported but not used outside
+                              pow_related_errors: pow_related_errors_002
+   pow_related_errors.c:47:1: Definition of pow_related_errors_002
+pow_related_errors.c:55:6: Function exported but not used outside
+                              pow_related_errors: pow_related_errors_003
+   pow_related_errors.c:67:1: Definition of pow_related_errors_003
+pow_related_errors.c:74:6: Function exported but not used outside
+                              pow_related_errors: pow_related_errors_004
+   pow_related_errors.c:89:1: Definition of pow_related_errors_004
+pow_related_errors.c:96:6: Function exported but not used outside
+                              pow_related_errors: pow_related_errors_005
+   pow_related_errors.c:111:1: Definition of pow_related_errors_005
+pow_related_errors.c:118:8: Function exported but not used outside
+    pow_related_errors: pow_related_errors_006_func_001
+   pow_related_errors.c:122:1: Definition of pow_related_errors_006_func_001
+pow_related_errors.c:124:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_006
+   pow_related_errors.c:131:1: Definition of pow_related_errors_006
+pow_related_errors.c:143:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_007
+   pow_related_errors.c:157:1: Definition of pow_related_errors_007
+pow_related_errors.c:165:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_008
+   pow_related_errors.c:173:1: Definition of pow_related_errors_008
+pow_related_errors.c:180:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_009
+   pow_related_errors.c:187:1: Definition of pow_related_errors_009
+pow_related_errors.c:194:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_010
+   pow_related_errors.c:201:1: Definition of pow_related_errors_010
+pow_related_errors.c:208:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_011
+   pow_related_errors.c:215:1: Definition of pow_related_errors_011
+pow_related_errors.c:222:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_012
+   pow_related_errors.c:230:1: Definition of pow_related_errors_012
+pow_related_errors.c:237:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_013
+   pow_related_errors.c:245:1: Definition of pow_related_errors_013
+pow_related_errors.c:252:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_014
+   pow_related_errors.c:260:1: Definition of pow_related_errors_014
+pow_related_errors.c:267:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_015
+   pow_related_errors.c:275:1: Definition of pow_related_errors_015
+pow_related_errors.c:282:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_016
+   pow_related_errors.c:290:1: Definition of pow_related_errors_016
+pow_related_errors.c:297:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_017
+   pow_related_errors.c:305:1: Definition of pow_related_errors_017
+pow_related_errors.c:312:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_018
+   pow_related_errors.c:320:1: Definition of pow_related_errors_018
+pow_related_errors.c:327:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_019
+   pow_related_errors.c:335:1: Definition of pow_related_errors_019
+pow_related_errors.c:342:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_020
+   pow_related_errors.c:350:1: Definition of pow_related_errors_020
+pow_related_errors.c:357:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_021
+   pow_related_errors.c:365:1: Definition of pow_related_errors_021
+pow_related_errors.c:372:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_022
+   pow_related_errors.c:380:1: Definition of pow_related_errors_022
+pow_related_errors.c:387:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_023
+   pow_related_errors.c:395:1: Definition of pow_related_errors_023
+pow_related_errors.c:402:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_024
+   pow_related_errors.c:410:1: Definition of pow_related_errors_024
+pow_related_errors.c:417:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_025
+   pow_related_errors.c:425:1: Definition of pow_related_errors_025
+pow_related_errors.c:432:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_026
+   pow_related_errors.c:440:1: Definition of pow_related_errors_026
+pow_related_errors.c:447:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_027
+   pow_related_errors.c:455:1: Definition of pow_related_errors_027
+pow_related_errors.c:462:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_028
+   pow_related_errors.c:470:1: Definition of pow_related_errors_028
+pow_related_errors.c:477:6: Function exported but not used outside
+                               pow_related_errors: pow_related_errors_029
+   pow_related_errors.c:485:1: Definition of pow_related_errors_029
+
+free_nondynamically_allocated_memory.c: (in function free_nondynamic_allocated_memory_001)
+free_nondynamically_allocated_memory.c:23:7:
+    Function call may modify observer ptr: ptr
+  Storage declared with observer is possibly modified. Observer storage may not
+  be modified. (Use -modobserver to inhibit warning)
+   free_nondynamically_allocated_memory.c:21:12: Storage ptr becomes observer
+free_nondynamically_allocated_memory.c:23:7:
+    Observer storage ptr passed as only param: free (ptr)
+  Observer storage is transferred to a non-observer reference. (Use
+  -observertrans to inhibit warning)
+   free_nondynamically_allocated_memory.c:21:12: Storage ptr becomes observer
+improper_termination_of_block.c:19:6:
+    Function exported but not used outside improper_termination_of_block:
+    improper_termination_of_block_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   improper_termination_of_block.c:29:1:
+   Definition of improper_termination_of_block_001
+improper_termination_of_block.c:36:6:
+    Function exported but not used outside improper_termination_of_block:
+    improper_termination_of_block_002
+   improper_termination_of_block.c:46:1:
+   Definition of improper_termination_of_block_002
+improper_termination_of_block.c:53:6:
+    Function exported but not used outside improper_termination_of_block:
+    improper_termination_of_block_003
+   improper_termination_of_block.c:62:1:
+   Definition of improper_termination_of_block_003
+improper_termination_of_block.c:69:6:
+    Function exported but not used outside improper_termination_of_block:
+    improper_termination_of_block_004
+   improper_termination_of_block.c:80:1:
+   Definition of improper_termination_of_block_004
+
+littlemem_st.c: (in function littlemem_st_001)
+littlemem_st.c:33:3: Assignment of int to char: buf[i] = 1
+  To make char and int types equivalent, use +charint.
+littlemem_st.c: (in function littlemem_st_004)
+littlemem_st.c:94:2: Stack-allocated storage littlemem_st_004_s_001_gbl_str
+                        reachable from global littlemem_st_004_s_001_gbl_str
+  A stack reference is pointed to by an external reference when the function
+  returns. The stack-allocated storage is destroyed after the call, leaving a
+  dangling reference. (Use -stackref to inhibit warning)
+   littlemem_st.c:92:2: Storage littlemem_st_004_s_001_gbl_str becomes
+   stack-allocated storage
+littlemem_st.c:94:2: Global storage *littlemem_st_004_s_001_gbl_str contains 2
+                        undefined fields when call returns: a, b
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+littlemem_st.c: (in function littlemem_st_010_func_002)
+littlemem_st.c:304:37: Parameter flag not used
+  A function parameter is not used in the body of the function. If the argument
+  is needed for type compatibility or future plans, use /*@unused@*/ in the
+  argument declaration. (Use -paramuse to inhibit warning)
+littlemem_st.c: (in function littlemem_st_011_func_002)
+littlemem_st.c:336:37: Parameter flag not used
+littlemem_st.c:24:6: Function exported but not used outside littlemem_st:
+                        littlemem_st_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   littlemem_st.c:39:1: Definition of littlemem_st_001
+littlemem_st.c:51:6: Function exported but not used outside littlemem_st:
+                        littlemem_st_002
+   littlemem_st.c:57:1: Definition of littlemem_st_002
+littlemem_st.c:69:6: Function exported but not used outside littlemem_st:
+                        littlemem_st_003
+   littlemem_st.c:75:1: Definition of littlemem_st_003
+littlemem_st.c:86:25: Variable exported but not used outside littlemem_st:
+                         littlemem_st_004_s_001_gbl_str
+littlemem_st.c:88:6: Function exported but not used outside littlemem_st:
+                        littlemem_st_004
+   littlemem_st.c:94:1: Definition of littlemem_st_004
+littlemem_st.c:106:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_005_s_001_gbl_str
+littlemem_st.c:108:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_005_gbl_buf
+littlemem_st.c:110:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_005_func_001
+   littlemem_st.c:113:1: Definition of littlemem_st_005_func_001
+littlemem_st.c:115:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_005
+   littlemem_st.c:119:1: Definition of littlemem_st_005
+littlemem_st.c:131:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_006_s_001_gbl_str
+littlemem_st.c:134:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_006_gbl_buf
+littlemem_st.c:136:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_006_func_001
+   littlemem_st.c:139:1: Definition of littlemem_st_006_func_001
+littlemem_st.c:141:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_006_func_002
+   littlemem_st.c:147:1: Definition of littlemem_st_006_func_002
+littlemem_st.c:149:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_006
+   littlemem_st.c:153:1: Definition of littlemem_st_006
+littlemem_st.c:165:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_007_s_001_gbl_str
+littlemem_st.c:168:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_007_gbl_buf
+littlemem_st.c:170:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_007_func_001
+   littlemem_st.c:173:1: Definition of littlemem_st_007_func_001
+littlemem_st.c:175:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_007_func_002
+   littlemem_st.c:189:1: Definition of littlemem_st_007_func_002
+littlemem_st.c:191:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_007
+   littlemem_st.c:195:1: Definition of littlemem_st_007
+littlemem_st.c:207:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_008_s_001_gbl_str
+littlemem_st.c:211:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_008_gbl_buf
+littlemem_st.c:213:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_008_func_001
+   littlemem_st.c:216:1: Definition of littlemem_st_008_func_001
+littlemem_st.c:218:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_008_func_002
+   littlemem_st.c:233:1: Definition of littlemem_st_008_func_002
+littlemem_st.c:235:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_008
+   littlemem_st.c:239:1: Definition of littlemem_st_008
+littlemem_st.c:251:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_009_s_001_gbl_str
+littlemem_st.c:255:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_009_gbl_buf
+littlemem_st.c:257:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_009_func_001
+   littlemem_st.c:260:1: Definition of littlemem_st_009_func_001
+littlemem_st.c:262:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_009_func_002
+   littlemem_st.c:277:1: Definition of littlemem_st_009_func_002
+littlemem_st.c:279:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_009
+   littlemem_st.c:283:1: Definition of littlemem_st_009
+littlemem_st.c:295:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_010_s_001_gbl_str
+littlemem_st.c:297:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_010_gbl_buf
+littlemem_st.c:299:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_010_func_001
+   littlemem_st.c:302:1: Definition of littlemem_st_010_func_001
+littlemem_st.c:304:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_010_func_002
+   littlemem_st.c:309:1: Definition of littlemem_st_010_func_002
+littlemem_st.c:311:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_010
+   littlemem_st.c:315:1: Definition of littlemem_st_010
+littlemem_st.c:327:25: Variable exported but not used outside littlemem_st:
+                          littlemem_st_011_s_001_gbl_str
+littlemem_st.c:329:6: Variable exported but not used outside littlemem_st:
+                         littlemem_st_011_gbl_buf
+littlemem_st.c:331:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_011_func_001
+   littlemem_st.c:334:1: Definition of littlemem_st_011_func_001
+littlemem_st.c:336:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_011_func_002
+   littlemem_st.c:347:1: Definition of littlemem_st_011_func_002
+littlemem_st.c:349:6: Function exported but not used outside littlemem_st:
+                         littlemem_st_011
+   littlemem_st.c:353:1: Definition of littlemem_st_011
+
+endless_loop.c: (in function endless_loop_003)
+endless_loop.c:61:9: Test expression for while not boolean, type int: 1
+  Test expression type is not boolean or int. (Use -predboolint to inhibit
+  warning)
+endless_loop.c: (in function endless_loop_004)
+endless_loop.c:82:9: Test expression for while not boolean, type int: flag
+endless_loop.c:82:9: Suspected infinite loop.  No value used in loop test
+                        (flag) is modified by test or loop body.
+  This appears to be an infinite loop. Nothing in the body of the loop or the
+  loop test modifies the value of the loop test. Perhaps the specification of a
+  function called in the loop body is missing a modification. (Use -infloops to
+  inhibit warning)
+endless_loop.c: (in function endless_loop_005)
+endless_loop.c:107:9: Test expression for while not boolean, type int:
+                         endless_loop_005_func_001()
+endless_loop.c: (in function endless_loop_006_func_001)
+endless_loop.c:127:9: Test expression for while not boolean, type int: flag
+endless_loop.c:127:9: Suspected infinite loop.  No value used in loop test
+                         (flag) is modified by test or loop body.
+endless_loop.c: (in function endless_loop_007)
+endless_loop.c:153:9: Suspected infinite loop.  No value used in loop test
+                         (flag) is modified by test or loop body.
+endless_loop.c: (in function endless_loop_008)
+endless_loop.c:174:9: Suspected infinite loop.  No value used in loop test
+                         (flag) is modified by test or loop body.
+endless_loop.c: (in function endless_loop_009)
+endless_loop.c:202:9: Test expression for while not boolean, type int: 1
+endless_loop.c:18:6: Function exported but not used outside endless_loop:
+                        endless_loop_001
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   endless_loop.c:33:1: Definition of endless_loop_001
+endless_loop.c:39:6: Function exported but not used outside endless_loop:
+                        endless_loop_002
+   endless_loop.c:51:1: Definition of endless_loop_002
+endless_loop.c:57:6: Function exported but not used outside endless_loop:
+                        endless_loop_003
+   endless_loop.c:71:1: Definition of endless_loop_003
+endless_loop.c:77:6: Function exported but not used outside endless_loop:
+                        endless_loop_004
+   endless_loop.c:92:1: Definition of endless_loop_004
+endless_loop.c:98:5: Function exported but not used outside endless_loop:
+                        endless_loop_005_func_001
+   endless_loop.c:101:1: Definition of endless_loop_005_func_001
+endless_loop.c:103:6: Function exported but not used outside endless_loop:
+                         endless_loop_005
+   endless_loop.c:117:1: Definition of endless_loop_005
+endless_loop.c:123:6: Function exported but not used outside endless_loop:
+                         endless_loop_006_func_001
+   endless_loop.c:137:1: Definition of endless_loop_006_func_001
+endless_loop.c:139:6: Function exported but not used outside endless_loop:
+                         endless_loop_006
+   endless_loop.c:142:1: Definition of endless_loop_006
+endless_loop.c:148:6: Function exported but not used outside endless_loop:
+                         endless_loop_007
+   endless_loop.c:163:1: Definition of endless_loop_007
+endless_loop.c:169:6: Function exported but not used outside endless_loop:
+                         endless_loop_008
+   endless_loop.c:184:1: Definition of endless_loop_008
+endless_loop.c:190:6: Function exported but not used outside endless_loop:
+                         endless_loop_009
+   endless_loop.c:205:1: Definition of endless_loop_009
+
+memory_leak.c: (in function memory_leak_001)
+memory_leak.c:29:4: Assignment of int to char: *(buf + 1) = 1
+  To make char and int types equivalent, use +charint.
+memory_leak.c: (in function memory_leak_002)
+memory_leak.c:48:3: Index of possibly null pointer ptr: ptr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   memory_leak.c:44:14: Storage ptr may become null
+memory_leak.c:54:6: Value *ptr used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+memory_leak.c:54:5: Value *ptr used before definition
+memory_leak.c: (in function memory_leak_003_func_001)
+memory_leak.c:69:2: Function returns with possibly null storage derivable from
+                       parameter *stringPtr
+  A possibly null pointer is reachable from a parameter or global variable that
+  is not declared using a /*@null@*/ annotation. (Use -nullstate to inhibit
+  warning)
+   memory_leak.c:68:15: Storage *stringPtr may become null
+memory_leak.c:69:2: Function returns storage stringPtr reachable from parameter
+                       not completely defined (**stringPtr is undefined)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+   memory_leak.c:68:15: Storage **stringPtr allocated
+memory_leak.c: (in function memory_leak_003)
+memory_leak.c:75:27: Function memory_leak_003_func_001 expects arg 1 to be int
+                        gets size_t: strlen(str)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+memory_leak.c:75:39: Passed storage &str1 not completely defined:
+                        memory_leak_003_func_001 (..., &str1)
+memory_leak.c: (in function memory_leak_004)
+memory_leak.c:98:3: Implicitly only storage s->buf (type char *) not released
+    before assignment: (s + i)->buf = (char *)malloc(25 * sizeof(char))
+  A memory leak has been detected. Only-qualified storage is not released
+  before the last reference to it is lost. (Use -mustfreeonly to inhibit
+  warning)
+memory_leak.c:103:7: Only storage s->buf (type char *) derived from released
+                        storage is not released (memory leak): s
+  A storage leak due to incomplete deallocation of a structure or deep pointer
+  is suspected. Unshared storage that is reachable from a reference that is
+  being deallocated has not yet been deallocated. Splint assumes when an object
+  is passed as an out only void pointer that the outer object will be
+  deallocated, but the inner objects will not. (Use -compdestroy to inhibit
+  warning)
+memory_leak.c: (in function memory_leak_007_func_001)
+memory_leak.c:172:13: Function returns with non-null global vptr referencing
+                         null storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   memory_leak.c:167:11: Storage vptr may become null
+memory_leak.c:181:13: Function returns with non-null global vptr referencing
+                         null storage
+   memory_leak.c:176:11: Storage vptr may become null
+memory_leak.c:190:13: Function returns with non-null global vptr referencing
+                         null storage
+   memory_leak.c:185:11: Storage vptr may become null
+memory_leak.c: (in function memory_leak_007)
+memory_leak.c:204:11: Unqualified storage vptr passed as only param:
+                         free (vptr)
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+   memory_leak.c:185:4: Storage vptr created
+memory_leak.c:206:2: Function returns with global vptr referencing released
+                        storage
+   memory_leak.c:204:11: Storage vptr released
+memory_leak.c:206:2: Function returns with non-null global vptr referencing
+                        null storage
+   memory_leak.c:185:11: Storage vptr may become null
+HeaderFile.h:18:17: Variable sink shadows static declaration
+  An outer declaration is shadowed by the local declaration. (Use -shadow to
+  inhibit warning)
+   null_pointer.c:12:12: Previous definition of sink: int
+null_pointer.c: (in function null_pointer_003)
+null_pointer.c:51:3: Value *pp used before definition
+  An rvalue is used that may not be initialized to a value on some execution
+  path. (Use -usedef to inhibit warning)
+null_pointer.c: (in function null_pointer_008_func_001)
+null_pointer.c:135:9: Unqualified storage null_pointer_008_glb_001 returned as
+                         implicitly only: null_pointer_008_glb_001
+  Unqualified storage is transferred in an inconsistent way. (Use
+  -unqualifiedtrans to inhibit warning)
+null_pointer.c:135:34: Function returns with global null_pointer_008_glb_001
+                          referencing released storage
+  A global variable does not satisfy its annotations when control is
+  transferred. (Use -globstate to inhibit warning)
+   null_pointer.c:135:9: Storage null_pointer_008_glb_001 released
+null_pointer.c: (in function null_pointer_008)
+null_pointer.c:143:2: Fresh storage p not released before return
+  A memory leak has been detected. Storage allocated locally is not released
+  before the last reference to it is lost. (Use -mustfreefresh to inhibit
+  warning)
+   null_pointer.c:141:2: Fresh storage p created
+null_pointer.c: (in function null_pointer_009)
+null_pointer.c:157:28: Passed storage buf not completely defined (*buf is
+                          undefined): null_pointer_009_func_001 (buf)
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+null_pointer.c: (in function null_pointer_013_func_001)
+null_pointer.c:207:9: Unqualified storage buf returned as implicitly only: buf
+null_pointer.c:207:13: Function returns with global buf referencing released
+                          storage
+   null_pointer.c:207:9: Storage buf released
+null_pointer.c: (in function null_pointer_014_func_001)
+null_pointer.c:227:9: Immediate address &null_pointer_014_gbl returned as
+                         implicitly only: (&null_pointer_014_gbl)
+  An immediate address (result of & operator) is transferred inconsistently.
+  (Use -immediatetrans to inhibit warning)
+null_pointer.c: (in function null_pointer_015_func_001)
+null_pointer.c:251:5: Incompatible types for == (unsigned char, char): a == 'a'
+  To ignore signs in type comparisons use +ignoresigns
+null_pointer.c:253:2: Function returns with non-null global
+                         null_pointer_015_gbl_ptr referencing null storage
+   null_pointer.c:250:27: Storage null_pointer_015_gbl_ptr may become null
+null_pointer.c: (in function null_pointer_015)
+null_pointer.c:258:28: Function null_pointer_015_func_001 expects arg 1 to be
+                          int gets size_t: strlen(str)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+null_pointer.c:260:7: Unqualified storage null_pointer_015_gbl_ptr passed as
+                         only param: free (null_pointer_015_gbl_ptr)
+   null_pointer.c:252:3: Storage null_pointer_015_gbl_ptr created
+null_pointer.c:262:2: Function returns with non-null global
+                         null_pointer_015_gbl_ptr referencing null storage
+   null_pointer.c:261:29: Storage null_pointer_015_gbl_ptr becomes null
+null_pointer.c: (in function null_pointer_016_func_002)
+null_pointer.c:285:3: Index of possibly null pointer null_pointer_016_gbl_double
+                         ptr: null_pointer_016_gbl_doubleptr
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   null_pointer.c:281:33: Storage null_pointer_016_gbl_doubleptr may become
+   null
+null_pointer.c:291:4: Index of possibly null pointer null_pointer_016_gbl_double
+                         ptr[]: null_pointer_016_gbl_doubleptr[i]
+   null_pointer.c:285:37: Storage null_pointer_016_gbl_doubleptr[] may become
+   null
+null_pointer.c:294:2: Storage null_pointer_016_gbl_doubleptr[] reachable from
+                         global is fresh (should be unqualified)
+  Storage derivable from a parameter does not match the alias kind expected for
+  the formal parameter. (Use -compmempass to inhibit warning)
+   null_pointer.c:285:3: Fresh storage null_pointer_016_gbl_doubleptr[] created
+null_pointer.c: (in function null_pointer_016)
+null_pointer.c:309:5: Index of null pointer null_pointer_016_gbl_doubleptr:
+                         null_pointer_016_gbl_doubleptr
+   null_pointer.c:300:33: Storage null_pointer_016_gbl_doubleptr becomes null
+null_pointer.c:311:10: Unqualified storage null_pointer_016_gbl_doubleptr[i]
+    passed as only param: free (null_pointer_016_gbl_doubleptr[i])
+null_pointer.c:314:11: Unqualified storage null_pointer_016_gbl_doubleptr
+    passed as only param: free (null_pointer_016_gbl_doubleptr)
+   null_pointer.c:281:2: Storage null_pointer_016_gbl_doubleptr created
+null_pointer.c:303:8: Unreachable code: if (null_pointer...
+  This code will never be reached on any possible execution. (Use -unreachable
+  to inhibit warning)
+null_pointer.c:323:2: Function returns with non-null global
+    null_pointer_016_gbl_doubleptr referencing null storage
+   null_pointer.c:300:33: Storage null_pointer_016_gbl_doubleptr becomes null
