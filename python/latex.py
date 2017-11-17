@@ -351,7 +351,8 @@ def subdefects_pr(tex_file_name, rep_directory, tool_list):
     print("\\hline")
     for subdefect in sorted(subdef_map.keys()):
         sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'
-        print(sub, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+        toool = nice(subdef_map[subdefect][0]) if subdef_map[subdefect][1] > 0 else "-"
+        print(sub, " & ", toool, " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
@@ -401,7 +402,8 @@ def subdefects_rdr(tex_file_name, rep_directory, tool_list):
     print("\\hline")
     for subdefect in sorted(subdef_map.keys()):
         sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'
-        print(sub, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+        toool = nice(subdef_map[subdefect][0]) if subdef_map[subdefect][1] > 0 else "-"
+        print(sub, " & ", toool, " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
@@ -448,7 +450,9 @@ def subdefects_unique(tex_file_name, rep_directory, tool_list):
     print("\\hline")
     for subdefect in sorted(subdef_map.keys()):
         sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'
-        print(sub, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+        toool = nice(subdef_map[subdefect][0]) if subdef_map[subdefect][1] > 0 else "-"
+
+        print(sub, " & ", toool, " & ", subdef_map[subdefect][1], "\\\\")
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
