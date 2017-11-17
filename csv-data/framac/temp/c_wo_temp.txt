@@ -1,0 +1,3353 @@
+[kernel] Parsing FRAMAC_SHARE/libc/__fc_builtin_for_normalization.i (no preprocessing)
+[kernel] Parsing bit_shift.c (with preprocessing)
+[kernel] Parsing invalid_memory_access.c (with preprocessing)
+[kernel] Parsing data_overflow.c (with preprocessing)
+data_overflow.c:333:[kernel] warning: Floating-point constant 3.40282326e+38F is not represented exactly. Will use 0x1.fffffc0000000p127. See documentation for option -warn-decimal-float
+[kernel] Parsing livelock.c (with preprocessing)
+[kernel] Parsing ptr_subtraction.c (with preprocessing)
+[kernel] Parsing not_return.c (with preprocessing)
+[kernel] Parsing underrun_st.c (with preprocessing)
+[kernel] Parsing sign_conv.c (with preprocessing)
+[kernel] Parsing buffer_overrun_dynamic.c (with preprocessing)
+[kernel] Parsing uninit_pointer.c (with preprocessing)
+[kernel] Parsing data_lost.c (with preprocessing)
+[kernel] Parsing uninit_memory_access.c (with preprocessing)
+[kernel] Parsing st_overflow.c (with preprocessing)
+[kernel] Parsing return_local.c (with preprocessing)
+[kernel] Parsing uninit_var.c (with preprocessing)
+[kernel] Parsing insign_code.c (with preprocessing)
+[kernel] Parsing ow_memcpy.c (with preprocessing)
+[kernel] Parsing redundant_cond.c (with preprocessing)
+[kernel] Parsing sleep_lock.c (with preprocessing)
+[kernel] Parsing wrong_arguments_func_pointer.c (with preprocessing)
+[kernel] Parsing unused_var.c (with preprocessing)
+[kernel] Parsing overrun_st.c (with preprocessing)
+[kernel] Parsing data_underflow.c (with preprocessing)
+[kernel] Parsing dead_lock.c (with preprocessing)
+[kernel] Parsing cmp_funcadr.c (with preprocessing)
+[kernel] Parsing buffer_underrun_dynamic.c (with preprocessing)
+[kernel] Parsing dead_code.c (with preprocessing)
+[kernel] Parsing lock_never_unlock.c (with preprocessing)
+[kernel] Parsing deletion_of_data_structure_sentinel.c (with preprocessing)
+[kernel] Parsing main.c (with preprocessing)
+[kernel] Parsing double_free.c (with preprocessing)
+[kernel] Parsing race_condition.c (with preprocessing)
+[kernel] Parsing conflicting_cond.c (with preprocessing)
+[kernel] Parsing memory_allocation_failure.c (with preprocessing)
+[kernel] Parsing free_null_pointer.c (with preprocessing)
+[kernel] Parsing func_pointer.c (with preprocessing)
+[kernel] Parsing zero_division.c (with preprocessing)
+[kernel] Parsing double_release.c (with preprocessing)
+[kernel] Parsing pow_related_errors.c (with preprocessing)
+[kernel] Parsing function_return_value_unchecked.c (with preprocessing)
+[kernel] Parsing unlock_without_lock.c (with preprocessing)
+[kernel] Parsing free_nondynamically_allocated_memory.c (with preprocessing)
+[kernel] Parsing improper_termination_of_block.c (with preprocessing)
+[kernel] Parsing littlemem_st.c (with preprocessing)
+[kernel] Parsing endless_loop.c (with preprocessing)
+[kernel] Parsing st_underrun.c (with preprocessing)
+[kernel] Parsing memory_leak.c (with preprocessing)
+[kernel] Parsing double_lock.c (with preprocessing)
+[kernel] Parsing null_pointer.c (with preprocessing)
+[kernel] Parsing st_cross_thread_access.c (with preprocessing)
+uninit_memory_access.c:27:[variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned long to long.
+uninit_memory_access.c:325:[variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned int to size_t.
+memory_allocation_failure.c:271:[variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned int to size_t.
+double_lock.c:47:[variadic] warning: Incorrect type for argument 2. The argument will be cast from int to unsigned int.
+double_lock.c:201:[variadic] warning: Incorrect type for argument 2. The argument will be cast from long to unsigned long.
+double_lock.c:216:[variadic] warning: Incorrect type for argument 2. The argument will be cast from long to unsigned long.
+[value] Analyzing a complete application starting at main
+[value] Computing initial state
+[value] Initial state computed
+[value:initial-state] Values of globals at initialization
+  __fc_errno ∈ [--..--]
+  __fc_stdin ∈ {{ NULL ; &S___fc_stdin[0] }}
+  __fc_stdout ∈ {{ NULL ; &S___fc_stdout[0] }}
+  __fc_fopen[0..511] ∈ {0}
+  __fc_p_fopen ∈ {{ &__fc_fopen[0] }}
+  __fc_random_counter ∈ {0}
+  __fc_rand_max ∈ {32767}
+  __fc_heap_status ∈ [--..--]
+  __fc_mblen_state ∈ {0}
+  __fc_mbtowc_state ∈ {0}
+  __fc_wctomb_state ∈ {0}
+  PTHREAD_MUTEX_INITIALIZER ∈ {0}
+  __fc_time ∈ [--..--]
+  __fc_tz ∈ [--..--]
+  optarg ∈ {{ NULL ; &S_optarg[0] }}
+  optind ∈ [--..--]
+  opterr ∈ [--..--]
+  optopt ∈ [--..--]
+  __fc_fds[0..1023] ∈ {0}
+  sink ∈ {0}
+  vflag ∈ [--..--]
+  psink ∈ {0}
+  invalid_memory_access_016_doubleptr_gbl ∈ {0}
+  invalid_memory_access_017_doubleptr_gbl ∈ {0}
+  invalid_memory_access_013_s_001_s_gbl ∈ {0}
+  livelock_001_glb_A ∈ {0}
+  livelock_001_glb_B ∈ {0}
+  x ∈ {0}
+  y ∈ {0}
+  idx ∈ {0}
+  underrun_st_009_gbl_buf[0..4] ∈ {0}
+  underrun_st_010_gbl_buf[0..4] ∈ {0}
+  underrun_st_011_gbl_buf[0..4] ∈ {0}
+  underrun_st_012_gbl_buf[0..4] ∈ {0}
+  underrun_st_013_gbl_buf[0..4] ∈ {0}
+  sign_conv_015_gbl_ret ∈ {0}
+  sign_conv_016_gbl_ret ∈ {0}
+  sign_conv_017_gbl_buf[0] ∈ {1}
+                       [1] ∈ {2}
+                       [2] ∈ {3}
+                       [3] ∈ {-4}
+                       [4] ∈ {5}
+  sign_conv_017_gbl_ret ∈ {0}
+  uninit_pointer_016_gbl_doubleptr ∈ {0}
+  s ∈ {0}
+  uninit_memory_access_009_doubleptr_gbl ∈ {0}
+  uninit_memory_access_010_s_001_arr_gbl ∈ {0}
+  dsink ∈ {0}
+  sleep_lock_001_glb_mutex_ ∈ {0}
+  sleep_lock_001_glb_mutex ∈ {{ &sleep_lock_001_glb_mutex_ }}
+  sleep_lock_001_glb_data ∈ {0}
+  sleep_lock_002_glb_data ∈ {0}
+  sleep_lock_002_glb_mutex_ ∈ {0}
+  sleep_lock_002_glb_mutex ∈ {{ &sleep_lock_002_glb_mutex_ }}
+  sleep_lock_003_glb_mutex_ ∈ {0}
+  sleep_lock_003_glb_mutex ∈ {{ &sleep_lock_003_glb_mutex_ }}
+  sleep_lock_003_glb_data ∈ {0}
+  func_glb ∈ {0}
+  wrong_arguments_func_pointer_015_dst1_gbl ∈ {0}
+  wrong_arguments_func_pointer_017_func_gbl ∈ {0}
+  wrong_arguments_func_pointer_018_fptr_gbl ∈ {0}
+  wrong_arguments_func_pointer_018_fptr1_gbl ∈ {0}
+  wrong_arguments_func_pointer_018_fptr2_gbl ∈ {0}
+  func_pointer_018_global_set ∈ {0}
+  unused_var_004_glb_a ∈ {1}
+  unused_var_004_glb_b ∈ {2}
+  unused_var_004_glb_unuse ∈ {0}
+  unused_var_007_uni_001_gbl ∈ {0}
+  overrun_st_012_s_gbl ∈ {0}
+  overrun_st_018_buf[0..4] ∈ {0}
+  overrun_st_031_buf_gbl[0..4] ∈ {0}
+  overrun_st_054_buf_gbl[0..4] ∈ {0}
+  dead_lock_001_glb_mutexA ∈ {0}
+  dead_lock_001_glb_mutexB ∈ {0}
+  dead_lock_001_glb_dataA ∈ {10}
+  dead_lock_001_glb_dataB ∈ {10}
+  dead_lock_002_glb_mutexA ∈ {0}
+  dead_lock_002_glb_mutexB ∈ {0}
+  dead_lock_002_glb_mutexC ∈ {0}
+  dead_lock_002_glb_dataA ∈ {0}
+  dead_lock_002_glb_dataB ∈ {0}
+  dead_lock_002_glb_dataC ∈ {0}
+  dead_lock_003_glb_mutexA_ ∈ {0}
+  dead_lock_003_glb_mutexB_ ∈ {0}
+  dead_lock_003_glb_mutexC_ ∈ {0}
+  dead_lock_003_glb_mutexA ∈ {{ &dead_lock_003_glb_mutexA_ }}
+  dead_lock_003_glb_mutexB ∈ {{ &dead_lock_003_glb_mutexB_ }}
+  dead_lock_003_glb_mutexC ∈ {{ &dead_lock_003_glb_mutexC_ }}
+  dead_lock_003_glb_dataA ∈ {0}
+  dead_lock_003_glb_dataB ∈ {0}
+  dead_lock_003_glb_dataC ∈ {0}
+  dead_lock_004_glb_mutexA_ ∈ {0}
+  dead_lock_004_glb_mutexB_ ∈ {0}
+  dead_lock_004_glb_mutexC_ ∈ {0}
+  dead_lock_004_glb_mutexA ∈ {{ &dead_lock_004_glb_mutexA_ }}
+  dead_lock_004_glb_mutexB ∈ {{ &dead_lock_004_glb_mutexB_ }}
+  dead_lock_004_glb_mutexC ∈ {{ &dead_lock_004_glb_mutexC_ }}
+  dead_lock_004_glb_dataA ∈ {0}
+  dead_lock_004_glb_dataB ∈ {0}
+  dead_lock_004_glb_dataC ∈ {0}
+  dead_lock_005_glb_mutexA_ ∈ {0}
+  dead_lock_005_glb_mutexB_ ∈ {0}
+  dead_lock_005_glb_mutexA ∈ {{ &dead_lock_005_glb_mutexA_ }}
+  dead_lock_005_glb_mutexB ∈ {{ &dead_lock_005_glb_mutexB_ }}
+  dead_lock_005_glb_dataA ∈ {0}
+  dead_lock_005_glb_dataB ∈ {0}
+  cmp_funcadr_001_glb_a ∈ {0}
+  lock_never_unlock_001_glb_mutex ∈ {0}
+  lock_never_unlock_001_glb_data ∈ {0}
+  lock_never_unlock_002_glb_mutex ∈ {0}
+  lock_never_unlock_002_glb_data ∈ {0}
+  lock_never_unlock_003_glb_mutex ∈ {0}
+  lock_never_unlock_003_glb_data ∈ {1000.}
+  lock_never_unlock_004_glb_mutex_1 ∈ {0}
+  lock_never_unlock_004_glb_mutex_2 ∈ {0}
+  lock_never_unlock_005_glb_mutex ∈ {0}
+  lock_never_unlock_005_glb_data ∈ {0}
+  thread_set ∈ {1}
+  lock_never_unlock_006_glb_mutex_1 ∈ {0}
+  lock_never_unlock_006_glb_mutex_2 ∈ {0}
+  lock_never_unlock_007_glb_mutex_1 ∈ {0}
+  lock_never_unlock_007_glb_mutex_2 ∈ {0}
+  lock_never_unlock_007_glb_var ∈ {0}
+  lock_never_unlock_008_glb_mutex_1 ∈ {0}
+  lock_never_unlock_008_glb_mutex_2 ∈ {0}
+  lock_never_unlock_008_glb_sptr ∈ {0}
+  lock_never_unlock_009_glb_mutex_1 ∈ {0}
+  lock_never_unlock_009_glb_mutex_2 ∈ {0}
+  lock_never_unlock_009_glb_var ∈ {0}
+  vflag_copy ∈ [--..--]
+  vflag_file ∈ [--..--]
+  double_free_function_008_gbl_ptr ∈ {0}
+  glb_1_mutex ∈ {0}
+  glb_2_mutex ∈ {0}
+  race_glb_1 ∈ {5}
+  race_glb_2 ∈ {3}
+  race_condition_002_gbl ∈ {0}
+  mutex_count ∈ {0}
+  instance1 ∈ {0}
+  mutex_count_003 ∈ {0}
+  count_mutex ∈ {0}
+  race_condition_005_glb_mutex ∈ {0}
+  race_condition_005_glb_data ∈ {0}
+  race_condition_006_glb_mutex ∈ {0}
+  race_condition_006_glb_data ∈ {0}
+  race_condition_007_glb_mutex ∈ {0}
+  race_condition_007_glb_data ∈ {0}
+  race_condition_008_glb_mutex ∈ {0}
+  race_condition_008_glb_data ∈ {1000.}
+  race_condition_009_glb_mutex_1 ∈ {0}
+  race_condition_009_glb_mutex_2 ∈ {0}
+  race_condition_009_glb_data ∈ {1000.}
+  memory_allocation_failure_005_gbl ∈ {40}
+  memory_allocation_failure_007_str_gbl ∈ {0}
+  memory_allocation_failure_010_arr_gbl ∈ {0}
+  vptr ∈ {0}
+  memory_allocation_failure_006_gbl_doubleptr ∈ {0}
+  memory_allocation_failure_011_gbl_u1 ∈ {0}
+  memory_allocation_failure_012_buf2_gbl ∈ {0}
+  arr_value[0] ∈ {1}
+           [1] ∈ {10}
+  memory_allocation_failure_015_gbl_ptr ∈ {0}
+  memory_allocation_failure_016_gbl_ptr1 ∈ {0}
+  memory_allocation_failure_016_gbl_ptr2 ∈ {0}
+  free_null_pointer_002_gbl_ptr ∈ {0}
+  free_null_pointer_010_gbl_dst ∈ {0}
+  free_null_pointer_005_gbl_ptr ∈ {0}
+  free_null_pointer_007_gbl_doubleptr ∈ {0}
+  free_null_pointer_009dst ∈ {0}
+  free_null_pointer_014_gbl_s ∈ {0}
+  func_gbl ∈ {0}
+  fptr_gbl ∈ {0}
+  fptr1_gbl ∈ {0}
+  fptr2_gbl ∈ {0}
+  func_pointer_005_doubleptr_gbl ∈ {0}
+  global_set ∈ {0}
+  func_pointer_006_doubleptr_gbl ∈ {0}
+  zero_division_004_dividend_gbl ∈ {1000}
+  zero_division_006_gbl_divisor ∈ {1}
+  zero_division_007_s_gbl ∈ {0}
+  zero_division_016_gbl_divisor ∈ {0}
+  double_release_001_glb_mutex_ ∈ {0}
+  double_release_001_glb_mutex ∈ {{ &double_release_001_glb_mutex_ }}
+  double_release_001_glb_data ∈ {0}
+  double_release_002_glb_mutex_ ∈ {0}
+  double_release_002_glb_mutex ∈ {{ &double_release_002_glb_mutex_ }}
+  double_release_002_glb_data ∈ {0}
+  double_release_003_glb_mutex_ ∈ {0}
+  double_release_003_glb_mutex ∈ {{ &double_release_003_glb_mutex_ }}
+  double_release_003_glb_data ∈ {0}
+  double_release_004_glb_mutex_ ∈ {0}
+  double_release_004_glb_mutex ∈ {{ &double_release_004_glb_mutex_ }}
+  double_release_004_glb_data ∈ {0}
+  double_release_005_glb_mutex_ ∈ {0}
+  double_release_005_glb_mutex ∈ {{ &double_release_005_glb_mutex_ }}
+  double_release_005_glb_data ∈ {0}
+  double_release_006_glb_mutex_ ∈ {0}
+  double_release_006_glb_mutex ∈ {{ &double_release_006_glb_mutex_ }}
+  double_release_006_glb_data ∈ {0}
+  unlock_without_lock_001_glb_mutex ∈ {0}
+  unlock_without_lock_001_glb_data ∈ {0}
+  unlock_without_lock_002_glb_mutex ∈ {0}
+  unlock_without_lock_002_glb_data ∈ {0}
+  unlock_without_lock_002_var ∈ {10}
+  unlock_without_lock_003_glb_mutex ∈ {0}
+  unlock_without_lock_003_glb_data ∈ {1000.}
+  unlock_without_lock_004_glb_mutex_1 ∈ {0}
+  unlock_without_lock_004_glb_mutex_2 ∈ {0}
+  unlock_without_lock_004_glb_var ∈ {0}
+  unlock_without_lock_005_glb_mutex ∈ {0}
+  unlock_without_lock_005_glb_data ∈ {0}
+  unlock_without_lock_005_thread_set ∈ {1}
+  unlock_without_lock_006_glb_mutex_1 ∈ {0}
+  unlock_without_lock_006_glb_mutex_2 ∈ {0}
+  unlock_without_lock_006_glb_buf[0..4] ∈ {66}
+  unlock_without_lock_007_glb_mutex_1 ∈ {0}
+  unlock_without_lock_007_glb_mutex_2 ∈ {0}
+  unlock_without_lock_007_glb_var ∈ {0}
+  unlock_without_lock_008_glb_mutex_1 ∈ {0}
+  unlock_without_lock_008_glb_mutex_2 ∈ {0}
+  unlock_without_lock_008_glb_var ∈ {0}
+  free_nondynamic_allocated_memory_003_gbl_ptr ∈ {0}
+  free_nondynamic_allocated_memory_str ∈ {0}
+  free_nondynamic_allocated_memory_015_gbl_ptr ∈ {0}
+  free_nondynamic_allocated_memory_016_gbl_ptr ∈ {0}
+  free_nondynamic_allocated_memory_016_gbl_var ∈ {0}
+  littlemem_st_004_s_001_gbl_str ∈ {0}
+  littlemem_st_005_s_001_gbl_str ∈ {0}
+  littlemem_st_005_gbl_buf[0..11] ∈ {0}
+  littlemem_st_006_s_001_gbl_str ∈ {0}
+  littlemem_st_006_gbl_buf[0..11] ∈ {0}
+  littlemem_st_007_s_001_gbl_str ∈ {0}
+  littlemem_st_007_gbl_buf[0..11] ∈ {0}
+  littlemem_st_008_s_001_gbl_str ∈ {0}
+  littlemem_st_008_gbl_buf[0..11] ∈ {0}
+  littlemem_st_009_s_001_gbl_str ∈ {0}
+  littlemem_st_009_gbl_buf[0..11] ∈ {0}
+  littlemem_st_010_s_001_gbl_str ∈ {0}
+  littlemem_st_010_gbl_buf[0..11] ∈ {0}
+  littlemem_st_011_s_001_gbl_str ∈ {0}
+  littlemem_st_011_gbl_buf[0..11] ∈ {0}
+  memory_leak_0016_gbl_ptr ∈ {0}
+  memory_leak_0017_gbl_doubleptr ∈ {0}
+  memory_leak_0018dst ∈ {0}
+  double_lock_001_glb_mutex ∈ {0}
+  double_lock_001_glb_data ∈ {0}
+  double_lock_002_glb_mutex ∈ {0}
+  double_lock_002_glb_data ∈ {0}
+  double_lock_003_glb_mutex ∈ {0}
+  double_lock_003_glb_data ∈ {0}
+  double_lock_004_glb_mutex1 ∈ {0}
+  null_pointer_008_glb_001[0..4] ∈ {0}
+  buf[0..4] ∈ {0}
+  null_pointer_014_gbl ∈ {10}
+  null_pointer_015_gbl_ptr ∈ {0}
+  null_pointer_016_gbl_doubleptr ∈ {0}
+  null_pointer_017dst ∈ {0}
+  st_cross_thread_access_001_glb_mutex ∈ {0}
+  st_cross_thread_access_001_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_001_glb_data ∈ {0}
+  st_cross_thread_access_001_glb_ptr ∈ {0}
+  st_cross_thread_access_002_glb_mutex ∈ {0}
+  st_cross_thread_access_002_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_002_glb_data ∈ {0}
+  st_cross_thread_access_002_var ∈ {10}
+  arr1[0] ∈ {1}
+      [1] ∈ {2}
+      [2] ∈ {3}
+      [3] ∈ {4}
+      [4] ∈ {5}
+  st_cross_thread_access_002_glb_ptr ∈ {{ &arr1[0] }}
+  st_cross_thread_access_003_glb_mutex ∈ {0}
+  st_cross_thread_access_003_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_003_glb_data ∈ {1000.}
+  st_cross_thread_access_003_glb_data1 ∈ {10.}
+  st_cross_thread_access_003_glb_ptr ∈
+                                    {{ &st_cross_thread_access_003_glb_data1 }}
+  st_cross_thread_access_004_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_004_glb_mutex_2 ∈ {0}
+  buf1 ∈ {{ "String1" }}
+  buf2 ∈ {{ "String2" }}
+  pbuf[0] ∈ {{ &buf1 }}
+      [1] ∈ {{ &buf2 }}
+  st_cross_thread_access_005_glb_mutex ∈ {0}
+  st_cross_thread_access_005_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_005_glb_data ∈ {0}
+  st_cross_thread_access_005_thread_set ∈ {0}
+  arr[0][0] ∈ {1}
+     [0][1] ∈ {2}
+     [0][2] ∈ {3}
+     [0][3] ∈ {4}
+     [1][0] ∈ {11}
+     [1][1] ∈ {22}
+     [1][2] ∈ {33}
+     [1][3] ∈ {44}
+     [2][0] ∈ {33}
+     [2][1] ∈ {44}
+     [2][2] ∈ {55}
+     [2][3] ∈ {66}
+     [3][0] ∈ {55}
+     [3][1] ∈ {66}
+     [3][2] ∈ {77}
+     [3][3] ∈ {88}
+  p ∈ {{ &arr[0] }}
+  st_cross_thread_access_006_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_006_glb_mutex_2 ∈ {0}
+  s1.a ∈ {10}
+    .b ∈ {20}
+  sptr ∈ {{ &s1 }}
+  staticflag1 ∈ {1}
+  staticflag ∈ {10}
+  sink_0 ∈ {0}
+  sink_1 ∈ {0}
+  buf_0[0..4] ∈ {0}
+  buf_1[0..4] ∈ {0}
+  UNINIT_VAR_004_TRUE ∈ {1}
+  UNINIT_VAR_004_FALSE ∈ {0}
+  ret ∈ {10}
+  flag ∈ {1}
+  data ∈ {0}
+  unused_var_005_glb_a ∈ {1}
+  unused_var_005_glb_b ∈ {2}
+  unused_var_005_glb_unuse ∈ {0}
+  a ∈ {1}
+  b ∈ {2}
+  unuse ∈ {0}
+  static_var ∈ {20}
+  staticflag_0 ∈ {10}
+  a_0 ∈ {97}
+  min ∈ {0}
+  max ∈ {5}
+  u ∈ {0}
+  arr_0[0] ∈ {10.}
+       [1] ∈ {20.}
+       [2] ∈ {30.}
+  a_1[0][0] ∈ {1.}
+     [0][1] ∈ {2.}
+     [0][2] ∈ {3.}
+     [1][0] ∈ {11.1000003815}
+     [1][1] ∈ {22.1000003815}
+     [1][2] ∈ {33.0999984741}
+  zero_division_004_divisor_gbl ∈ {11}
+  function_return_value_unchecked_010_var ∈ {10}
+  a_2 ∈ {97}
+  sink_2 ∈ {0}
+  a_3 ∈ {97}
+  S___fc_stdin[0..1] ∈ [--..--]
+  S___fc_stdout[0..1] ∈ [--..--]
+  S_optarg[0..1] ∈ [--..--]
+main.c:19:[value] warning: out of bounds read. assert \valid_read(argv + 1);
+main.c:22:[value] warning: out of bounds read. assert \valid_read(argv + 1);
+[value] using specification for function atoi
+[value] using specification for function printf_va_32
+[value] using specification for function rand
+bit_shift.c:121:[value] warning: signed overflow. assert a_4 << shift ≤ 2147483647;
+buffer_overrun_dynamic.c:20:[value] allocating variable __calloc_dynamic_buffer_overrun_001_l20
+buffer_overrun_dynamic.c:24:[value] entering loop for the first time
+buffer_overrun_dynamic.c:38:[value] allocating variable __calloc_dynamic_buffer_overrun_002_l38
+buffer_overrun_dynamic.c:52:[value] allocating variable __calloc_dynamic_buffer_overrun_003_l52
+buffer_overrun_dynamic.c:57:[value] entering loop for the first time
+[value] using specification for function printf_va_9
+buffer_overrun_dynamic.c:73:[value] allocating variable __calloc_dynamic_buffer_overrun_004_l73
+buffer_overrun_dynamic.c:87:[value] allocating variable __calloc_dynamic_buffer_overrun_005_l87
+buffer_overrun_dynamic.c:91:[value] entering loop for the first time
+buffer_overrun_dynamic.c:105:[value] allocating variable __calloc_dynamic_buffer_overrun_006_l105
+buffer_overrun_dynamic.c:109:[value] entering loop for the first time
+buffer_overrun_dynamic.c:123:[value] allocating variable __calloc_dynamic_buffer_overrun_007_l123
+buffer_overrun_dynamic.c:127:[value] entering loop for the first time
+buffer_overrun_dynamic.c:141:[value] allocating variable __calloc_dynamic_buffer_overrun_008_l141
+buffer_overrun_dynamic.c:144:[value] entering loop for the first time
+buffer_overrun_dynamic.c:145:[value] allocating variable __calloc_dynamic_buffer_overrun_008_l145
+buffer_overrun_dynamic.c:145:[value] warning: out of bounds write. assert \valid(buf_2 + i);
+buffer_overrun_dynamic.c:147:[value] entering loop for the first time
+buffer_overrun_dynamic.c:149:[value] entering loop for the first time
+buffer_overrun_dynamic.c:151:[value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_overrun_dynamic.c:151:[value] warning: out of bounds write. assert \valid(*(buf_2 + i) + j);
+buffer_overrun_dynamic.c:153:[value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_overrun_dynamic.c:151:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(buf_2 + i);
+buffer_overrun_dynamic.c:153:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(buf_2 + i);
+buffer_overrun_dynamic.c:164:[value] allocating variable __calloc_dynamic_buffer_overrun_009_l164
+buffer_overrun_dynamic.c:165:[value] allocating variable __calloc_dynamic_buffer_overrun_009_l165
+buffer_overrun_dynamic.c:166:[value] allocating variable __calloc_dynamic_buffer_overrun_009_l166
+buffer_overrun_dynamic.c:167:[value] allocating variable __calloc_dynamic_buffer_overrun_009_l167
+buffer_overrun_dynamic.c:168:[value] allocating variable __calloc_dynamic_buffer_overrun_009_l168
+buffer_overrun_dynamic.c:171:[value] entering loop for the first time
+buffer_overrun_dynamic.c:173:[value] warning: out of bounds write. assert \valid(*(pbuf_0[i]) + j);
+buffer_overrun_dynamic.c:194:[value] allocating variable __calloc_dynamic_buffer_overrun_010_l194
+buffer_overrun_dynamic.c:214:[value] allocating variable __calloc_dynamic_buffer_overrun_011_l214
+buffer_overrun_dynamic.c:228:[value] allocating variable __calloc_dynamic_buffer_overrun_012_l228
+buffer_overrun_dynamic.c:243:[value] allocating variable __calloc_dynamic_buffer_overrun_013_l243
+buffer_overrun_dynamic.c:258:[value] allocating variable __calloc_dynamic_buffer_overrun_014_l258
+buffer_overrun_dynamic.c:273:[value] allocating variable __calloc_dynamic_buffer_overrun_015_l273
+buffer_overrun_dynamic.c:294:[value] allocating variable __calloc_dynamic_buffer_overrun_016_l294
+buffer_overrun_dynamic.c:308:[value] allocating variable __calloc_dynamic_buffer_overrun_017_func_001_l308
+buffer_overrun_dynamic.c:327:[value] allocating variable __calloc_dynamic_buffer_overrun_018_l327
+buffer_overrun_dynamic.c:343:[value] allocating variable __calloc_dynamic_buffer_overrun_019_l343
+buffer_overrun_dynamic.c:360:[value] allocating variable __calloc_dynamic_buffer_overrun_020_l360
+buffer_overrun_dynamic.c:379:[value] allocating variable __calloc_dynamic_buffer_overrun_021_l379
+buffer_overrun_dynamic.c:397:[value] allocating variable __calloc_dynamic_buffer_overrun_022_l397
+buffer_overrun_dynamic.c:413:[value] allocating variable __calloc_dynamic_buffer_overrun_023_l413
+buffer_overrun_dynamic.c:419:[value] entering loop for the first time
+buffer_overrun_dynamic.c:421:[value] warning: out of bounds write. assert \valid(p_0);
+buffer_overrun_dynamic.c:439:[value] allocating variable __calloc_dynamic_buffer_overrun_024_l439
+buffer_overrun_dynamic.c:434:[value] warning: out of bounds write. assert \valid(buf_2 + 4);
+buffer_overrun_dynamic.c:455:[value] allocating variable __calloc_dynamic_buffer_overrun_025_l455
+buffer_overrun_dynamic.c:459:[value] entering loop for the first time
+buffer_overrun_dynamic.c:474:[value] allocating variable __calloc_dynamic_buffer_overrun_026_l474
+buffer_overrun_dynamic.c:479:[value] warning: out of bounds write. assert \valid(p_0 + 0);
+buffer_overrun_dynamic.c:490:[value] allocating variable __calloc_dynamic_buffer_overrun_027_l490
+buffer_overrun_dynamic.c:495:[value] warning: out of bounds write. assert \valid(p_0 + 1);
+buffer_overrun_dynamic.c:506:[value] allocating variable __calloc_dynamic_buffer_overrun_028_l506
+buffer_overrun_dynamic.c:507:[value] allocating variable __calloc_dynamic_buffer_overrun_028_l507
+buffer_overrun_dynamic.c:509:[value] entering loop for the first time
+buffer_overrun_dynamic.c:511:[value] warning: out of bounds write. assert \valid(buf1_0 + i);
+buffer_overrun_dynamic.c:513:[value] warning: out of bounds read. assert \valid_read(buf1_0 + 2);
+buffer_overrun_dynamic.c:513:[value] warning: out of bounds write. assert \valid(buf2_0 + *(buf1_0 + 2));
+buffer_overrun_dynamic.c:526:[value] entering loop for the first time
+buffer_overrun_dynamic.c:528:[value] allocating variable __malloc_dynamic_buffer_overrun_029_l528
+buffer_overrun_dynamic.c:546:[value] allocating variable __malloc_dynamic_buffer_overrun_030_l546
+buffer_overrun_dynamic.c:548:[value] entering loop for the first time
+buffer_overrun_dynamic.c:550:[value] allocating variable __malloc_dynamic_buffer_overrun_030_l550
+buffer_overrun_dynamic.c:550:[value] warning: out of bounds write. assert \valid(doubleptr + i);
+buffer_overrun_dynamic.c:554:[value] entering loop for the first time
+buffer_overrun_dynamic.c:556:[value] entering loop for the first time
+buffer_overrun_dynamic.c:558:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_overrun_dynamic.c:558:[value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_overrun_dynamic.c:558:[value] warning: out of bounds write. assert \valid(*(doubleptr + i) + j);
+buffer_overrun_dynamic.c:560:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_overrun_dynamic.c:560:[value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_overrun_dynamic.c:558:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_overrun_dynamic.c:560:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_overrun_dynamic.c:572:[value] allocating variable __calloc_dynamic_buffer_overrun_031_l572
+buffer_overrun_dynamic.c:577:[value] entering loop for the first time
+[value] using specification for function memcpy
+buffer_overrun_dynamic.c:582:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_overrun_dynamic.c:600:[value] allocating variable __malloc_dynamic_buffer_overrun_032_l600
+buffer_overrun_dynamic.c:605:[value] entering loop for the first time
+buffer_underrun_dynamic.c:21:[value] allocating variable __calloc_dynamic_buffer_underrun_001_l21
+buffer_underrun_dynamic.c:25:[value] entering loop for the first time
+buffer_underrun_dynamic.c:39:[value] allocating variable __calloc_dynamic_buffer_underrun_002_l39
+buffer_underrun_dynamic.c:53:[value] allocating variable __calloc_dynamic_buffer_underrun_003_l53
+buffer_underrun_dynamic.c:58:[value] entering loop for the first time
+[value] using specification for function printf_va_29
+buffer_underrun_dynamic.c:74:[value] allocating variable __calloc_dynamic_buffer_underrun_004_l74
+buffer_underrun_dynamic.c:88:[value] allocating variable __calloc_dynamic_buffer_underrun_005_l88
+buffer_underrun_dynamic.c:92:[value] entering loop for the first time
+buffer_underrun_dynamic.c:106:[value] allocating variable __calloc_dynamic_buffer_underrun_006_l106
+buffer_underrun_dynamic.c:110:[value] entering loop for the first time
+buffer_underrun_dynamic.c:124:[value] allocating variable __calloc_dynamic_buffer_underrun_007_l124
+buffer_underrun_dynamic.c:128:[value] entering loop for the first time
+buffer_underrun_dynamic.c:142:[value] allocating variable __calloc_dynamic_buffer_underrun_008_l142
+buffer_underrun_dynamic.c:145:[value] entering loop for the first time
+buffer_underrun_dynamic.c:146:[value] allocating variable __calloc_dynamic_buffer_underrun_008_l146
+buffer_underrun_dynamic.c:146:[value] warning: out of bounds write. assert \valid(buf_2 + i);
+buffer_underrun_dynamic.c:148:[value] entering loop for the first time
+buffer_underrun_dynamic.c:150:[value] entering loop for the first time
+buffer_underrun_dynamic.c:152:[value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_underrun_dynamic.c:152:[value] warning: out of bounds write. assert \valid(*(buf_2 + i) + j);
+buffer_underrun_dynamic.c:154:[value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_underrun_dynamic.c:152:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(buf_2 + i);
+buffer_underrun_dynamic.c:154:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(buf_2 + i);
+buffer_underrun_dynamic.c:165:[value] allocating variable __calloc_dynamic_buffer_underrun_009_l165
+buffer_underrun_dynamic.c:166:[value] allocating variable __calloc_dynamic_buffer_underrun_009_l166
+buffer_underrun_dynamic.c:167:[value] allocating variable __calloc_dynamic_buffer_underrun_009_l167
+buffer_underrun_dynamic.c:168:[value] allocating variable __calloc_dynamic_buffer_underrun_009_l168
+buffer_underrun_dynamic.c:169:[value] allocating variable __calloc_dynamic_buffer_underrun_009_l169
+buffer_underrun_dynamic.c:172:[value] entering loop for the first time
+buffer_underrun_dynamic.c:174:[value] warning: out of bounds write. assert \valid(*(pbuf_0[i]) + j);
+buffer_underrun_dynamic.c:195:[value] allocating variable __calloc_dynamic_buffer_underrun_010_l195
+buffer_underrun_dynamic.c:215:[value] allocating variable __calloc_dynamic_buffer_underrun_011_l215
+buffer_underrun_dynamic.c:229:[value] allocating variable __calloc_dynamic_buffer_underrun_012_l229
+buffer_underrun_dynamic.c:244:[value] allocating variable __calloc_dynamic_buffer_underrun_013_l244
+buffer_underrun_dynamic.c:260:[value] allocating variable __calloc_dynamic_buffer_underrun_014_l260
+buffer_underrun_dynamic.c:275:[value] allocating variable __calloc_dynamic_buffer_underrun_015_l275
+buffer_underrun_dynamic.c:296:[value] allocating variable __calloc_dynamic_buffer_underrun_016_l296
+buffer_underrun_dynamic.c:310:[value] allocating variable __calloc_dynamic_buffer_underrun_017_func_001_l310
+buffer_underrun_dynamic.c:329:[value] allocating variable __calloc_dynamic_buffer_underrun_018_l329
+buffer_underrun_dynamic.c:345:[value] allocating variable __calloc_dynamic_buffer_underrun_019_l345
+buffer_underrun_dynamic.c:362:[value] allocating variable __calloc_dynamic_buffer_underrun_020_l362
+buffer_underrun_dynamic.c:381:[value] allocating variable __calloc_dynamic_buffer_underrun_021_l381
+buffer_underrun_dynamic.c:399:[value] allocating variable __calloc_dynamic_buffer_underrun_022_l399
+buffer_underrun_dynamic.c:415:[value] allocating variable __calloc_dynamic_buffer_underrun_023_l415
+buffer_underrun_dynamic.c:421:[value] entering loop for the first time
+buffer_underrun_dynamic.c:440:[value] allocating variable __calloc_dynamic_buffer_underrun_024_l440
+buffer_underrun_dynamic.c:455:[value] allocating variable __calloc_dynamic_buffer_underrun_025_l455
+buffer_underrun_dynamic.c:460:[value] entering loop for the first time
+buffer_underrun_dynamic.c:475:[value] allocating variable __calloc_dynamic_buffer_underrun_026_l475
+buffer_underrun_dynamic.c:491:[value] allocating variable __calloc_dynamic_buffer_underrun_027_l491
+buffer_underrun_dynamic.c:507:[value] allocating variable __calloc_dynamic_buffer_underrun_028_l507
+buffer_underrun_dynamic.c:508:[value] allocating variable __calloc_dynamic_buffer_underrun_028_l508
+buffer_underrun_dynamic.c:511:[value] entering loop for the first time
+buffer_underrun_dynamic.c:513:[value] warning: out of bounds write. assert \valid(buf1_0 + i);
+buffer_underrun_dynamic.c:515:[value] warning: out of bounds read. assert \valid_read(buf1_0 + 0);
+buffer_underrun_dynamic.c:515:[value] warning: out of bounds write. assert \valid(buf2_0 - *(buf1_0 + 0));
+buffer_underrun_dynamic.c:524:[value] entering loop for the first time
+buffer_underrun_dynamic.c:526:[value] allocating variable __malloc_dynamic_buffer_underrun_029_l526
+buffer_underrun_dynamic.c:544:[value] allocating variable __malloc_dynamic_buffer_underrun_030_l544
+buffer_underrun_dynamic.c:546:[value] entering loop for the first time
+buffer_underrun_dynamic.c:548:[value] allocating variable __calloc_dynamic_buffer_underrun_030_l548
+buffer_underrun_dynamic.c:548:[value] warning: out of bounds write. assert \valid(doubleptr + i);
+buffer_underrun_dynamic.c:552:[value] entering loop for the first time
+buffer_underrun_dynamic.c:554:[value] entering loop for the first time
+buffer_underrun_dynamic.c:556:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c:556:[value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_underrun_dynamic.c:556:[value] warning: out of bounds write. assert \valid(*(doubleptr + i) + j);
+buffer_underrun_dynamic.c:558:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c:558:[value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_underrun_dynamic.c:556:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_underrun_dynamic.c:558:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_underrun_dynamic.c:570:[value] allocating variable __calloc_dynamic_buffer_underrun_031_l570
+buffer_underrun_dynamic.c:575:[value] entering loop for the first time
+buffer_underrun_dynamic.c:579:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c:597:[value] allocating variable __calloc_dynamic_buffer_underrun_032_l597
+buffer_underrun_dynamic.c:602:[value] entering loop for the first time
+buffer_underrun_dynamic.c:614:[value] allocating variable __calloc_dynamic_buffer_underrun_033_l614
+buffer_underrun_dynamic.c:620:[value] entering loop for the first time
+[value] using specification for function isspace
+buffer_underrun_dynamic.c:643:[value] allocating variable __malloc_dynamic_buffer_underrun_034_l643
+buffer_underrun_dynamic.c:647:[value] entering loop for the first time
+[value] using specification for function strncpy
+buffer_underrun_dynamic.c:654:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c:667:[value] allocating variable __malloc_dynamic_buffer_underrun_035_l667
+buffer_underrun_dynamic.c:669:[value] entering loop for the first time
+buffer_underrun_dynamic.c:670:[value] allocating variable __malloc_dynamic_buffer_underrun_035_l670
+buffer_underrun_dynamic.c:670:[value] warning: out of bounds write. assert \valid(doubleptr + i);
+buffer_underrun_dynamic.c:675:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + loc1);
+buffer_underrun_dynamic.c:675:[value] warning: out of bounds read. assert \valid_read(doubleptr + loc1);
+buffer_underrun_dynamic.c:675:[value] warning: out of bounds write. assert \valid(*(doubleptr + loc1) + loc2);
+buffer_underrun_dynamic.c:680:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + 0);
+buffer_underrun_dynamic.c:680:[value] warning: out of bounds write. assert \valid(*(doubleptr + 0) + loc2);
+buffer_underrun_dynamic.c:681:[value] entering loop for the first time
+buffer_underrun_dynamic.c:683:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_underrun_dynamic.c:683:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c:697:[value] allocating variable __malloc_dynamic_buffer_underrun_036_l697
+buffer_underrun_dynamic.c:700:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c:714:[value] allocating variable __malloc_dynamic_buffer_underrun_037_l714
+buffer_underrun_dynamic.c:718:[value] entering loop for the first time
+buffer_underrun_dynamic.c:720:[value] allocating variable __malloc_dynamic_buffer_underrun_037_l720
+buffer_underrun_dynamic.c:721:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c:721:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_underrun_dynamic.c:723:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + 0);
+buffer_underrun_dynamic.c:723:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + 0);
+buffer_underrun_dynamic.c:723:[value] warning: out of bounds write. assert \valid(*(doubleptr + 0) + 0);
+buffer_underrun_dynamic.c:724:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c:724:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+buffer_underrun_dynamic.c:744:[value] allocating variable __malloc_dynamic_buffer_underrun_038_l744
+buffer_underrun_dynamic.c:769:[value] allocating variable __malloc_dynamic_buffer_underrun_039_l769
+buffer_underrun_dynamic.c:775:[value] entering loop for the first time
+[value] using specification for function memset
+buffer_underrun_dynamic.c:777:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c:779:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+conflicting_cond.c:120:[value] entering loop for the first time
+conflicting_cond.c:122:[value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c:139:[value] entering loop for the first time
+conflicting_cond.c:141:[value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c:159:[value] entering loop for the first time
+conflicting_cond.c:161:[value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c:179:[value] entering loop for the first time
+conflicting_cond.c:181:[value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c:197:[value] entering loop for the first time
+data_lost.c:86:[value] warning: overflow in conversion from floating-point to integer.
+                 assert ret_0 < 2147483648;
+data_overflow.c:337:[value] warning: overflow in conversion from floating-point to integer.
+                 assert ret_0 < 2147483648;
+data_overflow.c:353:[value] warning: overflow in conversion from floating-point to integer.
+                 assert ret_0 < 2147483648;
+dead_code.c:130:[value] entering loop for the first time
+dead_code.c:147:[value] entering loop for the first time
+dead_code.c:165:[value] entering loop for the first time
+dead_code.c:187:[value] entering loop for the first time
+dead_code.c:204:[value] entering loop for the first time
+dead_code.c:227:[value] entering loop for the first time
+dead_code.c:245:[value] entering loop for the first time
+dead_lock.c:86:[kernel] warning: Neither code nor specification for function pthread_mutex_init, generating default assigns from the prototype
+[value] using specification for function pthread_mutex_init
+dead_lock.c:89:[kernel] warning: Neither code nor specification for function pthread_create, generating default assigns from the prototype
+[value] using specification for function pthread_create
+dead_lock.c:89:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:89:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:90:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:90:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:92:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c:92:[kernel] warning: Neither code nor specification for function pthread_join, generating default assigns from the prototype
+[value] using specification for function pthread_join
+dead_lock.c:93:[value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c:95:[kernel] warning: Neither code nor specification for function pthread_mutex_destroy, generating default assigns from the prototype
+[value] using specification for function pthread_mutex_destroy
+dead_lock.c:223:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:223:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:224:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:224:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:225:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:225:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:227:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c:228:[value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c:229:[value] warning: accessing uninitialized left-value. assert \initialized(&tid3);
+dead_lock.c:393:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:393:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:394:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:394:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:396:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c:397:[value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c:550:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:550:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:551:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:551:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:553:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c:554:[value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c:685:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:685:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:686:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c:686:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+dead_lock.c:688:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c:689:[value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+deletion_of_data_structure_sentinel.c:23:[value] allocating variable __calloc_deletion_of_data_structure_sentinel_001_l23
+deletion_of_data_structure_sentinel.c:24:[value] entering loop for the first time
+deletion_of_data_structure_sentinel.c:26:[value] warning: out of bounds write. assert \valid(foo + counter);
+deletion_of_data_structure_sentinel.c:28:[value] warning: out of bounds write. assert \valid(foo + counter);
+deletion_of_data_structure_sentinel.c:42:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+deletion_of_data_structure_sentinel.c:57:[value] entering loop for the first time
+deletion_of_data_structure_sentinel.c:63:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+double_free.c:20:[value] allocating variable __malloc_double_free_001_l20
+double_free.c:32:[value] allocating variable __malloc_double_free_002_l32
+double_free.c:35:[value] entering loop for the first time
+double_free.c:37:[value] warning: out of bounds write. assert \valid(ptr + i);
+double_free.c:51:[value] allocating variable __malloc_double_free_003_l51
+double_free.c:54:[value] entering loop for the first time
+double_free.c:56:[value] warning: out of bounds write. assert \valid(ptr + i);
+double_free.c:70:[value] allocating variable __malloc_double_free_004_l70
+double_free.c:72:[value] entering loop for the first time
+double_free.c:74:[value] warning: out of bounds write. assert \valid(ptr + i);
+double_free.c:87:[value] allocating variable __malloc_double_free_005_l87
+double_free.c:100:[value] allocating variable __malloc_double_free_006_l100
+double_free.c:114:[value] allocating variable __malloc_double_free_007_l114
+double_free.c:135:[value] allocating variable __malloc_double_free_008_l135
+double_free.c:148:[value] allocating variable __malloc_double_free_009_l148
+double_free.c:151:[value] entering loop for the first time
+double_free.c:167:[value] allocating variable __malloc_double_free_010_l167
+double_free.c:170:[value] entering loop for the first time
+double_free.c:172:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&ptr);
+double_free.c:185:[value] allocating variable __malloc_double_free_011_l185
+double_free.c:188:[value] entering loop for the first time
+double_free.c:191:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&ptr);
+double_free.c:204:[value] allocating variable __malloc_double_free_012_l204
+double_free.c:207:[value] entering loop for the first time
+double_free.c:209:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&ptr);
+double_lock.c:58:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c:58:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_lock.c:59:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_lock.c:108:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c:108:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_lock.c:109:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_lock.c:167:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c:167:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_lock.c:168:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_lock.c:228:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c:228:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_lock.c:228:[value] warning: signed overflow.
+                 assert -2147483648 ≤ sink + tmp;
+                 (tmp from
+                 pthread_create(& th1, (pthread_attr_t const *)0, & Thread3, (void *)t1))
+double_lock.c:228:[value] warning: signed overflow.
+                 assert sink + tmp ≤ 2147483647;
+                 (tmp from
+                 pthread_create(& th1, (pthread_attr_t const *)0, & Thread3, (void *)t1))
+double_lock.c:229:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c:229:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_lock.c:229:[value] warning: signed overflow.
+                 assert -2147483648 ≤ sink + tmp_0;
+                 (tmp_0 from
+                 pthread_create(& th2, (pthread_attr_t const *)0, & Thread4, (void *)t2))
+double_lock.c:229:[value] warning: signed overflow.
+                 assert sink + tmp_0 ≤ 2147483647;
+                 (tmp_0 from
+                 pthread_create(& th2, (pthread_attr_t const *)0, & Thread4, (void *)t2))
+double_release.c:43:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:43:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:44:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c:95:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:95:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:96:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:96:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:97:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c:98:[value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+double_release.c:144:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:144:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:145:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c:191:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:191:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:192:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c:240:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:240:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:241:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c:282:[value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c:282:[value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+                 Ignoring.
+double_release.c:283:[value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+endless_loop.c:23:[value] entering loop for the first time
+endless_loop.c:25:[value] warning: signed overflow. assert a_4 + 1 ≤ 2147483647;
+endless_loop.c:44:[value] entering loop for the first time
+endless_loop.c:46:[value] warning: signed overflow. assert a_4 + 1 ≤ 2147483647;
+endless_loop.c:61:[value] entering loop for the first time
+endless_loop.c:82:[value] entering loop for the first time
+endless_loop.c:107:[value] entering loop for the first time
+endless_loop.c:127:[value] entering loop for the first time
+endless_loop.c:153:[value] entering loop for the first time
+endless_loop.c:174:[value] entering loop for the first time
+endless_loop.c:194:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:47:[value] allocating variable __malloc_free_nondynamic_allocated_memory_003_l47
+free_nondynamically_allocated_memory.c:61:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:72:[value] allocating variable __calloc_free_nondynamic_allocated_memory_005_l72
+free_nondynamically_allocated_memory.c:73:[value] allocating variable __calloc_free_nondynamic_allocated_memory_005_l73
+free_nondynamically_allocated_memory.c:80:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:82:[value] warning: out of bounds write. assert \valid(*(pbuf_0[i]) + j);
+free_nondynamically_allocated_memory.c:95:[value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l95
+free_nondynamically_allocated_memory.c:96:[value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l96
+free_nondynamically_allocated_memory.c:97:[value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l97
+free_nondynamically_allocated_memory.c:98:[value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l98
+free_nondynamically_allocated_memory.c:114:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:127:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:140:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:152:[value] entering loop for the first time
+[value] using specification for function printf_va_45
+free_nondynamically_allocated_memory.c:168:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:184:[value] entering loop for the first time
+free_nondynamically_allocated_memory.c:207:[value] allocating variable __malloc_free_nondynamic_allocated_memory_013_l207
+free_nondynamically_allocated_memory.c:209:[value] allocating variable __malloc_free_nondynamic_allocated_memory_013_l209
+free_nondynamically_allocated_memory.c:209:[value] warning: out of bounds write. assert \valid(&new_struct->next);
+free_nondynamically_allocated_memory.c:228:[value] allocating variable __malloc_free_nondynamic_allocated_memory_014_l228
+free_nondynamically_allocated_memory.c:244:[value] allocating variable __malloc_free_nondynamic_allocated_memory_015_l244
+free_nondynamically_allocated_memory.c:256:[value] allocating variable __malloc_free_nondynamic_allocated_memory_016_func_001_l256
+free_null_pointer.c:23:[value] allocating variable __malloc_free_null_pointer_001_l23
+[value] using specification for function strcpy
+free_null_pointer.c:26:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c:41:[value] allocating variable __calloc_free_null_pointer_002_l41
+free_null_pointer.c:59:[value] entering loop for the first time
+free_null_pointer.c:63:[value] allocating variable __calloc_free_null_pointer_003_l63
+free_null_pointer.c:79:[value] allocating variable __malloc_free_null_pointer_004_l79
+free_null_pointer.c:82:[value] entering loop for the first time
+free_null_pointer.c:84:[value] allocating variable __malloc_free_null_pointer_004_l84
+free_null_pointer.c:84:[value] warning: out of bounds write. assert \valid(fptr + i);
+free_null_pointer.c:89:[value] entering loop for the first time
+free_null_pointer.c:91:[value] entering loop for the first time
+free_null_pointer.c:93:[value] warning: accessing uninitialized left-value. assert \initialized(fptr + i);
+free_null_pointer.c:93:[value] warning: out of bounds write. assert \valid(*(fptr + i) + j);
+free_null_pointer.c:95:[value] warning: accessing uninitialized left-value. assert \initialized(fptr + i);
+free_null_pointer.c:93:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(fptr + i);
+free_null_pointer.c:95:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(fptr + i);
+free_null_pointer.c:112:[value] allocating variable __malloc_free_null_pointer_005_func_001_l112
+FRAMAC_SHARE/libc/string.h:222:[value] warning: function strcpy: precondition 'room_string' got status unknown.
+free_null_pointer.c:119:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c:148:[value] allocating variable __calloc_free_null_pointer_006_l148
+free_null_pointer.c:152:[value] entering loop for the first time
+free_null_pointer.c:154:[value] allocating variable __malloc_free_null_pointer_006_l154
+free_null_pointer.c:154:[value] warning: out of bounds write. assert \valid(&(s_0 + i)->buf);
+free_null_pointer.c:156:[value] warning: out of bounds read. assert \valid_read(&(s_0 + 4)->buf);
+free_null_pointer.c:156:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c:160:[value] entering loop for the first time
+free_null_pointer.c:161:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&(s_0 + i)->buf);
+free_null_pointer.c:183:[value] allocating variable __malloc_free_null_pointer_007_func_002_l183
+free_null_pointer.c:185:[value] entering loop for the first time
+free_null_pointer.c:187:[value] allocating variable __malloc_free_null_pointer_007_func_002_l187
+free_null_pointer.c:187:[value] warning: out of bounds write. assert \valid(free_null_pointer_007_gbl_doubleptr + i);
+free_null_pointer.c:189:[value] entering loop for the first time
+free_null_pointer.c:191:[value] entering loop for the first time
+free_null_pointer.c:193:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(free_null_pointer_007_gbl_doubleptr + i);
+free_null_pointer.c:193:[value] warning: out of bounds read.
+                 assert \valid_read(free_null_pointer_007_gbl_doubleptr + i);
+free_null_pointer.c:193:[value] warning: out of bounds write.
+                 assert \valid(*(free_null_pointer_007_gbl_doubleptr + i) + j);
+free_null_pointer.c:239:[value] allocating variable __malloc_free_null_pointer_008_func_001_l239
+free_null_pointer.c:249:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c:266:[value] entering loop for the first time
+free_null_pointer.c:268:[value] allocating variable __malloc_free_null_pointer_009_func_001_l268
+free_null_pointer.c:269:[value] entering loop for the first time
+free_null_pointer.c:271:[value] allocating variable __malloc_free_null_pointer_009_func_001_l271
+free_null_pointer.c:271:[value] warning: out of bounds write. assert \valid(free_null_pointer_009dst + i);
+free_null_pointer.c:282:[value] entering loop for the first time
+free_null_pointer.c:284:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(free_null_pointer_009dst + i);
+free_null_pointer.c:284:[value] warning: out of bounds read. assert \valid_read(free_null_pointer_009dst + i);
+free_null_pointer.c:284:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c:286:[value] entering loop for the first time
+free_null_pointer.c:288:[value] entering loop for the first time
+free_null_pointer.c:290:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(free_null_pointer_009dst + i);
+free_null_pointer.c:290:[value] warning: out of bounds read. assert \valid_read(free_null_pointer_009dst + i);
+free_null_pointer.c:290:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(free_null_pointer_009dst + i);
+free_null_pointer.c:309:[value] entering loop for the first time
+free_null_pointer.c:311:[value] allocating variable __malloc_free_null_pointer_010_func_001_l311
+free_null_pointer.c:312:[value] entering loop for the first time
+free_null_pointer.c:314:[value] allocating variable __malloc_free_null_pointer_010_func_001_l314
+free_null_pointer.c:314:[value] warning: out of bounds write. assert \valid(free_null_pointer_010_gbl_dst + i);
+free_null_pointer.c:323:[value] entering loop for the first time
+free_null_pointer.c:325:[value] warning: accessing uninitialized left-value. assert \initialized(dst + i);
+free_null_pointer.c:325:[value] warning: out of bounds read. assert \valid_read(dst + i);
+free_null_pointer.c:325:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c:331:[value] entering loop for the first time
+free_null_pointer.c:333:[value] entering loop for the first time
+free_null_pointer.c:335:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(free_null_pointer_010_gbl_dst + i);
+free_null_pointer.c:335:[value] warning: out of bounds read. assert \valid_read(free_null_pointer_010_gbl_dst + i);
+free_null_pointer.c:335:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(free_null_pointer_010_gbl_dst + i);
+free_null_pointer.c:370:[value] allocating variable __calloc_free_null_pointer_011_func_001_l370
+free_null_pointer.c:371:[value] warning: out of bounds write. assert \valid(&u->a);
+free_null_pointer.c:451:[value] allocating variable __malloc_free_null_pointer_012_l451
+free_null_pointer.c:452:[value] warning: out of bounds write. assert \valid(ptr + 1);
+free_null_pointer.c:482:[value] entering loop for the first time
+free_null_pointer.c:487:[value] allocating variable __calloc_free_null_pointer_013_l487
+free_null_pointer.c:489:[value] warning: out of bounds write. assert \valid(fptr_0 + 3);
+free_null_pointer.c:493:[value] entering loop for the first time
+free_null_pointer.c:518:[value] entering loop for the first time
+free_null_pointer.c:520:[value] allocating variable __malloc_free_null_pointer_014_func_001_l520
+free_null_pointer.c:521:[value] allocating variable __malloc_free_null_pointer_014_func_001_l521
+free_null_pointer.c:521:[value] warning: out of bounds write. assert \valid(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:522:[value] allocating variable __malloc_free_null_pointer_014_func_001_l522
+free_null_pointer.c:523:[value] allocating variable __malloc_free_null_pointer_014_func_001_l523
+free_null_pointer.c:534:[value] entering loop for the first time
+free_null_pointer.c:536:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:536:[value] warning: out of bounds read. assert \valid_read(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:536:[value] warning: out of bounds write. assert \valid(free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:537:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(&free_null_pointer_014_gbl_s->p2);
+free_null_pointer.c:537:[value] warning: out of bounds write. assert \valid(free_null_pointer_014_gbl_s->p2);
+free_null_pointer.c:538:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(&free_null_pointer_014_gbl_s->p3);
+free_null_pointer.c:538:[value] warning: out of bounds write. assert \valid(free_null_pointer_014_gbl_s->p3);
+free_null_pointer.c:548:[value] entering loop for the first time
+free_null_pointer.c:550:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:550:[value] warning: out of bounds read. assert \valid_read(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:551:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(&free_null_pointer_014_gbl_s->p2);
+free_null_pointer.c:552:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(&free_null_pointer_014_gbl_s->p3);
+free_null_pointer.c:550:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&free_null_pointer_014_gbl_s);
+free_null_pointer.c:550:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c:551:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&free_null_pointer_014_gbl_s->p2);
+free_null_pointer.c:552:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&free_null_pointer_014_gbl_s->p3);
+func_pointer.c:127:[value] entering loop for the first time
+func_pointer.c:105:[value] allocating variable __malloc_func_pointer_004_func_001_l105
+func_pointer.c:108:[value] entering loop for the first time
+func_pointer.c:110:[value] warning: out of bounds write. assert \valid(str_rev + j);
+func_pointer.c:110:[value] warning: out of bounds read. assert \valid_read(str1 + (int)((int)(i - j) - 1));
+func_pointer.c:112:[value] warning: out of bounds write. assert \valid(str_rev + i);
+func_pointer.c:157:[value] allocating variable __malloc_func_pointer_005_func_002_l157
+func_pointer.c:159:[value] entering loop for the first time
+func_pointer.c:161:[value] allocating variable __malloc_func_pointer_005_func_002_l161
+func_pointer.c:161:[value] warning: out of bounds write. assert \valid(func_pointer_005_doubleptr_gbl + i);
+func_pointer.c:163:[value] entering loop for the first time
+func_pointer.c:165:[value] entering loop for the first time
+func_pointer.c:167:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(func_pointer_005_doubleptr_gbl + i);
+func_pointer.c:167:[value] warning: out of bounds read. assert \valid_read(func_pointer_005_doubleptr_gbl + i);
+func_pointer.c:167:[value] warning: out of bounds write.
+                 assert \valid(*(func_pointer_005_doubleptr_gbl + i) + j);
+func_pointer.c:183:[value] entering loop for the first time
+func_pointer.c:185:[value] entering loop for the first time
+func_pointer.c:187:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+func_pointer.c:187:[value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+func_pointer.c:187:[value] warning: out of bounds write. assert \valid(*(doubleptr + i) + j);
+func_pointer.c:187:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(*(doubleptr + i) + j);
+func_pointer.c:187:[value] warning: signed overflow. assert *(*(doubleptr + i) + j) + (long)1 ≤ 2147483647;
+func_pointer.c:189:[value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+func_pointer.c:189:[value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+func_pointer.c:187:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+func_pointer.c:189:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(doubleptr + i);
+func_pointer.c:217:[value] allocating variable __malloc_func_pointer_006_func_002_l217
+func_pointer.c:219:[value] entering loop for the first time
+func_pointer.c:221:[value] allocating variable __malloc_func_pointer_006_func_002_l221
+func_pointer.c:221:[value] warning: out of bounds write. assert \valid(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:223:[value] entering loop for the first time
+func_pointer.c:225:[value] entering loop for the first time
+func_pointer.c:227:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:227:[value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:227:[value] warning: out of bounds write.
+                 assert \valid(*(func_pointer_006_doubleptr_gbl + i) + j);
+func_pointer.c:236:[value] entering loop for the first time
+func_pointer.c:238:[value] entering loop for the first time
+func_pointer.c:240:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:240:[value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:240:[value] warning: out of bounds write.
+                 assert \valid(*(func_pointer_006_doubleptr_gbl + i) + j);
+func_pointer.c:269:[value] entering loop for the first time
+func_pointer.c:271:[value] entering loop for the first time
+func_pointer.c:273:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:273:[value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:273:[value] warning: out of bounds write.
+                 assert \valid(*(func_pointer_006_doubleptr_gbl + i) + j);
+func_pointer.c:273:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(*(func_pointer_006_doubleptr_gbl + i) + j);
+func_pointer.c:249:[value] entering loop for the first time
+func_pointer.c:251:[value] warning: accessing uninitialized left-value.
+                 assert \initialized(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:251:[value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:251:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c:348:[value] allocating variable __calloc_func_pointer_009_func_001_l348
+func_pointer.c:431:[value] entering loop for the first time
+func_pointer.c:409:[value] allocating variable __malloc_func_pointer_011_func_001_l409
+func_pointer.c:412:[value] entering loop for the first time
+func_pointer.c:416:[value] warning: out of bounds write. assert \valid(str_rev + j);
+func_pointer.c:414:[value] warning: out of bounds write. assert \valid(str_rev + j);
+func_pointer.c:461:[value] allocating variable __malloc_func_pointer_012_func_001_l461
+func_pointer.c:464:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+func_pointer.c:465:[value] entering loop for the first time
+func_pointer.c:467:[value] entering loop for the first time
+func_pointer.c:469:[value] warning: accessing uninitialized left-value. assert \initialized(&(*(p_0 + i))[j]);
+func_pointer.c:469:[value] warning: signed overflow. assert -2147483648 ≤ (*(p_0 + i))[j] + (*(p_0 + i))[j];
+func_pointer.c:469:[value] warning: signed overflow. assert (*(p_0 + i))[j] + (*(p_0 + i))[j] ≤ 2147483647;
+func_pointer.c:626:[value] allocating variable __malloc_func_pointer_015_l626
+FRAMAC_SHARE/libc/string.h:82:[value] warning: function memset: precondition got status unknown.
+func_pointer.c:627:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+func_pointer.c:588:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+func_pointer.c:606:[value] warning: out of bounds write. assert \valid(&st->b);
+func_pointer.c:606:[value] warning: accessing uninitialized left-value. assert \initialized(&st->c);
+function_return_value_unchecked.c:61:[value] entering loop for the first time
+[value] using specification for function printf_va_42
+function_return_value_unchecked.c:110:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+[value] using specification for function strcmp
+FRAMAC_SHARE/libc/string.h:104:[value] warning: function strcmp: precondition 'valid_string_s1' got status unknown.
+function_return_value_unchecked.c:124:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+function_return_value_unchecked.c:171:[value] entering loop for the first time
+function_return_value_unchecked.c:210:[value] entering loop for the first time
+function_return_value_unchecked.c:188:[value] allocating variable __calloc_function_return_value_unchecked_006_func_001_l188
+function_return_value_unchecked.c:191:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+function_return_value_unchecked.c:195:[value] entering loop for the first time
+function_return_value_unchecked.c:197:[value] entering loop for the first time
+function_return_value_unchecked.c:199:[value] warning: non-finite float value. assert \is_finite((*(p_0 + i))[j]);
+function_return_value_unchecked.c:213:[value] entering loop for the first time
+function_return_value_unchecked.c:215:[value] warning: out of bounds read. assert \valid_read((float *)*(ptr + j));
+function_return_value_unchecked.c:215:[value] warning: non-finite float value. assert \is_finite((*(ptr + j))[0]);
+function_return_value_unchecked.c:217:[value] warning: non-finite float value. assert \is_finite((*(ptr + j))[1]);
+function_return_value_unchecked.c:269:[value] entering loop for the first time
+[value] using specification for function fprintf_va_1
+function_return_value_unchecked.c:331:[value] entering loop for the first time
+[value] using specification for function snprintf_va_3
+function_return_value_unchecked.c:348:[value] entering loop for the first time
+[value] using specification for function fputc
+FRAMAC_SHARE/libc/stdio.h:198:[value] warning: no \from part for clause 'assigns *stream;' of function fputc
+FRAMAC_SHARE/libc/stdio.h:199:[value] warning: no 'assigns \result \from ...' clause specified for function fputc
+[value] using specification for function fputs
+FRAMAC_SHARE/libc/stdio.h:202:[value] warning: no 'assigns \result \from ...' clause specified for function fputs
+[value] using specification for function putchar
+FRAMAC_SHARE/libc/stdio.h:221:[value] warning: no 'assigns \result \from ...' clause specified for function putchar
+[value] using specification for function puts
+FRAMAC_SHARE/libc/stdio.h:224:[value] warning: no 'assigns \result \from ...' clause specified for function puts
+function_return_value_unchecked.c:442:[value] entering loop for the first time
+[value] using specification for function printf_va_46
+[value] using specification for function printf_va_47
+[value] using specification for function printf_va_48
+[value] using specification for function printf_va_49
+improper_termination_of_block.c:57:[value] entering loop for the first time
+[value] using specification for function printf_va_50
+[value] using specification for function printf_va_51
+improper_termination_of_block.c:73:[value] entering loop for the first time
+[value] using specification for function printf_va_52
+[value] using specification for function printf_va_53
+[value] using specification for function printf_va_54
+[value] using specification for function printf_va_20
+main.c:161:[kernel] warning: Neither code nor specification for function invalid_extern_main, generating default assigns from the prototype
+[value] using specification for function invalid_extern_main
+invalid_memory_access.c:34:[value] allocating variable __malloc_invalid_memory_access_001_l34
+[value] using specification for function printf_va_1
+invalid_memory_access.c:63:[value] allocating variable __malloc_invalid_memory_access_002_l63
+invalid_memory_access.c:70:[value] warning: out of bounds write. assert \valid(dptr + 1);
+invalid_memory_access.c:70:[kernel] warning: all target addresses were invalid. This path is assumed to be dead.
+[value] using specification for function printf_va_2
+invalid_memory_access.c:100:[value] entering loop for the first time
+invalid_memory_access.c:102:[value] allocating variable __malloc_invalid_memory_access_003_l102
+invalid_memory_access.c:105:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+invalid_memory_access.c:114:[value] warning: accessing left-value that contains escaping addresses.
+                 assert ¬\dangling(&c);
+invalid_memory_access.c:127:[value] allocating variable __malloc_invalid_memory_access_004_l127
+invalid_memory_access.c:130:[value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+invalid_memory_access.c:153:[value] allocating variable __calloc_invalid_memory_access_005_l153
+invalid_memory_access.c:160:[value] warning: detected recursive call
+                 (invalid_memory_access_005 <- invalid_memory_access_005 :: invalid_memory_access.c:699 <-
+                                               invalid_memory_access_main :: main.c:167 <-
+                                               main)
+                 Use -val-ignore-recursive-calls to ignore (beware this will make the analysis
+                 unsound)
+[value] user error: Degeneration occurred:
+                    results are not correct for lines of code that can be reached from the degeneration point.
+[value] ====== VALUES COMPUTED ======
+[value:final-states] Values at end of function bit_shift_001:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_002:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_003:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_004:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_005:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_006:
+  sink ∈ {0}
+  a_4 ∈ {1}
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function bit_shift_007:
+  sink ∈ {0}
+  a_4 ∈ {1}
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function bit_shift_008:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  shift ∈ {10}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_010:
+  sink ∈ {2048}
+  a_4 ∈ {1}
+  shift ∈ {2}
+  ret_0 ∈ {2048}
+[value:final-states] Values at end of function bit_shift_011:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  shift ∈ {2}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_012_func_001:
+  __retres ∈ {10}
+[value:final-states] Values at end of function bit_shift_012:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_013_func_001:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_013:
+  sink ∈ {1024}
+[value:final-states] Values at end of function bit_shift_014:
+  sink ∈ {65536}
+  a_4 ∈ {1}
+  shifts[0] ∈ {8}
+        [1] ∈ {40}
+        [2] ∈ {32}
+        [3] ∈ {16}
+        [4] ∈ {24}
+  ret_0 ∈ {65536}
+[value:final-states] Values at end of function bit_shift_015:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  shift ∈ {10}
+  shift1 ∈ {10}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_016:
+  sink ∈ {1024}
+  a_4 ∈ {1}
+  shift ∈ {10}
+  shift1 ∈ {10}
+  shift2 ∈ {10}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function bit_shift_017:
+  sink ∈ {1024}
+  ret_0 ∈ {1024}
+[value:final-states] Values at end of function cmp_funcadr_001_func_001:
+  __retres ∈ {{ &cmp_funcadr_001_glb_a }}
+[value:final-states] Values at end of function cmp_funcadr_001:
+  sink ∈ {0}
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function cmp_funcadr_002_func_001:
+  __retres ∈ {10}
+[value:final-states] Values at end of function cmp_funcadr_002:
+  sink ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function cmp_funcadr_main:
+  sink ∈ [0..2147483647]
+[value:final-states] Values at end of function conflicting_cond_006:
+  sink ∈ [0..2147483647]
+  a_4 ∈ {2}
+  b_0 ∈ [0..2147483647]
+  ret_0 ∈ [0..2147483647]
+[value:final-states] Values at end of function data_lost_001:
+  ret_0 ∈ {127}
+  a_4 ∈ {127}
+  sink_1 ∈ {127}
+[value:final-states] Values at end of function data_lost_002:
+  ret_0 ∈ {32767}
+  a_4 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_003:
+  ret_0 ∈ {32767}
+  a_4 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_004:
+  ret_0 ∈ {2147483520}
+  a_4 ∈ {2147483520.}
+  sink_1 ∈ {2147483520}
+[value:final-states] Values at end of function data_lost_005:
+  ret_0 ∈ {2147483520}
+  a_4 ∈ {2147483520.}
+  sink_1 ∈ {2147483520}
+[value:final-states] Values at end of function data_lost_006:
+  NON TERMINATING FUNCTION
+[value:final-states] Values at end of function data_lost_007:
+  ret_0 ∈ {255}
+  a_4 ∈ {255}
+  sink_1 ∈ {255}
+[value:final-states] Values at end of function data_lost_008:
+  ret_0 ∈ {65535}
+  a_4 ∈ {65535}
+  sink_1 ∈ {65535}
+[value:final-states] Values at end of function data_lost_009:
+  ret_0 ∈ {65535}
+  a_4 ∈ {65535}
+  sink_1 ∈ {65535}
+[value:final-states] Values at end of function data_lost_010:
+  s_0.ret ∈ {15}
+     .a ∈ {15}
+     .[bits 12 to 31] ∈ UNINITIALIZED
+[value:final-states] Values at end of function data_lost_011:
+  ret_0 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_013:
+  ret_0 ∈ {32767}
+  a_4 ∈ {129}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_014:
+  ret_0 ∈ {32767}
+  a_4 ∈ {181}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_015_func_001:
+  __retres ∈ {32767}
+[value:final-states] Values at end of function data_lost_015:
+  ret_0 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_016_func_001:
+  ret_0 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_016:
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_017:
+  ret_0 ∈ {32767}
+  buf_2[0] ∈ {33041}
+       [1] ∈ {32769}
+       [2] ∈ {32785}
+       [3] ∈ {32767}
+       [4] ∈ {33041}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_018:
+  ret_0 ∈ {32767}
+  a_4 ∈ {32767}
+  a1 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_lost_019:
+  ret_0 ∈ {32767}
+  a_4 ∈ {32767}
+  a1 ∈ {32767}
+  a2 ∈ {32767}
+  sink_1 ∈ {32767}
+[value:final-states] Values at end of function data_overflow_001:
+  max_0 ∈ {112}
+  ret_0 ∈ {114}
+  sink_0 ∈ {114}
+[value:final-states] Values at end of function data_overflow_002:
+  max_0 ∈ {32752}
+  ret_0 ∈ {32754}
+  sink_0 ∈ {32754}
+[value:final-states] Values at end of function data_overflow_003:
+  max_0 ∈ {2147483646}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_004:
+  max_0 ∈ {2147483646}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_005:
+  max_0 ∈ {254}
+  ret_0 ∈ {255}
+  sink_0 ∈ {255}
+[value:final-states] Values at end of function data_overflow_006:
+  max_0 ∈ {65534}
+  ret_0 ∈ {65535}
+  sink_0 ∈ {65535}
+[value:final-states] Values at end of function data_overflow_007:
+  max_0 ∈ {4294967294}
+  ret_0 ∈ {4294967295}
+  sink_0 ∈ {-1}
+[value:final-states] Values at end of function data_overflow_008:
+  max_0 ∈ {4294967294}
+  ret_0 ∈ {4294967295}
+  sink_0 ∈ {-1}
+[value:final-states] Values at end of function data_overflow_009:
+  s_0.max ∈ {14}
+     .ret ∈ {15}
+     .[bits 10 to 31] ∈ UNINITIALIZED
+[value:final-states] Values at end of function data_overflow_010:
+  s_0.max ∈ {30}
+     .ret ∈ {31}
+     .[bits 10 to 31] ∈ UNINITIALIZED
+[value:final-states] Values at end of function data_overflow_011:
+  max_0 ∈ {2147483647}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_012:
+  max_0 ∈ {2147483519}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_013:
+  max_0 ∈ {1073741823}
+  ret_0 ∈ {2147483646}
+  sink_0 ∈ {2147483646}
+[value:final-states] Values at end of function data_overflow_014:
+  max_0 ∈ {2147483646}
+  d ∈ {1}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_016:
+  max_0 ∈ {429496729}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_017:
+  max_0 ∈ {46340}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_018_func_001:
+  __retres ∈ {1}
+[value:final-states] Values at end of function data_overflow_018:
+  max_0 ∈ {2147483646}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_019_func_001:
+  max_0 ∈ {2147483646}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_019:
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_020:
+  max_0 ∈ {2147483646}
+  dlist[0] ∈ {4}
+       [1] ∈ {1}
+       [2] ∈ {3}
+       [3] ∈ {2}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_021:
+  max_0 ∈ {2147483646}
+  d ∈ {1}
+  d1 ∈ {1}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_022:
+  max_0 ∈ {2147483646}
+  d ∈ {1}
+  d1 ∈ {1}
+  d2 ∈ {1}
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_023:
+  ret_0 ∈ {2147483647}
+  sink_0 ∈ {2147483647}
+[value:final-states] Values at end of function data_overflow_024:
+  NON TERMINATING FUNCTION
+[value:final-states] Values at end of function data_overflow_025:
+  NON TERMINATING FUNCTION
+[value:final-states] Values at end of function data_underflow_001:
+  sink ∈ {-2147483648}
+  min_0 ∈ {-2147483646}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_002:
+  sink ∈ {0}
+  min_0 ∈ {1}
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function data_underflow_003:
+  sink ∈ {-2147483648}
+  min_0 ∈ {-2147483648}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_004:
+  sink ∈ {-2147483648}
+  min_0 ∈ {-2147483520}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_005:
+  sink ∈ {-2147483648}
+  min_0 ∈ {-1073741824}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_006:
+  sink ∈ {-2147483648}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_007:
+  sink ∈ {0}
+  ret_0 ∈ {1.40129846432e-45}
+  min_0 ∈ {2.80259692865e-45}
+[value:final-states] Values at end of function data_underflow_008:
+  sink ∈ {0}
+  ret_0 ∈ {4.94065645841e-324}
+  min_0 ∈ {9.88131291682e-324}
+[value:final-states] Values at end of function data_underflow_009:
+  sink ∈ {-128}
+  min_0 ∈ {-126}
+  ret_0 ∈ {-128}
+[value:final-states] Values at end of function data_underflow_010_func_001:
+  __retres ∈ {2}
+[value:final-states] Values at end of function data_underflow_010:
+  sink ∈ {-2147483648}
+  min_0 ∈ {-2147483646}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_011_func_001:
+  sink ∈ {-2147483648}
+  min_0 ∈ {-2147483646}
+  ret_0 ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_011:
+  sink ∈ {-2147483648}
+[value:final-states] Values at end of function data_underflow_012:
+  sink ∈ {-2147483644}
+  min_0 ∈ {-2147483646}
+  dlist[0] ∈ {0}
+       [1] ∈ {1}
+       [2] ∈ {-2}
+       [3] ∈ {-1}
+  ret_0 ∈ {-2147483644}
+[value:final-states] Values at end of function data_underflow_main:
+  sink ∈ [--..--]
+[value:final-states] Values at end of function dead_code_001:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_002:
+  sink ∈ {1}
+  flag_0 ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_003_func_001:
+  __retres ∈ {1}
+[value:final-states] Values at end of function dead_code_003:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_004_func_001:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_004:
+  sink ∈ {1}
+[value:final-states] Values at end of function dead_code_005:
+  sink ∈ {1}
+  flag_0 ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_006:
+  sink ∈ {1}
+  flag_0 ∈ {0}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_007:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  i ∈ {0}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_008:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_009:
+  sink ∈ {1}
+  flag_0 ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_010_func_001:
+  __retres ∈ {1}
+[value:final-states] Values at end of function dead_code_010:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_011_func_001:
+  sink ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_011:
+  sink ∈ {1}
+[value:final-states] Values at end of function dead_code_012:
+  sink ∈ {1}
+  flag_0 ∈ {1}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_013:
+  sink ∈ {1}
+  flag_0 ∈ {0}
+  a_4 ∈ {1}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function dead_code_main:
+  sink ∈ [--..--]
+[value:final-states] Values at end of function dynamic_buffer_overrun_016_func_001:
+  __retres ∈ {4}
+[value:final-states] Values at end of function dynamic_buffer_overrun_024_func_001:
+  __calloc_dynamic_buffer_overrun_024_l439[0..3] ∈ {0}
+                                          [4] ∈ {1}
+[value:final-states] Values at end of function dynamic_buffer_underrun_016_func_001:
+  __retres ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_024_func_001:
+  __calloc_dynamic_buffer_underrun_024_l440[0] ∈ {1}
+                                           [1..4] ∈ {0}
+[value:final-states] Values at end of function endless_loop_001:
+  sink ∈ [1..2147483647]
+  ret_0 ∈ [1..2147483647]
+  a_4 ∈ [1..2147483647]
+  i ∈ {6}
+[value:final-states] Values at end of function endless_loop_002:
+  sink ∈ [0..2147483647]
+  ret_0 ∈ [0..2147483647]
+  a_4 ∈ [0..2147483647]
+  i ∈ {10}
+[value:final-states] Values at end of function endless_loop_003:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+[value:final-states] Values at end of function endless_loop_004:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+  flag_0 ∈ {1}
+[value:final-states] Values at end of function endless_loop_005_func_001:
+  __retres ∈ {1}
+[value:final-states] Values at end of function endless_loop_005:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+[value:final-states] Values at end of function endless_loop_006_func_001:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+[value:final-states] Values at end of function endless_loop_006:
+  sink ∈ {6}
+[value:final-states] Values at end of function endless_loop_007:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+  flag_0 ∈ {1}
+[value:final-states] Values at end of function endless_loop_008:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+  flag_0 ∈ {0}
+[value:final-states] Values at end of function endless_loop_009:
+  sink ∈ {6}
+  ret_0 ∈ {6}
+  a_4 ∈ {6}
+[value:final-states] Values at end of function endless_loop_main:
+  sink ∈ [--..--]
+[value:final-states] Values at end of function deletion_of_data_structure_sentinel_001:
+  __fc_heap_status ∈ [--..--]
+  foo ∈ ESCAPINGADDR
+  counter ∈ {10}
+[value:final-states] Values at end of function double_free_function_008:
+  double_free_function_008_gbl_ptr ∈
+                                  {{ NULL ; &__malloc_double_free_008_l135 }} or ESCAPINGADDR
+[value:final-states] Values at end of function dynamic_buffer_overrun_001:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_001_l20[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_002:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_002_l38[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_004:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_004_l73[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_005:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_005_l87[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_006:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_006_l105[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_007:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_007_l123[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_008:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈
+       {{ NULL ; &__calloc_dynamic_buffer_overrun_008_l141[0] }} or ESCAPINGADDR
+  i ∈ {5}
+  j ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_008_l141[0..4] ∈
+                                          {{ NULL ;
+                                             &__calloc_w_dynamic_buffer_overrun_008_l145[0] }} or ESCAPINGADDR
+  __calloc_w_dynamic_buffer_overrun_008_l145[0..4] ∈ {0; 1; 2; 3; 4}
+[value:final-states] Values at end of function dynamic_buffer_overrun_009:
+  __fc_heap_status ∈ [--..--]
+  buf1_0 ∈
+        {{ NULL ; &__calloc_dynamic_buffer_overrun_009_l164[0] }} or ESCAPINGADDR
+  buf2_0 ∈
+        {{ NULL ; &__calloc_dynamic_buffer_overrun_009_l165[0] }} or ESCAPINGADDR
+  buf3 ∈
+      {{ NULL ; &__calloc_dynamic_buffer_overrun_009_l166[0] }} or ESCAPINGADDR
+  buf4 ∈
+      {{ NULL ; &__calloc_dynamic_buffer_overrun_009_l167[0] }} or ESCAPINGADDR
+  buf5 ∈
+      {{ NULL ; &__calloc_dynamic_buffer_overrun_009_l168[0] }} or ESCAPINGADDR
+  pbuf_0[0] ∈ {{ &buf1_0 }}
+        [1] ∈ {{ &buf2_0 }}
+        [2] ∈ {{ &buf3 }}
+        [3] ∈ {{ &buf4 }}
+        [4] ∈ {{ &buf5 }}
+  i ∈ {5}
+  j ∈ {4}
+  __calloc_dynamic_buffer_overrun_009_l164[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l165[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l166[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l167[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l168[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+[value:final-states] Values at end of function dynamic_buffer_overrun_010:
+  __fc_heap_status ∈ [--..--]
+  sbuf ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_010_l194[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_011:
+  __fc_heap_status ∈ [--..--]
+  s_0 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_011_l214[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_012:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {4}
+  __calloc_dynamic_buffer_overrun_012_l228[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_013:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {4}
+  __calloc_dynamic_buffer_overrun_013_l243[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_014:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {1}
+  __calloc_dynamic_buffer_overrun_014_l258[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_015:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {1}
+  __calloc_dynamic_buffer_overrun_015_l273[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_016:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_016_l294[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_017_func_001:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_017_func_001_l308[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_017:
+  __fc_heap_status ∈ [--..--]
+  __calloc_dynamic_buffer_overrun_017_func_001_l308[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_018:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  indexes[0] ∈ {3}
+         [1] ∈ {4}
+         [2] ∈ {5}
+         [3] ∈ {6}
+  index_0 ∈ {1}
+  __calloc_dynamic_buffer_overrun_018_l327[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_019:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {4}
+  index1 ∈ {4}
+  __calloc_dynamic_buffer_overrun_019_l343[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_020:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {4}
+  index1 ∈ {4}
+  index2 ∈ {4}
+  __calloc_dynamic_buffer_overrun_020_l360[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_021:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p1 ∈ UNINITIALIZED or ESCAPINGADDR
+  p2 ∈ UNINITIALIZED or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_021_l379[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_022:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈ UNINITIALIZED or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_022_l397[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_023:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈ UNINITIALIZED or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_023_l413[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_024:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ ESCAPINGADDR
+[value:final-states] Values at end of function dynamic_buffer_overrun_025:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_025_l455[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_026:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈
+     {{ NULL ; (int *)&__calloc_dynamic_buffer_overrun_026_l474 }} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_026_l474[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_027:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈
+     {{ NULL ; (char *)&__calloc_dynamic_buffer_overrun_027_l490 }} or ESCAPINGADDR
+  __calloc_dynamic_buffer_overrun_027_l490[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_028:
+  __fc_heap_status ∈ [--..--]
+  buf1_0 ∈ ESCAPINGADDR
+  buf2_0 ∈ ESCAPINGADDR
+  i ∈ {5}
+[value:final-states] Values at end of function dynamic_buffer_underrun_001:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {-1} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_001_l21[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_002:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_002_l39[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_004:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_004_l74[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_005:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_005_l88[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_006:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_006_l106[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_007:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_007_l124[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_008:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈
+       {{ NULL ; &__calloc_dynamic_buffer_underrun_008_l142[0] }} or ESCAPINGADDR
+  i ∈ {5}
+  j ∈ {5} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_008_l142[0..4] ∈
+                                           {{ NULL ;
+                                              &__calloc_w_dynamic_buffer_underrun_008_l146[0] }} or ESCAPINGADDR
+  __calloc_w_dynamic_buffer_underrun_008_l146[0..4] ∈ {0; 1; 2; 3; 4}
+[value:final-states] Values at end of function dynamic_buffer_underrun_009:
+  __fc_heap_status ∈ [--..--]
+  buf1_0 ∈
+        {{ NULL ; &__calloc_dynamic_buffer_underrun_009_l165[0] }} or ESCAPINGADDR
+  buf2_0 ∈
+        {{ NULL ; &__calloc_dynamic_buffer_underrun_009_l166[0] }} or ESCAPINGADDR
+  buf3 ∈
+      {{ NULL ; &__calloc_dynamic_buffer_underrun_009_l167[0] }} or ESCAPINGADDR
+  buf4 ∈
+      {{ NULL ; &__calloc_dynamic_buffer_underrun_009_l168[0] }} or ESCAPINGADDR
+  buf5 ∈
+      {{ NULL ; &__calloc_dynamic_buffer_underrun_009_l169[0] }} or ESCAPINGADDR
+  pbuf_0[0] ∈ {{ &buf1_0 }}
+        [1] ∈ {{ &buf2_0 }}
+        [2] ∈ {{ &buf3 }}
+        [3] ∈ {{ &buf4 }}
+        [4] ∈ {{ &buf5 }}
+  i ∈ {5}
+  j ∈ {4}
+  __calloc_dynamic_buffer_underrun_009_l165[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l166[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l167[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l168[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l169[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+[value:final-states] Values at end of function dynamic_buffer_underrun_010:
+  __fc_heap_status ∈ [--..--]
+  sbuf ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_010_l195[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_011:
+  __fc_heap_status ∈ [--..--]
+  s_0 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_011_l215[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_012:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {0}
+  __calloc_dynamic_buffer_underrun_012_l229[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_013:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {3}
+  __calloc_dynamic_buffer_underrun_013_l244[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_014:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {2}
+  __calloc_dynamic_buffer_underrun_014_l260[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_015:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {2}
+  __calloc_dynamic_buffer_underrun_015_l275[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_016:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_016_l296[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_017_func_001:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_017_func_001_l310[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_017:
+  __fc_heap_status ∈ [--..--]
+  __calloc_dynamic_buffer_underrun_017_func_001_l310[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_018:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  indexes[0] ∈ {3}
+         [1] ∈ {4}
+         [2] ∈ {0}
+         [3] ∈ {5}
+         [4] ∈ {6}
+  index_0 ∈ {2}
+  __calloc_dynamic_buffer_underrun_018_l329[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_019:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {0}
+  index1 ∈ {0}
+  __calloc_dynamic_buffer_underrun_019_l345[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_020:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {0}
+  index1 ∈ {0}
+  index2 ∈ {0}
+  __calloc_dynamic_buffer_underrun_020_l362[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_021:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p1 ∈ UNINITIALIZED or ESCAPINGADDR
+  p2 ∈ UNINITIALIZED or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_021_l381[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_022:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈ UNINITIALIZED or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_022_l399[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_023:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈ UNINITIALIZED or ESCAPINGADDR
+  i ∈ {0} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_023_l415[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_024:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_024_l440[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_025:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  i ∈ {0} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_025_l455[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_026:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈ UNINITIALIZED or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_026_l475[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_027:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  p_0 ∈ UNINITIALIZED or ESCAPINGADDR
+  __calloc_dynamic_buffer_underrun_027_l491[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_028:
+  __fc_heap_status ∈ [--..--]
+  buf1_0 ∈ ESCAPINGADDR
+  buf2_0 ∈ ESCAPINGADDR
+  i ∈ {5}
+[value:final-states] Values at end of function dynamic_buffer_underrun_032:
+  __fc_heap_status ∈ [--..--]
+  ptr_s ∈ {0} or ESCAPINGADDR
+  i ∈ {10} or UNINITIALIZED
+  __calloc_dynamic_buffer_underrun_032_l597[0..9] ∈ {0}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_001:
+  ptr ∈ {{ "a" }}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_002:
+  ptr ∈ {{ "a" }}
+  flag_0 ∈ {1}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_004:
+  ptr1 ∈ {{ "a" }}
+  ptr ∈ {{ &ptr1 }}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_005:
+  __fc_heap_status ∈ [--..--]
+  buf1_0 ∈
+        {{ NULL ; &__calloc_free_nondynamic_allocated_memory_005_l72[0] }} or ESCAPINGADDR
+  buf2_0 ∈
+        {{ NULL ; &__calloc_free_nondynamic_allocated_memory_005_l73[0] }} or ESCAPINGADDR
+  pbuf_0[0] ∈ {{ &buf1_0 }}
+        [1] ∈ {{ &buf2_0 }}
+  i ∈ {2}
+  j ∈ {1}
+  __calloc_free_nondynamic_allocated_memory_005_l72[0] ∈ {0}
+                                                   [1] ∈ {0; 5}
+                                                   [2..4] ∈ {0}
+  __calloc_free_nondynamic_allocated_memory_005_l73[0] ∈ {0; 10}
+                                                   [1] ∈ {0; 5}
+                                                   [2..4] ∈ {0}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_007:
+  ptr ∈ {{ "a" }}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_008:
+  ptr ∈ {{ "b" }}
+  a_4 ∈ {2}
+  b_0 ∈ {0}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_009:
+  ptr ∈ {{ "c" }}
+  a_4 ∈ {0}
+  b_0 ∈ {2}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_011:
+  i ∈ {0}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_012:
+  ptr ∈ {{ "a" }}
+  a_4 ∈ {2}
+  b_0 ∈ {2}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_015_func_001:
+  free_nondynamic_allocated_memory_015_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_015_l244 }} or ESCAPINGADDR
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_016_func_002:
+  free_nondynamic_allocated_memory_016_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_016_func_001_l256 }} or ESCAPINGADDR
+[value:final-states] Values at end of function free_null_pointer_002:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_002_gbl_ptr ∈ {0}
+  a_4 ∈ {20}
+  __calloc_free_null_pointer_002_l41[0..9] ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_003:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {10}
+  buf_2 ∈ {0}
+  __calloc_w_free_null_pointer_003_l63[0] ∈ [0..9]
+                                      [1..4] ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_006_func_001:
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_007_func_001:
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_010_func_003:
+  free_null_pointer_010_gbl_dst ∈ {0}
+  i ∈ {5}
+  __malloc_free_null_pointer_010_func_001_l311[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_010_func_001_l314[0] }} or UNINITIALIZED or ESCAPINGADDR
+[value:final-states] Values at end of function free_null_pointer_011_func_002:
+  flag_0 ∈ {1}
+  p_0 ∈ ESCAPINGADDR
+  u ∈ {0}
+  __retres ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_012_func_001:
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_013:
+  __fc_heap_status ∈ [--..--]
+  fptr ∈ {{ &__calloc_w_free_null_pointer_013_l487[0] }} or ESCAPINGADDR
+  fp1 ∈ {{ &fptr }}
+  fp2 ∈ {{ &fptr }}
+  i ∈ {2}
+  __calloc_w_free_null_pointer_013_l487[0..2] ∈ {0}
+                                       [3] ∈ [0. .. 50.5]
+                                       [4..9] ∈ {0}
+[value:final-states] Values at end of function free_null_pointer_014_func_002:
+  i ∈ {1}
+  __malloc_w_free_null_pointer_014_func_001_l521 ∈ {10.} or UNINITIALIZED
+  __malloc_w_free_null_pointer_014_func_001_l522 ∈ {20.} or UNINITIALIZED
+  __malloc_w_free_null_pointer_014_func_001_l523 ∈ {30.} or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_014_func_003:
+  free_null_pointer_014_gbl_s ∈
+                             {{ NULL ;
+                                &__malloc_w_free_null_pointer_014_func_001_l520 }} or ESCAPINGADDR
+  i ∈ {1}
+  __malloc_w_free_null_pointer_014_func_001_l520.p1 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l521 }} or UNINITIALIZED or ESCAPINGADDR
+                                                .p2 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l522 }} or UNINITIALIZED or ESCAPINGADDR
+                                                .p3 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l523 }} or UNINITIALIZED or ESCAPINGADDR
+[value:final-states] Values at end of function func_pointer_001_func_001:
+  sink ∈ {10}
+  a_4 ∈ {10}
+[value:final-states] Values at end of function func_pointer_001:
+  sink ∈ {10}
+  func ∈ {{ &func_pointer_001_func_001 }}
+[value:final-states] Values at end of function func_pointer_002_func_001:
+  a_4 ∈ {116}
+  __retres ∈ {116}
+[value:final-states] Values at end of function func_pointer_002:
+  sink ∈ {116}
+  buf_2[0] ∈ {115}
+       [1] ∈ {116}
+       [2] ∈ {114}
+       [3] ∈ {105}
+       [4] ∈ {110}
+       [5] ∈ {103}
+       [6..9] ∈ {0}
+  fptr ∈ {{ &func_pointer_002_func_001 }}
+  a_4 ∈ {116}
+[value:final-states] Values at end of function func_pointer_003_func_001:
+  __retres ∈ {3}
+[value:final-states] Values at end of function func_pointer_003:
+  sink ∈ {3}
+  ret_0 ∈ {3}
+[value:final-states] Values at end of function func_pointer_005_func_001:
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function func_pointer_006_func_001:
+  ret_0 ∈ {0}
+[value:final-states] Values at end of function func_pointer_006_func_003:
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  __malloc_w_func_pointer_006_func_002_l221[0..9] ∈
+                                           [0. .. 9.] or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_006_func_004:
+  func_pointer_006_doubleptr_gbl ∈ {0}
+  i ∈ {10}
+  __malloc_func_pointer_006_func_002_l217[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_006_func_002_l221[0] }} or UNINITIALIZED or ESCAPINGADDR
+[value:final-states] Values at end of function func_pointer_007_func_001:
+  i ∈ {0}
+  __retres ∈ {65}
+[value:final-states] Values at end of function func_pointer_007:
+  sink ∈ {65}
+  buf_2[0] ∈ {65}
+       [1] ∈ {32}
+       [2] ∈ {115}
+       [3] ∈ {116}
+       [4] ∈ {114}
+       [5] ∈ {105}
+       [6] ∈ {110}
+       [7] ∈ {103}
+       [8..9] ∈ {0}
+  fptr ∈ {{ &func_pointer_007_func_001 }}
+  a_4 ∈ {65}
+[value:final-states] Values at end of function func_pointer_008_func_001:
+  a_1[0][0] ∈ {1.}
+     [0][1] ∈ {2.}
+     [0][2] ∈ {50.5999984741}
+     [1][0] ∈ {11.1000003815}
+     [1][1] ∈ {22.1000003815}
+     [1][2] ∈ {33.0999984741}
+[value:final-states] Values at end of function func_pointer_008:
+  a_1[0][0] ∈ {1.}
+     [0][1] ∈ {2.}
+     [0][2] ∈ {50.5999984741}
+     [1][0] ∈ {11.1000003815}
+     [1][1] ∈ {22.1000003815}
+     [1][2] ∈ {33.0999984741}
+[value:final-states] Values at end of function func_pointer_010_func_001:
+  sink ∈ {10}
+  a_4 ∈ {10}
+[value:final-states] Values at end of function func_pointer_010:
+  sink ∈ {10}
+  func ∈ {{ &func_pointer_010_func_001 }}
+  func1 ∈ {{ &func_pointer_010_func_001 }}
+[value:final-states] Values at end of function func_pointer_013_func_001:
+  a_4 ∈ {10}
+[value:final-states] Values at end of function func_pointer_013_func_002:
+  flag_0 ∈ {10}
+  ret_0 ∈ {1}
+  arr_1[0] ∈ {3}
+       [1] ∈ {7}
+       [2] ∈ {9}
+       [3] ∈ {10}
+       [4] ∈ {4}
+  ptr ∈ {{ &arr_1[0] }}
+  __retres ∈ {1}
+[value:final-states] Values at end of function func_pointer_013:
+  sink ∈ {1}
+  flag_0 ∈ {1}
+  func_gbl_0 ∈ {{ &func_pointer_013_func_002 }}
+[value:final-states] Values at end of function func_pointer_014_func_001:
+  a_4 ∈ {10}
+[value:final-states] Values at end of function func_pointer_014_func_002:
+  func_gbl ∈ {{ &func_pointer_014_func_001 }}
+  flag_0 ∈ {10}
+  ret_0 ∈ {0}
+  __retres ∈ {0}
+[value:final-states] Values at end of function func_pointer_014:
+  sink ∈ {0}
+  func_gbl ∈ {{ &func_pointer_014_func_001 }}
+  flag_0 ∈ {0}
+  fptr ∈ {{ &func_pointer_014_func_002 }}
+[value:final-states] Values at end of function func_pointer_015_func_003:
+  __malloc_func_pointer_015_l626{.arr[0..9]; .a} ∈
+                                [--..--] or UNINITIALIZED
+                                {.b; .c} ∈ [--..--]
+[value:final-states] Values at end of function func_pointer_015_func_004:
+  fptr2_gbl ∈ {{ &func_pointer_015_func_003 }}
+  __malloc_func_pointer_015_l626{.arr[0..9]; .a} ∈
+                                [--..--] or UNINITIALIZED
+                                {.b; .c} ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_001_func_001:
+  flag_0 ∈ {2}
+  ret_0 ∈ {1}
+[value:final-states] Values at end of function function_return_value_unchecked_001_func_002:
+  temp ∈ {51}
+[value:final-states] Values at end of function function_return_value_unchecked_001:
+  a_4 ∈ {52}
+[value:final-states] Values at end of function function_return_value_unchecked_002_func_001:
+  flag_0 ∈ {0}
+  ret_0 ∈ [1. .. 10000000000.]
+[value:final-states] Values at end of function function_return_value_unchecked_002:
+  a_4 ∈ [0. .. 10000000000.]
+[value:final-states] Values at end of function function_return_value_unchecked_003_func_001:
+  str1 ∈ {97}
+[value:final-states] Values at end of function function_return_value_unchecked_005_s_001_func_001:
+  u1.c ∈ {30.5}
+    .a ∈ {{ "This is STR" }}
+    .b ∈ {20}
+  s_0 ∈ {{ "This is STR" }}
+[value:final-states] Values at end of function function_return_value_unchecked_005:
+  u_0.c ∈ {60.5} or UNINITIALIZED
+     .a ∈ {{ "This is STR" }} or UNINITIALIZED
+     .b ∈ {20} or UNINITIALIZED
+  i ∈ {10}
+[value:final-states] Values at end of function function_return_value_unchecked_007_func_001:
+  ret_0 ∈ {10.0340003967}
+[value:final-states] Values at end of function function_return_value_unchecked_007:
+  i ∈ {10.0340003967}
+[value:final-states] Values at end of function function_return_value_unchecked_008_func_001:
+  ret_0 ∈ {15.034}
+[value:final-states] Values at end of function function_return_value_unchecked_008:
+  i ∈ {15.034}
+[value:final-states] Values at end of function function_return_value_unchecked_009_func_001:
+  ret_0 ∈ [0. .. 3.40282346639e+38]
+  i ∈ [4..2147483647]
+[value:final-states] Values at end of function function_return_value_unchecked_009:
+  a_4 ∈ {10}
+  b_0 ∈ {2}
+  c ∈ {0; 1}
+  arr_1[0] ∈ {1.}
+       [1] ∈ {2.}
+       [2] ∈ {3.}
+       [3] ∈ {4.}
+[value:final-states] Values at end of function function_return_value_unchecked_010:
+  a_4 ∈ {10; 11}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_012:
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_013_func_001:
+  __retres ∈ {1}
+[value:final-states] Values at end of function function_return_value_unchecked_013:
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_016_s_001_func_001:
+  u1.c ∈ {30.5}
+    .a ∈ {{ "This is STR" }}
+    .b ∈ {20}
+  s_0 ∈ {{ "This is STR" }}
+[value:final-states] Values at end of function function_return_value_unchecked_016:
+  u_0.c ∈ {60.5} or UNINITIALIZED
+     .a ∈ {{ "This is STR" }} or UNINITIALIZED
+     .b ∈ {20} or UNINITIALIZED
+  i ∈ {10}
+[value:final-states] Values at end of function invalid_memory_access_005:
+  NON TERMINATING FUNCTION
+[value:final-states] Values at end of function dynamic_buffer_underrun_033:
+  __fc_heap_status ∈ [--..--]
+  message ∈ {0} or ESCAPINGADDR
+  index_0 ∈ {12}
+  len ∈ {0; 11}
+  c ∈ {0} or UNINITIALIZED
+[value:final-states] Values at end of function double_free_001:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_001_l20 }} or ESCAPINGADDR
+[value:final-states] Values at end of function double_free_002:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_002_l32[0] }} or ESCAPINGADDR
+  i ∈ {10}
+  __malloc_double_free_002_l32[0..9] ∈ {97} or UNINITIALIZED
+[value:final-states] Values at end of function double_free_003:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_003_l51[0] }} or ESCAPINGADDR
+  i ∈ {10}
+  __malloc_double_free_003_l51[0..9] ∈ {97} or UNINITIALIZED
+[value:final-states] Values at end of function double_free_004:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_004_l70[0] }} or ESCAPINGADDR
+  i ∈ {10}
+  __malloc_double_free_004_l70[0..9] ∈ {97} or UNINITIALIZED
+[value:final-states] Values at end of function double_free_005:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {0} or ESCAPINGADDR
+[value:final-states] Values at end of function double_free_006:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_006_l100 }} or ESCAPINGADDR
+[value:final-states] Values at end of function double_free_007:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_007_l114 }} or ESCAPINGADDR
+  flag_0 ∈ {0}
+[value:final-states] Values at end of function double_free_008:
+  __fc_heap_status ∈ [--..--]
+  double_free_function_008_gbl_ptr ∈
+                                  {{ NULL ; &__malloc_double_free_008_l135 }} or ESCAPINGADDR
+[value:final-states] Values at end of function double_free_009:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_009_l148 }} or ESCAPINGADDR
+  flag_0 ∈ {0}
+[value:final-states] Values at end of function double_free_010:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_010_l167 }} or ESCAPINGADDR
+  flag_0 ∈ {0}
+[value:final-states] Values at end of function double_free_011:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_011_l185 }} or ESCAPINGADDR
+  flag_0 ∈ {1}
+  a_4 ∈ {1}
+  b_0 ∈ {1}
+[value:final-states] Values at end of function double_free_012:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {{ NULL ; &__malloc_double_free_012_l204 }} or ESCAPINGADDR
+  a_4 ∈ {1}
+[value:final-states] Values at end of function double_free_main:
+  __fc_heap_status ∈ [--..--]
+  double_free_function_008_gbl_ptr ∈
+                                  {{ NULL ; &__malloc_double_free_008_l135 }} or ESCAPINGADDR
+  __malloc_double_free_002_l32[0..9] ∈ {97} or UNINITIALIZED
+  __malloc_double_free_003_l51[0..9] ∈ {97} or UNINITIALIZED
+  __malloc_double_free_004_l70[0..9] ∈ {97} or UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_overrun_029:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {0}
+  __malloc_w_dynamic_buffer_overrun_029_l528 ∈ UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_overrun_030:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  doubleptr ∈
+           {{ NULL ; &__malloc_dynamic_buffer_overrun_030_l546[0] }} or ESCAPINGADDR
+  __malloc_dynamic_buffer_overrun_030_l546[0..9] ∈
+                                          {{ NULL ;
+                                             &__malloc_w_dynamic_buffer_overrun_030_l550[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_dynamic_buffer_overrun_030_l550[0..9] ∈ {97} or UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_overrun_032:
+  __fc_heap_status ∈ [--..--]
+  ptr_s ∈ {0} or ESCAPINGADDR
+  i ∈ {10} or UNINITIALIZED
+  __malloc_dynamic_buffer_overrun_032_l600[0..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_underrun_029:
+  __fc_heap_status ∈ [--..--]
+  __malloc_dynamic_buffer_underrun_029_l526 ∈ UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_underrun_030:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {10}
+  j ∈ {-1} or UNINITIALIZED
+  doubleptr ∈
+           {{ NULL ; &__malloc_dynamic_buffer_underrun_030_l544[0] }} or ESCAPINGADDR
+  __malloc_dynamic_buffer_underrun_030_l544[0..9] ∈
+                                           {{ NULL ;
+                                              &__calloc_w_dynamic_buffer_underrun_030_l548[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __calloc_w_dynamic_buffer_underrun_030_l548[0..9] ∈ {0; 97}
+[value:final-states] Values at end of function dynamic_buffer_underrun_035:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {10}
+  loc1 ∈ {1}
+  loc2 ∈ {1}
+  doubleptr ∈ ESCAPINGADDR
+  __malloc_w_dynamic_buffer_underrun_035_l670[0..1] ∈ {84} or UNINITIALIZED
+                                             [2..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_underrun_037:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {10} or UNINITIALIZED
+  doubleptr ∈ {0} or ESCAPINGADDR
+  __malloc_dynamic_buffer_underrun_037_l714[0..9] ∈ UNINITIALIZED
+  __malloc_w_dynamic_buffer_underrun_037_l720[0] ∈ {84} or UNINITIALIZED
+                                             [1..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_underrun_038:
+  __fc_heap_status ∈ [--..--]
+  new_s ∈ {0} or ESCAPINGADDR
+  loc ∈ {0}
+  i ∈ {0}
+  __malloc_dynamic_buffer_underrun_038_l744[0..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_003:
+  __fc_heap_status ∈ [--..--]
+  free_nondynamic_allocated_memory_003_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_003_l47 }} or ESCAPINGADDR
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_006:
+  __fc_heap_status ∈ [--..--]
+  ptr1 ∈
+      {{ NULL ; &__malloc_free_nondynamic_allocated_memory_006_l95 }} or ESCAPINGADDR
+  ptr2 ∈
+      {{ NULL ; &__malloc_free_nondynamic_allocated_memory_006_l96 }} or ESCAPINGADDR
+  ptr3 ∈
+      {{ NULL ; &__malloc_free_nondynamic_allocated_memory_006_l97 }} or ESCAPINGADDR
+  ptr4 ∈
+      {{ NULL ; &__malloc_free_nondynamic_allocated_memory_006_l98 }} or ESCAPINGADDR
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_013:
+  __fc_heap_status ∈ [--..--]
+  new_struct ∈ ESCAPINGADDR
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_014:
+  __fc_heap_status ∈ [--..--]
+  free_nondynamic_allocated_memory_str ∈
+                                      {{ NULL ;
+                                         &__malloc_free_nondynamic_allocated_memory_014_l228 }} or ESCAPINGADDR
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_015:
+  __fc_heap_status ∈ [--..--]
+  free_nondynamic_allocated_memory_015_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_015_l244 }} or ESCAPINGADDR
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_016_func_001:
+  __fc_heap_status ∈ [--..--]
+  free_nondynamic_allocated_memory_016_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_016_func_001_l256 }}
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_016:
+  __fc_heap_status ∈ [--..--]
+  free_nondynamic_allocated_memory_016_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_016_func_001_l256 }} or ESCAPINGADDR
+  free_nondynamic_allocated_memory_016_gbl_var ∈ {65}
+[value:final-states] Values at end of function free_null_pointer_004:
+  __fc_heap_status ∈ [--..--]
+  fptr ∈ ESCAPINGADDR
+  i ∈ {5}
+  j ∈ {5}
+  __malloc_w_free_null_pointer_004_l84[0..4] ∈
+                                      [0.5 .. 4.5] or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_005_func_001:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_005_gbl_ptr ∈
+                               {{ NULL ;
+                                  &__malloc_free_null_pointer_005_func_001_l112[0] }}
+[value:final-states] Values at end of function free_null_pointer_007_func_002:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_007_gbl_doubleptr ∈
+                                     {{ NULL ;
+                                        &__malloc_free_null_pointer_007_func_002_l183[0] }}
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  __malloc_free_null_pointer_007_func_002_l183[0..9] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_007_func_002_l187[0] }} or UNINITIALIZED
+  __malloc_w_free_null_pointer_007_func_002_l187[0..9] ∈
+                                                [0..9] or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_007:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_007_gbl_doubleptr ∈
+                                     {{ NULL ;
+                                        &__malloc_free_null_pointer_007_func_002_l183[0] }}
+  flag_0 ∈ {0}
+  __malloc_free_null_pointer_007_func_002_l183[0..9] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_007_func_002_l187[0] }} or UNINITIALIZED
+  __malloc_w_free_null_pointer_007_func_002_l187[0..9] ∈
+                                                [0..9] or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_008_func_001:
+  __fc_heap_status ∈ [--..--]
+  p_0 ∈ {{ NULL ; &__malloc_free_null_pointer_008_func_001_l239[0] }}
+  str1 ∈ {{ NULL ; &__malloc_free_null_pointer_008_func_001_l239[0] }}
+[value:final-states] Values at end of function free_null_pointer_009_func_001:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_009dst ∈
+                          {{ NULL ;
+                             &__malloc_free_null_pointer_009_func_001_l268[0] }}
+  i ∈ {5}
+  __malloc_free_null_pointer_009_func_001_l268[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_009_func_001_l271[0] }} or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_010_func_001:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_010_gbl_dst ∈
+                               {{ NULL ;
+                                  &__malloc_free_null_pointer_010_func_001_l311[0] }}
+  i ∈ {5}
+  __malloc_free_null_pointer_010_func_001_l311[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_010_func_001_l314[0] }} or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_012:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {0}
+  a_4 ∈ {10.}
+  flag_0 ∈ {10}
+[value:final-states] Values at end of function free_null_pointer_014_func_001:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_014_gbl_s ∈
+                             {{ NULL ;
+                                &__malloc_w_free_null_pointer_014_func_001_l520 }}
+  i ∈ {1}
+  __malloc_w_free_null_pointer_014_func_001_l520.p1 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l521 }} or UNINITIALIZED
+                                                .p2 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l522 }} or UNINITIALIZED
+                                                .p3 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l523 }} or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_014:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_014_gbl_s ∈
+                             {{ NULL ;
+                                &__malloc_w_free_null_pointer_014_func_001_l520 }} or ESCAPINGADDR
+  __malloc_w_free_null_pointer_014_func_001_l520.p1 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l521 }} or UNINITIALIZED or ESCAPINGADDR
+                                                .p2 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l522 }} or UNINITIALIZED or ESCAPINGADDR
+                                                .p3 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l523 }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_free_null_pointer_014_func_001_l521 ∈ {10.} or UNINITIALIZED
+  __malloc_w_free_null_pointer_014_func_001_l522 ∈ {20.} or UNINITIALIZED
+  __malloc_w_free_null_pointer_014_func_001_l523 ∈ {30.} or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_005_func_002:
+  __fc_heap_status ∈ [--..--]
+  func_pointer_005_doubleptr_gbl ∈
+                                {{ NULL ;
+                                   &__malloc_func_pointer_005_func_002_l157[0] }}
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  __malloc_func_pointer_005_func_002_l157[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_005_func_002_l161[0] }} or UNINITIALIZED
+  __malloc_w_func_pointer_005_func_002_l161[0..9] ∈ [0..9] or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_005:
+  __fc_heap_status ∈ [--..--]
+  func_pointer_005_doubleptr_gbl ∈
+                                {{ NULL ;
+                                   &__malloc_func_pointer_005_func_002_l157[0] }} or ESCAPINGADDR
+  flag_0 ∈ {0}
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  doubleptr ∈ {0}
+  __malloc_func_pointer_005_func_002_l157[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_005_func_002_l161[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_func_pointer_005_func_002_l161[0..9] ∈
+                                           [0..2147483647] or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_006_func_002:
+  __fc_heap_status ∈ [--..--]
+  func_pointer_006_doubleptr_gbl ∈
+                                {{ NULL ;
+                                   &__malloc_func_pointer_006_func_002_l217[0] }}
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  __malloc_func_pointer_006_func_002_l217[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_006_func_002_l221[0] }} or UNINITIALIZED
+  __malloc_w_func_pointer_006_func_002_l221[0..9] ∈
+                                           [0. .. 9.] or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_006:
+  __fc_heap_status ∈ [--..--]
+  func_pointer_006_doubleptr_gbl ∈ {0}
+  flag_0 ∈ {0}
+  i ∈ {10}
+  j ∈ {10} or UNINITIALIZED
+  __malloc_func_pointer_006_func_002_l217[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_006_func_002_l221[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_func_pointer_006_func_002_l221[0..9] ∈
+                                           [0. .. 10000000000.] or UNINITIALIZED
+[value:final-states] Values at end of function deletion_of_data_structure_sentinel_003:
+  i ∈ {10}
+  str[0..10] ∈ [--..--] or UNINITIALIZED
+     [11..16] ∈ UNINITIALIZED
+  ptr[0..9] ∈ {97} or UNINITIALIZED
+     [10] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_031:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {11} or UNINITIALIZED
+  ptr1 ∈ {0} or ESCAPINGADDR
+  a_4[0..10] ∈ [--..--] or UNINITIALIZED
+     [11] ∈ UNINITIALIZED
+  ptr2 ∈ {{ &a_4[0] }}
+  __calloc_dynamic_buffer_overrun_031_l572[0..11] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_031:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {-1} or UNINITIALIZED
+  ptr1 ∈ {0} or ESCAPINGADDR
+  a_4[0..11] ∈ [--..--] or UNINITIALIZED
+  ptr2 ∈ {{ &a_4[0] }}
+  __calloc_dynamic_buffer_underrun_031_l570[0..11] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_underrun_036:
+  __fc_heap_status ∈ [--..--]
+  test[0] ∈ {84}
+      [1] ∈ {104}
+      [2] ∈ {105}
+      [3] ∈ {115}
+      [4] ∈ {32}
+      [5] ∈ {105}
+      [6] ∈ {115}
+      [7] ∈ {32}
+      [8] ∈ {83}
+      [9] ∈ {84}
+      [10] ∈ {82}
+      [11] ∈ {73}
+      [12] ∈ {78}
+      [13] ∈ {71}
+      [14] ∈ {0}
+  newTest ∈ {0} or ESCAPINGADDR
+  __malloc_dynamic_buffer_underrun_036_l697[0..14] ∈ UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_012_func_001:
+  __fc_heap_status ∈ [--..--]
+  p_0 ∈ {{ NULL ; &__malloc_func_pointer_012_func_001_l461[0] }}
+  arr_1[0][0] ∈ {1}
+       [0][1] ∈ {2}
+       [0][2] ∈ {3}
+       [0][3] ∈ {4}
+       [1][0] ∈ {11}
+       [1][1] ∈ {22}
+       [1][2] ∈ {33}
+       [1][3] ∈ {44}
+       [2][0] ∈ {33}
+       [2][1] ∈ {44}
+       [2][2] ∈ {55}
+       [2][3] ∈ {66}
+       [3][0] ∈ {55}
+       [3][1] ∈ {66}
+       [3][2] ∈ {77}
+       [3][3] ∈ {88}
+  i ∈ {4} or UNINITIALIZED
+  j ∈ {4} or UNINITIALIZED
+  __malloc_func_pointer_012_func_001_l461[0..3][0..3] ∈
+                                         [--..--] or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_012:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈
+     {{ NULL ; &__malloc_func_pointer_012_func_001_l461[0] }} or ESCAPINGADDR
+  func ∈ {{ &func_pointer_012_func_001 }}
+  __malloc_func_pointer_012_func_001_l461[0..3][0..3] ∈
+                                         [--..--] or UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_underrun_039:
+  __fc_heap_status ∈ [--..--]
+  ptr_s1 ∈ {0} or ESCAPINGADDR
+  ptr_s2[0..14] ∈ [--..--] or UNINITIALIZED
+  i ∈ {15} or UNINITIALIZED
+  __malloc_dynamic_buffer_underrun_039_l769[0..14] ∈ UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_015_func_001:
+  global_set ∈ {1}
+  st.arr[0..9] ∈ [--..--] or UNINITIALIZED
+    .a ∈ {1}
+    {.b; .c} ∈ [--..--] or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_015:
+  __fc_heap_status ∈ [--..--]
+  fptr_gbl ∈ {{ &func_pointer_015_func_001 }}
+  fptr2_gbl ∈ {{ &func_pointer_015_func_003 }}
+  global_set ∈ {1}
+  st.arr[0..9] ∈ [--..--] or UNINITIALIZED
+    .a ∈ {1}
+    {.b; .c} ∈ [--..--] or UNINITIALIZED
+  st1 ∈ {{ &__malloc_func_pointer_015_l626 }}
+  fptr3 ∈ {{ &func_pointer_015_func_004 }}
+  __malloc_func_pointer_015_l626{.arr[0..9]; .a} ∈
+                                [--..--] or UNINITIALIZED
+                                {.b; .c} ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_006_func_001:
+  __fc_heap_status ∈ [--..--]
+  p_0 ∈
+     {{ NULL ;
+        &__calloc_w_function_return_value_unchecked_006_func_001_l188[0] }}
+  i ∈ {4} or UNINITIALIZED
+  j ∈ {4} or UNINITIALIZED
+  __calloc_w_function_return_value_unchecked_006_func_001_l188[0][0..3] ∈
+                                                              [--..--]
+                                                              [1..3][0..3] ∈
+                                                              [-3.40282346639e+38 .. 3.40282346639e+38]
+[value:final-states] Values at end of function function_return_value_unchecked_006:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈
+     {{ NULL ;
+        &__calloc_w_function_return_value_unchecked_006_func_001_l188[0] }} or UNINITIALIZED or ESCAPINGADDR
+  i ∈ {0}
+  j ∈ {4} or UNINITIALIZED
+  __calloc_w_function_return_value_unchecked_006_func_001_l188[0][0..3] ∈
+                                                              [--..--]
+                                                              [1..3][0..3] ∈
+                                                              [-3.40282346639e+38 .. 3.40282346639e+38]
+[value:final-states] Values at end of function invalid_memory_access_004:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0}
+  __malloc_invalid_memory_access_004_l127[0..99] ∈ UNINITIALIZED
+[value:final-states] Values at end of function invalid_memory_access_001:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {0}
+  a_4 ∈ {10} or UNINITIALIZED
+  flag_0 ∈ {10}
+  S___fc_stdout[0..1] ∈ [--..--]
+  __malloc_invalid_memory_access_001_l34[0..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function invalid_memory_access_002:
+  __fc_heap_status ∈ [--..--]
+  ptr ∈ {0}
+  dptr ∈ {0}
+  a_4 ∈ {10.5}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function dynamic_buffer_underrun_003:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  ret_0 ∈ {0; 1} or UNINITIALIZED
+  i ∈ {5} or UNINITIALIZED
+  S___fc_stdout[0..1] ∈ [--..--]
+  __calloc_dynamic_buffer_underrun_003_l53[0..4] ∈ {0}
+[value:final-states] Values at end of function function_return_value_unchecked_003:
+  a_4 ∈ {0}
+  buf_2 ∈ {97}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_010:
+  i ∈ {1}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function free_nondynamic_allocated_memory_main:
+  __fc_heap_status ∈ [--..--]
+  free_nondynamic_allocated_memory_003_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_003_l47 }} or ESCAPINGADDR
+  free_nondynamic_allocated_memory_str ∈
+                                      {{ NULL ;
+                                         &__malloc_free_nondynamic_allocated_memory_014_l228 }} or ESCAPINGADDR
+  free_nondynamic_allocated_memory_015_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_015_l244 }} or ESCAPINGADDR
+  free_nondynamic_allocated_memory_016_gbl_ptr ∈
+                                              {{ NULL ;
+                                                 &__malloc_free_nondynamic_allocated_memory_016_func_001_l256 }} or ESCAPINGADDR
+  free_nondynamic_allocated_memory_016_gbl_var ∈ {0; 65}
+  S___fc_stdout[0..1] ∈ [--..--]
+  __calloc_free_nondynamic_allocated_memory_005_l72[0] ∈ {0}
+                                                   [1] ∈ {0; 5}
+                                                   [2..4] ∈ {0}
+  __calloc_free_nondynamic_allocated_memory_005_l73[0] ∈ {0; 10}
+                                                   [1] ∈ {0; 5}
+                                                   [2..4] ∈ {0}
+[value:final-states] Values at end of function improper_termination_of_block_001:
+  condition ∈ {0}
+  x_0 ∈ {0}
+  y_0 ∈ {0}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function improper_termination_of_block_002:
+  condition ∈ {0}
+  x_0 ∈ {0}
+  y_0 ∈ {0}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function improper_termination_of_block_003:
+  x_0 ∈ {10}
+  y_0 ∈ {0}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function improper_termination_of_block_004:
+  x_0 ∈ {10}
+  y_0 ∈ {0}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function improper_termination_of_block_main:
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function dynamic_buffer_overrun_003:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0} or ESCAPINGADDR
+  ret_0 ∈ {0; 1} or UNINITIALIZED
+  i ∈ {5} or UNINITIALIZED
+  S___fc_stdout[0..1] ∈ [--..--]
+  __calloc_dynamic_buffer_overrun_003_l52[0..4] ∈ {0}
+[value:final-states] Values at end of function dynamic_buffer_overrun_main:
+  __fc_heap_status ∈ [--..--]
+  S___fc_stdout[0..1] ∈ [--..--]
+  __calloc_dynamic_buffer_overrun_001_l20[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_002_l38[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_003_l52[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_004_l73[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_005_l87[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_006_l105[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_007_l123[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_008_l141[0..4] ∈
+                                          {{ NULL ;
+                                             &__calloc_w_dynamic_buffer_overrun_008_l145[0] }} or ESCAPINGADDR
+  __calloc_w_dynamic_buffer_overrun_008_l145[0..4] ∈ {0; 1; 2; 3; 4}
+  __calloc_dynamic_buffer_overrun_009_l164[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l165[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l166[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l167[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_009_l168[0..3] ∈ {0}
+                                          [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_overrun_010_l194[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_011_l214[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_012_l228[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_013_l243[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_014_l258[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_015_l273[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_016_l294[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_017_func_001_l308[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_018_l327[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_019_l343[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_020_l360[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_021_l379[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_022_l397[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_023_l413[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_025_l455[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_026_l474[0..4] ∈ {0}
+  __calloc_dynamic_buffer_overrun_027_l490[0..4] ∈ {0}
+  __malloc_w_dynamic_buffer_overrun_029_l528 ∈ UNINITIALIZED
+  __malloc_dynamic_buffer_overrun_030_l546[0..9] ∈
+                                          {{ NULL ;
+                                             &__malloc_w_dynamic_buffer_overrun_030_l550[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_dynamic_buffer_overrun_030_l550[0..9] ∈ {97} or UNINITIALIZED
+  __calloc_dynamic_buffer_overrun_031_l572[0..11] ∈ {0}
+  __malloc_dynamic_buffer_overrun_032_l600[0..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function double_lock_004:
+  sink ∈ [--..--]
+  th1 ∈ [--..--] or UNINITIALIZED
+  th2 ∈ [--..--] or UNINITIALIZED
+  t1 ∈ {10}
+  t2 ∈ {20}
+[value:final-states] Values at end of function dead_lock_001:
+  dead_lock_001_glb_mutexA ∈ [--..--]
+  dead_lock_001_glb_mutexB ∈ [--..--]
+  tid1 ∈ [--..--]
+  tid2 ∈ [--..--]
+[value:final-states] Values at end of function dead_lock_002:
+  dead_lock_002_glb_mutexA ∈ [--..--]
+  dead_lock_002_glb_mutexB ∈ [--..--]
+  dead_lock_002_glb_mutexC ∈ [--..--]
+  tid1 ∈ [--..--]
+  tid2 ∈ [--..--]
+  tid3 ∈ [--..--]
+[value:final-states] Values at end of function dead_lock_003:
+  dead_lock_003_glb_mutexA_ ∈ [--..--]
+  dead_lock_003_glb_mutexB_ ∈ [--..--]
+  dead_lock_003_glb_mutexC_ ∈ [--..--]
+  tid1 ∈ [--..--]
+  tid2 ∈ [--..--]
+[value:final-states] Values at end of function dead_lock_004:
+  dead_lock_004_glb_mutexA_ ∈ [--..--]
+  dead_lock_004_glb_mutexB_ ∈ [--..--]
+  dead_lock_004_glb_mutexC_ ∈ [--..--]
+  tid1 ∈ [--..--]
+  tid2 ∈ [--..--]
+[value:final-states] Values at end of function dead_lock_005:
+  dead_lock_005_glb_mutexA_ ∈ [--..--]
+  dead_lock_005_glb_mutexB_ ∈ [--..--]
+  tid1 ∈ [--..--]
+  tid2 ∈ [--..--]
+[value:final-states] Values at end of function dead_lock_main:
+  dead_lock_001_glb_mutexA ∈ [--..--]
+  dead_lock_001_glb_mutexB ∈ [--..--]
+  dead_lock_002_glb_mutexA ∈ [--..--]
+  dead_lock_002_glb_mutexB ∈ [--..--]
+  dead_lock_002_glb_mutexC ∈ [--..--]
+  dead_lock_003_glb_mutexA_ ∈ [--..--]
+  dead_lock_003_glb_mutexB_ ∈ [--..--]
+  dead_lock_003_glb_mutexC_ ∈ [--..--]
+  dead_lock_004_glb_mutexA_ ∈ [--..--]
+  dead_lock_004_glb_mutexB_ ∈ [--..--]
+  dead_lock_004_glb_mutexC_ ∈ [--..--]
+  dead_lock_005_glb_mutexA_ ∈ [--..--]
+  dead_lock_005_glb_mutexB_ ∈ [--..--]
+[value:final-states] Values at end of function double_lock_001:
+  double_lock_001_glb_mutex ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_lock_002:
+  double_lock_002_glb_mutex ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_lock_003:
+  double_lock_003_glb_mutex ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_lock_main:
+  sink ∈ [--..--]
+  double_lock_001_glb_mutex ∈ [--..--]
+  double_lock_002_glb_mutex ∈ [--..--]
+  double_lock_003_glb_mutex ∈ [--..--]
+[value:final-states] Values at end of function double_release_001:
+  double_release_001_glb_mutex_ ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_release_002:
+  double_release_002_glb_mutex_ ∈ [--..--]
+  tid1 ∈ [--..--]
+  tid2 ∈ [--..--]
+[value:final-states] Values at end of function double_release_003:
+  double_release_003_glb_mutex_ ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_release_004:
+  double_release_004_glb_mutex_ ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_release_005:
+  double_release_005_glb_mutex_ ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_release_006:
+  double_release_006_glb_mutex_ ∈ [--..--]
+  tid1 ∈ [--..--]
+[value:final-states] Values at end of function double_release_main:
+  double_release_001_glb_mutex_ ∈ [--..--]
+  double_release_002_glb_mutex_ ∈ [--..--]
+  double_release_003_glb_mutex_ ∈ [--..--]
+  double_release_004_glb_mutex_ ∈ [--..--]
+  double_release_005_glb_mutex_ ∈ [--..--]
+  double_release_006_glb_mutex_ ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_014:
+  sink ∈ {10; 20}
+  a_4 ∈ {10; 20}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_015:
+  sink ∈ {10; 20}
+  flag_0 ∈ {6}
+  i ∈ {10; 20}
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function bit_shift_009:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [1..2147483647]
+  a_4 ∈ {1}
+  shift ∈ [0..31]
+  ret_0 ∈ [1..2147483647]
+[value:final-states] Values at end of function bit_shift_main:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [0..2147483647]
+[value:final-states] Values at end of function conflicting_cond_001:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ {0; 1}
+  a_4 ∈ [0..32767]
+  b_0 ∈ {0; 1}
+  ret_0 ∈ {0; 1}
+[value:final-states] Values at end of function conflicting_cond_002:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ {0; 5; 6; 7; 8; 9; 10}
+  a_4 ∈ [0..32767]
+  b_0 ∈ {0; 5; 6; 7; 8; 9; 10}
+  ret_0 ∈ {0; 5; 6; 7; 8; 9; 10}
+[value:final-states] Values at end of function conflicting_cond_003:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ {0; 1; 9}
+  a_4 ∈ [0..32767]
+  b_0 ∈ {0; 1; 9}
+  ret_0 ∈ {0; 1; 9}
+[value:final-states] Values at end of function conflicting_cond_004:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ {0; 11; 12; 13; 14}
+  a_4 ∈ [5..32767]
+  b_0 ∈ {0; 11; 12; 13; 14}
+  ret_0 ∈ {0; 11; 12; 13; 14}
+[value:final-states] Values at end of function conflicting_cond_005:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ {0; 1}
+  a_4 ∈ [0..32767]
+  b_0 ∈ {0; 1}
+  ret_0 ∈ {0; 1}
+[value:final-states] Values at end of function conflicting_cond_007:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [0..2147483647]
+  a_4 ∈ [2..32767]
+  b_0 ∈ [0..2147483647]
+  ret_0 ∈ [0..2147483647]
+[value:final-states] Values at end of function conflicting_cond_008:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [0..2147483647]
+  a_4 ∈ [0..32767]
+  b_0 ∈ [0..2147483647]
+  ret_0 ∈ [0..2147483647]
+[value:final-states] Values at end of function conflicting_cond_009:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [0..2147483647]
+  a_4 ∈ [0..32767]
+  b_0 ∈ [0..2147483647]
+  ret_0 ∈ [0..2147483647]
+[value:final-states] Values at end of function conflicting_cond_010:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [2..32767]
+  a_4 ∈ [2..32767]
+  ret_0 ∈ [2..32767]
+[value:final-states] Values at end of function conflicting_cond_main:
+  __fc_random_counter ∈ [--..--]
+  sink ∈ [0..2147483647]
+[value:final-states] Values at end of function data_lost_012:
+  __fc_random_counter ∈ [--..--]
+  ret_0 ∈ [0..32767]
+  a_4 ∈ [0..32767]
+  sink_1 ∈ [0..32767]
+[value:final-states] Values at end of function data_lost_main:
+  __fc_random_counter ∈ [--..--]
+  sink_1 ∈ [0..2147483520]
+[value:final-states] Values at end of function data_overflow_015:
+  __fc_random_counter ∈ [--..--]
+  max_0 ∈ {2147483646}
+  d ∈ {0; 1}
+  ret_0 ∈ {2147483646; 2147483647}
+  sink_0 ∈ {2147483646; 2147483647}
+[value:final-states] Values at end of function data_overflow_main:
+  __fc_random_counter ∈ [--..--]
+  sink_0 ∈ {-1; 0; 114; 255; 32754; 65535; 2147483646; 2147483647}
+[value:final-states] Values at end of function free_null_pointer_011_func_001:
+  __fc_random_counter ∈ [--..--]
+  __fc_heap_status ∈ [--..--]
+  flag_0 ∈ {1}
+  u ∈ {{ &__calloc_free_null_pointer_011_func_001_l370 }}
+  __retres ∈ {{ &__calloc_free_null_pointer_011_func_001_l370 }}
+  __calloc_free_null_pointer_011_func_001_l370{.a; .b} ∈ {40}
+[value:final-states] Values at end of function free_null_pointer_011:
+  __fc_random_counter ∈ [--..--]
+  __fc_heap_status ∈ [--..--]
+  sink ∈ {40}
+  ret_0 ∈ {40}
+  p_0 ∈ {0}
+  u ∈ {0}
+[value:final-states] Values at end of function func_pointer_009_func_001:
+  __fc_random_counter ∈ [--..--]
+  __fc_heap_status ∈ [--..--]
+  flag_0 ∈ {1}
+  u_0 ∈ {{ NULL ; &__calloc_func_pointer_009_func_001_l348 }}
+  __retres ∈ {{ NULL ; &__calloc_func_pointer_009_func_001_l348 }}
+  __calloc_func_pointer_009_func_001_l348{.a; .b} ∈ {0; 40}
+[value:final-states] Values at end of function func_pointer_009:
+  __fc_random_counter ∈ [--..--]
+  __fc_heap_status ∈ [--..--]
+  sink ∈ {0; 40}
+  ret_0 ∈ {0; 40}
+  p_0 ∈ {0}
+  fptr ∈ {{ &func_pointer_009_func_001 }}
+  __calloc_func_pointer_009_func_001_l348{.a; .b} ∈ {0; 40}
+[value:final-states] Values at end of function insign_code_001:
+  __fc_random_counter ∈ [--..--]
+  i ∈ [-2..32765]
+  j ∈ [-1..32766]
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function insign_code_main:
+  __fc_random_counter ∈ [--..--]
+  S___fc_stdout[0..1] ∈ [--..--]
+[value:final-states] Values at end of function free_null_pointer_001:
+  __fc_heap_status ∈ [--..--]
+  buf_2 ∈ {0}
+  __malloc_free_null_pointer_001_l23[0..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_006:
+  __fc_heap_status ∈ [--..--]
+  flag_0 ∈ {0}
+  i ∈ {5}
+  s1_0 ∈ {{ "This is a string" }}
+  s_0 ∈ ESCAPINGADDR
+  __malloc_w_free_null_pointer_006_l154[0..16] ∈ [--..--] or UNINITIALIZED
+                                       [17..24] ∈ UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_009:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_009dst ∈ {0}
+  i ∈ {5}
+  __malloc_free_null_pointer_009_func_001_l268[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_009_func_001_l271[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_free_null_pointer_009_func_001_l271[0..6] ∈
+                                                [--..--] or UNINITIALIZED
+                                                [7..14] ∈ UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_010_func_002:
+  i ∈ {5}
+  __malloc_w_free_null_pointer_010_func_001_l314[0..7] ∈
+                                                [--..--] or UNINITIALIZED
+                                                [8..14] ∈ UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_010:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_010_gbl_dst ∈ {0}
+  str2[0][0] ∈ {83}
+      [0][1] ∈ {84}
+      [0][2] ∈ {82}
+      [0][3] ∈ {73}
+      [0][4] ∈ {78}
+      [0][5] ∈ {71}
+      [0][6..14] ∈ {0}
+      [1][0] ∈ {84}
+      [1][1] ∈ {69}
+      [1][2] ∈ {83}
+      [1][3] ∈ {84}
+      [1][4..14] ∈ {0}
+      [2][0] ∈ {83}
+      [2][1] ∈ {84}
+      [2][2] ∈ {82}
+      [2][3] ∈ {73}
+      [2][4] ∈ {78}
+      [2][5] ∈ {71}
+      [2][6] ∈ {35}
+      [2][7..14] ∈ {0}
+      [3][0] ∈ {84}
+      [3][1] ∈ {69}
+      [3][2] ∈ {83}
+      [3][3] ∈ {84}
+      [3][4] ∈ {33}
+      [3][5..14] ∈ {0}
+      [4][0] ∈ {84}
+      [4][1] ∈ {82}
+      [4][2] ∈ {73}
+      [4][3] ∈ {65}
+      [4][4] ∈ {76}
+      [4][5..14] ∈ {0}
+  __malloc_free_null_pointer_010_func_001_l311[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_010_func_001_l314[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_free_null_pointer_010_func_001_l314[0..7] ∈
+                                                [--..--] or UNINITIALIZED
+                                                [8..14] ∈ UNINITIALIZED
+[value:final-states] Values at end of function function_return_value_unchecked_004_s_001_func_001:
+  s1_0.a[0..6] ∈ [--..--] or UNINITIALIZED
+      .a[7..19] ∈ UNINITIALIZED
+      .b ∈ {20}
+[value:final-states] Values at end of function function_return_value_unchecked_004:
+  s_0.a[0..6] ∈ [--..--] or UNINITIALIZED
+     .a[7..19] ∈ UNINITIALIZED
+     .b ∈ {20; 21}
+  flag_0 ∈ {1}
+[value:final-states] Values at end of function invalid_memory_access_003:
+  __fc_heap_status ∈ [--..--]
+  psink ∈ {{ NULL ; (void *)&__malloc_w_invalid_memory_access_003_l102 }}
+  i ∈ {10}
+  buf_2 ∈ {0}
+  c ∈ {{ NULL ; &__malloc_w_invalid_memory_access_003_l102[0] }}
+  __malloc_w_invalid_memory_access_003_l102[0..14] ∈
+                                           [--..--] or UNINITIALIZED
+                                           [15..24] ∈ UNINITIALIZED
+[value:final-states] Values at end of function invalid_memory_access_main:
+  NON TERMINATING FUNCTION
+[value:final-states] Values at end of function deletion_of_data_structure_sentinel_002:
+  str1[0] ∈ {84}
+      [1] ∈ {104}
+      [2] ∈ {105}
+      [3] ∈ {115}
+      [4] ∈ {32}
+      [5] ∈ {105}
+      [6] ∈ {115}
+      [7] ∈ {32}
+      [8] ∈ {97}
+      [9] ∈ {32}
+      [10] ∈ {115}
+      [11] ∈ {116}
+      [12] ∈ {114}
+      [13] ∈ {105}
+      [14] ∈ {110}
+      [15] ∈ {103}
+      [16] ∈ {0}
+  str[0..16] ∈ [--..--] or UNINITIALIZED
+[value:final-states] Values at end of function deletion_of_data_structure_sentinel_main:
+  __fc_heap_status ∈ [--..--]
+[value:final-states] Values at end of function free_null_pointer_005:
+  __fc_heap_status ∈ [--..--]
+  free_null_pointer_005_gbl_ptr ∈ {0}
+  str ∈ {{ "This is a string" }}
+  __malloc_free_null_pointer_005_func_001_l112[0..16] ∈
+                                              [--..--] or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_008:
+  __fc_heap_status ∈ [--..--]
+  str ∈ {{ "This is a string" }}
+  str1 ∈ {0}
+  __malloc_free_null_pointer_008_func_001_l239[0..16] ∈
+                                              [--..--] or UNINITIALIZED
+[value:final-states] Values at end of function free_null_pointer_main:
+  __fc_random_counter ∈ [--..--]
+  __fc_heap_status ∈ [--..--]
+  sink ∈ [--..--]
+  free_null_pointer_002_gbl_ptr ∈ {0}
+  free_null_pointer_010_gbl_dst ∈ {0}
+  free_null_pointer_005_gbl_ptr ∈ {0}
+  free_null_pointer_007_gbl_doubleptr ∈
+                                     {{ NULL ;
+                                        &__malloc_free_null_pointer_007_func_002_l183[0] }}
+  free_null_pointer_009dst ∈ {0}
+  free_null_pointer_014_gbl_s ∈
+                             {{ NULL ;
+                                &__malloc_w_free_null_pointer_014_func_001_l520 }} or ESCAPINGADDR
+  u ∈ {0}
+  __malloc_free_null_pointer_001_l23[0..9] ∈ UNINITIALIZED
+  __calloc_free_null_pointer_002_l41[0..9] ∈ {0}
+  __calloc_w_free_null_pointer_003_l63[0] ∈ [0..9]
+                                      [1..4] ∈ {0}
+  __malloc_w_free_null_pointer_004_l84[0..4] ∈
+                                      [0.5 .. 4.5] or UNINITIALIZED
+  __malloc_free_null_pointer_005_func_001_l112[0..16] ∈
+                                              [--..--] or UNINITIALIZED
+  __malloc_w_free_null_pointer_006_l154[0..16] ∈ [--..--] or UNINITIALIZED
+                                       [17..24] ∈ UNINITIALIZED
+  __malloc_free_null_pointer_007_func_002_l183[0..9] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_007_func_002_l187[0] }} or UNINITIALIZED
+  __malloc_w_free_null_pointer_007_func_002_l187[0..9] ∈
+                                                [0..9] or UNINITIALIZED
+  __malloc_free_null_pointer_008_func_001_l239[0..16] ∈
+                                              [--..--] or UNINITIALIZED
+  __malloc_free_null_pointer_009_func_001_l268[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_009_func_001_l271[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_free_null_pointer_009_func_001_l271[0..6] ∈
+                                                [--..--] or UNINITIALIZED
+                                                [7..14] ∈ UNINITIALIZED
+  __malloc_free_null_pointer_010_func_001_l311[0..4] ∈
+                                              {{ NULL ;
+                                                 &__malloc_w_free_null_pointer_010_func_001_l314[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_free_null_pointer_010_func_001_l314[0..7] ∈
+                                                [--..--] or UNINITIALIZED
+                                                [8..14] ∈ UNINITIALIZED
+  __calloc_w_free_null_pointer_013_l487[0..2] ∈ {0}
+                                       [3] ∈ [0. .. 50.5]
+                                       [4..9] ∈ {0}
+  __malloc_w_free_null_pointer_014_func_001_l520.p1 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l521 }} or UNINITIALIZED or ESCAPINGADDR
+                                                .p2 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l522 }} or UNINITIALIZED or ESCAPINGADDR
+                                                .p3 ∈
+                                                {{ NULL ;
+                                                   &__malloc_w_free_null_pointer_014_func_001_l523 }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_free_null_pointer_014_func_001_l521 ∈ {10.} or UNINITIALIZED
+  __malloc_w_free_null_pointer_014_func_001_l522 ∈ {20.} or UNINITIALIZED
+  __malloc_w_free_null_pointer_014_func_001_l523 ∈ {30.} or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_004_func_001:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {13; 16}
+  j ∈ [13..2147483647] or UNINITIALIZED
+  str_rev ∈ {{ NULL ; &__malloc_w_func_pointer_004_func_001_l105[0] }}
+  __retres ∈ {{ NULL ; &__malloc_w_func_pointer_004_func_001_l105[0] }}
+  __malloc_w_func_pointer_004_func_001_l105[0..15] ∈
+                                           [0..116] or UNINITIALIZED
+                                           [16] ∈ {0} or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_004:
+  __fc_heap_status ∈ [--..--]
+  psink ∈ {{ NULL ; (void *)&__malloc_w_func_pointer_004_func_001_l105 }}
+  j ∈ {2}
+  buf_2[0][0] ∈ {84}
+       [0][1] ∈ {104}
+       [0][2] ∈ {105}
+       [0][3] ∈ {115}
+       [0][4] ∈ {32}
+       [0][5] ∈ {105}
+       [0][6] ∈ {115}
+       [0][7] ∈ {32}
+       [0][8] ∈ {97}
+       [0][9] ∈ {32}
+       [0][10] ∈ {83}
+       [0][11] ∈ {116}
+       [0][12] ∈ {114}
+       [0][13] ∈ {105}
+       [0][14] ∈ {110}
+       [0][15] ∈ {103}
+       [0][16..24] ∈ {0}
+       [1][0] ∈ {83}
+       [1][1] ∈ {101}
+       [1][2] ∈ {99}
+       [1][3] ∈ {111}
+       [1][4] ∈ {110}
+       [1][5] ∈ {100}
+       [1][6] ∈ {32}
+       [1][7] ∈ {83}
+       [1][8] ∈ {116}
+       [1][9] ∈ {114}
+       [1][10] ∈ {105}
+       [1][11] ∈ {110}
+       [1][12] ∈ {103}
+       [1][13..24] ∈ {0}
+  __malloc_w_func_pointer_004_func_001_l105[0..15] ∈
+                                           [0..116] or UNINITIALIZED
+                                           [16] ∈ {0} or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_011_func_001:
+  __fc_heap_status ∈ [--..--]
+  i ∈ {13; 16}
+  j ∈ {13; 14; 15; 16} or UNINITIALIZED
+  str_rev ∈ {{ NULL ; &__malloc_w_func_pointer_011_func_001_l409[0] }}
+  __retres ∈ {{ NULL ; &__malloc_w_func_pointer_011_func_001_l409[0] }}
+  __malloc_w_func_pointer_011_func_001_l409[0..15] ∈
+                                           [0..116] or UNINITIALIZED
+                                           [16] ∈ {0} or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_011:
+  __fc_heap_status ∈ [--..--]
+  psink ∈
+       {{ NULL ; (void *)&__malloc_w_func_pointer_004_func_001_l105 ;
+          (void *)&__malloc_w_func_pointer_011_func_001_l409 }}
+  j ∈ {2}
+  buf_2[0][0] ∈ {84}
+       [0][1] ∈ {104}
+       [0][2] ∈ {105}
+       [0][3] ∈ {115}
+       [0][4] ∈ {32}
+       [0][5] ∈ {105}
+       [0][6] ∈ {115}
+       [0][7] ∈ {32}
+       [0][8] ∈ {97}
+       [0][9] ∈ {32}
+       [0][10] ∈ {83}
+       [0][11] ∈ {116}
+       [0][12] ∈ {114}
+       [0][13] ∈ {105}
+       [0][14] ∈ {110}
+       [0][15] ∈ {103}
+       [0][16..24] ∈ {0}
+       [1][0] ∈ {83}
+       [1][1] ∈ {101}
+       [1][2] ∈ {99}
+       [1][3] ∈ {111}
+       [1][4] ∈ {110}
+       [1][5] ∈ {100}
+       [1][6] ∈ {32}
+       [1][7] ∈ {83}
+       [1][8] ∈ {116}
+       [1][9] ∈ {114}
+       [1][10] ∈ {105}
+       [1][11] ∈ {110}
+       [1][12] ∈ {103}
+       [1][13..24] ∈ {0}
+  __malloc_w_func_pointer_011_func_001_l409[0..15] ∈
+                                           [0..116] or UNINITIALIZED
+                                           [16] ∈ {0} or UNINITIALIZED
+[value:final-states] Values at end of function func_pointer_main:
+  __fc_random_counter ∈ [--..--]
+  __fc_heap_status ∈ [--..--]
+  sink ∈ [--..--]
+  psink ∈
+       {{ NULL ; (void *)&__malloc_w_func_pointer_004_func_001_l105 ;
+          (void *)&__malloc_w_func_pointer_011_func_001_l409 }}
+  func_gbl ∈ {{ NULL ; &func_pointer_014_func_001 }}
+  fptr_gbl ∈ {{ NULL ; &func_pointer_015_func_001 }}
+  fptr2_gbl ∈ {{ NULL ; &func_pointer_015_func_003 }}
+  func_pointer_005_doubleptr_gbl ∈
+                                {{ NULL ;
+                                   &__malloc_func_pointer_005_func_002_l157[0] }} or ESCAPINGADDR
+  global_set ∈ {0; 1}
+  func_pointer_006_doubleptr_gbl ∈ {0}
+  a_1[0][0] ∈ {1.}
+     [0][1] ∈ {2.}
+     [0][2] ∈ [3. .. 50.5999984741]
+     [1][0] ∈ {11.1000003815}
+     [1][1] ∈ {22.1000003815}
+     [1][2] ∈ {33.0999984741}
+  __malloc_w_func_pointer_004_func_001_l105[0..15] ∈
+                                           [0..116] or UNINITIALIZED
+                                           [16] ∈ {0} or UNINITIALIZED
+  __malloc_func_pointer_005_func_002_l157[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_005_func_002_l161[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_func_pointer_005_func_002_l161[0..9] ∈
+                                           [0..2147483647] or UNINITIALIZED
+  __malloc_func_pointer_006_func_002_l217[0..9] ∈
+                                         {{ NULL ;
+                                            &__malloc_w_func_pointer_006_func_002_l221[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __malloc_w_func_pointer_006_func_002_l221[0..9] ∈
+                                           [0. .. 10000000000.] or UNINITIALIZED
+  __calloc_func_pointer_009_func_001_l348{.a; .b} ∈ {0; 40}
+  __malloc_w_func_pointer_011_func_001_l409[0..15] ∈
+                                           [0..116] or UNINITIALIZED
+                                           [16] ∈ {0} or UNINITIALIZED
+  __malloc_func_pointer_012_func_001_l461[0..3][0..3] ∈
+                                         [--..--] or UNINITIALIZED
+  __malloc_func_pointer_015_l626{.arr[0..9]; .a} ∈
+                                [--..--] or UNINITIALIZED
+                                {.b; .c} ∈ [--..--]
+[value:final-states] Values at end of function function_return_value_unchecked_011:
+  k ∈ {5}
+[value:final-states] Values at end of function function_return_value_unchecked_main:
+  __fc_heap_status ∈ [--..--]
+  sink ∈ [--..--]
+  S___fc_stdout[0..1] ∈ [--..--]
+  __calloc_w_function_return_value_unchecked_006_func_001_l188[0][0..3] ∈
+                                                              [--..--]
+                                                              [1..3][0..3] ∈
+                                                              [-3.40282346639e+38 .. 3.40282346639e+38]
+[value:final-states] Values at end of function dynamic_buffer_underrun_034:
+  __fc_heap_status ∈ [--..--]
+  srcbuf ∈ {{ "Test Code" }}
+  i ∈ [9..2147483647] or UNINITIALIZED
+  loc ∈ {1; 6}
+  destbuf ∈ {0} or ESCAPINGADDR
+  ch ∈ {111}
+  __malloc_dynamic_buffer_underrun_034_l643[0..9] ∈ UNINITIALIZED
+[value:final-states] Values at end of function dynamic_buffer_underrun_main:
+  __fc_heap_status ∈ [--..--]
+  S___fc_stdout[0..1] ∈ [--..--]
+  __calloc_dynamic_buffer_underrun_001_l21[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_002_l39[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_003_l53[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_004_l74[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_005_l88[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_006_l106[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_007_l124[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_008_l142[0..4] ∈
+                                           {{ NULL ;
+                                              &__calloc_w_dynamic_buffer_underrun_008_l146[0] }} or ESCAPINGADDR
+  __calloc_w_dynamic_buffer_underrun_008_l146[0..4] ∈ {0; 1; 2; 3; 4}
+  __calloc_dynamic_buffer_underrun_009_l165[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l166[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l167[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l168[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_009_l169[0..3] ∈ {0}
+                                           [4] ∈ {0; 5}
+  __calloc_dynamic_buffer_underrun_010_l195[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_011_l215[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_012_l229[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_013_l244[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_014_l260[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_015_l275[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_016_l296[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_017_func_001_l310[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_018_l329[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_019_l345[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_020_l362[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_021_l381[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_022_l399[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_023_l415[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_024_l440[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_025_l455[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_026_l475[0..4] ∈ {0}
+  __calloc_dynamic_buffer_underrun_027_l491[0..4] ∈ {0}
+  __malloc_dynamic_buffer_underrun_029_l526 ∈ UNINITIALIZED
+  __malloc_dynamic_buffer_underrun_030_l544[0..9] ∈
+                                           {{ NULL ;
+                                              &__calloc_w_dynamic_buffer_underrun_030_l548[0] }} or UNINITIALIZED or ESCAPINGADDR
+  __calloc_w_dynamic_buffer_underrun_030_l548[0..9] ∈ {0; 97}
+  __calloc_dynamic_buffer_underrun_031_l570[0..11] ∈ {0}
+  __calloc_dynamic_buffer_underrun_032_l597[0..9] ∈ {0}
+  __malloc_dynamic_buffer_underrun_034_l643[0..9] ∈ UNINITIALIZED
+  __malloc_w_dynamic_buffer_underrun_035_l670[0..1] ∈ {84} or UNINITIALIZED
+                                             [2..9] ∈ UNINITIALIZED
+  __malloc_dynamic_buffer_underrun_036_l697[0..14] ∈ UNINITIALIZED
+  __malloc_dynamic_buffer_underrun_037_l714[0..9] ∈ UNINITIALIZED
+  __malloc_w_dynamic_buffer_underrun_037_l720[0] ∈ {84} or UNINITIALIZED
+                                             [1..9] ∈ UNINITIALIZED
+  __malloc_dynamic_buffer_underrun_038_l744[0..9] ∈ UNINITIALIZED
+  __malloc_dynamic_buffer_underrun_039_l769[0..14] ∈ UNINITIALIZED
+[value:final-states] Values at end of function main:
+  NON TERMINATING FUNCTION

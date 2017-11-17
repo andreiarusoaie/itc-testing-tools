@@ -1,0 +1,557 @@
+File, Line, Error
+data_overflow.c , 333 , [kernel] warning: Floating-point constant 3.40282326e+38F is not represented exactly. Will use 0x1.fffffc0000000p127. See documentation for option -warn-decimal-float
+uninit_memory_access.c , 27 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned long to long.
+uninit_memory_access.c , 325 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned int to size_t.
+memory_allocation_failure.c , 271 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned int to size_t.
+double_lock.c , 47 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from int to unsigned int.
+double_lock.c , 201 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from long to unsigned long.
+double_lock.c , 216 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from long to unsigned long.
+main.c , 19 , [value] warning: out of bounds read. assert \valid_read(argv + 1);
+main.c , 22 , [value] warning: out of bounds read. assert \valid_read(argv + 1);
+bit_shift.c , 121 , [value] warning: signed overflow. assert a_4 << shift ≤ 2147483647;
+buffer_overrun_dynamic.c , 20 , [value] allocating variable __calloc_dynamic_buffer_overrun_001_l20
+buffer_overrun_dynamic.c , 24 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 38 , [value] allocating variable __calloc_dynamic_buffer_overrun_002_l38
+buffer_overrun_dynamic.c , 52 , [value] allocating variable __calloc_dynamic_buffer_overrun_003_l52
+buffer_overrun_dynamic.c , 57 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 73 , [value] allocating variable __calloc_dynamic_buffer_overrun_004_l73
+buffer_overrun_dynamic.c , 87 , [value] allocating variable __calloc_dynamic_buffer_overrun_005_l87
+buffer_overrun_dynamic.c , 91 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 105 , [value] allocating variable __calloc_dynamic_buffer_overrun_006_l105
+buffer_overrun_dynamic.c , 109 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 123 , [value] allocating variable __calloc_dynamic_buffer_overrun_007_l123
+buffer_overrun_dynamic.c , 127 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 141 , [value] allocating variable __calloc_dynamic_buffer_overrun_008_l141
+buffer_overrun_dynamic.c , 144 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 145 , [value] allocating variable __calloc_dynamic_buffer_overrun_008_l145
+buffer_overrun_dynamic.c , 145 , [value] warning: out of bounds write. assert \valid(buf_2 + i);
+buffer_overrun_dynamic.c , 147 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 149 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 151 , [value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_overrun_dynamic.c , 151 , [value] warning: out of bounds write. assert \valid(*(buf_2 + i) + j);
+buffer_overrun_dynamic.c , 153 , [value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_overrun_dynamic.c , 151 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_overrun_dynamic.c , 153 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_overrun_dynamic.c , 164 , [value] allocating variable __calloc_dynamic_buffer_overrun_009_l164
+buffer_overrun_dynamic.c , 165 , [value] allocating variable __calloc_dynamic_buffer_overrun_009_l165
+buffer_overrun_dynamic.c , 166 , [value] allocating variable __calloc_dynamic_buffer_overrun_009_l166
+buffer_overrun_dynamic.c , 167 , [value] allocating variable __calloc_dynamic_buffer_overrun_009_l167
+buffer_overrun_dynamic.c , 168 , [value] allocating variable __calloc_dynamic_buffer_overrun_009_l168
+buffer_overrun_dynamic.c , 171 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 173 , [value] warning: out of bounds write. assert \valid(*(pbuf_0[i]) + j);
+buffer_overrun_dynamic.c , 194 , [value] allocating variable __calloc_dynamic_buffer_overrun_010_l194
+buffer_overrun_dynamic.c , 214 , [value] allocating variable __calloc_dynamic_buffer_overrun_011_l214
+buffer_overrun_dynamic.c , 228 , [value] allocating variable __calloc_dynamic_buffer_overrun_012_l228
+buffer_overrun_dynamic.c , 243 , [value] allocating variable __calloc_dynamic_buffer_overrun_013_l243
+buffer_overrun_dynamic.c , 258 , [value] allocating variable __calloc_dynamic_buffer_overrun_014_l258
+buffer_overrun_dynamic.c , 273 , [value] allocating variable __calloc_dynamic_buffer_overrun_015_l273
+buffer_overrun_dynamic.c , 294 , [value] allocating variable __calloc_dynamic_buffer_overrun_016_l294
+buffer_overrun_dynamic.c , 308 , [value] allocating variable __calloc_dynamic_buffer_overrun_017_func_001_l308
+buffer_overrun_dynamic.c , 327 , [value] allocating variable __calloc_dynamic_buffer_overrun_018_l327
+buffer_overrun_dynamic.c , 343 , [value] allocating variable __calloc_dynamic_buffer_overrun_019_l343
+buffer_overrun_dynamic.c , 360 , [value] allocating variable __calloc_dynamic_buffer_overrun_020_l360
+buffer_overrun_dynamic.c , 379 , [value] allocating variable __calloc_dynamic_buffer_overrun_021_l379
+buffer_overrun_dynamic.c , 397 , [value] allocating variable __calloc_dynamic_buffer_overrun_022_l397
+buffer_overrun_dynamic.c , 413 , [value] allocating variable __calloc_dynamic_buffer_overrun_023_l413
+buffer_overrun_dynamic.c , 419 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 421 , [value] warning: out of bounds write. assert \valid(p_0);
+buffer_overrun_dynamic.c , 439 , [value] allocating variable __calloc_dynamic_buffer_overrun_024_l439
+buffer_overrun_dynamic.c , 434 , [value] warning: out of bounds write. assert \valid(buf_2 + 4);
+buffer_overrun_dynamic.c , 455 , [value] allocating variable __calloc_dynamic_buffer_overrun_025_l455
+buffer_overrun_dynamic.c , 459 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 474 , [value] allocating variable __calloc_dynamic_buffer_overrun_026_l474
+buffer_overrun_dynamic.c , 479 , [value] warning: out of bounds write. assert \valid(p_0 + 0);
+buffer_overrun_dynamic.c , 490 , [value] allocating variable __calloc_dynamic_buffer_overrun_027_l490
+buffer_overrun_dynamic.c , 495 , [value] warning: out of bounds write. assert \valid(p_0 + 1);
+buffer_overrun_dynamic.c , 506 , [value] allocating variable __calloc_dynamic_buffer_overrun_028_l506
+buffer_overrun_dynamic.c , 507 , [value] allocating variable __calloc_dynamic_buffer_overrun_028_l507
+buffer_overrun_dynamic.c , 509 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 511 , [value] warning: out of bounds write. assert \valid(buf1_0 + i);
+buffer_overrun_dynamic.c , 513 , [value] warning: out of bounds read. assert \valid_read(buf1_0 + 2);
+buffer_overrun_dynamic.c , 513 , [value] warning: out of bounds write. assert \valid(buf2_0 + *(buf1_0 + 2));
+buffer_overrun_dynamic.c , 526 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 528 , [value] allocating variable __malloc_dynamic_buffer_overrun_029_l528
+buffer_overrun_dynamic.c , 546 , [value] allocating variable __malloc_dynamic_buffer_overrun_030_l546
+buffer_overrun_dynamic.c , 548 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 550 , [value] allocating variable __malloc_dynamic_buffer_overrun_030_l550
+buffer_overrun_dynamic.c , 550 , [value] warning: out of bounds write. assert \valid(doubleptr + i);
+buffer_overrun_dynamic.c , 554 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 556 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 558 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_overrun_dynamic.c , 558 , [value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_overrun_dynamic.c , 558 , [value] warning: out of bounds write. assert \valid(*(doubleptr + i) + j);
+buffer_overrun_dynamic.c , 560 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_overrun_dynamic.c , 560 , [value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_overrun_dynamic.c , 558 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_overrun_dynamic.c , 560 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_overrun_dynamic.c , 572 , [value] allocating variable __calloc_dynamic_buffer_overrun_031_l572
+buffer_overrun_dynamic.c , 577 , [value] entering loop for the first time
+buffer_overrun_dynamic.c , 582 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_overrun_dynamic.c , 600 , [value] allocating variable __malloc_dynamic_buffer_overrun_032_l600
+buffer_overrun_dynamic.c , 605 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 21 , [value] allocating variable __calloc_dynamic_buffer_underrun_001_l21
+buffer_underrun_dynamic.c , 25 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 39 , [value] allocating variable __calloc_dynamic_buffer_underrun_002_l39
+buffer_underrun_dynamic.c , 53 , [value] allocating variable __calloc_dynamic_buffer_underrun_003_l53
+buffer_underrun_dynamic.c , 58 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 74 , [value] allocating variable __calloc_dynamic_buffer_underrun_004_l74
+buffer_underrun_dynamic.c , 88 , [value] allocating variable __calloc_dynamic_buffer_underrun_005_l88
+buffer_underrun_dynamic.c , 92 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 106 , [value] allocating variable __calloc_dynamic_buffer_underrun_006_l106
+buffer_underrun_dynamic.c , 110 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 124 , [value] allocating variable __calloc_dynamic_buffer_underrun_007_l124
+buffer_underrun_dynamic.c , 128 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 142 , [value] allocating variable __calloc_dynamic_buffer_underrun_008_l142
+buffer_underrun_dynamic.c , 145 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 146 , [value] allocating variable __calloc_dynamic_buffer_underrun_008_l146
+buffer_underrun_dynamic.c , 146 , [value] warning: out of bounds write. assert \valid(buf_2 + i);
+buffer_underrun_dynamic.c , 148 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 150 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 152 , [value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_underrun_dynamic.c , 152 , [value] warning: out of bounds write. assert \valid(*(buf_2 + i) + j);
+buffer_underrun_dynamic.c , 154 , [value] warning: out of bounds read. assert \valid_read(buf_2 + i);
+buffer_underrun_dynamic.c , 152 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 154 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 165 , [value] allocating variable __calloc_dynamic_buffer_underrun_009_l165
+buffer_underrun_dynamic.c , 166 , [value] allocating variable __calloc_dynamic_buffer_underrun_009_l166
+buffer_underrun_dynamic.c , 167 , [value] allocating variable __calloc_dynamic_buffer_underrun_009_l167
+buffer_underrun_dynamic.c , 168 , [value] allocating variable __calloc_dynamic_buffer_underrun_009_l168
+buffer_underrun_dynamic.c , 169 , [value] allocating variable __calloc_dynamic_buffer_underrun_009_l169
+buffer_underrun_dynamic.c , 172 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 174 , [value] warning: out of bounds write. assert \valid(*(pbuf_0[i]) + j);
+buffer_underrun_dynamic.c , 195 , [value] allocating variable __calloc_dynamic_buffer_underrun_010_l195
+buffer_underrun_dynamic.c , 215 , [value] allocating variable __calloc_dynamic_buffer_underrun_011_l215
+buffer_underrun_dynamic.c , 229 , [value] allocating variable __calloc_dynamic_buffer_underrun_012_l229
+buffer_underrun_dynamic.c , 244 , [value] allocating variable __calloc_dynamic_buffer_underrun_013_l244
+buffer_underrun_dynamic.c , 260 , [value] allocating variable __calloc_dynamic_buffer_underrun_014_l260
+buffer_underrun_dynamic.c , 275 , [value] allocating variable __calloc_dynamic_buffer_underrun_015_l275
+buffer_underrun_dynamic.c , 296 , [value] allocating variable __calloc_dynamic_buffer_underrun_016_l296
+buffer_underrun_dynamic.c , 310 , [value] allocating variable __calloc_dynamic_buffer_underrun_017_func_001_l310
+buffer_underrun_dynamic.c , 329 , [value] allocating variable __calloc_dynamic_buffer_underrun_018_l329
+buffer_underrun_dynamic.c , 345 , [value] allocating variable __calloc_dynamic_buffer_underrun_019_l345
+buffer_underrun_dynamic.c , 362 , [value] allocating variable __calloc_dynamic_buffer_underrun_020_l362
+buffer_underrun_dynamic.c , 381 , [value] allocating variable __calloc_dynamic_buffer_underrun_021_l381
+buffer_underrun_dynamic.c , 399 , [value] allocating variable __calloc_dynamic_buffer_underrun_022_l399
+buffer_underrun_dynamic.c , 415 , [value] allocating variable __calloc_dynamic_buffer_underrun_023_l415
+buffer_underrun_dynamic.c , 421 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 440 , [value] allocating variable __calloc_dynamic_buffer_underrun_024_l440
+buffer_underrun_dynamic.c , 455 , [value] allocating variable __calloc_dynamic_buffer_underrun_025_l455
+buffer_underrun_dynamic.c , 460 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 475 , [value] allocating variable __calloc_dynamic_buffer_underrun_026_l475
+buffer_underrun_dynamic.c , 491 , [value] allocating variable __calloc_dynamic_buffer_underrun_027_l491
+buffer_underrun_dynamic.c , 507 , [value] allocating variable __calloc_dynamic_buffer_underrun_028_l507
+buffer_underrun_dynamic.c , 508 , [value] allocating variable __calloc_dynamic_buffer_underrun_028_l508
+buffer_underrun_dynamic.c , 511 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 513 , [value] warning: out of bounds write. assert \valid(buf1_0 + i);
+buffer_underrun_dynamic.c , 515 , [value] warning: out of bounds read. assert \valid_read(buf1_0 + 0);
+buffer_underrun_dynamic.c , 515 , [value] warning: out of bounds write. assert \valid(buf2_0 - *(buf1_0 + 0));
+buffer_underrun_dynamic.c , 524 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 526 , [value] allocating variable __malloc_dynamic_buffer_underrun_029_l526
+buffer_underrun_dynamic.c , 544 , [value] allocating variable __malloc_dynamic_buffer_underrun_030_l544
+buffer_underrun_dynamic.c , 546 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 548 , [value] allocating variable __calloc_dynamic_buffer_underrun_030_l548
+buffer_underrun_dynamic.c , 548 , [value] warning: out of bounds write. assert \valid(doubleptr + i);
+buffer_underrun_dynamic.c , 552 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 554 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 556 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c , 556 , [value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_underrun_dynamic.c , 556 , [value] warning: out of bounds write. assert \valid(*(doubleptr + i) + j);
+buffer_underrun_dynamic.c , 558 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c , 558 , [value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+buffer_underrun_dynamic.c , 556 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 558 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 570 , [value] allocating variable __calloc_dynamic_buffer_underrun_031_l570
+buffer_underrun_dynamic.c , 575 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 579 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c , 597 , [value] allocating variable __calloc_dynamic_buffer_underrun_032_l597
+buffer_underrun_dynamic.c , 602 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 614 , [value] allocating variable __calloc_dynamic_buffer_underrun_033_l614
+buffer_underrun_dynamic.c , 620 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 643 , [value] allocating variable __malloc_dynamic_buffer_underrun_034_l643
+buffer_underrun_dynamic.c , 647 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 654 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c , 667 , [value] allocating variable __malloc_dynamic_buffer_underrun_035_l667
+buffer_underrun_dynamic.c , 669 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 670 , [value] allocating variable __malloc_dynamic_buffer_underrun_035_l670
+buffer_underrun_dynamic.c , 670 , [value] warning: out of bounds write. assert \valid(doubleptr + i);
+buffer_underrun_dynamic.c , 675 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + loc1);
+buffer_underrun_dynamic.c , 675 , [value] warning: out of bounds read. assert \valid_read(doubleptr + loc1);
+buffer_underrun_dynamic.c , 675 , [value] warning: out of bounds write. assert \valid(*(doubleptr + loc1) + loc2);
+buffer_underrun_dynamic.c , 680 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + 0);
+buffer_underrun_dynamic.c , 680 , [value] warning: out of bounds write. assert \valid(*(doubleptr + 0) + loc2);
+buffer_underrun_dynamic.c , 681 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 683 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 683 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c , 697 , [value] allocating variable __malloc_dynamic_buffer_underrun_036_l697
+buffer_underrun_dynamic.c , 700 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c , 714 , [value] allocating variable __malloc_dynamic_buffer_underrun_037_l714
+buffer_underrun_dynamic.c , 718 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 720 , [value] allocating variable __malloc_dynamic_buffer_underrun_037_l720
+buffer_underrun_dynamic.c , 721 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c , 721 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 723 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + 0);
+buffer_underrun_dynamic.c , 723 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 723 , [value] warning: out of bounds write. assert \valid(*(doubleptr + 0) + 0);
+buffer_underrun_dynamic.c , 724 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+buffer_underrun_dynamic.c , 724 , [value] warning: accessing left-value that contains escaping addresses.
+buffer_underrun_dynamic.c , 744 , [value] allocating variable __malloc_dynamic_buffer_underrun_038_l744
+buffer_underrun_dynamic.c , 769 , [value] allocating variable __malloc_dynamic_buffer_underrun_039_l769
+buffer_underrun_dynamic.c , 775 , [value] entering loop for the first time
+buffer_underrun_dynamic.c , 777 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+buffer_underrun_dynamic.c , 779 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+conflicting_cond.c , 120 , [value] entering loop for the first time
+conflicting_cond.c , 122 , [value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c , 139 , [value] entering loop for the first time
+conflicting_cond.c , 141 , [value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c , 159 , [value] entering loop for the first time
+conflicting_cond.c , 161 , [value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c , 179 , [value] entering loop for the first time
+conflicting_cond.c , 181 , [value] warning: signed overflow. assert b_0 + a_4 ≤ 2147483647;
+conflicting_cond.c , 197 , [value] entering loop for the first time
+data_lost.c , 86 , [value] warning: overflow in conversion from floating-point to integer.
+data_overflow.c , 337 , [value] warning: overflow in conversion from floating-point to integer.
+data_overflow.c , 353 , [value] warning: overflow in conversion from floating-point to integer.
+dead_code.c , 130 , [value] entering loop for the first time
+dead_code.c , 147 , [value] entering loop for the first time
+dead_code.c , 165 , [value] entering loop for the first time
+dead_code.c , 187 , [value] entering loop for the first time
+dead_code.c , 204 , [value] entering loop for the first time
+dead_code.c , 227 , [value] entering loop for the first time
+dead_code.c , 245 , [value] entering loop for the first time
+dead_lock.c , 86 , [kernel] warning: Neither code nor specification for function pthread_mutex_init, generating default assigns from the prototype
+dead_lock.c , 89 , [kernel] warning: Neither code nor specification for function pthread_create, generating default assigns from the prototype
+dead_lock.c , 89 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 89 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 90 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 90 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 92 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c , 92 , [kernel] warning: Neither code nor specification for function pthread_join, generating default assigns from the prototype
+dead_lock.c , 93 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c , 95 , [kernel] warning: Neither code nor specification for function pthread_mutex_destroy, generating default assigns from the prototype
+dead_lock.c , 223 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 223 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 224 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 224 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 225 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 225 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 227 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c , 228 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c , 229 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid3);
+dead_lock.c , 393 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 393 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 394 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 394 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 396 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c , 397 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c , 550 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 550 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 551 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 551 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 553 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c , 554 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+dead_lock.c , 685 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 685 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 686 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+dead_lock.c , 686 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+dead_lock.c , 688 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+dead_lock.c , 689 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+deletion_of_data_structure_sentinel.c , 23 , [value] allocating variable __calloc_deletion_of_data_structure_sentinel_001_l23
+deletion_of_data_structure_sentinel.c , 24 , [value] entering loop for the first time
+deletion_of_data_structure_sentinel.c , 26 , [value] warning: out of bounds write. assert \valid(foo + counter);
+deletion_of_data_structure_sentinel.c , 28 , [value] warning: out of bounds write. assert \valid(foo + counter);
+deletion_of_data_structure_sentinel.c , 42 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+deletion_of_data_structure_sentinel.c , 57 , [value] entering loop for the first time
+deletion_of_data_structure_sentinel.c , 63 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+double_free.c , 20 , [value] allocating variable __malloc_double_free_001_l20
+double_free.c , 32 , [value] allocating variable __malloc_double_free_002_l32
+double_free.c , 35 , [value] entering loop for the first time
+double_free.c , 37 , [value] warning: out of bounds write. assert \valid(ptr + i);
+double_free.c , 51 , [value] allocating variable __malloc_double_free_003_l51
+double_free.c , 54 , [value] entering loop for the first time
+double_free.c , 56 , [value] warning: out of bounds write. assert \valid(ptr + i);
+double_free.c , 70 , [value] allocating variable __malloc_double_free_004_l70
+double_free.c , 72 , [value] entering loop for the first time
+double_free.c , 74 , [value] warning: out of bounds write. assert \valid(ptr + i);
+double_free.c , 87 , [value] allocating variable __malloc_double_free_005_l87
+double_free.c , 100 , [value] allocating variable __malloc_double_free_006_l100
+double_free.c , 114 , [value] allocating variable __malloc_double_free_007_l114
+double_free.c , 135 , [value] allocating variable __malloc_double_free_008_l135
+double_free.c , 148 , [value] allocating variable __malloc_double_free_009_l148
+double_free.c , 151 , [value] entering loop for the first time
+double_free.c , 167 , [value] allocating variable __malloc_double_free_010_l167
+double_free.c , 170 , [value] entering loop for the first time
+double_free.c , 172 , [value] warning: accessing left-value that contains escaping addresses.
+double_free.c , 185 , [value] allocating variable __malloc_double_free_011_l185
+double_free.c , 188 , [value] entering loop for the first time
+double_free.c , 191 , [value] warning: accessing left-value that contains escaping addresses.
+double_free.c , 204 , [value] allocating variable __malloc_double_free_012_l204
+double_free.c , 207 , [value] entering loop for the first time
+double_free.c , 209 , [value] warning: accessing left-value that contains escaping addresses.
+double_lock.c , 58 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c , 58 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_lock.c , 59 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_lock.c , 108 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c , 108 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_lock.c , 109 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_lock.c , 167 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c , 167 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_lock.c , 168 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_lock.c , 228 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c , 228 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_lock.c , 228 , [value] warning: signed overflow.
+double_lock.c , 228 , [value] warning: signed overflow.
+double_lock.c , 229 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_lock.c , 229 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_lock.c , 229 , [value] warning: signed overflow.
+double_lock.c , 229 , [value] warning: signed overflow.
+double_release.c , 43 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 43 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 44 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c , 95 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 95 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 96 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 96 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 97 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c , 98 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid2);
+double_release.c , 144 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 144 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 145 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c , 191 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 191 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 192 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c , 240 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 240 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 241 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+double_release.c , 282 , [value] warning: Completely invalid destination for assigns clause *start_routine. Ignoring.
+double_release.c , 282 , [value] warning: Completely invalid destination for assigns clause *((char *)arg + (0 ..)).
+double_release.c , 283 , [value] warning: accessing uninitialized left-value. assert \initialized(&tid1);
+endless_loop.c , 23 , [value] entering loop for the first time
+endless_loop.c , 25 , [value] warning: signed overflow. assert a_4 + 1 ≤ 2147483647;
+endless_loop.c , 44 , [value] entering loop for the first time
+endless_loop.c , 46 , [value] warning: signed overflow. assert a_4 + 1 ≤ 2147483647;
+endless_loop.c , 61 , [value] entering loop for the first time
+endless_loop.c , 82 , [value] entering loop for the first time
+endless_loop.c , 107 , [value] entering loop for the first time
+endless_loop.c , 127 , [value] entering loop for the first time
+endless_loop.c , 153 , [value] entering loop for the first time
+endless_loop.c , 174 , [value] entering loop for the first time
+endless_loop.c , 194 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 47 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_003_l47
+free_nondynamically_allocated_memory.c , 61 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 72 , [value] allocating variable __calloc_free_nondynamic_allocated_memory_005_l72
+free_nondynamically_allocated_memory.c , 73 , [value] allocating variable __calloc_free_nondynamic_allocated_memory_005_l73
+free_nondynamically_allocated_memory.c , 80 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 82 , [value] warning: out of bounds write. assert \valid(*(pbuf_0[i]) + j);
+free_nondynamically_allocated_memory.c , 95 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l95
+free_nondynamically_allocated_memory.c , 96 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l96
+free_nondynamically_allocated_memory.c , 97 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l97
+free_nondynamically_allocated_memory.c , 98 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_006_l98
+free_nondynamically_allocated_memory.c , 114 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 127 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 140 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 152 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 168 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 184 , [value] entering loop for the first time
+free_nondynamically_allocated_memory.c , 207 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_013_l207
+free_nondynamically_allocated_memory.c , 209 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_013_l209
+free_nondynamically_allocated_memory.c , 209 , [value] warning: out of bounds write. assert \valid(&new_struct->next);
+free_nondynamically_allocated_memory.c , 228 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_014_l228
+free_nondynamically_allocated_memory.c , 244 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_015_l244
+free_nondynamically_allocated_memory.c , 256 , [value] allocating variable __malloc_free_nondynamic_allocated_memory_016_func_001_l256
+free_null_pointer.c , 23 , [value] allocating variable __malloc_free_null_pointer_001_l23
+free_null_pointer.c , 26 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c , 41 , [value] allocating variable __calloc_free_null_pointer_002_l41
+free_null_pointer.c , 59 , [value] entering loop for the first time
+free_null_pointer.c , 63 , [value] allocating variable __calloc_free_null_pointer_003_l63
+free_null_pointer.c , 79 , [value] allocating variable __malloc_free_null_pointer_004_l79
+free_null_pointer.c , 82 , [value] entering loop for the first time
+free_null_pointer.c , 84 , [value] allocating variable __malloc_free_null_pointer_004_l84
+free_null_pointer.c , 84 , [value] warning: out of bounds write. assert \valid(fptr + i);
+free_null_pointer.c , 89 , [value] entering loop for the first time
+free_null_pointer.c , 91 , [value] entering loop for the first time
+free_null_pointer.c , 93 , [value] warning: accessing uninitialized left-value. assert \initialized(fptr + i);
+free_null_pointer.c , 93 , [value] warning: out of bounds write. assert \valid(*(fptr + i) + j);
+free_null_pointer.c , 95 , [value] warning: accessing uninitialized left-value. assert \initialized(fptr + i);
+free_null_pointer.c , 93 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 95 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 112 , [value] allocating variable __malloc_free_null_pointer_005_func_001_l112
+free_null_pointer.c , 119 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c , 148 , [value] allocating variable __calloc_free_null_pointer_006_l148
+free_null_pointer.c , 152 , [value] entering loop for the first time
+free_null_pointer.c , 154 , [value] allocating variable __malloc_free_null_pointer_006_l154
+free_null_pointer.c , 154 , [value] warning: out of bounds write. assert \valid(&(s_0 + i)->buf);
+free_null_pointer.c , 156 , [value] warning: out of bounds read. assert \valid_read(&(s_0 + 4)->buf);
+free_null_pointer.c , 156 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c , 160 , [value] entering loop for the first time
+free_null_pointer.c , 161 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 183 , [value] allocating variable __malloc_free_null_pointer_007_func_002_l183
+free_null_pointer.c , 185 , [value] entering loop for the first time
+free_null_pointer.c , 187 , [value] allocating variable __malloc_free_null_pointer_007_func_002_l187
+free_null_pointer.c , 187 , [value] warning: out of bounds write. assert \valid(free_null_pointer_007_gbl_doubleptr + i);
+free_null_pointer.c , 189 , [value] entering loop for the first time
+free_null_pointer.c , 191 , [value] entering loop for the first time
+free_null_pointer.c , 193 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 193 , [value] warning: out of bounds read.
+free_null_pointer.c , 193 , [value] warning: out of bounds write.
+free_null_pointer.c , 239 , [value] allocating variable __malloc_free_null_pointer_008_func_001_l239
+free_null_pointer.c , 249 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c , 266 , [value] entering loop for the first time
+free_null_pointer.c , 268 , [value] allocating variable __malloc_free_null_pointer_009_func_001_l268
+free_null_pointer.c , 269 , [value] entering loop for the first time
+free_null_pointer.c , 271 , [value] allocating variable __malloc_free_null_pointer_009_func_001_l271
+free_null_pointer.c , 271 , [value] warning: out of bounds write. assert \valid(free_null_pointer_009dst + i);
+free_null_pointer.c , 282 , [value] entering loop for the first time
+free_null_pointer.c , 284 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 284 , [value] warning: out of bounds read. assert \valid_read(free_null_pointer_009dst + i);
+free_null_pointer.c , 284 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c , 286 , [value] entering loop for the first time
+free_null_pointer.c , 288 , [value] entering loop for the first time
+free_null_pointer.c , 290 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 290 , [value] warning: out of bounds read. assert \valid_read(free_null_pointer_009dst + i);
+free_null_pointer.c , 290 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 309 , [value] entering loop for the first time
+free_null_pointer.c , 311 , [value] allocating variable __malloc_free_null_pointer_010_func_001_l311
+free_null_pointer.c , 312 , [value] entering loop for the first time
+free_null_pointer.c , 314 , [value] allocating variable __malloc_free_null_pointer_010_func_001_l314
+free_null_pointer.c , 314 , [value] warning: out of bounds write. assert \valid(free_null_pointer_010_gbl_dst + i);
+free_null_pointer.c , 323 , [value] entering loop for the first time
+free_null_pointer.c , 325 , [value] warning: accessing uninitialized left-value. assert \initialized(dst + i);
+free_null_pointer.c , 325 , [value] warning: out of bounds read. assert \valid_read(dst + i);
+free_null_pointer.c , 325 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+free_null_pointer.c , 331 , [value] entering loop for the first time
+free_null_pointer.c , 333 , [value] entering loop for the first time
+free_null_pointer.c , 335 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 335 , [value] warning: out of bounds read. assert \valid_read(free_null_pointer_010_gbl_dst + i);
+free_null_pointer.c , 335 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 370 , [value] allocating variable __calloc_free_null_pointer_011_func_001_l370
+free_null_pointer.c , 371 , [value] warning: out of bounds write. assert \valid(&u->a);
+free_null_pointer.c , 451 , [value] allocating variable __malloc_free_null_pointer_012_l451
+free_null_pointer.c , 452 , [value] warning: out of bounds write. assert \valid(ptr + 1);
+free_null_pointer.c , 482 , [value] entering loop for the first time
+free_null_pointer.c , 487 , [value] allocating variable __calloc_free_null_pointer_013_l487
+free_null_pointer.c , 489 , [value] warning: out of bounds write. assert \valid(fptr_0 + 3);
+free_null_pointer.c , 493 , [value] entering loop for the first time
+free_null_pointer.c , 518 , [value] entering loop for the first time
+free_null_pointer.c , 520 , [value] allocating variable __malloc_free_null_pointer_014_func_001_l520
+free_null_pointer.c , 521 , [value] allocating variable __malloc_free_null_pointer_014_func_001_l521
+free_null_pointer.c , 521 , [value] warning: out of bounds write. assert \valid(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c , 522 , [value] allocating variable __malloc_free_null_pointer_014_func_001_l522
+free_null_pointer.c , 523 , [value] allocating variable __malloc_free_null_pointer_014_func_001_l523
+free_null_pointer.c , 534 , [value] entering loop for the first time
+free_null_pointer.c , 536 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 536 , [value] warning: out of bounds read. assert \valid_read(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c , 536 , [value] warning: out of bounds write. assert \valid(free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c , 537 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 537 , [value] warning: out of bounds write. assert \valid(free_null_pointer_014_gbl_s->p2);
+free_null_pointer.c , 538 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 538 , [value] warning: out of bounds write. assert \valid(free_null_pointer_014_gbl_s->p3);
+free_null_pointer.c , 548 , [value] entering loop for the first time
+free_null_pointer.c , 550 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 550 , [value] warning: out of bounds read. assert \valid_read(&free_null_pointer_014_gbl_s->p1);
+free_null_pointer.c , 551 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 552 , [value] warning: accessing uninitialized left-value.
+free_null_pointer.c , 550 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 550 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 551 , [value] warning: accessing left-value that contains escaping addresses.
+free_null_pointer.c , 552 , [value] warning: accessing left-value that contains escaping addresses.
+func_pointer.c , 127 , [value] entering loop for the first time
+func_pointer.c , 105 , [value] allocating variable __malloc_func_pointer_004_func_001_l105
+func_pointer.c , 108 , [value] entering loop for the first time
+func_pointer.c , 110 , [value] warning: out of bounds write. assert \valid(str_rev + j);
+func_pointer.c , 110 , [value] warning: out of bounds read. assert \valid_read(str1 + (int)((int)(i - j) - 1));
+func_pointer.c , 112 , [value] warning: out of bounds write. assert \valid(str_rev + i);
+func_pointer.c , 157 , [value] allocating variable __malloc_func_pointer_005_func_002_l157
+func_pointer.c , 159 , [value] entering loop for the first time
+func_pointer.c , 161 , [value] allocating variable __malloc_func_pointer_005_func_002_l161
+func_pointer.c , 161 , [value] warning: out of bounds write. assert \valid(func_pointer_005_doubleptr_gbl + i);
+func_pointer.c , 163 , [value] entering loop for the first time
+func_pointer.c , 165 , [value] entering loop for the first time
+func_pointer.c , 167 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 167 , [value] warning: out of bounds read. assert \valid_read(func_pointer_005_doubleptr_gbl + i);
+func_pointer.c , 167 , [value] warning: out of bounds write.
+func_pointer.c , 183 , [value] entering loop for the first time
+func_pointer.c , 185 , [value] entering loop for the first time
+func_pointer.c , 187 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+func_pointer.c , 187 , [value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+func_pointer.c , 187 , [value] warning: out of bounds write. assert \valid(*(doubleptr + i) + j);
+func_pointer.c , 187 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 187 , [value] warning: signed overflow. assert *(*(doubleptr + i) + j) + (long)1 ≤ 2147483647;
+func_pointer.c , 189 , [value] warning: accessing uninitialized left-value. assert \initialized(doubleptr + i);
+func_pointer.c , 189 , [value] warning: out of bounds read. assert \valid_read(doubleptr + i);
+func_pointer.c , 187 , [value] warning: accessing left-value that contains escaping addresses.
+func_pointer.c , 189 , [value] warning: accessing left-value that contains escaping addresses.
+func_pointer.c , 217 , [value] allocating variable __malloc_func_pointer_006_func_002_l217
+func_pointer.c , 219 , [value] entering loop for the first time
+func_pointer.c , 221 , [value] allocating variable __malloc_func_pointer_006_func_002_l221
+func_pointer.c , 221 , [value] warning: out of bounds write. assert \valid(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c , 223 , [value] entering loop for the first time
+func_pointer.c , 225 , [value] entering loop for the first time
+func_pointer.c , 227 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 227 , [value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c , 227 , [value] warning: out of bounds write.
+func_pointer.c , 236 , [value] entering loop for the first time
+func_pointer.c , 238 , [value] entering loop for the first time
+func_pointer.c , 240 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 240 , [value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c , 240 , [value] warning: out of bounds write.
+func_pointer.c , 269 , [value] entering loop for the first time
+func_pointer.c , 271 , [value] entering loop for the first time
+func_pointer.c , 273 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 273 , [value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c , 273 , [value] warning: out of bounds write.
+func_pointer.c , 273 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 249 , [value] entering loop for the first time
+func_pointer.c , 251 , [value] warning: accessing uninitialized left-value.
+func_pointer.c , 251 , [value] warning: out of bounds read. assert \valid_read(func_pointer_006_doubleptr_gbl + i);
+func_pointer.c , 251 , [value] warning: accessing left-value that contains escaping addresses.
+func_pointer.c , 348 , [value] allocating variable __calloc_func_pointer_009_func_001_l348
+func_pointer.c , 431 , [value] entering loop for the first time
+func_pointer.c , 409 , [value] allocating variable __malloc_func_pointer_011_func_001_l409
+func_pointer.c , 412 , [value] entering loop for the first time
+func_pointer.c , 416 , [value] warning: out of bounds write. assert \valid(str_rev + j);
+func_pointer.c , 414 , [value] warning: out of bounds write. assert \valid(str_rev + j);
+func_pointer.c , 461 , [value] allocating variable __malloc_func_pointer_012_func_001_l461
+func_pointer.c , 464 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+func_pointer.c , 465 , [value] entering loop for the first time
+func_pointer.c , 467 , [value] entering loop for the first time
+func_pointer.c , 469 , [value] warning: accessing uninitialized left-value. assert \initialized(&(*(p_0 + i))[j]);
+func_pointer.c , 469 , [value] warning: signed overflow. assert -2147483648 ≤ (*(p_0 + i))[j] + (*(p_0 + i))[j];
+func_pointer.c , 469 , [value] warning: signed overflow. assert (*(p_0 + i))[j] + (*(p_0 + i))[j] ≤ 2147483647;
+func_pointer.c , 626 , [value] allocating variable __malloc_func_pointer_015_l626
+func_pointer.c , 627 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+func_pointer.c , 588 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+func_pointer.c , 606 , [value] warning: out of bounds write. assert \valid(&st->b);
+func_pointer.c , 606 , [value] warning: accessing uninitialized left-value. assert \initialized(&st->c);
+function_return_value_unchecked.c , 61 , [value] entering loop for the first time
+function_return_value_unchecked.c , 110 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+function_return_value_unchecked.c , 124 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+function_return_value_unchecked.c , 171 , [value] entering loop for the first time
+function_return_value_unchecked.c , 210 , [value] entering loop for the first time
+function_return_value_unchecked.c , 188 , [value] allocating variable __calloc_function_return_value_unchecked_006_func_001_l188
+function_return_value_unchecked.c , 191 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+function_return_value_unchecked.c , 195 , [value] entering loop for the first time
+function_return_value_unchecked.c , 197 , [value] entering loop for the first time
+function_return_value_unchecked.c , 199 , [value] warning: non-finite float value. assert \is_finite((*(p_0 + i))[j]);
+function_return_value_unchecked.c , 213 , [value] entering loop for the first time
+function_return_value_unchecked.c , 215 , [value] warning: out of bounds read. assert \valid_read((float *)*(ptr + j));
+function_return_value_unchecked.c , 215 , [value] warning: non-finite float value. assert \is_finite((*(ptr + j))[0]);
+function_return_value_unchecked.c , 217 , [value] warning: non-finite float value. assert \is_finite((*(ptr + j))[1]);
+function_return_value_unchecked.c , 269 , [value] entering loop for the first time
+function_return_value_unchecked.c , 331 , [value] entering loop for the first time
+function_return_value_unchecked.c , 348 , [value] entering loop for the first time
+function_return_value_unchecked.c , 442 , [value] entering loop for the first time
+improper_termination_of_block.c , 57 , [value] entering loop for the first time
+improper_termination_of_block.c , 73 , [value] entering loop for the first time
+main.c , 161 , [kernel] warning: Neither code nor specification for function invalid_extern_main, generating default assigns from the prototype
+invalid_memory_access.c , 34 , [value] allocating variable __malloc_invalid_memory_access_001_l34
+invalid_memory_access.c , 63 , [value] allocating variable __malloc_invalid_memory_access_002_l63
+invalid_memory_access.c , 70 , [value] warning: out of bounds write. assert \valid(dptr + 1);
+invalid_memory_access.c , 70 , [kernel] warning: all target addresses were invalid. This path is assumed to be dead.
+invalid_memory_access.c , 100 , [value] entering loop for the first time
+invalid_memory_access.c , 102 , [value] allocating variable __malloc_invalid_memory_access_003_l102
+invalid_memory_access.c , 105 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+invalid_memory_access.c , 114 , [value] warning: accessing left-value that contains escaping addresses.
+invalid_memory_access.c , 127 , [value] allocating variable __malloc_invalid_memory_access_004_l127
+invalid_memory_access.c , 130 , [value] cannot evaluate ACSL term, unsupported ACSL construct: logic functions or predicates
+invalid_memory_access.c , 153 , [value] allocating variable __calloc_invalid_memory_access_005_l153
+invalid_memory_access.c , 160 , [value] warning: detected recursive call
