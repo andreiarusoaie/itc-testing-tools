@@ -605,7 +605,8 @@ def generate_main_itc_csvs():
     call_bash([MERGE_EXE, CPP_ERRORS_PER_LINE_FILE, CPP_WO_ERRORS_PER_LINE_FILE, CPP_MERGE_FILE])
 
 def all_tools():
-    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'clangcorealpha', 'framac', 'cpplint', 'oclint', 'flintpp', 'clanalyze']
+#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'oclint', 'flintpp', 'clanalyze']
+    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'cpplint', 'oclint', 'flintpp', 'clanalyze']
 
 import glob
 def clean_temp_stats():
@@ -697,7 +698,6 @@ elif action == 'stat':
     if len(sys.argv) > 4: # handle 'unique stat' tool list
         tools = sys.argv[4]
     run_stats(tools)
-    
 elif action == 'total':
     tool_list = all_tools()
     for tool in tool_list:
@@ -705,6 +705,12 @@ elif action == 'total':
         run_stats(tools)        
     # generate main latex table
     python.latex.total("total.tex", rep_directory, all_tools())
-
+elif action == 'defects':
+    tool_list = all_tools()
+    for tool in tool_list:
+        tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
+        run_stats(tools)
+    python.latex.defects_dr("defects_dr.tex", rep_directory, all_tools())
+    
 else:
     print("Action ", action, " not supported or incomplete.\n")
