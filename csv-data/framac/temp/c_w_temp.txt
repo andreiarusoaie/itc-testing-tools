@@ -82,7 +82,6 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
   __fc_mblen_state ∈ {0}
   __fc_mbtowc_state ∈ {0}
   __fc_wctomb_state ∈ {0}
-  PTHREAD_MUTEX_INITIALIZER ∈ {0}
   sink ∈ {0}
   vflag ∈ [--..--]
   psink ∈ {0}
@@ -141,13 +140,14 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
   overrun_st_018_buf[0..4] ∈ {0}
   overrun_st_031_buf_gbl[0..4] ∈ {0}
   overrun_st_054_buf_gbl[0..4] ∈ {0}
-  dead_lock_001_glb_mutexA ∈ {0}
-  dead_lock_001_glb_mutexB ∈ {0}
+  PTHREAD_MUTEX_INITIALIZER ∈ [--..--]
+  dead_lock_001_glb_mutexA ∈ [--..--]
+  dead_lock_001_glb_mutexB ∈ [--..--]
   dead_lock_001_glb_dataA ∈ {10}
   dead_lock_001_glb_dataB ∈ {10}
-  dead_lock_002_glb_mutexA ∈ {0}
-  dead_lock_002_glb_mutexB ∈ {0}
-  dead_lock_002_glb_mutexC ∈ {0}
+  dead_lock_002_glb_mutexA ∈ [--..--]
+  dead_lock_002_glb_mutexB ∈ [--..--]
+  dead_lock_002_glb_mutexC ∈ [--..--]
   dead_lock_002_glb_dataA ∈ {0}
   dead_lock_002_glb_dataB ∈ {0}
   dead_lock_002_glb_dataC ∈ {0}
@@ -176,27 +176,27 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
   dead_lock_005_glb_dataA ∈ {0}
   dead_lock_005_glb_dataB ∈ {0}
   cmp_funcadr_001_glb_a ∈ {0}
-  lock_never_unlock_001_glb_mutex ∈ {0}
+  lock_never_unlock_001_glb_mutex ∈ [--..--]
   lock_never_unlock_001_glb_data ∈ {0}
-  lock_never_unlock_002_glb_mutex ∈ {0}
+  lock_never_unlock_002_glb_mutex ∈ [--..--]
   lock_never_unlock_002_glb_data ∈ {0}
-  lock_never_unlock_003_glb_mutex ∈ {0}
+  lock_never_unlock_003_glb_mutex ∈ [--..--]
   lock_never_unlock_003_glb_data ∈ {1000.}
-  lock_never_unlock_004_glb_mutex_1 ∈ {0}
-  lock_never_unlock_004_glb_mutex_2 ∈ {0}
-  lock_never_unlock_005_glb_mutex ∈ {0}
+  lock_never_unlock_004_glb_mutex_1 ∈ [--..--]
+  lock_never_unlock_004_glb_mutex_2 ∈ [--..--]
+  lock_never_unlock_005_glb_mutex ∈ [--..--]
   lock_never_unlock_005_glb_data ∈ {0}
   thread_set ∈ {1}
-  lock_never_unlock_006_glb_mutex_1 ∈ {0}
-  lock_never_unlock_006_glb_mutex_2 ∈ {0}
-  lock_never_unlock_007_glb_mutex_1 ∈ {0}
-  lock_never_unlock_007_glb_mutex_2 ∈ {0}
+  lock_never_unlock_006_glb_mutex_1 ∈ [--..--]
+  lock_never_unlock_006_glb_mutex_2 ∈ [--..--]
+  lock_never_unlock_007_glb_mutex_1 ∈ [--..--]
+  lock_never_unlock_007_glb_mutex_2 ∈ [--..--]
   lock_never_unlock_007_glb_var ∈ {0}
-  lock_never_unlock_008_glb_mutex_1 ∈ {0}
-  lock_never_unlock_008_glb_mutex_2 ∈ {0}
+  lock_never_unlock_008_glb_mutex_1 ∈ [--..--]
+  lock_never_unlock_008_glb_mutex_2 ∈ [--..--]
   lock_never_unlock_008_glb_sptr ∈ {0}
-  lock_never_unlock_009_glb_mutex_1 ∈ {0}
-  lock_never_unlock_009_glb_mutex_2 ∈ {0}
+  lock_never_unlock_009_glb_mutex_1 ∈ [--..--]
+  lock_never_unlock_009_glb_mutex_2 ∈ [--..--]
   lock_never_unlock_009_glb_var ∈ {0}
   dsink ∈ {0}
   vflag_copy ∈ [--..--]
@@ -206,15 +206,15 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
   race_glb_2 ∈ {3}
   race_condition_002_gbl ∈ {0}
   instance1 ∈ {0}
-  race_condition_005_glb_mutex ∈ {0}
+  race_condition_005_glb_mutex ∈ [--..--]
   race_condition_005_glb_data ∈ {0}
   race_condition_006_glb_data ∈ {0}
-  race_condition_007_glb_mutex ∈ {0}
+  race_condition_007_glb_mutex ∈ [--..--]
   race_condition_007_glb_data ∈ {0}
-  race_condition_008_glb_mutex ∈ {0}
+  race_condition_008_glb_mutex ∈ [--..--]
   race_condition_008_glb_data ∈ {1000.}
-  race_condition_009_glb_mutex_1 ∈ {0}
-  race_condition_009_glb_mutex_2 ∈ {0}
+  race_condition_009_glb_mutex_1 ∈ [--..--]
+  race_condition_009_glb_mutex_2 ∈ [--..--]
   race_condition_009_glb_data ∈ {1000.}
   memory_allocation_failure_005_gbl ∈ {65536}
   memory_allocation_failure_007_str_gbl ∈ {0}
@@ -260,27 +260,27 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
   double_release_006_glb_mutex_ ∈ {0}
   double_release_006_glb_mutex ∈ {{ &double_release_006_glb_mutex_ }}
   double_release_006_glb_data ∈ {0}
-  unlock_without_lock_001_glb_mutex ∈ {0}
+  unlock_without_lock_001_glb_mutex ∈ [--..--]
   unlock_without_lock_001_glb_data ∈ {0}
-  unlock_without_lock_002_glb_mutex ∈ {0}
+  unlock_without_lock_002_glb_mutex ∈ [--..--]
   unlock_without_lock_002_glb_data ∈ {0}
   unlock_without_lock_002_var ∈ {10}
-  unlock_without_lock_003_glb_mutex ∈ {0}
+  unlock_without_lock_003_glb_mutex ∈ [--..--]
   unlock_without_lock_003_glb_data ∈ {1000.}
-  unlock_without_lock_004_glb_mutex_1 ∈ {0}
-  unlock_without_lock_004_glb_mutex_2 ∈ {0}
+  unlock_without_lock_004_glb_mutex_1 ∈ [--..--]
+  unlock_without_lock_004_glb_mutex_2 ∈ [--..--]
   lock_never_unlock_004_glb_var ∈ {0}
-  unlock_without_lock_005_glb_mutex ∈ {0}
+  unlock_without_lock_005_glb_mutex ∈ [--..--]
   unlock_without_lock_005_glb_data ∈ {0}
   unlock_without_lock_005_thread_set ∈ {1}
-  unlock_without_lock_006_glb_mutex_1 ∈ {0}
-  unlock_without_lock_006_glb_mutex_2 ∈ {0}
+  unlock_without_lock_006_glb_mutex_1 ∈ [--..--]
+  unlock_without_lock_006_glb_mutex_2 ∈ [--..--]
   unlock_without_lock_006_glb_buf[0..4] ∈ {66}
-  unlock_without_lock_007_glb_mutex_1 ∈ {0}
-  unlock_without_lock_007_glb_mutex_2 ∈ {0}
+  unlock_without_lock_007_glb_mutex_1 ∈ [--..--]
+  unlock_without_lock_007_glb_mutex_2 ∈ [--..--]
   unlock_without_lock_007_glb_var ∈ {0}
-  unlock_without_lock_008_glb_mutex_1 ∈ {0}
-  unlock_without_lock_008_glb_mutex_2 ∈ {0}
+  unlock_without_lock_008_glb_mutex_1 ∈ [--..--]
+  unlock_without_lock_008_glb_mutex_2 ∈ [--..--]
   unlock_without_lock_008_glb_var ∈ {0}
   free_nondynamic_allocated_memory_003_gbl_ptr ∈ {0}
   free_nondynamic_allocated_memory_str ∈ {0}
@@ -305,22 +305,22 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
   memory_leak_0016_gbl_ptr ∈ {0}
   memory_leak_0017_gbl_doubleptr ∈ {0}
   memory_leak_0018dst ∈ {0}
-  double_lock_001_glb_mutex ∈ {0}
+  double_lock_001_glb_mutex ∈ [--..--]
   double_lock_001_glb_data ∈ {0}
-  double_lock_002_glb_mutex ∈ {0}
+  double_lock_002_glb_mutex ∈ [--..--]
   double_lock_002_glb_data ∈ {0}
-  double_lock_003_glb_mutex ∈ {0}
+  double_lock_003_glb_mutex ∈ [--..--]
   double_lock_003_glb_data ∈ {0}
-  double_lock_004_glb_mutex1 ∈ {0}
+  double_lock_004_glb_mutex1 ∈ [--..--]
   null_pointer_015_gbl_ptr ∈ {0}
   null_pointer_016_gbl_doubleptr ∈ {0}
   null_pointer_017dst ∈ {0}
-  st_cross_thread_access_001_glb_mutex ∈ {0}
-  st_cross_thread_access_001_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_001_glb_mutex ∈ [--..--]
+  st_cross_thread_access_001_glb_mutex_1 ∈ [--..--]
   st_cross_thread_access_001_glb_data ∈ {0}
   st_cross_thread_access_001_glb_ptr ∈ {0}
-  st_cross_thread_access_002_glb_mutex ∈ {0}
-  st_cross_thread_access_002_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_002_glb_mutex ∈ [--..--]
+  st_cross_thread_access_002_glb_mutex_1 ∈ [--..--]
   st_cross_thread_access_002_glb_data ∈ {0}
   st_cross_thread_access_002_var ∈ {10}
   arr1[0] ∈ {1}
@@ -329,20 +329,20 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
       [3] ∈ {4}
       [4] ∈ {5}
   st_cross_thread_access_002_glb_ptr ∈ {{ &arr1[0] }}
-  st_cross_thread_access_003_glb_mutex ∈ {0}
-  st_cross_thread_access_003_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_003_glb_mutex ∈ [--..--]
+  st_cross_thread_access_003_glb_mutex_1 ∈ [--..--]
   st_cross_thread_access_003_glb_data ∈ {1000.}
   st_cross_thread_access_003_glb_data1 ∈ {10.}
   st_cross_thread_access_003_glb_ptr ∈
                                     {{ &st_cross_thread_access_003_glb_data1 }}
-  st_cross_thread_access_004_glb_mutex_1 ∈ {0}
-  st_cross_thread_access_004_glb_mutex_2 ∈ {0}
+  st_cross_thread_access_004_glb_mutex_1 ∈ [--..--]
+  st_cross_thread_access_004_glb_mutex_2 ∈ [--..--]
   buf1 ∈ {{ "String1" }}
   buf2 ∈ {{ "String2" }}
   pbuf[0] ∈ {{ &buf1 }}
       [1] ∈ {{ &buf2 }}
-  st_cross_thread_access_005_glb_mutex ∈ {0}
-  st_cross_thread_access_005_glb_mutex_1 ∈ {0}
+  st_cross_thread_access_005_glb_mutex ∈ [--..--]
+  st_cross_thread_access_005_glb_mutex_1 ∈ [--..--]
   st_cross_thread_access_005_glb_data ∈ {0}
   st_cross_thread_access_005_thread_set ∈ {0}
   arr[0][0] ∈ {1}
@@ -362,8 +362,8 @@ double_lock.c:212:[variadic] warning: Incorrect type for argument 2. The argumen
      [3][2] ∈ {77}
      [3][3] ∈ {88}
   p ∈ {{ &arr[0] }}
-  st_cross_thread_access_006_glb_mutex_1 ∈ {0}
-  st_cross_thread_access_006_glb_mutex_2 ∈ {0}
+  st_cross_thread_access_006_glb_mutex_1 ∈ [--..--]
+  st_cross_thread_access_006_glb_mutex_2 ∈ [--..--]
   s1.a ∈ {10}
     .b ∈ {20}
   sptr ∈ {{ &s1 }}

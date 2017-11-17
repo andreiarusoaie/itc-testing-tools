@@ -1,5 +1,9 @@
 File, Line, Error
 data_overflow.c , 333 , [kernel] warning: Floating-point constant 3.40282326e+38F is not represented exactly. Will use 0x1.fffffc0000000p127. See documentation for option -warn-decimal-float
+lock_never_unlock.c , 249 , [kernel] warning: Calling undeclared function sleep. Old style K&R code?
+race_condition.c , 458 , [kernel] warning: Calling undeclared function sleep. Old style K&R code?
+unlock_without_lock.c , 295 , [kernel] warning: Calling undeclared function sleep. Old style K&R code?
+st_cross_thread_access.c , 82 , [kernel] warning: Calling undeclared function sleep. Old style K&R code?
 uninit_memory_access.c , 27 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned long to long.
 uninit_memory_access.c , 325 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned int to size_t.
 memory_allocation_failure.c , 271 , [variadic] warning: Incorrect type for argument 2. The argument will be cast from unsigned int to size_t.
