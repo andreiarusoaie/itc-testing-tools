@@ -1,0 +1,22 @@
+
+
+OCLint Report
+
+Summary: TotalFiles=2 FilesWithViolations=2 P1=0 P2=0 P3=14 
+
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:20:3: short variable name [naming|P3] Length of variable name `a` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:20:3: short variable name [naming|P3] Length of variable name `b` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:20:3: short variable name [naming|P3] Length of variable name `c` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:40:3: short variable name [naming|P3] Length of variable name `a` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:40:3: short variable name [naming|P3] Length of variable name `b` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:40:3: short variable name [naming|P3] Length of variable name `c` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:59:3: short variable name [naming|P3] Length of variable name `a` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:59:3: short variable name [naming|P3] Length of variable name `b` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:59:3: short variable name [naming|P3] Length of variable name `c` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:82:4: short variable name [naming|P3] Length of variable name `a` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:82:4: short variable name [naming|P3] Length of variable name `b` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:82:4: short variable name [naming|P3] Length of variable name `c` is 1, which is shorter than the threshold of 3
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/main.cpp:20:10: unused method parameter [unused|P3] The parameter 'argc' is unused.
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/main.cpp:38:1: long line [size|P3] Line with 119 characters exceeds limit of 100
+
+[OCLint (http://oclint.org) v0.13]
