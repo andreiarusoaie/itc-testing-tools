@@ -71,7 +71,7 @@ def total(tex_file_name, rep_directory, tool_list):
     sys.stdout = sys.__stdout__
     
 
-# dr ----> item = 1 
+# Detection rate by defects
 def defects_dr(tex_file_name, rep_directory, tool_list):
     tex_file_path = os.path.join(rep_directory, tex_file_name)
 
@@ -110,8 +110,8 @@ def defects_dr(tex_file_name, rep_directory, tool_list):
         for defect in sorted(defects):
             tp  = def_map[defect][0]
             var = def_map[defect][1]
-            dr  = round((tp * 100) / var, 2)
-            print(" & ", "{:4.2f}".format(dr), end="")
+            dr  = int(round((tp * 100) / var, 0))
+            print(" & ", dr, end="")
         print("\\\\")
     print("\\hline")
     print("\\end{tabular}")
@@ -156,8 +156,8 @@ def defects_fpr(tex_file_name, rep_directory, tool_list):
         for defect in sorted(defects):
             fp  = def_map[defect][0]
             var = def_map[defect][1]
-            fpr  = round((fp * 100) / var, 2)
-            print(" & ", "{:4.2f}".format(fpr), end="")
+            fpr  = int(round((fp * 100) / var, 0))
+            print(" & ", fpr, end="")
         print("\\\\")
     print("\\hline")
     print("\\end{tabular}")
@@ -206,8 +206,8 @@ def defects_pr(tex_file_name, rep_directory, tool_list):
             var = def_map[defect][2]
             dr  = round((tp * 100) / var, 2)
             fpr  = round((fp * 100) / var, 2)
-            pr = round(sqrt(dr * (100 - fpr)), 2)            
-            print(" & ", "{:4.2f}".format(pr), end="")
+            pr = int(round(sqrt(dr * (100 - fpr)), 0)) 
+            print(" & ", pr, end="")
         print("\\\\")
     print("\\hline")
     print("\\end{tabular}")
@@ -252,8 +252,8 @@ def defects_rdr(tex_file_name, rep_directory, tool_list):
         for defect in sorted(defects):
             rdc  = def_map[defect][0]
             var = def_map[defect][1]
-            rdr  = round((rdc * 100) / var, 2)
-            print(" & ", "{:4.2f}".format(rdr), end="")
+            rdr  = int(round((rdc * 100) / var, 0))
+            print(" & ", rdr, end="")
         print("\\\\")
     print("\\hline")
     print("\\end{tabular}")
