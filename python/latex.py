@@ -88,27 +88,215 @@ def defects_dr(tex_file_name, rep_directory, tool_list):
             items = line.split(",")
             name = items[0]
             defects.add(name)
-            def_map[name] = (0, 0)
-
+            if (not name in def_map.keys()):
+                def_map[name] = (0, 0)
+            
             tp  = int(items[1].strip())
             var = int(items[3].strip())
-            dr  = round((tp * 100) / var, 2)
             def_map[name] = (def_map[name][0] + tp, def_map[name][1] + var)
-            print(tool, name, dr, def_map[name])
         t_map[tool] = def_map
 
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|}")
+    print("%\\hline")
+    print("% Detection rate per defects \\\\ ")
+    print("\\hline")
+    print("Tool & D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9", "\\\\")
+    print("%% ", "Tool &", " & ".join(sorted(defects)), "\\\\")
+    print("\\hline")
+    for tool in sorted(t_map.keys()):
+        print(nice(tool), end="")
+        def_map = t_map[tool]
+        for defect in sorted(defects):
+            tp  = def_map[defect][0]
+            var = def_map[defect][1]
+            dr  = round((tp * 100) / var, 2)
+            print(" & ", "{:4.2f}".format(dr), end="")
+        print("\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
 
-    print(t_map)
-    print(defects)
-        
-    # sys.stdout = open(tex_file_path, "w")
-    # print("\\begin{tabular}{|l|r|r|r|r|r|r|}")
-    # print("\\hline")
-    # for defect in sorted(defects):
-    #     print(defect, "&")
-    # print("\\hline")
-    
-    # print("\\hline")
-    # print("\\end{tabular}")
-    # sys.stdout = sys.__stdout__
+# false positives rate
+def defects_fpr(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
 
+    t_map = {}
+    defects = set()
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_defects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_defects.csv')
+        h, *t = lines(cpp_total_path)
+
+        def_map = {}
+        for line in tail + t:
+            items = line.split(",")
+            name = items[0]
+            defects.add(name)
+            if (not name in def_map.keys()):
+                def_map[name] = (0, 0)
+
+            fp  = int(items[2].strip())
+            var = int(items[3].strip())
+            def_map[name] = (def_map[name][0] + fp, def_map[name][1] + var)
+        t_map[tool] = def_map
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|}")
+    print("%\\hline")
+    print("% False positive rate per defects \\\\ ")
+    print("\\hline")
+    print("Tool & D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9", "\\\\")
+    print("%% ", "Tool &", " & ".join(sorted(defects)), "\\\\")
+    print("\\hline")
+    for tool in sorted(t_map.keys()):
+        print(nice(tool), end="")
+        def_map = t_map[tool]
+        for defect in sorted(defects):
+            fp  = def_map[defect][0]
+            var = def_map[defect][1]
+            fpr  = round((fp * 100) / var, 2)
+            print(" & ", "{:4.2f}".format(fpr), end="")
+        print("\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
+
+# production     
+def defects_pr(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
+
+    t_map = {}
+    defects = set()
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_defects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_defects.csv')
+        h, *t = lines(cpp_total_path)
+
+        def_map = {}
+        for line in tail + t:
+            items = line.split(",")
+            name = items[0]
+            defects.add(name)
+            if (not name in def_map.keys()):
+                def_map[name] = (0, 0, 0)
+
+            tp  = int(items[1].strip())
+            fp  = int(items[2].strip())
+            var = int(items[3].strip())
+            def_map[name] = (def_map[name][0] + tp, def_map[name][1] + fp, def_map[name][2] + var)
+        t_map[tool] = def_map
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|}")
+    print("%\\hline")
+    print("% Production per defects \\\\ ")
+    print("\\hline")
+    print("Tool & D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9", "\\\\")
+    print("%% ", "Tool &", " & ".join(sorted(defects)), "\\\\")
+    print("\\hline")
+    for tool in sorted(t_map.keys()):
+        print(nice(tool), end="")
+        def_map = t_map[tool]
+        for defect in sorted(defects):
+            tp  = def_map[defect][0]
+            fp  = def_map[defect][1]
+            var = def_map[defect][2]
+            dr  = round((tp * 100) / var, 2)
+            fpr  = round((fp * 100) / var, 2)
+            pr = round(sqrt(dr * (100 - fpr)), 2)            
+            print(" & ", "{:4.2f}".format(pr), end="")
+        print("\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
+
+# Robust detection rate
+def defects_rdr(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
+
+    t_map = {}
+    defects = set()
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_defects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_defects.csv')
+        h, *t = lines(cpp_total_path)
+
+        def_map = {}
+        for line in tail + t:
+            items = line.split(",")
+            name = items[0]
+            defects.add(name)
+            if (not name in def_map.keys()):
+                def_map[name] = (0, 0)
+
+            rdc  = int(items[7].strip())
+            var = int(items[3].strip())
+            def_map[name] = (def_map[name][0] + rdc, def_map[name][1] + var)
+        t_map[tool] = def_map
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|}")
+    print("\\hline")
+    print("% Robust detection rate per defects \\\\ ")
+    print("\\hline")
+    print("Tool & D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9", "\\\\")
+    print("%% ", "Tool &", " & ".join(sorted(defects)), "\\\\")
+    print("\\hline")
+    for tool in sorted(t_map.keys()):
+        print(nice(tool), end="")
+        def_map = t_map[tool]
+        for defect in sorted(defects):
+            rdc  = def_map[defect][0]
+            var = def_map[defect][1]
+            rdr  = round((rdc * 100) / var, 2)
+            print(" & ", "{:4.2f}".format(rdr), end="")
+        print("\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
+
+def defects_unique(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
+
+    t_map = {}
+    defects = set()
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_defects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_defects.csv')
+        h, *t = lines(cpp_total_path)
+
+        def_map = {}
+        for line in tail + t:
+            items = line.split(",")
+            name = items[0]
+            defects.add(name)
+            if (not name in def_map.keys()):
+                def_map[name] = 0
+
+            rdc  = int(items[9].strip())
+            def_map[name] = def_map[name] + rdc
+        t_map[tool] = def_map
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|}")
+    print("% \\hline")
+    print("% Unique (robust) defects \\\\ ")
+    print("\\hline")
+    print("Tool & D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9", "\\\\")
+    print("%% ", "Tool &", " & ".join(sorted(defects)), "\\\\")
+    print("\\hline")
+    for tool in sorted(t_map.keys()):
+        print(nice(tool), end="")
+        def_map = t_map[tool]
+        for defect in sorted(defects):
+            unique  = def_map[defect]
+            print(" & ", unique, end="")
+        print("\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
