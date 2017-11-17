@@ -711,6 +711,7 @@ elif action == 'defects':
         tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
         run_stats(tools)
     python.latex.defects_dr("defects_dr.tex", rep_directory, all_tools())
+    python.latex.defects_fpr("defects_fpr.tex", rep_directory, all_tools())
     
 else:
     print("Action ", action, " not supported or incomplete.\n")
