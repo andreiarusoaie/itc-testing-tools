@@ -715,6 +715,13 @@ elif action == 'defects':
     python.latex.defects_pr("defects_pr.tex", rep_directory, all_tools())
     python.latex.defects_rdr("defects_rdr.tex", rep_directory, all_tools())
     python.latex.defects_unique("defects_unique.tex", rep_directory, all_tools())
-    
+elif action == 'subdefects':
+    tool_list = all_tools()
+    for tool in tool_list:
+        tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
+        run_stats(tools)
+    python.latex.subdefects_pr("subdefects_pr.tex", rep_directory, all_tools())
+    python.latex.subdefects_rdr("subdefects_rdr.tex", rep_directory, all_tools())
+    python.latex.subdefects_unique("subdefects_unique.tex", rep_directory, all_tools())
 else:
     print("Action ", action, " not supported or incomplete.\n")

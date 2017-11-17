@@ -300,3 +300,152 @@ def defects_unique(tex_file_name, rep_directory, tool_list):
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
+
+
+
+
+# Production by subdefects
+def subdefects_pr(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
+
+    t_map = {}
+    subdefects = set()
+    subdef_map = {} # subdef |-> [(tool, production)]
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_subdefects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_subdefects.csv')
+        h, *t = lines(cpp_total_path)
+
+        for line in tail + t:
+            items = line.split(",")
+            name = items[2]
+            subdefects.add(name)
+            if (not name in subdef_map.keys()):
+                subdef_map[name] = []
+            
+            tp  = int(items[3].strip())
+            fp  = int(items[4].strip())
+            var = int(items[5].strip())
+            dr  = round((tp * 100) / var, 2)
+            fpr = round((fp * 100) / var, 2)
+            pr  = round(sqrt(dr * (100 - fpr)), 2)
+            subdef_map[name] = subdef_map[name] + [(tool, pr)]
+
+
+    for subdef in subdef_map.keys():
+        # print(subdef,":")
+        # print(subdef_map[subdef])
+        srt = sorted(subdef_map[subdef], key = lambda x : x[1])
+        srt.reverse()
+        subdef_map[subdef] = srt[0]
+        # print(subdef_map[subdef])
+        # print("\n\n")
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|}")
+    print("%\\hline")
+    print("% Production per subdefects \\\\ ")
+    print("\\hline")
+    print("Subdefect & Tool & PR", "\\\\")
+    print("\\hline")
+    for subdefect in sorted(subdef_map.keys()):
+        print(subdefect, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
+
+
+    
+# Robust detection rate by subdefects
+def subdefects_rdr(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
+
+    t_map = {}
+    subdefects = set()
+    subdef_map = {} # subdef |-> [(tool, rdr)]
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_subdefects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_subdefects.csv')
+        h, *t = lines(cpp_total_path)
+
+        for line in tail + t:
+            items = line.split(",")
+            name = items[2]
+            subdefects.add(name)
+            if (not name in subdef_map.keys()):
+                subdef_map[name] = []
+            
+            rdc = int(items[9].strip())
+            var = int(items[5].strip())
+            rdr  = round((rdc * 100) / var, 2)
+            subdef_map[name] = subdef_map[name] + [(tool, rdr)]
+
+    for subdef in subdef_map.keys():
+        # print(subdef,":")
+        # print(subdef_map[subdef])
+        srt = sorted(subdef_map[subdef], key = lambda x : x[1])
+        srt.reverse()
+        subdef_map[subdef] = srt[0]
+        # print(subdef_map[subdef])
+        # print("\n\n")
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|}")
+    print("%\\hline")
+    print("% Robust detection rate per subdefects \\\\ ")
+    print("\\hline")
+    print("Subdefect & Tool & RDR", "\\\\")
+    print("\\hline")
+    for subdefect in sorted(subdef_map.keys()):
+        print(subdefect, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
+
+    
+# Unique by subdefects
+def subdefects_unique(tex_file_name, rep_directory, tool_list):
+    tex_file_path = os.path.join(rep_directory, tex_file_name)
+
+    t_map = {}
+    subdefects = set()
+    subdef_map = {} # subdef |-> [(tool, unique)]
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_subdefects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_subdefects.csv')
+        h, *t = lines(cpp_total_path)
+
+        for line in tail + t:
+            items = line.split(",")
+            name = items[2]
+            subdefects.add(name)
+            if (not name in subdef_map.keys()):
+                subdef_map[name] = []
+            
+            rdc = int(items[11].strip())
+            subdef_map[name] = subdef_map[name] + [(tool, rdc)]
+
+    for subdef in subdef_map.keys():
+        # print(subdef,":")
+        # print(subdef_map[subdef])
+        srt = sorted(subdef_map[subdef], key = lambda x : x[1])
+        srt.reverse()
+        subdef_map[subdef] = srt[0]
+        # print(subdef_map[subdef])
+        # print("\n\n")
+
+    sys.stdout = open(tex_file_path, "w")
+    print("\\begin{tabular}{|l|r|r|}")
+    print("%\\hline")
+    print("% Unique per subdefects \\\\ ")
+    print("\\hline")
+    print("Subdefect & Tool & Unique", "\\\\")
+    print("\\hline")
+    for subdefect in sorted(subdef_map.keys()):
+        print(subdefect, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+    print("\\hline")
+    print("\\end{tabular}")
+    sys.stdout = sys.__stdout__
