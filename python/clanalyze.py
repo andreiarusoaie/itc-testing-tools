@@ -22,8 +22,9 @@ def clanalyze(directory, temp_path, csv, exe, opts):
     except:
         print("TROUBLE CALLING ANALYZER(0): warning XXX: ", sys.exc_info())
 
-    with open(temp_path, "w") as text_file:
-        print(output, file=text_file)
+    with open(temp_path, "wb") as text_file:
+        text_file.write(output)
+        text_file.write(err)
 
     regexp = re.compile("(\S+)\((\d+)\)\s?:\s+\S+\s+\S+:\s+(.+)")
     sys.stdout = open(csv, "w")

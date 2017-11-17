@@ -1,1 +1,323 @@
-b"bit_shift.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nbuffer_overrun_dynamic.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nbuffer_underrun_dynamic.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ncmp_funcadr.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nconflicting_cond.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndata_lost.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndata_overflow.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndata_underflow.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndead_code.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndead_lock.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndeletion_of_data_structure_sentinel.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndouble_free.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndouble_lock.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ndouble_release.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nendless_loop.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nfree_nondynamically_allocated_memory.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nfree_null_pointer.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nfunction_return_value_unchecked.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nfunc_pointer.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nimproper_termination_of_block.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nCompiling...\r\nGenerating Code...\r\nCompiling...\r\ninsign_code.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ninvalid_extern.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ninvalid_extern_1.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\ninvalid_memory_access.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nlittlemem_st.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nlivelock.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nlock_never_unlock.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nmain.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nmemory_allocation_failure.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nmemory_leak.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nnot_return.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nnull_pointer.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\noverrun_st.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\now_memcpy.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\npow_related_errors.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nptr_subtraction.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nrace_condition.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nredundant_cond.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nreturn_local.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nsign_conv.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nCompiling...\r\nGenerating Code...\r\nCompiling...\r\nsleep_lock.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nst_cross_thread_access.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nst_overflow.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nst_underrun.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nunderrun_st.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nuninit_memory_access.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nuninit_pointer.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nuninit_var.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nunlock_without_lock.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nunused_var.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nwrong_arguments_func_pointer.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nzero_division.c\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'\r\n../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','\r\nc:\\work\\itc-benchmarks\\02.wo_defects\\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory\r\nCompiling...\r\nGenerating Code...\r\n"
+bit_shift.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+buffer_overrun_dynamic.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+buffer_underrun_dynamic.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+cmp_funcadr.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+conflicting_cond.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+data_lost.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+data_overflow.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+data_underflow.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+dead_code.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+dead_lock.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+deletion_of_data_structure_sentinel.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+double_free.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+double_lock.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+double_release.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+endless_loop.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+free_nondynamically_allocated_memory.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+free_null_pointer.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+function_return_value_unchecked.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+func_pointer.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+improper_termination_of_block.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+Compiling...
+Generating Code...
+Compiling...
+insign_code.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+invalid_extern.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+invalid_extern_1.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+invalid_memory_access.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+littlemem_st.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+livelock.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+lock_never_unlock.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+main.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+memory_allocation_failure.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+memory_leak.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+not_return.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+null_pointer.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+overrun_st.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+ow_memcpy.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+pow_related_errors.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+ptr_subtraction.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+race_condition.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+redundant_cond.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+return_local.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+sign_conv.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+Compiling...
+Generating Code...
+Compiling...
+sleep_lock.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+st_cross_thread_access.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+st_overflow.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+st_underrun.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+underrun_st.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+uninit_memory_access.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+uninit_pointer.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+uninit_var.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+unlock_without_lock.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+unused_var.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+wrong_arguments_func_pointer.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+zero_division.c
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2146: syntax error: missing ')' before identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2061: syntax error: identifier 'thread'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ';'
+../itc-benchmarks/02.wo_Defects/pthread.h(12): error C2059: syntax error: ','
+c:\work\itc-benchmarks\02.wo_defects\HeaderFile.h(15): fatal error C1083: Cannot open include file: 'unistd.h': No such file or directory
+Compiling...
+Generating Code...
+Microsoft (R) C/C++ Optimizing Compiler Version 19.11.25547 for x64
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
