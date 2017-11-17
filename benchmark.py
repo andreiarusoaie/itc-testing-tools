@@ -6,6 +6,9 @@ import python.clanalyze
 
 rep_directory = os.path.realpath(sys.argv[1])
 
+print("REP_DIRECTORY")
+print(rep_directory)
+
 # ## Location of ITC workbench: this should be modified by need
 W_C_DEFECTS_DIR = "../itc-benchmarks/01.w_Defects/"
 W_CPP_DEFECTS_DIR = "../itc-benchmarks/03.w_Defects_Cpp/"
@@ -325,7 +328,14 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(rep_directory, "flintpp", "temp"))
 
 def call_python(args):
-    (output, err, exit, time) = python.system.system_call(sys.executable + " " + " ".join(args))
+    command = sys.executable + " " + " ".join(args)
+#    try:
+    (output, err, exit, time) = python.system.system_call(command)
+#    except FileNotFoundError as err:
+#        print("ERROR FileNotFoundError")
+#        print(err)
+#        print(err.filename)
+#        time = 0
     return time
 
 def call_bash(args):
@@ -523,7 +533,6 @@ def run_infer_stats(tools):
     call_python([STATISTICS, C_MERGE_FILE, INFER_OUTPUT_C_W, INFER_OUTPUT_C_WO, INFER_OUT_SUBDEFECTS, INFER_OUT_DEFECTS, INFER_OUT_TOTAL, tools])
     call_python([STATISTICS, CPP_MERGE_FILE, INFER_OUTPUT_CPP_W, INFER_OUTPUT_CPP_WO, INFER_OUT_CPP_SUBDEFECTS, INFER_OUT_CPP_DEFECTS, INFER_OUT_CPP_TOTAL, tools])
 
-    
 def run_clanalyze():
     print("Running cl /analyze")
     python.clanalyze.clanalyze(W_C_DEFECTS_DIR, CLANALYZE_TEMP_C_W, CLANALYZE_OUTPUT_C_W, CLANALYZE_EXE, CLANALYZE_OPTS)

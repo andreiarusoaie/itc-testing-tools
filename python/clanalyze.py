@@ -9,7 +9,7 @@ import python.system
 # exe       = sys.argv[3]
 # opts      = sys.argv[4]
 
-def clanalyze(temp_path, directory, csv, exe, opts):
+def clanalyze(directory, temp_path, csv, exe, opts):
     print("======Running cl /analyze=======")
     print("Working dir:", directory)
     print("CSV file:", csv)
@@ -17,10 +17,14 @@ def clanalyze(temp_path, directory, csv, exe, opts):
     print("Executable options:", opts)
 
     try:
-        (output, err, exit, time) = python.system.system_call(exe + " " + directory + "/*.c* > " + temp_path + " /I " + directory)
+        command = exe + " \"" + directory + "/*.c*\" /I \"" + directory + "\""
+        (output, err, exit, time) = python.system.system_call(command)
     except:
         print("TROUBLE CALLING ANALYZER(0): warning XXX: ", sys.exc_info())
-    
+
+    with open(temp_path, "w") as text_file:
+        print(output, file=text_file)
+
     regexp = re.compile("(\S+)\((\d+)\)\s?:\s+\S+\s+\S+:\s+(.+)")
     sys.stdout = open(csv, "w")
     with open(temp_path) as f:
