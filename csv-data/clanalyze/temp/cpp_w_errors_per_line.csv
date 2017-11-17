@@ -1,1 +1,1 @@
-../itc-benchmarks/03.w_Defects_Cpp//improper_error_handling.cpp ,  19 , C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
+improper_error_handling.cpp ,  19 , C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc

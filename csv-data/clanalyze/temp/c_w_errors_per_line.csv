@@ -1,37 +1,37 @@
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  22 , '<<': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  34 , '<<': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  46 , '<<': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  58 , '<<': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  70 , '<<': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  82 , '>>': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  94 , '>>': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//bit_shift.c ,  237 , '<<': shift count negative or too big, undefined behavior
-../itc-benchmarks/01.w_Defects//data_overflow.c ,  332 , constant too big
-../itc-benchmarks/01.w_Defects//dead_lock.c ,  21 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//dead_lock.c ,  22 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//dead_lock.c ,  130 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//dead_lock.c ,  131 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//dead_lock.c ,  132 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//double_lock.c ,  26 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//double_lock.c ,  79 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//double_lock.c ,  128 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//double_lock.c ,  188 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//double_lock.c ,  196 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//double_lock.c ,  210 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//double_lock.c ,  224 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//double_lock.c ,  225 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//function_return_value_unchecked.c ,  187 , different array subscripts: 'float (*)[4]' and 'float (*)[0]'
-../itc-benchmarks/01.w_Defects//func_pointer.c ,  437 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
-../itc-benchmarks/01.w_Defects//func_pointer.c ,  454 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
+bit_shift.c ,  22 , '<<': shift count negative or too big, undefined behavior
+bit_shift.c ,  34 , '<<': shift count negative or too big, undefined behavior
+bit_shift.c ,  46 , '<<': shift count negative or too big, undefined behavior
+bit_shift.c ,  58 , '<<': shift count negative or too big, undefined behavior
+bit_shift.c ,  70 , '<<': shift count negative or too big, undefined behavior
+bit_shift.c ,  82 , '>>': shift count negative or too big, undefined behavior
+bit_shift.c ,  94 , '>>': shift count negative or too big, undefined behavior
+bit_shift.c ,  237 , '<<': shift count negative or too big, undefined behavior
+data_overflow.c ,  332 , constant too big
+dead_lock.c ,  21 , initializer is not a constant
+dead_lock.c ,  22 , initializer is not a constant
+dead_lock.c ,  130 , initializer is not a constant
+dead_lock.c ,  131 , initializer is not a constant
+dead_lock.c ,  132 , initializer is not a constant
+double_lock.c ,  26 , initializer is not a constant
+double_lock.c ,  79 , initializer is not a constant
+double_lock.c ,  128 , initializer is not a constant
+double_lock.c ,  188 , initializer is not a constant
+double_lock.c ,  196 , 'type cast': pointer truncation from 'void *' to 'long'
+double_lock.c ,  210 , 'type cast': pointer truncation from 'void *' to 'long'
+double_lock.c ,  224 , 'type cast': conversion from 'long' to 'void *' of greater size
+double_lock.c ,  225 , 'type cast': conversion from 'long' to 'void *' of greater size
+function_return_value_unchecked.c ,  187 , different array subscripts: 'float (*)[4]' and 'float (*)[0]'
+func_pointer.c ,  437 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
+func_pointer.c ,  454 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
 func_pointer.c ,  61 , Using uninitialized memory 'buf'.: Lines: 57, 58, 60, 61
 func_pointer.c ,  61 , Using uninitialized memory 'buf[BYTE:0]'.: Lines: 57, 58, 60, 61
 func_pointer.c ,  103 , Buffer overrun while writing to 'str_rev':  the writable size is 'i+1' bytes, but 'i' bytes might be written.: Lines: 92, 93, 94, 95, 97, 98, 99, 101, 99, 103
 func_pointer.c ,  103 , Dereferencing NULL pointer 'str_rev'. : Lines: 92, 93, 94, 95, 97, 98, 99, 103
-func_pointer.c ,  157 , Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 145, 146, 147, 149, 151, 149, 151, 149, 153, 155, 157
 func_pointer.c ,  151 , Dereferencing NULL pointer 'doubleptr'. : Lines: 145, 146, 147, 149, 151
+func_pointer.c ,  157 , Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 145, 146, 147, 149, 151, 149, 151, 149, 153, 155, 157
 func_pointer.c ,  177 , Dereferencing NULL pointer 'doubleptr'. : Lines: 165, 166, 168, 170, 171, 172, 173, 175, 177
-func_pointer.c ,  210 , Dereferencing NULL pointer 'doubleptr'. : Lines: 205, 206, 208, 210
 func_pointer.c ,  216 , Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 205, 206, 208, 210, 208, 210, 208, 212, 214, 216
+func_pointer.c ,  210 , Dereferencing NULL pointer 'doubleptr'. : Lines: 205, 206, 208, 210
 func_pointer.c ,  254 , Local declaration of 'doubleptr' hides previous declaration at line '192' of 'c:\work\itc-benchmarks\01.w_defects\func_pointer.c'.: Lines: 192
 func_pointer.c ,  294 , Local declaration of 'a' hides previous declaration at line '292' of 'c:\work\itc-benchmarks\01.w_defects\func_pointer.c'.: Lines: 292
 func_pointer.c ,  302 , Potential comparison of a constant with another constant.
@@ -49,10 +49,10 @@ func_pointer.c ,  496 , Local declaration of 'func_gbl' hides previous declarati
 func_pointer.c ,  510 , Local declaration of 'a' hides previous declaration at line '292' of 'c:\work\itc-benchmarks\01.w_defects\func_pointer.c'.: Lines: 292
 func_pointer.c ,  601 , 'st1' could be '0':  this does not adhere to the specification for the function 'memset'. : Lines: 598, 599, 600, 601
 free_null_pointer.c ,  74 , Dereferencing NULL pointer 'fptr'. : Lines: 69, 70, 74
-free_null_pointer.c ,  151 , Using uninitialized memory '**s[BYTE:8]'.: Lines: 136, 137, 138, 140, 148, 150, 151, 150, 151
-free_null_pointer.c ,  151 , Dereferencing NULL pointer 's+i'. : Lines: 136, 137, 138, 140, 148, 150, 151
 free_null_pointer.c ,  146 , '((s+4))->buf' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 136, 137, 138, 140, 142, 144, 142, 144, 142, 146
 free_null_pointer.c ,  146 , Dereferencing NULL pointer 's+4'. See line 144 for an earlier location where this can occur: Lines: 136, 137, 138, 140, 142, 144, 142, 144, 142, 146
+free_null_pointer.c ,  151 , Using uninitialized memory '**s[BYTE:8]'.: Lines: 136, 137, 138, 140, 148, 150, 151, 150, 151
+free_null_pointer.c ,  151 , Dereferencing NULL pointer 's+i'. : Lines: 136, 137, 138, 140, 148, 150, 151
 free_null_pointer.c ,  177 , Dereferencing NULL pointer 'free_null_pointer_007_gbl_doubleptr'. : Lines: 172, 173, 175, 177
 free_null_pointer.c ,  183 , Dereferencing NULL pointer 'free_null_pointer_007_gbl_doubleptr[i]'. : Lines: 172, 173, 175, 177, 175, 177, 175, 179, 181, 183
 free_null_pointer.c ,  335 , Potential comparison of a constant with another constant.
@@ -104,9 +104,9 @@ buffer_underrun_dynamic.c ,  178 , Index '-3' is out of valid index range '0' to
 buffer_underrun_dynamic.c ,  178 , Reading invalid data from 'pbuf':  the readable size is '40' bytes, but '-24' bytes may be read.: Lines: 169, 170, 171, 172, 173, 174, 175, 176, 178
 buffer_underrun_dynamic.c ,  202 , Index '-1' is out of valid index range '0' to '4' for non-stack buffer 'sbuf'.
 buffer_underrun_dynamic.c ,  466 , Index '-1' is out of valid index range '0' to '4' for non-stack buffer 'buf'.
+buffer_underrun_dynamic.c ,  517 , Dereferencing NULL pointer 'buf1+i'. : Lines: 511, 512, 513, 515, 517
 buffer_underrun_dynamic.c ,  519 , Dereferencing NULL pointer 'buf2-*(buf1+4)'. : Lines: 511, 512, 513, 515, 517, 515, 517, 515, 519
 buffer_underrun_dynamic.c ,  519 , Dereferencing NULL pointer 'buf1+4'. See line 517 for an earlier location where this can occur: Lines: 511, 512, 513, 515, 517, 515, 517, 515, 519
-buffer_underrun_dynamic.c ,  517 , Dereferencing NULL pointer 'buf1+i'. : Lines: 511, 512, 513, 515, 517
 buffer_underrun_dynamic.c ,  532 , Index '-1' is out of valid index range '0' to '0' for non-stack buffer 'buf'.
 buffer_underrun_dynamic.c ,  559 , Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 546, 547, 549, 551, 549, 551, 549, 555, 557, 559
 buffer_underrun_dynamic.c ,  551 , Dereferencing NULL pointer 'doubleptr'. : Lines: 546, 547, 549, 551
@@ -122,8 +122,8 @@ buffer_overrun_dynamic.c ,  62 , Reading invalid data from 'buf':  the readable 
 buffer_overrun_dynamic.c ,  94 , Index '5' is out of valid index range '0' to '4' for non-stack buffer 'buf'.
 buffer_overrun_dynamic.c ,  112 , Index '5' is out of valid index range '0' to '4' for non-stack buffer 'buf'.
 buffer_overrun_dynamic.c ,  130 , Index '5' is out of valid index range '0' to '4' for non-stack buffer 'buf'.
-buffer_overrun_dynamic.c ,  152 , Dereferencing NULL pointer 'buf+i'. See line 146 for an earlier location where this can occur: Lines: 142, 143, 145, 146, 145, 146, 145, 148, 150, 152
 buffer_overrun_dynamic.c ,  146 , Dereferencing NULL pointer 'buf'. : Lines: 142, 143, 145, 146
+buffer_overrun_dynamic.c ,  152 , Dereferencing NULL pointer 'buf+i'. See line 146 for an earlier location where this can occur: Lines: 142, 143, 145, 146, 145, 146, 145, 148, 150, 152
 buffer_overrun_dynamic.c ,  174 , Dereferencing NULL pointer '((*pbuf[i]))+j'. : Lines: 165, 166, 167, 168, 169, 170, 171, 172, 174, 172, 174
 buffer_overrun_dynamic.c ,  198 , Index '5' is out of valid index range '0' to '4' for non-stack buffer 'sbuf'.
 buffer_overrun_dynamic.c ,  198 , Buffer overrun while writing to 'sbuf':  the writable size is '60' bytes, but '72' bytes might be written.: Lines: 195, 196, 198
@@ -133,67 +133,67 @@ buffer_overrun_dynamic.c ,  333 , Reading invalid data from 'indexes':  the read
 buffer_overrun_dynamic.c ,  350 , Buffer overrun while writing to 'buf':  the writable size is '20' bytes, but '24' bytes might be written.: Lines: 344, 345, 346, 347, 348, 350
 buffer_overrun_dynamic.c ,  369 , Buffer overrun while writing to 'buf':  the writable size is '20' bytes, but '24' bytes might be written.: Lines: 361, 362, 363, 364, 365, 366, 367, 369
 buffer_overrun_dynamic.c ,  462 , Index '5' is out of valid index range '0' to '4' for non-stack buffer 'buf'.
+buffer_overrun_dynamic.c ,  512 , Dereferencing NULL pointer 'buf1+i'. : Lines: 507, 508, 509, 510, 512
 buffer_overrun_dynamic.c ,  514 , Dereferencing NULL pointer 'buf2+*(buf1+5)'. : Lines: 507, 508, 509, 510, 512, 510, 512, 510, 514
 buffer_overrun_dynamic.c ,  514 , Dereferencing NULL pointer 'buf1+5'. See line 512 for an earlier location where this can occur: Lines: 507, 508, 509, 510, 512, 510, 512, 510, 514
-buffer_overrun_dynamic.c ,  512 , Dereferencing NULL pointer 'buf1+i'. : Lines: 507, 508, 509, 510, 512
 buffer_overrun_dynamic.c ,  532 , Buffer overrun while writing to 'buf':  the writable size is '1' bytes, but '3' bytes might be written.: Lines: 526, 527, 529, 530, 532
-buffer_overrun_dynamic.c ,  551 , Dereferencing NULL pointer 'doubleptr'. : Lines: 546, 547, 549, 551
 buffer_overrun_dynamic.c ,  559 , Dereferencing NULL pointer 'doubleptr[i]'. : Lines: 546, 547, 549, 551, 549, 551, 549, 555, 557, 559
+buffer_overrun_dynamic.c ,  551 , Dereferencing NULL pointer 'doubleptr'. : Lines: 546, 547, 549, 551
 buffer_overrun_dynamic.c ,  580 , Index '12' is out of valid index range '0' to '11' for non-stack buffer 'ptr1'.
 buffer_overrun_dynamic.c ,  607 , Index '10' is out of valid index range '0' to '9' for non-stack buffer 'ptr_s'.
 bit_shift.c ,  12 , Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
-../itc-benchmarks/01.w_Defects//invalid_memory_access.c ,  33 , ':': 'int *' differs in levels of indirection from 'int'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  27 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  78 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  135 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  200 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  201 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  208 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  227 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  244 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  245 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  254 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  295 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  296 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  305 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  324 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  348 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  349 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  359 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  360 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  367 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  392 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  421 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  422 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  432 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  433 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  445 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  469 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  501 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  502 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  513 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  514 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  521 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  545 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  574 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//lock_never_unlock.c ,  575 , 'type cast': conversion from 'long' to 'void *' of greater size
-../itc-benchmarks/01.w_Defects//memory_allocation_failure.c ,  532 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  37 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  38 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  39 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  40 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  74 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  75 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  104 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  105 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  106 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  150 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//race_condition.c ,  237 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//race_condition.c ,  295 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//race_condition.c ,  362 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//race_condition.c ,  363 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//race_condition.c ,  371 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//race_condition.c ,  391 , 'type cast': pointer truncation from 'void *' to 'long'
+invalid_memory_access.c ,  33 , ':': 'int *' differs in levels of indirection from 'int'
+lock_never_unlock.c ,  27 , initializer is not a constant
+lock_never_unlock.c ,  78 , initializer is not a constant
+lock_never_unlock.c ,  135 , initializer is not a constant
+lock_never_unlock.c ,  200 , initializer is not a constant
+lock_never_unlock.c ,  201 , initializer is not a constant
+lock_never_unlock.c ,  208 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  227 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  244 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  245 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  254 , initializer is not a constant
+lock_never_unlock.c ,  295 , initializer is not a constant
+lock_never_unlock.c ,  296 , initializer is not a constant
+lock_never_unlock.c ,  305 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  324 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  348 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  349 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  359 , initializer is not a constant
+lock_never_unlock.c ,  360 , initializer is not a constant
+lock_never_unlock.c ,  367 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  392 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  421 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  422 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  432 , initializer is not a constant
+lock_never_unlock.c ,  433 , initializer is not a constant
+lock_never_unlock.c ,  445 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  469 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  501 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  502 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  513 , initializer is not a constant
+lock_never_unlock.c ,  514 , initializer is not a constant
+lock_never_unlock.c ,  521 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  545 , 'type cast': pointer truncation from 'void *' to 'long'
+lock_never_unlock.c ,  574 , 'type cast': conversion from 'long' to 'void *' of greater size
+lock_never_unlock.c ,  575 , 'type cast': conversion from 'long' to 'void *' of greater size
+memory_allocation_failure.c ,  532 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
+race_condition.c ,  37 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  38 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  39 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  40 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  74 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  75 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  104 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  105 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  106 , 'void *(__cdecl *)()' differs in parameter lists from 'void *(__cdecl *)(void *)'
+race_condition.c ,  150 , initializer is not a constant
+race_condition.c ,  237 , initializer is not a constant
+race_condition.c ,  295 , initializer is not a constant
+race_condition.c ,  362 , initializer is not a constant
+race_condition.c ,  363 , initializer is not a constant
+race_condition.c ,  371 , 'type cast': pointer truncation from 'void *' to 'long'
+race_condition.c ,  391 , 'type cast': pointer truncation from 'void *' to 'long'
 sign_conv.c ,  13 , Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
 redundant_cond.c ,  13 , Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
 pow_related_errors.c ,  155 , Dereferencing NULL pointer 'ptr_newarr'. : Lines: 148, 149, 150, 151, 152, 154, 155
@@ -246,8 +246,8 @@ null_pointer.c ,  159 , Dereferencing NULL pointer 'p1'. : Lines: 156, 157, 158,
 null_pointer.c ,  173 , Dereferencing NULL pointer 'p2'. : Lines: 168, 169, 170, 171, 172, 173
 null_pointer.c ,  180 , Dereferencing NULL pointer 'p'. : Lines: 179, 180
 null_pointer.c ,  196 , Dereferencing NULL pointer 'p'. : Lines: 190, 191, 192, 196
-null_pointer.c ,  264 , Dereferencing NULL pointer 'null_pointer_016_gbl_doubleptr'. : Lines: 259, 260, 262, 264
 null_pointer.c ,  270 , Dereferencing NULL pointer 'null_pointer_016_gbl_doubleptr[i]'. : Lines: 259, 260, 262, 264, 262, 264, 262, 266, 268, 270
+null_pointer.c ,  264 , Dereferencing NULL pointer 'null_pointer_016_gbl_doubleptr'. : Lines: 259, 260, 262, 264
 null_pointer.c ,  321 , Dereferencing NULL pointer 'null_pointer_017dst'. : Lines: 313, 314, 316, 318, 319, 321
 not_return.c ,  12 , Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
 memory_leak.c ,  13 , Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
@@ -260,16 +260,16 @@ memory_leak.c ,  249 , Dereferencing NULL pointer 'p2+4'. : Lines: 244, 245, 246
 memory_leak.c ,  274 , Local declaration of 'buf' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '265' of 'c:\work\itc-benchmarks\01.w_defects\memory_leak.c'.: Lines: 265
 memory_leak.c ,  276 , Using uninitialized memory 'un'.: Lines: 265, 266, 267, 268, 274, 276
 memory_leak.c ,  311 , Dereferencing NULL pointer 'p'. : Lines: 307, 308, 309, 311
-memory_leak.c ,  354 , Dereferencing NULL pointer 'p->s1'. : Lines: 343, 344, 346, 348, 349, 351, 353, 354
 memory_leak.c ,  349 , Dereferencing NULL pointer 'p'. : Lines: 343, 344, 346, 348, 349
+memory_leak.c ,  354 , Dereferencing NULL pointer 'p->s1'. : Lines: 343, 344, 346, 348, 349, 351, 353, 354
 memory_leak.c ,  372 , Local declaration of 'fptr' hides declaration of the same name in outer scope. For additional information, see previous declaration at line '367' of 'c:\work\itc-benchmarks\01.w_defects\memory_leak.c'.: Lines: 367
 memory_leak.c ,  449 , Dereferencing NULL pointer 'memory_leak_0017_gbl_doubleptr'. : Lines: 444, 445, 447, 449
 memory_leak.c ,  455 , Dereferencing NULL pointer 'memory_leak_0017_gbl_doubleptr[i]'. : Lines: 444, 445, 447, 449, 447, 449, 447, 451, 453, 455
 memory_leak.c ,  504 , Dereferencing NULL pointer 'memory_leak_0018dst'. : Lines: 496, 497, 499, 501, 502, 504
-memory_allocation_failure.c ,  82 , Dereferencing NULL pointer 'ptr+i'. : Lines: 72, 73, 74, 78, 80, 82
 memory_allocation_failure.c ,  84 , Dereferencing NULL pointer 'ptr'. See line 82 for an earlier location where this can occur: Lines: 72, 73, 74, 78, 80, 82, 80, 82, 80, 84
-memory_allocation_failure.c ,  183 , Dereferencing NULL pointer 'memory_allocation_failure_006_gbl_doubleptr[i]'. : Lines: 175, 177, 179, 180, 182, 183
+memory_allocation_failure.c ,  82 , Dereferencing NULL pointer 'ptr+i'. : Lines: 72, 73, 74, 78, 80, 82
 memory_allocation_failure.c ,  182 , Dereferencing NULL pointer 'memory_allocation_failure_006_gbl_doubleptr'. : Lines: 175, 177, 179, 180, 182
+memory_allocation_failure.c ,  183 , Dereferencing NULL pointer 'memory_allocation_failure_006_gbl_doubleptr[i]'. : Lines: 175, 177, 179, 180, 182, 183
 memory_allocation_failure.c ,  225 , Buffer overrun while writing to 'memory_allocation_failure_007_str_gbl':  the writable size is 'static_var+1' bytes, but 'static_var' bytes might be written.: Lines: 218, 219, 220, 221, 222, 223, 222, 225
 memory_allocation_failure.c ,  256 , Ill-defined for-loop:  initial condition does not satisfy test.  Loop body not executed.
 memory_allocation_failure.c ,  287 , Local declaration of 'vptr' hides previous declaration at line '116' of 'c:\work\itc-benchmarks\01.w_defects\memory_allocation_failure.c'.: Lines: 116
@@ -277,38 +277,38 @@ memory_allocation_failure.c ,  386 , Dereferencing NULL pointer 'memory_allocati
 memory_allocation_failure.c ,  387 , Dereferencing NULL pointer 'memory_allocation_failure_011_gbl_u1->s1'. : Lines: 385, 386, 387
 memory_allocation_failure.c ,  433 , Dereferencing NULL pointer 'pbuf[1]'. : Lines: 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433
 memory_allocation_failure.c ,  495 , 'dptr[1]' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 471, 472, 473, 476, 482, 483, 485, 487, 485, 487, 485, 492, 495
-memory_allocation_failure.c ,  493 , Dereferencing NULL pointer 'ptr+1'. : Lines: 471, 472, 473, 476, 478, 492, 493
-memory_allocation_failure.c ,  514 , Using uninitialized memory 'a'.: Lines: 471, 472, 473, 476, 478, 492, 493, 497, 498, 502, 504, 505, 514
-memory_allocation_failure.c ,  495 , Buffer overrun while writing to 'dptr[1]':  the writable size is 'memory_allocation_failure_013_func_001(0)*sizeof(char)' bytes, but '12' bytes might be written.: Lines: 471, 472, 473, 476, 482, 483, 485, 487, 485, 487, 485, 492, 495
 memory_allocation_failure.c ,  487 , Dereferencing NULL pointer 'dptr'. : Lines: 471, 472, 473, 476, 482, 483, 485, 487
+memory_allocation_failure.c ,  514 , Using uninitialized memory 'a'.: Lines: 471, 472, 473, 476, 478, 492, 493, 497, 498, 502, 504, 505, 514
+memory_allocation_failure.c ,  493 , Dereferencing NULL pointer 'ptr+1'. : Lines: 471, 472, 473, 476, 478, 492, 493
+memory_allocation_failure.c ,  495 , Buffer overrun while writing to 'dptr[1]':  the writable size is 'memory_allocation_failure_013_func_001(0)*sizeof(char)' bytes, but '12' bytes might be written.: Lines: 471, 472, 473, 476, 482, 483, 485, 487, 485, 487, 485, 492, 495
 memory_allocation_failure.c ,  500 , Reading invalid data from 'dptr[1]':  the readable size is 'memory_allocation_failure_013_func_001(0)*sizeof(char)' bytes, but '2' bytes may be read.: Lines: 471, 472, 473, 476, 482, 483, 485, 487, 485, 487, 485, 492, 495, 497, 500
 memory_allocation_failure.c ,  500 , Dereferencing NULL pointer 'dptr[1]'. See line 495 for an earlier location where this can occur: Lines: 471, 472, 473, 476, 482, 483, 485, 487, 485, 487, 485, 492, 495, 497, 500
 memory_allocation_failure.c ,  535 , Buffer overrun while writing to 'p':  the writable size is 'arr_value[1]*1' bytes, but '64' bytes might be written.: Lines: 526, 527, 531, 532, 533, 535
 memory_allocation_failure.c ,  553 , Local declaration of 'staticflag' hides previous declaration at line '458' of 'c:\work\itc-benchmarks\01.w_defects\memory_allocation_failure.c'.: Lines: 458
 memory_allocation_failure.c ,  577 , 'dptr[1]' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 549, 550, 551, 552, 553, 554, 560, 561, 563, 565, 563, 565, 563, 567, 571, 577
-memory_allocation_failure.c ,  565 , Dereferencing NULL pointer 'dptr'. : Lines: 549, 550, 551, 552, 553, 554, 560, 561, 563, 565
-memory_allocation_failure.c ,  577 , Buffer overrun while writing to 'dptr[1]':  the writable size is '10' bytes, but '12' bytes might be written.: Lines: 549, 550, 551, 552, 553, 554, 560, 561, 563, 565, 563, 565, 563, 567, 571, 577
-memory_allocation_failure.c ,  573 , Dereferencing NULL pointer 'ptr+1'. : Lines: 549, 550, 551, 552, 553, 554, 556, 571, 573
 memory_allocation_failure.c ,  619 , Using uninitialized memory 'b'.: Lines: 549, 550, 551, 552, 553, 554, 560, 561, 563, 565, 563, 565, 563, 567, 571, 577, 578, 580, 582, 584, 582, 584, 582, 580, 582, 580, 592, 598, 600, 604, 611, 612, 611, 612, 611, 613, 614, 616, 619
+memory_allocation_failure.c ,  565 , Dereferencing NULL pointer 'dptr'. : Lines: 549, 550, 551, 552, 553, 554, 560, 561, 563, 565
+memory_allocation_failure.c ,  573 , Dereferencing NULL pointer 'ptr+1'. : Lines: 549, 550, 551, 552, 553, 554, 556, 571, 573
+memory_allocation_failure.c ,  577 , Buffer overrun while writing to 'dptr[1]':  the writable size is '10' bytes, but '12' bytes might be written.: Lines: 549, 550, 551, 552, 553, 554, 560, 561, 563, 565, 563, 565, 563, 567, 571, 577
 memory_allocation_failure.c ,  707 , Dereferencing NULL pointer 'ptr1+1'. : Lines: 705, 706, 707
 invalid_memory_access.c ,  45 , Using uninitialized memory 'ptr'.: Lines: 30, 31, 33, 35, 37, 39, 41, 44, 45
 invalid_memory_access.c ,  45 , Dereferencing NULL pointer 'ptr+1'. : Lines: 30, 31, 33, 35, 44, 45
-invalid_memory_access.c ,  84 , Using uninitialized memory 'dptr'.: Lines: 57, 58, 59, 62, 64, 67, 69, 76, 79, 84
-invalid_memory_access.c ,  85 , Using uninitialized memory 'a'.: Lines: 57, 58, 59, 60, 64, 65, 69, 72, 79, 85
 invalid_memory_access.c ,  67 , Dereferencing NULL pointer 'dptr+1'. : Lines: 57, 58, 59, 62, 64, 67
+invalid_memory_access.c ,  85 , Using uninitialized memory 'a'.: Lines: 57, 58, 59, 60, 64, 65, 69, 72, 79, 85
+invalid_memory_access.c ,  84 , Using uninitialized memory 'dptr'.: Lines: 57, 58, 59, 62, 64, 67, 69, 76, 79, 84
 invalid_memory_access.c ,  105 , Using uninitialized memory 'buf'.: Lines: 95, 96, 97, 99, 100, 102, 103, 105
 invalid_memory_access.c ,  147 , Using uninitialized memory 'ptr'.: Lines: 143, 145, 147
 invalid_memory_access.c ,  181 , Dereferencing NULL pointer '((*pbuf[i]))+j'. : Lines: 168, 169, 170, 171, 172, 173, 174, 175, 179, 181, 179, 181
 invalid_memory_access.c ,  188 , Using uninitialized memory 'buf2'.: Lines: 168, 169, 170, 171, 172, 173, 174, 175, 177, 179, 181, 179, 181, 179, 183, 184, 185, 186, 187, 188
 invalid_memory_access.c ,  188 , Using uninitialized memory '*buf2'.: Lines: 168, 169, 170, 171, 172, 173, 174, 175, 177, 179, 181, 179, 181, 179, 183, 184, 185, 186, 187, 188
 invalid_memory_access.c ,  188 , Dereferencing NULL pointer 'buf2'. See line 181 for an earlier location where this can occur: Lines: 168, 169, 170, 171, 172, 173, 174, 175, 179, 181, 179, 181, 179, 183, 184, 185, 186, 187, 188
+invalid_memory_access.c ,  201 , Dereferencing NULL pointer 'ptr'. : Lines: 197, 198, 200, 201
 invalid_memory_access.c ,  205 , Dereferencing NULL pointer 'ptr+i'. See line 201 for an earlier location where this can occur: Lines: 197, 198, 200, 201, 200, 201, 200, 203, 205
 invalid_memory_access.c ,  210 , Using uninitialized memory 'ptr'.: Lines: 197, 198, 200, 201, 200, 201, 200, 203, 205, 206, 207, 203, 205, 206, 207, 203, 209, 210
-invalid_memory_access.c ,  201 , Dereferencing NULL pointer 'ptr'. : Lines: 197, 198, 200, 201
 invalid_memory_access.c ,  224 , Using uninitialized memory 'buf'.: Lines: 219, 220, 221, 223, 224
-invalid_memory_access.c ,  267 , Dereferencing NULL pointer 'u->s1'. See line 265 for an earlier location where this can occur: Lines: 255, 256, 258, 260, 261, 264, 265, 267
 invalid_memory_access.c ,  265 , Dereferencing NULL pointer 'p->s1->a'. : Lines: 255, 256, 258, 260, 261, 262, 264, 265
 invalid_memory_access.c ,  265 , Dereferencing NULL pointer 'p->s1'. : Lines: 255, 256, 258, 260, 261, 264, 265
+invalid_memory_access.c ,  267 , Dereferencing NULL pointer 'u->s1'. See line 265 for an earlier location where this can occur: Lines: 255, 256, 258, 260, 261, 264, 265, 267
 invalid_memory_access.c ,  270 , Using uninitialized memory '*u'.: Lines: 255, 256, 258, 260, 261, 262, 264, 265, 267, 268, 269, 270
 invalid_memory_access.c ,  270 , Using uninitialized memory '*u->s1'.: Lines: 255, 256, 258, 260, 261, 262, 264, 265, 267, 268, 269, 270
 invalid_memory_access.c ,  294 , Using uninitialized memory 'ptr1'.: Lines: 286, 287, 288, 289, 291, 289, 291, 289, 293, 294
@@ -318,8 +318,8 @@ invalid_memory_access.c ,  371 , Dereferencing NULL pointer 's'. : Lines: 336, 3
 invalid_memory_access.c ,  432 , Dereferencing NULL pointer 'invalid_memory_access_013_s_001_s_gbl'. : Lines: 400, 401, 403, 405, 432
 invalid_memory_access.c ,  432 , Using uninitialized memory 'invalid_memory_access_013_s_001_s_gbl'.: Lines: 400, 401, 403, 405, 407, 408, 409, 410, 411, 432
 invalid_memory_access.c ,  432 , Using uninitialized memory '*invalid_memory_access_013_s_001_s_gbl'.: Lines: 400, 401, 403, 405, 407, 408, 409, 410, 411, 432
-invalid_memory_access.c ,  513 , Buffer overrun while writing to 'str_rev':  the writable size is 'i+1' bytes, but 'i' bytes might be written.: Lines: 500, 501, 502, 503, 505, 506, 507, 509, 511, 509, 513
 invalid_memory_access.c ,  516 , Using uninitialized memory 'str_rev'.: Lines: 500, 501, 502, 503, 505, 506, 507, 515, 516
+invalid_memory_access.c ,  513 , Buffer overrun while writing to 'str_rev':  the writable size is 'i+1' bytes, but 'i' bytes might be written.: Lines: 500, 501, 502, 503, 505, 506, 507, 509, 511, 509, 513
 invalid_memory_access.c ,  559 , Dereferencing NULL pointer 'invalid_memory_access_016_doubleptr_gbl'. : Lines: 553, 554, 556, 557, 559
 invalid_memory_access.c ,  560 , 'invalid_memory_access_016_doubleptr_gbl[i]' could be '0':  this does not adhere to the specification for the function 'strcpy'. : Lines: 553, 554, 556, 557, 559, 560
 invalid_memory_access.c ,  583 , Using uninitialized memory '*invalid_memory_access_016_doubleptr_gbl'.: Lines: 573, 574, 579, 581, 583, 584, 581, 583
@@ -339,43 +339,43 @@ overrun_st.c ,  142 , buffer 'sbuf' of size 60 bytes will be overrun; 4 bytes wi
 overrun_st.c ,  77 , buffer 'buf' of size 20 bytes will be overrun; 4 bytes will be written starting at offset 20
 overrun_st.c ,  88 , buffer 'buf' of size 40 bytes will be overrun; 8 bytes will be written starting at offset 40
 return_local.c ,  19 , returning address of local variable or temporary: buf
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  27 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  28 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  108 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  109 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  202 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  203 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  290 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  291 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  300 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  328 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  364 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  365 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  451 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  452 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  465 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//st_cross_thread_access.c ,  490 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//uninit_memory_access.c ,  434 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  28 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  84 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  147 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  239 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  240 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  247 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  272 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  308 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  356 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  357 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  365 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  389 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  429 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  430 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  437 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  461 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  500 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  501 , initializer is not a constant
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  508 , 'type cast': pointer truncation from 'void *' to 'long'
-../itc-benchmarks/01.w_Defects//unlock_without_lock.c ,  532 , 'type cast': pointer truncation from 'void *' to 'long'
+st_cross_thread_access.c ,  27 , initializer is not a constant
+st_cross_thread_access.c ,  28 , initializer is not a constant
+st_cross_thread_access.c ,  108 , initializer is not a constant
+st_cross_thread_access.c ,  109 , initializer is not a constant
+st_cross_thread_access.c ,  202 , initializer is not a constant
+st_cross_thread_access.c ,  203 , initializer is not a constant
+st_cross_thread_access.c ,  290 , initializer is not a constant
+st_cross_thread_access.c ,  291 , initializer is not a constant
+st_cross_thread_access.c ,  300 , 'type cast': pointer truncation from 'void *' to 'long'
+st_cross_thread_access.c ,  328 , 'type cast': pointer truncation from 'void *' to 'long'
+st_cross_thread_access.c ,  364 , initializer is not a constant
+st_cross_thread_access.c ,  365 , initializer is not a constant
+st_cross_thread_access.c ,  451 , initializer is not a constant
+st_cross_thread_access.c ,  452 , initializer is not a constant
+st_cross_thread_access.c ,  465 , 'type cast': pointer truncation from 'void *' to 'long'
+st_cross_thread_access.c ,  490 , 'type cast': pointer truncation from 'void *' to 'long'
+uninit_memory_access.c ,  434 , different array subscripts: 'int (*)[4]' and 'int (*)[0]'
+unlock_without_lock.c ,  28 , initializer is not a constant
+unlock_without_lock.c ,  84 , initializer is not a constant
+unlock_without_lock.c ,  147 , initializer is not a constant
+unlock_without_lock.c ,  239 , initializer is not a constant
+unlock_without_lock.c ,  240 , initializer is not a constant
+unlock_without_lock.c ,  247 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  272 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  308 , initializer is not a constant
+unlock_without_lock.c ,  356 , initializer is not a constant
+unlock_without_lock.c ,  357 , initializer is not a constant
+unlock_without_lock.c ,  365 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  389 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  429 , initializer is not a constant
+unlock_without_lock.c ,  430 , initializer is not a constant
+unlock_without_lock.c ,  437 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  461 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  500 , initializer is not a constant
+unlock_without_lock.c ,  501 , initializer is not a constant
+unlock_without_lock.c ,  508 , 'type cast': pointer truncation from 'void *' to 'long'
+unlock_without_lock.c ,  532 , 'type cast': pointer truncation from 'void *' to 'long'
 zero_division.c ,  13 , Inconsistent annotation for 'rand': this instance has no annotations. See c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\stdlib.h(347). 
 zero_division.c ,  236 , Dereferencing NULL pointer 'zero_division_016_gbl_divisor'. : Lines: 235, 236
 wrong_arguments_func_pointer.c ,  251 , Using uninitialized memory 'st'.: Lines: 248, 249, 250, 251
@@ -418,9 +418,9 @@ uninit_memory_access.c ,  319 , Using uninitialized memory 'str'.: Lines: 318, 3
 uninit_memory_access.c ,  363 , Dereferencing NULL pointer 's1'. : Lines: 359, 360, 362, 363
 uninit_memory_access.c ,  369 , 's1' could be '0':  this does not adhere to the specification for the function 'memcpy'. See line 363 for an earlier location where this can occur: Lines: 359, 360, 362, 363, 364, 366, 367, 366, 369
 uninit_memory_access.c ,  392 , Dereferencing NULL pointer 'u'. : Lines: 385, 386, 387, 389, 391, 392
-uninit_memory_access.c ,  440 , Dereferencing NULL pointer 'p'. See line 435 for an earlier location where this can occur: Lines: 431, 432, 433, 434, 435, 436, 438, 440
 uninit_memory_access.c ,  435 , Using uninitialized memory 'arr'.: Lines: 431, 432, 433, 434, 435
 uninit_memory_access.c ,  435 , 'p' could be '0':  this does not adhere to the specification for the function 'memcpy'. : Lines: 431, 432, 433, 434, 435
+uninit_memory_access.c ,  440 , Dereferencing NULL pointer 'p'. See line 435 for an earlier location where this can occur: Lines: 431, 432, 433, 434, 435, 436, 438, 440
 underrun_st.c ,  21 , Index '-1' is out of valid index range '0' to '4' for possibly stack allocated buffer 'buf'.
 underrun_st.c ,  21 , Reading invalid data from 'buf':  the readable size is '20' bytes, but '-4' bytes may be read.: Lines: 19, 20, 21
 underrun_st.c ,  31 , Index '-1' is out of valid index range '0' to '4' for possibly stack allocated buffer 'buf'.
