@@ -1,0 +1,4559 @@
+{
+	"errors"   : 0,
+	"warnings" : 53,
+	"advice"   : 636,
+	"files"    : [
+    {
+	    "path"     : "bit_shift.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 245,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "invalid_memory_access.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 44,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 34,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 36,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 47,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 67,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 72,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 79,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 82,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 87,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 103,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 108,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 124,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 128,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 133,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 154,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 158,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 177,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 185,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 187,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 189,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 191,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 193,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 195,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 215,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 218,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 230,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 234,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 266,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 268,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 271,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 316,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 351,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 363,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 414,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 426,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 450,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 482,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 489,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 507,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 508,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 512,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 526,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 593,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 597,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 621,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 674,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "data_overflow.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 360,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "livelock.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 10,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 40,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 58,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 65,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 66,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 68,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 68,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 69,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 69,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 71,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 72,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 76,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "ptr_subtraction.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 43,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "not_return.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 119,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "underrun_st.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 205,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "sign_conv.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 270,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "buffer_overrun_dynamic.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 28,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 22,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 39,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 55,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 74,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 89,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 107,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 125,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 195,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 215,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 230,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 245,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 260,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 275,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 295,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 309,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 330,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 347,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 366,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 382,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 399,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 416,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 442,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 457,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 477,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 493,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 529,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 575,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 603,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 616,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "uninit_pointer.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 12,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 51,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 52,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 226,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 229,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 256,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 292,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 295,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 316,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 327,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 347,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 414,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 418,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 437,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "data_lost.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 267,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "uninit_memory_access.c",
+	    "errors"   : 0,
+	    "warnings" : 2,
+	    "advice"   : 18,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 37,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 53,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 67,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 69,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 70,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 109,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 196,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 206,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 208,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 264,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 267,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 290,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 308,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 348,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 386,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 434,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 438,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 472,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 286,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 480,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "st_overflow.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 247,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "return_local.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 51,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "uninit_var.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 327,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "insign_code.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 33,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "ow_memcpy.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 58,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "redundant_cond.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 290,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "sleep_lock.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 17,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 41,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 47,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 48,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 48,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 49,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 60,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 79,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 85,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 86,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 86,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 87,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 118,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 124,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 125,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 125,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 126,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 137,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 147,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "wrong_arguments_func_pointer.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 4,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 17,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 383,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 459,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 462,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 602,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "unused_var.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 165,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "overrun_st.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 773,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "data_underflow.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 178,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "dead_lock.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 68,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 55,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 78,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 86,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 87,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 89,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 89,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 90,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 90,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 92,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 93,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 106,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 117,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 164,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 187,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 210,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 219,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 220,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 221,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 223,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 223,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 224,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 224,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 225,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 225,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 227,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 228,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 229,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 243,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 254,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 265,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 336,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 381,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 389,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 390,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 391,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 393,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 393,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 394,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 394,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 396,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 397,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 411,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 422,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 493,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 538,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 546,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 547,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 548,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 550,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 550,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 551,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 551,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 553,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 554,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 568,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 579,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 653,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 674,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 682,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 683,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 685,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 685,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 686,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 686,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 688,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 689,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 702,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 713,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 723,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "cmp_funcadr.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 1,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 26,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 58,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "buffer_underrun_dynamic.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 35,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 23,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 40,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 56,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 75,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 90,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 108,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 126,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 196,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 216,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 231,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 247,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 262,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 277,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 297,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 311,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 332,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 349,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 368,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 384,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 401,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 418,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 441,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 458,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 477,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 493,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 527,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 572,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 600,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 618,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 645,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 698,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 716,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 721,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 748,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 773,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 789,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "dead_code.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 258,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "lock_never_unlock.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 52,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 19,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 47,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 54,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 55,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 55,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 56,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 68,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 103,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 110,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 111,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 111,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 112,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 112,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 113,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 114,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 126,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 169,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 177,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 178,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 179,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 180,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 181,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 193,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 221,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 238,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 247,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 248,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 273,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 286,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 287,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 287,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 288,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 317,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 334,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 350,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 351,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 385,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 413,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 422,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 423,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 424,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 425,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 462,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 486,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 502,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 503,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 538,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 566,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 575,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 576,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 577,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 578,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 587,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "deletion_of_data_structure_sentinel.c",
+	    "errors"   : 0,
+	    "warnings" : 0,
+	    "advice"   : 0,
+	    "reports"  : [
+
+      ]
+    },
+    {
+	    "path"     : "main.c",
+	    "errors"   : 0,
+	    "warnings" : 3,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 9,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 10,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 11,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "double_free.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 217,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "race_condition.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 68,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 44,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 61,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 68,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 69,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 71,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 71,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 72,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 72,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 74,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 75,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 102,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 112,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 112,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 113,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 113,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 115,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 116,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 142,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 151,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 151,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 152,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 152,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 153,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 153,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 180,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 180,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 183,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 198,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 225,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 232,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 233,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 233,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 234,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 253,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 260,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 261,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 261,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 262,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 262,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 263,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 263,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 264,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 264,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 265,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 266,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 267,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 268,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 280,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 315,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 322,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 323,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 323,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 324,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 324,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 325,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 326,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 338,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 376,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 384,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 385,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 386,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 387,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 388,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 400,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 430,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 447,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 456,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 457,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 462,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "conflicting_cond.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 210,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "invalid_extern.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 71,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "memory_allocation_failure.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 24,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 41,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 59,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 76,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 108,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 127,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 134,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 141,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 155,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 203,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 206,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 210,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 222,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 226,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 238,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 249,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 270,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 301,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 400,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 403,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 455,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 520,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 527,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 550,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 624,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 738,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "free_null_pointer.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 31,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 14,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 15,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 24,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 28,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 42,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 46,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 58,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 64,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 68,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 110,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 121,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 202,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 214,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 217,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 236,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 247,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 251,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 263,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 291,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 294,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 336,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 339,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 399,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 405,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 411,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 446,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 451,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 466,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 480,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 497,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 511,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 569,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "func_pointer.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 18,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 101,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 102,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 106,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 118,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 176,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 190,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 193,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 203,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 252,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 255,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 349,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 365,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 370,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 404,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 405,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 410,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 422,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 462,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 641,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "zero_division.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 260,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "double_release.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 40,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 36,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 42,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 43,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 43,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 44,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 55,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 80,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 88,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 94,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 95,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 95,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 96,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 96,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 97,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 98,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 108,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 137,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 143,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 144,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 144,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 145,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 156,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 184,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 190,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 191,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 191,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 192,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 203,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 233,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 239,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 240,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 240,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 241,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 252,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 275,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 281,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 282,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 282,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 283,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 294,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 302,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "pow_related_errors.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 491,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "function_return_value_unchecked.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 3,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 189,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 193,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 445,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 453,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "unlock_without_lock.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 47,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 20,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 49,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 58,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 59,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 60,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 61,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 62,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 74,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 113,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 122,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 123,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 124,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 125,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 126,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 137,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 201,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 209,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 210,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 211,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 212,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 213,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 225,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 260,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 284,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 293,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 294,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 326,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 339,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 340,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 340,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 341,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 376,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 395,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 411,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 412,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 447,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 475,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 484,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 485,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 486,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 487,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 519,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 547,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 556,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 557,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 558,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 559,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 567,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "free_nondynamically_allocated_memory.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 1,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 76,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 276,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "improper_termination_of_block.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 82,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "invalid_extern_1.c",
+	    "errors"   : 0,
+	    "warnings" : 0,
+	    "advice"   : 0,
+	    "reports"  : [
+
+      ]
+    },
+    {
+	    "path"     : "littlemem_st.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 358,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "endless_loop.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 211,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "st_underrun.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 0,
+	    "reports"  : [
+        {
+	        "level"    : "Warning",
+	        "line"     : 270,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "memory_leak.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 37,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 27,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 95,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 118,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 148,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 168,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 177,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 186,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 202,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 215,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 216,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 221,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 232,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 233,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 238,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 249,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 250,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 251,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 272,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 275,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 282,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 314,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 316,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 351,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 355,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 357,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 362,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 376,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 380,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 406,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 422,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 433,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 472,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 484,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 487,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 505,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 533,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 536,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 545,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "double_lock.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 23,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 19,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 50,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 57,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 58,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 58,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 59,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 71,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 100,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 107,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 108,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 108,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 109,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 121,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 159,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 166,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 167,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 167,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 168,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 180,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 205,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 219,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 228,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 229,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 237,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "null_pointer.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 10,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 214,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 235,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 250,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 261,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 300,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 312,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 315,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 333,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 361,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 364,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 372,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    },
+    {
+	    "path"     : "st_cross_thread_access.c",
+	    "errors"   : 0,
+	    "warnings" : 1,
+	    "advice"   : 45,
+	    "reports"  : [
+        {
+	        "level"    : "Advice",
+	        "line"     : 20,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 56,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 71,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 80,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 81,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 83,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 84,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 85,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 86,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 99,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 144,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 168,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 177,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 178,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 180,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 181,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 182,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 183,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 194,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 233,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 257,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 265,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 266,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 267,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 268,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 269,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 281,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 321,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 345,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 354,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 355,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 400,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 422,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 435,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 436,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 436,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 438,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 439,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 439,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 440,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 441,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 483,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 507,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 523,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Advice",
+	        "line"     : 524,
+	        "title"    : "Prefer `nullptr' to `NULL' in new C++ code.",
+	        "desc"     : ""
+        },
+        {
+	        "level"    : "Warning",
+	        "line"     : 535,
+	        "title"    : "'volatile' is not thread-safe.",
+	        "desc"     : "If multiple threads are sharing data, use std::atomic or locks. In addition, 'volatile' may force the compiler to generate worse code than it could otherwise. For more about why 'volatile' doesn't do what you think it does, see http://www.kernel.org/doc/Documentation/volatile-considered-harmful.txt."
+        }
+      ]
+    }
+  ]
+}

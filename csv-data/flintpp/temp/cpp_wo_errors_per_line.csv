@@ -1,0 +1,10 @@
+File, Line, Error
+improper_error_handling.cpp , 25 , Symbol 'int' invalid in catch clause. You may only catch user-defined types.
+improper_error_handling.cpp , 46 , Symbol 'int' invalid in catch clause. You may only catch user-defined types.
+improper_error_handling.cpp , 68 , Symbol 'float' invalid in catch clause. You may only catch user-defined types.
+improper_error_handling.cpp , 93 , Symbol 'float' invalid in catch clause. You may only catch user-defined types.
+improper_error_handling.cpp , 98 , Symbol 'float' invalid in catch clause. You may only catch user-defined types.
+improper_error_handling.cpp , 109 , 'volatile' is not thread-safe.
+main.cpp , 15 , 'volatile' is not thread-safe.
+main.cpp , 16 , 'volatile' is not thread-safe.
+main.cpp , 17 , 'volatile' is not thread-safe.
