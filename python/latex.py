@@ -347,10 +347,11 @@ def subdefects_pr(tex_file_name, rep_directory, tool_list):
     print("%\\hline")
     print("% Production per subdefects \\\\ ")
     print("\\hline")
-    print("Subdefect & Tool & PR", "\\\\")
+    print("\multicolumn{1}{|c|}{Defect subtype} & \multicolumn{1}{|c|}{Tool} & \multicolumn{1}{|c|}{PR}", "\\\\")
     print("\\hline")
     for subdefect in sorted(subdef_map.keys()):
-        print(subdefect, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+        sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'
+        print(sub, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
@@ -396,10 +397,11 @@ def subdefects_rdr(tex_file_name, rep_directory, tool_list):
     print("%\\hline")
     print("% Robust detection rate per subdefects \\\\ ")
     print("\\hline")
-    print("Subdefect & Tool & RDR", "\\\\")
+    print("\multicolumn{1}{|c|}{Defect subtype} & \multicolumn{1}{|c|}{Tool} & \multicolumn{1}{|c|}{RDR}", "\\\\")
     print("\\hline")
     for subdefect in sorted(subdef_map.keys()):
-        print(subdefect, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+        sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'
+        print(sub, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
@@ -438,14 +440,15 @@ def subdefects_unique(tex_file_name, rep_directory, tool_list):
         # print("\n\n")
 
     sys.stdout = open(tex_file_path, "w")
-    print("\\begin{tabular}{|l|r|r|}")
+    print("\\begin{tabular}{|l|c|r|}")
     print("%\\hline")
     print("% Unique per subdefects \\\\ ")
     print("\\hline")
-    print("Subdefect & Tool & Unique", "\\\\")
+    print("\multicolumn{1}{|c|}{Defect subtype} & \multicolumn{1}{|c|}{Tool} & \multicolumn{1}{|c|}{Unique}", "\\\\")
     print("\\hline")
     for subdefect in sorted(subdef_map.keys()):
-        print(subdefect, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
+        sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'
+        print(sub, " & ", nice(subdef_map[subdefect][0]), " & ", "{:4.2f}".format(subdef_map[subdefect][1]), "\\\\")
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
