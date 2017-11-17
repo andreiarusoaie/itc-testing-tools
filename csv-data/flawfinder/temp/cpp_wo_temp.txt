@@ -1,0 +1,26 @@
+Flawfinder version 2.0.4, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining /Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp
+Examining /Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/main.cpp
+
+FINAL RESULTS:
+
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/main.cpp:23:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+
+ANALYSIS SUMMARY:
+
+Hits = 1
+Lines analyzed = 171 in approximately 0.01 seconds (20078 lines/second)
+Physical Source Lines of Code (SLOC) = 107
+Hits@level = [0]   0 [1]   0 [2]   1 [3]   0 [4]   0 [5]   0
+Hits@level+ = [0+]   1 [1+]   1 [2+]   1 [3+]   0 [4+]   0 [5+]   0
+Hits/KSLOC@level+ = [0+] 9.34579 [1+] 9.34579 [2+] 9.34579 [3+]   0 [4+]   0 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.

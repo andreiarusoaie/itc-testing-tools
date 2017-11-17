@@ -1,0 +1,943 @@
+Flawfinder version 2.0.4, (C) 2001-2017 David A. Wheeler.
+Number of rules (primarily dangerous function names) in C/C++ ruleset: 219
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/livelock.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/ptr_subtraction.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/not_return.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/underrun_st.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/sign_conv.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_overrun_dynamic.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/data_lost.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/return_local.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_var.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/insign_code.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/ow_memcpy.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/redundant_cond.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/sleep_lock.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/unused_var.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/overrun_st.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/data_underflow.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/dead_lock.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/cmp_funcadr.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/dead_code.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/lock_never_unlock.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/main.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/double_free.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/race_condition.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/conflicting_cond.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_extern.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/func_pointer.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/zero_division.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/double_release.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/pow_related_errors.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/function_return_value_unchecked.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/unlock_without_lock.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/free_nondynamically_allocated_memory.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/improper_termination_of_block.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_extern_1.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/endless_loop.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/double_lock.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/null_pointer.c
+Examining /Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c
+
+FINAL RESULTS:
+
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:119:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:156:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:249:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:325:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:576:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:634:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:76:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:100:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:408:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:431:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/null_pointer.c:259:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:81:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:116:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c:55:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c:197:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c:423:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_var.c:152:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:208:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:209:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:381:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:435:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:474:  [4] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_overrun_dynamic.c:573:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_overrun_dynamic.c:582:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_overrun_dynamic.c:594:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:571:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:579:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:591:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:700:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:738:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:762:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:779:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:42:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:54:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:55:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:63:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_nondynamically_allocated_memory.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:26:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:284:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:320:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:320:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/func_pointer.c:62:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/func_pointer.c:293:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/func_pointer.c:464:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/function_return_value_unchecked.c:102:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/function_return_value_unchecked.c:110:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/function_return_value_unchecked.c:333:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:105:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:213:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:232:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:567:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:574:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:622:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:632:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:26:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:53:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:71:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:90:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:108:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:134:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:168:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:211:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:255:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:297:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:329:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/main.c:22:  [2] (integer) atoi:
+  Unless checked, the resulting number can exceed the expected range
+  (CWE-190). If source untrusted, check both minimum and maximum, even if the
+  input had no minus sign (large numbers can roll over into negative number;
+  consider saving to an unsigned value if that is intended).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c:510:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c:552:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c:594:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:277:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:526:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/null_pointer.c:354:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/overrun_st.c:21:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/overrun_st.c:292:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/overrun_st.c:749:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/race_condition.c:136:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c:295:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:34:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:35:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:36:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:37:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:38:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:39:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:42:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:44:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:66:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:67:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:68:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:69:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:70:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:72:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:78:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:96:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:97:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:98:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:99:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:101:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:102:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:103:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:109:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:117:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:135:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:137:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:155:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:168:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:169:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:170:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:171:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:172:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:174:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:180:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:200:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:201:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:202:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:203:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:204:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:206:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:213:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_overflow.c:222:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:23:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:24:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:39:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:40:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:41:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:42:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:43:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:44:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:45:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:62:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:71:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:72:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:73:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:74:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:75:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:80:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:108:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:109:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:110:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:115:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:147:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:169:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:171:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:182:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:183:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:184:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:185:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:186:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:187:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:188:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:213:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:224:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:225:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:226:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:227:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:228:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:229:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c:323:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c:353:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c:384:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c:456:  [2] (buffer) memcpy:
+  Does not check for buffer overflows when copying to destination (CWE-120).
+  Make sure destination can always hold the source data.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c:133:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c:188:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_pointer.c:400:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_var.c:157:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/unlock_without_lock.c:354:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/unlock_without_lock.c:388:  [2] (buffer) strcpy:
+  Does not check for buffer overflows when copying to destination [MS-banned]
+  (CWE-120). Consider using snprintf, strcpy_s, or strlcpy (warning: strncpy
+  easily misused). Risk is low because the source is a constant string.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:70:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:111:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:136:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:430:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:430:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:473:  [2] (buffer) char:
+  Statically-sized arrays can be improperly restricted, leading to potential
+  overflows or other issues (CWE-119!/CWE-120). Perform bounds checking, use
+  functions that limit length, or ensure that the size is larger than the
+  maximum possible length.
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:647:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:654:  [1] (buffer) strncpy:
+  Easily used incorrectly; doesn't always \0-terminate or check for invalid
+  pointers [MS-banned] (CWE-120).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:42:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:118:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_null_pointer.c:248:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/func_pointer.c:104:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/func_pointer.c:407:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/function_return_value_unchecked.c:335:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:510:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c:224:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:75:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:405:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:430:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/null_pointer.c:258:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:25:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:51:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:86:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:123:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:195:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_underrun.c:234:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/wrong_arguments_func_pointer.c:380:  [1] (buffer) strlen:
+  Does not handle strings that are not \0-terminated; if given one it may
+  perform an over-read (it could cause a crash if unprotected) (CWE-126).
+
+ANALYSIS SUMMARY:
+
+Hits = 196
+Lines analyzed = 20678 in approximately 0.33 seconds (63456 lines/second)
+Physical Source Lines of Code (SLOC) = 14727
+Hits@level = [0]   0 [1]  21 [2] 153 [3]   0 [4]  22 [5]   0
+Hits@level+ = [0+] 196 [1+] 196 [2+] 175 [3+]  22 [4+]  22 [5+]   0
+Hits/KSLOC@level+ = [0+] 13.3089 [1+] 13.3089 [2+] 11.8829 [3+] 1.49385 [4+] 1.49385 [5+]   0
+Minimum risk level = 1
+Not every hit is necessarily a security vulnerability.
+There may be other security vulnerabilities; review your code!
+See 'Secure Programming HOWTO'
+(http://www.dwheeler.com/secure-programs) for more information.
