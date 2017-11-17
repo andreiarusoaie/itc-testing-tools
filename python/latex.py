@@ -32,7 +32,7 @@ def total(tex_file_name, rep_directory, tool_list):
     sys.stdout = open(tex_file_path, "w")
     print("\\begin{tabular}{|l|c|c|c|c|c|c|}")
     print("\\hline")
-    print("Tool & DR & FPR & PR & RDR & Unique & Runtime \\\\ ")
+    print("Tool & DR & FPR & PR & RDR & Unique & Time (s) \\\\ ")
     print("\\hline")
     for t in srt:
         t_as_list = map(lambda x : str(x), list(t))
