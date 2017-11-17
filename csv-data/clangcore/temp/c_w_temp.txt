@@ -1,0 +1,483 @@
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:22:10: warning: shift count >= width of type
+        ret = a << 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+                ^  ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:46:10: warning: shift count >= width of type
+        ret = a << 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+                ^  ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:70:10: warning: shift count is negative
+        ret = a << -1;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+                ^  ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:82:10: warning: shift count >= width of type
+        ret = a >> 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+                ^  ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:94:10: warning: shift count is negative
+        ret = a >> -1;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+                ^  ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:237:10: warning: shift count >= width of type
+        ret = 1 << 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+                ^  ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:22:10: warning: The result of the '<<' expression is undefined
+        ret = a << 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:46:10: warning: The result of the '<<' expression is undefined
+        ret = a << 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:70:10: warning: The result of the '<<' expression is undefined
+        ret = a << -1;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:82:10: warning: The result of the '>>' expression is undefined
+        ret = a >> 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:94:10: warning: The result of the '>>' expression is undefined
+        ret = a >> -1;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:107:10: warning: The result of the '<<' expression is undefined
+        ret = a << shift;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:134:10: warning: The result of the '<<' expression is undefined
+        ret = a << ((5 * shift) + 2);/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:147:10: warning: The result of the '<<' expression is undefined
+        ret = a << ((shift * shift) + 7);/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:164:10: warning: The result of the '<<' expression is undefined
+        ret = a << bit_shift_012_func_001();/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:176:10: warning: The result of the '<<' expression is undefined
+        ret = a << shift;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:194:10: warning: The result of the '<<' expression is undefined
+        ret = a << shifts[3];/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:209:10: warning: The result of the '<<' expression is undefined
+        ret = a << shift1;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:226:10: warning: The result of the '<<' expression is undefined
+        ret = a << shift2;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/bit_shift.c:237:10: warning: The result of the '<<' expression is undefined
+        ret = 1 << 32;/*Tool should detect this line as error*/ /*ERROR:Bit shift error*/
+              ~~^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:33:17: warning: pointer/integer type mismatch in conditional expression ('int *' and 'int')
+    (flag == 10)? (ptr= (int*) malloc(10*sizeof(int))) : ( a= 5);
+                ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   ~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:45:10: warning: Dereference of null pointer
+        a = *(ptr+1); /*Tool should detect this line as error*/ /*ERROR:Invalid memory access to already freed area*/
+            ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:181:18: warning: Dereference of null pointer
+                *((*pbuf[i])+j)=5.0;
+                ~~~~~~~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:265:2: warning: Access to field 'a' results in a dereference of a null pointer (loaded from field 's1')
+        p->s1->a[0] = 1;
+        ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:371:12: warning: Access to field 'a' results in a dereference of a null pointer (loaded from variable 's')
+        return (i+s->a);/*Tool should detect this line as error*/ /*ERROR:Invalid memory access to already freed area*/
+                  ^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:432:9: warning: Access to field 'a' results in a dereference of a null pointer (loaded from variable 'invalid_memory_access_013_s_001_s_gbl')
+        return invalid_memory_access_013_s_001_s_gbl->a;/*Tool should detect this line as error*/ /*ERROR:Invalid memory access to already freed area*/
+               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_memory_access.c:568:11: warning: Array access (from variable 'invalid_memory_access_016_doubleptr_gbl') results in a null pointer dereference
+        strcpy(s,invalid_memory_access_016_doubleptr_gbl[0]);/*Tool should detect this line as error*/ /*ERROR:Invalid memory access to already freed area*/
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/secure/_string.h:83:33: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                                              ^~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/data_overflow.c:319:19: warning: overflow in expression; result is -2147483648 with type 'int'
+        ret = 0x7fffffff + 1; /*Tool should detect this line as error*/ /*ERROR:Data Overflow*/
+                         ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/not_return.c:24:1: warning: control may reach end of non-void function
+} /*Tool should detect this line as error*/ /*ERROR: No return value */
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/not_return.c:50:1: warning: control may reach end of non-void function
+}/*Tool should detect this line as error*/ /*ERROR: No return value */
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/not_return.c:76:1: warning: control may reach end of non-void function
+}/*Tool should detect this line as error*/ /*ERROR: No return value */
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/not_return.c:99:1: warning: control may reach end of non-void function
+}/*Tool should detect this line as error*/ /*ERROR: No return value */
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c:21:8: warning: array index -1 is before the beginning of the array
+        ret = buf[-1];/*Tool should detect this line as error*/ /*ERROR:Data Underrun*/
+              ^   ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c:19:2: note: array 'buf' declared here
+        int buf[5] = {1, 2, 3, 4, 5};
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c:31:2: warning: array index -1 is before the beginning of the array
+        buf[-1] = 1;/*Tool should detect this line as error*/ /*ERROR:Data Underrun*/
+        ^   ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c:30:2: note: array 'buf' declared here
+        int buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c:21:6: warning: Assigned value is garbage or undefined
+        ret = buf[-1];/*Tool should detect this line as error*/ /*ERROR:Data Underrun*/
+            ^ ~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/underrun_st.c:55:6: warning: Assigned value is garbage or undefined
+        ret = *(p - 1);/*Tool should detect this line as error*/ /*ERROR:Data Underrun*/
+            ^ ~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c:333:11: warning: The right operand of '+' is a garbage value due to array index out of bounds
+            *(buf+indexes[index]) = 1;/*Tool should detect this line as error*/ /*ERROR:Buffer overrun*/
+                 ^~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/stubs.c:36:8: warning: '/*' within block comment
+#endif /* defined(CHECKER_K7) */
+       ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:30:8: warning: Dereference of undefined pointer value
+        ret = *p; /*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+              ^~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:41:5: warning: Dereference of undefined pointer value
+        *p = 1; /*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+        ~~~^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:55:8: warning: Dereference of undefined pointer value
+        ret = **pp; /*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+              ^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:71:2: warning: 1st function call argument is an uninitialized value
+        uninit_pointer_004_func_001(p);/*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:90:8: warning: Dereference of undefined pointer value
+        ret = pbuf[1][1];
+              ^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:104:7: warning: Dereference of undefined pointer value
+        **pp = 1;/*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+        ~~~~~^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:131:15: warning: The left operand of '+' is a garbage value
+                *((*pbuf[i])+j)='a';/*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+                   ~~~~~~~~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:152:11: warning: Assigned value is garbage or undefined
+        p->uninit=ret;
+                 ^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:187:6: warning: 2nd function call argument is an uninitialized value
+        strcpy(buf1,buf);/*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+        ^~~~~~~~~~~~~~~~
+/usr/include/secure/_string.h:83:3: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:200:9: warning: Assigned value is garbage or undefined
+    buf = (*cptr);/*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+        ^ ~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_pointer.c:358:5: warning: 1st function call argument is an uninitialized value
+    uninit_pointer_015_func_001(ptr);/*Tool should detect this line as error*/ /*ERROR:Uninitialized pointer*/
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c:27:5: warning: 2nd function call argument is an uninitialized value
+    printf("%ld ",*ret);/*Tool should detect this line as error*/ /*ERROR:Uninitialized Memory Access*/
+    ^~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c:54:3: warning: 2nd function call argument is an uninitialized value
+                strcpy(str1, str2);
+                ^~~~~~~~~~~~~~~~~~
+/usr/include/secure/_string.h:83:3: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c:74:21: warning: Dereference of null pointer
+     printf("%d \n",**ptr);/*Tool should detect this line as error*/ /*ERROR:Uninitialized Memory Access*/
+                    ^~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c:98:4: warning: Assigned value is garbage or undefined
+        k = arr1[1][2][3];/*Tool should detect this line as error*/ /*ERROR:Uninitialized Memory Access*/
+          ^ ~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c:127:5: warning: 2nd function call argument is an uninitialized value
+    uninit_memory_access_006_func_001(str1, str2);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_memory_access.c:319:2: warning: 1st function call argument is an uninitialized value
+        uninit_memory_access_011_func_001(str);/*Tool should detect this line as error*/ /*ERROR:Uninitialized Memory Access*/
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/return_local.c:19:9: warning: address of stack memory associated with local variable 'buf' returned
+        return buf;/*Tool should detect this line as error*/ /*ERROR: return - pointer to local variable */
+               ^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/return_local.c:19:2: warning: Address of stack memory associated with local variable 'buf' returned to caller
+        return buf;/*Tool should detect this line as error*/ /*ERROR: return - pointer to local variable */
+        ^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:23:6: warning: Assigned value is garbage or undefined
+        ret = a;/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+            ^ ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:34:6: warning: Assigned value is garbage or undefined
+        ret = buf[3];/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+            ^ ~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:45:6: warning: Assigned value is garbage or undefined
+        ret = buf[1][1];/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+            ^ ~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:63:9: warning: Assigned value is garbage or undefined
+    ret = dvar;/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+        ^ ~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:75:2: warning: Undefined or garbage value returned to caller
+        return ret;/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+        ^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:92:31: warning: Assigned value is garbage or undefined
+    (flag==10)? (a = 1):(flag =a);/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+                              ^~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:111:6: warning: Assigned value is garbage or undefined
+        ret = s.uninit;/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+            ^ ~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:161:14: warning: Assigned value is garbage or undefined
+                        buf[i][j] = ret[i][j];}/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+                                  ^ ~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:177:13: warning: The left operand of '>' is a garbage value
+        if(arr1[0] > 0)
+           ~~~~~~~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:243:2: warning: Undefined or garbage value returned to caller
+        return val;
+        ^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/uninit_var.c:296:9: warning: Assigned value is garbage or undefined
+    ret = a[1];/*Tool should detect this line as error*/ /*ERROR:Uninitialized Variable*/
+        ^ ~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/ow_memcpy.c:41:6: warning: Assigned value is garbage or undefined
+                *q = *p;/*Tool should detect this line as error*/ /*ERROR:copy of the overlapped area*/
+                   ^ ~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/sleep_lock.c:28:9: warning: 'NULL' macro redefined
+#define NULL ((void *)0)
+        ^
+/usr/include/sys/_types/_null.h:30:9: note: previous definition is here
+#define NULL  __DARWIN_NULL
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:161:8: warning: Function taking 2 arguments is called with fewer (1)
+        ret = func(5);/*Tool should detect this line as error*//*ERROR:Wrong arguments passed to a function pointer*/
+              ^~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:337:11: warning: The left expression of the compound assignment is an uninitialized value. The computed value will also be garbage
+        temp += st.arr[i];
+        ~~~~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:381:2: warning: Function taking 2 arguments is called with fewer (1)
+        fptr(str1);/*Tool should detect this line as error*//*ERROR:Wrong arguments passed to a function pointer*/
+        ^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:423:6: warning: Function taking 2 arguments is called with fewer (1)
+                a =fptr(&f);/*Tool should detect this line as error*//*ERROR:Wrong arguments passed to a function pointer*/
+                   ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:21:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1; /*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:20:2: note: array 'buf' declared here
+        char buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:32:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:31:2: note: array 'buf' declared here
+        short buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:44:8: warning: array index 5 is past the end of the array (which contains 5 elements)
+        ret = buf[5];/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+              ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:42:2: note: array 'buf' declared here
+        int buf[5] = {1, 2, 3, 4, 5};
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:55:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:54:2: note: array 'buf' declared here
+        int buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:66:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:65:2: note: array 'buf' declared here
+        long buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:77:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1.0;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:76:2: note: array 'buf' declared here
+        float buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:88:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1.0;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:87:2: note: array 'buf' declared here
+        double buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:158:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        overrun_st_012_s_gbl.buf[5] = 1;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^                        ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:152:2: note: array 'buf' declared here
+        int buf[5];
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:706:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:705:2: note: array 'buf' declared here
+        int buf[] = {1, 2, 3, 4, 5};
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:749:2: warning: array index 5 is past the end of the array (which contains 5 elements)
+        buf[5] = 1;/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+        ^   ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:748:2: note: array 'buf' declared here
+        char buf[] = "1234";
+        ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:44:6: warning: Assigned value is garbage or undefined
+        ret = buf[5];/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+            ^ ~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/overrun_st.c:320:6: warning: Assigned value is garbage or undefined
+        ret = *(p + 5);/*Tool should detect this line as error*/ /*ERROR: buffer overrun */
+            ^ ~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/data_underflow.c:82:22: warning: overflow in expression; result is 2147483647 with type 'int'
+        ret = (-2147483647) - 2;/*Tool should detect this line as error*/ /*ERROR:Data Underflow*/
+                            ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/cmp_funcadr.c:26:6: warning: comparison of function 'cmp_funcadr_001_func_001' equal to a null pointer is always false
+        if (cmp_funcadr_001_func_001 == NULL) /*Tool should detect this line as error*/ /*ERROR:compare function address with NULL*/
+            ^~~~~~~~~~~~~~~~~~~~~~~~    ~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/cmp_funcadr.c:26:6: note: prefix with the address-of operator to silence this warning
+        if (cmp_funcadr_001_func_001 == NULL) /*Tool should detect this line as error*/ /*ERROR:compare function address with NULL*/
+            ^
+            &
+/Users/andrei/work/itc-benchmarks/01.w_Defects/cmp_funcadr.c:26:6: note: suffix with parentheses to turn this into a function call
+        if (cmp_funcadr_001_func_001 == NULL) /*Tool should detect this line as error*/ /*ERROR:compare function address with NULL*/
+            ^
+                                    ()
+/Users/andrei/work/itc-benchmarks/01.w_Defects/cmp_funcadr.c:48:6: warning: comparison of function 'cmp_funcadr_002_func_001' equal to a null pointer is always false
+        if (cmp_funcadr_002_func_001 == NULL)/*Tool should detect this line as error*/ /*ERROR:compare function address with NULL*/
+            ^~~~~~~~~~~~~~~~~~~~~~~~    ~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/cmp_funcadr.c:48:6: note: prefix with the address-of operator to silence this warning
+        if (cmp_funcadr_002_func_001 == NULL)/*Tool should detect this line as error*/ /*ERROR:compare function address with NULL*/
+            ^
+            &
+/Users/andrei/work/itc-benchmarks/01.w_Defects/cmp_funcadr.c:48:6: note: suffix with parentheses to turn this into a function call
+        if (cmp_funcadr_002_func_001 == NULL)/*Tool should detect this line as error*/ /*ERROR:compare function address with NULL*/
+            ^
+                                    ()
+/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_underrun_dynamic.c:178:5: warning: Dereference of undefined pointer value
+                *((*pbuf[i-3])+j)=5; /*Tool should detect this line as error*/ /*ERROR:Buffer Underrun*/
+                  ^~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_underrun_dynamic.c:648:20: warning: The left operand of '==' is a garbage value due to array index out of bounds
+                     if(srcbuf[i]==ch) /*Tool should detect this line as error*/ /*ERROR:Buffer Underrun*/
+                        ~~~~~~~~~^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/buffer_underrun_dynamic.c:724:26: warning: Array access results in a null pointer dereference
+                    doubleptr[0][0]='T';
+                    ~~~~~~~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_allocation_failure.c:82:6: warning: Dereference of null pointer
+                        *(*(ptr+i)+j)=i;
+                          ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_allocation_failure.c:514:5: warning: 2nd function call argument is an uninitialized value
+    printf("%d",a);
+    ^~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/free_null_pointer.c:275:14: warning: Array access (from variable 'free_null_pointer_009dst') results in a null pointer dereference
+        strcpy (free_null_pointer_009dst[i],"STRING");
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/secure/_string.h:83:27: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                                        ^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/free_null_pointer.c:452:10: warning: Dereference of null pointer
+        a = *(ptr+1);
+            ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/free_null_pointer.c:483:16: warning: Dereference of null pointer
+            *(fptr+3) = 50.5;
+            ~~~~~~~~~~^~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c:177:8: warning: Array access (from variable 'doubleptr') results in a null pointer dereference
+                        doubleptr[i][j] += 1;
+                        ^~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c:352:5: warning: Dereference of null pointer (loaded from variable 'p')
+        *p = fptr();/*Tool should detect this line as error*/ /*ERROR:Bad function pointer casting*/
+         ~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/func_pointer.c:375:8: warning: Function taking 1 argument is called with fewer (0)
+        ret = func1();/*Tool should detect this line as error*/ /*ERROR:Bad function pointer casting*/
+              ^~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:23:17: warning: division by zero is undefined
+        ret = dividend / 0;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+                       ^ ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:34:11: warning: division by zero is undefined
+        dividend /= 0;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+                 ^  ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:47:17: warning: remainder by zero is undefined
+        ret = dividend % 0;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+                       ^ ~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:23:17: warning: Division by zero
+        ret = dividend / 0;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:34:11: warning: Division by zero
+        dividend /= 0;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+        ~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:47:17: warning: Division by zero
+        ret = dividend % 0;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:78:17: warning: Division by zero
+        ret = dividend / divisors[2];/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:118:17: warning: Division by zero
+        ret = dividend / zero_division_007_s_gbl.divisor;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:141:17: warning: Division by zero
+        ret = dividend / divisor;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:166:17: warning: Division by zero
+        ret = dividend / (2 * divisor - 4);/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:178:17: warning: Division by zero
+        ret = dividend / (divisor * divisor - 4);/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:195:17: warning: Division by zero
+        ret = dividend / zero_division_013_func_001();/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:206:17: warning: Division by zero
+        ret = dividend / divisor;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:225:17: warning: Division by zero
+        ret = dividend / divisor1;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/zero_division.c:252:17: warning: Division by zero
+        ret = dividend / divisor2;/*Tool should detect this line as error*/ /* ERROR:division by zero */
+              ~~~~~~~~~^~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/free_nondynamically_allocated_memory.c:82:18: warning: Dereference of null pointer
+                *((*pbuf[i])+j)=5.0;
+                ~~~~~~~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/free_nondynamically_allocated_memory.c:229:2: warning: Address of stack memory associated with local variable 'free_nondynamic_allocated_memory_st' is still referred to by the global variable 'free_nondynamic_allocated_memory_str' upon returning to the caller.  This will be a dangling reference
+        free(free_nondynamic_allocated_memory_str);/*Tool should detect this line as error*/ /*ERROR:Free memory not allocated dynamically*/
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/improper_termination_of_block.c:38:19: warning: if statement has empty body
+        if (condition==0);      printf("%d",x);/*Tool should detect this line as error*/ /*ERROR:Improper termination of block*/
+                         ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/improper_termination_of_block.c:38:19: note: put the semicolon on a separate line to silence this warning
+/Users/andrei/work/itc-benchmarks/01.w_Defects/littlemem_st.c:92:36: warning: Address of stack memory associated with local variable 'buf' is still referred to by the global variable 'littlemem_st_004_s_001_gbl_str' upon returning to the caller.  This will be a dangling reference
+        littlemem_st_004_s_001_gbl_str->c = 1; /*Tool should detect this line as error*/ /*ERROR:Little Memory or Overflow*/
+                                          ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c:232:14: warning: implicit conversion from 'double' to 'int' changes value from 1.5 to 1
+           *(p+1) = 1.5;
+                  ~ ^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/memory_leak.c:96:9: warning: Access to field 'buf' results in a dereference of a null pointer
+        strcpy((s+4)->buf,s1);
+               ^~~~~~~~~~
+/usr/include/secure/_string.h:83:27: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                                        ^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:23:5: warning: Dereference of null pointer (loaded from variable 'p')
+        *p = 1; /*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+         ~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:34:8: warning: Dereference of null pointer (loaded from variable 'p')
+        ret = *p;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+              ^~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:47:7: warning: Dereference of null pointer
+        **pp = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+        ~~~~~^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:63:7: warning: Access to field 'a' results in a dereference of a null pointer (loaded from variable 'p')
+        p->a = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+        ~    ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:94:10: warning: Dereference of null pointer
+        p->s1.a = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+        ~~~~~~~~^~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:117:5: warning: Dereference of null pointer (loaded from variable 'p')
+        *p = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+         ~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:142:5: warning: Dereference of null pointer (loaded from variable 'p')
+        *p = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+         ~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:159:6: warning: Dereference of null pointer (loaded from variable 'p1')
+        *p1 = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+         ~~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:173:6: warning: Dereference of null pointer (loaded from variable 'p2')
+        *p2 = 1;/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+         ~~ ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:180:7: warning: Array access (from variable 'p') results in a null pointer dereference
+        p[3] = 1; /*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+        ~    ^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/null_pointer.c:334:14: warning: Array access (from variable 'null_pointer_017dst') results in a null pointer dereference
+        strcpy (null_pointer_017dst[i],"STRING");/*Tool should detect this line as error*/ /*ERROR:NULL pointer dereference*/
+                ^~~~~~~~~~~~~~~~~~~~~~
+/usr/include/secure/_string.h:83:27: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                                        ^~~~
+/Users/andrei/work/itc-benchmarks/01.w_Defects/st_cross_thread_access.c:56:1: warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_001_glb_ptr' upon returning to the caller.  This will be a dangling reference
+}
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/st_cross_thread_access.c:144:1: warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_002_glb_ptr' upon returning to the caller.  This will be a dangling reference
+}
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/st_cross_thread_access.c:232:1: warning: Address of stack memory associated with local variable 'fptr' is still referred to by the global variable 'st_cross_thread_access_003_glb_ptr' upon returning to the caller.  This will be a dangling reference
+}
+^
+/Users/andrei/work/itc-benchmarks/01.w_Defects/st_cross_thread_access.c:400:1: warning: Address of stack memory associated with local variable 'arr1' is still referred to by the global variable 'p' upon returning to the caller.  This will be a dangling reference
+}
+^
+136 warnings generated.

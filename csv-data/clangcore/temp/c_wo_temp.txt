@@ -1,0 +1,46 @@
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:70:21: warning: Dereference of null pointer
+            (*(dptr+1) = 5.5) ;
+             ~~~~~~~~~~^~~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:183:18: warning: Dereference of null pointer
+                *((*pbuf[i])+j)=5.0;
+                ~~~~~~~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:275:2: warning: Access to field 'a' results in a dereference of a null pointer (loaded from field 's1')
+        p->s1->a[0] = 1; /*Tool should not detect this line as error*/ /*No ERROR:Invalid memory access to already freed area*/
+        ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/uninit_memory_access.c:76:21: warning: Dereference of null pointer
+     printf("%d \n",**ptr); /*Tool should not detect this line as error*/ /*No ERROR:Uninitialized Memory Access*/
+                    ^~~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/ow_memcpy.c:42:6: warning: Assigned value is garbage or undefined
+                *q = *p; /*Tool should not detect this line as error*/ /*No ERROR:copy of the overlapped area*/
+                   ^ ~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/buffer_underrun_dynamic.c:723:26: warning: Array access results in a null pointer dereference
+                    doubleptr[0][0]='T';
+                    ~~~~~~~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c:84:6: warning: Dereference of null pointer
+                        *(*(ptr+i)+j)=i;
+                          ^~~~~~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/free_nondynamically_allocated_memory.c:82:18: warning: Dereference of null pointer
+                *((*pbuf[i])+j)=5.0;
+                ~~~~~~~~~~~~~~~^~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/littlemem_st.c:93:36: warning: Address of stack memory associated with local variable 'buf' is still referred to by the global variable 'littlemem_st_004_s_001_gbl_str' upon returning to the caller.  This will be a dangling reference
+        littlemem_st_004_s_001_gbl_str->c = 1; /*Tool should not detect this line as error*/ /*No ERROR:Little Memory or Overflow*/
+                                          ^
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_leak.c:100:9: warning: Access to field 'buf' results in a dereference of a null pointer
+        strcpy((s+4)->buf,s1);
+               ^~~~~~~~~~
+/usr/include/secure/_string.h:83:27: note: expanded from macro 'strcpy'
+                __builtin___strcpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+                                        ^~~~
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c:57:1: warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_001_glb_ptr' upon returning to the caller.  This will be a dangling reference
+}
+^
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c:145:1: warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_002_glb_ptr' upon returning to the caller.  This will be a dangling reference
+}
+^
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c:234:1: warning: Address of stack memory associated with local variable 'fptr' is still referred to by the global variable 'st_cross_thread_access_003_glb_ptr' upon returning to the caller.  This will be a dangling reference
+}
+^
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/st_cross_thread_access.c:401:1: warning: Address of stack memory associated with local variable 'arr1' is still referred to by the global variable 'p' upon returning to the caller.  This will be a dangling reference
+}
+^
+14 warnings generated.

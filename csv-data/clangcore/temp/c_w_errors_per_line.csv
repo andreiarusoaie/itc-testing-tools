@@ -1,0 +1,161 @@
+File, Line, Error
+bit_shift.c , 22 ,  warning: shift count >= width of type
+bit_shift.c , 46 ,  warning: shift count >= width of type
+bit_shift.c , 70 ,  warning: shift count is negative
+bit_shift.c , 82 ,  warning: shift count >= width of type
+bit_shift.c , 94 ,  warning: shift count is negative
+bit_shift.c , 237 ,  warning: shift count >= width of type
+bit_shift.c , 22 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 46 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 70 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 82 ,  warning: The result of the '>>' expression is undefined
+bit_shift.c , 94 ,  warning: The result of the '>>' expression is undefined
+bit_shift.c , 107 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 134 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 147 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 164 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 176 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 194 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 209 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 226 ,  warning: The result of the '<<' expression is undefined
+bit_shift.c , 237 ,  warning: The result of the '<<' expression is undefined
+invalid_memory_access.c , 33 ,  warning: pointer/integer type mismatch in conditional expression ('int *' and 'int')
+invalid_memory_access.c , 45 ,  warning: Dereference of null pointer
+invalid_memory_access.c , 181 ,  warning: Dereference of null pointer
+invalid_memory_access.c , 265 ,  warning: Access to field 'a' results in a dereference of a null pointer (loaded from field 's1')
+invalid_memory_access.c , 371 ,  warning: Access to field 'a' results in a dereference of a null pointer (loaded from variable 's')
+invalid_memory_access.c , 432 ,  warning: Access to field 'a' results in a dereference of a null pointer (loaded from variable 'invalid_memory_access_013_s_001_s_gbl')
+invalid_memory_access.c , 568 ,  warning: Array access (from variable 'invalid_memory_access_016_doubleptr_gbl') results in a null pointer dereference
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+data_overflow.c , 319 ,  warning: overflow in expression; result is -2147483648 with type 'int'
+not_return.c , 24 ,  warning: control may reach end of non-void function
+not_return.c , 50 ,  warning: control may reach end of non-void function
+not_return.c , 76 ,  warning: control may reach end of non-void function
+not_return.c , 99 ,  warning: control may reach end of non-void function
+underrun_st.c , 21 ,  warning: array index -1 is before the beginning of the array
+underrun_st.c , 19 ,  note: array 'buf' declared here
+underrun_st.c , 31 ,  warning: array index -1 is before the beginning of the array
+underrun_st.c , 30 ,  note: array 'buf' declared here
+underrun_st.c , 21 ,  warning: Assigned value is garbage or undefined
+underrun_st.c , 55 ,  warning: Assigned value is garbage or undefined
+buffer_overrun_dynamic.c , 333 ,  warning: The right operand of '+' is a garbage value due to array index out of bounds
+stubs.c , 36 ,  warning: '/*' within block comment
+uninit_pointer.c , 30 ,  warning: Dereference of undefined pointer value
+uninit_pointer.c , 41 ,  warning: Dereference of undefined pointer value
+uninit_pointer.c , 55 ,  warning: Dereference of undefined pointer value
+uninit_pointer.c , 71 ,  warning: 1st function call argument is an uninitialized value
+uninit_pointer.c , 90 ,  warning: Dereference of undefined pointer value
+uninit_pointer.c , 104 ,  warning: Dereference of undefined pointer value
+uninit_pointer.c , 131 ,  warning: The left operand of '+' is a garbage value
+uninit_pointer.c , 152 ,  warning: Assigned value is garbage or undefined
+uninit_pointer.c , 187 ,  warning: 2nd function call argument is an uninitialized value
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+uninit_pointer.c , 200 ,  warning: Assigned value is garbage or undefined
+uninit_pointer.c , 358 ,  warning: 1st function call argument is an uninitialized value
+uninit_memory_access.c , 27 ,  warning: 2nd function call argument is an uninitialized value
+uninit_memory_access.c , 54 ,  warning: 2nd function call argument is an uninitialized value
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+uninit_memory_access.c , 74 ,  warning: Dereference of null pointer
+uninit_memory_access.c , 98 ,  warning: Assigned value is garbage or undefined
+uninit_memory_access.c , 127 ,  warning: 2nd function call argument is an uninitialized value
+uninit_memory_access.c , 319 ,  warning: 1st function call argument is an uninitialized value
+return_local.c , 19 ,  warning: address of stack memory associated with local variable 'buf' returned
+return_local.c , 19 ,  warning: Address of stack memory associated with local variable 'buf' returned to caller
+uninit_var.c , 23 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 34 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 45 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 63 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 75 ,  warning: Undefined or garbage value returned to caller
+uninit_var.c , 92 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 111 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 161 ,  warning: Assigned value is garbage or undefined
+uninit_var.c , 177 ,  warning: The left operand of '>' is a garbage value
+uninit_var.c , 243 ,  warning: Undefined or garbage value returned to caller
+uninit_var.c , 296 ,  warning: Assigned value is garbage or undefined
+ow_memcpy.c , 41 ,  warning: Assigned value is garbage or undefined
+sleep_lock.c , 28 ,  warning: 'NULL' macro redefined
+_null.h , 30 ,  note: previous definition is here
+wrong_arguments_func_pointer.c , 161 ,  warning: Function taking 2 arguments is called with fewer (1)
+wrong_arguments_func_pointer.c , 337 ,  warning: The left expression of the compound assignment is an uninitialized value. The computed value will also be garbage
+wrong_arguments_func_pointer.c , 381 ,  warning: Function taking 2 arguments is called with fewer (1)
+wrong_arguments_func_pointer.c , 423 ,  warning: Function taking 2 arguments is called with fewer (1)
+overrun_st.c , 21 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 20 ,  note: array 'buf' declared here
+overrun_st.c , 32 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 31 ,  note: array 'buf' declared here
+overrun_st.c , 44 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 42 ,  note: array 'buf' declared here
+overrun_st.c , 55 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 54 ,  note: array 'buf' declared here
+overrun_st.c , 66 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 65 ,  note: array 'buf' declared here
+overrun_st.c , 77 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 76 ,  note: array 'buf' declared here
+overrun_st.c , 88 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 87 ,  note: array 'buf' declared here
+overrun_st.c , 158 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 152 ,  note: array 'buf' declared here
+overrun_st.c , 706 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 705 ,  note: array 'buf' declared here
+overrun_st.c , 749 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 748 ,  note: array 'buf' declared here
+overrun_st.c , 44 ,  warning: Assigned value is garbage or undefined
+overrun_st.c , 320 ,  warning: Assigned value is garbage or undefined
+data_underflow.c , 82 ,  warning: overflow in expression; result is 2147483647 with type 'int'
+cmp_funcadr.c , 26 ,  warning: comparison of function 'cmp_funcadr_001_func_001' equal to a null pointer is always false
+cmp_funcadr.c , 26 ,  note: prefix with the address-of operator to silence this warning
+cmp_funcadr.c , 26 ,  note: suffix with parentheses to turn this into a function call
+cmp_funcadr.c , 48 ,  warning: comparison of function 'cmp_funcadr_002_func_001' equal to a null pointer is always false
+cmp_funcadr.c , 48 ,  note: prefix with the address-of operator to silence this warning
+cmp_funcadr.c , 48 ,  note: suffix with parentheses to turn this into a function call
+buffer_underrun_dynamic.c , 178 ,  warning: Dereference of undefined pointer value
+buffer_underrun_dynamic.c , 648 ,  warning: The left operand of '==' is a garbage value due to array index out of bounds
+buffer_underrun_dynamic.c , 724 ,  warning: Array access results in a null pointer dereference
+memory_allocation_failure.c , 82 ,  warning: Dereference of null pointer
+memory_allocation_failure.c , 514 ,  warning: 2nd function call argument is an uninitialized value
+free_null_pointer.c , 275 ,  warning: Array access (from variable 'free_null_pointer_009dst') results in a null pointer dereference
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+free_null_pointer.c , 452 ,  warning: Dereference of null pointer
+free_null_pointer.c , 483 ,  warning: Dereference of null pointer
+func_pointer.c , 177 ,  warning: Array access (from variable 'doubleptr') results in a null pointer dereference
+func_pointer.c , 352 ,  warning: Dereference of null pointer (loaded from variable 'p')
+func_pointer.c , 375 ,  warning: Function taking 1 argument is called with fewer (0)
+zero_division.c , 23 ,  warning: division by zero is undefined
+zero_division.c , 34 ,  warning: division by zero is undefined
+zero_division.c , 47 ,  warning: remainder by zero is undefined
+zero_division.c , 23 ,  warning: Division by zero
+zero_division.c , 34 ,  warning: Division by zero
+zero_division.c , 47 ,  warning: Division by zero
+zero_division.c , 78 ,  warning: Division by zero
+zero_division.c , 118 ,  warning: Division by zero
+zero_division.c , 141 ,  warning: Division by zero
+zero_division.c , 166 ,  warning: Division by zero
+zero_division.c , 178 ,  warning: Division by zero
+zero_division.c , 195 ,  warning: Division by zero
+zero_division.c , 206 ,  warning: Division by zero
+zero_division.c , 225 ,  warning: Division by zero
+zero_division.c , 252 ,  warning: Division by zero
+free_nondynamically_allocated_memory.c , 82 ,  warning: Dereference of null pointer
+free_nondynamically_allocated_memory.c , 229 ,  warning: Address of stack memory associated with local variable 'free_nondynamic_allocated_memory_st' is still referred to by the global variable 'free_nondynamic_allocated_memory_str' upon returning to the caller.  This will be a dangling reference
+improper_termination_of_block.c , 38 ,  warning: if statement has empty body
+improper_termination_of_block.c , 38 ,  note: put the semicolon on a separate line to silence this warning
+littlemem_st.c , 92 ,  warning: Address of stack memory associated with local variable 'buf' is still referred to by the global variable 'littlemem_st_004_s_001_gbl_str' upon returning to the caller.  This will be a dangling reference
+memory_leak.c , 232 ,  warning: implicit conversion from 'double' to 'int' changes value from 1.5 to 1
+memory_leak.c , 96 ,  warning: Access to field 'buf' results in a dereference of a null pointer
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+null_pointer.c , 23 ,  warning: Dereference of null pointer (loaded from variable 'p')
+null_pointer.c , 34 ,  warning: Dereference of null pointer (loaded from variable 'p')
+null_pointer.c , 47 ,  warning: Dereference of null pointer
+null_pointer.c , 63 ,  warning: Access to field 'a' results in a dereference of a null pointer (loaded from variable 'p')
+null_pointer.c , 94 ,  warning: Dereference of null pointer
+null_pointer.c , 117 ,  warning: Dereference of null pointer (loaded from variable 'p')
+null_pointer.c , 142 ,  warning: Dereference of null pointer (loaded from variable 'p')
+null_pointer.c , 159 ,  warning: Dereference of null pointer (loaded from variable 'p1')
+null_pointer.c , 173 ,  warning: Dereference of null pointer (loaded from variable 'p2')
+null_pointer.c , 180 ,  warning: Array access (from variable 'p') results in a null pointer dereference
+null_pointer.c , 334 ,  warning: Array access (from variable 'null_pointer_017dst') results in a null pointer dereference
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+st_cross_thread_access.c , 56 ,  warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_001_glb_ptr' upon returning to the caller.  This will be a dangling reference
+st_cross_thread_access.c , 144 ,  warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_002_glb_ptr' upon returning to the caller.  This will be a dangling reference
+st_cross_thread_access.c , 232 ,  warning: Address of stack memory associated with local variable 'fptr' is still referred to by the global variable 'st_cross_thread_access_003_glb_ptr' upon returning to the caller.  This will be a dangling reference
+st_cross_thread_access.c , 400 ,  warning: Address of stack memory associated with local variable 'arr1' is still referred to by the global variable 'p' upon returning to the caller.  This will be a dangling reference

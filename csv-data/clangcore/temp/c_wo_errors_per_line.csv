@@ -1,0 +1,16 @@
+File, Line, Error
+invalid_memory_access.c , 70 ,  warning: Dereference of null pointer
+invalid_memory_access.c , 183 ,  warning: Dereference of null pointer
+invalid_memory_access.c , 275 ,  warning: Access to field 'a' results in a dereference of a null pointer (loaded from field 's1')
+uninit_memory_access.c , 76 ,  warning: Dereference of null pointer
+ow_memcpy.c , 42 ,  warning: Assigned value is garbage or undefined
+buffer_underrun_dynamic.c , 723 ,  warning: Array access results in a null pointer dereference
+memory_allocation_failure.c , 84 ,  warning: Dereference of null pointer
+free_nondynamically_allocated_memory.c , 82 ,  warning: Dereference of null pointer
+littlemem_st.c , 93 ,  warning: Address of stack memory associated with local variable 'buf' is still referred to by the global variable 'littlemem_st_004_s_001_gbl_str' upon returning to the caller.  This will be a dangling reference
+memory_leak.c , 100 ,  warning: Access to field 'buf' results in a dereference of a null pointer
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+st_cross_thread_access.c , 57 ,  warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_001_glb_ptr' upon returning to the caller.  This will be a dangling reference
+st_cross_thread_access.c , 145 ,  warning: Address of stack memory associated with local variable 'arr' is still referred to by the global variable 'st_cross_thread_access_002_glb_ptr' upon returning to the caller.  This will be a dangling reference
+st_cross_thread_access.c , 234 ,  warning: Address of stack memory associated with local variable 'fptr' is still referred to by the global variable 'st_cross_thread_access_003_glb_ptr' upon returning to the caller.  This will be a dangling reference
+st_cross_thread_access.c , 401 ,  warning: Address of stack memory associated with local variable 'arr1' is still referred to by the global variable 'p' upon returning to the caller.  This will be a dangling reference
