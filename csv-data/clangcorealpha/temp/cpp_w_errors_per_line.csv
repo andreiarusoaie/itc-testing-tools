@@ -1,0 +1,10 @@
+File, Line, Error
+improper_error_handling.cpp , 19 ,  error: cannot use 'try' with exceptions disabled
+improper_error_handling.cpp , 41 ,  error: cannot use 'throw' with exceptions disabled
+improper_error_handling.cpp , 39 ,  error: cannot use 'try' with exceptions disabled
+improper_error_handling.cpp , 61 ,  error: cannot use 'throw' with exceptions disabled
+improper_error_handling.cpp , 58 ,  error: cannot use 'try' with exceptions disabled
+improper_error_handling.cpp , 85 ,  error: cannot use 'throw' with exceptions disabled
+improper_error_handling.cpp , 91 ,  error: cannot use 'throw' with exceptions disabled
+improper_error_handling.cpp , 81 ,  error: cannot use 'try' with exceptions disabled
+improper_error_handling.cpp , 79 ,  error: cannot use 'try' with exceptions disabled
