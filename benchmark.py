@@ -3,6 +3,7 @@ import os.path
 import os
 import python.system
 import python.clanalyze
+import python.latex
 
 rep_directory = os.path.realpath(sys.argv[1])
 
@@ -349,7 +350,7 @@ def run_cppcheck():
     t3 = call_python([CPPCHECK, CPPCHECK_TEMP_CPP_W, W_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
     t4 = call_python([CPPCHECK, CPPCHECK_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "cppcheck" ,"timing.csv"), "w")
-    print("cppcheck", t1 + t3, t2 + t4)
+    print("cppcheck", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_cppcheck_stats(tools):
@@ -365,7 +366,7 @@ def run_cpplint():
     t3 = call_python([CPPLINT, CPPLINT_TEMP_CPP_W, W_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_W, CPPLINT_EXE_CPP, CPPLINT_OPTS])
     t4 = call_python([CPPLINT, CPPLINT_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, CPPLINT_OUTPUT_CPP_WO, CPPLINT_EXE_CPP, CPPLINT_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "cpplint" ,"timing.csv"), "w")
-    print("cpplint", t1 + t3, t2 + t4)
+    print("cpplint", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_cpplint_stats(tools):
@@ -381,7 +382,7 @@ def run_flintpp():
     t3 = call_python([FLINTPP, FLINTPP_TEMP_CPP_W, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
     t4 = call_python([FLINTPP, FLINTPP_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "flintpp" ,"timing.csv"), "w")
-    print("flintpp", t1 + t3, t2 + t4)
+    print("flintpp", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_flintpp_stats(tools):
@@ -396,7 +397,7 @@ def run_oclint():
     t3 = call_python([OCLINT, OCLINT_TEMP_CPP_W, W_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_W, OCLINT_EXE_CPP, OCLINT_OPTS])
     t4 = call_python([OCLINT, OCLINT_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, OCLINT_OUTPUT_CPP_WO, OCLINT_EXE_CPP, OCLINT_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "oclint" ,"timing.csv"), "w")
-    print("oclint", t1 + t3, t2 + t4)
+    print("oclint", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_oclint_stats(tools):
@@ -412,7 +413,7 @@ def run_framac():
     t3 = call_python([FRAMAC, FRAMAC_TEMP_CPP_W, W_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_W, FRAMAC_EXE_CPP, FRAMAC_OPTS])
     t4 = call_python([FRAMAC, FRAMAC_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, FRAMAC_OUTPUT_CPP_WO, FRAMAC_EXE_CPP, FRAMAC_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "framac" ,"timing.csv"), "w")
-    print("framac", t1 + t3, t2 + t4)
+    print("framac", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_framac_stats(tools):
@@ -428,7 +429,7 @@ def run_sparse():
     t3 = call_python([SPARSE, SPARSE_TEMP_CPP_W, W_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_W, SPARSE_EXE_CPP, SPARSE_OPTS]) 
     t4 = call_python([SPARSE, SPARSE_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, SPARSE_OUTPUT_CPP_WO, SPARSE_EXE_CPP, SPARSE_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "sparse" ,"timing.csv"), "w")
-    print("sparse", t1 + t3, t2 + t4)
+    print("sparse", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_sparse_stats(tools):
@@ -444,7 +445,7 @@ def run_uno():
     t3 = call_python([UNO, UNO_TEMP_CPP_W, W_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_W, UNO_EXE_CPP, UNO_OPTS]) 
     t4 = call_python([UNO, UNO_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, UNO_OUTPUT_CPP_WO, UNO_EXE_CPP, UNO_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "uno" ,"timing.csv"), "w")
-    print("uno", t1 + t3, t2 + t4)
+    print("uno", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_uno_stats(tools):
@@ -460,7 +461,7 @@ def run_flawfinder():
     t3 = call_python([FLAWFINDER, FLAWFINDER_TEMP_CPP_W, W_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_W, FLAWFINDER_EXE, FLAWFINDER_OPTS]) 
     t4 = call_python([FLAWFINDER, FLAWFINDER_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, FLAWFINDER_OUTPUT_CPP_WO, FLAWFINDER_EXE, FLAWFINDER_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "flawfinder" ,"timing.csv"), "w")
-    print("flawfinder", t1 + t3, t2 + t4)
+    print("flawfinder", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_flawfinder_stats(tools):
@@ -476,7 +477,7 @@ def run_splint():
     t3 = call_python([SPLINT, SPLINT_TEMP_CPP_W, W_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_W, SPLINT_EXE, SPLINT_OPTS]) 
     t4 = call_python([SPLINT, SPLINT_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, SPLINT_OUTPUT_CPP_WO, SPLINT_EXE, SPLINT_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "splint" ,"timing.csv"), "w")
-    print("splint", t1 + t3, t2 + t4)
+    print("splint", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__    
 
 def run_splint_stats(tools):
@@ -492,7 +493,7 @@ def run_clang_core():
     t3 = call_python([CLANG_CORE_PP, CLANGCORE_TEMP_CPP_W, W_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS]) 
     t4 = call_python([CLANG_CORE_PP, CLANGCORE_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_EXE_CPP, CLANG_CORE_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "clangcore" ,"timing.csv"), "w")
-    print("clangcore", t1 + t3, t2 + t4)
+    print("clangcore", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 
@@ -509,7 +510,7 @@ def run_clang_alpha():
     t3 = call_python([CLANG_ALPHA_PP, CLANGALPHA_TEMP_CPP_W, W_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_W, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
     t4 = call_python([CLANG_ALPHA_PP, CLANGALPHA_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, CLANG_ALPHA_OUTPUT_CPP_WO, CLANG_ALPHA_EXE_CPP, CLANG_ALPHA_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "clangalpha" ,"timing.csv"), "w")
-    print("clangalpha", t1 + t3, t2 + t4)
+    print("clangalpha", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_clang_alpha_stats(tools):
@@ -525,7 +526,7 @@ def run_infer():
     t3 = call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
     t4 = call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
     sys.stdout=open(os.path.join(rep_directory, "infer" ,"timing.csv"), "w")
-    print("infer", t1 + t3, t2 + t4)
+    print("infer", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
 
 def run_infer_stats(tools):
@@ -562,22 +563,53 @@ def generate_main_itc_csvs():
     call_bash([GATHER_ERRORS, WO_CPP_DEFECTS_DIR, CPP_WO_ERRORS_PER_LINE_FILE, "1"])
     call_bash([MERGE_EXE, C_ERRORS_PER_LINE_FILE, C_WO_ERRORS_PER_LINE_FILE, C_MERGE_FILE])
     call_bash([MERGE_EXE, CPP_ERRORS_PER_LINE_FILE, CPP_WO_ERRORS_PER_LINE_FILE, CPP_MERGE_FILE])
-    
-# def clean_temp():
-#     python.system.system_call("rm -rf ./csv/temp/")
-#     python.system.system_call("rm -f ./csv/clanalyze/*.csv")
-#     python.system.system_call("rm -f ./csv/clanalyze/temp/*.csv")
-#     python.system.system_call("rm -f ./csv/cppcheck/*.csv")
-#     python.system.system_call("rm -f ./csv/cppcheck/temp/*.csv")
-#     python.system.system_call("rm -f ./csv/clangcore/*.csv")
-#     python.system.system_call("rm -f ./csv/clangcore/temp/*.csv")
-#     python.system.system_call("rm -f ./csv/clangalpha/*.csv")
-#     python.system.system_call("rm -f ./csv/clangalpha/temp/*.csv")
-#     python.system.system_call("rm -f ./csv/infer/*.csv")
-#     python.system.system_call("rm -f ./csv/infer/temp/*.csv")
-#     python.system.system_call("rm -f ./csv/flawfinder/*.csv")
-#     python.system.system_call("rm -f ./csv/flawfinder/temp/*.csv")
 
+def all_tools():
+#    return ['cppcheck', 'clanalyze', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'oclint', 'flintpp']
+    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'oclint', 'flintpp']
+
+import glob
+def clean_temp_stats():
+    tools = all_tools()
+    for tool in tools:
+        for f in glob.glob(os.path.join(rep_directory, tool, "c*.csv")):
+            print("Removing", f)
+            os.remove(f)
+
+
+def run_stats(tools):
+    if tool == 'cppcheck':
+        run_cppcheck_stats(tools)
+    elif tool == 'clanalyze':
+        run_clanalyze_stats(tools)
+    elif tool == 'sparse':
+        run_sparse_stats(tools)
+    elif tool == "uno":
+        run_uno_stats(tools)
+    elif tool == 'infer':
+        run_infer_stats(tools)
+    elif tool == 'splint':
+        run_splint_stats(tools)
+    elif tool == "flawfinder":
+        run_flawfinder_stats(tools)
+    elif tool == 'clangcore':
+        run_clang_core_stats(tools)
+    elif tool == "clangalpha":
+        run_clang_alpha_stats(tools)
+    elif tool == 'framac':
+        run_framac_stats(tools)
+    elif tool == 'cpplint':
+        run_cpplint_stats(tools)
+    elif tool == 'oclint':
+        run_oclint_stats(tools)
+    elif tool == 'flintpp':
+        run_flintpp_stats(tools)
+    else:
+        print("Unknown tool", tool)
+            
+
+
+            
 action = sys.argv[2]
 if action == 'setup':
     prepare_dirs()
@@ -585,7 +617,7 @@ if action == 'setup':
 elif action == 'prepare_dirs':
     prepare_dirs()
 elif action == "clean":
-    clean_temp()
+    clean_temp_stats()
 elif action == 'run':
     tool = sys.argv[3]
     if tool == 'cppcheck':
@@ -621,33 +653,15 @@ elif action == 'stat':
     tools = ""
     if len(sys.argv) > 4: # handle 'unique stat' tool list
         tools = sys.argv[4]
-    if tool == 'cppcheck':
-        run_cppcheck_stats(tools)
-    elif tool == 'clanalyze':
-        run_clanalyze_stats(tools)
-    elif tool == 'sparse':
-        run_sparse_stats(tools)
-    elif tool == "uno":
-        run_uno_stats(tools)
-    elif tool == 'infer':
-        run_infer_stats(tools)
-    elif tool == 'splint':
-        run_splint_stats(tools)
-    elif tool == "flawfinder":
-        run_flawfinder_stats(tools)
-    elif tool == 'clangcore':
-        run_clang_core_stats(tools)
-    elif tool == "clangalpha":
-        run_clang_alpha_stats(tools)
-    elif tool == 'framac':
-        run_framac_stats(tools)
-    elif tool == 'cpplint':
-        run_cpplint_stats(tools)
-    elif tool == 'oclint':
-        run_oclint_stats(tools)
-    elif tool == 'flintpp':
-        run_flintpp_stats(tools)
-    else:
-        print("Unknown tool", tool)
+    run_stats(tools)
+    
+elif action == 'total':
+    tool_list = all_tools()
+    for tool in tool_list:
+        tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
+        run_stats(tools)        
+    # generate main latex table
+    python.latex.total("total.tex", rep_directory, all_tools())
+
 else:
     print("Action ", action, " not supported or incomplete.\n")
