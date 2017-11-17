@@ -1,0 +1,31 @@
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:21:3: error: cannot use 'throw' with exceptions disabled
+                throw(a);
+                ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:18:2: error: cannot use 'try' with exceptions disabled
+        try {
+        ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:42:4: error: cannot use 'throw' with exceptions disabled
+                        throw(a);
+                        ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:39:2: error: cannot use 'try' with exceptions disabled
+        try {
+        ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:64:5: error: cannot use 'throw' with exceptions disabled
+                         throw(a);
+                         ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:61:2: error: cannot use 'try' with exceptions disabled
+        try {
+        ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:89:5: error: cannot use 'throw' with exceptions disabled
+                                throw(a);
+                                ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:95:4: error: cannot use 'throw' with exceptions disabled
+                        throw a;
+                        ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:85:3: error: cannot use 'try' with exceptions disabled
+                try {
+                ^
+/Users/andrei/work/itc-benchmarks/04.wo_Defects_Cpp/improper_error_handling.cpp:83:2: error: cannot use 'try' with exceptions disabled
+        try
+        ^
+10 errors generated.

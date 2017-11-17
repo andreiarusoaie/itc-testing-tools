@@ -1,0 +1,950 @@
+File, Line, Error
+bit_shift.c , 22 ,  warning: shift count >= width of type
+bit_shift.c , 46 ,  warning: shift count >= width of type
+bit_shift.c , 70 ,  warning: shift count is negative
+bit_shift.c , 82 ,  warning: shift count >= width of type
+bit_shift.c , 94 ,  warning: shift count is negative
+bit_shift.c , 237 ,  warning: shift count >= width of type
+bit_shift.c , 35 ,  warning: Loss of precision in implicit conversion
+bit_shift.c , 59 ,  warning: Loss of precision in implicit conversion
+bit_shift.c , 105 ,  warning: Duplicate code detected
+bit_shift.c , 174 ,  note: Similar code here
+bit_shift.c , 107 ,  warning: Duplicate code detected
+bit_shift.c , 121 ,  note: Similar code here
+bit_shift.c , 176 ,  note: Similar code here
+bit_shift.c , 209 ,  note: Similar code here
+bit_shift.c , 226 ,  note: Similar code here
+bit_shift.c , 208 ,  warning: Duplicate code detected
+bit_shift.c , 225 ,  note: Similar code here
+invalid_memory_access.c , 33 ,  warning: pointer/integer type mismatch in conditional expression ('int *' and 'int')
+invalid_memory_access.c , 33 ,  warning: This statement is never executed
+invalid_memory_access.c , 37 ,  warning: This statement is never executed
+invalid_memory_access.c , 60 ,  warning: Duplicate code detected
+invalid_memory_access.c , 62 ,  note: Similar code here
+invalid_memory_access.c , 99 ,  warning: Duplicate code detected
+invalid_memory_access.c , 123 ,  note: Similar code here
+invalid_memory_access.c , 609 ,  note: Similar code here
+invalid_memory_access.c , 168 ,  warning: Duplicate code detected
+invalid_memory_access.c , 169 ,  note: Similar code here
+invalid_memory_access.c , 183 ,  warning: Duplicate code detected
+invalid_memory_access.c , 184 ,  note: Similar code here
+invalid_memory_access.c , 201 ,  warning: Duplicate code detected
+invalid_memory_access.c , 559 ,  note: Similar code here
+invalid_memory_access.c , 206 ,  warning: Duplicate code detected
+invalid_memory_access.c , 584 ,  note: Similar code here
+invalid_memory_access.c , 265 ,  warning: Duplicate code detected
+invalid_memory_access.c , 270 ,  note: Similar code here
+invalid_memory_access.c , 280 ,  warning: the computation of the size of the memory allocation may overflow
+invalid_memory_access.c , 341 ,  warning: Duplicate code detected
+invalid_memory_access.c , 353 ,  note: Similar code here
+invalid_memory_access.c , 345 ,  warning: Duplicate code detected
+invalid_memory_access.c , 346 ,  note: Similar code here
+invalid_memory_access.c , 357 ,  note: Similar code here
+invalid_memory_access.c , 358 ,  note: Similar code here
+invalid_memory_access.c , 403 ,  warning: Duplicate code detected
+invalid_memory_access.c , 415 ,  note: Similar code here
+invalid_memory_access.c , 407 ,  warning: Duplicate code detected
+invalid_memory_access.c , 408 ,  note: Similar code here
+invalid_memory_access.c , 419 ,  note: Similar code here
+invalid_memory_access.c , 420 ,  note: Similar code here
+invalid_memory_access.c , 443 ,  warning: Duplicate code detected
+invalid_memory_access.c , 444 ,  note: Similar code here
+invalid_memory_access.c , 542 ,  warning: Duplicate code detected
+invalid_memory_access.c , 598 ,  note: Similar code here
+data_overflow.c , 319 ,  warning: overflow in expression; result is -2147483648 with type 'int'
+data_overflow.c , 46 ,  warning: Duplicate code detected
+data_overflow.c , 163 ,  note: Similar code here
+data_overflow.c , 110 ,  warning: Loss of precision in implicit conversion
+data_overflow.c , 189 ,  warning: Duplicate code detected
+data_overflow.c , 256 ,  note: Similar code here
+data_overflow.c , 191 ,  warning: Duplicate code detected
+data_overflow.c , 205 ,  note: Similar code here
+data_overflow.c , 258 ,  note: Similar code here
+data_overflow.c , 291 ,  note: Similar code here
+data_overflow.c , 308 ,  note: Similar code here
+data_overflow.c , 290 ,  warning: Duplicate code detected
+data_overflow.c , 307 ,  note: Similar code here
+livelock.c , 25 ,  warning: Duplicate code detected
+livelock.c , 42 ,  note: Similar code here
+livelock.c , 32 ,  warning: This lock has already been acquired
+livelock.c , 49 ,  warning: This lock has already been acquired
+ptr_subtraction.c , 22 ,  warning: Subtraction of two pointers that do not point to the same memory chunk may cause incorrect result
+ptr_subtraction.c , 35 ,  warning: Pointer arithmetic on non-array variables relies on memory layout, which is dangerous
+not_return.c , 24 ,  warning: control may reach end of non-void function
+not_return.c , 50 ,  warning: control may reach end of non-void function
+not_return.c , 76 ,  warning: control may reach end of non-void function
+not_return.c , 99 ,  warning: control may reach end of non-void function
+underrun_st.c , 21 ,  warning: array index -1 is before the beginning of the array
+underrun_st.c , 19 ,  note: array 'buf' declared here
+underrun_st.c , 31 ,  warning: array index -1 is before the beginning of the array
+underrun_st.c , 30 ,  note: array 'buf' declared here
+underrun_st.c , 21 ,  warning: Access out-of-bound array element (buffer overflow)
+underrun_st.c , 31 ,  warning: Access out-of-bound array element (buffer overflow)
+underrun_st.c , 42 ,  warning: Access out-of-bound array element (buffer overflow)
+underrun_st.c , 55 ,  warning: Access out-of-bound array element (buffer overflow)
+underrun_st.c , 67 ,  warning: Access out-of-bound array element (buffer overflow)
+underrun_st.c , 80 ,  warning: Access out-of-bound array element (buffer overflow)
+underrun_st.c , 90 ,  warning: Duplicate code detected
+underrun_st.c , 121 ,  note: Similar code here
+underrun_st.c , 104 ,  warning: Duplicate code detected
+underrun_st.c , 135 ,  note: Similar code here
+sign_conv.c , 71 ,  warning: Loss of sign in implicit conversion
+sign_conv.c , 83 ,  warning: Loss of sign in implicit conversion
+sign_conv.c , 95 ,  warning: Duplicate code detected
+sign_conv.c , 167 ,  note: Similar code here
+sign_conv.c , 246 ,  note: Similar code here
+sign_conv.c , 262 ,  note: Similar code here
+sign_conv.c , 95 ,  warning: Loss of sign in implicit conversion
+sign_conv.c , 107 ,  warning: Loss of sign in implicit conversion
+sign_conv.c , 108 ,  warning: Loss of precision in implicit conversion
+sign_conv.c , 217 ,  warning: Loss of sign in implicit conversion
+sign_conv.c , 245 ,  warning: Duplicate code detected
+sign_conv.c , 261 ,  note: Similar code here
+sign_conv.c , 246 ,  warning: Loss of sign in implicit conversion
+sign_conv.c , 262 ,  warning: Loss of sign in implicit conversion
+buffer_overrun_dynamic.c , 21 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 456 ,  note: Similar code here
+buffer_overrun_dynamic.c , 53 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 508 ,  note: Similar code here
+buffer_overrun_dynamic.c , 165 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 166 ,  note: Similar code here
+buffer_overrun_dynamic.c , 176 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 177 ,  note: Similar code here
+buffer_overrun_dynamic.c , 229 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 244 ,  note: Similar code here
+buffer_overrun_dynamic.c , 259 ,  note: Similar code here
+buffer_overrun_dynamic.c , 274 ,  note: Similar code here
+buffer_overrun_dynamic.c , 344 ,  note: Similar code here
+buffer_overrun_dynamic.c , 361 ,  note: Similar code here
+buffer_overrun_dynamic.c , 231 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 310 ,  note: Similar code here
+buffer_overrun_dynamic.c , 246 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 348 ,  note: Similar code here
+buffer_overrun_dynamic.c , 367 ,  note: Similar code here
+buffer_overrun_dynamic.c , 333 ,  warning: Access out-of-bound array element (buffer overflow)
+buffer_overrun_dynamic.c , 344 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 361 ,  note: Similar code here
+buffer_overrun_dynamic.c , 347 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 366 ,  note: Similar code here
+buffer_overrun_dynamic.c , 380 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 398 ,  note: Similar code here
+buffer_overrun_dynamic.c , 414 ,  note: Similar code here
+buffer_overrun_dynamic.c , 387 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 403 ,  note: Similar code here
+buffer_overrun_dynamic.c , 388 ,  warning: Potential copy-paste error; did you really mean to use 'buf' here?
+buffer_overrun_dynamic.c , 78 ,  note: Similar code using 'buf' here
+buffer_overrun_dynamic.c , 460 ,  warning: Duplicate code detected
+buffer_overrun_dynamic.c , 578 ,  note: Similar code here
+stubs.c , 36 ,  warning: '/*' within block comment
+uninit_pointer.c , 187 ,  warning: 2nd function call argument is an uninitialized value
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+uninit_pointer.c , 71 ,  warning: 1st function call argument is an uninitialized value
+uninit_pointer.c , 80 ,  warning: Duplicate code detected
+uninit_pointer.c , 81 ,  note: Similar code here
+uninit_pointer.c , 85 ,  warning: Duplicate code detected
+uninit_pointer.c , 86 ,  note: Similar code here
+uninit_pointer.c , 122 ,  warning: Duplicate code detected
+uninit_pointer.c , 123 ,  note: Similar code here
+uninit_pointer.c , 133 ,  warning: Duplicate code detected
+uninit_pointer.c , 134 ,  note: Similar code here
+uninit_pointer.c , 301 ,  warning: Duplicate code detected
+uninit_pointer.c , 311 ,  note: Similar code here
+uninit_pointer.c , 358 ,  warning: 1st function call argument is an uninitialized value
+data_lost.c , 34 ,  warning: Duplicate code detected
+data_lost.c , 158 ,  note: Similar code here
+data_lost.c , 209 ,  note: Similar code here
+data_lost.c , 240 ,  note: Similar code here
+data_lost.c , 256 ,  note: Similar code here
+data_lost.c , 94 ,  warning: Loss of precision in implicit conversion
+data_lost.c , 106 ,  warning: Loss of precision in implicit conversion
+data_lost.c , 118 ,  warning: Loss of precision in implicit conversion
+data_lost.c , 239 ,  warning: Duplicate code detected
+data_lost.c , 255 ,  note: Similar code here
+uninit_memory_access.c , 27 ,  warning: 2nd function call argument is an uninitialized value
+uninit_memory_access.c , 50 ,  warning: Duplicate code detected
+uninit_memory_access.c , 125 ,  note: Similar code here
+uninit_memory_access.c , 54 ,  warning: 2nd function call argument is an uninitialized value
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+uninit_memory_access.c , 85 ,  warning: Duplicate code detected
+uninit_memory_access.c , 86 ,  note: Similar code here
+uninit_memory_access.c , 94 ,  warning: Duplicate code detected
+uninit_memory_access.c , 94 ,  note: Similar code here
+uninit_memory_access.c , 127 ,  warning: 2nd function call argument is an uninitialized value
+uninit_memory_access.c , 319 ,  warning: 1st function call argument is an uninitialized value
+uninit_memory_access.c , 389 ,  warning: Duplicate code detected
+uninit_memory_access.c , 395 ,  note: Similar code here
+uninit_memory_access.c , 416 ,  warning: Using a fixed address is not portable because that address will probably not be valid in all environments or platforms
+uninit_memory_access.c , 440 ,  warning: Duplicate code detected
+uninit_memory_access.c , 440 ,  note: Similar code here
+return_local.c , 19 ,  warning: address of stack memory associated with local variable 'buf' returned
+uninit_var.c , 142 ,  warning: 2nd function call argument is a pointer to uninitialized value
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+uninit_var.c , 203 ,  warning: Duplicate code detected
+uninit_var.c , 207 ,  note: Similar code here
+uninit_var.c , 265 ,  warning: Duplicate code detected
+uninit_var.c , 266 ,  note: Similar code here
+redundant_cond.c , 21 ,  warning: Duplicate code detected
+redundant_cond.c , 40 ,  note: Similar code here
+redundant_cond.c , 59 ,  note: Similar code here
+redundant_cond.c , 78 ,  note: Similar code here
+redundant_cond.c , 97 ,  note: Similar code here
+redundant_cond.c , 116 ,  note: Similar code here
+redundant_cond.c , 172 ,  note: Similar code here
+redundant_cond.c , 192 ,  note: Similar code here
+redundant_cond.c , 212 ,  note: Similar code here
+redundant_cond.c , 232 ,  note: Similar code here
+redundant_cond.c , 252 ,  note: Similar code here
+redundant_cond.c , 272 ,  note: Similar code here
+redundant_cond.c , 26 ,  warning: Duplicate code detected
+redundant_cond.c , 143 ,  note: Similar code here
+redundant_cond.c , 158 ,  note: Similar code here
+redundant_cond.c , 177 ,  note: Similar code here
+redundant_cond.c , 282 ,  note: Similar code here
+redundant_cond.c , 45 ,  warning: Duplicate code detected
+redundant_cond.c , 197 ,  note: Similar code here
+redundant_cond.c , 58 ,  warning: Duplicate code detected
+redundant_cond.c , 77 ,  note: Similar code here
+redundant_cond.c , 64 ,  warning: Duplicate code detected
+redundant_cond.c , 83 ,  note: Similar code here
+redundant_cond.c , 217 ,  note: Similar code here
+redundant_cond.c , 237 ,  note: Similar code here
+redundant_cond.c , 102 ,  warning: Duplicate code detected
+redundant_cond.c , 257 ,  note: Similar code here
+redundant_cond.c , 211 ,  warning: Duplicate code detected
+redundant_cond.c , 231 ,  note: Similar code here
+sleep_lock.c , 28 ,  warning: 'NULL' macro redefined
+_null.h , 30 ,  note: previous definition is here
+sleep_lock.c , 47 ,  warning: Duplicate code detected
+sleep_lock.c , 179 ,  note: Similar code here
+sleep_lock.c , 50 ,  warning: Call to blocking function 'sleep' inside of critical section
+sleep_lock.c , 50 ,  warning: Duplicate code detected
+sleep_lock.c , 124 ,  note: Similar code here
+sleep_lock.c , 57 ,  warning: Duplicate code detected
+sleep_lock.c , 135 ,  note: Similar code here
+sleep_lock.c , 189 ,  note: Similar code here
+sleep_lock.c , 123 ,  warning: Call to blocking function 'recv' inside of critical section
+sleep_lock.c , 124 ,  warning: Call to blocking function 'sleep' inside of critical section
+sleep_lock.c , 173 ,  warning: Call to blocking function 'sleep' inside of critical section
+wrong_arguments_func_pointer.c , 161 ,  warning: Function taking 2 arguments is called with fewer (1)
+wrong_arguments_func_pointer.c , 300 ,  warning: Duplicate code detected
+wrong_arguments_func_pointer.c , 302 ,  note: Similar code here
+wrong_arguments_func_pointer.c , 371 ,  warning: the computation of the size of the memory allocation may overflow
+wrong_arguments_func_pointer.c , 381 ,  warning: Function taking 2 arguments is called with fewer (1)
+wrong_arguments_func_pointer.c , 423 ,  warning: Function taking 2 arguments is called with fewer (1)
+overrun_st.c , 21 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 20 ,  note: array 'buf' declared here
+overrun_st.c , 32 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 31 ,  note: array 'buf' declared here
+overrun_st.c , 44 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 42 ,  note: array 'buf' declared here
+overrun_st.c , 55 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 54 ,  note: array 'buf' declared here
+overrun_st.c , 66 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 65 ,  note: array 'buf' declared here
+overrun_st.c , 77 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 76 ,  note: array 'buf' declared here
+overrun_st.c , 88 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 87 ,  note: array 'buf' declared here
+overrun_st.c , 158 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 152 ,  note: array 'buf' declared here
+overrun_st.c , 706 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 705 ,  note: array 'buf' declared here
+overrun_st.c , 749 ,  warning: array index 5 is past the end of the array (which contains 5 elements)
+overrun_st.c , 748 ,  note: array 'buf' declared here
+overrun_st.c , 21 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 32 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 44 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 55 ,  warning: Duplicate code detected
+overrun_st.c , 706 ,  note: Similar code here
+overrun_st.c , 55 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 66 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 77 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 88 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 99 ,  warning: Out of bound memory access (access exceeds upper limit of memory block)
+overrun_st.c , 100 ,  warning: Duplicate code detected
+overrun_st.c , 591 ,  note: Similar code here
+overrun_st.c , 110 ,  warning: Out of bound memory access (access exceeds upper limit of memory block)
+overrun_st.c , 120 ,  warning: Duplicate code detected
+overrun_st.c , 600 ,  note: Similar code here
+overrun_st.c , 125 ,  warning: Duplicate code detected
+overrun_st.c , 738 ,  note: Similar code here
+overrun_st.c , 126 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 158 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 169 ,  warning: Duplicate code detected
+overrun_st.c , 182 ,  note: Similar code here
+overrun_st.c , 264 ,  note: Similar code here
+overrun_st.c , 280 ,  note: Similar code here
+overrun_st.c , 169 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 194 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 206 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 222 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 233 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 250 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 263 ,  warning: Duplicate code detected
+overrun_st.c , 279 ,  note: Similar code here
+overrun_st.c , 264 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 275 ,  warning: Duplicate code detected
+overrun_st.c , 550 ,  note: Similar code here
+overrun_st.c , 280 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 293 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 306 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 320 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 333 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 346 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 359 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 372 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 387 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 402 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 415 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 427 ,  warning: Duplicate code detected
+overrun_st.c , 501 ,  note: Similar code here
+overrun_st.c , 537 ,  note: Similar code here
+overrun_st.c , 555 ,  note: Similar code here
+overrun_st.c , 428 ,  warning: Duplicate code detected
+overrun_st.c , 443 ,  note: Similar code here
+overrun_st.c , 502 ,  note: Similar code here
+overrun_st.c , 538 ,  note: Similar code here
+overrun_st.c , 556 ,  note: Similar code here
+overrun_st.c , 428 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 457 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 471 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 489 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 502 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 522 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 536 ,  warning: Duplicate code detected
+overrun_st.c , 554 ,  note: Similar code here
+overrun_st.c , 538 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 556 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 642 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 658 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 674 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 689 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 706 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 724 ,  warning: Out of bound memory access (access exceeds upper limit of memory block)
+overrun_st.c , 733 ,  warning: Duplicate code detected
+overrun_st.c , 734 ,  note: Similar code here
+overrun_st.c , 739 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 749 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 761 ,  warning: Access out-of-bound array element (buffer overflow)
+overrun_st.c , 773 ,  warning: Access out-of-bound array element (buffer overflow)
+data_underflow.c , 82 ,  warning: overflow in expression; result is 2147483647 with type 'int'
+data_underflow.c , 18 ,  warning: Duplicate code detected
+data_underflow.c , 56 ,  note: Similar code here
+dead_lock.c , 37 ,  warning: Duplicate code detected
+dead_lock.c , 44 ,  note: Similar code here
+dead_lock.c , 62 ,  note: Similar code here
+dead_lock.c , 69 ,  note: Similar code here
+dead_lock.c , 150 ,  note: Similar code here
+dead_lock.c , 156 ,  note: Similar code here
+dead_lock.c , 173 ,  note: Similar code here
+dead_lock.c , 179 ,  note: Similar code here
+dead_lock.c , 196 ,  note: Similar code here
+dead_lock.c , 202 ,  note: Similar code here
+dead_lock.c , 44 ,  warning: Duplicate code detected
+dead_lock.c , 69 ,  note: Similar code here
+dead_lock.c , 156 ,  note: Similar code here
+dead_lock.c , 179 ,  note: Similar code here
+dead_lock.c , 202 ,  note: Similar code here
+dead_lock.c , 59 ,  warning: Duplicate code detected
+dead_lock.c , 147 ,  note: Similar code here
+dead_lock.c , 170 ,  note: Similar code here
+dead_lock.c , 193 ,  note: Similar code here
+dead_lock.c , 85 ,  warning: Duplicate code detected
+dead_lock.c , 218 ,  note: Similar code here
+dead_lock.c , 88 ,  warning: Duplicate code detected
+dead_lock.c , 222 ,  note: Similar code here
+dead_lock.c , 91 ,  warning: Duplicate code detected
+dead_lock.c , 395 ,  note: Similar code here
+dead_lock.c , 554 ,  note: Similar code here
+dead_lock.c , 694 ,  note: Similar code here
+dead_lock.c , 94 ,  warning: Duplicate code detected
+dead_lock.c , 230 ,  note: Similar code here
+dead_lock.c , 97 ,  warning: Duplicate code detected
+dead_lock.c , 233 ,  note: Similar code here
+dead_lock.c , 234 ,  note: Similar code here
+dead_lock.c , 297 ,  warning: Duplicate code detected
+dead_lock.c , 342 ,  note: Similar code here
+dead_lock.c , 454 ,  note: Similar code here
+dead_lock.c , 499 ,  note: Similar code here
+dead_lock.c , 300 ,  warning: Duplicate code detected
+dead_lock.c , 308 ,  note: Similar code here
+dead_lock.c , 345 ,  note: Similar code here
+dead_lock.c , 353 ,  note: Similar code here
+dead_lock.c , 457 ,  note: Similar code here
+dead_lock.c , 465 ,  note: Similar code here
+dead_lock.c , 502 ,  note: Similar code here
+dead_lock.c , 510 ,  note: Similar code here
+dead_lock.c , 316 ,  warning: Duplicate code detected
+dead_lock.c , 361 ,  note: Similar code here
+dead_lock.c , 473 ,  note: Similar code here
+dead_lock.c , 518 ,  note: Similar code here
+dead_lock.c , 611 ,  note: Similar code here
+dead_lock.c , 629 ,  note: Similar code here
+dead_lock.c , 322 ,  warning: Duplicate code detected
+dead_lock.c , 328 ,  note: Similar code here
+dead_lock.c , 367 ,  note: Similar code here
+dead_lock.c , 373 ,  note: Similar code here
+dead_lock.c , 479 ,  note: Similar code here
+dead_lock.c , 485 ,  note: Similar code here
+dead_lock.c , 525 ,  note: Similar code here
+dead_lock.c , 531 ,  note: Similar code here
+dead_lock.c , 387 ,  warning: Duplicate code detected
+dead_lock.c , 546 ,  note: Similar code here
+dead_lock.c , 388 ,  warning: Duplicate code detected
+dead_lock.c , 547 ,  note: Similar code here
+dead_lock.c , 688 ,  note: Similar code here
+dead_lock.c , 391 ,  warning: Duplicate code detected
+dead_lock.c , 392 ,  note: Similar code here
+dead_lock.c , 550 ,  note: Similar code here
+dead_lock.c , 551 ,  note: Similar code here
+dead_lock.c , 691 ,  note: Similar code here
+dead_lock.c , 392 ,  warning: Duplicate code detected
+dead_lock.c , 551 ,  note: Similar code here
+dead_lock.c , 401 ,  warning: Duplicate code detected
+dead_lock.c , 402 ,  note: Similar code here
+dead_lock.c , 560 ,  note: Similar code here
+dead_lock.c , 561 ,  note: Similar code here
+dead_lock.c , 700 ,  note: Similar code here
+dead_lock.c , 608 ,  warning: Duplicate code detected
+dead_lock.c , 626 ,  note: Similar code here
+cmp_funcadr.c , 26 ,  warning: comparison of function 'cmp_funcadr_001_func_001' equal to a null pointer is always false
+cmp_funcadr.c , 26 ,  note: prefix with the address-of operator to silence this warning
+cmp_funcadr.c , 26 ,  note: suffix with parentheses to turn this into a function call
+cmp_funcadr.c , 48 ,  warning: comparison of function 'cmp_funcadr_002_func_001' equal to a null pointer is always false
+cmp_funcadr.c , 48 ,  note: prefix with the address-of operator to silence this warning
+cmp_funcadr.c , 48 ,  note: suffix with parentheses to turn this into a function call
+buffer_underrun_dynamic.c , 22 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 459 ,  note: Similar code here
+buffer_underrun_dynamic.c , 56 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 512 ,  note: Similar code here
+buffer_underrun_dynamic.c , 169 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 170 ,  note: Similar code here
+buffer_underrun_dynamic.c , 176 ,  warning: This statement is never executed
+buffer_underrun_dynamic.c , 178 ,  warning: Access out-of-bound array element (buffer overflow)
+buffer_underrun_dynamic.c , 180 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 181 ,  note: Similar code here
+buffer_underrun_dynamic.c , 180 ,  warning: This statement is never executed
+buffer_underrun_dynamic.c , 233 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 247 ,  note: Similar code here
+buffer_underrun_dynamic.c , 264 ,  note: Similar code here
+buffer_underrun_dynamic.c , 279 ,  note: Similar code here
+buffer_underrun_dynamic.c , 235 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 315 ,  note: Similar code here
+buffer_underrun_dynamic.c , 349 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 366 ,  note: Similar code here
+buffer_underrun_dynamic.c , 352 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 371 ,  note: Similar code here
+buffer_underrun_dynamic.c , 385 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 403 ,  note: Similar code here
+buffer_underrun_dynamic.c , 419 ,  note: Similar code here
+buffer_underrun_dynamic.c , 392 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 408 ,  note: Similar code here
+buffer_underrun_dynamic.c , 393 ,  warning: Potential copy-paste error; did you really mean to use 'buf' here?
+buffer_underrun_dynamic.c , 409 ,  note: Similar code using 'buf' here
+buffer_underrun_dynamic.c , 464 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 578 ,  note: Similar code here
+buffer_underrun_dynamic.c , 532 ,  warning: Out of bound memory access (access exceeds upper limit of memory block)
+buffer_underrun_dynamic.c , 559 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 674 ,  note: Similar code here
+buffer_underrun_dynamic.c , 561 ,  warning: Duplicate code detected
+buffer_underrun_dynamic.c , 682 ,  note: Similar code here
+buffer_underrun_dynamic.c , 725 ,  note: Similar code here
+buffer_underrun_dynamic.c , 606 ,  warning: Access out-of-bound array element (buffer overflow)
+buffer_underrun_dynamic.c , 621 ,  warning: Out of bound memory access (access exceeds upper limit of memory block)
+buffer_underrun_dynamic.c , 648 ,  warning: Access out-of-bound array element (buffer overflow)
+dead_code.c , 37 ,  warning: Duplicate code detected
+dead_code.c , 74 ,  note: Similar code here
+dead_code.c , 165 ,  warning: Duplicate code detected
+dead_code.c , 204 ,  note: Similar code here
+lock_never_unlock.c , 38 ,  warning: Duplicate code detected
+lock_never_unlock.c , 261 ,  note: Similar code here
+lock_never_unlock.c , 40 ,  warning: Duplicate code detected
+lock_never_unlock.c , 90 ,  note: Similar code here
+lock_never_unlock.c , 93 ,  note: Similar code here
+lock_never_unlock.c , 263 ,  note: Similar code here
+lock_never_unlock.c , 51 ,  warning: Duplicate code detected
+lock_never_unlock.c , 281 ,  note: Similar code here
+lock_never_unlock.c , 54 ,  warning: Duplicate code detected
+lock_never_unlock.c , 109 ,  note: Similar code here
+lock_never_unlock.c , 283 ,  note: Similar code here
+lock_never_unlock.c , 55 ,  warning: Duplicate code detected
+lock_never_unlock.c , 284 ,  note: Similar code here
+lock_never_unlock.c , 56 ,  warning: Duplicate code detected
+lock_never_unlock.c , 178 ,  note: Similar code here
+lock_never_unlock.c , 285 ,  note: Similar code here
+lock_never_unlock.c , 93 ,  warning: This lock has already been acquired
+lock_never_unlock.c , 112 ,  warning: Duplicate code detected
+lock_never_unlock.c , 177 ,  note: Similar code here
+lock_never_unlock.c , 423 ,  note: Similar code here
+lock_never_unlock.c , 576 ,  note: Similar code here
+lock_never_unlock.c , 112 ,  warning: Potential copy-paste error; did you really mean to use 'tid1' here?
+lock_never_unlock.c , 56 ,  note: Similar code using 'tid1' here
+lock_never_unlock.c , 147 ,  warning: This lock has already been acquired
+lock_never_unlock.c , 147 ,  warning: Duplicate code detected
+lock_never_unlock.c , 161 ,  note: Similar code here
+lock_never_unlock.c , 175 ,  warning: Duplicate code detected
+lock_never_unlock.c , 176 ,  note: Similar code here
+lock_never_unlock.c , 203 ,  warning: Duplicate code detected
+lock_never_unlock.c , 300 ,  note: Similar code here
+lock_never_unlock.c , 205 ,  warning: Duplicate code detected
+lock_never_unlock.c , 224 ,  note: Similar code here
+lock_never_unlock.c , 302 ,  note: Similar code here
+lock_never_unlock.c , 321 ,  note: Similar code here
+lock_never_unlock.c , 208 ,  warning: Duplicate code detected
+lock_never_unlock.c , 227 ,  note: Similar code here
+lock_never_unlock.c , 305 ,  note: Similar code here
+lock_never_unlock.c , 324 ,  note: Similar code here
+lock_never_unlock.c , 367 ,  note: Similar code here
+lock_never_unlock.c , 392 ,  note: Similar code here
+lock_never_unlock.c , 445 ,  note: Similar code here
+lock_never_unlock.c , 469 ,  note: Similar code here
+lock_never_unlock.c , 521 ,  note: Similar code here
+lock_never_unlock.c , 545 ,  note: Similar code here
+lock_never_unlock.c , 222 ,  warning: Duplicate code detected
+lock_never_unlock.c , 319 ,  note: Similar code here
+lock_never_unlock.c , 241 ,  warning: Duplicate code detected
+lock_never_unlock.c , 418 ,  note: Similar code here
+lock_never_unlock.c , 571 ,  note: Similar code here
+lock_never_unlock.c , 244 ,  warning: Duplicate code detected
+lock_never_unlock.c , 348 ,  note: Similar code here
+lock_never_unlock.c , 501 ,  note: Similar code here
+lock_never_unlock.c , 336 ,  warning: Duplicate code detected
+lock_never_unlock.c , 489 ,  note: Similar code here
+lock_never_unlock.c , 365 ,  warning: Duplicate code detected
+lock_never_unlock.c , 390 ,  note: Similar code here
+lock_never_unlock.c , 519 ,  note: Similar code here
+lock_never_unlock.c , 543 ,  note: Similar code here
+lock_never_unlock.c , 371 ,  warning: Duplicate code detected
+lock_never_unlock.c , 524 ,  note: Similar code here
+lock_never_unlock.c , 395 ,  warning: Duplicate code detected
+lock_never_unlock.c , 548 ,  note: Similar code here
+lock_never_unlock.c , 398 ,  warning: This lock has already been acquired
+lock_never_unlock.c , 416 ,  warning: Duplicate code detected
+lock_never_unlock.c , 569 ,  note: Similar code here
+lock_never_unlock.c , 443 ,  warning: Duplicate code detected
+lock_never_unlock.c , 467 ,  note: Similar code here
+lock_never_unlock.c , 451 ,  warning: Duplicate code detected
+lock_never_unlock.c , 475 ,  note: Similar code here
+lock_never_unlock.c , 551 ,  warning: This lock has already been acquired
+double_free.c , 19 ,  warning: Duplicate code detected
+double_free.c , 97 ,  note: Similar code here
+double_free.c , 32 ,  warning: Duplicate code detected
+double_free.c , 53 ,  note: Similar code here
+double_free.c , 74 ,  note: Similar code here
+double_free.c , 38 ,  warning: Duplicate code detected
+double_free.c , 59 ,  note: Similar code here
+double_free.c , 58 ,  warning: Duplicate code detected
+double_free.c , 78 ,  note: Similar code here
+race_condition.c , 37 ,  warning: Duplicate code detected
+race_condition.c , 38 ,  note: Similar code here
+race_condition.c , 38 ,  warning: Potential copy-paste error; did you really mean to use 'pthread2' here?
+race_condition.c , 106 ,  note: Similar code using 'pthread2' here
+race_condition.c , 39 ,  warning: Potential copy-paste error; did you really mean to use 'pthread3' here?
+race_condition.c , 106 ,  note: Similar code using 'pthread2' here
+race_condition.c , 40 ,  warning: Potential copy-paste error; did you really mean to use 'pthread4' here?
+race_condition.c , 106 ,  note: Similar code using 'pthread2' here
+race_condition.c , 75 ,  warning: Potential copy-paste error; did you really mean to use 'pthread2' here?
+race_condition.c , 106 ,  note: Similar code using 'pthread2' here
+race_condition.c , 105 ,  warning: Potential copy-paste error; did you really mean to use 'pthread2' here?
+race_condition.c , 106 ,  note: Similar code using 'pthread2' here
+race_condition.c , 163 ,  warning: Duplicate code detected
+race_condition.c , 194 ,  note: Similar code here
+race_condition.c , 176 ,  warning: Duplicate code detected
+race_condition.c , 269 ,  note: Similar code here
+race_condition.c , 208 ,  warning: Duplicate code detected
+race_condition.c , 209 ,  note: Similar code here
+race_condition.c , 211 ,  warning: Duplicate code detected
+race_condition.c , 271 ,  note: Similar code here
+race_condition.c , 212 ,  warning: Duplicate code detected
+race_condition.c , 213 ,  note: Similar code here
+race_condition.c , 212 ,  warning: Potential copy-paste error; did you really mean to use 'tid1' here?
+race_condition.c , 178 ,  note: Similar code using 'tid1' here
+race_condition.c , 337 ,  warning: Duplicate code detected
+race_condition.c , 408 ,  note: Similar code here
+race_condition.c , 368 ,  warning: Duplicate code detected
+race_condition.c , 388 ,  note: Similar code here
+conflicting_cond.c , 19 ,  warning: Duplicate code detected
+conflicting_cond.c , 38 ,  note: Similar code here
+conflicting_cond.c , 57 ,  note: Similar code here
+conflicting_cond.c , 76 ,  note: Similar code here
+conflicting_cond.c , 132 ,  note: Similar code here
+conflicting_cond.c , 152 ,  note: Similar code here
+conflicting_cond.c , 172 ,  note: Similar code here
+conflicting_cond.c , 24 ,  warning: Duplicate code detected
+conflicting_cond.c , 103 ,  note: Similar code here
+conflicting_cond.c , 118 ,  note: Similar code here
+conflicting_cond.c , 137 ,  note: Similar code here
+conflicting_cond.c , 199 ,  note: Similar code here
+conflicting_cond.c , 43 ,  warning: Duplicate code detected
+conflicting_cond.c , 157 ,  note: Similar code here
+conflicting_cond.c , 62 ,  warning: Duplicate code detected
+conflicting_cond.c , 177 ,  note: Similar code here
+memory_allocation_failure.c , 94 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 374 ,  note: Similar code here
+memory_allocation_failure.c , 411 ,  note: Similar code here
+memory_allocation_failure.c , 460 ,  note: Similar code here
+memory_allocation_failure.c , 258 ,  warning: the computation of the size of the memory allocation may overflow
+memory_allocation_failure.c , 424 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 425 ,  note: Similar code here
+memory_allocation_failure.c , 429 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 430 ,  note: Similar code here
+memory_allocation_failure.c , 477 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 555 ,  note: Similar code here
+memory_allocation_failure.c , 482 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 560 ,  note: Similar code here
+memory_allocation_failure.c , 503 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 605 ,  note: Similar code here
+memory_allocation_failure.c , 509 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 611 ,  note: Similar code here
+memory_allocation_failure.c , 514 ,  warning: 2nd function call argument is an uninitialized value
+memory_allocation_failure.c , 536 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 580 ,  note: Similar code here
+memory_allocation_failure.c , 540 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 540 ,  note: Similar code here
+memory_allocation_failure.c , 584 ,  note: Similar code here
+memory_allocation_failure.c , 584 ,  note: Similar code here
+memory_allocation_failure.c , 697 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 698 ,  note: Similar code here
+memory_allocation_failure.c , 697 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 698 ,  note: Similar code here
+memory_allocation_failure.c , 705 ,  note: Similar code here
+memory_allocation_failure.c , 706 ,  note: Similar code here
+memory_allocation_failure.c , 705 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 706 ,  note: Similar code here
+memory_allocation_failure.c , 710 ,  warning: Duplicate code detected
+memory_allocation_failure.c , 711 ,  note: Similar code here
+free_null_pointer.c , 23 ,  warning: Duplicate code detected
+free_null_pointer.c , 110 ,  note: Similar code here
+free_null_pointer.c , 242 ,  note: Similar code here
+free_null_pointer.c , 102 ,  warning: Duplicate code detected
+free_null_pointer.c , 231 ,  note: Similar code here
+free_null_pointer.c , 102 ,  warning: the computation of the size of the memory allocation may overflow
+free_null_pointer.c , 109 ,  warning: Duplicate code detected
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+free_null_pointer.c , 241 ,  note: Similar code here
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+free_null_pointer.c , 119 ,  warning: Duplicate code detected
+free_null_pointer.c , 162 ,  note: Similar code here
+free_null_pointer.c , 430 ,  note: Similar code here
+free_null_pointer.c , 231 ,  warning: the computation of the size of the memory allocation may overflow
+free_null_pointer.c , 258 ,  warning: Duplicate code detected
+free_null_pointer.c , 305 ,  note: Similar code here
+free_null_pointer.c , 278 ,  warning: Duplicate code detected
+free_null_pointer.c , 327 ,  note: Similar code here
+free_null_pointer.c , 281 ,  warning: Duplicate code detected
+free_null_pointer.c , 330 ,  note: Similar code here
+free_null_pointer.c , 287 ,  warning: Duplicate code detected
+free_null_pointer.c , 336 ,  note: Similar code here
+free_null_pointer.c , 288 ,  warning: Duplicate code detected
+free_null_pointer.c , 337 ,  note: Similar code here
+free_null_pointer.c , 367 ,  warning: Duplicate code detected
+free_null_pointer.c , 373 ,  note: Similar code here
+free_null_pointer.c , 418 ,  warning: Using a fixed address is not portable because that address will probably not be valid in all environments or platforms
+free_null_pointer.c , 420 ,  warning: Using a fixed address is not portable because that address will probably not be valid in all environments or platforms
+free_null_pointer.c , 459 ,  warning: Duplicate code detected
+free_null_pointer.c , 490 ,  note: Similar code here
+free_null_pointer.c , 515 ,  warning: Duplicate code detected
+free_null_pointer.c , 516 ,  note: Similar code here
+free_null_pointer.c , 530 ,  warning: Duplicate code detected
+free_null_pointer.c , 531 ,  note: Similar code here
+free_null_pointer.c , 544 ,  warning: Duplicate code detected
+free_null_pointer.c , 545 ,  note: Similar code here
+func_pointer.c , 98 ,  warning: Duplicate code detected
+func_pointer.c , 392 ,  note: Similar code here
+func_pointer.c , 103 ,  warning: Duplicate code detected
+func_pointer.c , 397 ,  note: Similar code here
+func_pointer.c , 134 ,  warning: Duplicate code detected
+func_pointer.c , 194 ,  note: Similar code here
+func_pointer.c , 212 ,  warning: Duplicate code detected
+func_pointer.c , 225 ,  note: Similar code here
+func_pointer.c , 285 ,  warning: Using a fixed address is not portable because that address will probably not be valid in all environments or platforms
+func_pointer.c , 375 ,  warning: Function taking 1 argument is called with fewer (0)
+func_pointer.c , 443 ,  warning: Duplicate code detected
+func_pointer.c , 443 ,  note: Similar code here
+func_pointer.c , 475 ,  warning: Duplicate code detected
+func_pointer.c , 518 ,  note: Similar code here
+zero_division.c , 23 ,  warning: division by zero is undefined
+zero_division.c , 34 ,  warning: division by zero is undefined
+zero_division.c , 47 ,  warning: remainder by zero is undefined
+zero_division.c , 139 ,  warning: Duplicate code detected
+zero_division.c , 204 ,  note: Similar code here
+zero_division.c , 224 ,  warning: Duplicate code detected
+zero_division.c , 251 ,  note: Similar code here
+double_release.c , 33 ,  warning: Duplicate code detected
+double_release.c , 78 ,  note: Similar code here
+double_release.c , 85 ,  note: Similar code here
+double_release.c , 175 ,  note: Similar code here
+double_release.c , 269 ,  note: Similar code here
+double_release.c , 35 ,  warning: This lock has already been unlocked
+double_release.c , 42 ,  warning: Duplicate code detected
+double_release.c , 139 ,  note: Similar code here
+double_release.c , 184 ,  note: Similar code here
+double_release.c , 233 ,  note: Similar code here
+double_release.c , 43 ,  warning: Duplicate code detected
+double_release.c , 93 ,  note: Similar code here
+double_release.c , 140 ,  note: Similar code here
+double_release.c , 185 ,  note: Similar code here
+double_release.c , 234 ,  note: Similar code here
+double_release.c , 277 ,  note: Similar code here
+double_release.c , 44 ,  warning: Duplicate code detected
+double_release.c , 141 ,  note: Similar code here
+double_release.c , 186 ,  note: Similar code here
+double_release.c , 235 ,  note: Similar code here
+double_release.c , 278 ,  note: Similar code here
+double_release.c , 45 ,  warning: Duplicate code detected
+double_release.c , 97 ,  note: Similar code here
+double_release.c , 142 ,  note: Similar code here
+double_release.c , 187 ,  note: Similar code here
+double_release.c , 236 ,  note: Similar code here
+double_release.c , 77 ,  warning: Duplicate code detected
+double_release.c , 84 ,  note: Similar code here
+double_release.c , 78 ,  warning: Duplicate code detected
+double_release.c , 85 ,  note: Similar code here
+double_release.c , 269 ,  note: Similar code here
+double_release.c , 96 ,  warning: Potential copy-paste error; did you really mean to use 'tid1' here?
+double_release.c , 45 ,  note: Similar code using 'tid1' here
+double_release.c , 130 ,  warning: Duplicate code detected
+double_release.c , 174 ,  note: Similar code here
+double_release.c , 222 ,  note: Similar code here
+double_release.c , 268 ,  note: Similar code here
+double_release.c , 133 ,  warning: This lock has already been unlocked
+double_release.c , 138 ,  warning: Duplicate code detected
+double_release.c , 183 ,  note: Similar code here
+double_release.c , 232 ,  note: Similar code here
+double_release.c , 174 ,  warning: Duplicate code detected
+double_release.c , 268 ,  note: Similar code here
+double_release.c , 178 ,  warning: This lock has already been unlocked
+double_release.c , 226 ,  warning: This lock has already been unlocked
+double_release.c , 283 ,  warning: This lock has already been unlocked
+pow_related_errors.c , 28 ,  warning: Duplicate code detected
+pow_related_errors.c , 174 ,  note: Similar code here
+pow_related_errors.c , 189 ,  note: Similar code here
+pow_related_errors.c , 204 ,  note: Similar code here
+pow_related_errors.c , 219 ,  note: Similar code here
+pow_related_errors.c , 234 ,  note: Similar code here
+pow_related_errors.c , 249 ,  note: Similar code here
+pow_related_errors.c , 264 ,  note: Similar code here
+pow_related_errors.c , 279 ,  note: Similar code here
+pow_related_errors.c , 294 ,  note: Similar code here
+pow_related_errors.c , 309 ,  note: Similar code here
+pow_related_errors.c , 324 ,  note: Similar code here
+pow_related_errors.c , 339 ,  note: Similar code here
+pow_related_errors.c , 354 ,  note: Similar code here
+pow_related_errors.c , 369 ,  note: Similar code here
+pow_related_errors.c , 384 ,  note: Similar code here
+pow_related_errors.c , 399 ,  note: Similar code here
+pow_related_errors.c , 414 ,  note: Similar code here
+pow_related_errors.c , 429 ,  note: Similar code here
+pow_related_errors.c , 444 ,  note: Similar code here
+pow_related_errors.c , 459 ,  note: Similar code here
+pow_related_errors.c , 474 ,  note: Similar code here
+pow_related_errors.c , 489 ,  note: Similar code here
+pow_related_errors.c , 57 ,  warning: Duplicate code detected
+pow_related_errors.c , 77 ,  note: Similar code here
+pow_related_errors.c , 100 ,  note: Similar code here
+pow_related_errors.c , 62 ,  warning: Duplicate code detected
+pow_related_errors.c , 106 ,  note: Similar code here
+pow_related_errors.c , 77 ,  warning: Duplicate code detected
+pow_related_errors.c , 100 ,  note: Similar code here
+pow_related_errors.c , 154 ,  warning: Duplicate code detected
+pow_related_errors.c , 155 ,  note: Similar code here
+pow_related_errors.c , 170 ,  warning: Duplicate code detected
+pow_related_errors.c , 290 ,  note: Similar code here
+pow_related_errors.c , 440 ,  note: Similar code here
+pow_related_errors.c , 172 ,  warning: Duplicate code detected
+pow_related_errors.c , 202 ,  note: Similar code here
+pow_related_errors.c , 217 ,  note: Similar code here
+pow_related_errors.c , 232 ,  note: Similar code here
+pow_related_errors.c , 247 ,  note: Similar code here
+pow_related_errors.c , 262 ,  note: Similar code here
+pow_related_errors.c , 277 ,  note: Similar code here
+pow_related_errors.c , 292 ,  note: Similar code here
+pow_related_errors.c , 442 ,  note: Similar code here
+pow_related_errors.c , 457 ,  note: Similar code here
+pow_related_errors.c , 187 ,  warning: Duplicate code detected
+pow_related_errors.c , 472 ,  note: Similar code here
+pow_related_errors.c , 200 ,  warning: Duplicate code detected
+pow_related_errors.c , 260 ,  note: Similar code here
+pow_related_errors.c , 215 ,  warning: Duplicate code detected
+pow_related_errors.c , 230 ,  note: Similar code here
+pow_related_errors.c , 245 ,  note: Similar code here
+pow_related_errors.c , 275 ,  warning: Duplicate code detected
+pow_related_errors.c , 455 ,  note: Similar code here
+pow_related_errors.c , 307 ,  warning: Duplicate code detected
+pow_related_errors.c , 322 ,  note: Similar code here
+pow_related_errors.c , 337 ,  note: Similar code here
+pow_related_errors.c , 352 ,  note: Similar code here
+pow_related_errors.c , 367 ,  note: Similar code here
+pow_related_errors.c , 382 ,  note: Similar code here
+pow_related_errors.c , 397 ,  note: Similar code here
+pow_related_errors.c , 412 ,  note: Similar code here
+pow_related_errors.c , 487 ,  note: Similar code here
+pow_related_errors.c , 320 ,  warning: Duplicate code detected
+pow_related_errors.c , 485 ,  note: Similar code here
+pow_related_errors.c , 335 ,  warning: Duplicate code detected
+pow_related_errors.c , 395 ,  note: Similar code here
+pow_related_errors.c , 350 ,  warning: Duplicate code detected
+pow_related_errors.c , 410 ,  note: Similar code here
+pow_related_errors.c , 441 ,  warning: identical expressions on both sides of bitwise operator
+function_return_value_unchecked.c , 279 ,  warning: Duplicate code detected
+function_return_value_unchecked.c , 284 ,  note: Similar code here
+function_return_value_unchecked.c , 289 ,  note: Similar code here
+function_return_value_unchecked.c , 294 ,  note: Similar code here
+unlock_without_lock.c , 43 ,  warning: Duplicate code detected
+unlock_without_lock.c , 324 ,  note: Similar code here
+unlock_without_lock.c , 59 ,  warning: Duplicate code detected
+unlock_without_lock.c , 60 ,  note: Similar code here
+unlock_without_lock.c , 61 ,  warning: Duplicate code detected
+unlock_without_lock.c , 216 ,  note: Similar code here
+unlock_without_lock.c , 62 ,  warning: Duplicate code detected
+unlock_without_lock.c , 217 ,  note: Similar code here
+unlock_without_lock.c , 346 ,  note: Similar code here
+unlock_without_lock.c , 99 ,  warning: Duplicate code detected
+unlock_without_lock.c , 105 ,  note: Similar code here
+unlock_without_lock.c , 110 ,  warning: This lock has already been unlocked
+unlock_without_lock.c , 123 ,  warning: Duplicate code detected
+unlock_without_lock.c , 124 ,  note: Similar code here
+unlock_without_lock.c , 161 ,  warning: Duplicate code detected
+unlock_without_lock.c , 194 ,  note: Similar code here
+unlock_without_lock.c , 172 ,  warning: Duplicate code detected
+unlock_without_lock.c , 200 ,  note: Similar code here
+unlock_without_lock.c , 202 ,  warning: This lock has already been unlocked
+unlock_without_lock.c , 214 ,  warning: Duplicate code detected
+unlock_without_lock.c , 489 ,  note: Similar code here
+unlock_without_lock.c , 561 ,  note: Similar code here
+unlock_without_lock.c , 243 ,  warning: Duplicate code detected
+unlock_without_lock.c , 433 ,  note: Similar code here
+unlock_without_lock.c , 245 ,  warning: Duplicate code detected
+unlock_without_lock.c , 270 ,  note: Similar code here
+unlock_without_lock.c , 435 ,  note: Similar code here
+unlock_without_lock.c , 459 ,  note: Similar code here
+unlock_without_lock.c , 506 ,  note: Similar code here
+unlock_without_lock.c , 530 ,  note: Similar code here
+unlock_without_lock.c , 247 ,  warning: Duplicate code detected
+unlock_without_lock.c , 272 ,  note: Similar code here
+unlock_without_lock.c , 365 ,  note: Similar code here
+unlock_without_lock.c , 389 ,  note: Similar code here
+unlock_without_lock.c , 437 ,  note: Similar code here
+unlock_without_lock.c , 461 ,  note: Similar code here
+unlock_without_lock.c , 508 ,  note: Similar code here
+unlock_without_lock.c , 532 ,  note: Similar code here
+unlock_without_lock.c , 250 ,  warning: Duplicate code detected
+unlock_without_lock.c , 440 ,  note: Similar code here
+unlock_without_lock.c , 511 ,  note: Similar code here
+unlock_without_lock.c , 252 ,  warning: Duplicate code detected
+unlock_without_lock.c , 442 ,  note: Similar code here
+unlock_without_lock.c , 513 ,  note: Similar code here
+unlock_without_lock.c , 539 ,  note: Similar code here
+unlock_without_lock.c , 278 ,  warning: Duplicate code detected
+unlock_without_lock.c , 371 ,  note: Similar code here
+unlock_without_lock.c , 295 ,  warning: Duplicate code detected
+unlock_without_lock.c , 486 ,  note: Similar code here
+unlock_without_lock.c , 558 ,  note: Similar code here
+unlock_without_lock.c , 298 ,  warning: Duplicate code detected
+unlock_without_lock.c , 417 ,  note: Similar code here
+unlock_without_lock.c , 374 ,  warning: This lock has already been unlocked
+unlock_without_lock.c , 484 ,  warning: Duplicate code detected
+unlock_without_lock.c , 556 ,  note: Similar code here
+unlock_without_lock.c , 544 ,  warning: This lock has already been unlocked
+free_nondynamically_allocated_memory.c , 150 ,  warning: Duplicate code detected
+free_nondynamically_allocated_memory.c , 165 ,  note: Similar code here
+improper_termination_of_block.c , 38 ,  warning: if statement has empty body
+improper_termination_of_block.c , 38 ,  note: put the semicolon on a separate line to silence this warning
+improper_termination_of_block.c , 38 ,  warning: Duplicate code detected
+improper_termination_of_block.c , 53 ,  note: Similar code here
+improper_termination_of_block.c , 69 ,  note: Similar code here
+littlemem_st.c , 35 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 54 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 91 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 111 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 137 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 171 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 214 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 258 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 300 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+littlemem_st.c , 332 ,  warning: Casting a non-structure type to a structure type and accessing a field can lead to memory access errors or data corruption
+endless_loop.c , 71 ,  warning: Duplicate code detected
+endless_loop.c , 108 ,  note: Similar code here
+st_underrun.c , 204 ,  warning: String copy function overflows destination buffer
+_string.h , 83 ,  note: expanded from macro 'strcpy'
+memory_leak.c , 232 ,  warning: implicit conversion from 'double' to 'int' changes value from 1.5 to 1
+memory_leak.c , 64 ,  warning: Duplicate code detected
+memory_leak.c , 392 ,  note: Similar code here
+memory_leak.c , 64 ,  warning: the computation of the size of the memory allocation may overflow
+memory_leak.c , 127 ,  warning: Duplicate code detected
+memory_leak.c , 433 ,  note: Similar code here
+memory_leak.c , 250 ,  warning: Potential copy-paste error; did you really mean to use 'ptr' here?
+memory_leak.c , 217 ,  note: Similar code using 'ptr' here
+memory_leak.c , 392 ,  warning: the computation of the size of the memory allocation may overflow
+memory_leak.c , 417 ,  warning: the computation of the size of the memory allocation may overflow
+double_lock.c , 40 ,  warning: Duplicate code detected
+double_lock.c , 91 ,  note: Similar code here
+double_lock.c , 42 ,  warning: This lock has already been acquired
+double_lock.c , 56 ,  warning: Duplicate code detected
+double_lock.c , 105 ,  note: Similar code here
+double_lock.c , 164 ,  note: Similar code here
+double_lock.c , 93 ,  warning: This lock has already been acquired
+double_lock.c , 101 ,  warning: Duplicate code detected
+double_lock.c , 160 ,  note: Similar code here
+double_lock.c , 140 ,  warning: This lock has already been acquired
+double_lock.c , 191 ,  warning: Duplicate code detected
+double_lock.c , 204 ,  note: Similar code here
+double_lock.c , 193 ,  warning: Duplicate code detected
+double_lock.c , 206 ,  note: Similar code here
+double_lock.c , 224 ,  warning: Duplicate code detected
+double_lock.c , 225 ,  note: Similar code here
+null_pointer.c , 158 ,  warning: Duplicate code detected
+null_pointer.c , 172 ,  note: Similar code here
+null_pointer.c , 192 ,  warning: Duplicate code detected
+null_pointer.c , 214 ,  note: Similar code here
+null_pointer.c , 231 ,  warning: the computation of the size of the memory allocation may overflow
+st_cross_thread_access.c , 48 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 391 ,  note: Similar code here
+st_cross_thread_access.c , 413 ,  note: Similar code here
+st_cross_thread_access.c , 50 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 65 ,  note: Similar code here
+st_cross_thread_access.c , 392 ,  note: Similar code here
+st_cross_thread_access.c , 414 ,  note: Similar code here
+st_cross_thread_access.c , 62 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 390 ,  note: Similar code here
+st_cross_thread_access.c , 412 ,  note: Similar code here
+st_cross_thread_access.c , 79 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 82 ,  note: Similar code here
+st_cross_thread_access.c , 81 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 436 ,  note: Similar code here
+st_cross_thread_access.c , 126 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 134 ,  note: Similar code here
+st_cross_thread_access.c , 151 ,  note: Similar code here
+st_cross_thread_access.c , 158 ,  note: Similar code here
+st_cross_thread_access.c , 129 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 153 ,  note: Similar code here
+st_cross_thread_access.c , 132 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 156 ,  note: Similar code here
+st_cross_thread_access.c , 176 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 264 ,  note: Similar code here
+st_cross_thread_access.c , 177 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 524 ,  note: Similar code here
+st_cross_thread_access.c , 179 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 266 ,  note: Similar code here
+st_cross_thread_access.c , 180 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 267 ,  note: Similar code here
+st_cross_thread_access.c , 439 ,  note: Similar code here
+st_cross_thread_access.c , 181 ,  warning: Potential copy-paste error; did you really mean to use 'tid2' here?
+st_cross_thread_access.c , 85 ,  note: Similar code using 'tid1' here
+st_cross_thread_access.c , 265 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 353 ,  note: Similar code here
+st_cross_thread_access.c , 523 ,  note: Similar code here
+st_cross_thread_access.c , 267 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 439 ,  note: Similar code here
+st_cross_thread_access.c , 298 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 326 ,  note: Similar code here
+st_cross_thread_access.c , 300 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 328 ,  note: Similar code here
+st_cross_thread_access.c , 465 ,  note: Similar code here
+st_cross_thread_access.c , 490 ,  note: Similar code here
+st_cross_thread_access.c , 390 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 412 ,  note: Similar code here
+st_cross_thread_access.c , 434 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 437 ,  note: Similar code here
+st_cross_thread_access.c , 463 ,  warning: Duplicate code detected
+st_cross_thread_access.c , 488 ,  note: Similar code here
