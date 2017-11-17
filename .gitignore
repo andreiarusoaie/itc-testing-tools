@@ -1,4 +1,2 @@
-csv/
 python/__pycache__/
-!c_merge_file.csv
-!cpp_merge_file.csv
+*.tex
