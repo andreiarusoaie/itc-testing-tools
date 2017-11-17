@@ -343,7 +343,7 @@ def subdefects_pr(tex_file_name, rep_directory, tool_list):
         # print("\n\n")
 
     sys.stdout = open(tex_file_path, "w")
-    print("\\begin{tabular}{|l|r|r|}")
+    print("\\begin{tabular}{|l|c|r|}")
     print("%\\hline")
     print("% Production per subdefects \\\\ ")
     print("\\hline")
@@ -394,7 +394,7 @@ def subdefects_rdr(tex_file_name, rep_directory, tool_list):
         # print("\n\n")
 
     sys.stdout = open(tex_file_path, "w")
-    print("\\begin{tabular}{|l|r|r|}")
+    print("\\begin{tabular}{|l|c|r|}")
     print("%\\hline")
     print("% Robust detection rate per subdefects \\\\ ")
     print("\\hline")
@@ -442,7 +442,7 @@ def subdefects_unique(tex_file_name, rep_directory, tool_list):
         # print("\n\n")
 
     sys.stdout = open(tex_file_path, "w")
-    print("\\begin{tabular}{|l|c|r|}")
+    print("\\begin{tabular}{|l|c|c|}")
     print("%\\hline")
     print("% Unique per subdefects \\\\ ")
     print("\\hline")
