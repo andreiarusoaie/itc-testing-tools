@@ -600,24 +600,24 @@ unused_var.c,  91,  94,  Inappropriate code,  Unused variable
 unused_var.c,  104,  108,  Inappropriate code,  Unused variable
 unused_var.c,  118,  123,  Inappropriate code,  Unused variable
 unused_var.c,  152,  158,  Inappropriate code,  Unused variable
-wrong_arguments_func_pointer.c,  53,  53,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  74,  74,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  94,  94,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  114,  114,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  141,  139,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  161,  158,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  182,  178,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  201,  197,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  225,  224,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  250,  253,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  298,  297,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  354,  351,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  381,  380,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  423,  420,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  457,  453,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  490,  486,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  528,  525,  Pointer related defects,  Comparison NULL with function pointer
-wrong_arguments_func_pointer.c,  579,  575,  Pointer related defects,  Comparison NULL with function pointer
+wrong_arguments_func_pointer.c,  53,  53,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  74,  74,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  94,  94,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  114,  114,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  141,  139,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  161,  158,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  182,  178,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  201,  197,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  225,  224,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  250,  253,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  298,  297,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  354,  351,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  381,  380,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  423,  420,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  457,  453,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  490,  486,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  528,  525,  Pointer related defects,  Wrong arguments passed to a function pointer
+wrong_arguments_func_pointer.c,  579,  575,  Pointer related defects,  Wrong arguments passed to a function pointer
 zero_division.c,  23,  23,  Numerical defects,  Division by zero
 zero_division.c,  34,  34,  Numerical defects,  Division by zero
 zero_division.c,  47,  46,  Numerical defects,  Division by zero
