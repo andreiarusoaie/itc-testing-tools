@@ -325,7 +325,7 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(rep_directory, "flintpp", "temp"))
 
 def call_python(args):
-    (output, err, exit, time) = python.system.system_call("python3 " + " ".join(args))
+    (output, err, exit, time) = python.system.system_call(sys.executable + " " + " ".join(args))
     return time
 
 def call_bash(args):
