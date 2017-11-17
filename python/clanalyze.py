@@ -33,6 +33,7 @@ def clanalyze(directory, temp_path, csv, exe, opts):
             m = regexp.match(line)
             if not (m is None):
                 name = m.groups()[0]
-                idx = name.rfind("\\")
+                idx = max(name.rfind("\\"), name.rfind("/"))
                 print(name[idx+1:], ", ", m.groups()[1], ",", m.groups()[2])
     sys.stdout = sys.__stdout__
+    return time

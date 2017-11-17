@@ -1,0 +1,1 @@
+improper_error_handling.cpp ,  18 , C++ exception handler used, but unwind semantics are not enabled. Specify /EHsc
