@@ -1,0 +1,35 @@
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/uninit_pointer.c:197: in fct uninit_pointer_009, possibly uninitialized variable 'buf'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/uninit_pointer.c:197: strcpy(buf1,buf)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/uninit_pointer.c:188: char *buf,buf1[25];
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/unlock_without_lock.c:354: array 'unlock_without_lock_006_glb_buf' of 5 bytes initialized with 6 bytes
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:109: in fct pow_related_errors_005, possibly uninitialized variable 'ans'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:109: dsink=ans
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:102: double ans;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:88: in fct pow_related_errors_004, possibly uninitialized variable 'ans'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:88: dsink=ans
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:81: double ans;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:66: in fct pow_related_errors_003, possibly uninitialized variable 'ans'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:66: dsink=ans
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/pow_related_errors.c:60: double ans;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/uninit_var.c:70: in fct uninit_var_004, possibly uninitialized variable 'dvar'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/uninit_var.c:70: dsink=dvar
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/uninit_var.c:63: float dvar,dvar1;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:238: in fct st_overflow_007, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:238: st_overflow_007_func_002(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:230: st_overflow_007_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:191: in fct st_overflow_006, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:191: func(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:188: st_overflow_006_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:157: in fct st_overflow_005, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:157: st_overflow_005_func_001(s,10)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:156: st_overflow_005_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:126: in fct st_overflow_004, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:126: st_overflow_004_func_001(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:125: st_overflow_004_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:87: in fct st_overflow_003, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:87: st_overflow_003_func_001(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:86: st_overflow_003_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:57: in fct st_overflow_002, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:57: st_overflow_002_func_001(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/02.wo_Defects/st_overflow.c:56: st_overflow_002_s_001 s;
+uno:	check completed, try 'uno -h' for different checks

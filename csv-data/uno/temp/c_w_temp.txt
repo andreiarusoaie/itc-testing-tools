@@ -1,0 +1,134 @@
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:358: in fct uninit_pointer_015, uninitialized variable 'ptr'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:358: uninit_pointer_015_func_001(ptr)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:357: int *ptr;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:187: in fct uninit_pointer_009, possibly uninitialized variable 'buf'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:187: strcpy(buf1,buf)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:178: char *buf,buf1[25];
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:152: in fct uninit_pointer_008_func_001, uninitialized variable 'ret'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:152: p->uninit=ret
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:151: int ret;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:71: in fct uninit_pointer_004, uninitialized variable 'p'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:71: uninit_pointer_004_func_001(p)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:70: int *p;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:41: in fct uninit_pointer_002, uninitialized variable 'p'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:41: *p=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:40: int *p;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:30: in fct uninit_pointer_001, uninitialized variable 'p'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:30: ret=*p
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_pointer.c:28: int *p;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c: 706 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:588: in fct overrun_st_042, array index can exceed upper-bound (5>4), var 'i'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:588: buf[i][j]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:582: int i;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:570: in fct overrun_st_041, array index can exceed upper-bound (5>4), var 'i'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:570: buf[i]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:567: int i;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:280: in fct overrun_st_021, array index can exceed upper-bound (5>4), var 'index'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:280: buf[index2]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:275: int index=5;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:264: in fct overrun_st_020, array index can exceed upper-bound (5>4), var 'index'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:264: buf[index1]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:261: int index=5;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:169: in fct overrun_st_013, array index can exceed upper-bound (5>4), var 'index'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:169: buf[index]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:168: int index=5;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c: 142 possible array indexing error 'sbuf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c: 110 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  99 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  88 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  77 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  66 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  55 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  44 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  32 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/overrun_st.c:  21 possible array indexing error 'buf[5]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/null_pointer.c:105: in fct null_pointer_006, uninitialized variable 'p'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/null_pointer.c:105: *p=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/null_pointer.c:103: int *p;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/unlock_without_lock.c:359: array 'unlock_without_lock_006_glb_buf' of 5 bytes initialized with 6 bytes
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c:333: in fct dynamic_buffer_overrun_018, array index can exceed upper-bound (4>3), var 'index'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c:333: *((buf+indexes[index]))=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/buffer_overrun_dynamic.c:330: int index=4;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/memory_leak.c:150: in fct memory_leak_006, possibly uninitialized variable 'dptr'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/memory_leak.c:150: free(dptr)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/memory_leak.c:138: double *dptr;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/memory_leak.c:119: in fct memory_leak_005, possibly uninitialized variable 'ptr'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/memory_leak.c:119: free(ptr)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/memory_leak.c:107: float *ptr;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:111: in fct pow_related_errors_005, possibly uninitialized variable 'ans'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:111: dsink=ans
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:104: double ans;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:89: in fct pow_related_errors_004, possibly uninitialized variable 'ans'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:89: dsink=ans
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:82: double ans;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:67: in fct pow_related_errors_003, possibly uninitialized variable 'ans'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:67: dsink=ans
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/pow_related_errors.c:60: double ans;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:243: in fct uninit_var_013_func_001, possibly uninitialized variable 'val'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:243: return val
+
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:242: values val;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:131: in fct uninit_var_008, uninitialized variable 'data'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:131: data+=flag
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:128: int data;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:75: in fct uninit_var_005_func_001, uninitialized variable 'ret'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:75: return ret
+
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:72: int ret;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:63: in fct uninit_var_004, possibly uninitialized variable 'dvar'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:63: ret=dvar
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:56: float dvar,dvar1,ret;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:23: in fct uninit_var_001, uninitialized variable 'a'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:23: ret=a
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/uninit_var.c:21: int a;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:190: in fct underrun_st_013, array index can be negative (-1) 'i'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:190: underrun_st_013_gbl_buf[i]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:185: int i=4;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:155: in fct underrun_st_011, array index can be negative (-1) 'i'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:155: underrun_st_011_gbl_buf[i]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:152: int i=4;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:124: in fct underrun_st_009, array index can be negative (-1) 'i'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:124: underrun_st_009_gbl_buf[i]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:121: int i;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:93: in fct underrun_st_007, array index can be negative (-1) 'i'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:93: buf[i]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:90: int i;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:42: in fct underrun_st_003, array index can be negative (-1) 'index'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:42: buf[index]=1
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:41: int index=(-1);
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:  31 array indexing error 'buf[(-1)]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/underrun_st.c:  21 array indexing error 'buf[(-1)]' (array-size: 5)
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:236: in fct st_overflow_007, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:236: st_overflow_007_func_002(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:228: st_overflow_007_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:189: in fct st_overflow_006, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:189: func(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:186: st_overflow_006_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:155: in fct st_overflow_005, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:155: st_overflow_005_func_001(s,10)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:154: st_overflow_005_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:124: in fct st_overflow_004, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:124: st_overflow_004_func_001(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:123: st_overflow_004_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:85: in fct st_overflow_003, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:85: st_overflow_003_func_001(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:84: st_overflow_003_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:55: in fct st_overflow_002, possibly uninitialized variable 's'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:55: st_overflow_002_func_001(s)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/st_overflow.c:54: st_overflow_002_s_001 s;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:337: in fct wrong_arguments_func_pointer_012_func_002, uninitialized variable 'temp'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:337: temp+=st.arr[i]
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:330: int temp;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:251: in fct wrong_arguments_func_pointer_010, possibly uninitialized variable 'st'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:251: fptr(st)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/wrong_arguments_func_pointer.c:248: wrong_arguments_func_pointer_010_s_001 st;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:147: in fct invalid_memory_access_005, possibly uninitialized variable 'ptr'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:147: count=*ptr
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:143: int *ptr;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:110: in fct invalid_memory_access_003, possibly uninitialized variable 'c'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:110: psink=c
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:96: char *buf,*c;
+uno: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:85: in fct invalid_memory_access_002, possibly uninitialized variable 'a'
+     statement  : /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:85: printf("%lf",a)
+     declaration: /home/stefan/work/bitgit/itc-benchmarks/01.w_Defects/invalid_memory_access.c:57: double *ptr*dptr=0,a;
+uno:	check completed, try 'uno -h' for different checks

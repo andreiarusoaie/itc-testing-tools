@@ -1,0 +1,13 @@
+File, Line, Error
+uninit_pointer.c , 197 ,  in fct uninit_pointer_009, possibly uninitialized variable 'buf'
+unlock_without_lock.c , 354 ,  array 'unlock_without_lock_006_glb_buf' of 5 bytes initialized with 6 bytes
+pow_related_errors.c , 109 ,  in fct pow_related_errors_005, possibly uninitialized variable 'ans'
+pow_related_errors.c , 88 ,  in fct pow_related_errors_004, possibly uninitialized variable 'ans'
+pow_related_errors.c , 66 ,  in fct pow_related_errors_003, possibly uninitialized variable 'ans'
+uninit_var.c , 70 ,  in fct uninit_var_004, possibly uninitialized variable 'dvar'
+st_overflow.c , 238 ,  in fct st_overflow_007, possibly uninitialized variable 's'
+st_overflow.c , 191 ,  in fct st_overflow_006, possibly uninitialized variable 's'
+st_overflow.c , 157 ,  in fct st_overflow_005, possibly uninitialized variable 's'
+st_overflow.c , 126 ,  in fct st_overflow_004, possibly uninitialized variable 's'
+st_overflow.c , 87 ,  in fct st_overflow_003, possibly uninitialized variable 's'
+st_overflow.c , 57 ,  in fct st_overflow_002, possibly uninitialized variable 's'

@@ -1,0 +1,54 @@
+File, Line, Error
+uninit_pointer.c , 358 ,  in fct uninit_pointer_015, uninitialized variable 'ptr'
+uninit_pointer.c , 187 ,  in fct uninit_pointer_009, possibly uninitialized variable 'buf'
+uninit_pointer.c , 152 ,  in fct uninit_pointer_008_func_001, uninitialized variable 'ret'
+uninit_pointer.c , 71 ,  in fct uninit_pointer_004, uninitialized variable 'p'
+uninit_pointer.c , 41 ,  in fct uninit_pointer_002, uninitialized variable 'p'
+uninit_pointer.c , 30 ,  in fct uninit_pointer_001, uninitialized variable 'p'
+overrun_st.c , 706 ,  706 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 588 ,  in fct overrun_st_042, array index can exceed upper-bound (5>4), var 'i'
+overrun_st.c , 570 ,  in fct overrun_st_041, array index can exceed upper-bound (5>4), var 'i'
+overrun_st.c , 280 ,  in fct overrun_st_021, array index can exceed upper-bound (5>4), var 'index'
+overrun_st.c , 264 ,  in fct overrun_st_020, array index can exceed upper-bound (5>4), var 'index'
+overrun_st.c , 169 ,  in fct overrun_st_013, array index can exceed upper-bound (5>4), var 'index'
+overrun_st.c , 142 ,  142 possible array indexing error 'sbuf[5]' (array-size
+overrun_st.c , 110 ,  110 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 99 ,   99 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 88 ,   88 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 77 ,   77 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 66 ,   66 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 55 ,   55 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 44 ,   44 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 32 ,   32 possible array indexing error 'buf[5]' (array-size
+overrun_st.c , 21 ,   21 possible array indexing error 'buf[5]' (array-size
+null_pointer.c , 105 ,  in fct null_pointer_006, uninitialized variable 'p'
+unlock_without_lock.c , 359 ,  array 'unlock_without_lock_006_glb_buf' of 5 bytes initialized with 6 bytes
+buffer_overrun_dynamic.c , 333 ,  in fct dynamic_buffer_overrun_018, array index can exceed upper-bound (4>3), var 'index'
+memory_leak.c , 150 ,  in fct memory_leak_006, possibly uninitialized variable 'dptr'
+memory_leak.c , 119 ,  in fct memory_leak_005, possibly uninitialized variable 'ptr'
+pow_related_errors.c , 111 ,  in fct pow_related_errors_005, possibly uninitialized variable 'ans'
+pow_related_errors.c , 89 ,  in fct pow_related_errors_004, possibly uninitialized variable 'ans'
+pow_related_errors.c , 67 ,  in fct pow_related_errors_003, possibly uninitialized variable 'ans'
+uninit_var.c , 243 ,  in fct uninit_var_013_func_001, possibly uninitialized variable 'val'
+uninit_var.c , 131 ,  in fct uninit_var_008, uninitialized variable 'data'
+uninit_var.c , 75 ,  in fct uninit_var_005_func_001, uninitialized variable 'ret'
+uninit_var.c , 63 ,  in fct uninit_var_004, possibly uninitialized variable 'dvar'
+uninit_var.c , 23 ,  in fct uninit_var_001, uninitialized variable 'a'
+underrun_st.c , 190 ,  in fct underrun_st_013, array index can be negative (-1) 'i'
+underrun_st.c , 155 ,  in fct underrun_st_011, array index can be negative (-1) 'i'
+underrun_st.c , 124 ,  in fct underrun_st_009, array index can be negative (-1) 'i'
+underrun_st.c , 93 ,  in fct underrun_st_007, array index can be negative (-1) 'i'
+underrun_st.c , 42 ,  in fct underrun_st_003, array index can be negative (-1) 'index'
+underrun_st.c , 31 ,   31 array indexing error 'buf[(-1)]' (array-size
+underrun_st.c , 21 ,   21 array indexing error 'buf[(-1)]' (array-size
+st_overflow.c , 236 ,  in fct st_overflow_007, possibly uninitialized variable 's'
+st_overflow.c , 189 ,  in fct st_overflow_006, possibly uninitialized variable 's'
+st_overflow.c , 155 ,  in fct st_overflow_005, possibly uninitialized variable 's'
+st_overflow.c , 124 ,  in fct st_overflow_004, possibly uninitialized variable 's'
+st_overflow.c , 85 ,  in fct st_overflow_003, possibly uninitialized variable 's'
+st_overflow.c , 55 ,  in fct st_overflow_002, possibly uninitialized variable 's'
+wrong_arguments_func_pointer.c , 337 ,  in fct wrong_arguments_func_pointer_012_func_002, uninitialized variable 'temp'
+wrong_arguments_func_pointer.c , 251 ,  in fct wrong_arguments_func_pointer_010, possibly uninitialized variable 'st'
+invalid_memory_access.c , 147 ,  in fct invalid_memory_access_005, possibly uninitialized variable 'ptr'
+invalid_memory_access.c , 110 ,  in fct invalid_memory_access_003, possibly uninitialized variable 'c'
+invalid_memory_access.c , 85 ,  in fct invalid_memory_access_002, possibly uninitialized variable 'a'
