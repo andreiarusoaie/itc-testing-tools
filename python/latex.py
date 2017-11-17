@@ -23,6 +23,7 @@ def total(tex_file_name, rep_directory, tool_list):
         timing = lines(timing_path)[0].split(",")
         runtime = round(float(timing[1].strip()) + float(timing[2].strip()), 2)
 
+        # put everything in a tuple
         l.append((tool, dr, fpr, pr, rdr, uni, runtime))
 
     srt = sorted(l, key = lambda x : x[3])
