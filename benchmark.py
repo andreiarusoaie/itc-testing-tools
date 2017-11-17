@@ -85,6 +85,28 @@ CLANGALPHA_TEMP_C_WO = rep_directory + "/clangalpha/temp/c_wo_temp.txt"
 CLANGALPHA_TEMP_CPP_W = rep_directory + "/clangalpha/temp/cpp_w_temp.txt"
 CLANGALPHA_TEMP_CPP_WO = rep_directory + "/clangalpha/temp/cpp_wo_temp.txt"
 
+# ## CLANG CORE ALPHA
+CLANG_CORE_ALPHA = "./python/clang.py"
+CLANG_CORE_ALPHA_PP = "./python/clang++.py"
+CLANG_CORE_ALPHA_EXE = "clang"
+CLANG_CORE_ALPHA_EXE_CPP = "clang++"
+CLANG_CORE_ALPHA_OUTPUT_C_W = rep_directory + "/clangcorealpha/temp/c_w_errors_per_line.csv"
+CLANG_CORE_ALPHA_OUTPUT_C_WO = rep_directory + "/clangcorealpha/temp/c_wo_errors_per_line.csv"
+CLANG_CORE_ALPHA_OUTPUT_CPP_W = rep_directory + "/clangcorealpha/temp/cpp_w_errors_per_line.csv"
+CLANG_CORE_ALPHA_OUTPUT_CPP_WO = rep_directory + "/clangcorealpha/temp/cpp_wo_errors_per_line.csv"
+CLANG_CORE_ALPHA_OPTS = "'-cc1 -analyze -analyzer-checker=core,alpha'"
+CLANG_CORE_ALPHA_OUT_SUBDEFECTS = rep_directory + "/clangcorealpha/c_subdefects.csv"
+CLANG_CORE_ALPHA_OUT_DEFECTS = rep_directory + "/clangcorealpha/c_defects.csv"
+CLANG_CORE_ALPHA_OUT_TOTAL = rep_directory + "/clangcorealpha/c_total.csv"
+CLANG_CORE_ALPHA_OUT_CPP_SUBDEFECTS = rep_directory + "/clangcorealpha/cpp_subdefects.csv"
+CLANG_CORE_ALPHA_OUT_CPP_DEFECTS = rep_directory + "/clangcorealpha/cpp_defects.csv"
+CLANG_CORE_ALPHA_OUT_CPP_TOTAL = rep_directory + "/clangcorealpha/cpp_total.csv"
+CLANGCOREALPHA_TEMP_C_W = rep_directory + "/clangcorealpha/temp/c_w_temp.txt"
+CLANGCOREALPHA_TEMP_C_WO = rep_directory + "/clangcorealpha/temp/c_wo_temp.txt"
+CLANGCOREALPHA_TEMP_CPP_W = rep_directory + "/clangcorealpha/temp/cpp_w_temp.txt"
+CLANGCOREALPHA_TEMP_CPP_WO = rep_directory + "/clangcorealpha/temp/cpp_wo_temp.txt"
+
+
 
 # ## CPPCHECK
 CPPCHECK = "./python/cppcheck.py"
@@ -320,6 +342,7 @@ def prepare_dirs():
     make_dirs_forgive(os.path.join(rep_directory, "uno", "temp"))
     make_dirs_forgive(os.path.join(rep_directory, "clangalpha", "temp"))
     make_dirs_forgive(os.path.join(rep_directory, "clangcore", "temp"))
+    make_dirs_forgive(os.path.join(rep_directory, "clangcorealpha", "temp"))
     make_dirs_forgive(os.path.join(rep_directory, "flawfinder", "temp"))
     make_dirs_forgive(os.path.join(rep_directory, "infer", "temp"))
     make_dirs_forgive(os.path.join(rep_directory, "splint", "temp"))
@@ -497,10 +520,27 @@ def run_clang_core():
     sys.stdout=sys.__stdout__
 
 
+
 def run_clang_core_stats(tools):
     print("Running clangcore stats")
     call_python([STATISTICS, C_MERGE_FILE, CLANG_CORE_OUTPUT_C_W, CLANG_CORE_OUTPUT_C_WO, CLANG_CORE_OUT_SUBDEFECTS, CLANG_CORE_OUT_DEFECTS, CLANG_CORE_OUT_TOTAL, tools])
     call_python([STATISTICS, CPP_MERGE_FILE, CLANG_CORE_OUTPUT_CPP_W, CLANG_CORE_OUTPUT_CPP_WO, CLANG_CORE_OUT_CPP_SUBDEFECTS, CLANG_CORE_OUT_CPP_DEFECTS, CLANG_CORE_OUT_CPP_TOTAL, tools])
+
+
+def run_clang_core_alpha():
+    print("Running clangcorealpha")
+    t1 = call_python([CLANG_CORE_ALPHA, CLANGCOREALPHA_TEMP_C_W, W_C_DEFECTS_DIR, CLANG_CORE_ALPHA_OUTPUT_C_W, CLANG_CORE_ALPHA_EXE, CLANG_CORE_ALPHA_OPTS]) 
+    t2 = call_python([CLANG_CORE_ALPHA, CLANGCOREALPHA_TEMP_C_WO, WO_C_DEFECTS_DIR, CLANG_CORE_ALPHA_OUTPUT_C_WO, CLANG_CORE_ALPHA_EXE, CLANG_CORE_ALPHA_OPTS]) 
+    t3 = call_python([CLANG_CORE_ALPHA_PP, CLANGCOREALPHA_TEMP_CPP_W, W_CPP_DEFECTS_DIR, CLANG_CORE_ALPHA_OUTPUT_CPP_W, CLANG_CORE_ALPHA_EXE_CPP, CLANG_CORE_ALPHA_OPTS]) 
+    t4 = call_python([CLANG_CORE_ALPHA_PP, CLANGCOREALPHA_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, CLANG_CORE_ALPHA_OUTPUT_CPP_WO, CLANG_CORE_ALPHA_EXE_CPP, CLANG_CORE_ALPHA_OPTS])
+    sys.stdout=open(os.path.join(rep_directory, "clangcorealpha" ,"timing.csv"), "w")
+    print("clangcorealpha", ", " , t1 + t3, ", ", t2 + t4)
+    sys.stdout=sys.__stdout__
+    
+def run_clang_core_alpha_stats(tools):
+    print("Running clangcore stats")
+    call_python([STATISTICS, C_MERGE_FILE, CLANG_CORE_ALPHA_OUTPUT_C_W, CLANG_CORE_ALPHA_OUTPUT_C_WO, CLANG_CORE_ALPHA_OUT_SUBDEFECTS, CLANG_CORE_ALPHA_OUT_DEFECTS, CLANG_CORE_ALPHA_OUT_TOTAL, tools])
+    call_python([STATISTICS, CPP_MERGE_FILE, CLANG_CORE_ALPHA_OUTPUT_CPP_W, CLANG_CORE_ALPHA_OUTPUT_CPP_WO, CLANG_CORE_ALPHA_OUT_CPP_SUBDEFECTS, CLANG_CORE_ALPHA_OUT_CPP_DEFECTS, CLANG_CORE_ALPHA_OUT_CPP_TOTAL, tools])
 
     
 def run_clang_alpha():
@@ -565,8 +605,8 @@ def generate_main_itc_csvs():
     call_bash([MERGE_EXE, CPP_ERRORS_PER_LINE_FILE, CPP_WO_ERRORS_PER_LINE_FILE, CPP_MERGE_FILE])
 
 def all_tools():
-#    return ['cppcheck', 'clanalyze', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'oclint', 'flintpp']
-    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'oclint', 'flintpp']
+#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'oclint', 'flintpp', 'clanalyze']
+    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'cpplint', 'oclint', 'flintpp', 'clanalyze']
 
 import glob
 def clean_temp_stats():
@@ -594,6 +634,8 @@ def run_stats(tools):
         run_flawfinder_stats(tools)
     elif tool == 'clangcore':
         run_clang_core_stats(tools)
+    elif tool == 'clangcorealpha':
+        run_clang_core_alpha_stats(tools)
     elif tool == "clangalpha":
         run_clang_alpha_stats(tools)
     elif tool == 'framac':
@@ -636,6 +678,8 @@ elif action == 'run':
         run_flawfinder()
     elif tool == 'clangcore':
         run_clang_core()
+    elif tool == 'clangcorealpha':
+        run_clang_core_alpha()
     elif tool == "clangalpha":
         run_clang_alpha()
     elif tool == 'framac':
@@ -654,7 +698,6 @@ elif action == 'stat':
     if len(sys.argv) > 4: # handle 'unique stat' tool list
         tools = sys.argv[4]
     run_stats(tools)
-    
 elif action == 'total':
     tool_list = all_tools()
     for tool in tool_list:
@@ -662,6 +705,23 @@ elif action == 'total':
         run_stats(tools)        
     # generate main latex table
     python.latex.total("total.tex", rep_directory, all_tools())
-
+elif action == 'defects':
+    tool_list = all_tools()
+    for tool in tool_list:
+        tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
+        run_stats(tools)
+    python.latex.defects_dr("defects_dr.tex", rep_directory, all_tools())
+    python.latex.defects_fpr("defects_fpr.tex", rep_directory, all_tools())
+    python.latex.defects_pr("defects_pr.tex", rep_directory, all_tools())
+    python.latex.defects_rdr("defects_rdr.tex", rep_directory, all_tools())
+    python.latex.defects_unique("defects_unique.tex", rep_directory, all_tools())
+elif action == 'subdefects':
+    tool_list = all_tools()
+    for tool in tool_list:
+        tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
+        run_stats(tools)
+    python.latex.subdefects_pr("subdefects_pr.tex", rep_directory, all_tools())
+    python.latex.subdefects_rdr("subdefects_rdr.tex", rep_directory, all_tools())
+    python.latex.subdefects_unique("subdefects_unique.tex", rep_directory, all_tools())
 else:
     print("Action ", action, " not supported or incomplete.\n")
