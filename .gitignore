@@ -1,4 +1,3 @@
-*.csv
 csv/
 python/__pycache__/
 !c_merge_file.csv
