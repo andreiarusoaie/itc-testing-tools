@@ -1,0 +1,5 @@
+File,Line,CWE, Defect Type, Defect Sub-Type
+improper_error_handling.cpp, 25, ,  Inappropriate code,  Improper error handling
+improper_error_handling.cpp, 46, ,  Inappropriate code,  Improper error handling
+improper_error_handling.cpp, 68, ,  Inappropriate code,  Improper error handling
+improper_error_handling.cpp, 93, ,  Inappropriate code,  Improper error handling
