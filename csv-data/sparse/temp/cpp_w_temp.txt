@@ -1,0 +1,43 @@
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:17:34: warning: non-ANSI function declaration of function 'improper_error_handling_001'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:19:13: error: Expected ; at end of statement
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:19:13: error: got {
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:30:1: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:30:1: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:41:22: error: Expected ) in function declarator
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:41:22: error: got ==
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:41:17: error: Trying to use reserved word 'if' as identifier
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:43:9: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:43:9: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:47:9: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:47:9: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:60:22: error: Expected ) in function declarator
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:60:22: error: got ==
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:60:17: error: Trying to use reserved word 'if' as identifier
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:64:9: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:64:9: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:69:9: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:69:9: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:84:30: error: Expected ) in function declarator
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:84:30: error: got ==
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:84:25: error: Trying to use reserved word 'if' as identifier
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:88:17: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:88:17: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:92:17: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:92:17: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:97:22: error: Expected ) in function declarator
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:97:22: error: got 1
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:98:9: error: Expected ; at the end of type declaration
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:98:9: error: got }
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:19:9: error: undefined identifier 'try'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:21:21: error: undefined identifier 'a'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:22:17: error: undefined identifier 'c'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:42:19: error: undefined identifier 'b'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:63:19: error: undefined identifier 'b'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:87:27: error: undefined identifier 'b'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:108:13: error: undefined identifier 'vflag'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:113:13: error: undefined identifier 'vflag'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:115:17: error: undefined identifier 'improper_error_handling_002'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:118:13: error: undefined identifier 'vflag'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:120:17: error: undefined identifier 'improper_error_handling_003'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:123:13: error: undefined identifier 'vflag'
+/Users/andrei/work/itc-benchmarks/03.w_Defects_Cpp/improper_error_handling.cpp:125:17: error: undefined identifier 'improper_error_handling_004'

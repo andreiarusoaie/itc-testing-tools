@@ -1,0 +1,80 @@
+File, Line, Error
+bit_shift.c , 18 ,  warning: non-ANSI function declaration of function 'bit_shift_001'
+bit_shift.c , 30 ,  warning: non-ANSI function declaration of function 'bit_shift_002'
+bit_shift.c , 42 ,  warning: non-ANSI function declaration of function 'bit_shift_003'
+bit_shift.c , 54 ,  warning: non-ANSI function declaration of function 'bit_shift_004'
+bit_shift.c , 66 ,  warning: non-ANSI function declaration of function 'bit_shift_005'
+bit_shift.c , 78 ,  warning: non-ANSI function declaration of function 'bit_shift_006'
+bit_shift.c , 90 ,  warning: non-ANSI function declaration of function 'bit_shift_007'
+bit_shift.c , 102 ,  warning: non-ANSI function declaration of function 'bit_shift_008'
+bit_shift.c , 115 ,  warning: non-ANSI function declaration of function 'bit_shift_009'
+bit_shift.c , 129 ,  warning: non-ANSI function declaration of function 'bit_shift_010'
+bit_shift.c , 142 ,  warning: non-ANSI function declaration of function 'bit_shift_011'
+bit_shift.c , 155 ,  warning: non-ANSI function declaration of function 'bit_shift_012_func_001'
+bit_shift.c , 160 ,  warning: non-ANSI function declaration of function 'bit_shift_012'
+bit_shift.c , 180 ,  warning: non-ANSI function declaration of function 'bit_shift_013'
+bit_shift.c , 189 ,  warning: non-ANSI function declaration of function 'bit_shift_014'
+bit_shift.c , 202 ,  warning: non-ANSI function declaration of function 'bit_shift_015'
+bit_shift.c , 217 ,  warning: non-ANSI function declaration of function 'bit_shift_016'
+bit_shift.c , 234 ,  warning: non-ANSI function declaration of function 'bit_shift_017'
+bit_shift.c , 246 ,  warning: non-ANSI function declaration of function 'bit_shift_main'
+bit_shift.c , 18 ,  warning: symbol 'bit_shift_001' was not declared. Should it be static?
+bit_shift.c , 30 ,  warning: symbol 'bit_shift_002' was not declared. Should it be static?
+bit_shift.c , 42 ,  warning: symbol 'bit_shift_003' was not declared. Should it be static?
+bit_shift.c , 54 ,  warning: symbol 'bit_shift_004' was not declared. Should it be static?
+bit_shift.c , 66 ,  warning: symbol 'bit_shift_005' was not declared. Should it be static?
+bit_shift.c , 78 ,  warning: symbol 'bit_shift_006' was not declared. Should it be static?
+bit_shift.c , 90 ,  warning: symbol 'bit_shift_007' was not declared. Should it be static?
+bit_shift.c , 102 ,  warning: symbol 'bit_shift_008' was not declared. Should it be static?
+bit_shift.c , 115 ,  warning: symbol 'bit_shift_009' was not declared. Should it be static?
+bit_shift.c , 129 ,  warning: symbol 'bit_shift_010' was not declared. Should it be static?
+bit_shift.c , 142 ,  warning: symbol 'bit_shift_011' was not declared. Should it be static?
+bit_shift.c , 155 ,  warning: symbol 'bit_shift_012_func_001' was not declared. Should it be static?
+bit_shift.c , 160 ,  warning: symbol 'bit_shift_012' was not declared. Should it be static?
+bit_shift.c , 172 ,  warning: symbol 'bit_shift_013_func_001' was not declared. Should it be static?
+bit_shift.c , 180 ,  warning: symbol 'bit_shift_013' was not declared. Should it be static?
+bit_shift.c , 189 ,  warning: symbol 'bit_shift_014' was not declared. Should it be static?
+bit_shift.c , 202 ,  warning: symbol 'bit_shift_015' was not declared. Should it be static?
+bit_shift.c , 217 ,  warning: symbol 'bit_shift_016' was not declared. Should it be static?
+bit_shift.c , 234 ,  warning: symbol 'bit_shift_017' was not declared. Should it be static?
+bit_shift.c , 22 ,  warning: shift too big (32) for type int
+bit_shift.c , 46 ,  warning: shift too big (32) for type unsigned int
+bit_shift.c , 70 ,  warning: shift too big (4294967295) for type int
+bit_shift.c , 82 ,  warning: shift too big (32) for type int
+bit_shift.c , 94 ,  warning: shift too big (4294967295) for type int
+bit_shift.c , 107 ,  warning: shift too big (32) for type int
+bit_shift.c , 134 ,  warning: shift too big (32) for type int
+bit_shift.c , 147 ,  warning: shift too big (32) for type int
+bit_shift.c , 194 ,  warning: shift too big (32) for type int
+bit_shift.c , 237 ,  warning: shift too big (32) for type int
+invalid_memory_access.c , 28 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_001'
+invalid_memory_access.c , 55 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_002'
+invalid_memory_access.c , 93 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_003'
+invalid_memory_access.c , 118 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_004'
+invalid_memory_access.c , 166 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_006'
+invalid_memory_access.c , 195 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_007'
+invalid_memory_access.c , 217 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_008'
+invalid_memory_access.c , 253 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_009'
+invalid_memory_access.c , 284 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_010'
+invalid_memory_access.c , 301 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_011'
+invalid_memory_access.c , 374 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_012'
+invalid_memory_access.c , 450 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_013'
+invalid_memory_access.c , 523 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_015'
+invalid_memory_access.c , 551 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_016_func_002'
+invalid_memory_access.c , 565 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_016_func_003'
+invalid_memory_access.c , 571 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_016'
+invalid_memory_access.c , 607 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_002'
+invalid_memory_access.c , 614 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_003'
+invalid_memory_access.c , 619 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_004'
+invalid_memory_access.c , 625 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017'
+invalid_memory_access.c , 661 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_main'
+invalid_memory_access.c , 20 ,  warning: symbol 'invalid_memory_access_016_doubleptr_gbl' was not declared. Should it be static?
+invalid_memory_access.c , 21 ,  warning: symbol 'invalid_memory_access_017_doubleptr_gbl' was not declared. Should it be static?
+invalid_memory_access.c , 33 ,  error: incompatible types in conditional expression (different types)
+memory_allocation_failure.c , 442 ,  error: incompatible types in conditional expression (different base types)
+invalid_extern_1.c , 13 ,  error: symbol 'invalid_extern_001_glb_buf' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_extern.c:20) - different base types
+invalid_extern_1.c , 14 ,  error: symbol 'invalid_extern_001_glb_float' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_extern.c:21) - different base types
+invalid_extern_1.c , 15 ,  error: symbol 'invalid_extern_001_glb_var3' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_extern.c:22) - different base types
+invalid_extern_1.c , 16 ,  error: symbol 'invalid_extern_001_glb_var4' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_extern.c:23) - different base types
+invalid_extern_1.c , 17 ,  error: symbol 'invalid_extern_001_glb_var5' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_extern.c:24) - different base types
+invalid_extern_1.c , 24 ,  error: symbol 'invalid_extern_001_glb_006_str' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/01.w_Defects/invalid_extern.c:27) - different base types

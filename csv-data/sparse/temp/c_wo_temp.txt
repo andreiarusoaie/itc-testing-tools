@@ -1,0 +1,102 @@
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:18:21: warning: non-ANSI function declaration of function 'bit_shift_001'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:30:21: warning: non-ANSI function declaration of function 'bit_shift_002'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:42:21: warning: non-ANSI function declaration of function 'bit_shift_003'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:54:21: warning: non-ANSI function declaration of function 'bit_shift_004'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:66:21: warning: non-ANSI function declaration of function 'bit_shift_005'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:78:21: warning: non-ANSI function declaration of function 'bit_shift_006'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:90:21: warning: non-ANSI function declaration of function 'bit_shift_007'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:102:21: warning: non-ANSI function declaration of function 'bit_shift_008'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:115:21: warning: non-ANSI function declaration of function 'bit_shift_009'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:129:21: warning: non-ANSI function declaration of function 'bit_shift_010'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:142:21: warning: non-ANSI function declaration of function 'bit_shift_011'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:155:29: warning: non-ANSI function declaration of function 'bit_shift_012_func_001'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:160:21: warning: non-ANSI function declaration of function 'bit_shift_012'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:180:21: warning: non-ANSI function declaration of function 'bit_shift_013'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:189:21: warning: non-ANSI function declaration of function 'bit_shift_014'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:202:21: warning: non-ANSI function declaration of function 'bit_shift_015'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:217:21: warning: non-ANSI function declaration of function 'bit_shift_016'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:234:21: warning: non-ANSI function declaration of function 'bit_shift_017'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:246:22: warning: non-ANSI function declaration of function 'bit_shift_main'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:18:6: warning: symbol 'bit_shift_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:30:6: warning: symbol 'bit_shift_002' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:42:6: warning: symbol 'bit_shift_003' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:54:6: warning: symbol 'bit_shift_004' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:66:6: warning: symbol 'bit_shift_005' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:78:6: warning: symbol 'bit_shift_006' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:90:6: warning: symbol 'bit_shift_007' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:102:6: warning: symbol 'bit_shift_008' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:115:6: warning: symbol 'bit_shift_009' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:129:6: warning: symbol 'bit_shift_010' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:142:6: warning: symbol 'bit_shift_011' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:155:5: warning: symbol 'bit_shift_012_func_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:160:6: warning: symbol 'bit_shift_012' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:172:6: warning: symbol 'bit_shift_013_func_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:180:6: warning: symbol 'bit_shift_013' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:189:6: warning: symbol 'bit_shift_014' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:202:6: warning: symbol 'bit_shift_015' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:217:6: warning: symbol 'bit_shift_016' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/bit_shift.c:234:6: warning: symbol 'bit_shift_017' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:29:33: warning: non-ANSI function declaration of function 'invalid_memory_access_001'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:58:33: warning: non-ANSI function declaration of function 'invalid_memory_access_002'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:96:33: warning: non-ANSI function declaration of function 'invalid_memory_access_003'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:122:33: warning: non-ANSI function declaration of function 'invalid_memory_access_004'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:168:33: warning: non-ANSI function declaration of function 'invalid_memory_access_006'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:203:33: warning: non-ANSI function declaration of function 'invalid_memory_access_007'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:226:33: warning: non-ANSI function declaration of function 'invalid_memory_access_008'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:263:33: warning: non-ANSI function declaration of function 'invalid_memory_access_009'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:293:33: warning: non-ANSI function declaration of function 'invalid_memory_access_010'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:309:33: warning: non-ANSI function declaration of function 'invalid_memory_access_011'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:383:33: warning: non-ANSI function declaration of function 'invalid_memory_access_012'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:459:33: warning: non-ANSI function declaration of function 'invalid_memory_access_013'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:529:33: warning: non-ANSI function declaration of function 'invalid_memory_access_015'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:558:41: warning: non-ANSI function declaration of function 'invalid_memory_access_016_func_002'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:572:41: warning: non-ANSI function declaration of function 'invalid_memory_access_016_func_003'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:580:32: warning: non-ANSI function declaration of function 'invalid_memory_access_016'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:618:41: warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_002'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:625:41: warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_003'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:630:41: warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_004'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:639:32: warning: non-ANSI function declaration of function 'invalid_memory_access_017'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:675:34: warning: non-ANSI function declaration of function 'invalid_memory_access_main'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:21:6: warning: symbol 'invalid_memory_access_016_doubleptr_gbl' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:22:6: warning: symbol 'invalid_memory_access_017_doubleptr_gbl' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:29:6: warning: symbol 'invalid_memory_access_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:60:30: warning: Using plain integer as NULL pointer
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:58:6: warning: symbol 'invalid_memory_access_002' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:99:24: warning: Using plain integer as NULL pointer
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:96:6: warning: symbol 'invalid_memory_access_003' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:122:6: warning: symbol 'invalid_memory_access_004' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:142:5: warning: symbol 'invalid_memory_access_005' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:168:6: warning: symbol 'invalid_memory_access_006' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:203:6: warning: symbol 'invalid_memory_access_007' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:226:6: warning: symbol 'invalid_memory_access_008' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:263:6: warning: symbol 'invalid_memory_access_009' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:287:6: warning: symbol 'invalid_memory_access_func_010' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:293:6: warning: symbol 'invalid_memory_access_010' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:309:6: warning: symbol 'invalid_memory_access_011' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:341:5: warning: symbol 'invalid_memory_access_012_func_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:383:6: warning: symbol 'invalid_memory_access_012' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:399:33: warning: symbol 'invalid_memory_access_013_s_001_s_gbl' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:401:6: warning: symbol 'invalid_memory_access_013_func_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:407:5: warning: symbol 'invalid_memory_access_013_func_002' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:445:6: warning: symbol 'invalid_memory_access_013_func_003' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:459:6: warning: symbol 'invalid_memory_access_013' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:473:5: warning: symbol 'invalid_memory_access_014' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:529:6: warning: symbol 'invalid_memory_access_015' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:548:5: warning: symbol 'invalid_memory_access_016_func_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:558:6: warning: symbol 'invalid_memory_access_016_func_002' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:572:6: warning: symbol 'invalid_memory_access_016_func_003' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:580:6: warning: symbol 'invalid_memory_access_016' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:608:5: warning: symbol 'invalid_memory_access_017_func_001' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:618:6: warning: symbol 'invalid_memory_access_017_func_002' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:625:6: warning: symbol 'invalid_memory_access_017_func_003' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:630:6: warning: symbol 'invalid_memory_access_017_func_004' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/invalid_memory_access.c:639:6: warning: symbol 'invalid_memory_access_017' was not declared. Should it be static?
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:21:25: warning: non-ANSI function declaration of function 'data_overflow_001'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:33:25: warning: non-ANSI function declaration of function 'data_overflow_002'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:45:25: warning: non-ANSI function declaration of function 'data_overflow_003'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:58:25: warning: non-ANSI function declaration of function 'data_overflow_004'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:70:25: warning: non-ANSI function declaration of function 'data_overflow_005'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:82:25: warning: non-ANSI function declaration of function 'data_overflow_006'
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/data_overflow.c:94:25: warning: too many warnings
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/main.c:9:14: error: symbol 'vflag' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:66) - different modifiers
+/Users/andrei/work/itc-benchmarks/02.wo_Defects/memory_allocation_failure.c:451:17: error: incompatible types in conditional expression (different base types)

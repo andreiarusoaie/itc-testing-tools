@@ -1,0 +1,45 @@
+File, Line, Error
+improper_error_handling.cpp , 16 ,  warning: non-ANSI function declaration of function 'improper_error_handling_001'
+improper_error_handling.cpp , 18 ,  error: Expected ; at end of statement
+improper_error_handling.cpp , 18 ,  error: got {
+improper_error_handling.cpp , 30 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 30 ,  error: got }
+improper_error_handling.cpp , 41 ,  error: Expected ) in function declarator
+improper_error_handling.cpp , 41 ,  error: got ==
+improper_error_handling.cpp , 41 ,  error: Trying to use reserved word 'if' as identifier
+improper_error_handling.cpp , 45 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 45 ,  error: got }
+improper_error_handling.cpp , 50 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 50 ,  error: got }
+improper_error_handling.cpp , 63 ,  error: Expected ) in function declarator
+improper_error_handling.cpp , 63 ,  error: got ==
+improper_error_handling.cpp , 63 ,  error: Trying to use reserved word 'if' as identifier
+improper_error_handling.cpp , 67 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 67 ,  error: got }
+improper_error_handling.cpp , 72 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 72 ,  error: got }
+improper_error_handling.cpp , 88 ,  error: Expected ) in function declarator
+improper_error_handling.cpp , 88 ,  error: got ==
+improper_error_handling.cpp , 88 ,  error: Trying to use reserved word 'if' as identifier
+improper_error_handling.cpp , 92 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 92 ,  error: got }
+improper_error_handling.cpp , 96 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 96 ,  error: got }
+improper_error_handling.cpp , 101 ,  error: Expected ) in function declarator
+improper_error_handling.cpp , 101 ,  error: got 1
+improper_error_handling.cpp , 102 ,  error: Expected ; at the end of type declaration
+improper_error_handling.cpp , 102 ,  error: got }
+improper_error_handling.cpp , 18 ,  error: undefined identifier 'try'
+improper_error_handling.cpp , 20 ,  error: undefined identifier 'a'
+improper_error_handling.cpp , 21 ,  error: undefined identifier 'throw'
+improper_error_handling.cpp , 23 ,  error: undefined identifier 'c'
+improper_error_handling.cpp , 44 ,  error: undefined identifier 'b'
+improper_error_handling.cpp , 66 ,  error: undefined identifier 'b'
+improper_error_handling.cpp , 91 ,  error: undefined identifier 'b'
+improper_error_handling.cpp , 112 ,  error: undefined identifier 'vflag'
+improper_error_handling.cpp , 117 ,  error: undefined identifier 'vflag'
+improper_error_handling.cpp , 119 ,  error: undefined identifier 'improper_error_handling_002'
+improper_error_handling.cpp , 122 ,  error: undefined identifier 'vflag'
+improper_error_handling.cpp , 124 ,  error: undefined identifier 'improper_error_handling_003'
+improper_error_handling.cpp , 127 ,  error: undefined identifier 'vflag'
+improper_error_handling.cpp , 129 ,  error: undefined identifier 'improper_error_handling_004'

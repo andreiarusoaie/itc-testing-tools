@@ -1,0 +1,103 @@
+File, Line, Error
+bit_shift.c , 18 ,  warning: non-ANSI function declaration of function 'bit_shift_001'
+bit_shift.c , 30 ,  warning: non-ANSI function declaration of function 'bit_shift_002'
+bit_shift.c , 42 ,  warning: non-ANSI function declaration of function 'bit_shift_003'
+bit_shift.c , 54 ,  warning: non-ANSI function declaration of function 'bit_shift_004'
+bit_shift.c , 66 ,  warning: non-ANSI function declaration of function 'bit_shift_005'
+bit_shift.c , 78 ,  warning: non-ANSI function declaration of function 'bit_shift_006'
+bit_shift.c , 90 ,  warning: non-ANSI function declaration of function 'bit_shift_007'
+bit_shift.c , 102 ,  warning: non-ANSI function declaration of function 'bit_shift_008'
+bit_shift.c , 115 ,  warning: non-ANSI function declaration of function 'bit_shift_009'
+bit_shift.c , 129 ,  warning: non-ANSI function declaration of function 'bit_shift_010'
+bit_shift.c , 142 ,  warning: non-ANSI function declaration of function 'bit_shift_011'
+bit_shift.c , 155 ,  warning: non-ANSI function declaration of function 'bit_shift_012_func_001'
+bit_shift.c , 160 ,  warning: non-ANSI function declaration of function 'bit_shift_012'
+bit_shift.c , 180 ,  warning: non-ANSI function declaration of function 'bit_shift_013'
+bit_shift.c , 189 ,  warning: non-ANSI function declaration of function 'bit_shift_014'
+bit_shift.c , 202 ,  warning: non-ANSI function declaration of function 'bit_shift_015'
+bit_shift.c , 217 ,  warning: non-ANSI function declaration of function 'bit_shift_016'
+bit_shift.c , 234 ,  warning: non-ANSI function declaration of function 'bit_shift_017'
+bit_shift.c , 246 ,  warning: non-ANSI function declaration of function 'bit_shift_main'
+bit_shift.c , 18 ,  warning: symbol 'bit_shift_001' was not declared. Should it be static?
+bit_shift.c , 30 ,  warning: symbol 'bit_shift_002' was not declared. Should it be static?
+bit_shift.c , 42 ,  warning: symbol 'bit_shift_003' was not declared. Should it be static?
+bit_shift.c , 54 ,  warning: symbol 'bit_shift_004' was not declared. Should it be static?
+bit_shift.c , 66 ,  warning: symbol 'bit_shift_005' was not declared. Should it be static?
+bit_shift.c , 78 ,  warning: symbol 'bit_shift_006' was not declared. Should it be static?
+bit_shift.c , 90 ,  warning: symbol 'bit_shift_007' was not declared. Should it be static?
+bit_shift.c , 102 ,  warning: symbol 'bit_shift_008' was not declared. Should it be static?
+bit_shift.c , 115 ,  warning: symbol 'bit_shift_009' was not declared. Should it be static?
+bit_shift.c , 129 ,  warning: symbol 'bit_shift_010' was not declared. Should it be static?
+bit_shift.c , 142 ,  warning: symbol 'bit_shift_011' was not declared. Should it be static?
+bit_shift.c , 155 ,  warning: symbol 'bit_shift_012_func_001' was not declared. Should it be static?
+bit_shift.c , 160 ,  warning: symbol 'bit_shift_012' was not declared. Should it be static?
+bit_shift.c , 172 ,  warning: symbol 'bit_shift_013_func_001' was not declared. Should it be static?
+bit_shift.c , 180 ,  warning: symbol 'bit_shift_013' was not declared. Should it be static?
+bit_shift.c , 189 ,  warning: symbol 'bit_shift_014' was not declared. Should it be static?
+bit_shift.c , 202 ,  warning: symbol 'bit_shift_015' was not declared. Should it be static?
+bit_shift.c , 217 ,  warning: symbol 'bit_shift_016' was not declared. Should it be static?
+bit_shift.c , 234 ,  warning: symbol 'bit_shift_017' was not declared. Should it be static?
+invalid_memory_access.c , 29 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_001'
+invalid_memory_access.c , 58 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_002'
+invalid_memory_access.c , 96 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_003'
+invalid_memory_access.c , 122 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_004'
+invalid_memory_access.c , 168 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_006'
+invalid_memory_access.c , 203 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_007'
+invalid_memory_access.c , 226 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_008'
+invalid_memory_access.c , 263 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_009'
+invalid_memory_access.c , 293 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_010'
+invalid_memory_access.c , 309 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_011'
+invalid_memory_access.c , 383 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_012'
+invalid_memory_access.c , 459 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_013'
+invalid_memory_access.c , 529 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_015'
+invalid_memory_access.c , 558 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_016_func_002'
+invalid_memory_access.c , 572 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_016_func_003'
+invalid_memory_access.c , 580 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_016'
+invalid_memory_access.c , 618 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_002'
+invalid_memory_access.c , 625 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_003'
+invalid_memory_access.c , 630 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017_func_004'
+invalid_memory_access.c , 639 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_017'
+invalid_memory_access.c , 675 ,  warning: non-ANSI function declaration of function 'invalid_memory_access_main'
+invalid_memory_access.c , 21 ,  warning: symbol 'invalid_memory_access_016_doubleptr_gbl' was not declared. Should it be static?
+invalid_memory_access.c , 22 ,  warning: symbol 'invalid_memory_access_017_doubleptr_gbl' was not declared. Should it be static?
+invalid_memory_access.c , 29 ,  warning: symbol 'invalid_memory_access_001' was not declared. Should it be static?
+invalid_memory_access.c , 60 ,  warning: Using plain integer as NULL pointer
+invalid_memory_access.c , 58 ,  warning: symbol 'invalid_memory_access_002' was not declared. Should it be static?
+invalid_memory_access.c , 99 ,  warning: Using plain integer as NULL pointer
+invalid_memory_access.c , 96 ,  warning: symbol 'invalid_memory_access_003' was not declared. Should it be static?
+invalid_memory_access.c , 122 ,  warning: symbol 'invalid_memory_access_004' was not declared. Should it be static?
+invalid_memory_access.c , 142 ,  warning: symbol 'invalid_memory_access_005' was not declared. Should it be static?
+invalid_memory_access.c , 168 ,  warning: symbol 'invalid_memory_access_006' was not declared. Should it be static?
+invalid_memory_access.c , 203 ,  warning: symbol 'invalid_memory_access_007' was not declared. Should it be static?
+invalid_memory_access.c , 226 ,  warning: symbol 'invalid_memory_access_008' was not declared. Should it be static?
+invalid_memory_access.c , 263 ,  warning: symbol 'invalid_memory_access_009' was not declared. Should it be static?
+invalid_memory_access.c , 287 ,  warning: symbol 'invalid_memory_access_func_010' was not declared. Should it be static?
+invalid_memory_access.c , 293 ,  warning: symbol 'invalid_memory_access_010' was not declared. Should it be static?
+invalid_memory_access.c , 309 ,  warning: symbol 'invalid_memory_access_011' was not declared. Should it be static?
+invalid_memory_access.c , 341 ,  warning: symbol 'invalid_memory_access_012_func_001' was not declared. Should it be static?
+invalid_memory_access.c , 383 ,  warning: symbol 'invalid_memory_access_012' was not declared. Should it be static?
+invalid_memory_access.c , 399 ,  warning: symbol 'invalid_memory_access_013_s_001_s_gbl' was not declared. Should it be static?
+invalid_memory_access.c , 401 ,  warning: symbol 'invalid_memory_access_013_func_001' was not declared. Should it be static?
+invalid_memory_access.c , 407 ,  warning: symbol 'invalid_memory_access_013_func_002' was not declared. Should it be static?
+invalid_memory_access.c , 445 ,  warning: symbol 'invalid_memory_access_013_func_003' was not declared. Should it be static?
+invalid_memory_access.c , 459 ,  warning: symbol 'invalid_memory_access_013' was not declared. Should it be static?
+invalid_memory_access.c , 473 ,  warning: symbol 'invalid_memory_access_014' was not declared. Should it be static?
+invalid_memory_access.c , 529 ,  warning: symbol 'invalid_memory_access_015' was not declared. Should it be static?
+invalid_memory_access.c , 548 ,  warning: symbol 'invalid_memory_access_016_func_001' was not declared. Should it be static?
+invalid_memory_access.c , 558 ,  warning: symbol 'invalid_memory_access_016_func_002' was not declared. Should it be static?
+invalid_memory_access.c , 572 ,  warning: symbol 'invalid_memory_access_016_func_003' was not declared. Should it be static?
+invalid_memory_access.c , 580 ,  warning: symbol 'invalid_memory_access_016' was not declared. Should it be static?
+invalid_memory_access.c , 608 ,  warning: symbol 'invalid_memory_access_017_func_001' was not declared. Should it be static?
+invalid_memory_access.c , 618 ,  warning: symbol 'invalid_memory_access_017_func_002' was not declared. Should it be static?
+invalid_memory_access.c , 625 ,  warning: symbol 'invalid_memory_access_017_func_003' was not declared. Should it be static?
+invalid_memory_access.c , 630 ,  warning: symbol 'invalid_memory_access_017_func_004' was not declared. Should it be static?
+invalid_memory_access.c , 639 ,  warning: symbol 'invalid_memory_access_017' was not declared. Should it be static?
+data_overflow.c , 21 ,  warning: non-ANSI function declaration of function 'data_overflow_001'
+data_overflow.c , 33 ,  warning: non-ANSI function declaration of function 'data_overflow_002'
+data_overflow.c , 45 ,  warning: non-ANSI function declaration of function 'data_overflow_003'
+data_overflow.c , 58 ,  warning: non-ANSI function declaration of function 'data_overflow_004'
+data_overflow.c , 70 ,  warning: non-ANSI function declaration of function 'data_overflow_005'
+data_overflow.c , 82 ,  warning: non-ANSI function declaration of function 'data_overflow_006'
+data_overflow.c , 94 ,  warning: too many warnings
+main.c , 9 ,  error: symbol 'vflag' redeclared with different type (originally declared at /Users/andrei/work/itc-benchmarks/02.wo_Defects/deletion_of_data_structure_sentinel.c:66) - different modifiers
+memory_allocation_failure.c , 451 ,  error: incompatible types in conditional expression (different base types)
