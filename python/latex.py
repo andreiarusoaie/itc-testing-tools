@@ -13,7 +13,7 @@ def nice(toolname):
     if toolname == 'clangalpha':
         return "Clang (alpha)"
     if toolname == 'clangcorealpha':
-        return "Clang (core, alpha)"
+        return "Clang"
     if toolname == 'framac':
         return "Frama-C"
     if toolname == "clanalyze":
@@ -75,10 +75,22 @@ def total(tex_file_name, rep_directory, tool_list):
 def defects_dr(tex_file_name, rep_directory, tool_list):
     tex_file_path = os.path.join(rep_directory, tex_file_name)
 
-    # l = []
-    # for tool in tool_list:
-    #     c_total_path = os.path.join(rep_directory, tool, 'c_defects.csv')
-    #     items = lines(c_total_path)[1].split(",");
-    #     name  = items[0].strip()
-    #     print(name)
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_defects.csv')
+        head, *tail = lines(c_total_path)
+        # cpp_total_path = os.path.join(rep_directory, tool, 'cpp_defects.csv')
+        # h, *t = lines(cpp_total_path)
+        
+        for line in tail:
+            items = line.split(",")
+            name = items[0]
+            dr = items[4]
+            
+            print(tool, name, dr)
+
+
+        print("\n")
+        
+#        name  = items[0].strip()
+#        print(name)
     
