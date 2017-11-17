@@ -931,7 +931,7 @@ FINAL RESULTS:
 ANALYSIS SUMMARY:
 
 Hits = 196
-Lines analyzed = 20678 in approximately 0.33 seconds (63456 lines/second)
+Lines analyzed = 20678 in approximately 0.33 seconds (61766 lines/second)
 Physical Source Lines of Code (SLOC) = 14727
 Hits@level = [0]   0 [1]  21 [2] 153 [3]   0 [4]  22 [5]   0
 Hits@level+ = [0+] 196 [1+] 196 [2+] 175 [3+]  22 [4+]  22 [5+]   0
