@@ -240,7 +240,7 @@ def defects_rdr(tex_file_name, rep_directory, tool_list):
 
     sys.stdout = open(tex_file_path, "w")
     print("\\begin{tabular}{|l|r|r|r|r|r|r|r|r|r|r|}")
-    print("\\hline")
+    print("%\\hline")
     print("% Robust detection rate per defects \\\\ ")
     print("\\hline")
     print("Tool & D1 & D2 & D3 & D4 & D5 & D6 & D7 & D8 & D9", "\\\\")
