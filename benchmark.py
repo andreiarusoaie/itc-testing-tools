@@ -605,8 +605,8 @@ def generate_main_itc_csvs():
     call_bash([MERGE_EXE, CPP_ERRORS_PER_LINE_FILE, CPP_WO_ERRORS_PER_LINE_FILE, CPP_MERGE_FILE])
 
 def all_tools():
-#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'cpplint', 'flintpp', 'clanalyze']
-    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'cpplint', 'flintpp', 'clanalyze']
+#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
+    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
 
 import glob
 def clean_temp_stats():
