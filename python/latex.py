@@ -17,7 +17,9 @@ def nice(toolname):
     if toolname == 'framac':
         return "Frama-C"
     if toolname == "clanalyze":
-        return "MSVC"
+        return "System"
+    if toolname == "flintpp":
+        return "Flint++"
     return toolname.capitalize()
     
 def total(tex_file_name, rep_directory, latex_dir, tool_list):
