@@ -1,6 +1,6 @@
 # itc-testing-tools
 
-This repo contains several scripts that can be used to run several static analysis tools over the modified ITC-Toyota benchmark avaiable [here](https://github.com/andreiarusoaie/itc-benchmarks).
+This repo contains several scripts that can be used to run several static analysis tools over the modified ITC-Toyota benchmark available [here](https://github.com/andreiarusoaie/itc-benchmarks).
 
 In this README you can explore:
 * [Main directory stucture](#main-directory-structure)
