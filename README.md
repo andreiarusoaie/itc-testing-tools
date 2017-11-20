@@ -100,7 +100,7 @@ All these will generate some latex tables in the `latex` directory which can be 
   | Clang (alpha) | `clangalpha`| 
   | Clang (core, alpha) | `clangcorealpha`| 
   | Splint  | `splint` |
-  | Cpplint | `cpplint`
+  | Oclint | `oclint`
   | System | `clanalyze` |
   | FramaC | `framac` |
   | Flint++ | `flintpp` |
