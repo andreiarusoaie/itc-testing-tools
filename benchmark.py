@@ -17,7 +17,7 @@ W_CPP_DEFECTS_DIR = "../itc-benchmarks/03.w_Defects_Cpp/"
 WO_C_DEFECTS_DIR = "../itc-benchmarks/02.wo_Defects/"
 WO_CPP_DEFECTS_DIR = "../itc-benchmarks/04.wo_Defects_Cpp/"
 
-STATISTICS="./bash/statistics.py"
+STATISTICS="./python/statistics.py"
 
 # ## Output files
 # # COUNT ALL ERRORS
