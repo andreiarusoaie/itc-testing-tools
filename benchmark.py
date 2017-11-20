@@ -704,24 +704,27 @@ elif action == 'total':
         tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
         run_stats(tools)        
     # generate main latex table
-    python.latex.total("total.tex", rep_directory, all_tools())
+    latex_dir = os.path.join(os.path.dirname(rep_directory), "latex")
+    python.latex.total("total.tex", rep_directory, latex_dir, all_tools())
 elif action == 'defects':
     tool_list = all_tools()
     for tool in tool_list:
         tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
         run_stats(tools)
-    python.latex.defects_dr("defects_dr.tex", rep_directory, all_tools())
-    python.latex.defects_fpr("defects_fpr.tex", rep_directory, all_tools())
-    python.latex.defects_pr("defects_pr.tex", rep_directory, all_tools())
-    python.latex.defects_rdr("defects_rdr.tex", rep_directory, all_tools())
-    python.latex.defects_unique("defects_unique.tex", rep_directory, all_tools())
+    latex_dir = os.path.join(os.path.dirname(rep_directory), "latex")
+    python.latex.defects_dr("defects_dr.tex", rep_directory, latex_dir, all_tools())
+    python.latex.defects_fpr("defects_fpr.tex", rep_directory, latex_dir, all_tools())
+    python.latex.defects_pr("defects_pr.tex", rep_directory, latex_dir, all_tools())
+    python.latex.defects_rdr("defects_rdr.tex", rep_directory, latex_dir, all_tools())
+    python.latex.defects_unique("defects_unique.tex", rep_directory, latex_dir, all_tools())
 elif action == 'subdefects':
     tool_list = all_tools()
     for tool in tool_list:
         tools = ",".join(list(filter(lambda x : x != tool, tool_list)))
         run_stats(tools)
-    python.latex.subdefects_pr("subdefects_pr.tex", rep_directory, all_tools())
-    python.latex.subdefects_rdr("subdefects_rdr.tex", rep_directory, all_tools())
-    python.latex.subdefects_unique("subdefects_unique.tex", rep_directory, all_tools())
+    latex_dir = os.path.join(os.path.dirname(rep_directory), "latex")
+    python.latex.subdefects_pr("subdefects_pr.tex", rep_directory, latex_dir, all_tools())
+    python.latex.subdefects_rdr("subdefects_rdr.tex", rep_directory, latex_dir, all_tools())
+    python.latex.subdefects_unique("subdefects_unique.tex", rep_directory, latex_dir, all_tools())
 else:
     print("Action ", action, " not supported or incomplete.\n")

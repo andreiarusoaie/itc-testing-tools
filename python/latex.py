@@ -20,8 +20,8 @@ def nice(toolname):
         return "MSVC"
     return toolname.capitalize()
     
-def total(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def total(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     l = []
     for tool in tool_list:
@@ -72,8 +72,8 @@ def total(tex_file_name, rep_directory, tool_list):
     
 
 # Detection rate by defects
-def defects_dr(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def defects_dr(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     defects = set()
@@ -118,8 +118,8 @@ def defects_dr(tex_file_name, rep_directory, tool_list):
     sys.stdout = sys.__stdout__
 
 # false positives rate
-def defects_fpr(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def defects_fpr(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     defects = set()
@@ -164,8 +164,8 @@ def defects_fpr(tex_file_name, rep_directory, tool_list):
     sys.stdout = sys.__stdout__
 
 # production     
-def defects_pr(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def defects_pr(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     defects = set()
@@ -214,8 +214,8 @@ def defects_pr(tex_file_name, rep_directory, tool_list):
     sys.stdout = sys.__stdout__
 
 # Robust detection rate
-def defects_rdr(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def defects_rdr(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     defects = set()
@@ -259,8 +259,8 @@ def defects_rdr(tex_file_name, rep_directory, tool_list):
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
 
-def defects_unique(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def defects_unique(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     defects = set()
@@ -305,8 +305,8 @@ def defects_unique(tex_file_name, rep_directory, tool_list):
 
 
 # Production by subdefects
-def subdefects_pr(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def subdefects_pr(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     subdefects = set()
@@ -360,8 +360,8 @@ def subdefects_pr(tex_file_name, rep_directory, tool_list):
 
     
 # Robust detection rate by subdefects
-def subdefects_rdr(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def subdefects_rdr(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     subdefects = set()
@@ -410,8 +410,8 @@ def subdefects_rdr(tex_file_name, rep_directory, tool_list):
 
     
 # Unique by subdefects
-def subdefects_unique(tex_file_name, rep_directory, tool_list):
-    tex_file_path = os.path.join(rep_directory, tex_file_name)
+def subdefects_unique(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
 
     t_map = {}
     subdefects = set()
