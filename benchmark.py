@@ -605,8 +605,9 @@ def generate_main_itc_csvs():
     call_bash([MERGE_EXE, CPP_ERRORS_PER_LINE_FILE, CPP_WO_ERRORS_PER_LINE_FILE, CPP_MERGE_FILE])
 
 def all_tools():
-#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
-    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
+    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
+#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
+#    return ['cppcheck', 'infer', 'flawfinder', 'clangcorealpha', 'oclint', 'flintpp']
 
 import glob
 def clean_temp_stats():
@@ -726,5 +727,6 @@ elif action == 'subdefects':
     python.latex.subdefects_pr("subdefects_pr.tex", rep_directory, latex_dir, all_tools())
     python.latex.subdefects_rdr("subdefects_rdr.tex", rep_directory, latex_dir, all_tools())
     python.latex.subdefects_unique("subdefects_unique.tex", rep_directory, latex_dir, all_tools())
+    python.latex.subdefects_all("subdefects_detected_by.tex", rep_directory, latex_dir, all_tools())
 else:
     print("Action ", action, " not supported or incomplete.\n")

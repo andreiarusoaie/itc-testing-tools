@@ -458,3 +458,72 @@ def subdefects_unique(tex_file_name, rep_directory, latex_dir, tool_list):
     print("\\hline")
     print("\\end{tabular}")
     sys.stdout = sys.__stdout__
+
+
+# Detected by all by subdefects
+def subdefects_all(tex_file_name, rep_directory, latex_dir, tool_list):
+    tex_file_path = os.path.join(latex_dir, tex_file_name)
+
+    t_map = {}
+    subdefects = set()
+    subdef_map = {} # subdef |-> [tools]
+    subdef_files = {}
+    for tool in tool_list:
+        c_total_path = os.path.join(rep_directory, tool, 'c_subdefects.csv')
+        head, *tail = lines(c_total_path)
+        cpp_total_path = os.path.join(rep_directory, tool, 'cpp_subdefects.csv')
+        h, *t = lines(cpp_total_path)
+
+        for line in tail + t:
+            items = line.split(",")
+            name = items[2]
+            subdefects.add(name)
+            if (not name in subdef_map.keys()):
+                subdef_map[name] = []
+                subdef_files[name] = []
+            
+            rdc = int(items[11].strip())
+            tp = int(items[3].strip())
+            filename = items[0].strip()
+            subdef_map[name] = subdef_map[name] + [(tool, tp)]
+            if not (filename in subdef_files[name]):
+                subdef_files[name] = subdef_files[name] + [filename]
+            else:
+                subdef_files[name] = subdef_files[name]
+
+    for subdef in subdef_map.keys():
+        print(subdef,":")
+        print(subdef_map[subdef])
+        
+
+        srt = list(filter(lambda x : x[1] != 0, subdef_map[subdef]))
+        print("SRT:", srt)
+#        srt.reverse()
+        #####################################
+        # if len(srt) == len(tool_list) :   #
+        #     subdef_map[subdef] = "true"   #
+        # else :                            #
+        #     subdef_map[subdef] = "false"; #
+        # print(subdef_map[subdef])         #
+        #####################################
+        # print("\n\n")
+        subdef_map[subdef] = srt;
+
+    
+    sys.stdout = open(tex_file_path, "w")                                                                             #
+    print("\\begin{tabular}{|l|l|l|}")                                                                                #
+    print("%\\hline")                                                                                                 #
+    print("% Subdefects detected by \\\\ ")                                                                            #
+    print("\\hline")                                                                                                  #
+    print("{Defect subtype} & {Tools which detected this subtype} & {Filenames}", "\\\\") #
+    print("\\hline")                                                                                                  #
+    for subdefect in sorted(subdef_map.keys()):                                                                       #
+        sub = subdefect if len(subdefect) <= 20 else subdefect[0:27]+'...'                                            #
+        toool = ",".join(list(map (lambda x : x[0], subdef_map[subdefect])))
+        fnames = ",".join(list(map (lambda x : str(x.replace("_", "\\_")), subdef_files[subdefect])))
+                                                                                                                      #
+        print(sub, " & ", toool, " & ", fnames, "\\\\")                                             #
+    print("\\hline")                                                                                                  #
+    print("\\end{tabular}")                                                                                           #
+    sys.stdout = sys.__stdout__                                                                                       #
+    
