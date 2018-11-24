@@ -54,6 +54,13 @@ where `<CUSTOM_PATH>` is the custom path to `itc-benchmarks`.
 
 ## Use case scenarios:
 
+### 0. Gather errors by line (optional)
+
+  ```python3 benchmark.py <csv-data-folder> setup```
+
+There no need to run command unless you want to use another folder instead of `csv-data`. The current repo already contains the results of running the above command in `csv-data`.
+
+
 ### 1. Running an existing tool: 
  
  ``` python3 benchmark.py <csv-data-folder> run <toolname> ```
