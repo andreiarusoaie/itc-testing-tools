@@ -17,6 +17,7 @@ print("Excutable:", exe)
 print("Executable options:", opts)
 
 c_files = dirutils.list_files(directory, '.cpp')
+sys_opts = "" if (platform.system() != 'Linux') else " -I /usr/include -I /usr/include/x86_64-linux-gnu/ -I /usr/lib/clang/6.0/include"
 (output, err, exit, time) = system.system_call(exe + " " + opts + " " + " ".join(c_files), ".")
 
 temp_file = open(temp_path, 'w')

@@ -3,6 +3,7 @@ import os.path
 import system
 import dirutils
 import tempfile
+import platform
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -17,7 +18,8 @@ print("Excutable:", exe)
 print("Executable options:", opts)
 
 c_files = dirutils.list_files(directory, '.c')
-(output, err, exit, time) = system.system_call(exe + " " + opts + " " + " ".join(c_files), ".")
+sys_opts = "" if (platform.system() != 'Linux') else " -I /usr/include -I /usr/include/x86_64-linux-gnu/ -I /usr/lib/clang/6.0/include"
+(output, err, exit, time) = system.system_call(exe + " " + opts + " " + sys_opts +  " " + " ".join(c_files), ".")
 
 temp_file = open(temp_path, 'w')
 temp_file.write(err.decode("utf-8"))
