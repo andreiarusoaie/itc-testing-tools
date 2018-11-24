@@ -3,6 +3,7 @@ import os.path
 import system
 import dirutils
 import tempfile
+import platform
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
