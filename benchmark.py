@@ -7,8 +7,7 @@ import python.latex
 
 rep_directory = os.path.realpath(sys.argv[1])
 
-print("REP_DIRECTORY")
-print(rep_directory)
+print("Results dir:", rep_directory, "\n")
 
 # ## Location of ITC workbench: this should be modified by need
 W_C_DEFECTS_DIR = "../itc-benchmarks/01.w_Defects/"
