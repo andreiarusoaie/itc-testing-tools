@@ -13,7 +13,7 @@ exe             = sys.argv[4]
 opts            = sys.argv[5]
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join("/home","itc","tmp", "cppcheck-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("\n======[CPPCHECK]=======")

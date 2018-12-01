@@ -4,6 +4,7 @@ import os.path
 import system
 import dirutils
 import tempfile
+import shutil
 from shutil import copyfile
 
 temp_path = os.path.abspath(sys.argv[1])
@@ -15,45 +16,52 @@ if (len(sys.argv) > 5):
 else:
     opts = ""
 
-print("======Running frama-c=======")
-print("Working dir:", directory)
-print("CSV file:", csv)
-print("Excutable:", exe)
-print("Executable options:", opts)
+# create temporary dir to run the analyzer
+tmpdir_path = os.path.join("/home","itc","tmp", "frama-c-" + next(tempfile._get_candidate_names()))
+shutil.copytree(directory, tmpdir_path)
+
+print("======[FRAMA-C]=======")
+print("[CWD]:", tmpdir_path)
+print("[CSV]:", csv)
+print("[EXE]:", exe)
+print("[EXE OPTIONS]:", opts)
 
 pthread = os.path.join(directory, "pthread.h")
 unistd = os.path.join(directory, "unistd.h")
 copyfile(os.path.join(directory, "pthread.hx"), pthread)
 copyfile(os.path.join(directory, "unistd.hx"), unistd)
 
-c_files = dirutils.list_files(directory, '.c') # + dirutils.list_files(directory, '.cpp')
-c_files = [x for x in c_files if not ('invalid_extern' in x)]
-c_files = [x for x in c_files if not ('wrong_arguments_func_pointer' in x)]
-c_files = [x for x in c_files if not ('func_pointer' in x)]
-print(c_files)
-(output, err, exit, time) = system.system_call(exe + " -val " + " ".join(c_files), directory)
-temp_file = open(temp_path, 'w')
-temp_file.write(output.decode("utf-8"))
-temp_file.close()
+source_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
 
-os.remove(pthread)
-os.remove(unistd)
-
-sys.stdout = open(csv, "w")
+if os.path.exists(csv):
+    os.remove(csv)
+sys.stdout = open(csv, "a")
 print("File, Line, Error")
-with open(temp_path) as f:
-    lines = f.readlines();
-    for i in range(0, len(lines)):
-        line = lines[i];
-        a = line.strip().split(":")
-        if (len(a) >= 3 and (a[0].endswith(".c") or a[0].endswith(".cpp"))):
-            message = a[2]
-            i = 3
-            while (i < len(a)):
-                message = message + ":" + a[i]
-                i = i + 1
-            fronts = a[0].split(" ");
-            cfile = fronts[1];
-            print(os.path.basename(cfile), ",", a[1], ",", message + lines[i+1].strip())
-sys.stdout = sys.__stdout__            
-print("======Done with frama-c=======")
+sys.stdout = sys.__stdout__
+
+for source_file in source_files:
+    framac = exe + " -val -quiet " + source_file + " main.c"
+    (output, err, exit, time) = system.system_call(framac, directory)
+    sys.stdout = open(csv, "a")
+    lines = output.splitlines()
+    i = 0
+    while i < len(lines):
+        line = lines[i].decode("utf-8")
+        if (line[0] == '['):
+            j = line.find("]");
+            if (j != -1):
+                parsed = line[j+1:].split(':')
+                if (len(parsed) >= 3):
+                    fname = parsed[0].strip()
+                    line_no = parsed[1].strip()
+                    message = parsed[2].strip()
+                    if (i + 1 < len(lines)):
+                        message = message + ":" + lines[i+1].decode("utf-8")
+                    if (fname != "main.c"):
+                        print(fname + "," + line_no + "," + message)
+        i = i + 1
+    sys.stdout = sys.__stdout__
+
+print("[CLEANUP]: removing ", tmpdir_path)
+shutil.rmtree(tmpdir_path)
+print("======[DONE WITH FRAMA-C]=======")
