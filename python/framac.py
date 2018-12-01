@@ -28,14 +28,14 @@ print("[EXE OPTIONS]:", opts)
 
 pthread = os.path.join(directory, "pthread.h")
 unistd = os.path.join(directory, "unistd.h")
-copyfile(os.path.join(directory, "pthread.hx"), pthread)
-copyfile(os.path.join(directory, "unistd.hx"), unistd)
+# copyfile(os.path.join(directory, "pthread.hx"), pthread)
+# copyfile(os.path.join(directory, "unistd.hx"), unistd)
 
 source_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
 
 if os.path.exists(csv):
     os.remove(csv)
-sys.stdout = open(csv, "a")
+sys.stdout = open(csv, "w")
 print("File, Line, Error")
 sys.stdout = sys.__stdout__
 

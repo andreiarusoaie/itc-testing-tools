@@ -25,7 +25,7 @@ print("[EXE OPTIONS]:", opts)
 source_files = dirutils.list_files(tmpdir_path, '.c') + dirutils.list_files(tmpdir_path, '.cpp')
 if os.path.exists(csv):
     os.remove(csv)
-sys.stdout = open(csv, "a")
+sys.stdout = open(csv, "w")
 print("File, Line, Error")
 sys.stdout = sys.__stdout__
 
