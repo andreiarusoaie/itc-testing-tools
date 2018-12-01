@@ -19,7 +19,7 @@ else:
 tmpdir_path = os.path.join("/home","itc","tmp", "uno-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
     
-print("======Running uno=======")
+print("======[UNO]=======")
 # print("Working dir:", directory)
 # print("CSV file:", csv)
 # print("Excutable:", exe)
