@@ -5,6 +5,7 @@ import system
 import dirutils
 import tempfile
 from shutil import copyfile
+import shutil
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -14,41 +15,38 @@ if (len(sys.argv) > 5):
     opts      = sys.argv[5]
 else:
     opts = ""
+    
+# create temporary dir to run the analyzer
+tmpdir_path = os.path.join("/home","itc","tmp", "sparse-" + next(tempfile._get_candidate_names()))
+shutil.copytree(directory, tmpdir_path)
+    
+print("\n======[SPARSE]=======")
+print("[CWD]:", tmpdir_path)
+print("[CSV]:", csv)
+print("[EXE]:", exe)
+print("[EXE OPTIONS]:", opts)
 
-print("======Running sparse=======")
-print("Working dir:", directory)
-print("CSV file:", csv)
-print("Excutable:", exe)
-print("Executable options:", opts)
-
-hfile1 = os.path.join(directory, "HeaderFile.h")
+# setup header file: comment math.h include.
+hfile1 = os.path.join(tmpdir_path, "HeaderFile.h")
 if directory.endswith("Cpp") :
-    hfile1 = os.path.join(directory, "HeaderFile.hpp")
-hfile2 = os.path.join(directory, "HeaderFile.hx")
-hfile3 = os.path.join(directory, "HeaderFile.tmp")
-copyfile(hfile1, hfile3);
+    hfile1 = os.path.join(tmpdir_path, "HeaderFile.hpp")
+hfile2 = os.path.join(tmpdir_path, "HeaderFile.hx")
 copyfile(hfile2, hfile1);
 
-temp_file = open(temp_path, 'w')
-temp_file.write("")
-temp_file.close()
-
-c_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
-c_files = [x for x in c_files if not ('main' in x)]
-temp_file = open(temp_path, 'a')
-for sourcefile in c_files:
-    (output, err, exit, time) = system.system_call(exe + " " + sourcefile + " " + opts, directory)
-    temp_file.write(err.decode("utf-8"))
-temp_file.close()
-
-copyfile(hfile3, hfile1);
-os.remove(hfile3)
-
+if os.path.exists(csv):
+    os.remove(csv)
 sys.stdout = open(csv, "w")
 print("File, Line, Error")
-with open(temp_path) as f:
-    for line in f.readlines():
-        a = line.strip().split(":")
+sys.stdout = sys.__stdout__
+
+source_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
+for source_file in source_files:
+    sparse = exe + " " + source_file + " " + opts;
+    (output, err, exit, time) = system.system_call(sparse, directory)
+    lines = err.splitlines();
+    sys.stdout = open(csv, "a")
+    for line in lines:
+        a = line.decode("utf-8").strip().split(":")
         if (len(a) >= 4):
             message = a[3]
             i = 4
@@ -56,6 +54,8 @@ with open(temp_path) as f:
                 message = message + ":" + a[i]
                 i = i + 1
             print(os.path.basename(a[0]), ",", a[1], ",", message)
-
-sys.stdout = sys.__stdout__            
-print("======Done with sparse=======")
+    sys.stdout = sys.__stdout__
+    
+print("[CLEANUP]: removing ", tmpdir_path)
+shutil.rmtree(tmpdir_path)
+print("======[DONE WITH SPARSE]=======")
