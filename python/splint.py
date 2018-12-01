@@ -3,7 +3,7 @@ import os.path
 import system
 import dirutils
 import tempfile
-
+import shutil
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -14,32 +14,39 @@ if (len(sys.argv) > 5):
 else:
     opts = ""
 
-print("======Running splint=======")
-print("Working dir:", directory)
-print("CSV file:", csv)
-print("Excutable:", exe)
-print("Executable options:", opts)
-
-c_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
-# temp_path = os.path.join(os.getcwd(), "csv", "splint", "temp", "splint-output.txt")
-# os.remove(temp_path)
-for source_file in c_files:
-    (output, err, exit, time) = system.system_call(exe + " -nestcomment +posixlib " + source_file + " " + opts, directory)
-    temp_file = open(temp_path, 'a')
-    temp_file.write(output.decode("utf-8"))
-    temp_file.close()
+# create temporary dir to run the analyzer
+tmpdir_path = os.path.join("/home","itc","tmp", "splint-" + next(tempfile._get_candidate_names()))
+shutil.copytree(directory, tmpdir_path)
     
+print("======[SPLINT]=======")
+print("[CWD]:", tmpdir_path)
+print("[CSV]:", csv)
+print("[EXE]:", exe)
+print("[EXE OPTIONS]:", opts)
+
+source_files = dirutils.list_files(tmpdir_path, '.c') + dirutils.list_files(tmpdir_path, '.cpp')
+if os.path.exists(csv):
+    os.remove(csv)
 sys.stdout = open(csv, "w")
 print("File, Line, Error")
-with open(temp_path) as f:
-    for line in f.readlines():
-        a = line.strip().split(":")
+sys.stdout = sys.__stdout__
+
+for source_file in source_files:
+    splint = exe + " -nestcomment +posixlib " + source_file + " " + opts
+    (output, err, exit, time) = system.system_call(splint, tmpdir_path)
+    lines = output.splitlines()
+    sys.stdout = open(csv, "a")
+    for line in lines:
+        a = line.decode("utf-8").strip().split(":")
         if (len(a) >= 4):
             message = a[3]
             i = 4
             while (i < len(a)):
                 message = message + ":" + a[i]
                 i = i + 1
-            print(os.path.basename(a[0]), ",", a[1], ",", message)
-sys.stdout = sys.__stdout__            
-print("======Done with splint=======")
+            print(os.path.basename(a[0]), ",", a[1], ",", message)    
+    sys.stdout = sys.__stdout__
+
+print("[CLEANUP]: removing ", tmpdir_path)
+shutil.rmtree(tmpdir_path)
+print("======[DONE WITH SPLINT]=======")
