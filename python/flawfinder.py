@@ -4,6 +4,7 @@ import system
 import dirutils
 import tempfile
 import shutil
+from pathlib import Path
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -11,7 +12,7 @@ csv       = os.path.abspath(sys.argv[3])
 exe       = sys.argv[4]
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", "flawfinder-" + next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join(str(Path.home()),"tmp", "flawfinder-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("======[FLAWFINDER]=======")

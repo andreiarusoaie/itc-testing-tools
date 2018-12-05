@@ -5,6 +5,7 @@ import system
 import dirutils
 import shutil
 import tempfile
+from pathlib import Path
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -13,7 +14,7 @@ exe       = sys.argv[4]
 opts      = sys.argv[5]
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", "flintpp-" + next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join(str(Path.home()),"tmp", "flintpp-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("======[FLINT++]=======")

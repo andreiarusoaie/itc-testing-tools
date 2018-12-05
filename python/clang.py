@@ -5,6 +5,7 @@ import dirutils
 import tempfile
 import platform
 import shutil
+from pathlib import Path
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -14,7 +15,7 @@ opts      = sys.argv[5]
 
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", "clang-" + next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join(str(Path.home()),"tmp", "clang-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("\n======[CLANG]=======")

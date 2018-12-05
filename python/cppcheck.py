@@ -5,6 +5,7 @@ import dirutils
 import tempfile
 import xml.etree.ElementTree as ET
 import shutil
+from pathlib import Path
 
 xml_report_path = os.path.abspath(sys.argv[1])
 directory       = os.path.abspath(sys.argv[2])
@@ -13,7 +14,7 @@ exe             = sys.argv[4]
 opts            = sys.argv[5]
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", "cppcheck-" + next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join(str(Path.home()),"tmp", "cppcheck-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("\n======[CPPCHECK]=======")

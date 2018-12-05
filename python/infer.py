@@ -5,13 +5,14 @@ import system
 import shutil
 import tempfile
 import dirutils
+from pathlib import Path
 
 directory = os.path.abspath(sys.argv[1])
 csv       = os.path.abspath(sys.argv[2])
 exe       = sys.argv[3]
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", "infer-" + next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join(str(Path.home()),"tmp", "infer-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("======[INFER]=======")
