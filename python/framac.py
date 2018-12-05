@@ -6,6 +6,7 @@ import dirutils
 import tempfile
 import shutil
 from shutil import copyfile
+from pathlib import Path
 
 temp_path = os.path.abspath(sys.argv[1])
 directory = os.path.abspath(sys.argv[2])
@@ -17,7 +18,7 @@ else:
     opts = ""
 
 # create temporary dir to run the analyzer
-tmpdir_path = os.path.join("/home","itc","tmp", "frama-c-" + next(tempfile._get_candidate_names()))
+tmpdir_path = os.path.join(str(Path.home()), "tmp", "frama-c-" + next(tempfile._get_candidate_names()))
 shutil.copytree(directory, tmpdir_path)
 
 print("======[FRAMA-C]=======")
@@ -57,7 +58,7 @@ for source_file in source_files:
                     message = parsed[2].strip()
                     if (i + 1 < len(lines)):
                         message = message + ":" + lines[i+1].decode("utf-8")
-                    if (fname != "main.c"):
+                    if (fname != "main.c" and line_no.isdigit()):
                         print(fname + "," + line_no + "," + message)
         i = i + 1
     sys.stdout = sys.__stdout__
