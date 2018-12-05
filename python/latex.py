@@ -492,21 +492,7 @@ def subdefects_all(tex_file_name, rep_directory, latex_dir, tool_list):
                 subdef_files[name] = subdef_files[name]
 
     for subdef in subdef_map.keys():
-        print(subdef,":")
-        print(subdef_map[subdef])
-        
-
         srt = list(filter(lambda x : x[1] != 0, subdef_map[subdef]))
-        print("SRT:", srt)
-#        srt.reverse()
-        #####################################
-        # if len(srt) == len(tool_list) :   #
-        #     subdef_map[subdef] = "true"   #
-        # else :                            #
-        #     subdef_map[subdef] = "false"; #
-        # print(subdef_map[subdef])         #
-        #####################################
-        # print("\n\n")
         subdef_map[subdef] = srt;
 
     
