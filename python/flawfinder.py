@@ -27,8 +27,6 @@ sys.stdout = open(csv, "w")
 print("File, Line, Error")
 sys.stdout = sys.__stdout__
 
-
-source_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
 for source_file in source_files:
     flawfinder = exe + " " + source_file
     (output, err, exit, time) = system.system_call(flawfinder, tmpdir_path)
