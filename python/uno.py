@@ -21,10 +21,6 @@ tmpdir_path = os.path.join(str(Path.home()),"tmp", "uno-" + next(tempfile._get_c
 shutil.copytree(directory, tmpdir_path)
     
 print("======[UNO]=======")
-# print("Working dir:", directory)
-# print("CSV file:", csv)
-# print("Excutable:", exe)
-# print("Executable options:", opts)
 print("[CWD]:", tmpdir_path)
 print("[CSV]:", csv)
 print("[EXE]:", exe)
