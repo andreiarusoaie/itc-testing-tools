@@ -32,7 +32,7 @@ unistd = os.path.join(directory, "unistd.h")
 # copyfile(os.path.join(directory, "pthread.hx"), pthread)
 # copyfile(os.path.join(directory, "unistd.hx"), unistd)
 
-source_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
+source_files = dirutils.list_files(tmpdir_path, '.c') + dirutils.list_files(tmpdir_path, '.cpp')
 
 if os.path.exists(csv):
     os.remove(csv)
@@ -42,7 +42,7 @@ sys.stdout = sys.__stdout__
 
 for source_file in source_files:
     framac = exe + " -val -quiet " + source_file + " main.c"
-    (output, err, exit, time) = system.system_call(framac, directory)
+    (output, err, exit, time) = system.system_call(framac, tmpdir_path)
     sys.stdout = open(csv, "a")
     lines = output.splitlines()
     i = 0
