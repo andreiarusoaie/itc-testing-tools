@@ -40,10 +40,10 @@ sys.stdout = open(csv, "w")
 print("File, Line, Error")
 sys.stdout = sys.__stdout__
 
-source_files = dirutils.list_files(directory, '.c') + dirutils.list_files(directory, '.cpp')
+source_files = dirutils.list_files(tmpdir_path, '.c') + dirutils.list_files(tmpdir_path, '.cpp')
 for source_file in source_files:
     sparse = exe + " " + source_file + " " + opts;
-    (output, err, exit, time) = system.system_call(sparse, directory)
+    (output, err, exit, time) = system.system_call(sparse, tmpdir_path)
     lines = err.splitlines();
     sys.stdout = open(csv, "a")
     for line in lines:
