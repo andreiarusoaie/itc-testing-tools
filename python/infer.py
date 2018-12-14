@@ -7,9 +7,10 @@ import tempfile
 import dirutils
 from pathlib import Path
 
-directory = os.path.abspath(sys.argv[1])
-csv       = os.path.abspath(sys.argv[2])
-exe       = sys.argv[3]
+temp_path = os.path.abspath(sys.argv[1])
+directory = os.path.abspath(sys.argv[2])
+csv       = os.path.abspath(sys.argv[3])
+exe       = sys.argv[4]
 
 # create temporary dir to run the analyzer
 tmpdir_path = os.path.join(str(Path.home()),"tmp", "infer-" + next(tempfile._get_candidate_names()))
@@ -21,15 +22,17 @@ print("[CSV]:", csv)
 print("[EXE]:", exe)
 
 source_files = dirutils.list_files(tmpdir_path, '.c') + dirutils.list_files(tmpdir_path, '.cpp')
-if os.path.exists(csv):
-    os.remove(csv)
-sys.stdout = open(csv, "w")
-print("File, Line, Error")
-sys.stdout = sys.__stdout__
-       
+dirutils.file_line_error_header(csv)
+dirutils.reset_file(temp_path)
+
 for source_file in source_files:
+    if source_file.endswith("invalid_extern_1.c"):
+        continue
+    if source_file.endswith("invalid_extern.c"):
+        source_file = source_file + " " + os.path.join(tmpdir_path, "invalid_extern_1.c")
     infer = exe + " run -- gcc -c " + source_file
     (output, err, exit, time) = system.system_call(infer, tmpdir_path)
+    dirutils.tool_exec_log(temp_path, infer, output, err, exit)
     sys.stdout = open(csv, "a")
     report_file = os.path.join(tmpdir_path, "infer-out", "report.json")
     if (os.path.exists(report_file)):
