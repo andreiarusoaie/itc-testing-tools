@@ -30,6 +30,12 @@ dirutils.file_line_error_header(csv)
 dirutils.reset_file(temp_path)
 
 for source_file in source_files:
+    if source_file.endswith("main.c"):
+        continue
+    if source_file.endswith("invalid_extern_1.c"):
+        continue
+    if source_file.endswith("invalid_extern.c"):
+        source_file = source_file + " " + os.path.join(tmpdir_path, "invalid_extern_1.c")
     cppcheck = exe + opts + " " + source_file + " --output-file=" + xml_report_path
     (output, err, exit, time) = system.system_call(cppcheck, ".")
     dirutils.tool_exec_log(temp_path, cppcheck, output, err, exit)

@@ -26,6 +26,8 @@ dirutils.file_line_error_header(csv)
 dirutils.reset_file(temp_path)
 
 for source_file in source_files:
+    if source_file.endswith("main.c"):
+        continue
     if source_file.endswith("invalid_extern_1.c"):
         continue
     if source_file.endswith("invalid_extern.c"):
