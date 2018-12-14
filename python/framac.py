@@ -27,22 +27,26 @@ print("[CSV]:", csv)
 print("[EXE]:", exe)
 print("[EXE OPTIONS]:", opts)
 
-pthread = os.path.join(directory, "pthread.h")
-unistd = os.path.join(directory, "unistd.h")
-# copyfile(os.path.join(directory, "pthread.hx"), pthread)
-# copyfile(os.path.join(directory, "unistd.hx"), unistd)
+pthread = os.path.join(tmpdir_path, "pthread.h")
+unistd = os.path.join(tmpdir_path, "unistd.h")
+copyfile(os.path.join(tmpdir_path, "pthread.hx"), pthread)
+copyfile(os.path.join(tmpdir_path, "unistd.hx"), unistd)
 
 source_files = dirutils.list_files(tmpdir_path, '.c') + dirutils.list_files(tmpdir_path, '.cpp')
 
-if os.path.exists(csv):
-    os.remove(csv)
-sys.stdout = open(csv, "w")
-print("File, Line, Error")
-sys.stdout = sys.__stdout__
+dirutils.file_line_error_header(csv)
+dirutils.reset_file(temp_path)
 
 for source_file in source_files:
+    if source_file.endswith("main.c"):
+        continue
+    if source_file.endswith("invalid_extern_1.c"):
+        continue
+    if source_file.endswith("invalid_extern.c"):
+        source_file = source_file + " " + os.path.join(tmpdir_path, "invalid_extern_1.c")
     framac = exe + " -val -quiet " + source_file + " main.c"
     (output, err, exit, time) = system.system_call(framac, tmpdir_path)
+    dirutils.tool_exec_log(temp_path, framac, output, err, exit)
     sys.stdout = open(csv, "a")
     lines = output.splitlines()
     i = 0
