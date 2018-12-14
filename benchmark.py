@@ -115,7 +115,7 @@ CPPCHECK_OUTPUT_C_W = rep_directory + "/cppcheck/temp/c_w_errors_per_line.csv"
 CPPCHECK_OUTPUT_C_WO = rep_directory + "/cppcheck/temp/c_wo_errors_per_line.csv"
 CPPCHECK_OUTPUT_CPP_W = rep_directory + "/cppcheck/temp/cpp_w_errors_per_line.csv"
 CPPCHECK_OUTPUT_CPP_WO = rep_directory + "/cppcheck/temp/cpp_wo_errors_per_line.csv"
-CPPCHECK_OPTS = "\" --quiet --xml --xml-version=2\""
+CPPCHECK_OPTS = "\" --xml --xml-version=2\""
 CPPCHECK_OUT_SUBDEFECTS = rep_directory + "/cppcheck/c_subdefects.csv"
 CPPCHECK_OUT_DEFECTS = rep_directory + "/cppcheck/c_defects.csv"
 CPPCHECK_OUT_TOTAL = rep_directory + "/cppcheck/c_total.csv"
@@ -126,6 +126,10 @@ CPPCHECK_TEMP_C_W = rep_directory + "/cppcheck/temp/c_w_temp.xml"
 CPPCHECK_TEMP_C_WO = rep_directory + "/cppcheck/temp/c_wo_temp.xml"
 CPPCHECK_TEMP_CPP_W = rep_directory + "/cppcheck/temp/cpp_w_temp.xml"
 CPPCHECK_TEMP_CPP_WO = rep_directory + "/cppcheck/temp/cpp_wo_temp.xml"
+CPPCHECK_TEMP_C_W_TXT = rep_directory + "/cppcheck/temp/c_w_temp.txt"
+CPPCHECK_TEMP_C_WO_TXT = rep_directory + "/cppcheck/temp/c_wo_temp.txt"
+CPPCHECK_TEMP_CPP_W_TXT = rep_directory + "/cppcheck/temp/cpp_w_temp.txt"
+CPPCHECK_TEMP_CPP_WO_TXT = rep_directory + "/cppcheck/temp/cpp_wo_temp.txt"
 
 # ## CPPLINT
 CPPLINT = "./python/cpplint.py"
@@ -261,10 +265,10 @@ INFER_OUT_TOTAL = rep_directory + "/infer/c_total.csv"
 INFER_OUT_CPP_SUBDEFECTS = rep_directory + "/infer/cpp_subdefects.csv"
 INFER_OUT_CPP_DEFECTS = rep_directory + "/infer/cpp_defects.csv"
 INFER_OUT_CPP_TOTAL = rep_directory + "/infer/cpp_total.csv"
-# INFER_TEMP_C_W = rep_directory + "/infer/temp/c_w_temp.txt"
-# INFER_TEMP_C_WO = rep_directory + "/infer/temp/c_wo_temp.txt"
-# INFER_TEMP_CPP_W = rep_directory + "/infer/temp/cpp_w_temp.txt"
-# INFER_TEMP_CPP_WO = rep_directory + "/infer/temp/cpp_wo_temp.txt"
+INFER_TEMP_C_W = rep_directory + "/infer/temp/c_w_temp.txt"
+INFER_TEMP_C_WO = rep_directory + "/infer/temp/c_wo_temp.txt"
+INFER_TEMP_CPP_W = rep_directory + "/infer/temp/cpp_w_temp.txt"
+INFER_TEMP_CPP_WO = rep_directory + "/infer/temp/cpp_wo_temp.txt"
 
 
 # ## CLANALYZE
@@ -367,10 +371,10 @@ def call_bash(args):
     
 def run_cppcheck():
     print("Running cppcheck")
-    t1 = call_python([CPPCHECK, CPPCHECK_TEMP_C_W, W_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_W, CPPCHECK_EXE, CPPCHECK_OPTS])
-    t2 = call_python([CPPCHECK, CPPCHECK_TEMP_C_WO, WO_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_WO, CPPCHECK_EXE, CPPCHECK_OPTS])
-    t3 = call_python([CPPCHECK, CPPCHECK_TEMP_CPP_W, W_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
-    t4 = call_python([CPPCHECK, CPPCHECK_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
+    t1 = call_python([CPPCHECK, CPPCHECK_TEMP_C_W, CPPCHECK_TEMP_C_W_TXT, W_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_W, CPPCHECK_EXE, CPPCHECK_OPTS])
+    t2 = call_python([CPPCHECK, CPPCHECK_TEMP_C_WO, CPPCHECK_TEMP_C_WO_TXT, WO_C_DEFECTS_DIR, CPPCHECK_OUTPUT_C_WO, CPPCHECK_EXE, CPPCHECK_OPTS])
+    t3 = call_python([CPPCHECK, CPPCHECK_TEMP_CPP_W, CPPCHECK_TEMP_CPP_W_TXT, W_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_W, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
+    t4 = call_python([CPPCHECK, CPPCHECK_TEMP_CPP_WO, CPPCHECK_TEMP_CPP_WO_TXT, WO_CPP_DEFECTS_DIR, CPPCHECK_OUTPUT_CPP_WO, CPPCHECK_EXE_CPP, CPPCHECK_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "cppcheck" ,"timing.csv"), "w")
     print("cppcheck", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
@@ -560,10 +564,10 @@ def run_clang_alpha_stats(tools):
     
 def run_infer():
     print("Running infer")
-    t1 = call_python([INFER, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE]) 
-    t2 = call_python([INFER, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE]) 
-    t3 = call_python([INFER, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
-    t4 = call_python([INFER, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
+    t1 = call_python([INFER, INFER_TEMP_C_W, W_C_DEFECTS_DIR, INFER_OUTPUT_C_W, INFER_EXE]) 
+    t2 = call_python([INFER, INFER_TEMP_C_WO, WO_C_DEFECTS_DIR, INFER_OUTPUT_C_WO, INFER_EXE]) 
+    t3 = call_python([INFER, INFER_TEMP_CPP_W, W_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_W, INFER_EXE]) 
+    t4 = call_python([INFER, INFER_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, INFER_OUTPUT_CPP_WO, INFER_EXE])
     sys.stdout=open(os.path.join(rep_directory, "infer" ,"timing.csv"), "w")
     print("infer", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
@@ -604,8 +608,8 @@ def generate_main_itc_csvs():
     call_bash([MERGE_EXE, CPP_ERRORS_PER_LINE_FILE, CPP_WO_ERRORS_PER_LINE_FILE, CPP_MERGE_FILE])
 
 def all_tools():
-    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
-#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
+#    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcore', 'clangalpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
+    return ['cppcheck', 'sparse', 'uno', 'infer', 'splint', 'flawfinder', 'clangcorealpha', 'framac', 'oclint', 'flintpp', 'clanalyze']
 #    return ['cppcheck', 'infer', 'flawfinder', 'clangcorealpha', 'oclint', 'flintpp']
 
 import glob
