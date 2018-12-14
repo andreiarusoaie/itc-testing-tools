@@ -190,6 +190,10 @@ FLINTPP_TEMP_C_W = rep_directory + "/flintpp/temp/c_w_temp.json"
 FLINTPP_TEMP_C_WO = rep_directory + "/flintpp/temp/c_wo_temp.json"
 FLINTPP_TEMP_CPP_W = rep_directory + "/flintpp/temp/cpp_w_temp.json"
 FLINTPP_TEMP_CPP_WO = rep_directory + "/flintpp/temp/cpp_wo_temp.json"
+FLINTPP_TEMP_C_W_TXT = rep_directory + "/flintpp/temp/c_w_temp.txt"
+FLINTPP_TEMP_C_WO_TXT = rep_directory + "/flintpp/temp/c_wo_temp.txt"
+FLINTPP_TEMP_CPP_W_TXT = rep_directory + "/flintpp/temp/cpp_w_temp.txt"
+FLINTPP_TEMP_CPP_WO_TXT = rep_directory + "/flintpp/temp/cpp_wo_temp.txt"
 
 # ## SPARSE
 SPARSE = "./python/sparse.py"
@@ -403,10 +407,10 @@ def run_cpplint_stats(tools):
     
 def run_flintpp():
     print("Running flintpp")
-    t1 = call_python([FLINTPP, FLINTPP_TEMP_C_W, W_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_W, FLINTPP_EXE, FLINTPP_OPTS])
-    t2 = call_python([FLINTPP, FLINTPP_TEMP_C_WO, WO_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_WO, FLINTPP_EXE, FLINTPP_OPTS])
-    t3 = call_python([FLINTPP, FLINTPP_TEMP_CPP_W, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
-    t4 = call_python([FLINTPP, FLINTPP_TEMP_CPP_WO, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    t1 = call_python([FLINTPP, FLINTPP_TEMP_C_W, FLINTPP_TEMP_C_W_TXT, W_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_W, FLINTPP_EXE, FLINTPP_OPTS])
+    t2 = call_python([FLINTPP, FLINTPP_TEMP_C_WO, FLINTPP_TEMP_C_WO_TXT, WO_C_DEFECTS_DIR, FLINTPP_OUTPUT_C_WO, FLINTPP_EXE, FLINTPP_OPTS])
+    t3 = call_python([FLINTPP, FLINTPP_TEMP_CPP_W, FLINTPP_TEMP_CPP_W_TXT, W_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_W, FLINTPP_EXE_CPP, FLINTPP_OPTS])
+    t4 = call_python([FLINTPP, FLINTPP_TEMP_CPP_WO, FLINTPP_TEMP_CPP_WO_TXT, WO_CPP_DEFECTS_DIR, FLINTPP_OUTPUT_CPP_WO, FLINTPP_EXE_CPP, FLINTPP_OPTS])
     sys.stdout=open(os.path.join(rep_directory, "flintpp" ,"timing.csv"), "w")
     print("flintpp", ", " , t1 + t3, ", ", t2 + t4)
     sys.stdout=sys.__stdout__
