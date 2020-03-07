@@ -46,7 +46,8 @@ for source_file in source_files:
     for error in errors:
         msg = "\"" + error.attrib['verbose'] + "\""
         for location in error:
-            print(os.path.basename(location.attrib['file']) + ",", location.attrib['line'] + ",", msg)
+            if (location.tag == "location"):
+                print(os.path.basename(location.attrib['file']) + ",", location.attrib['line'] + ",", msg)
     sys.stdout = sys.__stdout__
 
 print("[CLEANUP]: removing ", tmpdir_path)
