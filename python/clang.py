@@ -41,10 +41,11 @@ for source_file in source_files:
     (output, err, exit, time) = system.system_call(clang, ".")
     dirutils.tool_exec_log(temp_path, clang, output, err, exit)
     sys.stdout = open(csv, "a")
+    print(err, file=sys.__stdout__)
     lines = err.splitlines()
     for line in lines:
         parsed = line.decode("utf-8").strip().split(":")
-        if (len(parsed) >= 4):
+        if (len(parsed) >= 4 and parsed[0] == source_file and not parsed[3].endswith('note')):
             print(os.path.basename(parsed[0]), ",", parsed[1], ",", parsed[3] + ":" + parsed[4])
     sys.stdout = sys.__stdout__
 

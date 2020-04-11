@@ -5,6 +5,7 @@ import dirutils
 import tempfile
 import platform
 import shutil
+import re
 from pathlib import Path
 
 temp_path = os.path.abspath(sys.argv[1])
@@ -12,6 +13,20 @@ directory = os.path.abspath(sys.argv[2])
 csv       = os.path.abspath(sys.argv[3])
 exe       = sys.argv[4]
 opts      = sys.argv[5]
+
+def detect_clang_compilation_opts(source_files):
+    opts = ""
+    for source_file in source_files:
+        test_compile = exe + " -c " + source_file + " -v"
+        (out, er, ex, t) = system.system_call(test_compile, ".")
+        if (ex == 0):
+            return extract_opts(er.decode('utf-8'))
+    return opts
+
+def extract_opts(log):
+    res = re.findall("(\-resource\-dir\s+[^\s]*?)\s", log)
+    incl = re.findall("(\-internal[^\s]*isystem\s+[^\s]*?)\s", log)
+    return " ".join(res + incl)
 
 
 # create temporary dir to run the analyzer
@@ -25,7 +40,7 @@ print("[EXE]:", exe)
 print("[EXE OPTIONS]:", opts)
 
 source_files = dirutils.list_files(tmpdir_path, '.cpp')
-sys_opts = "" if (platform.system() != 'Linux') else " -I /usr/include -I /usr/include/x86_64-linux-gnu/ -I /usr/lib/clang/6.0/include"
+sys_opts = detect_clang_compilation_opts(source_files)
 
 dirutils.file_line_error_header(csv)
 dirutils.reset_file(temp_path)
@@ -44,7 +59,7 @@ for source_file in source_files:
     lines = err.splitlines()
     for line in lines:
         parsed = line.decode("utf-8").strip().split(":")
-        if (len(parsed) >= 4):
+        if (len(parsed) >= 4 and parsed[0] == source_file and not parsed[3].endswith('note')):
             print(os.path.basename(parsed[0]), ",", parsed[1], ",", parsed[3] + ":" + parsed[4])
     sys.stdout = sys.__stdout__
 
@@ -52,3 +67,4 @@ for source_file in source_files:
 print("[CLEANUP]: removing ", tmpdir_path)
 shutil.rmtree(tmpdir_path)
 print("======[DONE WITH CLANG++]=======")
+
